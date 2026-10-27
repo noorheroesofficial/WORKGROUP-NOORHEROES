@@ -1,0 +1,1424 @@
+[
+  {
+    "file": "001_Splash_Screen.md",
+    "heading": "# Screen 001 — Splash Screen\r",
+    "chars": 19185,
+    "consentRelated": false
+  },
+  {
+    "file": "002_Language_Selection.md",
+    "heading": "# Screen 002 — Language Selection\r",
+    "chars": 20514,
+    "consentRelated": false
+  },
+  {
+    "file": "003_Intro_Slide_1_Stories.md",
+    "heading": "# Screen 003 — Intro Slide 1 (Stories)\r",
+    "chars": 18691,
+    "consentRelated": false
+  },
+  {
+    "file": "004_Intro_Slide_2_Quran_Arabic_Tajweed.md",
+    "heading": "# Screen 004 — Intro Slide 2 (Quran/Arabic/Tajweed)\r",
+    "chars": 18741,
+    "consentRelated": false
+  },
+  {
+    "file": "005_Intro_Slide_3_Habits_Rewards.md",
+    "heading": "# Screen 005 — Intro Slide 3 (Habits & Rewards)\r",
+    "chars": 18734,
+    "consentRelated": false
+  },
+  {
+    "file": "006_Intro_Slide_4_Parent_Control.md",
+    "heading": "# Screen 006 — Intro Slide 4 (Parent Control)\r",
+    "chars": 18755,
+    "consentRelated": false
+  },
+  {
+    "file": "007_Login_phone_email_Google.md",
+    "heading": "# Screen 007 — Login (phone/email + Google)\r",
+    "chars": 18445,
+    "consentRelated": false
+  },
+  {
+    "file": "008_Registration_Consent.md",
+    "heading": "# Screen 008 — Registration + Consent\r",
+    "chars": 21842,
+    "consentRelated": false
+  },
+  {
+    "file": "009_Consent_Detail_Full_Text_Modal.md",
+    "heading": "# Screen 009 — Consent Detail / Full Text Modal\r",
+    "chars": 18521,
+    "consentRelated": true
+  },
+  {
+    "file": "010_OTP_Verification.md",
+    "heading": "# Screen 010 — OTP Verification\r",
+    "chars": 19471,
+    "consentRelated": false
+  },
+  {
+    "file": "011_OTP_Fallback_Channel_Offer.md",
+    "heading": "# Screen 011 — OTP Fallback Channel Offer\r",
+    "chars": 17785,
+    "consentRelated": false
+  },
+  {
+    "file": "012_Parent_PIN_Setup.md",
+    "heading": "# Screen 012 — Parent PIN Setup\r",
+    "chars": 19295,
+    "consentRelated": false
+  },
+  {
+    "file": "013_Biometric_Enrollment_Prompt.md",
+    "heading": "# Screen 013 — Biometric Enrollment Prompt\r",
+    "chars": 17748,
+    "consentRelated": false
+  },
+  {
+    "file": "014_Add_Child.md",
+    "heading": "# Screen 014 — Add Child\r",
+    "chars": 19964,
+    "consentRelated": false
+  },
+  {
+    "file": "015_Avatar_Selection.md",
+    "heading": "# Screen 015 — Avatar Selection\r",
+    "chars": 17646,
+    "consentRelated": false
+  },
+  {
+    "file": "016_Interest_Selection.md",
+    "heading": "# Screen 016 — Interest Selection\r",
+    "chars": 17587,
+    "consentRelated": false
+  },
+  {
+    "file": "017_Learning_Level_Setup.md",
+    "heading": "# Screen 017 — Learning Level Setup\r",
+    "chars": 17689,
+    "consentRelated": false
+  },
+  {
+    "file": "018_Add_Another_Child_Prompt.md",
+    "heading": "# Screen 018 — \"Add Another Child?\" Prompt\r",
+    "chars": 17727,
+    "consentRelated": false
+  },
+  {
+    "file": "019_Learning_Level_Interests_Confirmation_family_level_summary.md",
+    "heading": "# Screen 019 — Learning Level + Interests Confirmation (family-level summary)\r",
+    "chars": 17775,
+    "consentRelated": false
+  },
+  {
+    "file": "020_Screen_Time_Notification_Primer.md",
+    "heading": "# Screen 020 — Screen Time & Notification Primer\r",
+    "chars": 17757,
+    "consentRelated": false
+  },
+  {
+    "file": "021_Personalized_Path_Reveal.md",
+    "heading": "# Screen 021 — Personalized Path Reveal\r",
+    "chars": 18067,
+    "consentRelated": false
+  },
+  {
+    "file": "022_Profile_Picker_Who_Is_Learning.md",
+    "heading": "# Screen 022 — Profile Picker (\"Who Is Learning\")\r",
+    "chars": 19208,
+    "consentRelated": false
+  },
+  {
+    "file": "023_Child_Lock_Screen_PIN_Pattern_Biometric.md",
+    "heading": "# Screen 023 — Child Lock Screen (PIN/Pattern/Biometric)\r",
+    "chars": 19580,
+    "consentRelated": false
+  },
+  {
+    "file": "024_Lock_Recovery_via_verified_Parent_Profile.md",
+    "heading": "# Screen 024 — Lock Recovery (via verified Parent Profile)\r",
+    "chars": 17770,
+    "consentRelated": false
+  },
+  {
+    "file": "025_First_Mission_Screen.md",
+    "heading": "# Screen 025 — First Mission Screen\r",
+    "chars": 17608,
+    "consentRelated": false
+  },
+  {
+    "file": "026_Forced_Update_Blocking_Screen.md",
+    "heading": "# Screen 026 — Forced Update Blocking Screen\r",
+    "chars": 17604,
+    "consentRelated": false
+  },
+  {
+    "file": "027_Recommended_Update_Banner_Dismissible.md",
+    "heading": "# Screen 027 — Recommended Update Banner/Dismissible\r",
+    "chars": 17646,
+    "consentRelated": false
+  },
+  {
+    "file": "028_Maintenance_Mode_Screen.md",
+    "heading": "# Screen 028 — Maintenance Mode Screen\r",
+    "chars": 17637,
+    "consentRelated": false
+  },
+  {
+    "file": "029_No_Connectivity_Screen_pre_auth.md",
+    "heading": "# Screen 029 — No Connectivity Screen (pre-auth)\r",
+    "chars": 17628,
+    "consentRelated": false
+  },
+  {
+    "file": "030_Forgot_Access_Account_Recovery_Entry.md",
+    "heading": "# Screen 030 — Forgot Access / Account Recovery Entry\r",
+    "chars": 17738,
+    "consentRelated": false
+  },
+  {
+    "file": "031_Terms_of_Service_full_document.md",
+    "heading": "# Screen 031 — Terms of Service (full document)\r",
+    "chars": 17620,
+    "consentRelated": false
+  },
+  {
+    "file": "032_Privacy_Policy_full_document.md",
+    "heading": "# Screen 032 — Privacy Policy (full document)\r",
+    "chars": 17552,
+    "consentRelated": false
+  },
+  {
+    "file": "033_Child_Data_Processing_Consent_full_document.md",
+    "heading": "# Screen 033 — Child-Data Processing Consent (full document)\r",
+    "chars": 17653,
+    "consentRelated": false
+  },
+  {
+    "file": "034_Child_Home_composite_screen.md",
+    "heading": "# Screen 034 — Child Home (composite screen)\r",
+    "chars": 40306,
+    "consentRelated": false
+  },
+  {
+    "file": "035_Full_Screen_Retry_no_cache_no_network.md",
+    "heading": "# Screen 035 — Full-Screen Retry (no cache, no network)\r",
+    "chars": 24246,
+    "consentRelated": false
+  },
+  {
+    "file": "036_Stories_Library_Landing.md",
+    "heading": "# Screen 036 — Stories Library (Landing)\r",
+    "chars": 31474,
+    "consentRelated": false
+  },
+  {
+    "file": "037_Category_Filter_Panel.md",
+    "heading": "# Screen 037 — Category Filter Panel\r",
+    "chars": 25020,
+    "consentRelated": false
+  },
+  {
+    "file": "038_Story_Detail.md",
+    "heading": "# Screen 038 — Story Detail\r",
+    "chars": 33252,
+    "consentRelated": false
+  },
+  {
+    "file": "039_Story_Player_Video.md",
+    "heading": "# Screen 039 — Story Player — Video\r",
+    "chars": 31795,
+    "consentRelated": false
+  },
+  {
+    "file": "040_Story_Player_Audio.md",
+    "heading": "# Screen 040 — Story Player — Audio\r",
+    "chars": 30269,
+    "consentRelated": false
+  },
+  {
+    "file": "041_Story_Player_Text.md",
+    "heading": "# Screen 041 — Story Player — Text\r",
+    "chars": 30103,
+    "consentRelated": false
+  },
+  {
+    "file": "042_Interactive_Choice_Overlay.md",
+    "heading": "# Screen 042 — Interactive Choice Overlay\r",
+    "chars": 25758,
+    "consentRelated": false
+  },
+  {
+    "file": "043_Pause_and_Quiz_Moment_Overlay.md",
+    "heading": "# Screen 043 — Pause-and-Quiz Moment Overlay\r",
+    "chars": 26189,
+    "consentRelated": false
+  },
+  {
+    "file": "044_Media_Unavailable_Safe_Stop_Screen.md",
+    "heading": "# Screen 044 — Media Unavailable / Safe-Stop Screen\r",
+    "chars": 25079,
+    "consentRelated": false
+  },
+  {
+    "file": "045_Completion_Reward_Reveal_Screen.md",
+    "heading": "# Screen 045 — Completion / Reward Reveal Screen\r",
+    "chars": 26283,
+    "consentRelated": false
+  },
+  {
+    "file": "046_Moral_Summary_Card_Noor_says.md",
+    "heading": "# Screen 046 — Moral Summary Card (\"Noor says...\")\r",
+    "chars": 26884,
+    "consentRelated": false
+  },
+  {
+    "file": "047_Post_Story_Quiz.md",
+    "heading": "# Screen 047 — Post-Story Quiz\r",
+    "chars": 27177,
+    "consentRelated": false
+  },
+  {
+    "file": "048_Achievement_Badge_Unlock_Modal.md",
+    "heading": "# Screen 048 — Achievement/Badge Unlock Modal\r",
+    "chars": 26141,
+    "consentRelated": false
+  },
+  {
+    "file": "049_Approved_Share_Card_Preview.md",
+    "heading": "# Screen 049 — Approved Share Card Preview\r",
+    "chars": 26713,
+    "consentRelated": false
+  },
+  {
+    "file": "050_Caption_Audio_Track_Quality_Settings_Sheet.md",
+    "heading": "# Screen 050 — Caption/Audio-Track/Quality Settings Sheet\r",
+    "chars": 25249,
+    "consentRelated": false
+  },
+  {
+    "file": "051_Audio_Bedtime_Player_main_screen.md",
+    "heading": "# Screen 051 — Audio Bedtime Player (main screen)\r",
+    "chars": 32735,
+    "consentRelated": false
+  },
+  {
+    "file": "052_Episode_List_Sheet_for_multi_part_audio_series.md",
+    "heading": "# Screen 052 — Episode List Sheet (for multi-part audio series)\r",
+    "chars": 25899,
+    "consentRelated": false
+  },
+  {
+    "file": "053_Sleep_Timer_Selector.md",
+    "heading": "# Screen 053 — Sleep Timer Selector\r",
+    "chars": 27670,
+    "consentRelated": false
+  },
+  {
+    "file": "054_Playback_Speed_Selector.md",
+    "heading": "# Screen 054 — Playback Speed Selector\r",
+    "chars": 23213,
+    "consentRelated": false
+  },
+  {
+    "file": "055_Goodnight_Idle_State.md",
+    "heading": "# Screen 055 — Goodnight Idle State\r",
+    "chars": 25096,
+    "consentRelated": false
+  },
+  {
+    "file": "056_Dua_Calm_Reflection_Ending_Card.md",
+    "heading": "# Screen 056 — Dua / Calm-Reflection Ending Card\r",
+    "chars": 25973,
+    "consentRelated": false
+  },
+  {
+    "file": "057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md",
+    "heading": "# Screen 057 — Media Unavailable / Safe-Stop (Bedtime-styled variant)\r",
+    "chars": 27028,
+    "consentRelated": false
+  },
+  {
+    "file": "058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md",
+    "heading": "# Screen 058 — Learn Tab Landing / Quran Learning Home (Skill Tree Map)\r",
+    "chars": 33171,
+    "consentRelated": false
+  },
+  {
+    "file": "059_Placement_Check_first_time.md",
+    "heading": "# Screen 059 — Placement Check (first-time)\r",
+    "chars": 27954,
+    "consentRelated": false
+  },
+  {
+    "file": "060_Mode_Selector_Sheet.md",
+    "heading": "# Screen 060 — Mode Selector Sheet\r",
+    "chars": 25963,
+    "consentRelated": false
+  },
+  {
+    "file": "061_Surah_Learning.md",
+    "heading": "# Screen 061 — Surah Learning\r",
+    "chars": 31111,
+    "consentRelated": false
+  },
+  {
+    "file": "062_Recitation_Recorder_Overlay.md",
+    "heading": "# Screen 062 — Recitation Recorder Overlay\r",
+    "chars": 28198,
+    "consentRelated": false
+  },
+  {
+    "file": "063_AI_Pronunciation_Feedback_Screen.md",
+    "heading": "# Screen 063 — AI Pronunciation Feedback Screen\r",
+    "chars": 29544,
+    "consentRelated": false
+  },
+  {
+    "file": "064_Listen_Only_Self_Assessment_Screen.md",
+    "heading": "# Screen 064 — Listen-Only Self-Assessment Screen\r",
+    "chars": 27715,
+    "consentRelated": false
+  },
+  {
+    "file": "065_Arabic_Letters_Hear_Match.md",
+    "heading": "# Screen 065 — Arabic Letters — Hear & Match\r",
+    "chars": 29792,
+    "consentRelated": false
+  },
+  {
+    "file": "066_Arabic_Letters_Tracing.md",
+    "heading": "# Screen 066 — Arabic Letters — Tracing\r",
+    "chars": 29088,
+    "consentRelated": false
+  },
+  {
+    "file": "067_Arabic_Letters_Word_Context.md",
+    "heading": "# Screen 067 — Arabic Letters — Word Context\r",
+    "chars": 29405,
+    "consentRelated": false
+  },
+  {
+    "file": "068_Arabic_Letters_Word_Building_sound_tiles.md",
+    "heading": "# Screen 068 — Arabic Letters — Word-Building (sound tiles)\r",
+    "chars": 29779,
+    "consentRelated": false
+  },
+  {
+    "file": "069_Tajweed_Rule_Introduction.md",
+    "heading": "# Screen 069 — Tajweed — Rule Introduction\r",
+    "chars": 26852,
+    "consentRelated": false
+  },
+  {
+    "file": "070_Tajweed_Listen_normal_slow.md",
+    "heading": "# Screen 070 — Tajweed — Listen (normal/slow)\r",
+    "chars": 28347,
+    "consentRelated": false
+  },
+  {
+    "file": "071_Tajweed_Rule_Identification_Exercise.md",
+    "heading": "# Screen 071 — Tajweed — Rule Identification Exercise\r",
+    "chars": 30491,
+    "consentRelated": false
+  },
+  {
+    "file": "072_Tajweed_Assessment.md",
+    "heading": "# Screen 072 — Tajweed — Assessment\r",
+    "chars": 28834,
+    "consentRelated": false
+  },
+  {
+    "file": "073_Quran_Game_Ayah_Ordering.md",
+    "heading": "# Screen 073 — Quran Game — Ayah Ordering\r",
+    "chars": 30175,
+    "consentRelated": false
+  },
+  {
+    "file": "074_Quran_Game_Listen_Select_Matching_Ayah.md",
+    "heading": "# Screen 074 — Quran Game — Listen & Select Matching Ayah\r",
+    "chars": 30725,
+    "consentRelated": false
+  },
+  {
+    "file": "075_Quran_Game_Missing_Word.md",
+    "heading": "# Screen 075 — Quran Game — Missing Word\r",
+    "chars": 29695,
+    "consentRelated": false
+  },
+  {
+    "file": "076_Quran_Game_Surah_Theme_Matching.md",
+    "heading": "# Screen 076 — Quran Game — Surah Theme Matching\r",
+    "chars": 29709,
+    "consentRelated": false
+  },
+  {
+    "file": "077_Quran_Game_Recitation_Echo.md",
+    "heading": "# Screen 077 — Quran Game — Recitation Echo\r",
+    "chars": 31478,
+    "consentRelated": false
+  },
+  {
+    "file": "078_Quran_Game_Progressive_Memorization_Reveal.md",
+    "heading": "# Screen 078 — Quran Game — Progressive Memorization Reveal\r",
+    "chars": 29599,
+    "consentRelated": false
+  },
+  {
+    "file": "079_Hint_Overlay_progressive_hint.md",
+    "heading": "# Screen 079 — Hint Overlay (progressive hint)\r",
+    "chars": 25994,
+    "consentRelated": false
+  },
+  {
+    "file": "080_Mastery_Badge_Node_Unlock_Celebration.md",
+    "heading": "# Screen 080 — Mastery Badge/Node-Unlock Celebration\r",
+    "chars": 27931,
+    "consentRelated": false
+  },
+  {
+    "file": "081_Microphone_Permission_Rationale_One_Time_Explainer.md",
+    "heading": "# Screen 081 — Microphone Permission Rationale / One-Time Explainer\r",
+    "chars": 27162,
+    "consentRelated": false
+  },
+  {
+    "file": "082_Arabic_Letters_Contextual_Form_Matching_Isolated_Initial_Medial_Final.md",
+    "heading": "# Screen 082 — Arabic Letters — Contextual Form Matching (Isolated / Initial / Medial / Final)\r",
+    "chars": 18321,
+    "consentRelated": false
+  },
+  {
+    "file": "083_Arabic_Letters_Harakah_Sound_Pairing.md",
+    "heading": "# Screen 083 — Arabic Letters — Harakah Sound Pairing\r",
+    "chars": 18474,
+    "consentRelated": false
+  },
+  {
+    "file": "084_Dua_Learning_Landing_Category_List.md",
+    "heading": "# Screen 084 — Dua Learning Landing (Category List)\r",
+    "chars": 29941,
+    "consentRelated": false
+  },
+  {
+    "file": "085_Category_Dua_List.md",
+    "heading": "# Screen 085 — Category Dua List\r",
+    "chars": 27411,
+    "consentRelated": false
+  },
+  {
+    "file": "086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md",
+    "heading": "# Screen 086 — Dua Card Detail (Arabic/Transliteration/Translation/Audio)\r",
+    "chars": 33076,
+    "consentRelated": false
+  },
+  {
+    "file": "087_Recall_Quiz_Question_Screen.md",
+    "heading": "# Screen 087 — Recall Quiz Question Screen\r",
+    "chars": 26467,
+    "consentRelated": false
+  },
+  {
+    "file": "088_Recall_Quiz_Result_Pass_Screen.md",
+    "heading": "# Screen 088 — Recall Quiz Result / Pass Screen\r",
+    "chars": 26111,
+    "consentRelated": false
+  },
+  {
+    "file": "089_Dua_Master_Badge_Progress_Celebration_milestone.md",
+    "heading": "# Screen 089 — Dua Master Badge Progress Celebration (milestone)\r",
+    "chars": 27906,
+    "consentRelated": false
+  },
+  {
+    "file": "090_Habit_Tracker_Reminder_Suggestion_Prompt.md",
+    "heading": "# Screen 090 — Habit Tracker Reminder Suggestion Prompt\r",
+    "chars": 24277,
+    "consentRelated": false
+  },
+  {
+    "file": "091_Habit_Builder_Today_s_Checklist.md",
+    "heading": "# Screen 091 — Habit Builder — Today's Checklist\r",
+    "chars": 34928,
+    "consentRelated": false
+  },
+  {
+    "file": "092_Dhikr_Counter_Screen.md",
+    "heading": "# Screen 092 — Dhikr Counter Screen\r",
+    "chars": 28310,
+    "consentRelated": false
+  },
+  {
+    "file": "093_Good_Deed_Logging_Category_Selector.md",
+    "heading": "# Screen 093 — Good Deed Logging — Category Selector\r",
+    "chars": 27077,
+    "consentRelated": false
+  },
+  {
+    "file": "094_Good_Deed_Optional_Note_Entry.md",
+    "heading": "# Screen 094 — Good Deed Optional Note Entry\r",
+    "chars": 26652,
+    "consentRelated": false
+  },
+  {
+    "file": "095_Streak_Calendar_History_View.md",
+    "heading": "# Screen 095 — Streak Calendar / History View\r",
+    "chars": 27425,
+    "consentRelated": false
+  },
+  {
+    "file": "096_Recovery_Mission_Screen.md",
+    "heading": "# Screen 096 — Recovery Mission Screen\r",
+    "chars": 25688,
+    "consentRelated": false
+  },
+  {
+    "file": "097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md",
+    "heading": "# Screen 097 — Streak State Detail — AtRisk / Protected / Broken / Recovery\r",
+    "chars": 29330,
+    "consentRelated": false
+  },
+  {
+    "file": "098_Mercy_Toned_Smaller_Target_Suggestion_Prompt.md",
+    "heading": "# Screen 098 — Mercy-Toned Smaller-Target Suggestion Prompt\r",
+    "chars": 26629,
+    "consentRelated": false
+  },
+  {
+    "file": "099_Noor_Garden_Personal_View.md",
+    "heading": "# Screen 099 — Noor Garden — Personal View\r",
+    "chars": 29334,
+    "consentRelated": false
+  },
+  {
+    "file": "100_Noor_Garden_Family_View.md",
+    "heading": "# Screen 100 — Noor Garden — Family View\r",
+    "chars": 29173,
+    "consentRelated": false
+  },
+  {
+    "file": "101_Family_Streak_Milestone_Celebration.md",
+    "heading": "# Screen 101 — Family Streak Milestone Celebration\r",
+    "chars": 28779,
+    "consentRelated": false
+  },
+  {
+    "file": "102_Quiz_Question_Screen_Multiple_Choice.md",
+    "heading": "# Screen 102 — Quiz Question Screen — Multiple Choice\r",
+    "chars": 31142,
+    "consentRelated": false
+  },
+  {
+    "file": "103_Quiz_Question_Screen_Sequence_Ordering.md",
+    "heading": "# Screen 103 — Quiz Question Screen — Sequence/Ordering\r",
+    "chars": 31141,
+    "consentRelated": false
+  },
+  {
+    "file": "104_Quiz_Question_Screen_True_False.md",
+    "heading": "# Screen 104 — Quiz Question Screen — True/False\r",
+    "chars": 29667,
+    "consentRelated": false
+  },
+  {
+    "file": "105_Quiz_Question_Screen_Image_Match.md",
+    "heading": "# Screen 105 — Quiz Question Screen — Image Match\r",
+    "chars": 31199,
+    "consentRelated": false
+  },
+  {
+    "file": "106_Quiz_Question_Screen_Audio_Match.md",
+    "heading": "# Screen 106 — Quiz Question Screen — Audio Match\r",
+    "chars": 31911,
+    "consentRelated": false
+  },
+  {
+    "file": "107_Per_Answer_Explanation_Overlay.md",
+    "heading": "# Screen 107 — Per-Answer Explanation Overlay\r",
+    "chars": 26548,
+    "consentRelated": false
+  },
+  {
+    "file": "108_Retry_Set_Entry_Screen.md",
+    "heading": "# Screen 108 — Retry Set Entry Screen\r",
+    "chars": 24478,
+    "consentRelated": false
+  },
+  {
+    "file": "109_Quiz_Completion_Effort_XP_Reveal.md",
+    "heading": "# Screen 109 — Quiz Completion / Effort XP Reveal\r",
+    "chars": 28768,
+    "consentRelated": false
+  },
+  {
+    "file": "110_Quiz_Completion_Result_Screen_shared_generic.md",
+    "heading": "# Screen 110 — Quiz Completion Result Screen (shared, generic)\r",
+    "chars": 27619,
+    "consentRelated": false
+  },
+  {
+    "file": "111_Review_Mistakes_Screen.md",
+    "heading": "# Screen 111 — Review Mistakes Screen\r",
+    "chars": 25152,
+    "consentRelated": false
+  },
+  {
+    "file": "112_Offline_Completion_Saved_Results_Deferred.md",
+    "heading": "# Screen 112 — Offline Completion — Saved / Results Deferred\r",
+    "chars": 16496,
+    "consentRelated": false
+  },
+  {
+    "file": "113_Games_Hub_tile_grid_landing.md",
+    "heading": "# Screen 113 — Games Hub (tile grid landing)\r",
+    "chars": 30349,
+    "consentRelated": false
+  },
+  {
+    "file": "114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md",
+    "heading": "# Screen 114 — Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)\r",
+    "chars": 26674,
+    "consentRelated": false
+  },
+  {
+    "file": "115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md",
+    "heading": "# Screen 115 — Session Completion Screen (generic wrapper, reuses A.9's \"strengths + next step\" framing where applicable)\r",
+    "chars": 27904,
+    "consentRelated": false
+  },
+  {
+    "file": "116_Rewards_Hub_Wallet_landing.md",
+    "heading": "# Screen 116 — Rewards Hub / Wallet (landing)\r",
+    "chars": 34502,
+    "consentRelated": false
+  },
+  {
+    "file": "117_Transaction_Detail_single_ledger_entry.md",
+    "heading": "# Screen 117 — Transaction Detail (single ledger entry)\r",
+    "chars": 26141,
+    "consentRelated": false
+  },
+  {
+    "file": "118_Achievements_Screen_badge_grid_cumulative_level_progress.md",
+    "heading": "# Screen 118 — Achievements Screen (badge grid + cumulative level progress)\r",
+    "chars": 29825,
+    "consentRelated": false
+  },
+  {
+    "file": "119_Badge_Detail_Criteria_View.md",
+    "heading": "# Screen 119 — Badge Detail / Criteria View\r",
+    "chars": 26403,
+    "consentRelated": false
+  },
+  {
+    "file": "120_Achievement_Level_Detail.md",
+    "heading": "# Screen 120 — Achievement Level Detail\r",
+    "chars": 26517,
+    "consentRelated": false
+  },
+  {
+    "file": "121_Shareable_Achievement_Card_Preview.md",
+    "heading": "# Screen 121 — Shareable Achievement Card Preview\r",
+    "chars": 27332,
+    "consentRelated": false
+  },
+  {
+    "file": "122_Weekly_Challenge_Detail.md",
+    "heading": "# Screen 122 — Weekly Challenge Detail\r",
+    "chars": 27187,
+    "consentRelated": false
+  },
+  {
+    "file": "123_Seasonal_Event_Screen.md",
+    "heading": "# Screen 123 — Seasonal Event Screen\r",
+    "chars": 25862,
+    "consentRelated": false
+  },
+  {
+    "file": "124_Archived_Challenge_View.md",
+    "heading": "# Screen 124 — Archived Challenge View\r",
+    "chars": 26106,
+    "consentRelated": false
+  },
+  {
+    "file": "125_Achievement_Store_catalog_browse.md",
+    "heading": "# Screen 125 — Achievement Store (catalog browse)\r",
+    "chars": 29969,
+    "consentRelated": false
+  },
+  {
+    "file": "126_Achievement_Store_Item_Detail.md",
+    "heading": "# Screen 126 — Achievement Store — Item Detail\r",
+    "chars": 29594,
+    "consentRelated": false
+  },
+  {
+    "file": "127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md",
+    "heading": "# Screen 127 — Purchase Confirmation / Insufficient-Points Shortfall Screen\r",
+    "chars": 29775,
+    "consentRelated": false
+  },
+  {
+    "file": "128_Family_Board_private_multi_child_families.md",
+    "heading": "# Screen 128 — Family Board (private, multi-child families)\r",
+    "chars": 29077,
+    "consentRelated": false
+  },
+  {
+    "file": "129_Family_Goal_Detail.md",
+    "heading": "# Screen 129 — Family Goal Detail\r",
+    "chars": 26063,
+    "consentRelated": false
+  },
+  {
+    "file": "130_Family_Achievement_Unlock_Celebration.md",
+    "heading": "# Screen 130 — Family Achievement Unlock Celebration\r",
+    "chars": 28665,
+    "consentRelated": false
+  },
+  {
+    "file": "131_Badge_Unlock_Modal.md",
+    "heading": "# Screen 131 — Badge Unlock Modal\r",
+    "chars": 26433,
+    "consentRelated": false
+  },
+  {
+    "file": "132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md",
+    "heading": "# Screen 132 — Avatar Screen (3D preview + owned grid + locked teasers)\r",
+    "chars": 30670,
+    "consentRelated": false
+  },
+  {
+    "file": "133_Item_Detail_owned_Equip_Unequip.md",
+    "heading": "# Screen 133 — Item Detail (owned) — Equip/Unequip\r",
+    "chars": 26354,
+    "consentRelated": false
+  },
+  {
+    "file": "134_Locked_Item_Detail_Unlock_Criteria_View.md",
+    "heading": "# Screen 134 — Locked Item Detail — Unlock Criteria View\r",
+    "chars": 28912,
+    "consentRelated": false
+  },
+  {
+    "file": "135_Character_Evolution_Milestone_Reveal.md",
+    "heading": "# Screen 135 — Character Evolution Milestone Reveal\r",
+    "chars": 24759,
+    "consentRelated": false
+  },
+  {
+    "file": "136_Search.md",
+    "heading": "# Screen 136 — Search\r",
+    "chars": 20377,
+    "consentRelated": false
+  },
+  {
+    "file": "137_Voice_Search_Listening.md",
+    "heading": "# Screen 137 — Voice Search — Listening\r",
+    "chars": 16760,
+    "consentRelated": false
+  },
+  {
+    "file": "138_Voice_Search_Processing.md",
+    "heading": "# Screen 138 — Voice Search — Processing\r",
+    "chars": 15328,
+    "consentRelated": false
+  },
+  {
+    "file": "139_Voice_Search_Clarification.md",
+    "heading": "# Screen 139 — Voice Search — Clarification\r",
+    "chars": 15368,
+    "consentRelated": false
+  },
+  {
+    "file": "140_Search_Results.md",
+    "heading": "# Screen 140 — Search Results\r",
+    "chars": 20504,
+    "consentRelated": false
+  },
+  {
+    "file": "141_Search_Empty_State.md",
+    "heading": "# Screen 141 — Search Empty State\r",
+    "chars": 19915,
+    "consentRelated": false
+  },
+  {
+    "file": "142_Parent_Area_Search.md",
+    "heading": "# Screen 142 — Parent Area Search\r",
+    "chars": 15574,
+    "consentRelated": false
+  },
+  {
+    "file": "143_Favorites.md",
+    "heading": "# Screen 143 — Favorites\r",
+    "chars": 22565,
+    "consentRelated": false
+  },
+  {
+    "file": "144_Downloads.md",
+    "heading": "# Screen 144 — Downloads\r",
+    "chars": 23581,
+    "consentRelated": false
+  },
+  {
+    "file": "145_Clear_All_Downloads_Confirmation.md",
+    "heading": "# Screen 145 — Clear All Downloads Confirmation\r",
+    "chars": 15532,
+    "consentRelated": false
+  },
+  {
+    "file": "146_Parent_Download_Cap_and_Policy.md",
+    "heading": "# Screen 146 — Parent Download Cap and Policy\r",
+    "chars": 15652,
+    "consentRelated": false
+  },
+  {
+    "file": "147_Child_Profile.md",
+    "heading": "# Screen 147 — Child Profile\r",
+    "chars": 21097,
+    "consentRelated": false
+  },
+  {
+    "file": "148_Choose_Language.md",
+    "heading": "# Screen 148 — Choose Language\r",
+    "chars": 15741,
+    "consentRelated": false
+  },
+  {
+    "file": "149_Switch_Profile_Parent_Permission.md",
+    "heading": "# Screen 149 — Switch Profile Parent Permission\r",
+    "chars": 15514,
+    "consentRelated": false
+  },
+  {
+    "file": "150_Deep_Link_Resolver.md",
+    "heading": "# Screen 150 — Deep Link Resolver\r",
+    "chars": 16539,
+    "consentRelated": false
+  },
+  {
+    "file": "151_Islamic_Fact_Detail.md",
+    "heading": "# Screen 151 — Islamic Fact Detail\r",
+    "chars": 21603,
+    "consentRelated": false
+  },
+  {
+    "file": "152_Islamic_Facts_Browse.md",
+    "heading": "# Screen 152 — Islamic Facts Browse\r",
+    "chars": 18232,
+    "consentRelated": false
+  },
+  {
+    "file": "153_Parent_Profile_PIN_Biometric_Gate.md",
+    "heading": "# Screen 153 — Parent Profile PIN/Biometric Gate\r",
+    "chars": 21972,
+    "consentRelated": false
+  },
+  {
+    "file": "154_Restriction_Screen.md",
+    "heading": "# Screen 154 — Restriction Screen\r",
+    "chars": 20188,
+    "consentRelated": false
+  },
+  {
+    "file": "155_Calm_Locked_State_screen_time_limit_reached.md",
+    "heading": "# Screen 155 — Calm Locked State (screen-time limit reached)\r",
+    "chars": 20481,
+    "consentRelated": false
+  },
+  {
+    "file": "156_Bedtime_Block_Screen.md",
+    "heading": "# Screen 156 — Bedtime Block Screen\r",
+    "chars": 20403,
+    "consentRelated": false
+  },
+  {
+    "file": "157_Parent_Dashboard_landing.md",
+    "heading": "# Screen 157 — Parent Dashboard (landing)\r",
+    "chars": 29163,
+    "consentRelated": false
+  },
+  {
+    "file": "158_Child_Management_List.md",
+    "heading": "# Screen 158 — Child Management (List)\r",
+    "chars": 25270,
+    "consentRelated": false
+  },
+  {
+    "file": "159_Add_Child_Parent_Management.md",
+    "heading": "# Screen 159 — Add Child (Parent Management)\r",
+    "chars": 23326,
+    "consentRelated": false
+  },
+  {
+    "file": "160_Edit_Child_Parent_Management.md",
+    "heading": "# Screen 160 — Edit Child (Parent Management)\r",
+    "chars": 21509,
+    "consentRelated": false
+  },
+  {
+    "file": "161_Disable_Confirmation_step_up_gated.md",
+    "heading": "# Screen 161 — Disable Confirmation (step-up gated)\r",
+    "chars": 21088,
+    "consentRelated": false
+  },
+  {
+    "file": "162_Re_Enable_Confirmation_step_up_gated.md",
+    "heading": "# Screen 162 — Re-Enable Confirmation (step-up gated)\r",
+    "chars": 21102,
+    "consentRelated": false
+  },
+  {
+    "file": "163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md",
+    "heading": "# Screen 163 — Permanent Deletion — Step 2: Irreversible-Data Warning\r",
+    "chars": 22718,
+    "consentRelated": false
+  },
+  {
+    "file": "164_Trial_Cancellation_Forced_Selection_Screen.md",
+    "heading": "# Screen 164 — Trial-Cancellation Forced-Selection Screen\r",
+    "chars": 21281,
+    "consentRelated": false
+  },
+  {
+    "file": "165_Per_Child_Report_full_view.md",
+    "heading": "# Screen 165 — Per-Child Report (full view)\r",
+    "chars": 31356,
+    "consentRelated": false
+  },
+  {
+    "file": "166_Skill_Detail_Drill_down.md",
+    "heading": "# Screen 166 — Skill Detail Drill-down\r",
+    "chars": 22248,
+    "consentRelated": false
+  },
+  {
+    "file": "167_AI_Interaction_History_full_screen.md",
+    "heading": "# Screen 167 — AI Interaction History (full screen)\r",
+    "chars": 25562,
+    "consentRelated": false
+  },
+  {
+    "file": "168_Safety_Report_on_demand_full_screen.md",
+    "heading": "# Screen 168 — Safety Report (on-demand, full screen)\r",
+    "chars": 22557,
+    "consentRelated": false
+  },
+  {
+    "file": "169_Monthly_Family_Report_cross_child_aggregate_only.md",
+    "heading": "# Screen 169 — Monthly Family Report (cross-child, aggregate-only)\r",
+    "chars": 22476,
+    "consentRelated": false
+  },
+  {
+    "file": "170_AI_Insight_Report_premium.md",
+    "heading": "# Screen 170 — AI Insight Report (premium)\r",
+    "chars": 22292,
+    "consentRelated": false
+  },
+  {
+    "file": "171_Achievement_Share_Card_Preview_PII_free.md",
+    "heading": "# Screen 171 — Achievement Share Card Preview (PII-free)\r",
+    "chars": 22180,
+    "consentRelated": false
+  },
+  {
+    "file": "172_Full_Activity_Timeline.md",
+    "heading": "# Screen 172 — Full Activity Timeline\r",
+    "chars": 15407,
+    "consentRelated": false
+  },
+  {
+    "file": "173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md",
+    "heading": "# Screen 173 — Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)\r",
+    "chars": 23443,
+    "consentRelated": false
+  },
+  {
+    "file": "174_Screen_Time_Settings_per_child.md",
+    "heading": "# Screen 174 — Screen Time Settings (per child)\r",
+    "chars": 27774,
+    "consentRelated": false
+  },
+  {
+    "file": "175_Quiet_Hours_Bedtime_Settings_per_child.md",
+    "heading": "# Screen 175 — Quiet Hours / Bedtime Settings (per child)\r",
+    "chars": 24323,
+    "consentRelated": false
+  },
+  {
+    "file": "176_AI_Permissions_Settings_per_child.md",
+    "heading": "# Screen 176 — AI Permissions Settings (per child)\r",
+    "chars": 24385,
+    "consentRelated": false
+  },
+  {
+    "file": "177_Content_Age_Level_Settings_per_child.md",
+    "heading": "# Screen 177 — Content Age Level Settings (per child)\r",
+    "chars": 23181,
+    "consentRelated": false
+  },
+  {
+    "file": "178_Child_Locks_Sessions_per_child.md",
+    "heading": "# Screen 178 — Child Locks & Sessions (per child)\r",
+    "chars": 26008,
+    "consentRelated": false
+  },
+  {
+    "file": "179_Set_Lock_Type_Pattern_PIN_Biometric_None.md",
+    "heading": "# Screen 179 — Set Lock Type (Pattern/PIN/Biometric/None)\r",
+    "chars": 22837,
+    "consentRelated": false
+  },
+  {
+    "file": "180_Device_Revocation_Confirmation.md",
+    "heading": "# Screen 180 — Device Revocation Confirmation\r",
+    "chars": 22745,
+    "consentRelated": false
+  },
+  {
+    "file": "181_Content_Age_Level_Override_Confirmation.md",
+    "heading": "# Screen 181 — Content Age Level — Override Confirmation\r",
+    "chars": 22820,
+    "consentRelated": false
+  },
+  {
+    "file": "182_Subscription_Billing_landing.md",
+    "heading": "# Screen 182 — Subscription & Billing (landing)\r",
+    "chars": 25786,
+    "consentRelated": false
+  },
+  {
+    "file": "183_Plan_Comparison.md",
+    "heading": "# Screen 183 — Plan Comparison\r",
+    "chars": 28557,
+    "consentRelated": false
+  },
+  {
+    "file": "184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md",
+    "heading": "# Screen 184 — Trial Disclosure Screen (length, price, renewal date, auto-renew)\r",
+    "chars": 26073,
+    "consentRelated": false
+  },
+  {
+    "file": "185_Direct_Upgrade_Disclosure_Screen.md",
+    "heading": "# Screen 185 — Direct Upgrade Disclosure Screen\r",
+    "chars": 23911,
+    "consentRelated": false
+  },
+  {
+    "file": "186_Invoice_History.md",
+    "heading": "# Screen 186 — Invoice History\r",
+    "chars": 23534,
+    "consentRelated": false
+  },
+  {
+    "file": "187_Invoice_Detail.md",
+    "heading": "# Screen 187 — Invoice Detail\r",
+    "chars": 23446,
+    "consentRelated": false
+  },
+  {
+    "file": "188_Cancel_Flow_Confirmation.md",
+    "heading": "# Screen 188 — Cancel Flow — Confirmation\r",
+    "chars": 24489,
+    "consentRelated": false
+  },
+  {
+    "file": "189_Retry_Failed_Payment.md",
+    "heading": "# Screen 189 — Retry Failed Payment\r",
+    "chars": 23697,
+    "consentRelated": false
+  },
+  {
+    "file": "190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md",
+    "heading": "# Screen 190 — Free-Plan Second-Child Upgrade Prompt (parent-mode only)\r",
+    "chars": 24778,
+    "consentRelated": false
+  },
+  {
+    "file": "191_Notifications_Parent_Inbox.md",
+    "heading": "# Screen 191 — Notifications (Parent) Inbox\r",
+    "chars": 26189,
+    "consentRelated": false
+  },
+  {
+    "file": "192_Notification_Preferences_Category_Toggles.md",
+    "heading": "# Screen 192 — Notification Preferences — Category Toggles\r",
+    "chars": 25615,
+    "consentRelated": false
+  },
+  {
+    "file": "193_Notification_Preferences_Quiet_Hours.md",
+    "heading": "# Screen 193 — Notification Preferences — Quiet Hours\r",
+    "chars": 20915,
+    "consentRelated": false
+  },
+  {
+    "file": "194_Support_Center_landing.md",
+    "heading": "# Screen 194 — Support Center (landing)\r",
+    "chars": 24802,
+    "consentRelated": false
+  },
+  {
+    "file": "195_FAQ_Search.md",
+    "heading": "# Screen 195 — FAQ Search\r",
+    "chars": 20889,
+    "consentRelated": false
+  },
+  {
+    "file": "196_FAQ_Article_Detail.md",
+    "heading": "# Screen 196 — FAQ Article Detail\r",
+    "chars": 20993,
+    "consentRelated": false
+  },
+  {
+    "file": "197_Contact_Support_Form.md",
+    "heading": "# Screen 197 — Contact Support Form\r",
+    "chars": 23829,
+    "consentRelated": false
+  },
+  {
+    "file": "198_Ticket_Submitted_Confirmation.md",
+    "heading": "# Screen 198 — Ticket Submitted Confirmation\r",
+    "chars": 20976,
+    "consentRelated": false
+  },
+  {
+    "file": "199_Ticket_History_List.md",
+    "heading": "# Screen 199 — Ticket History List\r",
+    "chars": 21568,
+    "consentRelated": false
+  },
+  {
+    "file": "200_Ticket_Detail_Status_View.md",
+    "heading": "# Screen 200 — Ticket Detail / Status View\r",
+    "chars": 21916,
+    "consentRelated": false
+  },
+  {
+    "file": "201_Settings_landing.md",
+    "heading": "# Screen 201 — Settings (landing)\r",
+    "chars": 22467,
+    "consentRelated": false
+  },
+  {
+    "file": "202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md",
+    "heading": "# Screen 202 — Privacy & Support (landing, may be a sub-section of Settings)\r",
+    "chars": 25456,
+    "consentRelated": false
+  },
+  {
+    "file": "203_Parent_PIN_Reset_Account_Security.md",
+    "heading": "# Screen 203 — Parent PIN Reset (Account Security)\r",
+    "chars": 16281,
+    "consentRelated": false
+  },
+  {
+    "file": "204_Security_Device_List.md",
+    "heading": "# Screen 204 — Security — Device List\r",
+    "chars": 21891,
+    "consentRelated": false
+  },
+  {
+    "file": "205_Device_Revocation_Confirmation.md",
+    "heading": "# Screen 205 — Device Revocation Confirmation\r",
+    "chars": 22235,
+    "consentRelated": false
+  },
+  {
+    "file": "206_Consent_Log.md",
+    "heading": "# Screen 206 — Consent Log\r",
+    "chars": 28396,
+    "consentRelated": true
+  },
+  {
+    "file": "207_Consent_Detail_full_text_status.md",
+    "heading": "# Screen 207 — Consent Detail (full text + status)\r",
+    "chars": 22283,
+    "consentRelated": true
+  },
+  {
+    "file": "208_Withdraw_Optional_Consent_Confirmation.md",
+    "heading": "# Screen 208 — Withdraw Optional Consent — Confirmation\r",
+    "chars": 22164,
+    "consentRelated": true
+  },
+  {
+    "file": "209_AI_Interaction_History.md",
+    "heading": "# Screen 209 — AI Interaction History\r",
+    "chars": 27164,
+    "consentRelated": false
+  },
+  {
+    "file": "210_AI_Interaction_Detail_redacted.md",
+    "heading": "# Screen 210 — AI Interaction Detail (redacted)\r",
+    "chars": 22248,
+    "consentRelated": false
+  },
+  {
+    "file": "211_Language_Picker.md",
+    "heading": "# Screen 211 — Language Picker\r",
+    "chars": 21945,
+    "consentRelated": false
+  },
+  {
+    "file": "212_Data_Export_Request.md",
+    "heading": "# Screen 212 — Data Export Request\r",
+    "chars": 22096,
+    "consentRelated": false
+  },
+  {
+    "file": "213_Export_Status_Tracking_preparing_ready.md",
+    "heading": "# Screen 213 — Export Status Tracking (preparing/ready)\r",
+    "chars": 22473,
+    "consentRelated": false
+  },
+  {
+    "file": "214_Logout_Confirmation_unsynced_downloads_present.md",
+    "heading": "# Screen 214 — Logout Confirmation (unsynced downloads present)\r",
+    "chars": 22338,
+    "consentRelated": false
+  },
+  {
+    "file": "215_Security_PIN_and_Device_Management_landing.md",
+    "heading": "# Screen 215 — Security (PIN and Device Management landing)\r",
+    "chars": 16076,
+    "consentRelated": false
+  },
+  {
+    "file": "216_Account_Deletion_Request_and_Confirmation.md",
+    "heading": "# Screen 216 — Account Deletion Request and Confirmation\r",
+    "chars": 15413,
+    "consentRelated": false
+  },
+  {
+    "file": "217_Pending_Account_Deletion_and_Cancellation.md",
+    "heading": "# Screen 217 — Pending Account Deletion and Cancellation\r",
+    "chars": 15428,
+    "consentRelated": false
+  },
+  {
+    "file": "218_Ramadan_Prep_Countdown.md",
+    "heading": "# Screen 218 — Ramadan Prep / Countdown\r",
+    "chars": 16859,
+    "consentRelated": false
+  },
+  {
+    "file": "219_Ramadan_Home.md",
+    "heading": "# Screen 219 — Ramadan Home\r",
+    "chars": 17443,
+    "consentRelated": false
+  },
+  {
+    "file": "220_Ramadan_Journey_Map.md",
+    "heading": "# Screen 220 — Ramadan Journey Map\r",
+    "chars": 21858,
+    "consentRelated": false
+  },
+  {
+    "file": "221_Night_Recap.md",
+    "heading": "# Screen 221 — Night Recap\r",
+    "chars": 16393,
+    "consentRelated": false
+  },
+  {
+    "file": "222_Ramadan_Mission_Detail.md",
+    "heading": "# Screen 222 — Ramadan Mission Detail\r",
+    "chars": 17592,
+    "consentRelated": false
+  },
+  {
+    "file": "223_Ramadan_Story_Player.md",
+    "heading": "# Screen 223 — Ramadan Story Player\r",
+    "chars": 17159,
+    "consentRelated": false
+  },
+  {
+    "file": "224_Fasting_Tracker.md",
+    "heading": "# Screen 224 — Fasting Tracker\r",
+    "chars": 18020,
+    "consentRelated": false
+  },
+  {
+    "file": "225_Laylatul_Qadr_Reflection.md",
+    "heading": "# Screen 225 — Laylatul Qadr Reflection\r",
+    "chars": 18228,
+    "consentRelated": false
+  },
+  {
+    "file": "226_Eid_Countdown.md",
+    "heading": "# Screen 226 — Eid Countdown\r",
+    "chars": 16520,
+    "consentRelated": false
+  },
+  {
+    "file": "227_Eid_Home.md",
+    "heading": "# Screen 227 — Eid Home\r",
+    "chars": 17574,
+    "consentRelated": false
+  },
+  {
+    "file": "228_Eid_Reward_Reveal.md",
+    "heading": "# Screen 228 — Eid Reward Reveal\r",
+    "chars": 16566,
+    "consentRelated": false
+  },
+  {
+    "file": "229_Eid_Card_Generator.md",
+    "heading": "# Screen 229 — Eid Card Generator\r",
+    "chars": 17211,
+    "consentRelated": false
+  },
+  {
+    "file": "230_Ramadan_Complete_Certificate.md",
+    "heading": "# Screen 230 — Ramadan Complete Certificate\r",
+    "chars": 16952,
+    "consentRelated": false
+  },
+  {
+    "file": "231_Post_Eid_Keep_the_Habit.md",
+    "heading": "# Screen 231 — Post-Eid Keep the Habit\r",
+    "chars": 16783,
+    "consentRelated": false
+  },
+  {
+    "file": "232_Parent_Ramadan_Settings.md",
+    "heading": "# Screen 232 — Parent Ramadan Settings\r",
+    "chars": 17691,
+    "consentRelated": false
+  },
+  {
+    "file": "233_Parent_Ramadan_Dashboard.md",
+    "heading": "# Screen 233 — Parent Ramadan Dashboard\r",
+    "chars": 16694,
+    "consentRelated": false
+  },
+  {
+    "file": "234_Family_Ramadan_Aggregate.md",
+    "heading": "# Screen 234 — Family Ramadan Aggregate\r",
+    "chars": 17967,
+    "consentRelated": false
+  },
+  {
+    "file": "235_Family_Ramadan_Report.md",
+    "heading": "# Screen 235 — Family Ramadan Report\r",
+    "chars": 16981,
+    "consentRelated": false
+  },
+  {
+    "file": "236_Conversion_Moment_Card.md",
+    "heading": "# Screen 236 — Conversion Moment Card\r",
+    "chars": 17471,
+    "consentRelated": false
+  },
+  {
+    "file": "237_Family_Member_Invite.md",
+    "heading": "# Screen 237 — Family Member Invite\r",
+    "chars": 17051,
+    "consentRelated": false
+  }
+]

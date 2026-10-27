@@ -1,0 +1,114 @@
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Feedback.kt:11:import androidx.compose.material3.SnackbarHost
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Feedback.kt:12:import androidx.compose.material3.SnackbarHostState
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Feedback.kt:32:public fun NoorSnackbarHost(
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Feedback.kt:33:    hostState: SnackbarHostState,
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Feedback.kt:36:    SnackbarHost(
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Feedback.kt:55:public fun NoorToast(
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/NoorCoreUiPrimitives.kt:9:import androidx.compose.material3.SnackbarHostState
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/NoorCoreUiPrimitives.kt:216:    hostState: SnackbarHostState,
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/NoorCoreUiPrimitives.kt:219:    NoorSnackbarHost(
+HEAD:core/core-ui/src/commonMain/kotlin/com/noorheroes/core/ui/component/Rewards.kt:150:public fun XpGainToast(
+HEAD:feature/feature-bedtime-audio/src/commonMain/kotlin/com/noorheroes/feature/bedtime/audio/presentation/BedtimeAudioContract.kt:41:    data class ShowToast(val message: String) : BedtimeAudioEffect
+HEAD:feature/feature-bedtime-audio/src/commonMain/kotlin/com/noorheroes/feature/bedtime/audio/ui/BedtimeAudioPlayerScreen.kt:13:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-bedtime-audio/src/commonMain/kotlin/com/noorheroes/feature/bedtime/audio/ui/BedtimeAudioPlayerScreen.kt:14:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-bedtime-audio/src/commonMain/kotlin/com/noorheroes/feature/bedtime/audio/ui/BedtimeAudioPlayerScreen.kt:66:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-bedtime-audio/src/commonMain/kotlin/com/noorheroes/feature/bedtime/audio/ui/BedtimeAudioPlayerScreen.kt:83:                is BedtimeAudioEffect.ShowToast -> snackbarHostState.showSnackbar(effect.message)
+HEAD:feature/feature-bedtime-audio/src/commonMain/kotlin/com/noorheroes/feature/bedtime/audio/ui/BedtimeAudioPlayerScreen.kt:92:            snackbarHost = { SnackbarHost(snackbarHostState) },
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/presentation/otp/OtpVerificationViewModel.kt:24:    data class ShowSnackbar(val messageKey: String) : OtpVerificationEvent()
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/presentation/otp/OtpVerificationViewModel.kt:68:                    emitEvent(OtpVerificationEvent.ShowSnackbar(PreferenceConstants.ERROR_GENERIC))
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/presentation/otp/OtpVerificationViewModel.kt:80:                    emitEvent(OtpVerificationEvent.ShowSnackbar(PreferenceConstants.ERROR_GENERIC))
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/presentation/signup/SignUpViewModel.kt:24:    data class ShowSnackbar(val messageKey: String) : SignUpEvent()
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/presentation/signup/SignUpViewModel.kt:60:                        emitEvent(SignUpEvent.ShowSnackbar(error.toSnackbarKey()))
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/state/OnboardingViewModel.kt:41:    data class ShowToast(val message: String) : OnboardingEvent
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/ui/AddChildScreen.kt:94:                is AddChildEvent.ShowToast -> { /* Snackbar or toast feedback */ }
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/ui/OtpVerificationScreen.kt:115:                is OtpVerificationEvent.ShowToast -> { /* Handled via non-blocking UI */ }
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/ui/RegistrationConsentScreen.kt:111:                is RegistrationEvent.ShowToast -> { /* Non-blocking toast handled via state */ }
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/viewmodel/AddChildState.kt:74:    data class ShowToast(val message: String) : AddChildEvent
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/viewmodel/OtpVerificationEvent.kt:30:    data class ShowToast(val message: String) : OtpVerificationEvent
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/viewmodel/RegistrationEvent.kt:43:    data class ShowToast(val message: String) : RegistrationEvent
+HEAD:feature/feature-onboarding/src/commonMain/kotlin/com/noorheroes/feature/onboarding/viewmodel/SplashEvent.kt:22:    data class ShowToast(val message: String) : SplashEvent
+HEAD:feature/feature-profile/src/commonMain/kotlin/com/noorheroes/feature/profile/viewmodel/ChildProfileViewModel.kt:78:    data class ShowSnackbar(val message: String) : ChildProfileEffect
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyBoardScreen.kt:19:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyBoardScreen.kt:20:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyBoardScreen.kt:63:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyBoardScreen.kt:72:                is FamilyBoardEffect.ShowSnackbar ->
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyBoardScreen.kt:117:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyBoardUiState.kt:180:    data class ShowSnackbar(val message: String) : FamilyBoardEffect
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyGoalDetailScreen.kt:22:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyGoalDetailScreen.kt:23:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyGoalDetailScreen.kt:76:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/family/FamilyGoalDetailScreen.kt:111:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/ArchivedChallengeScreen.kt:22:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/ArchivedChallengeScreen.kt:23:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/ArchivedChallengeScreen.kt:79:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/ArchivedChallengeScreen.kt:92:                is MissionsEffect.ShowSnackbar -> snackbarHostState.showSnackbar(effect.message)
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/ArchivedChallengeScreen.kt:113:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/MissionsUiState.kt:135:    data class ShowSnackbar(val message: String) : MissionsEffect
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/MissionsViewModel.kt:166:                emitEvent(MissionsEffect.ShowSnackbar("You are currently offline. Please reconnect to claim rewards."))
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/MissionsViewModel.kt:179:                emitEvent(MissionsEffect.ShowSnackbar("Claim failed. Please try again."))
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/MissionsViewModel.kt:285:                    emitEvent(MissionsEffect.ShowSnackbar("Unable to claim reward. Please retry."))
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/SeasonalEventScreen.kt:22:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/SeasonalEventScreen.kt:23:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/SeasonalEventScreen.kt:77:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/SeasonalEventScreen.kt:100:                is MissionsEffect.ShowSnackbar -> snackbarHostState.showSnackbar(effect.message)
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/SeasonalEventScreen.kt:121:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/WeeklyChallengeDetailScreen.kt:22:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/WeeklyChallengeDetailScreen.kt:23:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/WeeklyChallengeDetailScreen.kt:76:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/WeeklyChallengeDetailScreen.kt:99:                is MissionsEffect.ShowSnackbar -> snackbarHostState.showSnackbar(effect.message)
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/missions/WeeklyChallengeDetailScreen.kt:120:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreScreen.kt:25:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreScreen.kt:26:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreScreen.kt:80:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreScreen.kt:90:                is AchievementStoreEffect.ShowSnackbar -> snackbarHostState.showSnackbar(effect.message)
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreScreen.kt:108:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreUiState.kt:197:    data class ShowSnackbar(val message: String) : AchievementStoreEffect
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreViewModel.kt:252:            viewModelScope.launch { emitEvent(AchievementStoreEffect.ShowSnackbar(offlineMsg)) }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreViewModel.kt:359:                            emitEvent(AchievementStoreEffect.ShowSnackbar(offlineMsg))
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/AchievementStoreViewModel.kt:369:                            emitEvent(AchievementStoreEffect.ShowSnackbar(retryMsg))
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/PurchaseConfirmationScreen.kt:20:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/PurchaseConfirmationScreen.kt:21:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/PurchaseConfirmationScreen.kt:76:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/PurchaseConfirmationScreen.kt:90:                is AchievementStoreEffect.ShowSnackbar ->
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/PurchaseConfirmationScreen.kt:119:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/StoreItemDetailScreen.kt:19:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/StoreItemDetailScreen.kt:20:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/StoreItemDetailScreen.kt:78:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/StoreItemDetailScreen.kt:93:                is AchievementStoreEffect.ShowSnackbar ->
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/store/StoreItemDetailScreen.kt:113:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/wallet/RewardsWalletHubScreen.kt:20:import androidx.compose.material3.SnackbarHost
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/wallet/RewardsWalletHubScreen.kt:21:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/wallet/RewardsWalletHubScreen.kt:69:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/wallet/RewardsWalletHubScreen.kt:80:                is WalletEffect.ShowSnackbar -> snackbarHostState.showSnackbar(effect.message)
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/wallet/RewardsWalletHubScreen.kt:89:        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+HEAD:feature/feature-rewards/src/commonMain/kotlin/com/noorheroes/feature/rewards/wallet/WalletUiState.kt:133:    data class ShowSnackbar(val message: String) : WalletEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/StoriesLibraryEvent.kt:25:    data class ShowToast(val messageResKey: String) : StoriesLibraryEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/detail/StoryDetailEffect.kt:13:    data class ShowToast(val message: String) : StoryDetailEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/downloads/DownloadsManagerContract.kt:68:    data class ShowToast(val message: String) : DownloadsManagerEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/favorites/FavoritesContract.kt:48:    data class ShowToast(val message: String) : FavoritesEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/favorites/FavoritesViewModel.kt:167:                emitEvent(FavoritesEffect.ShowToast("This story is taking a break or has moved."))
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/parent/ParentStoryInsightsContract.kt:36:    data class ShowToast(val message: String) : ParentStoryInsightsEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/parent/ParentStoryInsightsViewModel.kt:138:                    emitEvent(ParentStoryInsightsEffect.ShowToast(error.message ?: "Sync failed"))
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/player/PlayerEffect.kt:9:    data class ShowToast(val message: String) : PlayerEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/share/ShareFlowContract.kt:54:    data class ShowToast(val message: String) : ShareFlowEffect
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/presentation/share/ShareFlowViewModel.kt:213:            emitEvent(ShareFlowEffect.ShowToast("Safe link copied!"))
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/StoriesLibraryScreen.kt:22:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/StoriesLibraryScreen.kt:43:import com.noorheroes.core.ui.component.NoorSnackbarHost
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/StoriesLibraryScreen.kt:63:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/StoriesLibraryScreen.kt:71:                is StoriesLibraryEffect.ShowToast -> {
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/StoriesLibraryScreen.kt:114:        snackbarHost = { NoorSnackbarHost(snackbarHostState) },
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/detail/StoryDetailScreen.kt:17:import androidx.compose.material3.SnackbarHostState
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/detail/StoryDetailScreen.kt:47:import com.noorheroes.core.ui.component.NoorSnackbarHost
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/detail/StoryDetailScreen.kt:85:    val snackbarHostState = remember { SnackbarHostState() }
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/detail/StoryDetailScreen.kt:113:                is StoryDetailEffect.ShowToast -> {
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/detail/StoryDetailScreen.kt:122:        snackbarHost = { NoorSnackbarHost(snackbarHostState) },
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/downloads/DownloadsManagerScreen.kt:63:                is DownloadsManagerEffect.ShowToast -> { /* Handled via in-app toast */ }
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/favorites/FavoritesListScreen.kt:80:                is FavoritesEffect.ShowToast -> {
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/parent/ParentStoryInsightsScreen.kt:64:                is ParentStoryInsightsEffect.ShowToast -> {
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/player/StoryPlayerScreen.kt:143:                is PlayerEffect.ShowToast -> Unit
+HEAD:feature/feature-stories/src/commonMain/kotlin/com/noorheroes/feature/stories/ui/share/ApprovedShareCardPreview.kt:89:                is ShareFlowEffect.ShowToast -> {
+HEAD:feature/feature-stories/src/commonTest/kotlin/com/noorheroes/feature/stories/presentation/favorites/FavoritesViewModelTest.kt:145:                if (effect is FavoritesEffect.ShowToast) {
+HEAD:feature/feature-stories/src/commonTest/kotlin/com/noorheroes/feature/stories/presentation/parent/ParentStoryInsightsViewModelTest.kt:151:    fun testRefreshFailure_emitsShowToastEffect() = runTest {
+HEAD:feature/feature-stories/src/commonTest/kotlin/com/noorheroes/feature/stories/presentation/parent/ParentStoryInsightsViewModelTest.kt:166:        assertIs<ParentStoryInsightsEffect.ShowToast>(emittedEffects[0])
+HEAD:feature/feature-stories/src/commonTest/kotlin/com/noorheroes/feature/stories/presentation/parent/ParentStoryInsightsViewModelTest.kt:167:        assertEquals("Sync timed out", (emittedEffects[0] as ParentStoryInsightsEffect.ShowToast).message)
+HEAD:shared/src/commonMain/kotlin/com/noorheroes/app/presentation/gallery/DesignSystemGalleryScreen.kt:252:                XpGainToast(amount = UIConstants.Demo.XP_AMOUNT)

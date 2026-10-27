@@ -1,0 +1,331 @@
+{
+  "finalTargetedReview": {
+    "lockoutMessage": "Exact approved wording retained; remaining seconds use a separate line",
+    "screenshot": "2026-10-21_010_Lockout_Final.png",
+    "actionChecksAfterFinalChange": "27 of 27 passed",
+    "presentPlayback": "not verified"
+  },
+  "status": "Implemented — awaiting user review",
+  "screen": "1612:1277",
+  "section": "1612:1246",
+  "processing": "1613:320",
+  "timeout": "1613:368",
+  "snackbar": "1615:316",
+  "keypad": "1618:318",
+  "collection": "VariableCollectionId:1612:1247",
+  "actionChecks": {
+    "checks": [
+      {
+        "name": "empty Verify disabled",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "partial does not submit",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "sixth digit auto-submits",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "digits retained in verifying",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "no duplicate submission during processing",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "success ends progress and blocks further verification",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "OTP success has no future destination",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "five invalid requests counted",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "sixth attempt locks before request",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "locked cells remain visually locked",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "cooldown releases lock",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "resend countdown reaches zero",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "resend starts progress",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "successful resend restarts countdown",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "expired code preserves digits and enables resend",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "offline shows Snackbar and ends progress",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "API error uses Snackbar",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "timeout remains processing until 10 seconds",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "10-second timeout restores action",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "wrong identifier returns Registration",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "Back returns Login",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "login success navigates OTP",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "login shared Google branch does not navigate OTP",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "registration success navigates OTP",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "registration shared Google branch does not navigate OTP",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "mobile keypad sixth tap auto-submits with overlay swap",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "name": "mobile delete clears only last digit",
+        "pass": true,
+        "detail": null
+      }
+    ],
+    "passed": 27,
+    "total": 27,
+    "failures": [],
+    "method": "Evaluation of stored Figma actions and expressions; not Present playback."
+  },
+  "structuralChecks": {
+    "preservation": [
+      {
+        "id": "1355:2696",
+        "pass": true,
+        "count": 373
+      },
+      {
+        "id": "1459:256",
+        "pass": true,
+        "count": 148
+      },
+      {
+        "id": "1131:2",
+        "pass": true,
+        "count": 41
+      },
+      {
+        "id": "1215:34",
+        "pass": true,
+        "count": 84
+      },
+      {
+        "id": "1215:138",
+        "pass": true,
+        "count": 79
+      },
+      {
+        "id": "1215:246",
+        "pass": true,
+        "count": 86
+      },
+      {
+        "id": "1215:356",
+        "pass": true,
+        "count": 87
+      },
+      {
+        "id": "1095:204",
+        "pass": true,
+        "count": 78
+      },
+      {
+        "id": "1085:22697",
+        "pass": true,
+        "count": 153
+      }
+    ],
+    "checks": [
+      {
+        "name": "main standard mobile dimensions",
+        "pass": true
+      },
+      {
+        "name": "correct Onboarding parent",
+        "pass": true
+      },
+      {
+        "name": "one existing V2 area",
+        "pass": true
+      },
+      {
+        "name": "six existing NH OtpCell instances",
+        "pass": true
+      },
+      {
+        "name": "six equal 48x56 cells",
+        "pass": true
+      },
+      {
+        "name": "10px gaps fit338 exactly",
+        "pass": true
+      },
+      {
+        "name": "approved14px card insets",
+        "pass": true
+      },
+      {
+        "name": "fixed56px action slot",
+        "pass": true
+      },
+      {
+        "name": "approved icon asset preserved",
+        "pass": true
+      },
+      {
+        "name": "pending009 remains removed",
+        "pass": true
+      },
+      {
+        "name": "all destinations exist",
+        "pass": true
+      },
+      {
+        "name": "no unsupported nested conditional actions",
+        "pass": true
+      },
+      {
+        "name": "OTP master remains six original variants",
+        "pass": true
+      },
+      {
+        "name": "cells retain live digit/state bindings",
+        "pass": true
+      },
+      {
+        "name": "OTP starts empty/not processing",
+        "pass": true
+      },
+      {
+        "name": "review states standard390x844",
+        "pass": true
+      },
+      {
+        "name": "review states have no timer instances",
+        "pass": true
+      }
+    ],
+    "passed": 17,
+    "total": 17,
+    "broken": [],
+    "nested": [],
+    "defaults": {
+      "Index": 0,
+      "Ready": false,
+      "Busy": false,
+      "Verified": false,
+      "Locked": false,
+      "Attempts": 0,
+      "ResendSeconds": 30,
+      "LockSeconds": 0,
+      "Countdown": "15s",
+      "Message": "",
+      "MessageVisible": false,
+      "Recipient": "•••",
+      "Entry": "login",
+      "Outcome": "success",
+      "Operation": "verify",
+      "ButtonState": "Disabled",
+      "ResendLabel": "Resend in 30s",
+      "Digit0": "",
+      "Cell0": "Focus",
+      "Digit1": "",
+      "Cell1": "Empty",
+      "Digit2": "",
+      "Cell2": "Empty",
+      "Digit3": "",
+      "Cell3": "Empty",
+      "Digit4": "",
+      "Cell4": "Empty",
+      "Digit5": "",
+      "Cell5": "Empty",
+      "LoaderPhase": "Start"
+    },
+    "newSectionNodes": 550,
+    "destinations": 63,
+    "uniqueDestinations": [
+      "1613:320",
+      "1612:2117",
+      "1355:2696",
+      "1459:256",
+      "1618:318",
+      "327:9",
+      "1612:2114",
+      "1612:2113",
+      "1613:368",
+      "1615:316",
+      "322:27",
+      "322:30"
+    ],
+    "method": "Read-only Figma geometry, component binding, prototype graph and approved-screen fingerprint audit."
+  }
+}

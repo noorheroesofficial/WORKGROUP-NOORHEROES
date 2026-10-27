@@ -1,0 +1,405 @@
+{
+  "build": {
+    "createdNodeIds": [
+      "1513:350",
+      "1513:351",
+      "1513:353",
+      "1513:354",
+      "1513:355",
+      "1513:356",
+      "1513:357",
+      "1513:358",
+      "1513:359",
+      "1513:361",
+      "1513:362",
+      "1513:363",
+      "1513:364",
+      "1513:365",
+      "1513:366",
+      "1513:367",
+      "1513:368",
+      "1513:369",
+      "1513:370",
+      "1513:371",
+      "1513:372",
+      "1513:373",
+      "1513:374",
+      "1513:375",
+      "1513:376",
+      "1513:377",
+      "1513:381",
+      "1513:386",
+      "1513:387",
+      "1513:389",
+      "1513:390",
+      "1513:391",
+      "1513:392",
+      "1513:393",
+      "1513:394",
+      "1513:395",
+      "1513:396",
+      "1513:397",
+      "1513:399",
+      "1513:400",
+      "1513:401",
+      "1513:402",
+      "1513:403",
+      "1513:404",
+      "1513:405",
+      "1513:406",
+      "1513:407",
+      "1513:408",
+      "1513:409",
+      "1513:410",
+      "1513:411",
+      "1513:412",
+      "1513:413",
+      "1513:414",
+      "1513:415",
+      "1513:416",
+      "1513:417",
+      "1513:421",
+      "1513:429",
+      "1513:430",
+      "1513:441"
+    ],
+    "changedNodeIds": [
+      "1459:1082",
+      "1459:1105",
+      "I1513:441;398:398",
+      "1459:1083",
+      "1459:1093",
+      "1459:1106",
+      "1459:1116",
+      "1459:256",
+      "1459:747",
+      "1459:749",
+      "1459:1003",
+      "1459:735",
+      "1459:1128",
+      "1459:751"
+    ],
+    "removedNodeIds": [
+      "1459:1059",
+      "1459:1060",
+      "I1459:1060;398:3",
+      "I1459:1060;398:4",
+      "I1459:1060;398:5",
+      "I1459:1060;398:5;396:5",
+      "I1459:1060;398:7",
+      "I1459:1060;398:8",
+      "I1459:1060;398:9",
+      "I1459:1060;398:10",
+      "I1459:1060;398:10;396:17",
+      "1459:1070",
+      "I1459:1070;398:398",
+      "I1459:1070;398:399",
+      "I1459:1070;398:400",
+      "I1459:1070;398:400;396:5",
+      "I1459:1070;398:401",
+      "I1459:1070;398:402",
+      "I1459:1070;398:403",
+      "I1459:1070;398:404",
+      "I1459:1070;398:404;396:17",
+      "1459:1034",
+      "1459:1036",
+      "1459:1037",
+      "I1459:1037;398:3",
+      "I1459:1037;398:4",
+      "I1459:1037;398:5",
+      "I1459:1037;398:5;396:5",
+      "I1459:1037;398:7",
+      "I1459:1037;398:8",
+      "I1459:1037;398:9",
+      "I1459:1037;398:10",
+      "I1459:1037;398:10;396:17",
+      "1459:1047",
+      "I1459:1047;398:398",
+      "I1459:1047;398:399",
+      "I1459:1047;398:400",
+      "I1459:1047;398:400;396:5",
+      "I1459:1047;398:401",
+      "I1459:1047;398:402",
+      "I1459:1047;398:403",
+      "I1459:1047;398:404",
+      "I1459:1047;398:404;396:17",
+      "1459:1057",
+      "1459:1058"
+    ],
+    "terms": {
+      "root": "1513:350",
+      "button": "1513:377",
+      "disabled": "1513:381",
+      "body": "1513:363"
+    },
+    "privacy": {
+      "root": "1513:386",
+      "button": "1513:417",
+      "disabled": "1513:421",
+      "body": "1513:401",
+      "back": "1513:393"
+    },
+    "summary": "1513:429",
+    "summaryStates": [
+      "1513:430",
+      "1513:441"
+    ],
+    "variables": {
+      "accepted": "VariableID:1513:348",
+      "notAccepted": "VariableID:1513:349"
+    },
+    "fieldHeight": "VariableID:1464:254",
+    "patchedHeightActions": 4
+  },
+  "optionalDetails": {
+    "createdNodeIds": [
+      "1514:354",
+      "1514:355",
+      "1514:356",
+      "1514:357",
+      "1514:358",
+      "1514:359",
+      "1514:380",
+      "1514:381",
+      "1514:376",
+      "I1514:376;322:25",
+      "I1514:376;322:26",
+      "I1514:376;322:26;322:9",
+      "1514:384",
+      "1514:385",
+      "1514:386",
+      "1514:387",
+      "1514:388",
+      "1514:389",
+      "1514:410",
+      "1514:411",
+      "1514:406",
+      "I1514:406;322:25",
+      "I1514:406;322:26",
+      "I1514:406;322:26;322:9",
+      "1514:414",
+      "1514:415",
+      "1514:416",
+      "1514:417",
+      "1514:418",
+      "1514:419",
+      "1514:440",
+      "1514:441",
+      "1514:436",
+      "I1514:436;322:25",
+      "I1514:436;322:26",
+      "I1514:436;322:26;322:9"
+    ],
+    "changed": [
+      "1511:392",
+      "1459:1006",
+      "1513:417",
+      "1459:1126",
+      "1459:1152",
+      "1459:1175",
+      "1459:1198"
+    ],
+    "details": [
+      {
+        "title": "Personalization/AI consent",
+        "root": "1514:354",
+        "trigger": "1459:1152",
+        "back": "1514:376"
+      },
+      {
+        "title": "Voice-feature consent",
+        "root": "1514:384",
+        "trigger": "1459:1175",
+        "back": "1514:406"
+      },
+      {
+        "title": "Marketing consent",
+        "root": "1514:414",
+        "trigger": "1459:1198",
+        "back": "1514:436"
+      }
+    ]
+  },
+  "final": {
+    "changedNodeIds": [
+      "I1511:392;1253:49",
+      "1459:1152",
+      "1459:1175",
+      "1459:1198",
+      "1514:376",
+      "1514:406",
+      "1514:436"
+    ],
+    "documents": [
+      {
+        "id": "1513:363",
+        "name": "Content/Terms & Conditions",
+        "copy": "1. Parent or guardian account\n\nA parent or legal guardian manages the family account. Confirm that you are 18 years or older before continuing. Children use a child profile supervised by their parent or guardian.\n\n2. Child’s age\n\nA parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.\n\n3. Child profile\n\nThe parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.\n\n4. Child data and parent controls\n\nChild profile information and learning progress support lessons, age-appropriate content and progress tracking. Child-data-processing consent is requested separately in the next step. Agreeing to these Terms does not turn on Personalization/AI, Voice-feature or Marketing consent.\n\n5. Fictional sample data\n\nChild name: Ayaan (sample)\nAge: 7 years (sample)\nPreferred language: English (sample)\nLearning progress: 3 lessons completed (sample)\n\nAll examples are fictional. No actual child information is displayed or saved by this prototype.\n\n6. Review and manage choices\n\nThe parent can review consent choices and use the approved privacy and support journeys to request help or changes. Optional preferences can be reviewed independently. Final legal terms, service conditions and available controls require legal and product review before release."
+      },
+      {
+        "id": "1513:401",
+        "name": "Content/Privacy Policy",
+        "copy": "1. What information is collected\n\nDraft scope includes the parent’s phone number or email for authentication, and child profile information such as nickname, date of birth, avatar, preferred language, learning level and learning progress. Additional optional information must be described before it is collected.\n\n2. Why it is collected and used\n\nAccount information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent.\n\n3. Optional processing remains separate\n\nPersonalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options.\n\n4. How information is protected\n\nDraft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented.\n\n5. Access, correction and deletion\n\nParents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request.\n\n6. Fictional example\n\nAyaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record.\n\n7. Your acknowledgement\n\nReview this draft Privacy Policy and make the separate child-data-processing choice below. Continuing acknowledges the Privacy Policy only; it does not enable optional processing. Close or go back without granting any unconfirmed consent."
+      },
+      {
+        "id": "1514:381",
+        "name": "Body/Draft content",
+        "copy": "Prototype draft · Legal review required\n\nOptional draft: Personalization/AI may use learning activity and profile preferences to tailor learning suggestions. This choice starts off and is independent of required child-data processing. The final description must specify verified data inputs, providers and controls.\n\nNo consent is granted by reading this page. Return to Optional preferences to make or change this choice."
+      },
+      {
+        "id": "1514:411",
+        "name": "Body/Draft content",
+        "copy": "Prototype draft · Legal review required\n\nOptional draft: Voice features may process a child’s voice input for the feature the parent enables. The final description must explain whether audio is transmitted or stored, its purpose, retention and available controls. A separate device microphone permission may also be required.\n\nThis prototype does not record audio. No consent is granted by reading this page."
+      },
+      {
+        "id": "1514:441",
+        "name": "Body/Draft content",
+        "copy": "Prototype draft · Legal review required\n\nOptional draft: Marketing communications require a separate parent choice. This choice starts off. The final description must identify the confirmed communication channels, information used, and how the parent can withdraw consent.\n\nThis prototype does not send communications. No consent is granted by reading this page."
+      }
+    ],
+    "main": "1459:256",
+    "terms": "1513:350",
+    "privacy": "1513:386",
+    "optional": "1511:380"
+  },
+  "validation": {
+    "tests": [
+      {
+        "name": "Opening does not grant consent",
+        "pass": true
+      },
+      {
+        "name": "Terms blocked until adult confirmation",
+        "pass": true
+      },
+      {
+        "name": "Terms explicit agreement only",
+        "pass": true
+      },
+      {
+        "name": "Terms closes before separate Privacy opens",
+        "pass": true
+      },
+      {
+        "name": "Privacy blocked without child-data consent",
+        "pass": true
+      },
+      {
+        "name": "Privacy cannot skip Terms",
+        "pass": true
+      },
+      {
+        "name": "All required + valid identity enables account",
+        "pass": true
+      },
+      {
+        "name": "Optional choices remain off",
+        "pass": true
+      },
+      {
+        "name": "Privacy returns without guessed future destination",
+        "pass": true
+      },
+      {
+        "name": "Offline blocks account submission",
+        "pass": true
+      },
+      {
+        "name": "All 16 required consent combinations correct",
+        "pass": true
+      },
+      {
+        "name": "Close preserves prior consent 1511:385",
+        "pass": true
+      },
+      {
+        "name": "Close preserves prior consent 1513:358",
+        "pass": true
+      },
+      {
+        "name": "Close preserves prior consent 1513:396",
+        "pass": true
+      },
+      {
+        "name": "Optional toggle independent 1459:1132",
+        "pass": true
+      },
+      {
+        "name": "Optional toggle independent 1459:1155",
+        "pass": true
+      },
+      {
+        "name": "Optional toggle independent 1459:1178",
+        "pass": true
+      },
+      {
+        "name": "Optional preferences gap is 14",
+        "pass": true
+      },
+      {
+        "name": "Fixed bottom action padding 1513:353",
+        "pass": true
+      },
+      {
+        "name": "Scrollable body 1513:362",
+        "pass": true
+      },
+      {
+        "name": "Fixed bottom action padding 1513:389",
+        "pass": true
+      },
+      {
+        "name": "Scrollable body 1513:400",
+        "pass": true
+      }
+    ],
+    "pass": true,
+    "count": 22,
+    "requiredCombinations": 16,
+    "changedSectionIds": [
+      "1459:216",
+      "1270:140",
+      "1128:2"
+    ],
+    "validation": "Non-mutating reaction interpreter and visual screenshots; not Present playback"
+  },
+  "finalChecks": {
+    "checks": [
+      {
+        "id": "1459:1152",
+        "destination": "1514:354",
+        "pass": true
+      },
+      {
+        "id": "1459:1175",
+        "destination": "1514:384",
+        "pass": true
+      },
+      {
+        "id": "1459:1198",
+        "destination": "1514:414",
+        "pass": true
+      },
+      {
+        "id": "1514:376",
+        "destination": "1511:380",
+        "pass": true
+      },
+      {
+        "id": "1514:406",
+        "destination": "1511:380",
+        "pass": true
+      },
+      {
+        "id": "1514:436",
+        "destination": "1511:380",
+        "pass": true
+      },
+      {
+        "name": "Validation helper fits error field height",
+        "pass": true
+      }
+    ],
+    "allPass": true
+  }
+}

@@ -1,0 +1,1203 @@
+{
+  "status": "Implemented — awaiting user review",
+  "main": "1650:502",
+  "section": "1650:465",
+  "actionChecks": {
+    "checks": [
+      {
+        "name": "empty setup disabled",
+        "pass": true
+      },
+      {
+        "name": "4 digit choice caps length and masks indicators",
+        "pass": true
+      },
+      {
+        "name": "4 digit setup advances to confirmation without format error",
+        "pass": true
+      },
+      {
+        "name": "5 digit choice caps length and masks indicators",
+        "pass": true
+      },
+      {
+        "name": "5 digit setup advances to confirmation without format error",
+        "pass": true
+      },
+      {
+        "name": "6 digit choice caps length and masks indicators",
+        "pass": true
+      },
+      {
+        "name": "6 digit setup advances to confirmation without format error",
+        "pass": true
+      },
+      {
+        "name": "Enter advances set pass without spurious validation error",
+        "pass": true
+      },
+      {
+        "name": "partial confirmation shows neutral format error and does not save",
+        "pass": true
+      },
+      {
+        "name": "mismatch clears confirmation only",
+        "pass": true
+      },
+      {
+        "name": "editing confirmation clears mismatch feedback",
+        "pass": true
+      },
+      {
+        "name": "Delete removes one masked position",
+        "pass": true
+      },
+      {
+        "name": "Back from confirmation preserves set-pass count",
+        "pass": true
+      },
+      {
+        "name": "Back from setup returns to confirmed prior OTP screen",
+        "pass": true
+      },
+      {
+        "name": "length choice cannot change during confirmation",
+        "pass": true
+      },
+      {
+        "name": "matching fixture starts primary loading",
+        "pass": true
+      },
+      {
+        "name": "saving guards duplicate submit and entry",
+        "pass": true
+      },
+      {
+        "name": "save success clears entry counts and leaves future route unmapped",
+        "pass": true
+      },
+      {
+        "name": "offline preserves both passes and shows Snackbar",
+        "pass": true
+      },
+      {
+        "name": "offline Retry completes and clears counts",
+        "pass": true
+      },
+      {
+        "name": "api preserves both passes and shows Snackbar",
+        "pass": true
+      },
+      {
+        "name": "api Retry completes and clears counts",
+        "pass": true
+      },
+      {
+        "name": "timeout remains busy after2 seconds",
+        "pass": true
+      },
+      {
+        "name": "10 second timeout restores retry and preserves confirmation",
+        "pass": true
+      },
+      {
+        "name": "generic OTP success does not assume new-parent route",
+        "pass": true
+      },
+      {
+        "name": "confirmed new parent consent-complete OTP success opens PIN setup",
+        "pass": true
+      },
+      {
+        "name": "returning-parent OTP success remains unmapped",
+        "pass": true
+      },
+      {
+        "name": "PIN prototype stores counts and outcomes rather than raw PIN or digit variables",
+        "pass": true
+      }
+    ],
+    "passed": 28,
+    "total": 28,
+    "failures": [],
+    "method": "Evaluation of stored native prototype actions; count-only PIN matching is a controlled fixture, not real PIN verification."
+  },
+  "structuralChecks": {
+    "preservation": [
+      {
+        "id": "1355:2696",
+        "pass": true
+      },
+      {
+        "id": "1459:256",
+        "pass": true
+      },
+      {
+        "id": "1131:2",
+        "pass": true
+      },
+      {
+        "id": "1215:34",
+        "pass": true
+      },
+      {
+        "id": "1215:138",
+        "pass": true
+      },
+      {
+        "id": "1215:246",
+        "pass": true
+      },
+      {
+        "id": "1215:356",
+        "pass": true
+      },
+      {
+        "id": "1095:562",
+        "pass": true
+      },
+      {
+        "id": "1085:19800",
+        "pass": true
+      },
+      {
+        "id": "1513:350",
+        "pass": true
+      },
+      {
+        "id": "1513:386",
+        "pass": true
+      },
+      {
+        "id": "1612:1277",
+        "pass": true
+      }
+    ],
+    "checks": [
+      {
+        "name": "standard390x844",
+        "pass": true
+      },
+      {
+        "name": "existing V2 Onboarding parent",
+        "pass": true
+      },
+      {
+        "name": "only current screen module created",
+        "pass": true
+      },
+      {
+        "name": "default card fits viewport",
+        "pass": true
+      },
+      {
+        "name": "all keypad keys at least44x44",
+        "pass": true
+      },
+      {
+        "name": "masked artwork14x14",
+        "pass": true
+      },
+      {
+        "name": "primary and loader338x56",
+        "pass": true
+      },
+      {
+        "name": "all prototype destinations exist",
+        "pass": true
+      },
+      {
+        "name": "all conditional actions are supported flat structure",
+        "pass": true
+      },
+      {
+        "name": "Screen011 rollback preserved",
+        "pass": true
+      },
+      {
+        "name": "Screen009 rollback preserved",
+        "pass": true
+      },
+      {
+        "name": "four same-size state examples",
+        "pass": true
+      },
+      {
+        "name": "review states do not run OTP timers",
+        "pass": true
+      },
+      {
+        "name": "set and confirm values represented by counts only",
+        "pass": true
+      },
+      {
+        "name": "OTP scenario panel still fits standard height",
+        "pass": true
+      }
+    ],
+    "passed": 15,
+    "total": 15,
+    "failures": [],
+    "broken": [],
+    "nested": [],
+    "variables": [
+      {
+        "id": "VariableID:1650:467",
+        "name": "Length",
+        "type": "FLOAT",
+        "scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "value": 6
+      },
+      {
+        "id": "VariableID:1650:468",
+        "name": "SetCount",
+        "type": "FLOAT",
+        "scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "value": 0
+      },
+      {
+        "id": "VariableID:1650:469",
+        "name": "ConfirmCount",
+        "type": "FLOAT",
+        "scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "value": 0
+      },
+      {
+        "id": "VariableID:1650:470",
+        "name": "Count",
+        "type": "FLOAT",
+        "scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "value": 0
+      },
+      {
+        "id": "VariableID:1650:471",
+        "name": "Busy",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:472",
+        "name": "Saved",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:473",
+        "name": "Match",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:474",
+        "name": "ErrorVisible",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:475",
+        "name": "NewParentConsented",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:476",
+        "name": "Stage",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "set"
+      },
+      {
+        "id": "VariableID:1650:477",
+        "name": "Outcome",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "success"
+      },
+      {
+        "id": "VariableID:1650:478",
+        "name": "Heading",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Set your Parent PIN"
+      },
+      {
+        "id": "VariableID:1650:479",
+        "name": "Description",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Choose a 4–6 digit PIN to protect the Parent area & manage screen time"
+      },
+      {
+        "id": "VariableID:1650:480",
+        "name": "ActionLabel",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Continue"
+      },
+      {
+        "id": "VariableID:1650:481",
+        "name": "ActionState",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Disabled"
+      },
+      {
+        "id": "VariableID:1650:482",
+        "name": "Message",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": ""
+      },
+      {
+        "id": "VariableID:1650:483",
+        "name": "Phase",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Start"
+      },
+      {
+        "id": "VariableID:1650:484",
+        "name": "DotVisible0",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:485",
+        "name": "DotFilled0",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:486",
+        "name": "DotVisible1",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:487",
+        "name": "DotFilled1",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:488",
+        "name": "DotVisible2",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:489",
+        "name": "DotFilled2",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:490",
+        "name": "DotVisible3",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:491",
+        "name": "DotFilled3",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:492",
+        "name": "DotVisible4",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:493",
+        "name": "DotFilled4",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:494",
+        "name": "DotVisible5",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": true
+      },
+      {
+        "id": "VariableID:1650:495",
+        "name": "DotFilled5",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:496",
+        "name": "LengthStyle4",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Quiet"
+      },
+      {
+        "id": "VariableID:1650:497",
+        "name": "LengthState4",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Default"
+      },
+      {
+        "id": "VariableID:1650:498",
+        "name": "LengthStyle5",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Quiet"
+      },
+      {
+        "id": "VariableID:1650:499",
+        "name": "LengthState5",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Default"
+      },
+      {
+        "id": "VariableID:1650:500",
+        "name": "LengthStyle6",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Primary"
+      },
+      {
+        "id": "VariableID:1650:501",
+        "name": "LengthState6",
+        "type": "STRING",
+        "scopes": [
+          "TEXT_CONTENT"
+        ],
+        "value": "Default"
+      },
+      {
+        "id": "VariableID:1650:853",
+        "name": "Internal/Gate1",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:854",
+        "name": "Internal/Gate2",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:856",
+        "name": "Internal/Gate3",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:857",
+        "name": "Internal/Gate4",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:859",
+        "name": "Internal/Gate5",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:860",
+        "name": "Internal/Gate6",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:862",
+        "name": "Internal/Gate7",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:863",
+        "name": "Internal/Gate8",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:865",
+        "name": "Internal/Gate9",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:866",
+        "name": "Internal/Gate10",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:868",
+        "name": "Internal/Gate11",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:869",
+        "name": "Internal/Gate12",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:871",
+        "name": "Internal/Gate13",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:872",
+        "name": "Internal/Gate14",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:874",
+        "name": "Internal/Gate15",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:875",
+        "name": "Internal/Gate16",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:877",
+        "name": "Internal/Gate17",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:878",
+        "name": "Internal/Gate18",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:880",
+        "name": "Internal/Gate19",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:881",
+        "name": "Internal/Gate20",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:883",
+        "name": "Internal/Gate21",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:884",
+        "name": "Internal/Gate22",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:886",
+        "name": "Internal/Gate23",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:888",
+        "name": "Internal/Gate24",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:890",
+        "name": "Internal/Gate25",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:892",
+        "name": "Internal/Gate26",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:893",
+        "name": "Internal/Gate27",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:894",
+        "name": "Internal/Gate28",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:896",
+        "name": "Internal/Gate29",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:897",
+        "name": "Internal/Gate30",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:919",
+        "name": "Internal/Gate31",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:920",
+        "name": "Internal/Gate32",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:921",
+        "name": "Internal/Gate33",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:922",
+        "name": "Internal/Gate34",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:923",
+        "name": "Internal/Gate35",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:924",
+        "name": "Internal/Gate36",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:925",
+        "name": "Internal/Gate37",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:926",
+        "name": "Internal/Gate38",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:927",
+        "name": "Internal/Gate39",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:928",
+        "name": "Internal/Gate40",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:929",
+        "name": "Internal/Gate41",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:930",
+        "name": "Internal/Gate42",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:931",
+        "name": "Internal/Gate43",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:932",
+        "name": "Internal/Gate44",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:933",
+        "name": "Internal/Gate45",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:934",
+        "name": "Internal/Gate46",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:935",
+        "name": "Internal/Gate47",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:936",
+        "name": "Internal/Gate48",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:937",
+        "name": "Internal/Gate49",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:938",
+        "name": "Internal/Gate50",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:939",
+        "name": "Internal/Gate51",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:940",
+        "name": "Internal/Gate52",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:941",
+        "name": "Internal/Gate53",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:942",
+        "name": "Internal/Gate54",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:943",
+        "name": "Internal/Gate55",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:944",
+        "name": "Internal/Gate56",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:945",
+        "name": "Internal/Gate57",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:960",
+        "name": "Internal/Gate58",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:961",
+        "name": "Internal/Gate59",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:962",
+        "name": "Internal/Gate60",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:963",
+        "name": "Internal/Gate61",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1650:966",
+        "name": "Internal/Gate62",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      },
+      {
+        "id": "VariableID:1651:523",
+        "name": "Internal/OTP verified entry",
+        "type": "BOOLEAN",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "value": false
+      }
+    ],
+    "review": [
+      {
+        "id": "1654:544",
+        "name": "NH/V2/012/Review Only/Confirmation"
+      },
+      {
+        "id": "1654:840",
+        "name": "NH/V2/012/Review Only/Mismatch"
+      },
+      {
+        "id": "1654:1134",
+        "name": "NH/V2/012/Review Only/Saving"
+      },
+      {
+        "id": "1654:1428",
+        "name": "NH/V2/012/Review Only/Offline"
+      }
+    ],
+    "method": "Read-only Figma component, geometry, graph and visual-preservation audit. Present playback is not verified."
+  },
+  "connections": {
+    "createdNodeIds": [
+      "1651:526",
+      "1651:527",
+      "1651:529",
+      "1651:530"
+    ],
+    "mutatedNodeIds": [
+      "1650:502",
+      "1650:528",
+      "1613:320",
+      "1612:2119",
+      "1612:2117",
+      "1612:2135",
+      "1428:171",
+      "1461:474"
+    ],
+    "cases": [
+      {
+        "id": "1651:526",
+        "label": "New parent · consent complete",
+        "newParent": true
+      },
+      {
+        "id": "1651:529",
+        "label": "Returning parent · success",
+        "newParent": false
+      }
+    ],
+    "reviewHeight": 800,
+    "newParentOnly": true
+  },
+  "review": [
+    {
+      "id": "1654:544",
+      "label": "Confirmation"
+    },
+    {
+      "id": "1654:840",
+      "label": "Mismatch"
+    },
+    {
+      "id": "1654:1134",
+      "label": "Saving"
+    },
+    {
+      "id": "1654:1428",
+      "label": "Offline"
+    }
+  ],
+  "limitations": {
+    "pinValues": "No PIN values captured; only entry counts. Exact-match and mismatch outcomes are simulated.",
+    "production": "No PIN hashing, storage, authentication, backend or OS biometric implementation.",
+    "playback": "Present playback not verified; screenshots and stored-action evaluation only.",
+    "future": "Biometric Enrollment and Add Child destinations are not created or mapped."
+  }
+}

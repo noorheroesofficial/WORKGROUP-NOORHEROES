@@ -1,0 +1,551 @@
+{
+  "checks": [
+    {
+      "name": "terms viewport",
+      "pass": true,
+      "detail": {
+        "root": [
+          390,
+          844
+        ],
+        "panel": 720,
+        "scroll": 474
+      }
+    },
+    {
+      "name": "terms footer clearance",
+      "pass": true,
+      "detail": {
+        "bodyBottom": 574,
+        "buttonY": 640
+      }
+    },
+    {
+      "name": "terms accessible close and button",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms exact source copy",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms direct return 1588:359 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms direct return 1588:354 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms Escape return quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms direct return 1588:359 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms direct return 1588:354 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms Escape return quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "terms header width",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy viewport",
+      "pass": true,
+      "detail": {
+        "root": [
+          390,
+          844
+        ],
+        "panel": 720,
+        "scroll": 474
+      }
+    },
+    {
+      "name": "privacy footer clearance",
+      "pass": true,
+      "detail": {
+        "bodyBottom": 574,
+        "buttonY": 640
+      }
+    },
+    {
+      "name": "privacy accessible close and button",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy exact source copy",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy direct return 1588:394 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy direct return 1588:389 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy Escape return quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy direct return 1588:394 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy direct return 1588:389 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy Escape return quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "privacy header width",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child viewport",
+      "pass": true,
+      "detail": {
+        "root": [
+          390,
+          844
+        ],
+        "panel": 720,
+        "scroll": 474
+      }
+    },
+    {
+      "name": "child footer clearance",
+      "pass": true,
+      "detail": {
+        "bodyBottom": 574,
+        "buttonY": 640
+      }
+    },
+    {
+      "name": "child accessible close and button",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child exact source copy",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child direct return 1588:431 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child direct return 1588:426 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child Escape return quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child direct return 1588:431 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child direct return 1588:426 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child Escape return quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "child header width",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization viewport",
+      "pass": true,
+      "detail": {
+        "root": [
+          390,
+          844
+        ],
+        "panel": 720,
+        "scroll": 474
+      }
+    },
+    {
+      "name": "personalization footer clearance",
+      "pass": true,
+      "detail": {
+        "bodyBottom": 574,
+        "buttonY": 640
+      }
+    },
+    {
+      "name": "personalization accessible close and button",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization direct return 1588:457 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization direct return 1514:376 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization Escape return quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization direct return 1588:457 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization direct return 1514:376 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization Escape return quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "personalization header width",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice viewport",
+      "pass": true,
+      "detail": {
+        "root": [
+          390,
+          844
+        ],
+        "panel": 720,
+        "scroll": 474
+      }
+    },
+    {
+      "name": "voice footer clearance",
+      "pass": true,
+      "detail": {
+        "bodyBottom": 574,
+        "buttonY": 640
+      }
+    },
+    {
+      "name": "voice accessible close and button",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice direct return 1588:467 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice direct return 1514:406 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice Escape return quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice direct return 1588:467 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice direct return 1514:406 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice Escape return quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "voice header width",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing viewport",
+      "pass": true,
+      "detail": {
+        "root": [
+          390,
+          844
+        ],
+        "panel": 720,
+        "scroll": 474
+      }
+    },
+    {
+      "name": "marketing footer clearance",
+      "pass": true,
+      "detail": {
+        "bodyBottom": 574,
+        "buttonY": 640
+      }
+    },
+    {
+      "name": "marketing accessible close and button",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing direct return 1588:477 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing direct return 1514:436 quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing Escape return quiet=false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing direct return 1588:477 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing direct return 1514:436 quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing Escape return quiet=true",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "marketing header width",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read terms opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1459:1103"
+      }
+    },
+    {
+      "name": "Loaded terms maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading terms preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read terms opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1588:614"
+      }
+    },
+    {
+      "name": "Loaded terms maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading terms preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read privacy opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1588:617"
+      }
+    },
+    {
+      "name": "Loaded privacy maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading privacy preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read child opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1588:620"
+      }
+    },
+    {
+      "name": "Loaded child maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading child preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read personalization opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1459:1152"
+      }
+    },
+    {
+      "name": "Loaded personalization maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading personalization preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read voice opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1459:1175"
+      }
+    },
+    {
+      "name": "Loaded voice maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading voice preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Read marketing opens loading",
+      "pass": true,
+      "detail": {
+        "link": "1459:1198"
+      }
+    },
+    {
+      "name": "Loaded marketing maps correct detail",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Reading marketing preserves consents",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Cancel loading restores previous availability",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Offline without cache blocks legal agreement",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Retry reopens loading",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Recovered document restores availability",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Offline cached draft remains readable",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "No consent-choice writes in any detail action",
+      "pass": true,
+      "detail": {
+        "actions": 584
+      }
+    },
+    {
+      "name": "Draft identifier values preserved",
+      "pass": true,
+      "detail": {}
+    }
+  ],
+  "pass": true,
+  "count": 91,
+  "defaultsRestored": true,
+  "changedVariableIds": [
+    "VariableID:1389:3045",
+    "VariableID:1588:340",
+    "VariableID:1459:225",
+    "VariableID:1588:341",
+    "VariableID:1588:342",
+    "VariableID:1594:310",
+    "VariableID:1588:339",
+    "VariableID:1588:343",
+    "VariableID:1588:345",
+    "VariableID:1588:344"
+  ],
+  "limitation": "Native action interpretation and geometric verification; Present playback unverified."
+}

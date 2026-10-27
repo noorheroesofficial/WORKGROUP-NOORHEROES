@@ -1,0 +1,162 @@
+{
+  "sectionId": "1330:5686",
+  "subsections": [
+    {
+      "id": "1330:5687",
+      "name": "01 — Splash Reference & Brand Tokens"
+    },
+    {
+      "id": "1330:5688",
+      "name": "02 — Login Screen Redesign"
+    },
+    {
+      "id": "1330:5689",
+      "name": "03 — Authentication Components"
+    },
+    {
+      "id": "1330:5690",
+      "name": "04 — Gradient Button Variants"
+    },
+    {
+      "id": "1330:5691",
+      "name": "05 — Country Code Bottom Sheet"
+    },
+    {
+      "id": "1330:5692",
+      "name": "06 — Language Selector Branding"
+    },
+    {
+      "id": "1330:5693",
+      "name": "07 — Animation & Interaction States"
+    },
+    {
+      "id": "1330:5694",
+      "name": "08 — Responsive & Edge Cases"
+    }
+  ],
+  "auth": [
+    {
+      "id": "1330:5697",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Default"
+    },
+    {
+      "id": "1330:5800",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Invalid"
+    },
+    {
+      "id": "1330:5873",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Sending"
+    },
+    {
+      "id": "1330:6053",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Timeout"
+    },
+    {
+      "id": "1330:6126",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Offline"
+    },
+    {
+      "id": "1330:6201",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Error"
+    },
+    {
+      "id": "1330:6274",
+      "name": "NH/V2/Auth-Redesign/007/Login/Phone-Google-Processing"
+    },
+    {
+      "id": "1330:6456",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Default"
+    },
+    {
+      "id": "1330:6559",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Invalid"
+    },
+    {
+      "id": "1330:6632",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Sending"
+    },
+    {
+      "id": "1330:6812",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Timeout"
+    },
+    {
+      "id": "1330:6885",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Offline"
+    },
+    {
+      "id": "1330:6960",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Error"
+    },
+    {
+      "id": "1330:7033",
+      "name": "NH/V2/Auth-Redesign/007/Login/Email-Google-Processing"
+    },
+    {
+      "id": "1330:7215",
+      "name": "NH/V2/Auth-Redesign/007/Login/Session-Expired"
+    }
+  ],
+  "language": [
+    "1330:7288",
+    "1330:7470",
+    "1330:7652",
+    "1330:7834"
+  ],
+  "processing": "1330:8016",
+  "splash": "1330:8061",
+  "styles": [
+    "S:1c055282825c7cbe82c6be537d7b66bfb0573dd5,",
+    "S:e037d6d2eb825f1f4038aebfa31288e9a7e78845,"
+  ],
+  "introCopies": [
+    "1336:1535",
+    "1336:1631",
+    "1336:1722",
+    "1336:1820"
+  ],
+  "qa": [
+    {
+      "id": "1336:2013",
+      "name": "NH/Auth-Redesign/QA/Small Android",
+      "width": 320,
+      "height": 568
+    },
+    {
+      "id": "1336:2112",
+      "name": "NH/Auth-Redesign/QA/iPhone Standard",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "1336:2211",
+      "name": "NH/Auth-Redesign/QA/Large Mobile",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "id": "1336:2310",
+      "name": "NH/Auth-Redesign/QA/Keyboard / reduced viewport",
+      "width": 390,
+      "height": 544
+    },
+    {
+      "id": "1336:2409",
+      "name": "NH/Auth-Redesign/QA/Reduced Motion",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sheets": [
+    "1332:1815",
+    "1332:3065",
+    "1332:3105"
+  ],
+  "componentSet": "1334:643",
+  "variants": {
+    "Default": "1334:499",
+    "Pressed": "1334:507",
+    "Disabled": "1334:515",
+    "Loading": "1334:633",
+    "Focused": "1334:639"
+  }
+}

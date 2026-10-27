@@ -1,0 +1,3422 @@
+# Every-functional-requirement coverage register
+
+Every FR in the mobile feature PRDs and mobile-impact F35/F37 architecture PRDs is retained verbatim below. No admin/web screen is generated. Exact source content is authority; derived candidate owners are transparent routing aids,not evidence that a prototype already implements the requirement. Nonvisual backend/privacy/security requirements remain production acceptance obligations and do not become invented app screens.
+
+Screen-specific prompt bodies retain mapped requirements and source state/edge excerpts. [Screen-reference matrix](03_REQUIREMENT_TRACEABILITY_MATRIX.md) provides existing-screen/Frame1/Frame2 provenance; [shared aliases](02_SCREEN_INVENTORY_AND_ORDER.md#shared-surfaces-and-contextual-aliases) retain contextual reuse.
+
+## A10
+
+[Feature_A10_Games_Module.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A10_Games_Module.md>) — §1.7.
+
+### A10-FR-1
+
+**FR-1** The Games Hub presents a tile grid of available games, with UI sections: Daily Quiz (entry point into the shared A.8 engine), Arabic Letters games (per A.5), and mini-game tiles grouped by skill area (source: NoorHeroes Blueprint screen catalog "Games — UI Sections: Daily Quiz, Arabic Letters games, mini-game tiles grouped by skill area").
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-2
+
+**FR-2** Every game catalog entry must declare exactly one or more linked `skill_node_id` references (from A.9's domain-agnostic skill graph) — **a game with zero linked skill nodes cannot be published**, enforced as a hard validation rule, not a content-review guideline (source: hard platform rule, "Games always map to a learning skill — none are content-free filler").
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-3
+
+**FR-3** Game difficulty is tiered by age band (4 to 6, 6 to 9, 9 to 12, 12 to 15, 15 to 18+, per the platform's standard age-group taxonomy), with each tier adjusting parameters such as time pressure, number of distractor options, and complexity of the underlying skill content — never the correctness-evaluation logic itself.
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-4
+
+**FR-4** Within a single game session, difficulty may adapt based on in-session accuracy (consistent with A.5/§6.3's principle: "Accuracy changes difficulty; speed never outranks correctness" — a rule restated here as binding across every game in this hub, not just Quran Game specifically).
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-5
+
+**FR-5** Every completed game session emits skill-evidence events to the shared Mastery Engine (A.9), using the same evidence contract as quiz attempts (FR shared with A.9 §3.4 `POST /v1/mastery/evidence`) — game-derived evidence is first-class, not a lesser/ignored signal.
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-6
+
+**FR-6** Game session completion awards XP/Noor Heroes Points via the shared Reward Service (A.11), following the same accuracy-independent-participation-reward principle established in A.8 FR-5/A.9 FR-4 — a child who plays earnestly but performs poorly still receives a participation reward; accuracy affects mastery evidence, never the base reward.
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-7
+
+**FR-7** On game-session completion, the child returns to the screen that launched the session (Home, Rewards, or the Games Hub itself) — never to an unrelated or unexpected destination (source: navigation table, "Game session, then back to launching screen").
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-8
+
+**FR-8** The Games Hub tile grid must be filterable/groupable by skill area (Quran, Arabic, Tajweed, and any future domain per A.9's extensible domain registry), age-band-appropriate filtering applied automatically (a child only sees tiles appropriate to their own age band by default, with no manual override exposed to the child).
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-9
+
+**FR-9** Replaying a completed game is always available (no re-locking after first completion, consistent with A.3's "rewatching is always available" principle for stories) — repeat play is explicitly encouraged for skill reinforcement, distinct from a content-consumption context where repetition might be less valuable.
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-10
+
+**FR-10** A game entry tagged with Quran, Tajweed, or Dua content must pass the same scholar-review/content-governance pipeline as any other content of that type (cross-reference A.5/A.6's scholar-approval gates) before publish — "it's just a game" is never an exemption from content governance.
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-11
+
+**FR-11** No game in this hub may implement loot-box mechanics, variable/randomized paid rewards, or purchasable in-game advantages — consistent with the platform-wide reward-economy rule (source §21.12: "No purchasing virtual currency in child mode... No loot-box mechanics or variable paid rewards").
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A10-FR-12
+
+**FR-12** Each game session is bounded in length (no infinitely-replayable single-session loop designed to maximize time-on-device) — a session has a clear natural end state (e.g., a fixed round count or a completion condition), after which the child is returned per FR-7, rather than auto-continuing into a new round without an explicit child action.
+
+Candidate owning surfaces: [113 Games Hub (tile grid landing)](Screen_Prompts/113_Games_Hub_tile_grid_landing.md); [114 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)](Screen_Prompts/114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md); [115 Session Completion Screen (generic wrapper, reuses A.9's "strengths + next step" framing where applicable)](Screen_Prompts/115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A11
+
+[Feature_A11_Rewards_System.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A11_Rewards_System.md>) — §1.7.
+
+### A11-FR-1
+
+**FR-1** XP represents effort/progression; Noor Heroes Points are a closed virtual currency earned exclusively through learning activities and **never purchasable** with real money, in child mode or otherwise (source §6.6, §21.12 — a hard, zero-exception rule).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [127 Purchase Confirmation / Insufficient-Points Shortfall Screen](Screen_Prompts/127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-2
+
+**FR-2** Badges represent specific named achievements (discrete unlocks); Achievements are cumulative milestone tracking, **distinct from Badges** — achievements track cumulative progress toward a milestone level (e.g., "Seedling → Hafiz Hero"), while badges are individual discrete unlocks (source: Consolidated Blueprint navigation table, "Rewards — Achievements... Distinct from Badges: achievements are cumulative, badges are discrete").
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [127 Purchase Confirmation / Insufficient-Points Shortfall Screen](Screen_Prompts/127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-3
+
+**FR-3** The reward ledger (`reward_ledger`) is **append-only** and is the system's sole source of truth; the wallet balance (`reward_wallets.cached_balance`) is a repairable, derived projection — **never** edited directly (source §9.4: "Repairable projection — never the source of truth"; "this table is the source of truth").
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [117 Transaction Detail (single ledger entry)](Screen_Prompts/117_Transaction_Detail_single_ledger_entry.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-4
+
+**FR-4** Every reward award uses a deterministic, versioned reason (`reason_type`, `reason_id`) and a unique idempotency key; retries return the original result, never a duplicate award (source §6.6 Validation Rules, §9.4).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [127 Purchase Confirmation / Insufficient-Points Shortfall Screen](Screen_Prompts/127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-5
+
+**FR-5** Reward Engine Flow (canonical, source §6.6/the "Reward Engine Flow" diagram block, items 1–9): (1) activity service validates completion + idempotency key, (2) reward engine checks rule version, age band, quality threshold, daily cap, and duplicate key, (3) XP/Noor Heroes Points appended to the ledger, (4) achievement counters update, (5) badge/streak/milestone rules evaluated, (6) wallet balance re-projected from the ledger, (7) parent report updates, (8) an eligible push notification is sent, (9) the completion screen displays a reward summary/animation.
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [119 Badge Detail / Criteria View](Screen_Prompts/119_Badge_Detail_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-6
+
+**FR-6** Reward rules are versioned by activity type, difficulty, and age band, with a daily cap per activity type to prevent farming; offline completions queue and validate on sync, remaining "pending" until server validation succeeds (source §6.6, §21.12, navigation table notes).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [119 Badge Detail / Criteria View](Screen_Prompts/119_Badge_Detail_Criteria_View.md); [122 Weekly Challenge Detail](Screen_Prompts/122_Weekly_Challenge_Detail.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-7
+
+**FR-7** The complete XP/Noor Heroes Points table (admin-configurable, representative defaults per source §6.6): Watch full story +50XP/+25pts, Complete lesson +30XP/+15pts, Pass quiz 100% +40XP/+20pts, Pass quiz ≥80% +25XP/+10pts, Daily habit check-in +20XP/+10pts, 3-day streak +75XP/+30pts, 7-day streak +200XP/+100pts, 30-day streak +750XP/+300pts, Complete daily mission +60XP/+25pts, Complete weekly challenge +300XP/+150pts, Complete Quran recitation +45XP/+20pts, Complete Tajweed lesson +35XP/+15pts, Help family member (logged good deed) +25XP/+10pts, Complete story series +200XP/+100pts.
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [122 Weekly Challenge Detail](Screen_Prompts/122_Weekly_Challenge_Detail.md); [127 Purchase Confirmation / Insufficient-Points Shortfall Screen](Screen_Prompts/127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-8
+
+**FR-8** No loot-box mechanics or variable/randomized paid rewards of any kind exist anywhere in the system (source §6.6/§21.12 — a hard rule with zero exceptions, including for premium-tier content).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [119 Badge Detail / Criteria View](Screen_Prompts/119_Badge_Detail_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-9
+
+**FR-9** No global public leaderboard for minors exists. Reward/progress comparison is limited to: private self-improvement views, anonymized age-band cohorts, or a **parent-controlled, private Family Board** — siblings are never ranked against each other in any UI surface, including parent-facing reports (source §6.6/§21.12/A.7 FR-12, restated here as the canonical platform-wide rule this system enforces).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [128 Family Board (private, multi-child families)](Screen_Prompts/128_Family_Board_private_multi_child_families.md); [130 Family Achievement Unlock Celebration](Screen_Prompts/130_Family_Achievement_Unlock_Celebration.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-10
+
+**FR-10** Daily Missions (3 per day) and the Weekly Challenge are time-boxed; progress resets at window close, but **expired seasonal challenges archive rather than disappear** (source: NoorHeroes Blueprint screen catalog "Challenges — Navigation Flow: Surfaced as a Home card and as its own tile under Rewards; expired seasonal challenges archive rather than disappear").
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [122 Weekly Challenge Detail](Screen_Prompts/122_Weekly_Challenge_Detail.md); [123 Seasonal Event Screen](Screen_Prompts/123_Seasonal_Event_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-11
+
+**FR-11** The Achievement Store (`catalog_items`) sells cosmetic/avatar/story-world items priced exclusively in Noor Heroes Points — items are sourced only from the admin-managed catalog, never user-uploaded content (source §9.4, Consolidated Blueprint navigation table "Avatar... Items are sourced only from AvatarItems catalog; no user uploads").
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [125 Achievement Store (catalog browse)](Screen_Prompts/125_Achievement_Store_catalog_browse.md); [126 Achievement Store — Item Detail](Screen_Prompts/126_Achievement_Store_Item_Detail.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-12
+
+**FR-12** Achievement-card sharing is parent-gated: generating a shareable card requires Parent Profile verification, routes through the OS share sheet only after that gate, and the card itself never includes child ID, DOB, or location (source: screen catalog "Achievements — Navigation Flow: Sharing routes through the OS share sheet only after Parent Profile verification; no child ID/DOB/location ever appears on the card").
+
+Candidate owning surfaces: [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [121 Shareable Achievement Card Preview](Screen_Prompts/121_Shareable_Achievement_Card_Preview.md); [125 Achievement Store (catalog browse)](Screen_Prompts/125_Achievement_Store_catalog_browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-13
+
+**FR-13** Client-side XP/Noor Heroes Points display is optimistic and reconciled on sync; the server is always authoritative for the actual ledger and balance (source §6.6 Validation Rules).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [127 Purchase Confirmation / Insufficient-Points Shortfall Screen](Screen_Prompts/127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-14
+
+**FR-14** A standing reconciliation job verifies wallet-balance-projection integrity against the ledger's actual sum, self-healing any detected drift (source §6.6 Error Handling: "a reconciliation job runs to confirm wallet projection integrity").
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [117 Transaction Detail (single ledger entry)](Screen_Prompts/117_Transaction_Detail_single_ledger_entry.md); [127 Purchase Confirmation / Insufficient-Points Shortfall Screen](Screen_Prompts/127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A11-FR-15
+
+**FR-15** Family Board / Family Achievements allow siblings to complete shared Islamic goals together, displaying only aggregate/combined progress — never a per-sibling comparative breakdown (shared architectural principle with A.7's Noor Garden Family view; this system and A.7's are the same underlying no-comparison guarantee applied to two different visual surfaces).
+
+Candidate owning surfaces: [116 Rewards Hub / Wallet (landing)](Screen_Prompts/116_Rewards_Hub_Wallet_landing.md); [118 Achievements Screen (badge grid + cumulative level progress)](Screen_Prompts/118_Achievements_Screen_badge_grid_cumulative_level_progress.md); [128 Family Board (private, multi-child families)](Screen_Prompts/128_Family_Board_private_multi_child_families.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A12
+
+[Feature_A12_Avatar_System.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A12_Avatar_System.md>) — §1.7.
+
+### A12-FR-1
+
+**FR-1** Avatar screen sections: 3D avatar preview, owned-items grid (organized by slot: outfit/glow/accessory), locked-item teasers showing unlock criteria (source: screen catalog "Avatar — UI Sections: 3D avatar preview, owned-items grid (outfits, glow states), locked-item teasers with unlock criteria").
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-2
+
+**FR-2** User actions: equip/unequip an owned item, preview a locked item (a non-committal visual preview without actually equipping it), and navigate directly to the activity that would unlock a given locked item (source: screen catalog "User Actions: Equip/unequip an item, preview a locked item, navigate to the activity that unlocks it").
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-3
+
+**FR-3** Avatar items are sourced **only** from the admin-managed `avatar_items` catalog — there is no user-upload path anywhere in the app for avatar customization (source: navigation table, "Items are sourced only from `AvatarItems` catalog; no user uploads" — a hard, zero-exception architectural rule).
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-4
+
+**FR-4** Every `avatar_item`'s `unlock_rule` must map to an existing badge, level threshold, or habit milestone — admin tooling must reject any attempt to define an arbitrary or opaque unlock condition with no underlying verifiable criteria (source: Admin module Validation Rules — restated here as the rule this feature's read/evaluation path depends on).
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-5
+
+**FR-5** Items are never sold for real money in child mode — equivalent to and consistent with A.11 FR-1's Noor-Heroes-Points-only economy; this feature's equip/unlock layer has no payment-related code path at all (source: Admin module Validation Rules).
+
+Candidate owning surfaces: [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md); [135 Character Evolution Milestone Reveal](Screen_Prompts/135_Character_Evolution_Milestone_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-6
+
+**FR-6** Equipping an item is immediate (optimistic client update, server-confirmed) and instantly reflected in the avatar preview (source: Avatar Flow diagram, "POST equip → Avatar preview updates").
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-7
+
+**FR-7** Locked items display their specific unlock criteria (e.g., "7-day streak") rather than a generic lock icon with no explanation, consistent with the platform's general locked-content transparency principle established in A.3/A.5.
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md); [135 Character Evolution Milestone Reveal](Screen_Prompts/135_Character_Evolution_Milestone_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-8
+
+**FR-8** When a child's activity causes a locked item's criteria to become met, the item is **auto-unlocked** and a notification is sent — the child is never required to manually "claim" an avatar-item unlock the way they might claim a mission/challenge reward in A.11 (source: Avatar Flow diagram, "Criteria met later? → Yes → Item auto-unlocked + notification").
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-9
+
+**FR-9** Character Evolution: avatars and Noor companions evolve through learning-based progression — Quran skills, story morals, kindness actions, and habit consistency unlock new outfits, glow states, and story-world abilities (source: "Character Evolution" feature card — "Avatars and Noor companions evolve through learning-based progression... unlock new outfits, glow states, and story-world abilities").
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md); [135 Character Evolution Milestone Reveal](Screen_Prompts/135_Character_Evolution_Milestone_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-10
+
+**FR-10** Retiring an `avatar_item` from the catalog (Admin "Delete" action) never revokes it from children who already own it — retired items remain fully equippable for existing owners, only new acquisition is prevented (source: Admin module CRUD Operations, "Retire item (owned items remain equippable)").
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-11
+
+**FR-11** Avatar base selection happens at child-profile creation (A.1) from the `avatars` base library; this feature does not re-implement avatar-base selection, only the items/customization layered on top of the chosen base.
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A12-FR-12
+
+**FR-12** All avatar assets (base avatars and every `avatar_item`) must pass a modesty/age-appropriateness review by the same content governance pipeline used for other content types — "it's just a cosmetic" is never an exemption from this review.
+
+Candidate owning surfaces: [132 Avatar Screen (3D preview + owned grid + locked teasers)](Screen_Prompts/132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md); [133 Item Detail (owned) — Equip/Unequip](Screen_Prompts/133_Item_Detail_owned_Equip_Unequip.md); [134 Locked Item Detail — Unlock Criteria View](Screen_Prompts/134_Locked_Item_Detail_Unlock_Criteria_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A1
+
+[Feature_A1_Splash_Auth_Onboarding.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A1_Splash_Auth_Onboarding.md>) — §1.7.
+
+### A1-FR-1
+
+**FR-1** App must determine session validity at launch via `GET /v1/bootstrap` and route accordingly (valid session + children → Profile Picker; valid session, no children → Add Child; no session → Intro/Login).
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-2
+
+**FR-2** App must support forced update (blocking) and recommended update (dismissible) gates evaluated at bootstrap.
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [026 Forced Update Blocking Screen](Screen_Prompts/026_Forced_Update_Blocking_Screen.md); [027 Recommended Update Banner/Dismissible](Screen_Prompts/027_Recommended_Update_Banner_Dismissible.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-3
+
+**FR-3** Language selection must be available before or alongside the intro sequence and must persist locally and to the parent profile once authenticated.
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [002 Language Selection](Screen_Prompts/002_Language_Selection.md); [003 Intro Slide 1 (Stories)](Screen_Prompts/003_Intro_Slide_1_Stories.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-4
+
+**FR-4** Intro/value sequence is exactly 4 screens; skip is available starting from screen 1; no paywall/subscription screen may appear before intro completes.
+
+Candidate owning surfaces: [003 Intro Slide 1 (Stories)](Screen_Prompts/003_Intro_Slide_1_Stories.md); [004 Intro Slide 2 (Quran/Arabic/Tajweed)](Screen_Prompts/004_Intro_Slide_2_Quran_Arabic_Tajweed.md); [006 Intro Slide 4 (Parent Control)](Screen_Prompts/006_Intro_Slide_4_Parent_Control.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-5
+
+**FR-5** Registration must require explicit, separable consent checkboxes: (a) Terms of Service [required], (b) Privacy Policy [required], (c) Child-data-processing consent [required], (d) Personalization/AI consent [optional, revocable], (e) Voice-feature consent [optional, revocable], (f) Marketing consent [optional, revocable]. Submit is disabled until all required boxes are checked.
+
+Candidate owning surfaces: [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md); [033 Child-Data Processing Consent (full document)](Screen_Prompts/033_Child_Data_Processing_Consent_full_document.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-6
+
+**FR-6** Parent identity may be established via Phone OTP, Email OTP, or Google Login. **Apple Login is explicitly not supported** (source §6.1).
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [030 Forgot Access / Account Recovery Entry](Screen_Prompts/030_Forgot_Access_Account_Recovery_Entry.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-7
+
+**FR-7** OTP must be 6 digits, support paste, support auto-submit on 6th digit, and enforce a server-authoritative resend countdown.
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-8
+
+**FR-8** Repeated OTP failure must trigger progressive cooldown (e.g., exponential backoff on resend, lockout after N invalid attempts) and flag the attempt for risk review — never indefinite retry.
+
+Candidate owning surfaces: [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md); [011 OTP Fallback Channel Offer](Screen_Prompts/011_OTP_Fallback_Channel_Offer.md); [014 Add Child](Screen_Prompts/014_Add_Child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-9
+
+**FR-9** The system must never reveal, via response timing or content, whether a phone/email is already registered before OTP verification succeeds (enumeration-safe).
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [030 Forgot Access / Account Recovery Entry](Screen_Prompts/030_Forgot_Access_Account_Recovery_Entry.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-10
+
+**FR-10** On first successful verification, new users must be routed to Consent → PIN Setup → Add Child. Returning users must be routed to Profile Picker (or step-up auth if required).
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md); [024 Lock Recovery (via verified Parent Profile)](Screen_Prompts/024_Lock_Recovery_via_verified_Parent_Profile.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-11
+
+**FR-11** Parent PIN must be 4–6 digits, parent's choice, stored only as a slow salted hash (e.g., Argon2id), never stored or logged in plaintext.
+
+Candidate owning surfaces: [002 Language Selection](Screen_Prompts/002_Language_Selection.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md); [015 Avatar Selection](Screen_Prompts/015_Avatar_Selection.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-12
+
+**FR-12** PIN setup must offer optional enrollment in OS-level biometric (Fingerprint/Face) as an alternate unlock; biometric data itself is never transmitted to or stored by NoorHeroes servers.
+
+Candidate owning surfaces: [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [012 Parent PIN Setup](Screen_Prompts/012_Parent_PIN_Setup.md); [013 Biometric Enrollment Prompt](Screen_Prompts/013_Biometric_Enrollment_Prompt.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-13
+
+**FR-13** Add Child must require: nickname, date of birth, avatar, preferred language, learning level. It must NOT expose a raw "age" input field — age band is always server-derived from DOB and recalculated automatically on the child's birthday.
+
+Candidate owning surfaces: [014 Add Child](Screen_Prompts/014_Add_Child.md); [017 Learning Level Setup](Screen_Prompts/017_Learning_Level_Setup.md); [018 "Add Another Child?" Prompt](Screen_Prompts/018_Add_Another_Child_Prompt.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-14
+
+**FR-14** Add Child optional fields: interests (multi-select), daily learning goal, AI/voice permission toggle (default OFF), accessibility preferences.
+
+Candidate owning surfaces: [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [014 Add Child](Screen_Prompts/014_Add_Child.md); [017 Learning Level Setup](Screen_Prompts/017_Learning_Level_Setup.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-15
+
+**FR-15** Duplicate child nicknames within a family are allowed only if distinguished by avatar/color, with explicit parent confirmation at save time.
+
+Candidate owning surfaces: [014 Add Child](Screen_Prompts/014_Add_Child.md); [018 "Add Another Child?" Prompt](Screen_Prompts/018_Add_Another_Child_Prompt.md); [019 Learning Level + Interests Confirmation (family-level summary)](Screen_Prompts/019_Learning_Level_Interests_Confirmation_family_level_summary.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-16
+
+**FR-16** Onboarding must be resumable from the last completed step after app kill, crash, or network loss — never restarted from scratch.
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [020 Screen Time & Notification Primer](Screen_Prompts/020_Screen_Time_Notification_Primer.md); [030 Forgot Access / Account Recovery Entry](Screen_Prompts/030_Forgot_Access_Account_Recovery_Entry.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-17
+
+**FR-17** Child profile creation must be idempotent via a client-generated idempotency key on `POST /v1/family/children`, preventing duplicate profiles from retried requests.
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md); [014 Add Child](Screen_Prompts/014_Add_Child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-18
+
+**FR-18** After at least one child profile exists, the parent is routed to Profile Picker, and selecting a child routes into the Child Home with a recommended First Mission.
+
+Candidate owning surfaces: [021 Personalized Path Reveal](Screen_Prompts/021_Personalized_Path_Reveal.md); [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [025 First Mission Screen](Screen_Prompts/025_First_Mission_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-19
+
+**FR-19** All consent decisions must be recorded with: consent text version, timestamp, IP-derived region (not raw IP stored long-term), source platform, and the specific toggles granted/denied.
+
+Candidate owning surfaces: [009 Consent Detail / Full Text Modal](Screen_Prompts/009_Consent_Detail_Full_Text_Modal.md); [031 Terms of Service (full document)](Screen_Prompts/031_Terms_of_Service_full_document.md); [033 Child-Data Processing Consent (full document)](Screen_Prompts/033_Child_Data_Processing_Consent_full_document.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-20
+
+**FR-20** Each optional consent (personalization, voice, marketing) must be independently revocable later from Settings → Privacy & Support, without requiring re-onboarding.
+
+Candidate owning surfaces: [002 Language Selection](Screen_Prompts/002_Language_Selection.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [014 Add Child](Screen_Prompts/014_Add_Child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-21
+
+**FR-21** Google Login must map to the same downstream flow as OTP-verified users (consent still required if new; profile picker if returning).
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [010 OTP Verification](Screen_Prompts/010_OTP_Verification.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A1-FR-22
+
+**FR-22** "Forgot access" / account recovery must route through phone/email OTP re-verification — never through a parent-PIN-bypass shortcut.
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [030 Forgot Access / Account Recovery Entry](Screen_Prompts/030_Forgot_Access_Account_Recovery_Entry.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A2
+
+[Feature_A2_Home_Dashboard_AI_Personalization.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A2_Home_Dashboard_AI_Personalization.md>) — §1.7.
+
+### A2-FR-1
+
+**FR-1** Home must render the following sections **in this fixed priority order**, not user-reorderable (source §21.8 / §5.8): (1) Greeting/streak/XP bar + notifications + search, (2) Today's Mission, (3) Continue Learning / Continue Watching, (4) Recommended Next Step, (5) Daily Quiz / quick practice, (6) Habit & Good Deed check-in, (7) Weekly Challenge & progress map, (8) Milestones & reward summary, (9) Bedtime Corner (conditional on time window), (10) Islamic Fact of the Day.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-2
+
+**FR-2** Greeting must include the child's name and, where applicable, a reference to the current Islamic occasion (Jummah, Ramadan, Eid, etc.) sourced from an Islamic calendar service.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-3
+
+**FR-3** "Continue Learning/Watching" must surface the furthest-valid resume position per content type (story episode, Quran lesson, quiz-in-progress), sourced from the Progress Service — never duplicate entries for the same content across "Continue Learning" and "Continue Watching" (type-segmented, not content-deduplicated incorrectly).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-4
+
+**FR-4** Today's Mission is system-assigned (not child-selectable) and must be achievable within the child's typical session length; default cap is 3 daily missions (source: "Daily Missions (3 per day)").
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-5
+
+**FR-5** The Recommendation Engine must accept: age band, locale, parent restrictions, skill-gap/mastery confidence, incomplete activity, variety/fatigue controls, recent dislikes/skips, time-of-day/bedtime state, and offline content availability as ranking inputs (source §21.8 "Home ranking inputs").
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-6
+
+**FR-6** Every AI-generated recommendation must pass through an AI Safety Filter service before being eligible for display; recommendations failing the filter are silently excluded (never shown with a "blocked" placeholder that could intrigue a child).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-7
+
+**FR-7** Habit check-in widget must support same-screen check-in (no navigation away from Home required) for at least: Salah, Quran reading, daily dua, good deed, dhikr — and deep-link to the full Habit Builder for fasting tracker and detailed logging.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-8
+
+**FR-8** Streak display must never use shaming language or visual treatment (e.g., no red "broken streak" warnings); a missed day must be handled via "Mercy Day" protection logic (defined in A.7 Habit Tracker, referenced here as a Home-display rule).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-9
+
+**FR-9** Home must NEVER display subscription, billing, paywall, or upsell messaging to the child profile context, under any system state (hard rule, zero exceptions — enforced at the API response-shaping layer, not just client-side hiding).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-10
+
+**FR-10** Home must NEVER autoplay video with sound (source §21.8).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-11
+
+**FR-11** Home must NOT implement infinite scroll; the feed is a fixed, bounded set of sections per FR-1, each internally scrollable (e.g., a horizontal rail) but the page itself terminates after section 10.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-12
+
+**FR-12** Bedtime Corner section appears only within the parent-configured bedtime window for that specific child; outside the window it is omitted entirely from the response (not rendered-but-hidden).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-13
+
+**FR-13** Islamic Fact of the Day must be scholar-approved content, versioned, and not repeat for the same child within a rolling 30-day window where catalog size allows.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-14
+
+**FR-14** Parent Summary Preview (a condensed widget, visible only when the Parent Profile views a child's Home in "preview" sub-mode, not visible to the child) shows today's completed activities and healthy-usage status without requiring full Parent PIN re-entry if already in an active Parent session.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-15
+
+**FR-15** First-day empty state must replace data-dependent sections (Continue Learning, Weekly Challenge, Milestones) with a guided "Let's start your first mission" single CTA rather than rendering empty/broken-looking widgets.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-16
+
+**FR-16** Offline mode must render Home using the last successfully cached payload, visually marked as offline, with only downloaded content actionable; non-downloaded recommended content shows a "download to access offline" affordance rather than a dead link.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-17
+
+**FR-17** Home must refresh its data on: app foreground after >15 minutes background, pull-to-refresh gesture, and immediately after completing any activity that affects its own sections (e.g., completing a habit check-in updates the streak bar in place, not on next full reload).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A2-FR-18
+
+**FR-18** The Noor companion greeting must vary phrasing/tone across repeated sessions (non-repetitive script pool) to avoid feeling robotic, while staying within scholar-approved language bounds — no AI-freeform-generated greeting text is shown unfiltered.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A3
+
+[Feature_A3_Stories_Module.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A3_Stories_Module.md>) — §1.7.
+
+### A3-FR-1
+
+**FR-1** Stories Library must organize content into the categories: Bedtime Stories, Prophet Stories, Islamic Shorts, Animated Series, Values & Manners, Ramadan & Eid, Downloads (source §21.11).
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [037 Category Filter Panel](Screen_Prompts/037_Category_Filter_Panel.md); [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-2
+
+**FR-2** Library filters must include: age band, duration, language, format (video/audio/text), topic, downloaded-only, free/premium.
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [037 Category Filter Panel](Screen_Prompts/037_Category_Filter_Panel.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-3
+
+**FR-3** Story Detail must show: cover art, synopsis, episode list (for series), age/source/scholar-approval tags, related stories, and current per-episode progress.
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-4
+
+**FR-4** Sequential Episode Unlock applies to every episodic series: Episode 1 unlocked by default; Episode N+1 unlocks only after Episode N reaches a per-series-configured completion threshold (playback %, final interaction, or quiz completion).
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [043 Pause-and-Quiz Moment Overlay](Screen_Prompts/043_Pause_and_Quiz_Moment_Overlay.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-5
+
+**FR-5** Locked episodes must display the specific unlock prerequisite text (e.g., "Complete Episode 2 to unlock") — never a generic lock icon with no explanation, and never presented as a paywall unless the series is genuinely tier-gated (in which case it shows a parent-gated paywall card, not a hidden item).
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [041 Story Player — Text](Screen_Prompts/041_Story_Player_Text.md); [044 Media Unavailable / Safe-Stop Screen](Screen_Prompts/044_Media_Unavailable_Safe_Stop_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-6
+
+**FR-6** Rewatching a completed episode is always available; there is no re-locking after completion.
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [040 Story Player — Audio](Screen_Prompts/040_Story_Player_Audio.md); [041 Story Player — Text](Screen_Prompts/041_Story_Player_Text.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-7
+
+**FR-7** Story Player supports video, audio, and text formats with: play/pause, caption toggle, audio-track selection, quality selection, in-story interactive choice overlays, pause-and-quiz moments, and a moral-summary card at the end.
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [046 Moral Summary Card ("Noor says...")](Screen_Prompts/046_Moral_Summary_Card_Noor_says.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-8
+
+**FR-8** Every story interaction is tracked via `POST /v1/playback/{id}` events and finalized via `POST /v1/content/{id}/complete` on reaching the completion threshold.
+
+Candidate owning surfaces: [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [040 Story Player — Audio](Screen_Prompts/040_Story_Player_Audio.md); [041 Story Player — Text](Screen_Prompts/041_Story_Player_Text.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-9
+
+**FR-9** On completion: award XP/Noor Heroes Points/badge per the content's configured reward rule, then display the AI-generated (or human-fallback) moral summary via the Noor companion, then optionally show the post-story quiz, then offer "Next Learning" AI-suggested continuation from pre-approved branches only.
+
+Candidate owning surfaces: [045 Completion / Reward Reveal Screen](Screen_Prompts/045_Completion_Reward_Reveal_Screen.md); [046 Moral Summary Card ("Noor says...")](Screen_Prompts/046_Moral_Summary_Card_Noor_says.md); [047 Post-Story Quiz](Screen_Prompts/047_Post_Story_Quiz.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-10
+
+**FR-10** Moral Summary Generation: must be generated only from the approved story version and its approved sources (never free-form from unlicensed content); vocabulary adapted to the child's age band; run through Islamic-accuracy and child-safety validation; if AI confidence is below threshold, use a human-reviewed fallback moral instead; accepted moral stored as a versioned artifact (`content_moral_versions`) and surfaced to parents in story insights.
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [045 Completion / Reward Reveal Screen](Screen_Prompts/045_Completion_Reward_Reveal_Screen.md); [046 Moral Summary Card ("Noor says...")](Screen_Prompts/046_Moral_Summary_Card_Noor_says.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-11
+
+**FR-11** Bedtime Mode: dims the player UI, disables stimulating reward animations, uses calmer/slower narration, soft nasheed underscore, and always ends with a dua or calm reflection — never a bright "level up" animation (source §7.5, §"Bedtime Emotional Mode").
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [040 Story Player — Audio](Screen_Prompts/040_Story_Player_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-12
+
+**FR-12** Bedtime Mode supports a parent-configured sleep timer that fades audio/dims screen and can auto-pause/auto-exit the player at expiry.
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [040 Story Player — Audio](Screen_Prompts/040_Story_Player_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-13
+
+**FR-13** Sharing any story moment must open a parent gate and produce either an approved deep link or a parent-facing card — direct, ungated sharing is never available in child mode (source §7.5).
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [040 Story Player — Audio](Screen_Prompts/040_Story_Player_Audio.md); [046 Moral Summary Card ("Noor says...")](Screen_Prompts/046_Moral_Summary_Card_Noor_says.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-14
+
+**FR-14** Story "comments"/reactions are never public; only moderated child-safe reaction stickers or parent-facing feedback exist — no open comment system anywhere in Stories.
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-15
+
+**FR-15** Offline download manifests must include only the currently unlocked episodes of a series at manifest-generation time — never pre-bundling locked future episodes.
+
+Candidate owning surfaces: [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-16
+
+**FR-16** Media removed/withdrawn mid-playback must stop playback safely, explain unavailability in age-appropriate language, and recommend an approved alternative — never a silent failure or crash (source §7.5 Error Handling).
+
+Candidate owning surfaces: [042 Interactive Choice Overlay](Screen_Prompts/042_Interactive_Choice_Overlay.md); [043 Pause-and-Quiz Moment Overlay](Screen_Prompts/043_Pause_and_Quiz_Moment_Overlay.md); [044 Media Unavailable / Safe-Stop Screen](Screen_Prompts/044_Media_Unavailable_Safe_Stop_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-17
+
+**FR-17** Admin/Support preview or override access to locked episodes (for troubleshooting) must be fully audited and must never grant the child any reward (XP/badge) as a side effect.
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [038 Story Detail](Screen_Prompts/038_Story_Detail.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-18
+
+**FR-18** AI "Personalized Story Continuation" must only suggest from a pre-approved branch set per story (e.g., "learn more about sabr," "try the dua," "watch the next Prophet story") — never an open-ended free-text AI suggestion.
+
+Candidate owning surfaces: [041 Story Player — Text](Screen_Prompts/041_Story_Player_Text.md); [046 Moral Summary Card ("Noor says...")](Screen_Prompts/046_Moral_Summary_Card_Noor_says.md); [047 Post-Story Quiz](Screen_Prompts/047_Post_Story_Quiz.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-19
+
+**FR-19** Dynamic Narration Tone adapts per playback context: energetic (afternoon/general), calm (bedtime), Ramadan reflection, Eid celebration, low-stimulation focus mode — selected server-side based on time-of-day, active seasonal mode, and parent-configured sensory preferences (accessibility).
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [039 Story Player — Video](Screen_Prompts/039_Story_Player_Video.md); [042 Interactive Choice Overlay](Screen_Prompts/042_Interactive_Choice_Overlay.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A3-FR-20
+
+**FR-20** Parent Story Insights view must show: stories watched, time spent, quiz scores, and the moral lessons learned — accessible only from the Parent Area, never duplicated into the child's own view in a way that exposes analytics framing to the child.
+
+Candidate owning surfaces: [036 Stories Library (Landing)](Screen_Prompts/036_Stories_Library_Landing.md); [046 Moral Summary Card ("Noor says...")](Screen_Prompts/046_Moral_Summary_Card_Noor_says.md); [047 Post-Story Quiz](Screen_Prompts/047_Post_Story_Quiz.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A4
+
+[Feature_A4_Audio_Bedtime_Player_Bedtime_Mode.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A4_Audio_Bedtime_Player_Bedtime_Mode.md>) — §1.7.
+
+### A4-FR-1
+
+**FR-1** Audio Bedtime Player must display: cover art, story/content title, moral lesson teaser, source/scholar-approval status, episode list (for multi-part audio content), and read/listen counts where privacy-safe (aggregate, never exposing other specific children's identities).
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [057 Media Unavailable / Safe-Stop (Bedtime-styled variant)](Screen_Prompts/057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-2
+
+**FR-2** Controls required: Play/Pause, Seek (scrub bar), Playback Speed (e.g., 0.8x/1x/1.2x), Sleep Timer, Download, Next Episode, Previous Episode (source §21.11).
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [053 Sleep Timer Selector](Screen_Prompts/053_Sleep_Timer_Selector.md); [054 Playback Speed Selector](Screen_Prompts/054_Playback_Speed_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-3
+
+**FR-3** Sleep Timer options must be parent-configurable as a bounded range (e.g., parent sets a max of 30/45/60 minutes); within that bound, the child may freely choose a duration up to the parent-set ceiling, or "until episode ends."
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [053 Sleep Timer Selector](Screen_Prompts/053_Sleep_Timer_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-4
+
+**FR-4** Bedtime Mode is a **system-wide state**, not exclusive to this player: any content surface entered during the parent-configured wind-down window (or explicitly via the Home Bedtime Corner widget) must apply the same dimmed visual treatment, disabled stimulating-reward-animation rule, and dua/calm-reflection ending rule (cross-reference A.3 §2.1 "Bedtime Theme Override").
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [053 Sleep Timer Selector](Screen_Prompts/053_Sleep_Timer_Selector.md); [056 Dua / Calm-Reflection Ending Card](Screen_Prompts/056_Dua_Calm_Reflection_Ending_Card.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-5
+
+**FR-5** Bedtime Mode must dim the UI (reduced brightness/contrast theme), disable stimulating reward effects (no confetti/badge-burst/level-up animations), and end every session with a dua or calm reflection — this rule has zero exceptions, including for content that would otherwise show a bright completion animation outside the window (source §7.5).
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [056 Dua / Calm-Reflection Ending Card](Screen_Prompts/056_Dua_Calm_Reflection_Ending_Card.md); [057 Media Unavailable / Safe-Stop (Bedtime-styled variant)](Screen_Prompts/057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-6
+
+**FR-6** Sleep Timer expiry must trigger a gentle audio fade-out (not an abrupt cut) over a configurable fade duration (default 15 seconds), followed by auto-pause; the screen may also auto-dim further or return to a calm "goodnight" idle state.
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [053 Sleep Timer Selector](Screen_Prompts/053_Sleep_Timer_Selector.md); [055 Goodnight Idle State](Screen_Prompts/055_Goodnight_Idle_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-7
+
+**FR-7** Audio playback must continue uninterrupted if the device screen locks or the app backgrounds (foreground media service), since children commonly fall asleep mid-playback with the screen off.
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [054 Playback Speed Selector](Screen_Prompts/054_Playback_Speed_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-8
+
+**FR-8** "Next/Previous Episode" navigation must respect the same Sequential Unlock rules defined in A.3 §1.7 FR-4 for any episodic audio series — Previous is always available (no re-locking), Next is gated by the unlock state.
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [056 Dua / Calm-Reflection Ending Card](Screen_Prompts/056_Dua_Calm_Reflection_Ending_Card.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-9
+
+**FR-9** Read/listen counts displayed must be privacy-safe aggregates (e.g., "12,400 children have listened to this story") — never displaying or implying identification of specific other children.
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [057 Media Unavailable / Safe-Stop (Bedtime-styled variant)](Screen_Prompts/057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-10
+
+**FR-10** Ending sequence: on reaching the completion threshold, the player transitions directly to a dua/calm-reflection card (not the standard celebratory Completion/Reward screen used outside Bedtime Mode) — reward (XP/Noor Heroes Points) is still recorded quietly in the background but not visually celebrated in this context.
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [056 Dua / Calm-Reflection Ending Card](Screen_Prompts/056_Dua_Calm_Reflection_Ending_Card.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-11
+
+**FR-11** Download must support the same entitlement/parent-policy checks as A.3 §3.4 `POST /v1/downloads/manifest`; Bedtime category content is prioritized for "auto-suggest download" given its predictable, recurring usage pattern (low-connectivity-evening resilience).
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [057 Media Unavailable / Safe-Stop (Bedtime-styled variant)](Screen_Prompts/057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-12
+
+**FR-12** Parent must be able to configure: bedtime window start/end time per child, sleep-timer max ceiling, whether bedtime audio auto-suggests/auto-starts when entering the window, and whether a lightweight "bedtime ritual happened" indicator appears in their Parent Dashboard (non-invasive — completion fact only, not full listening transcript/analytics).
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [053 Sleep Timer Selector](Screen_Prompts/053_Sleep_Timer_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-13
+
+**FR-13** Entering Bedtime Mode must never require re-authentication/PIN if the child is already in an active, validly-locked child session — Bedtime Mode is a content-context state, not a security boundary.
+
+Candidate owning surfaces: [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [054 Playback Speed Selector](Screen_Prompts/054_Playback_Speed_Selector.md); [057 Media Unavailable / Safe-Stop (Bedtime-styled variant)](Screen_Prompts/057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A4-FR-14
+
+**FR-14** If a child opens the Audio Bedtime Player outside the configured bedtime window (e.g., daytime listening), the player still functions normally but does **not** force Bedtime Mode visuals unless the child explicitly opts in via a "Calm Mode" toggle available at any time of day (giving children agency to use the calming experience whenever they want, while keeping the *automatic* window-based trigger separate).
+
+Candidate owning surfaces: [051 Audio Bedtime Player (main screen)](Screen_Prompts/051_Audio_Bedtime_Player_main_screen.md); [052 Episode List Sheet (for multi-part audio series)](Screen_Prompts/052_Episode_List_Sheet_for_multi_part_audio_series.md); [053 Sleep Timer Selector](Screen_Prompts/053_Sleep_Timer_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A5
+
+[Feature_A5_Quran_Arabic_Learning.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md>) — §1.7.
+
+### A5-FR-1
+
+**FR-1** Learn Tab entry point ("Quran Learning Home") shows a skill-tree map with mastery indicators, organized by Surah/skill-node, plus mode selectors for Quran Game variants and a placement-check option for new learners (source: Blueprint screen catalog, "Quran Learning (Quran Game Hub)").
+
+Candidate owning surfaces: [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [074 Quran Game — Listen & Select Matching Ayah](Screen_Prompts/074_Quran_Game_Listen_Select_Matching_Ayah.md); [075 Quran Game — Missing Word](Screen_Prompts/075_Quran_Game_Missing_Word.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-2
+
+**FR-2** Skill Tree states are exactly: `Locked → Ready → Learning → Practicing → Mastered → Needs Refresh` (source §6.3/§21.9). A node's `Locked` state must display what prerequisite unlocks it, not just a generic lock.
+
+Candidate owning surfaces: [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [059 Placement Check (first-time)](Screen_Prompts/059_Placement_Check_first_time.md); [072 Tajweed — Assessment](Screen_Prompts/072_Tajweed_Assessment.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-3
+
+**FR-3** Mastery score is computed from: accuracy, independent attempts, recency, difficulty, and transfer across question types — the child-facing UI shows progress (e.g., a filling progress ring, a state label) without exposing the raw composite confidence score (source §21.9: "should show progress without revealing a confusing raw model score").
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [068 Arabic Letters — Word-Building (sound tiles)](Screen_Prompts/068_Arabic_Letters_Word_Building_sound_tiles.md); [071 Tajweed — Rule Identification Exercise](Screen_Prompts/071_Tajweed_Rule_Identification_Exercise.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-4
+
+**FR-4** `Needs Refresh` state is triggered by spaced-repetition decay logic (time since last correct demonstration, weighted by original mastery strength) and surfaces as a gentle "let's review this together" prompt, never framed as a regression/failure.
+
+Candidate owning surfaces: [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [059 Placement Check (first-time)](Screen_Prompts/059_Placement_Check_first_time.md); [072 Tajweed — Assessment](Screen_Prompts/072_Tajweed_Assessment.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-5
+
+**FR-5** Quran Game modes must include at minimum: ayah ordering, listen-and-select matching ayah, find-the-missing-word, surah-name-to-theme matching (child-safe/approved context only), recitation echo with pronunciation coaching, and progressive-reveal memorization (source §21.9 "Quran Game" game ideas).
+
+Candidate owning surfaces: [066 Arabic Letters — Tracing](Screen_Prompts/066_Arabic_Letters_Tracing.md); [076 Quran Game — Surah Theme Matching](Screen_Prompts/076_Quran_Game_Surah_Theme_Matching.md); [078 Quran Game — Progressive Memorization Reveal](Screen_Prompts/078_Quran_Game_Progressive_Memorization_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-6
+
+**FR-6** Arabic Letters module must include: hear-and-match, tracing, isolated/initial/medial/final form matching, harakah (diacritic) sound pairing, find-the-letter-in-an-approved-word, build-a-word-from-sound-tiles — with spaced review scheduling applied across sessions (source §21.9 "Arabic Letters").
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [066 Arabic Letters — Tracing](Screen_Prompts/066_Arabic_Letters_Tracing.md); [082 Arabic Letters — Contextual Form Matching (Isolated / Initial / Medial / Final)](Screen_Prompts/082_Arabic_Letters_Contextual_Form_Matching_Isolated_Initial_Medial_Final.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-7
+
+**FR-7** Arabic Letter detailed flow: play phoneme → child selects 1-of-4 letters → child traces the correct shape → letter shown in a familiar word → scheduled for spaced review. Mastery requires correct performance across different question forms and across more than one session (not masterable in a single sitting) — source §21.9.
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [067 Arabic Letters — Word Context](Screen_Prompts/067_Arabic_Letters_Word_Context.md); [083 Arabic Letters — Harakah Sound Pairing](Screen_Prompts/083_Arabic_Letters_Harakah_Sound_Pairing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-8
+
+**FR-8** Surah Learning screen shows ayah-by-ayah list with audio, a translation toggle, Tajweed-rule highlighting inline with the text, and a recitation recorder; actions: listen, repeat, record pronunciation attempt, request a hint, mark ayah as practiced (source: Blueprint screen catalog "Surah Learning").
+
+Candidate owning surfaces: [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md); [070 Tajweed — Listen (normal/slow)](Screen_Prompts/070_Tajweed_Listen_normal_slow.md); [071 Tajweed — Rule Identification Exercise](Screen_Prompts/071_Tajweed_Rule_Identification_Exercise.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-9
+
+**FR-9** Microphone-denied or parent-disabled state must fall back to listen-only practice — the child can still progress through listening/repetition-without-recording paths; this is not a dead end (source: Blueprint, "Mic-denied state falls back to listen-only practice").
+
+Candidate owning surfaces: [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md); [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-10
+
+**FR-10** AI pronunciation scores are advisory and confidence-aware: the system must never label a recitation/worship act as "accepted" or "rejected," must never imply religious/spiritual validity, and must present feedback strictly as pedagogical coaching (e.g., "try emphasizing this letter more" rather than "incorrect") — source §6.3/§21.9, a hard non-negotiable rule.
+
+Candidate owning surfaces: [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [063 AI Pronunciation Feedback Screen](Screen_Prompts/063_AI_Pronunciation_Feedback_Screen.md); [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-11
+
+**FR-11** Raw child voice recordings are not retained after processing by default; only derived, non-reversible feedback signals (e.g., a phoneme-level score) may be retained for progress tracking, never the raw audio itself unless a parent explicitly opts in to a distinct "save recordings" feature (off by default) for their own private playback.
+
+Candidate owning surfaces: [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [067 Arabic Letters — Word Context](Screen_Prompts/067_Arabic_Letters_Word_Context.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-12
+
+**FR-12** Low-confidence AI pronunciation results must fall back to a "compare against the recorded reference example" self-assessment mode rather than presenting an uncertain automated score as if it were reliable (source §21.9: "Low-confidence results fall back to recorded examples").
+
+Candidate owning surfaces: [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [071 Tajweed — Rule Identification Exercise](Screen_Prompts/071_Tajweed_Rule_Identification_Exercise.md); [077 Quran Game — Recitation Echo](Screen_Prompts/077_Quran_Game_Recitation_Echo.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-13
+
+**FR-13** Parent must be able to disable microphone/AI pronunciation features per child (not just globally) from Parental Controls (cross-ref C.23); when disabled, all recitation practice defaults to listen-and-self-assess mode app-wide for that child, with no UI path to bypass this setting from within the Learn tab.
+
+Candidate owning surfaces: [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md); [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [077 Quran Game — Recitation Echo](Screen_Prompts/077_Quran_Game_Recitation_Echo.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-14
+
+**FR-14** Tajweed module flow: introduce one rule with an approved example → listen at normal and slow speed → identify the rule in an example → optional microphone repeat with visual coaching → short assessment (source §21.9 "Tajweed" flow) — each step is sequential and the microphone step is skippable/replaced by listen-only per FR-9/FR-13.
+
+Candidate owning surfaces: [069 Tajweed — Rule Introduction](Screen_Prompts/069_Tajweed_Rule_Introduction.md); [070 Tajweed — Listen (normal/slow)](Screen_Prompts/070_Tajweed_Listen_normal_slow.md); [071 Tajweed — Rule Identification Exercise](Screen_Prompts/071_Tajweed_Rule_Identification_Exercise.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-15
+
+**FR-15** Daily Quiz (Learn-tab-specific instance, shared engine with A.8) assembles exactly 5 questions from recently-learned content plus identified weak skills; question types: multiple choice, sequence, true/false, image match, audio match; immediate explanation shown after each answer; incorrect answers enter a short retry set within the same session (source §21.9).
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [068 Arabic Letters — Word-Building (sound tiles)](Screen_Prompts/068_Arabic_Letters_Word_Building_sound_tiles.md); [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-16
+
+**FR-16** Quiz completion awards effort XP for participation regardless of accuracy; accuracy affects mastery-score computation, not base participation XP — this separation is intentional (a child should never feel "punished" with zero reward for attempting a hard quiz) (source §21.9: "Completion awards effort XP; accuracy affects mastery, not base participation XP").
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [072 Tajweed — Assessment](Screen_Prompts/072_Tajweed_Assessment.md); [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-17
+
+**FR-17** Parent-facing Quran/Quiz reports must show concepts/skills, not just a raw numeric score (source §21.9: "Parent report shows concepts, not just a score").
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [073 Quran Game — Ayah Ordering](Screen_Prompts/073_Quran_Game_Ayah_Ordering.md); [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-18
+
+**FR-18** Hint system: hints must be progressive/partial (e.g., eliminate one wrong option, reveal the first letter) rather than immediately revealing the full answer; hint usage is tracked as a data point (`hint_count`) feeding the mastery-confidence calculation, not treated as a penalty visible to the child.
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [073 Quran Game — Ayah Ordering](Screen_Prompts/073_Quran_Game_Ayah_Ordering.md); [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-19
+
+**FR-19** Islamic Facts surfaced within or adjacent to Learn-tab content must carry: locale/age-banded text, topic and related-content linkage, primary/secondary source references, scholar approval and version, an explanation, a linked quiz item, and jurisprudential-scope/exclusion notes where relevant (source §21.9 "Islamic Facts").
+
+Candidate owning surfaces: [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [060 Mode Selector Sheet](Screen_Prompts/060_Mode_Selector_Sheet.md); [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-20
+
+**FR-20** Adaptive difficulty: lesson difficulty must adjust based on performance (source: Blueprint use case "Get adaptive lesson") — implemented via the mastery-score/skill-state model, not a separate disconnected difficulty slider.
+
+Candidate owning surfaces: [066 Arabic Letters — Tracing](Screen_Prompts/066_Arabic_Letters_Tracing.md); [067 Arabic Letters — Word Context](Screen_Prompts/067_Arabic_Letters_Word_Context.md); [068 Arabic Letters — Word-Building (sound tiles)](Screen_Prompts/068_Arabic_Letters_Word_Building_sound_tiles.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A5-FR-21
+
+**FR-21** Quran content data integrity: Ayah text itself is never editable post-seed (verified-source-seeded once); only translations, tafseer notes, and learning metadata are versioned/editable, each requiring scholar sign-off before publish (source: Admin Quran Management module rules, cross-referenced here as a hard content-integrity constraint this feature's read path must respect).
+
+Candidate owning surfaces: [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md); [073 Quran Game — Ayah Ordering](Screen_Prompts/073_Quran_Game_Ayah_Ordering.md); [074 Quran Game — Listen & Select Matching Ayah](Screen_Prompts/074_Quran_Game_Listen_Select_Matching_Ayah.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A6
+
+[Feature_A6_Dua_Learning.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A6_Dua_Learning.md>) — §1.7.
+
+### A6-FR-1
+
+**FR-1** Dua Learning is a standalone screen reachable from the Learn tab, organized by category: Morning, Bedtime, Food, Travel, Gratitude, Protection (source: screen catalog).
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-2
+
+**FR-2** Each Dua Card must display: Arabic text (Quranic-adjacent but dua-appropriate typography — see §2.1), transliteration, translation, and an audio play control — all four elements present simultaneously, not hidden behind extra taps, given duas are short enough to display in full (source: screen catalog "dua card with Arabic, transliteration, translation, audio").
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-3
+
+**FR-3** User actions per dua: Listen (play audio), Mark as Learned, Practice Recall Quiz, Favorite (source: screen catalog).
+
+Candidate owning surfaces: [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md); [087 Recall Quiz Question Screen](Screen_Prompts/087_Recall_Quiz_Question_Screen.md); [088 Recall Quiz Result / Pass Screen](Screen_Prompts/088_Recall_Quiz_Result_Pass_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-4
+
+**FR-4** Duas are **always free-tier** — no entitlement/paywall check is ever applied to any dua content, regardless of subscription state (hard rule, zero exceptions, enforced at the API response layer consistent with the pattern established for billing-content exclusion in A.2).
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-5
+
+**FR-5** "Mark as Learned" is a child-initiated, self-assessed action (not AI-graded) — the child decides when they feel ready; this status is distinct from and a prerequisite to attempting the Recall Quiz for that dua.
+
+Candidate owning surfaces: [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md); [087 Recall Quiz Question Screen](Screen_Prompts/087_Recall_Quiz_Question_Screen.md); [088 Recall Quiz Result / Pass Screen](Screen_Prompts/088_Recall_Quiz_Result_Pass_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-6
+
+**FR-6** Recall Quiz per dua is short (recommend 1–3 questions given dua length, e.g., "what does this dua ask for," "fill in the missing word," "match the occasion to the dua") and only offered for duas already marked Learned.
+
+Candidate owning surfaces: [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md); [087 Recall Quiz Question Screen](Screen_Prompts/087_Recall_Quiz_Question_Screen.md); [088 Recall Quiz Result / Pass Screen](Screen_Prompts/088_Recall_Quiz_Result_Pass_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-7
+
+**FR-7** Recall Quiz incorrect answers must show supportive, non-shaming retry language and re-surface the dua's full card (Arabic/transliteration/translation/audio) for review before allowing a retry — never a bare "wrong" with no path back to the learning content (consistent with the platform's Ethical Rule against shaming).
+
+Candidate owning surfaces: [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md); [087 Recall Quiz Question Screen](Screen_Prompts/087_Recall_Quiz_Question_Screen.md); [088 Recall Quiz Result / Pass Screen](Screen_Prompts/088_Recall_Quiz_Result_Pass_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-8
+
+**FR-8** Favoriting a dua surfaces it in a dedicated Favorites view (shared mechanic with A.3 Stories favorites) for quick access.
+
+Candidate owning surfaces: [140 Search Results](Screen_Prompts/140_Search_Results.md); [143 Favorites](Screen_Prompts/143_Favorites.md); [144 Downloads](Screen_Prompts/144_Downloads.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-9
+
+**FR-9** Learning a dua (reaching "Learned" status) must emit an event consumable by the Habit Tracker to offer that dua as a candidate daily-habit reminder (e.g., "Remind me to read this every morning") — this is an explicit cross-feature integration point, not a passive coincidence.
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [090 Habit Tracker Reminder Suggestion Prompt](Screen_Prompts/090_Habit_Tracker_Reminder_Suggestion_Prompt.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-10
+
+**FR-10** Dua Master badge (and any intermediate milestone badges) criteria are evaluated by the shared Reward/Achievement Service based on cumulative "Learned" dua count, consistent with the append-only reward-ledger pattern used platform-wide.
+
+Candidate owning surfaces: [088 Recall Quiz Result / Pass Screen](Screen_Prompts/088_Recall_Quiz_Result_Pass_Screen.md); [089 Dua Master Badge Progress Celebration (milestone)](Screen_Prompts/089_Dua_Master_Badge_Progress_Celebration_milestone.md); [144 Downloads](Screen_Prompts/144_Downloads.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-11
+
+**FR-11** Every dua requires a source citation before leaving draft status in the CMS, and audio is mandatory before scholar review — text-only duas (no audio) cannot publish to children (source: Admin "Dua Management" module validation rules — this is a read-path guarantee this feature's content consumers rely on, not just an authoring-side rule).
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-12
+
+**FR-12** Dua content must be downloadable for offline access (shared Downloads mechanism, A.16) given duas' high real-world recurring-use value (a child should be able to access a learned travel dua without connectivity while actually traveling).
+
+Candidate owning surfaces: [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md); [143 Favorites](Screen_Prompts/143_Favorites.md); [144 Downloads](Screen_Prompts/144_Downloads.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-13
+
+**FR-13** Dua category filtering and search must support locale-aware sorting (e.g., displaying category labels and dua titles in the active locale) with full RTL support for Arabic UI.
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A6-FR-14
+
+**FR-14** A dua's translation/transliteration text is versioned and editable (new version on edit, not in-place mutation) per the same content-integrity pattern as Quran translations (A.5) — children always consume the latest *published* (scholar-approved) version, never a draft.
+
+Candidate owning surfaces: [084 Dua Learning Landing (Category List)](Screen_Prompts/084_Dua_Learning_Landing_Category_List.md); [085 Category Dua List](Screen_Prompts/085_Category_Dua_List.md); [086 Dua Card Detail (Arabic/Transliteration/Translation/Audio)](Screen_Prompts/086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A7
+
+[Feature_A7_Habit_Tracker.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A7_Habit_Tracker.md>) — §1.7.
+
+### A7-FR-1
+
+**FR-1** Habit Builder's "Today" view shows a checklist of the child's currently-configured habits: Salah (by prayer), Quran reading, daily duas, good deeds, dhikr counter, and optionally a Ramadan fasting tracker — scoped by parent configuration and child age (source §6.5, §21.14, screen catalog "Habit Builder").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [095 Streak Calendar / History View](Screen_Prompts/095_Streak_Calendar_History_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-2
+
+**FR-2** Habit check-in is offline-first: local database updates immediately on tap; server sync and reward posting happen asynchronously (source §6.5 Detailed Workflow step 2: "Local database updates immediately (offline-first)").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-3
+
+**FR-3** Exactly one capped reward is granted per `(child_id, habit_id, local_date)` — repeated taps on the same habit on the same day do not farm additional XP/Noor Heroes Points (source §9.3 DB notes: "one capped habit reward per (child_id, habit_id, local_date)"; §6.5 "Rewards have daily caps to prevent farming").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md); [099 Noor Garden — Personal View](Screen_Prompts/099_Noor_Garden_Personal_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-4
+
+**FR-4** Habit check-in events store: local date, timezone, source, an optional parent-verification flag, and an optional note category — sensitive personal notes are never required (source §6.5/§21.14).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md); [094 Good Deed Optional Note Entry](Screen_Prompts/094_Good_Deed_Optional_Note_Entry.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-5
+
+**FR-5** Parent chooses which habits appear, scoped by child age (FR carried from §6.5/§21.14) — the child never sees a habit type the parent has not enabled for them.
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-6
+
+**FR-6** Parent verification of a habit claim is **optional** per habit/child and must never be framed in copy or UI treatment as "religious policing" — verification is presented as supportive co-participation (e.g., "Mark this together"), never surveillance (source: hard ethical/copy constraint, §6.5/§screen-catalog).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-7
+
+**FR-7** Streak System implements the exact state machine: `Inactive → Active → AtRisk → Protected/Broken → Recovery → Active/Inactive` per the canonical diagram in §7.4/§21.13 (full transition table specified in §1.17 below) — this is the feature's most safety-critical logic and must be implemented exactly as specified, not approximated.
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [096 Recovery Mission Screen](Screen_Prompts/096_Recovery_Mission_Screen.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-8
+
+**FR-8** A "meaningful activity" counting toward a streak is: a completed lesson, a story watched past a minimum-engagement threshold, a quiz, or an approved habit check-in — repeated low-value taps never count (source §7.4/§21.13).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-9
+
+**FR-9** Calendar-day boundaries for streak evaluation use a **server-maintained child timezone**, not raw device-reported time, to resist trivial manipulation while still being fair to genuine travel (source §7.4).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [095 Streak Calendar / History View](Screen_Prompts/095_Streak_Calendar_History_View.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-10
+
+**FR-10** Timezone changes and travel require bounded, abuse-resistant grace logic with server-side reconciliation — a streak must never be silently broken by a timezone shift alone (source §6.5 Error Handling, §21.13).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-11
+
+**FR-11** A "streak shield" (the `Protected` transition from `AtRisk`) is earned through learning/consistency, never purchasable with real money (source §7.4, §21.13 — a hard anti-monetization-of-grace rule).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [095 Streak Calendar / History View](Screen_Prompts/095_Streak_Calendar_History_View.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-12
+
+**FR-12** Family Streak (Noor Garden): multiple children in the same family may contribute to a shared family streak/garden, but **individual sibling habit completion is never compared, ranked, or displayed competitively anywhere**, including in parent reports (source §6.5 Business Rules, §21.12 "Never rank siblings in parent reports" — applies platform-wide but is specifically enforced here at the point of data origin).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [099 Noor Garden — Personal View](Screen_Prompts/099_Noor_Garden_Personal_View.md); [100 Noor Garden — Family View](Screen_Prompts/100_Noor_Garden_Family_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-13
+
+**FR-13** Broken-streak and missed-day messaging emphasizes returning, never failure or shame — no UI treatment (color, iconography, copy) may imply punishment (source §6.5/§7.4 Failure Scenario language).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-14
+
+**FR-14** Missed-habit pattern detection triggers a mercy-toned suggestion (smaller target, alternate time, or family reminder) — never a shaming message (source: screen catalog "Habit Builder" Navigation Flow rule; Habit Intelligence Model table "Missed habit pattern → Suggests a smaller target, alternate time, or family reminder. Prevents shame and helps parents coach gently").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md); [098 Mercy-Toned Smaller-Target Suggestion Prompt](Screen_Prompts/098_Mercy_Toned_Smaller_Target_Suggestion_Prompt.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-15
+
+**FR-15** Habit reminders respect family hours, bedtime, and parent quiet windows (source §6.5 Engagement Mechanics) — no reminder may fire during a configured quiet/bedtime window.
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [099 Noor Garden — Personal View](Screen_Prompts/099_Noor_Garden_Personal_View.md); [100 Noor Garden — Family View](Screen_Prompts/100_Noor_Garden_Family_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-16
+
+**FR-16** Dhikr Counter provides a gentle tactile interface, audio pronunciation support, and a daily target, distinct in interaction model from the simple checkbox-style habits (source §6.5 Habit Types).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-17
+
+**FR-17** Fasting Tracker (Ramadan/practice fasts) is optional and parent-controlled, with age-appropriate fasting education content linked (source §6.5 Habit Types, §6.5 "fasting tracker (optional, parent-controlled)").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md); [224 Fasting Tracker](Screen_Prompts/224_Fasting_Tracker.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-18
+
+**FR-18** Seasonal mode integration: when Ramadan mode is active, missions/habits switch to fasting, charity, Quran, dua, and family iftar reflections (source: Habit Intelligence Model table "Ramadan mode active → Switches missions to fasting, charity, Quran, dua, and family iftar reflections").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [097 Streak State Detail — AtRisk / Protected / Broken / Recovery](Screen_Prompts/097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md); [099 Noor Garden — Personal View](Screen_Prompts/099_Noor_Garden_Personal_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-19
+
+**FR-19** Noor Garden visual progression: each habit type grows a distinct part of a personal progress world (Quran tree, kindness flowers, Salah lanterns, dua stars, Ramadan moon path); siblings contribute to shared Family Garden milestones (e.g., 100 duas, 30 good deeds, 7 family story nights, a complete Ramadan journey) (source §"Noor Garden Progress World").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [099 Noor Garden — Personal View](Screen_Prompts/099_Noor_Garden_Personal_View.md); [100 Noor Garden — Family View](Screen_Prompts/100_Noor_Garden_Family_View.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-20
+
+**FR-20** Habit check-in is idempotent via `client_request_id`; offline check-ins sync in causal order with server-side deduplication.
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-21
+
+**FR-21** Weekly habit reports (parent-facing) use child-friendly highlights framing, not raw failure/success scorecards, and never rank siblings (source §6.5 Engagement Mechanics, cross-ref FR-12/FR-13).
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A7-FR-22
+
+**FR-22** Churn-risk detection (declining habit engagement trend) triggers encouragement-oriented interventions, never pressure-oriented ones (source §6.5 Engagement Mechanics "Churn-risk detection that triggers encouragement, not pressure").
+
+Candidate owning surfaces: [091 Habit Builder — Today's Checklist](Screen_Prompts/091_Habit_Builder_Today_s_Checklist.md); [092 Dhikr Counter Screen](Screen_Prompts/092_Dhikr_Counter_Screen.md); [093 Good Deed Logging — Category Selector](Screen_Prompts/093_Good_Deed_Logging_Category_Selector.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A8
+
+[Feature_A8_Daily_Quiz_Engine.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A8_Daily_Quiz_Engine.md>) — §1.7.
+
+### A8-FR-1
+
+**FR-1** Daily Quiz assembles exactly 5 questions per session, sourced from a mix of recently-learned content and identified weak skills (source §6.3/§21.9).
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [105 Quiz Question Screen — Image Match](Screen_Prompts/105_Quiz_Question_Screen_Image_Match.md); [109 Quiz Completion / Effort XP Reveal](Screen_Prompts/109_Quiz_Completion_Effort_XP_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-2
+
+**FR-2** Supported question types: multiple choice, sequence/ordering, true/false, image match, audio match (source §6.3/§21.9/§23.5) — the engine must support all five types as first-class, reusable across every consuming feature.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-3
+
+**FR-3** Immediate explanation is shown after every answer submission, regardless of correctness (source §6.3/§21.9) — this is not optional or skippable-by-default; it is always presented.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-4
+
+**FR-4** Incorrect answers enter a short retry set within the same session (source §6.3/§21.9) — the retry set is assembled from only the missed questions (or close variants, per content design), not the full original set.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [105 Quiz Question Screen — Image Match](Screen_Prompts/105_Quiz_Question_Screen_Image_Match.md); [108 Retry Set Entry Screen](Screen_Prompts/108_Retry_Set_Entry_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-5
+
+**FR-5** Quiz completion always awards effort XP, regardless of accuracy; accuracy independently feeds the Skill Mastery model's confidence calculation but never reduces or withholds the base participation reward (source §6.3/§21.9/§A.5 FR-16 cross-reference — a hard, platform-wide rule restated here as this engine's authoritative implementation point).
+
+Candidate owning surfaces: [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md); [106 Quiz Question Screen — Audio Match](Screen_Prompts/106_Quiz_Question_Screen_Audio_Match.md); [109 Quiz Completion / Effort XP Reveal](Screen_Prompts/109_Quiz_Completion_Effort_XP_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-6
+
+**FR-6** Parent-facing reporting from any quiz attempt must surface concepts/skills addressed, not a bare numeric score as the headline (source §6.3/§21.9).
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-7
+
+**FR-7** Each question records: `question_id`, `content_version_id`, attempt number, answer, response time, hint count, and an offline flag (source §21.9 "Detailed sample screen" data fields) — this data model is shared across all question types and all consuming features.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [107 Per-Answer Explanation Overlay](Screen_Prompts/107_Per_Answer_Explanation_Overlay.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-8
+
+**FR-8** Hints are progressive/partial (consistent with A.5 FR-18) and tracked via `hint_count` feeding mastery-confidence calculation, never shown as a visible penalty to the child.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-9
+
+**FR-9** The Quiz Engine must be embeddable/contextualized by the calling feature — a Daily Quiz widget instance (Home), a Learn-tab skill-practice instance (A.5), a post-Story instance (A.3, "3 to 5 questions"), and a Dua recall instance (A.6, "1 to 3 questions") all use the same underlying attempt/response/scoring contract, parameterized by question count and source pool rather than divergent implementations.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [105 Quiz Question Screen — Image Match](Screen_Prompts/105_Quiz_Question_Screen_Image_Match.md); [106 Quiz Question Screen — Audio Match](Screen_Prompts/106_Quiz_Question_Screen_Audio_Match.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-10
+
+**FR-10** Offline quiz attempts are supported when the question bank was included in a content download package; results sync on reconnect with idempotent submission (cross-ref A.3/A.5/A.6 offline patterns).
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-11
+
+**FR-11** A quiz attempt that references a question later withdrawn for safety reasons must still sync for historical record purposes, but the withdrawn item is **excluded from mastery and reward calculation** even if the attempt predates the withdrawal and is syncing late (source: Error & Edge-Case Matrix, "Offline quiz uses a withdrawn question → Sync the attempt for history, but exclude the withdrawn item from mastery/reward if it was withdrawn for safety reasons").
+
+Candidate owning surfaces: [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md); [105 Quiz Question Screen — Image Match](Screen_Prompts/105_Quiz_Question_Screen_Image_Match.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-12
+
+**FR-12** Distractor (wrong-answer-option) quality is governed by the Quiz Builder's content-authoring validation, including a "preview for mobile and screen reader" check before publish (source §23.5) — this engine's read path trusts that published questions have passed this authoring-side quality gate.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [105 Quiz Question Screen — Image Match](Screen_Prompts/105_Quiz_Question_Screen_Image_Match.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-13
+
+**FR-13** Question versions are locked after publication (source §23.5 "Version lock after publication") — an in-flight quiz session must never have a question's content change underneath it mid-attempt; edits create a new version for future sessions only.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-14
+
+**FR-14** Quiz attempts are idempotent via `client_request_id` at the attempt level, consistent with the platform's universal idempotency pattern (source §9.3 `quiz_attempts`/`quiz_responses` schema notes).
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [104 Quiz Question Screen — True/False](Screen_Prompts/104_Quiz_Question_Screen_True_False.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A8-FR-15
+
+**FR-15** The engine must support per-question skill-tagging (linking a question to one or more skill/mastery nodes) so that a single quiz session can simultaneously update mastery confidence across multiple distinct skills.
+
+Candidate owning surfaces: [102 Quiz Question Screen — Multiple Choice](Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md); [103 Quiz Question Screen — Sequence/Ordering](Screen_Prompts/103_Quiz_Question_Screen_Sequence_Ordering.md); [109 Quiz Completion / Effort XP Reveal](Screen_Prompts/109_Quiz_Completion_Effort_XP_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## A9
+
+[Feature_A9_Skill_Tree_Mastery_Engine.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App (1-12)/Feature_A9_Skill_Tree_Mastery_Engine.md>) — §1.7.
+
+### A9-FR-1
+
+**FR-1** The Mastery Engine exposes exactly six skill states across every domain: `Locked → Ready → Learning → Practicing → Mastered → Needs Refresh` (source §6.3/§21.9 — restated here as the canonical, domain-agnostic definition; A.5 documents the Quran/Arabic-specific UI treatment of these same states).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-2
+
+**FR-2** Mastery score is computed from a weighted combination of: accuracy, independent-attempt count, recency of evidence, item difficulty, and cross-question-format transfer (source §21.9 "Mastery score combines accuracy, independent attempts, recency, difficulty, and transfer across question types") — this formula is implemented once, centrally, and parameterized per domain/skill rather than reimplemented per domain.
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-3
+
+**FR-3** The child-facing UI must show progress (a state label, a progress ring, etc.) without ever revealing the raw numeric mastery/confidence score (source §21.9, restated as a hard product rule the engine's API contract enforces by never including a raw score field in any child-facing response).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-4
+
+**FR-4** A child can retry any practice item without losing XP or breaking a streak — mastery-affecting accuracy and reward-affecting participation are fully decoupled systems (source §6.3, shared architectural principle with A.8's quiz engine).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-5
+
+**FR-5** Single-session mastery is disallowed by design: reaching `Mastered` requires repeated correct performance across more than one practice session and, where applicable, across more than one question format (source: A.5 FR-7, generalized here as the engine's domain-agnostic rule — "Mastery requires correct performance across different question forms and across more than one session").
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-6
+
+**FR-6** Quiz Completion Result flow (the shared result screen after any quiz/practice attempt): validate the attempt and its idempotency key → calculate skill evidence → post the reward-ledger entry (unconditional, per A.8 FR-5) → show a result screen with **strengths and exactly one concrete next step** → offer `Review Mistakes`, `Try Again`, or `Continue` → record a parent-report event (source §21.10 "Quiz Completion" flow, items 1–7).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-7
+
+**FR-7** "Review Mistakes" re-presents the specific items missed (with their explanations, reusing A.8's Per-Answer Explanation pattern) without re-triggering a scored attempt. "Try Again" launches a fresh attempt (new `attempt_id`) of the same or an equivalent item. "Continue" simply proceeds, with no penalty for declining either of the other two options.
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-8
+
+**FR-8** Spaced Repetition Scheduling computes a `next_review_at` timestamp per `(child_id, skill_id)` based on a decay function over time-since-`last_evidence_at`, weighted by mastery strength — generalized from A.5's Quran/Arabic-specific scheduler into the shared engine, with the same daily-prompt cap (default 2) to avoid overwhelming the child (source: A.5 §5 item 6, generalized here).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-9
+
+**FR-9** The engine must support domain-agnostic skill-graph definitions: any domain can define its own `skill_node` catalog, prerequisite graph, and content linkage, while relying on the shared engine for state-machine evaluation, mastery scoring, and spaced-repetition scheduling — no domain may implement a parallel, divergent mastery calculation.
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-10
+
+**FR-10** A withdrawn/safety-flagged quiz item's evidence is excluded from mastery-score computation even if the response was recorded before withdrawal (shared rule with A.8 FR-11, enforced once here at the mastery-aggregation layer so every domain inherits it automatically).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### A9-FR-11
+
+**FR-11** The engine exposes a domain-agnostic Parent Report contract: concept-level summaries (skill labels + state + trend), never a single raw aggregate score as the headline metric (source: shared principle with A.5 FR-17/A.6/A.8 §3.4).
+
+Candidate owning surfaces: [110 Quiz Completion Result Screen (shared, generic)](Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md); [111 Review Mistakes Screen](Screen_Prompts/111_Review_Mistakes_Screen.md); [112 Offline Completion — Saved / Results Deferred](Screen_Prompts/112_Offline_Completion_Saved_Results_Deferred.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## B13
+
+[Feature_B13_Search_Discovery.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md>) — §1.7.
+
+### B13-FR-1
+
+**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog "Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state").
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-2
+
+**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog "User Actions: Type or speak a query, apply type/age filter, open a result").
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-3
+
+**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-4
+
+**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [138 Voice Search — Processing](Screen_Prompts/138_Voice_Search_Processing.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-5
+
+**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw "no results" error**.
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-6
+
+**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [137 Voice Search — Listening](Screen_Prompts/137_Voice_Search_Listening.md); [138 Voice Search — Processing](Screen_Prompts/138_Voice_Search_Processing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-7
+
+**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).
+
+Candidate owning surfaces: [138 Voice Search — Processing](Screen_Prompts/138_Voice_Search_Processing.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-8
+
+**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-9
+
+**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching "the whale prophet" should surface Prophet Yunus content) (source: Feature Reference "Search System" features: "Semantic search... Multilingual understanding").
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [140 Search Results](Screen_Prompts/140_Search_Results.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-10
+
+**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [137 Voice Search — Listening](Screen_Prompts/137_Voice_Search_Listening.md); [138 Voice Search — Processing](Screen_Prompts/138_Voice_Search_Processing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-11
+
+**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case "Search child progress | Parent | Parent searches reports, stories, habits") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [141 Search Empty State](Screen_Prompts/141_Search_Empty_State.md); [142 Parent Area Search](Screen_Prompts/142_Parent_Area_Search.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B13-FR-12
+
+**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.
+
+Candidate owning surfaces: [136 Search](Screen_Prompts/136_Search.md); [138 Voice Search — Processing](Screen_Prompts/138_Voice_Search_Processing.md); [140 Search Results](Screen_Prompts/140_Search_Results.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## B14
+
+[Feature_B14_Favorites.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App Supporting (13-18)/Feature_B14_Favorites.md>) — §1.7.
+
+### B14-FR-1
+
+**FR-1** Favorites screen UI sections: a saved-item grid and a type filter (source: screen catalog "Favorites — UI Sections: Saved item grid, type filter").
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-2
+
+**FR-2** User actions: open a favorited item, remove it from favorites (source: screen catalog "User Actions: Open item, Remove from favorites").
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-3
+
+**FR-3** Favoriting entry points are the "save" action available on Story Detail, Surah Learning, and Dua Learning detail screens (source: screen catalog "Entry Points: Profile, Story/Quran detail 'save' action").
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-4
+
+**FR-4** **Favorites are strictly per-child, never shared across siblings** — each child has their own independent favorites list, with no UI surface anywhere (including Parent Area reports) that merges or displays favorites across multiple children as a combined view (source: navigation table — restated as a hard platform-wide data-isolation rule applied here).
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-5
+
+**FR-5** A favorite toggle (add/remove) is idempotent and optimistic — toggling the same item rapidly never produces a duplicate favorite record or an inconsistent final state (consistent with the platform's general idempotent-toggle pattern established for habit favorites/check-ins elsewhere).
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-6
+
+**FR-6** Favoriting an item is only possible for content the child already has access to — favoriting never bypasses age-band eligibility, entitlement, or unlock-state restrictions; the save action itself is simply unavailable (not erroring, just not offered) on content the child cannot already open.
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-7
+
+**FR-7** If favorited content is later withdrawn or archived by Admin, the Favorites grid shows a clear "no longer available" state for that item rather than a broken link or silent disappearance, consistent with the platform-wide withdrawn-content handling pattern (A.3/A.6).
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-8
+
+**FR-8** The Favorites grid supports filtering by content type (Stories/Surahs/Duas) consistent with FR-1, using the same type-iconography established in Search (B.13).
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B14-FR-9
+
+**FR-9** Favorites and Downloads (B.15) share a single screen shell with two tabs, reachable from the Profile tab; the two tabs are independently functional and do not share data models, only a UI container.
+
+Candidate owning surfaces: [143 Favorites](Screen_Prompts/143_Favorites.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## B15
+
+[Feature_B15_Offline_Downloads_Sync.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App Supporting (13-18)/Feature_B15_Offline_Downloads_Sync.md>) — §1.7.
+
+### B15-FR-1
+
+**FR-1** Downloads tab UI sections: download list, storage used vs. device/parent-set limit, remove action, retry-failed action (source: screen catalog "Favorites & Downloads — UI Sections: Two tabs — Favorites (liked content) and Downloads (offline manifest with storage used / device limit)"; "User Actions: Unlike, remove a download, retry a failed/incomplete download, clear all downloads").
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-2
+
+**FR-2** Download Flow (canonical, source §7.10/§21.17, items 1–6): (1) verify entitlement and parent download policy, (2) request a signed manifest, (3) download resumable chunks with checksums, (4) encrypt or sandbox local media where the platform supports it, (5) store version, locale, expiry, and license terms locally, (6) refresh entitlement periodically — offline access is time-bounded, not indefinite.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-3
+
+**FR-3** Downloads are subject to a per-child download cap set by the parent (source: navigation table, "Downloads... Subject to per-child download cap set by parent") — attempting to download beyond the cap shows a clear "cap reached" message.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-4
+
+**FR-4** Offline Progress Flow (canonical, source §7.10/§21.17): write to local database first (offline-first) → queue immutable events with client-generated IDs → sync in causal order once connectivity returns → server deduplicates using idempotency keys → content progress uses the furthest-valid position; quiz attempts remain separately tracked.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-5
+
+**FR-5** Withdrawn content becomes unavailable after the next policy/entitlement refresh, while the child's safe progress history is preserved (source §7.10/§21.17 — the canonical rule this feature's entitlement-refresh mechanism enforces).
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-6
+
+**FR-6** Interrupted/failed downloads resume with exponential backoff rather than restarting from zero (source: Offline Content Flow diagram).
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-7
+
+**FR-7** License-expired downloads show a clear re-download prompt instead of silently failing (source: screen catalog navigation flow note).
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-8
+
+**FR-8** Downloaded media is encrypted or sandboxed locally where the platform supports it (source §7.10/§21.17, item 4) — raw, freely-extractable media files are never left in an unprotected, generally-accessible device location.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-9
+
+**FR-9** Offline progress sync posts rewards exactly once per qualifying completion event via the same idempotency-key mechanism used platform-wide (A.11) — sync never produces duplicate XP/Noor Heroes Points regardless of how many times a client retries the sync call.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-10
+
+**FR-10** A "Clear all downloads" action removes all downloaded media for that child, freeing device storage, without affecting favorites (B.14) or server-side progress history — downloading and favoriting are independent, decoupled actions on the same content item.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-11
+
+**FR-11** Multiple downloads queue and process with resumable chunked transfer (not necessarily strictly serial — the platform may parallelize within reasonable concurrency limits), each tracked independently for retry/failure purposes.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B15-FR-12
+
+**FR-12** Per-child download isolation: one child's downloaded content is never exposed to or accessible from a sibling's session on a shared device, consistent with the platform-wide multi-child isolation principle.
+
+Candidate owning surfaces: [144 Downloads](Screen_Prompts/144_Downloads.md); [145 Clear All Downloads Confirmation](Screen_Prompts/145_Clear_All_Downloads_Confirmation.md); [146 Parent Download Cap and Policy](Screen_Prompts/146_Parent_Download_Cap_and_Policy.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## B16
+
+[Feature_B16_Child_Profile.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App Supporting (13-18)/Feature_B16_Child_Profile.md>) — §1.7.
+
+### B16-FR-1
+
+**FR-1** Child Profile UI sections: avatar thumbnail, learning stats summary, language toggle, "Switch Profile" (PIN-gated to Parent Mode), Favorites/Downloads entry (source: screen catalog, restated verbatim as the canonical section list).
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-2
+
+**FR-2** User actions: view stats, change display language, open Favorites/Downloads, request Parent Mode switch (source: screen catalog).
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-3
+
+**FR-3** "Switch Profile" **always re-prompts the PIN/biometric gate** — there is no grace-window exception for this specific transition out of Child Mode, even though the Parent Area's own internal re-entry (once already in Parent Mode) may use a short configurable grace window per the platform's general re-gating rule; the **Child-Mode-to-Parent-Mode transition itself has zero grace-window exception** (source: screen catalog — restated as a hard rule for this specific transition; cross-ref C.19 for the grace-window mechanics that apply only *within* an already-unlocked Parent session).
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-4
+
+**FR-4** **A child cannot see sibling stats from this screen** — the learning stats summary is strictly scoped to the active child's own session, with no UI path, query parameter, or navigation route from Profile that could expose another child's data (source: screen catalog; cross-ref the platform-wide "No Lateral Sibling Access" rule).
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-5
+
+**FR-5** Learning stats summary is sourced from `GET /v1/children/{id}/progress` (source: screen catalog "Connected APIs") — this is the **same underlying progress data** the Mastery Engine (A.9) and Reward System (A.11) already compute, presented here in a condensed, child-friendly summary rather than recomputed independently.
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-6
+
+**FR-6** The language toggle changes the **display language** only — it does not affect content availability/locale-eligibility (a separate concept governed by the platform's age/locale content-filtering system) and takes effect immediately without requiring an app restart.
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-7
+
+**FR-7** Favorites and Downloads are reached from Profile as a single shared entry point into the tabbed "Favorites & Downloads" screen (B.14/B.15) — Profile itself does not duplicate that screen's content, only links to it.
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-8
+
+**FR-8** The "Switch Profile" action's destination depends on what's selected next: tapping a different child avatar routes into that child's session (after the appropriate per-child lock, if configured, per A.1's Child Lock Screen); tapping "Parent Profile" routes into Parent Mode (always PIN/biometric gated, per FR-3); both paths route **through the Who Is Learning profile picker**, not directly (source: Profile Flow diagram — "Switch profile / go to Parent Area → Lock gate → Profile picker or Parent Dashboard").
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-9
+
+**FR-9** Switching to another child's profile, or entering Parent Mode, **clears all previous child-sensitive UI state** before activating the new session (cross-ref A.1 §6.2 item 5) — Profile is one of the screens this clearing must visibly apply to, since it's a common transition point.
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B16-FR-10
+
+**FR-10** The "Edit avatar" action (where surfaced from Profile, per the platform's general avatar-customization entry points) deep-links into the Avatar screen (A.12) — Profile does not reimplement avatar customization itself.
+
+Candidate owning surfaces: [147 Child Profile](Screen_Prompts/147_Child_Profile.md); [148 Choose Language](Screen_Prompts/148_Choose_Language.md); [149 Switch Profile Parent Permission](Screen_Prompts/149_Switch_Profile_Parent_Permission.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## B17
+
+[Feature_B17_Notifications_Child_Facing.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App Supporting (13-18)/Feature_B17_Notifications_Child_Facing.md>) — §1.7.
+
+### B17-FR-1
+
+**FR-1** Child-facing notification classes: approved learning reminder (daily reminder), bedtime story, streak-at-risk, new content, seasonal event, and the child-side copy of reward/milestone notifications (source §21.16, NoorHeroes Blueprint notification-use-case table — restated as the canonical child-facing class list).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-2
+
+**FR-2** Notification Flow (canonical, source §7.9 "Notification Flow" diagram): (1) a domain event or schedule creates a notification intent, (2) the policy engine checks consent, quiet hours, frequency budget, locale, entitlement, and device, (3) on pass, a template renderer produces parent-or-child-safe copy; on fail, the notification is suppressed, (4) a delivery adapter sends via FCM push or email, (5) a receipt event updates delivery analytics, (6) on open, the deep link **revalidates auth and content state**.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-3
+
+**FR-3** **Parent controls per-child reminders and quiet hours** — every reminder type is individually toggleable per child, and quiet-hours/bedtime windows are configured per child (source §21.16; cross-ref C.23).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-4
+
+**FR-4** **Maximum frequency and fatigue budgets are server-enforced** — never solely a client-side mute or a campaign-level setting that could be bypassed by an automated trigger path (source §21.16 — restated as a hard rule applying uniformly to every trigger source, scheduled or event-driven).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-5
+
+**FR-5** **Deep links validate session, child, content availability, and parent gate** — tapping any notification re-runs the exact same checks normal in-app navigation would, never granting a shortcut past any of them (source §21.16).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-6
+
+**FR-6** **Child notification copy contains no billing or sensitive analytics** — this is a template-authoring-time constraint enforced by content governance, not merely a convention (source §21.16, restated as a hard rule with zero exceptions, including for milestone/reward notifications that might otherwise be tempted to reference subscription tier or similar).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-7
+
+**FR-7** **Every campaign supports preview, test audience, schedule, cancel, and kill switch** (source §21.16) — applies to admin-authored campaigns layered on top of the automated trigger catalog (e.g., a seasonal-event push), not the purely automated triggers themselves, which are config-driven rather than campaign-authored.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-8
+
+**FR-8** **Firebase issues one token per app installation, not per child** — NoorHeroes implements per-child notification targeting through an **exclusive active-profile binding**: the installation token is bound to either the Parent Profile or exactly one selected child at any given time, with the binding atomically deactivated and reactivated on every profile switch (source: NoorHeroes Blueprint "Firebase Push Notification System" / "Firebase Notification Routing" — restated as the canonical architecture this feature's delivery layer depends on).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-9
+
+**FR-9** Two devices belonging to the same family may have **independent bindings** — e.g., one device actively bound to Child A while another device (or the same device at a different time) is bound to Child B or the Parent Profile; logout revokes all bindings for that session/device (source §7.9/NoorHeroes Blueprint, restated).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-10
+
+**FR-10** Every child-targeted notification passes a **server-side policy check against that child's `screen_time_policies`** (quiet hours/bedtime) before send — **client-side mute alone is never trusted** (source: NoorHeroes Blueprint "Quiet Hours & Bedtime" card — a hard rule).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-11
+
+**FR-11** Per-category daily/weekly frequency caps prevent notification fatigue; **engagement nudges back off automatically after repeated non-opens** (source: NoorHeroes Blueprint "Frequency Capping" card) — this auto-backoff is itself a server-side policy behavior, not a one-time static cap.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-12
+
+**FR-12** Specific trigger conditions (representative, source-confirmed): Daily reminder fires when the daily goal is not met by a configurable threshold hour; Streak risk fires on late-day inactivity with an active streak (e.g., "7PM with no activity and active streak"); Bedtime story fires 30 minutes before the configured bedtime; New content fires when new story/lesson content is published within the child's age/locale eligibility; Reward notifications fire when the Reward Service posts a ledger entry crossing a notify-worthy threshold (badge/level/weekly-challenge-completion); Seasonal notifications fire via an Islamic-calendar-date scheduling job (Ramadan mode activation, Eid content unlock) targeting the family (parent + active children).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B17-FR-13
+
+**FR-13** In-app (non-push) notifications also exist for some triggers (e.g., "Tomorrow's episode is ready" on sequential-unlock-threshold-met) — these surface within the app's own UI (e.g., a Home banner) rather than as a device push, but still pass through the same policy engine for consent/eligibility purposes.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [150 Deep Link Resolver](Screen_Prompts/150_Deep_Link_Resolver.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## B18
+
+[Feature_B18_Islamic_Facts_Module.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Child App Supporting (13-18)/Feature_B18_Islamic_Facts_Module.md>) — §1.7.
+
+### B18-FR-1
+
+**FR-1** Each fact stores: fact text by locale and age band, topic and related-content linkage, primary and secondary source references, scholar approval and version, an explanation, a linked quiz item, and jurisprudential-scope/exclusion notes where relevant (source §21.9 — restated verbatim as the canonical, complete data-field list for this content type).
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-2
+
+**FR-2** Fact cards display: age band, topic, source, scholar approval, explanation, related story, and quiz (source: NoorHeroes Blueprint "Islamic Facts" card — restated as the canonical display contract).
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-3
+
+**FR-3** **Disputed/jurisprudentially-sensitive topics stay out of child-facing auto-generation** — no fact touching contested fiqh matters may be produced via AI generation for child-facing display; such topics, if covered at all, require full human scholar authorship with explicit jurisprudential-scope notes, never an AI-drafted starting point (source: NoorHeroes Blueprint — restated as a hard, zero-exception rule).
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-4
+
+**FR-4** **Spaced repetition resurfaces forgotten facts** — Islamic Facts is a participating domain in the shared Mastery Engine's (A.9) cross-domain spaced-repetition scheduler, subject to the same global daily-prompt cap as Quran/Arabic/Tajweed (source: NoorHeroes Blueprint; cross-ref A.9 FR-8/§5 item 5).
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-5
+
+**FR-5** The Home "Islamic Fact of the Day" card (A.2's existing widget) is this module's primary surface; this document owns the fact-content data model and detail/quiz flow that the Home card links into, not a duplicate of Home's own card-rendering logic.
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-6
+
+**FR-6** Each fact's `explanation` field must be distinct from its `fact text` — the card states the fact, and a deeper explanation (available via tap-through to Fact Detail) provides the "why," consistent with the platform's general "teach the reasoning, not just the answer" pedagogy already established in A.8's Per-Answer Explanation pattern.
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-7
+
+**FR-7** A fact's linked quiz item routes through the shared Quiz Engine (A.8) using the same five-question-type contract, parameterized for this context (typically 1 question per fact, consistent with the brevity of a single fact) — this module does not implement a parallel quiz mechanism.
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-8
+
+**FR-8** Facts are deduped against a child's own recently-seen history (consistent with A.5 §1.7 FR-13's "no repeat within a rolling 30-day window where catalog size allows" rule, restated here as this module's own deduplication policy) before being selected as "today's fact."
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-9
+
+**FR-9** A fact's `related_content` linkage (to a Story, Surah, or Dua) must reference real, currently-eligible content for the requesting child — a stale/withdrawn related-content reference is excluded from display rather than producing a broken link, consistent with the platform-wide withdrawn-content handling pattern.
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-10
+
+**FR-10** Facts surfaced during an active seasonal mode (Ramadan/Eid) are weighted toward seasonally-relevant topics where available, consistent with the platform's general calendar-aware recommendation principle (cross-ref A.2's Islamic-calendar-event reason codes), without hard-excluding non-seasonal facts from selection eligibility.
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### B18-FR-11
+
+**FR-11** Scholar approval records are versioned (consistent with the platform's content-versioning pattern established in A.3/A.5/A.6) — editing a fact's text/explanation/sources creates a new version requiring fresh scholar sign-off before it can replace the currently-published version; children always see the latest *published* (approved) version, never a draft.
+
+Candidate owning surfaces: [151 Islamic Fact Detail](Screen_Prompts/151_Islamic_Fact_Detail.md); [152 Islamic Facts Browse](Screen_Prompts/152_Islamic_Facts_Browse.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## F35
+
+[Feature_F35_AI_Layer_Microservices_Architecture.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F35_AI_Layer_Microservices_Architecture.md>) — §1.7.
+
+### F35-FR-1
+
+**FR-1** AI Microservices Architecture (canonical, source NoorHeroes Blueprint, five services with explicit controls):
+- **Recommendation Service** — ranks stories, lessons, habits, missions, and next-best actions. Controls: uses age, language, progress, parent preferences, and safety tags.
+- **Narration Service** — generates or selects tone-aware narration variants and subtitle translations. Controls: approved voices, bedtime limits, **no child voice cloning without explicit consent**.
+- **Learning Service** — adapts Quran, Arabic, dua, and quiz difficulty to mastery level. Controls: **separates educational hints from religious rulings**.
+- **Moderation Service** — filters prompts, outputs, search, admin content, and child-generated text. Controls: audit logs, remote kill switch, parent review, admin queue (cross-ref E.30's full specification of this service's console/queue surface).
+- **Insights Service** — creates parent reports, habit analytics, growth insights, and recommendations. Controls: privacy-preserving aggregation; child PII minimized.
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [073 Quran Game — Ayah Ordering](Screen_Prompts/073_Quran_Game_Ayah_Ordering.md); [078 Quran Game — Progressive Memorization Reveal](Screen_Prompts/078_Quran_Game_Progressive_Memorization_Reveal.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-2
+
+**FR-2** **AI Rule: AI should increase trust, not risk** (source — the governing design principle every service above must satisfy; restated as the ceiling principle already operationalized in C.23 FR-7 for parent-controllable settings, here extended to the underlying services' own default behavior).
+
+Candidate owning surfaces: [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md); [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [069 Tajweed — Rule Introduction](Screen_Prompts/069_Tajweed_Rule_Introduction.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-3
+
+**FR-3** **Scholar-Reviewed AI Responses: religious answers must map to approved knowledge cards. Anything about rulings, aqeedah, halal/haram, prayer, or fiqh receives stricter confidence thresholds and review paths** (source — restated, shared verbatim with E.30 FR-2, since this is the Learning/Recommendation Services' actual behavioral contract, not merely a moderation-console concern).
+
+Candidate owning surfaces: [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [073 Quran Game — Ayah Ordering](Screen_Prompts/073_Quran_Game_Ayah_Ordering.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-4
+
+**FR-4** **Child-Safe Moderation: the AI layer blocks unsafe topics, refuses sensitive conversations, strips personal data, and offers warm redirects suitable for children** (source — restated, shared with E.30 FR-3).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [035 Full-Screen Retry (no cache, no network)](Screen_Prompts/035_Full_Screen_Retry_no_cache_no_network.md); [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-5
+
+**FR-5** **Religious rulings with legitimate scholarly difference of opinion are never improvised by the model — these route to an approved-answer set or a scholar handoff. Every response cites its approved source content in the parent/admin-visible history. The AI must never claim to be human, a scholar, or "a friend who keeps secrets," and must never encourage emotional dependency** (source §12.2 — four distinct, hard behavioral rules governing every AI service's output).
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [066 Arabic Letters — Tracing](Screen_Prompts/066_Arabic_Letters_Tracing.md); [067 Arabic Letters — Word Context](Screen_Prompts/067_Arabic_Letters_Word_Context.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-6
+
+**FR-6** **Model output is never published as permanent curriculum content without passing through the standard human review pipeline** (source §12.2 — restated as the requirement that AI-generated content (e.g., a Recommendation Service's suggested next story, if ever authored rather than merely ranked from existing approved content) cannot bypass E.29's content CMS review chain).
+
+Candidate owning surfaces: [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [066 Arabic Letters — Tracing](Screen_Prompts/066_Arabic_Letters_Tracing.md); [067 Arabic Letters — Word Context](Screen_Prompts/067_Arabic_Letters_Word_Context.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-7
+
+**FR-7** **Voice Q&A and Pronunciation Coaching: push-to-talk only — never an always-listening microphone. Recording state is always visibly displayed to the child. Process the minimum necessary audio for the task. Raw audio is deleted after response/scoring by default; derived scores are stored only when useful and consented to. Parents can disable voice features globally or on a per-child basis** (source §12.3 — restated as the Narration/Learning Services' canonical voice-handling contract, the architectural origin point of A.5's own voice-recording guarantees).
+
+Candidate owning surfaces: [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md); [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [078 Quran Game — Progressive Memorization Reveal](Screen_Prompts/078_Quran_Game_Progressive_Memorization_Reveal.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-8
+
+**FR-8** **AI may summarize (Insights Service): consistency, skill strengths and refresh needs, story themes enjoyed, healthy usage, suggested next activity. AI must not: diagnose developmental, behavioral, or religious conditions; compare siblings; infer sensitive traits; present uncertain conclusions as settled facts** (source §12.4 — restated, shared verbatim with C.20/C.22's Content Safety Validator scope).
+
+Candidate owning surfaces: [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [059 Placement Check (first-time)](Screen_Prompts/059_Placement_Check_first_time.md); [170 AI Insight Report (premium)](Screen_Prompts/170_AI_Insight_Report_premium.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-9
+
+**FR-9** **Evaluation & Safety Gating: maintain ongoing test suites for age appropriateness, Islamic factuality against the approved corpus, refusal correctness, citation correctness, PII leakage, toxicity/unsafe-advice detection, multilingual consistency, pronunciation-scoring bias across accents, and recommendation diversity. Release gate: every model or prompt change requires offline evaluation, reviewer sign-off for high-risk features, a canary release, and a defined rollback path before reaching general availability** (source §12.5 — the complete, canonical evaluation-suite taxonomy and release-gate process, of which E.30's Evaluation Harness is the operational implementation).
+
+Candidate owning surfaces: [060 Mode Selector Sheet](Screen_Prompts/060_Mode_Selector_Sheet.md); [063 AI Pronunciation Feedback Screen](Screen_Prompts/063_AI_Pronunciation_Feedback_Screen.md); [064 Listen-Only Self-Assessment Screen](Screen_Prompts/064_Listen_Only_Self_Assessment_Screen.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-10
+
+**FR-10** **Architecture style: modular monolith at launch**, extracted into separate services only when load or operational ownership justifies it — candidate extraction points (deferred until justified): media transcoding/delivery, notification dispatch, analytics ingestion, **recommendation inference**, **AI tutor and voice processing**, subscription webhook handling (source §3.1 — restated as the architectural philosophy governing how/when these five logical AI "services" actually become physically separate deployable services).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [062 Recitation Recorder Overlay](Screen_Prompts/062_Recitation_Recorder_Overlay.md); [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-11
+
+**FR-11** **Keep the recommendation corpus small and curated rather than a general LLM tutor at this stage** (source §18.4 Risks — a deliberate scope-discipline principle, the architectural restraint underlying FR-1's Recommendation/Learning Service designs).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [058 Learn Tab Landing / Quran Learning Home (Skill Tree Map)](Screen_Prompts/058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md); [061 Surah Learning](Screen_Prompts/061_Surah_Learning.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F35-FR-12
+
+**FR-12** Distributed tracing is specifically required for AI flows (alongside media and subscription flows), given they involve the most cross-service hops and the highest cost of a silent failure (source §20.2).
+
+Candidate owning surfaces: [034 Child Home (composite screen)](Screen_Prompts/034_Child_Home_composite_screen.md); [065 Arabic Letters — Hear & Match](Screen_Prompts/065_Arabic_Letters_Hear_Match.md); [066 Arabic Letters — Tracing](Screen_Prompts/066_Arabic_Letters_Tracing.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+## F36
+
+[Feature_F36_Ramadan_Mode.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md>) — §1.7.
+
+### F36-FR-1
+
+**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).
+
+Candidate owning surfaces: [218 Ramadan Prep / Countdown](Screen_Prompts/218_Ramadan_Prep_Countdown.md); [220 Ramadan Journey Map](Screen_Prompts/220_Ramadan_Journey_Map.md); [226 Eid Countdown](Screen_Prompts/226_Eid_Countdown.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-2
+
+**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**
+
+Candidate owning surfaces: [218 Ramadan Prep / Countdown](Screen_Prompts/218_Ramadan_Prep_Countdown.md); [226 Eid Countdown](Screen_Prompts/226_Eid_Countdown.md); [233 Parent Ramadan Dashboard](Screen_Prompts/233_Parent_Ramadan_Dashboard.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-3
+
+**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**
+
+Candidate owning surfaces: [219 Ramadan Home](Screen_Prompts/219_Ramadan_Home.md); [222 Ramadan Mission Detail](Screen_Prompts/222_Ramadan_Mission_Detail.md); [226 Eid Countdown](Screen_Prompts/226_Eid_Countdown.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-4
+
+**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**
+
+Candidate owning surfaces: [218 Ramadan Prep / Countdown](Screen_Prompts/218_Ramadan_Prep_Countdown.md); [220 Ramadan Journey Map](Screen_Prompts/220_Ramadan_Journey_Map.md); [226 Eid Countdown](Screen_Prompts/226_Eid_Countdown.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-5
+
+**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.
+
+Candidate owning surfaces: [221 Night Recap](Screen_Prompts/221_Night_Recap.md); [222 Ramadan Mission Detail](Screen_Prompts/222_Ramadan_Mission_Detail.md); [225 Laylatul Qadr Reflection](Screen_Prompts/225_Laylatul_Qadr_Reflection.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-6
+
+**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.
+
+Candidate owning surfaces: [227 Eid Home](Screen_Prompts/227_Eid_Home.md); [232 Parent Ramadan Settings](Screen_Prompts/232_Parent_Ramadan_Settings.md); [235 Family Ramadan Report](Screen_Prompts/235_Family_Ramadan_Report.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-7
+
+**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.
+
+Candidate owning surfaces: [225 Laylatul Qadr Reflection](Screen_Prompts/225_Laylatul_Qadr_Reflection.md); [228 Eid Reward Reveal](Screen_Prompts/228_Eid_Reward_Reveal.md); [230 Ramadan Complete Certificate](Screen_Prompts/230_Ramadan_Complete_Certificate.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-8
+
+**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.
+
+Candidate owning surfaces: [222 Ramadan Mission Detail](Screen_Prompts/222_Ramadan_Mission_Detail.md); [227 Eid Home](Screen_Prompts/227_Eid_Home.md); [228 Eid Reward Reveal](Screen_Prompts/228_Eid_Reward_Reveal.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-9
+
+**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**
+
+Candidate owning surfaces: [218 Ramadan Prep / Countdown](Screen_Prompts/218_Ramadan_Prep_Countdown.md); [224 Fasting Tracker](Screen_Prompts/224_Fasting_Tracker.md); [232 Parent Ramadan Settings](Screen_Prompts/232_Parent_Ramadan_Settings.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-10
+
+**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.
+
+Candidate owning surfaces: [222 Ramadan Mission Detail](Screen_Prompts/222_Ramadan_Mission_Detail.md); [224 Fasting Tracker](Screen_Prompts/224_Fasting_Tracker.md); [232 Parent Ramadan Settings](Screen_Prompts/232_Parent_Ramadan_Settings.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-11
+
+**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.
+
+Candidate owning surfaces: [219 Ramadan Home](Screen_Prompts/219_Ramadan_Home.md); [222 Ramadan Mission Detail](Screen_Prompts/222_Ramadan_Mission_Detail.md); [235 Family Ramadan Report](Screen_Prompts/235_Family_Ramadan_Report.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-12
+
+**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.
+
+Candidate owning surfaces: [220 Ramadan Journey Map](Screen_Prompts/220_Ramadan_Journey_Map.md); [221 Night Recap](Screen_Prompts/221_Night_Recap.md); [225 Laylatul Qadr Reflection](Screen_Prompts/225_Laylatul_Qadr_Reflection.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-13
+
+**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.
+
+Candidate owning surfaces: [227 Eid Home](Screen_Prompts/227_Eid_Home.md); [228 Eid Reward Reveal](Screen_Prompts/228_Eid_Reward_Reveal.md); [236 Conversion Moment Card](Screen_Prompts/236_Conversion_Moment_Card.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### F36-FR-14
+
+**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.
+
+Candidate owning surfaces: [218 Ramadan Prep / Countdown](Screen_Prompts/218_Ramadan_Prep_Countdown.md); [235 Family Ramadan Report](Screen_Prompts/235_Family_Ramadan_Report.md); [237 Family Member Invite](Screen_Prompts/237_Family_Member_Invite.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## F37
+
+[Feature_F37_Security_Architecture.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F37_Security_Architecture.md>) — §1.7.
+
+### F37-FR-1
+
+**FR-1** JWT Authentication Flow (canonical, source §13.1, the architectural origin point this document specifies once for every feature to reuse): (1) parent requests an OTP challenge; (2) auth service records hashed challenge metadata and rate-limit counters; (3) OTP provider sends the code; (4) parent verifies the code; (5) auth service issues a short-lived access token and a rotating refresh token; (6) a device/session record is created; (7) parent PIN or biometric step-up creates a short-lived elevated token for sensitive actions; (8) selecting a child creates a child-mode token containing only child-safe scopes.
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-2
+
+**FR-2** **Token claims (canonical, source §13.1): `sub`, `family_id`, `mode`, optional `child_id`, `scopes`, `device_id`, `auth_time`, `consent_version`, `session_id`** — this exact claim set is the single schema every token-issuing and token-validating code path across the entire platform must use, never a feature-specific variant.
+
+Candidate owning surfaces: [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [020 Screen Time & Notification Primer](Screen_Prompts/020_Screen_Time_Notification_Primer.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-3
+
+**FR-3** **Authorization is computed from role + resource scope + region + locale + action** (source §13.2/§11.6 — restated as the canonical, platform-wide authorization model, already operationalized per-role in E.28's RBAC matrix).
+
+Candidate owning surfaces: [002 Language Selection](Screen_Prompts/002_Language_Selection.md); [006 Intro Slide 4 (Parent Control)](Screen_Prompts/006_Intro_Slide_4_Parent_Control.md); [026 Forced Update Blocking Screen](Screen_Prompts/026_Forced_Update_Blocking_Screen.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-4
+
+**FR-4** **The API Gateway performs no business authorization decisions on its own — every domain service rechecks ownership and scope independently. This prevents a single gateway misconfiguration from becoming a system-wide authorization bypass** (source §13.2/§3.3 — a hard, zero-exception architectural rule already reflected in every prior feature's "service-layer enforcement, not gateway-layer" pattern, e.g., E.28's structural child-mode-token rejection, E.32's PII Masking Service).
+
+Candidate owning surfaces: [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [012 Parent PIN Setup](Screen_Prompts/012_Parent_PIN_Setup.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-5
+
+**FR-5** **Child-mode tokens carry only child-safe scopes; Parent dashboard APIs explicitly reject child-mode tokens rather than silently returning empty data, so a scope mismatch is observable rather than silently masked** (source §13.2 — restated as the rationale behind C.20's structural Parent-Session-Only Gate pattern, with the explicit-rejection-not-silent-empty-response design choice called out here as the general principle).
+
+Candidate owning surfaces: [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md); [213 Export Status Tracking (preparing/ready)](Screen_Prompts/213_Export_Status_Tracking_preparing_ready.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-6
+
+**FR-6** **Every child-scoped query is double-checked against family ownership AND active child session — a parent's JWT alone is never sufficient to read a specific child's data outside their own family** (source §13.2 — the architectural origin of C.19's strict session-to-child_id binding and B.14's per-child isolation guarantees).
+
+Candidate owning surfaces: [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-7
+
+**FR-7** **Parent identity: phone/email OTP or Google login (no Apple login). JWT access + refresh token pair; refresh rotation on use; Redis-backed denylist for revoked tokens. Child profiles are not independently authenticated accounts — they are PIN/biometric/pattern-locked profiles under one parent session** (source "Security Architecture" card — restated as the canonical parent/child identity model).
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [008 Registration + Consent](Screen_Prompts/008_Registration_Consent.md); [203 Parent PIN Reset (Account Security)](Screen_Prompts/203_Parent_PIN_Reset_Account_Security.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-8
+
+**FR-8** **Platform Security & Role Taxonomy (Dual-Axis Authorization Model):** The system strictly enforces a dual-axis authorization architecture: (1) **Customer Account Tiers (Client Scope):** `guest`, `registered` (free), and `premium` (active subscription, evaluated via `parent_entitlements` and `JwtClaims.is_premium`); (2) **Internal Administrative RBAC (Staff Scope):** The 9 canonical roles defined in E.28 (`super_admin`, `product_admin`, `content_editor`, `scholar`, `moderator`, `support`, `billing_ops`, `analytics_viewer`, `trust_safety`) enforced via `admin_users.role` and `require_admin_scope()`. Consumer tokens cannot access admin routes, and customer PII is masked by default.
+
+Candidate owning surfaces: [030 Forgot Access / Account Recovery Entry](Screen_Prompts/030_Forgot_Access_Account_Recovery_Entry.md); [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-9
+
+**FR-9** **Parent Mode re-gates on every entry (PIN/biometric, short grace window)** (source — restated, the architectural origin of C.19's zero-exception Switch-Profile gating with its client-side-UX-only grace-window design).
+
+Candidate owning surfaces: [012 Parent PIN Setup](Screen_Prompts/012_Parent_PIN_Setup.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-10
+
+**FR-10** Data Encryption (canonical, source §13.3): TLS in transit; encryption at rest for the database and object storage; managed secret storage with rotation; **PIN and lock-pattern hashes use a slow, salted hashing algorithm (e.g., bcrypt or argon2) — never a fast general-purpose hash**; **biometric verification relies entirely on OS-level assertions; NoorHeroes never stores biometric templates itself.**
+
+Candidate owning surfaces: [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [024 Lock Recovery (via verified Parent Profile)](Screen_Prompts/024_Lock_Recovery_via_verified_Parent_Profile.md); [179 Set Lock Type (Pattern/PIN/Biometric/None)](Screen_Prompts/179_Set_Lock_Type_Pattern_PIN_Biometric_None.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-11
+
+**FR-11** API Security (canonical, source §13.4): WAF, rate limiting, and bot/credential-stuffing detection at the gateway layer; SAST, dependency scanning, container scanning, and regular penetration testing as part of CI/CD and a recurring security calendar; **MFA/passkeys required for admin and scholar accounts** — a higher bar than the parent-facing OTP+PIN model.
+
+Candidate owning surfaces: [001 Splash Screen](Screen_Prompts/001_Splash_Screen.md); [203 Parent PIN Reset (Account Security)](Screen_Prompts/203_Parent_PIN_Reset_Account_Security.md); [210 AI Interaction Detail (redacted)](Screen_Prompts/210_AI_Interaction_Detail_redacted.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-12
+
+**FR-12** Content Upload Validation Pipeline (canonical, complete 11-step sequence, source §13.5): (1) extension and MIME allowlist validation; (2) file-signature verification (magic bytes, not just trusting the extension); (3) size/duration/dimension limits; (4) antivirus and malware scanning; (5) image/video adult-content AI classifier; (6) audio transcription plus text-safety scan; (7) text adult/sexual/violent/extremist safety scan; (8) metadata stripping (EXIF, GPS, author info); (9) perceptual hash check against a known-content blocklist; (10) **quarantine before transcoding — assets are never in child-delivery storage during this stage**; (11) human child-safety review.
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [009 Consent Detail / Full Text Modal](Screen_Prompts/009_Consent_Detail_Full_Text_Modal.md); [203 Parent PIN Reset (Account Security)](Screen_Prompts/203_Parent_PIN_Reset_Account_Security.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-13
+
+**FR-13** Child Safety Controls (canonical, source §13.8): no open direct messages or public comments anywhere in the product; no unsafe external links reachable without a parent gate; parent gate required around all external sharing actions; content age and region eligibility enforced at the API layer, not just hidden in the UI; scholar and child-safety approval required before any content reaches a child, with no seasonal-content exception; an AI emergency kill switch exists and is regularly tested; a report/feedback path is available on all media; support and moderation escalation paths carry defined severity SLAs.
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [177 Content Age Level Settings (per child)](Screen_Prompts/177_Content_Age_Level_Settings_per_child.md); [181 Content Age Level — Override Confirmation](Screen_Prompts/181_Content_Age_Level_Override_Confirmation.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-14
+
+**FR-14** Vulnerability Prevention (canonical, source §13.9): immutable or tamper-evident audit logs (append-only at the database-role level, not just the application level); tested backup restores — a backup that has never been restored is not a verified backup; a documented incident-response procedure with parent-notification steps for any data-breach scenario.
+
+Candidate owning surfaces: [017 Learning Level Setup](Screen_Prompts/017_Learning_Level_Setup.md); [019 Learning Level + Interests Confirmation (family-level summary)](Screen_Prompts/019_Learning_Level_Interests_Confirmation_family_level_summary.md); [033 Child-Data Processing Consent (full document)](Screen_Prompts/033_Child_Data_Processing_Consent_full_document.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+### F37-FR-15
+
+**FR-15** **Rate limiting applies at device, IP, phone, and account levels** (source — restated as the complete, multi-dimensional rate-limiting requirement, beyond a single IP-based check alone).
+
+Candidate owning surfaces: [007 Login (phone/email + Google)](Screen_Prompts/007_Login_phone_email_Google.md); [030 Forgot Access / Account Recovery Entry](Screen_Prompts/030_Forgot_Access_Account_Recovery_Entry.md); [203 Parent PIN Reset (Account Security)](Screen_Prompts/203_Parent_PIN_Reset_Account_Security.md).
+
+Coverage class: Cross-cutting production architecture/security obligation; apply to cited existing UI without claiming prototype enforcement.
+
+## C19
+
+[Feature_C19_Parent_PIN_Biometric_Gate.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C19_Parent_PIN_Biometric_Gate.md>) — §1.7.
+
+### C19-FR-1
+
+**FR-1** The landing profile picker ("Who Is Learning") shows: active child profile tiles, the Parent Profile tile, and an "Add Child" tile (gated behind Parent Profile verification); **disabled child profiles appear only inside the Parent Profile, never on the landing picker** (source §6.2 item 1).
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [154 Restriction Screen](Screen_Prompts/154_Restriction_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-2
+
+**FR-2** Selecting the **Parent Profile tile always requires PIN or biometric verification, with no exceptions, regardless of how recently the parent last authenticated for a child selection** (source §6.2 item 2/Business Rules).
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-3
+
+**FR-3** Selecting a **Child tile**: if no lock is configured, proceed directly to policy checks (FR-7); if a lock is configured (Pattern/PIN/Fingerprint), show the matching lock screen (source §6.2 item 3).
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-4
+
+**FR-4** **Every child can have a different lock type** (none, pattern, PIN, fingerprint) — lock configuration is fully independent per child (source NoorHeroes Blueprint "Lock Rules").
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-5
+
+**FR-5** Lock verification mechanics: **Pattern** compares against a salted, slow hash (raw gesture points never logged); **PIN** compares against a salted, slow hash with retry-count-enforced progressive lockout; **Fingerprint** uses **OS biometric assertion only** — biometric data itself is never stored by NoorHeroes (source §6.2 item 3 sub-bullets — canonical, zero-exception storage rule).
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-6
+
+**FR-6** **Lock failed or biometric unavailable** falls back to that child's own PIN/pattern, or recovers via **verified Parent Profile** — lock recovery **never** routes through a generic "forgot lock" flow that bypasses parent verification (source §6.2 item 3/Validation Rules — hard, zero-exception rule).
+
+Candidate owning surfaces: [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [154 Restriction Screen](Screen_Prompts/154_Restriction_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-7
+
+**FR-7** The four-stage access pipeline (canonical, source NoorHeroes Blueprint stage grid): (1) **Select Profile** — landing picker lists active children + Parent Profile; (2) **Verify If Locked** — pattern/PIN/biometric with retry limit, recovery through parent authentication; (3) **Check Restrictions** — validate disabled status, entitlement, screen-time budget, bedtime, device, content eligibility; (4) **Activate Context** — create child-mode session, switch notification binding, clear previous profile cache, open Home.
+
+Candidate owning surfaces: [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-8
+
+**FR-8** On successful selection, the app creates a **short-lived child-mode session** bound to `family_id`, `child_id`, device ID, and an entitlement snapshot — **sibling progress must never be returned to child-mode API calls** (source §6.2 item 4 — the platform-wide "No Lateral Sibling Access" rule's enforcement origin point).
+
+Candidate owning surfaces: [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-9
+
+**FR-9** **Switching to a different child clears all previous child-sensitive UI state before activating the new scoped session** (source §6.2 item 5).
+
+Candidate owning surfaces: [154 Restriction Screen](Screen_Prompts/154_Restriction_Screen.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-10
+
+**FR-10** **Parent Mode re-gates on every entry (PIN/biometric), with a short, configurable grace window** — re-entry to Parent Mode from already-active Parent Mode (e.g., from background) may skip the prompt within this window; the Child-Mode-to-Parent-Mode transition via "Switch Profile" always re-prompts with zero exception regardless of grace-window timing (source NoorHeroes Blueprint "Parent / Child Access Control" card; cross-ref B.16 FR-3).
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-11
+
+**FR-11** **Two devices may select different children simultaneously** — each installation maintains its own independent active-profile binding, with no cross-device interference (source §6.2 Failure Scenarios; cross-ref B.17 FR-9).
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [154 Restriction Screen](Screen_Prompts/154_Restriction_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-12
+
+**FR-12** Failed PIN/lock attempts trigger **progressively longer lockout**; recovery for a child's lock is **always** via verified Parent Profile (FR-6); recovery for the **Parent PIN itself** routes through the parent's own account-recovery flow (phone/email OTP re-verification, cross-ref A.1 FR-22), never a shortcut.
+
+Candidate owning surfaces: [022 Profile Picker ("Who Is Learning")](Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md); [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-13
+
+**FR-13** The same Parent PIN/biometric gate mechanism is reused, not re-implemented, by every feature requiring parent-level authorization: screen-time/bedtime override (C.23), child profile deletion (C.21), AI/microphone permission changes, PIN reset itself, and Achievement-card sharing (A.11 FR-12).
+
+Candidate owning surfaces: [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-14
+
+**FR-14** At the screen-time limit, the system **finishes the current short activity, saves progress, then shows a calm locked state**; **bedtime blocks new sessions during the configured window**; **parent override of either requires Parent Profile verification** through this same gate (source NoorHeroes Blueprint "Restriction Engine"/"Bedtime Configuration" cards — the actual policy is owned by C.23).
+
+Candidate owning surfaces: [153 Parent Profile PIN/Biometric Gate](Screen_Prompts/153_Parent_Profile_PIN_Biometric_Gate.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C19-FR-15
+
+**FR-15** **Offline lock verification**: a locked child selected while offline verifies against the **locally cached salted hash**, then enforces the **last signed restriction/entitlement policy** — no network round-trip is required for the lock check itself (source §6.2 Error Handling).
+
+Candidate owning surfaces: [023 Child Lock Screen (PIN/Pattern/Biometric)](Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md); [154 Restriction Screen](Screen_Prompts/154_Restriction_Screen.md); [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C20
+
+[Feature_C20_Parent_Dashboard.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C20_Parent_Dashboard.md>) — §1.7.
+
+### C20-FR-1
+
+**FR-1** Dashboard components: child switcher chips, weekly AI report card, activity timeline preview, screen-time summary, module shortcut grid (source: NoorHeroes Blueprint screen catalog "Parent Dashboard — Components").
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-2
+
+**FR-2** Dashboard actions: switch child context, open any module (Reports, Settings, Subscription, Support), compare family trends (source: screen catalog "Actions").
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-3
+
+**FR-3** Entry points: Who Is Learning (Parent Profile selection), bottom-tab "Profile → Parent Mode" from inside Child Mode — both routing through C.19's gate (source: screen catalog "Entry Points").
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-4
+
+**FR-4** Exit points: Child Management, Reports, Subscription, Settings, Notifications, Support (source: screen catalog "Exit Points").
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-5
+
+**FR-5** **Never ranks siblings against each other; re-entry always requires the PIN/biometric gate unless within the short grace window** (source: screen catalog "Navigation Rules" — restated as this screen's two defining trust rules, the latter being C.19's grace-window mechanic applied here).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-6
+
+**FR-6** **The Parent Progress Dashboard exists only in the Mobile App and is hidden in every child profile session. It becomes visible only when the Parent Profile is selected and verified; Parent dashboard APIs reject any child-mode token outright** (source §6.7 Visibility Rule — a hard, zero-exception architectural rule enforced at the API layer, not merely client-side route-hiding).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-7
+
+**FR-7** Dashboard contents (canonical, source §6.7 "Dashboard Contents"): child selector; milestones completed; course/lesson/Quran/story/quiz/habit/streak progress; badges and achievements; weekly/monthly report summaries; healthy-usage and screen-time status; AI recommendation reasons and safe (redacted) AI interaction history; notification and bedtime settings; child enable/disable controls; subscription and plan capacity.
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-8
+
+**FR-8** Weekly Report types and cadence (canonical, source §6.7 "Detailed Workflow"): Weekly child report (stories completed, Quran progress, duas learned, habit streaks, quiz scores, recommended next step) — weekly; Monthly family report (cross-child progress summary, family streaks, content favorites, learning consistency) — monthly; AI insight report (strengths, weak areas, suggested next stories/duas/Quran practice, healthy-usage notes) — premium, weekly; Safety report (AI usage history, blocked requests, content flags, profile-setting changes) — on demand.
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-9
+
+**FR-9** **Dashboard content always labels data freshness; uses trend language and recommendations, never judgmental grades** (source §6.7 Validation Rules).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-10
+
+**FR-10** **Subscription/plan-limit messaging appears only on parent surfaces — never inside child mode** (source §6.7 Validation Rules — restated as this screen's explicit permission to show such messaging, in deliberate contrast to A.2 Home's hard prohibition on it).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-11
+
+**FR-11** **Report generation delayed → dashboard shows the last successfully generated report with an explicit "as of" timestamp rather than a blank or broken state** (source §6.7 Error Handling).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-12
+
+**FR-12** **The web portal explicitly excludes the Parent Progress Dashboard** — attempting to access it from the web portal is blocked by design, not merely unimplemented (source §6.7 Failure Scenario; cross-ref the platform's Parent Web Account Portal scope, which is account/security/billing/consent only).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-13
+
+**FR-13** **AI-generated parent insights must never diagnose developmental, behavioral, or religious conditions; must never compare siblings; must never present uncertain conclusions as settled facts** (source §6.7 Business Rules — a hard rule governing every AI-derived content surfaced anywhere on this Dashboard or its linked reports).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-14
+
+**FR-14** The module shortcut grid routes to: Child Management (C.21), Per-Child Reports (C.22), Screen Time & Bedtime / AI Controls (C.23), Subscription & Billing (C.24), Notifications (Parent) & Support (C.25) — this Dashboard does not duplicate any of those modules' own content, only links to them with a brief preview where specified (FR-1's preview components).
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C20-FR-15
+
+**FR-15** "Compare family trends" (FR-2) is satisfied via **aggregate-only or single-child-at-a-time views** — consistent with the structural no-sibling-comparison pattern already established platform-wide (A.7/A.11) — never a simultaneous side-by-side per-child comparison table or chart on this screen.
+
+Candidate owning surfaces: [157 Parent Dashboard (landing)](Screen_Prompts/157_Parent_Dashboard_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C21
+
+[Feature_C21_Multi_Child_Management.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C21_Multi_Child_Management.md>) — §1.7.
+
+### C21-FR-1
+
+**FR-1** Child Management UI sections: child list cards (avatar, age, status), a per-child action menu, and a "+ Add Child" entry point.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [161 Disable Confirmation (step-up gated)](Screen_Prompts/161_Disable_Confirmation_step_up_gated.md); [162 Re-Enable Confirmation (step-up gated)](Screen_Prompts/162_Re_Enable_Confirmation_step_up_gated.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-2
+
+**FR-2** Actions: edit profile, disable/enable, delete (PIN + irreversible-data warning), reorder.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [160 Edit Child (Parent Management)](Screen_Prompts/160_Edit_Child_Parent_Management.md); [163 Permanent Deletion — Step 2: Irreversible-Data Warning](Screen_Prompts/163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-3
+
+**FR-3** **Delete is a two-step confirm; disabled profiles retain data and remain visible here as read-only.**
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [161 Disable Confirmation (step-up gated)](Screen_Prompts/161_Disable_Confirmation_step_up_gated.md); [163 Permanent Deletion — Step 2: Irreversible-Data Warning](Screen_Prompts/163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-4
+
+**FR-4** **Disable (reversible):** the child cannot enter child mode while disabled; active sessions and notification bindings are revoked immediately; all progress/history/rewards are retained; the parent can re-enable at any time, subject to current plan capacity.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [162 Re-Enable Confirmation (step-up gated)](Screen_Prompts/162_Re_Enable_Confirmation_step_up_gated.md); [164 Trial-Cancellation Forced-Selection Screen](Screen_Prompts/164_Trial_Cancellation_Forced_Selection_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-5
+
+**FR-5** **Permanent Deletion (irreversible, self-service):** (1) parent navigates to Child Settings → Delete Child; (2) parent confirms identity via step-up authentication; (3) the app displays the warning *"Deleted data cannot be recovered. This action is permanent."*; (4) on confirmation, deletion executes immediately, subject to legal-retention rules — no Support ticket required; (5) an audited deletion record is created automatically (`child_deletion_cases` → `audit_logs`).
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [161 Disable Confirmation (step-up gated)](Screen_Prompts/161_Disable_Confirmation_step_up_gated.md); [163 Permanent Deletion — Step 2: Irreversible-Data Warning](Screen_Prompts/163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-6
+
+**FR-6** Add/Edit Child reuses the same form fields established in A.1 (nickname, DOB picker, avatar grid, language/level selectors, interest chips, daily-goal slider, AI permission toggle).
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [159 Add Child (Parent Management)](Screen_Prompts/159_Add_Child_Parent_Management.md); [160 Edit Child (Parent Management)](Screen_Prompts/160_Edit_Child_Parent_Management.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-7
+
+**FR-7** **DOB is immutable after first save except via Support** — a hard rule distinguishing DOB from every other editable field, given its role driving age-band content eligibility platform-wide.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [159 Add Child (Parent Management)](Screen_Prompts/159_Add_Child_Parent_Management.md); [160 Edit Child (Parent Management)](Screen_Prompts/160_Edit_Child_Parent_Management.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-8
+
+**FR-8** **Visible child count is gated by subscription tier** — adding a child beyond plan capacity is blocked inline with a clear upsell path to Subscription & Billing (C.24).
+
+Candidate owning surfaces: [159 Add Child (Parent Management)](Screen_Prompts/159_Add_Child_Parent_Management.md); [162 Re-Enable Confirmation (step-up gated)](Screen_Prompts/162_Re_Enable_Confirmation_step_up_gated.md); [164 Trial-Cancellation Forced-Selection Screen](Screen_Prompts/164_Trial_Cancellation_Forced_Selection_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-9
+
+**FR-9** **Duplicate nicknames within a family are rejected inline** at save time, with differentiation guidance offered as the resolution path.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [159 Add Child (Parent Management)](Screen_Prompts/159_Add_Child_Parent_Management.md); [160 Edit Child (Parent Management)](Screen_Prompts/160_Edit_Child_Parent_Management.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-10
+
+**FR-10** **Trial-cancellation downgrade:** the parent selects the one child who remains active; all others are disabled (not deleted), retaining data, until plan capacity returns.
+
+Candidate owning surfaces: [161 Disable Confirmation (step-up gated)](Screen_Prompts/161_Disable_Confirmation_step_up_gated.md); [162 Re-Enable Confirmation (step-up gated)](Screen_Prompts/162_Re_Enable_Confirmation_step_up_gated.md); [164 Trial-Cancellation Forced-Selection Screen](Screen_Prompts/164_Trial_Cancellation_Forced_Selection_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-11
+
+**FR-11** Every mutating action requires **step-up authentication** via C.19's Parent Gate — mutating endpoints are never reachable with only a standard parent session token.
+
+Candidate owning surfaces: [161 Disable Confirmation (step-up gated)](Screen_Prompts/161_Disable_Confirmation_step_up_gated.md); [162 Re-Enable Confirmation (step-up gated)](Screen_Prompts/162_Re_Enable_Confirmation_step_up_gated.md); [163 Permanent Deletion — Step 2: Irreversible-Data Warning](Screen_Prompts/163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-12
+
+**FR-12** Re-enabling a disabled child is itself **subject to current plan capacity** — blocked with a clear upsell path if at the limit, never a silent failure.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [162 Re-Enable Confirmation (step-up gated)](Screen_Prompts/162_Re_Enable_Confirmation_step_up_gated.md); [164 Trial-Cancellation Forced-Selection Screen](Screen_Prompts/164_Trial_Cancellation_Forced_Selection_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C21-FR-13
+
+**FR-13** Revoking a device (C.23) force-logs-out that session immediately.
+
+Candidate owning surfaces: [158 Child Management (List)](Screen_Prompts/158_Child_Management_List.md); [159 Add Child (Parent Management)](Screen_Prompts/159_Add_Child_Parent_Management.md); [160 Edit Child (Parent Management)](Screen_Prompts/160_Edit_Child_Parent_Management.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C22
+
+[Feature_C22_Per_Child_Reports.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C22_Per_Child_Reports.md>) — §1.7.
+
+### C22-FR-1
+
+**FR-1** Per-Child Report components: weekly trend chart, habit calendar, skill mastery grid, AI interaction log link, share-report button (source: screen catalog "Components").
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [166 Skill Detail Drill-down](Screen_Prompts/166_Skill_Detail_Drill_down.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-2
+
+**FR-2** Per-Child Report actions: filter by date range, drill into a skill, export PDF, share via WhatsApp (parent-gated) (source: screen catalog "Actions").
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [166 Skill Detail Drill-down](Screen_Prompts/166_Skill_Detail_Drill_down.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-3
+
+**FR-3** Entry points: Parent Dashboard, Child Management; exit points: AI Interaction History, Screen Time & Bedtime Settings (source: screen catalog "Entry/Exit Points").
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-4
+
+**FR-4** **Delayed-analytics and no-activity states are shown explicitly rather than as an empty chart** (source: screen catalog "Navigation Rules").
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [166 Skill Detail Drill-down](Screen_Prompts/166_Skill_Detail_Drill_down.md); [172 Full Activity Timeline](Screen_Prompts/172_Full_Activity_Timeline.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-5
+
+**FR-5** **Reports never include raw AI chat transcripts, only flags** (source: Parent Area screen table — a hard, zero-exception rule governing the AI Interaction History and Safety Report specifically).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-6
+
+**FR-6** Four report types and their cadence (canonical, source §6.7 "Detailed Workflow"): **Weekly child report** (stories completed, Quran progress, duas learned, habit streaks, quiz scores, recommended next step) — weekly; **Monthly family report** (cross-child progress summary, family streaks, content favorites, learning consistency) — monthly; **AI insight report** (strengths, weak areas, suggested next stories/duas/Quran practice, healthy-usage notes) — premium, weekly; **Safety report** (AI usage history, blocked requests, content flags, profile-setting changes) — on demand.
+
+Candidate owning surfaces: [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md); [169 Monthly Family Report (cross-child, aggregate-only)](Screen_Prompts/169_Monthly_Family_Report_cross_child_aggregate_only.md); [170 AI Insight Report (premium)](Screen_Prompts/170_AI_Insight_Report_premium.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-7
+
+**FR-7** **Dashboard/report content always labels data freshness; uses trend language and recommendations, never judgmental grades** (source §6.7 Validation Rules — restated here as this screen's own content-tone contract, shared with C.20).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md); [169 Monthly Family Report (cross-child, aggregate-only)](Screen_Prompts/169_Monthly_Family_Report_cross_child_aggregate_only.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-8
+
+**FR-8** **AI-generated parent insights must never diagnose developmental, behavioral, or religious conditions; must never compare siblings; must never present uncertain conclusions as settled facts** (source §6.7 Business Rules — enforced via the same Content Safety Validator write-time gate established in C.20 §3/§5, reused here, not reimplemented).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-9
+
+**FR-9** Parent Monitoring Flow (canonical, source "Parent Monitoring Flow" diagram): Parent Dashboard → Select child → Per-Child Report → parent sees: Weekly AI report, Habit consistency + streak calendar, Strength/weak-area summary, AI interaction history, Screen time + bedtime behavior → if a concerning AI interaction is found, parent adjusts AI controls or disables AI for that child (routes to C.23); if an overuse pattern is found, parent adjusts the screen-time policy (routes to C.23).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-10
+
+**FR-10** **Achievement sharing is parent-gated and PII-free**: the share flow generates a card showing nickname/initial, badge, and no PII — generated only after Parent PIN verification (source: "Reward/Achievement Flow" diagram, cross-ref A.11 FR-12 — restated and applied here as the canonical share-card contract for any report-originated sharing, not just badge-specific sharing).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [169 Monthly Family Report (cross-child, aggregate-only)](Screen_Prompts/169_Monthly_Family_Report_cross_child_aggregate_only.md); [171 Achievement Share Card Preview (PII-free)](Screen_Prompts/171_Achievement_Share_Card_Preview_PII_free.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-11
+
+**FR-11** **Export PDF** produces a parent-facing document containing the same content-governed (no raw transcript, no diagnosis, no sibling comparison) report data as the in-app view — the PDF is not a separate, less-governed data export path.
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md); [169 Monthly Family Report (cross-child, aggregate-only)](Screen_Prompts/169_Monthly_Family_Report_cross_child_aggregate_only.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-12
+
+**FR-12** **Skill mastery grid drill-down** routes into the underlying skill's detail (consistent with A.9's shared Mastery Engine's skill-state model — Locked/Ready/Learning/Practicing/Mastered/Needs Refresh — presented here in parent-friendly, non-raw-score language, consistent with A.9 FR-3's no-raw-score child-facing rule extended here as a parent-facing-but-still-non-raw-score convention, since A.9's broader "no confusing raw model score" principle applies to parent reports too per FR-7's "never judgmental grades" framing).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [166 Skill Detail Drill-down](Screen_Prompts/166_Skill_Detail_Drill_down.md); [170 AI Insight Report (premium)](Screen_Prompts/170_AI_Insight_Report_premium.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-13
+
+**FR-13** AI Interaction History entries are derived exclusively from **safety-event and flag records**, never from raw prompt/response logs — this is an architectural data-sourcing constraint, not merely a display-layer redaction (consistent with A.5's zero-retention principle extended here to the broader AI-interaction-logging surface: if the raw data was never retained in re-displayable form in the first place, FR-5's "never raw transcripts" rule is enforced structurally, not just by a UI choice not to render a field that does exist).
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md); [168 Safety Report (on-demand, full screen)](Screen_Prompts/168_Safety_Report_on_demand_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C22-FR-14
+
+**FR-14** Date-range filtering applies consistently across every component on the screen (trend chart, habit calendar, skill grid, AI interaction log) — a single date-range control governs the whole report view, not per-component independent filters.
+
+Candidate owning surfaces: [165 Per-Child Report (full view)](Screen_Prompts/165_Per_Child_Report_full_view.md); [166 Skill Detail Drill-down](Screen_Prompts/166_Skill_Detail_Drill_down.md); [167 AI Interaction History (full screen)](Screen_Prompts/167_AI_Interaction_History_full_screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C23
+
+[Feature_C23_Parental_Controls.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C23_Parental_Controls.md>) — §1.7.
+
+### C23-FR-1
+
+**FR-1** Controls area sections (canonical, source NoorHeroes Blueprint Master Navigation Map): Screen Time, Quiet Hours / Bedtime, AI Permissions, Content Age Level — all reached under Parent Area → Controls.
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [175 Quiet Hours / Bedtime Settings (per child)](Screen_Prompts/175_Quiet_Hours_Bedtime_Settings_per_child.md); [177 Content Age Level Settings (per child)](Screen_Prompts/177_Content_Age_Level_Settings_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-2
+
+**FR-2** Restriction Engine Detailed Workflow (canonical, source §6.13, items 1–6): (1) child session starts; app loads the server-signed restriction policy plus the local usage counter; (2) foreground active-learning time increments; background/paused time does not; (3) a warning notification fires at the configured threshold (e.g., 10 minutes remaining); (4) at the limit, the current short activity/question is allowed to finish or save, then new content is blocked and a calm rest screen is shown (e.g., "Mashallah! Great learning today. Time to rest."); (5) bedtime: new sessions are blocked during the bedtime window; existing playback stops at an appropriate boundary (never mid-word in an active Quran lesson); (6) parent override requires Parent Profile verification and creates an audited unlock entry.
+
+Candidate owning surfaces: [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md); [174 Screen Time Settings (per child)](Screen_Prompts/174_Screen_Time_Settings_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-3
+
+**FR-3** **Server is authoritative; local cache is honored only within a signed grace period. Device clock manipulation does not reset usage counters. Multi-device usage is reconciled server-side, not tracked independently per device** (source §6.13 Validation Rules — three hard, zero-exception rules).
+
+Candidate owning surfaces: [174 Screen Time Settings (per child)](Screen_Prompts/174_Screen_Time_Settings_per_child.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md); [179 Set Lock Type (Pattern/PIN/Biometric/None)](Screen_Prompts/179_Set_Lock_Type_Pattern_PIN_Biometric_None.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-4
+
+**FR-4** **Offline mode enforces the last signed restriction policy rather than allowing unlimited use when disconnected** (source §6.13 Error Handling).
+
+Candidate owning surfaces: [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md); [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-5
+
+**FR-5** Existing playback stops at an appropriate boundary at bedtime — **never mid-word in an active Quran lesson** (source §6.13 item 5 — a specific, hard content-respect rule distinct from the general "finish the short activity" rule at the screen-time limit, since bedtime cutoffs apply even mid-activity in a way screen-time limits don't, but must still respect natural content boundaries).
+
+Candidate owning surfaces: [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [174 Screen Time Settings (per child)](Screen_Prompts/174_Screen_Time_Settings_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-6
+
+**FR-6** AI Permissions per child: disable AI entirely, restrict voice interaction specifically, set language limits, and choose "curated only" mode (source NoorHeroes Blueprint "Parent AI Controls" card: "Parents can disable AI per child, restrict voice interaction, review history, set language limits, and choose 'curated only' mode").
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [176 AI Permissions Settings (per child)](Screen_Prompts/176_AI_Permissions_Settings_per_child.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-7
+
+**FR-7** **AI should increase trust, not risk** — every AI Permissions control exists to give parents a strictly more restrictive posture than the platform default, never to unlock capability beyond what the platform's own AI-safety pipeline allows regardless of parent preference (source: AI Rule card — restated as a ceiling principle: parent controls can only narrow AI capability, never expand it past platform-wide safety bounds).
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [176 AI Permissions Settings (per child)](Screen_Prompts/176_AI_Permissions_Settings_per_child.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-8
+
+**FR-8** Content Age Level allows a parent to override the system-derived age-band content eligibility for a specific child (e.g., a precocious reader, or conversely a parent wanting more conservative content than the raw DOB-derived band would suggest) — this override interacts with, but never bypasses, the platform's hard age-band-exclusion guarantees elsewhere (cross-ref B.13 Search's hard age-band filter, A.5's domain content eligibility) — it adjusts the *eligible band itself*, which downstream systems then respect exactly as they would the DOB-derived default.
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [177 Content Age Level Settings (per child)](Screen_Prompts/177_Content_Age_Level_Settings_per_child.md); [181 Content Age Level — Override Confirmation](Screen_Prompts/181_Content_Age_Level_Override_Confirmation.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-9
+
+**FR-9** Child Locks & Sessions: configure per-child app lock (PIN/pattern/biometric toggle) and view/revoke the active device list (source: NoorHeroes Blueprint Parent Area screen table, "Child Locks & Sessions — Configure per-child app lock; PIN/pattern/biometric toggle, active device list; Set lock, Revoke device... Revoking a device force-logs-out that session").
+
+Candidate owning surfaces: [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md); [179 Set Lock Type (Pattern/PIN/Biometric/None)](Screen_Prompts/179_Set_Lock_Type_Pattern_PIN_Biometric_None.md); [180 Device Revocation Confirmation](Screen_Prompts/180_Device_Revocation_Confirmation.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-10
+
+**FR-10** **A locked profile opens its own verification screen. Each child can independently use no lock, pattern, PIN, or device biometric. Only salted hashes/OS biometric assertions are stored; raw patterns and PINs are never logged** (source NoorHeroes Blueprint — the configuration-side restatement of C.19's verification-side guarantee; this document owns the *setting* of these values, C.19 owns their *verification*).
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [178 Child Locks & Sessions (per child)](Screen_Prompts/178_Child_Locks_Sessions_per_child.md); [179 Set Lock Type (Pattern/PIN/Biometric/None)](Screen_Prompts/179_Set_Lock_Type_Pattern_PIN_Biometric_None.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-11
+
+**FR-11** Parent override (screen-time extension or bedtime bypass) **requires Parent Profile verification and creates an audited unlock entry** (source §6.13 item 6) — every override is fully traceable, never an invisible or untracked grant.
+
+Candidate owning surfaces: [155 Calm Locked State (screen-time limit reached)](Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md); [156 Bedtime Block Screen](Screen_Prompts/156_Bedtime_Block_Screen.md); [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-12
+
+**FR-12** Every mutating action under Controls requires step-up authentication via C.19's gate — consistent with C.21's identical requirement, this area introduces no separate or weaker authorization mechanism.
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [174 Screen Time Settings (per child)](Screen_Prompts/174_Screen_Time_Settings_per_child.md); [181 Content Age Level — Override Confirmation](Screen_Prompts/181_Content_Age_Level_Override_Confirmation.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C23-FR-13
+
+**FR-13** Healthy-usage scoring (a derived, parent-facing metric summarizing bedtime behavior, overuse alerts, and session-cap adherence) is computed from the same server-authoritative usage data this engine maintains — it is a read/insight layer on top of Screen Time data, not a separate tracking system (cross-ref C.20/C.22's "healthy-usage and screen-time status" report content, which reads from this engine's data).
+
+Candidate owning surfaces: [173 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)](Screen_Prompts/173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md); [174 Screen Time Settings (per child)](Screen_Prompts/174_Screen_Time_Settings_per_child.md); [177 Content Age Level Settings (per child)](Screen_Prompts/177_Content_Age_Level_Settings_per_child.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C24
+
+[Feature_C24_Subscription_Billing.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C24_Subscription_Billing.md>) — §1.7.
+
+### C24-FR-1
+
+**FR-1** Plan Comparison (canonical, source §6.9 "Plan Comparison" table): Free Family Starter ($0, 1 active child, basic stories/duas/habits/basic reports, premium content locked, no AI weekly reports, limited offline); Mobile Family ($3/mo or $30/yr, 16.7% savings, 4 children, expanded content, 10 offline downloads, monthly family report, limited AI insights); Premium Family ($5.99/mo or $59/yr, 17.9% savings, 8 children, full story/Quran library, premium animated stories, full offline mode, weekly AI parent reports, advanced dashboard, extra child slots addable later).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-2
+
+**FR-2** Subscription Lifecycle state machine (canonical, source §6.9): `Free → Trial (7-day) → ActivePaid → RenewalPending → ActivePaid (auto-renew success) | PastDue (payment fails) → ActivePaid (recovered) | Free (grace ends); ActivePaid → Canceled → Free (paid period ends); ActivePaid → DowngradeScheduled → Free (next cycle)`.
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-3
+
+**FR-3** **Trial Rules** (canonical, source §6.9/§"Yearly Subscription Logic"): (1) parent sees trial length, post-trial price, renewal date, and auto-renew disclosure before confirming; (2) parent confirms through the platform purchase flow (Google Play / App Store) — **never a custom payment form**; (3) trial entitlements (Mobile Family level) activate immediately; (4) on day 7, Mobile Family auto-activates if billing succeeds; **store receipt + signed webhook are the billing source of truth, not client-reported state**.
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-4
+
+**FR-4** **Cancellation/Downgrade Rules** (canonical, source §6.9 table): Cancel subscription → paid access remains until the period ends, then reverts to Free limits; Trial cancellation with multiple children → parent selects 1 child to remain active on Free, others become **disabled, not deleted** (progress retained, restored when plan capacity returns), deterministic fallback (most-recently-active child) applies if no selection within 24 hours; Payment failure → parent receives email/push reminder, **child mode never shows billing messaging**; Renewal reminder → annual plans notify 7 days and 24 hours before renewal; Free plan second-child attempt → upgrade prompt shown in **parent mode only**, existing child's data unaffected.
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [190 Free-Plan Second-Child Upgrade Prompt (parent-mode only)](Screen_Prompts/190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-5
+
+**FR-5** **Entitlement checks apply at:** catalog/home feed, search, content detail, playback start, download manifest, AI features, and child-profile activation/creation (source §6.9 Validation Rules — the canonical, complete list of entitlement checkpoints every consuming feature must implement).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [186 Invoice History](Screen_Prompts/186_Invoice_History.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-6
+
+**FR-6** **Store webhook delayed → use last verified entitlement plus a grace window, then reconcile via a dedicated reconciliation job (not silent trust of the webhook alone, since webhook delivery is not guaranteed-once)** (source §6.9 Error Handling).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [185 Direct Upgrade Disclosure Screen](Screen_Prompts/185_Direct_Upgrade_Disclosure_Screen.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-7
+
+**FR-7** **The web portal cannot initiate app-store purchases outside provider policy; it may display the active entitlement and direct the parent to the mobile app appropriately. Store-purchase actions route through platform billing APIs only** (source §5 Web business rules / NoorHeroes Blueprint Parent Area screen table — restated as the hard rule governing the web portal's strictly limited billing surface).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-8
+
+**FR-8** **Purchases, AI controls, external links, deletion/export, and profile edits require parent PIN. Child mode never exposes billing or account-management controls** (source NoorHeroes Blueprint — restated as the hard rule this feature's child-mode-invisibility guarantee enforces, consistent with A.2's platform-wide no-billing-content-to-child rule).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md); [189 Retry Failed Payment](Screen_Prompts/189_Retry_Failed_Payment.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-9
+
+**FR-9** **Yearly Billing Flow** (canonical, source §"Billing Flow" card): Trial converts automatically to Mobile Family unless the parent cancels before the trial ends; Auto-renew renews unless the parent cancels before the renewal date; Cancel means access continues until the paid period ends, then returns to Free limits; Upgrade unlocks immediately and keeps all child profiles intact; Trial cancellation/downgrade activates Basic Free with only one child remaining active and additional profiles disabled without data deletion.
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md); [190 Free-Plan Second-Child Upgrade Prompt (parent-mode only)](Screen_Prompts/190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-10
+
+**FR-10** **Downgrade never deletes child data; excess profiles become read-only archives, never silently deleted** (source NoorHeroes Blueprint Subscription & Billing screen, "Navigation Rules" — restated; cross-ref C.21's archived-profile read-only display pattern).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-11
+
+**FR-11** Subscription screen components (canonical, source screen catalog): plan card, entitlement list, invoice history, "Manage on Play Store" deep link, cancel flow. Actions: start trial, upgrade, downgrade, cancel renewal, view invoice, retry failed payment. Entry points: Parent Dashboard, paywall upsell, Settings. Exit points: Google Play billing sheet (external), Parent Dashboard.
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-12
+
+**FR-12** Billing endpoints (canonical, source API table): `GET /api/v1/billing/plans` (public, cached); `POST /api/v1/billing/subscribe` (Bearer JWT, validates receipt server-side before activation); `POST /api/v1/billing/webhooks/play` (webhook signature, idempotent on `provider_event_id`, feeds reconciliation); `POST /api/v1/billing/reconcile` (internal/Celery, scheduled job reconciling entitlement state vs. provider truth, not user-facing).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [189 Retry Failed Payment](Screen_Prompts/189_Retry_Failed_Payment.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-13
+
+**FR-13** Paywall upsell UI is shown **only in the parent area** when a profile limit is reached or premium content is browsed in a parent-approved discovery context — never inside child mode (cross-ref A.2's hard rule, C.20's explicit permission for parent-surface billing messaging).
+
+Candidate owning surfaces: [182 Subscription & Billing (landing)](Screen_Prompts/182_Subscription_Billing_landing.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md); [190 Free-Plan Second-Child Upgrade Prompt (parent-mode only)](Screen_Prompts/190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C24-FR-14
+
+**FR-14** Premium content items remain **visible with a lock icon** in parent-approved discovery contexts — never hidden entirely. **Locking never deletes progress. Free plan always supports basic Islamic education** (source NoorHeroes Blueprint — restated, cross-ref A.3/A.10's established "locked, not hidden" content pattern).
+
+Candidate owning surfaces: [183 Plan Comparison](Screen_Prompts/183_Plan_Comparison.md); [184 Trial Disclosure Screen (length, price, renewal date, auto-renew)](Screen_Prompts/184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md); [190 Free-Plan Second-Child Upgrade Prompt (parent-mode only)](Screen_Prompts/190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C25
+
+[Feature_C25_Notifications_Parent_Support.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C25_Notifications_Parent_Support.md>) — §1.7.
+
+### C25-FR-1
+
+**FR-1** Notifications (Parent) components: inbox list, read/unread state, filters by type (source: screen catalog).
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [197 Contact Support Form](Screen_Prompts/197_Contact_Support_Form.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-2
+
+**FR-2** Notifications (Parent) actions: mark read, open the related deep-linked screen (source: screen catalog).
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [192 Notification Preferences — Category Toggles](Screen_Prompts/192_Notification_Preferences_Category_Toggles.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-3
+
+**FR-3** **Safety alerts cannot be muted; marketing ones can** (source: screen catalog "Navigation Rules" — a hard, zero-exception rule on the category-preference model itself, not just a UI convention).
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [192 Notification Preferences — Category Toggles](Screen_Prompts/192_Notification_Preferences_Category_Toggles.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-4
+
+**FR-4** **Safety-critical notifications (deletion grace period, billing failure) cannot be fully disabled, only de-prioritized in delivery channel** (source: NoorHeroes Blueprint — restated as the precise mechanism: a parent may downgrade *how* a safety-critical notification reaches them — e.g., push de-prioritized in favor of email-only — but never opt out of receiving it through *some* channel entirely).
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [192 Notification Preferences — Category Toggles](Screen_Prompts/192_Notification_Preferences_Category_Toggles.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-5
+
+**FR-5** Support Center components: FAQ search, contact-support form, ticket status (source: screen catalog "Privacy & Support — Components: Consent toggles, AI history, export request, support chat"; NoorHeroes Blueprint "Notifications (Parent) & Support — Components: Notification type toggles, quiet hours, FAQ search, contact-support form, ticket status").
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [197 Contact Support Form](Screen_Prompts/197_Contact_Support_Form.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-6
+
+**FR-6** Support Center actions: toggle notification categories, set quiet hours, submit support ticket, view ticket history (source: screen catalog "Actions").
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [197 Contact Support Form](Screen_Prompts/197_Contact_Support_Form.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-7
+
+**FR-7** **Data-export requests are async; status shown here and in the web portal** (source: screen catalog — restated as the canonical async-job UX pattern this feature's "Privacy & Support" surface must implement for export/deletion-adjacent requests).
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [197 Contact Support Form](Screen_Prompts/197_Contact_Support_Form.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-8
+
+**FR-8** **Parent Account Deletion cancellation during the 7-day grace period routes through Support, never self-service** (cross-ref C.21 FR-8 step 7) — the Support Center's contact-form/ticket flow is the actual mechanism through which a parent initiates this specific cancellation request; this document's ticket-submission flow must support a distinctly-tagged "Account Deletion Cancellation" category that routes to the appropriate priority queue.
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [197 Contact Support Form](Screen_Prompts/197_Contact_Support_Form.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-9
+
+**FR-9** Support tickets support a defined category taxonomy (e.g., billing, technical issue, content concern, safety concern, account-deletion-cancellation, general) — each category may route to a different internal queue/SLA, with safety-concern and account-deletion-cancellation categories receiving expedited priority.
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [197 Contact Support Form](Screen_Prompts/197_Contact_Support_Form.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-10
+
+**FR-10** The FAQ search is content-governed (admin-authored, scholar-reviewed where Islamic-content-adjacent) — never an AI-freeform-generated answer presented as official guidance, consistent with the platform's general content-governance discipline applied here to support content specifically.
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [194 Support Center (landing)](Screen_Prompts/194_Support_Center_landing.md); [195 FAQ Search](Screen_Prompts/195_FAQ_Search.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-11
+
+**FR-11** A parent's notification-category preferences and quiet-hours configuration here are the **parent-facing counterpart** of B.17's shared Policy Engine — this feature writes to the same `notification_preferences` table B.17's Policy Engine reads from, with `child_id` null for parent-scoped preference rows (cross-ref B.17 §4.1's shared schema).
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [192 Notification Preferences — Category Toggles](Screen_Prompts/192_Notification_Preferences_Category_Toggles.md); [193 Notification Preferences — Quiet Hours](Screen_Prompts/193_Notification_Preferences_Quiet_Hours.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C25-FR-12
+
+**FR-12** Every notification in the inbox deep-links to its related screen using the same Deep Link Resolution Service specified in B.17 (full revalidation on open) — this feature does not implement a separate, weaker deep-link path for parent-facing notifications.
+
+Candidate owning surfaces: [191 Notifications (Parent) Inbox](Screen_Prompts/191_Notifications_Parent_Inbox.md); [192 Notification Preferences — Category Toggles](Screen_Prompts/192_Notification_Preferences_Category_Toggles.md); [193 Notification Preferences — Quiet Hours](Screen_Prompts/193_Notification_Preferences_Quiet_Hours.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+## C26
+
+[Feature_C26_Privacy_Consent_Account_Security_Data_Rights.md](<C:/Users/Sarva/Documents/WORKGROUP-NOORHEROES/PRD_Documents/Parent Area In-App (19-26)/Feature_C26_Privacy_Consent_Account_Security_Data_Rights.md>) — §1.7.
+
+### C26-FR-1
+
+**FR-1** Settings/Privacy & Support components (canonical, source NoorHeroes Blueprint Parent Settings screen): Security (PIN/biometric reset), devices list, consent log, AI controls per child (cross-ref/link only, configuration owned by C.23), language picker, export/delete account.
+
+Candidate owning surfaces: [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [203 Parent PIN Reset (Account Security)](Screen_Prompts/203_Parent_PIN_Reset_Account_Security.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-2
+
+**FR-2** Settings actions: reset PIN, revoke device, review/withdraw consent, request export, request account deletion (cross-ref C.21 for the deletion flow itself — this screen's role is the entry point/link).
+
+Candidate owning surfaces: [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [206 Consent Log](Screen_Prompts/206_Consent_Log.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-3
+
+**FR-3** **Export and deletion require step-up authentication; deletion shows the 7-day grace period explicitly** (source: screen catalog "Navigation Rules" — restated; the deletion *experience* itself is C.21's, this screen only requires the same step-up before linking into it).
+
+Candidate owning surfaces: [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [212 Data Export Request](Screen_Prompts/212_Data_Export_Request.md); [216 Account Deletion Request and Confirmation](Screen_Prompts/216_Account_Deletion_Request_and_Confirmation.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-4
+
+**FR-4** **Logout requires confirmation if any unsynced offline downloads exist** (source: screen catalog "Settings — Navigation Rules") — a data-loss-prevention courtesy check specific to the logout action on this screen.
+
+Candidate owning surfaces: [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [214 Logout Confirmation (unsynced downloads present)](Screen_Prompts/214_Logout_Confirmation_unsynced_downloads_present.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-5
+
+**FR-5** **Data-export requests are async; status shown here and in the web portal** (source: screen catalog "Privacy & Support — Navigation Rules") — the same `data_requests` record is queryable from both surfaces.
+
+Candidate owning surfaces: [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [212 Data Export Request](Screen_Prompts/212_Data_Export_Request.md); [213 Export Status Tracking (preparing/ready)](Screen_Prompts/213_Export_Status_Tracking_preparing_ready.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-6
+
+**FR-6** AI Interaction History entries are **redacted at write time, not just at read time** — `ai_interactions.input_redacted`/`output_redacted` are the only fields that ever exist for this data; there is no corresponding unredacted column anywhere in the schema for a later read-time filter to fail and leak (source §9.5 schema notes — a hard, structural guarantee, generalizing C.22's flags-only Safety Report into the fuller, still-safe, history view this screen offers).
+
+Candidate owning surfaces: [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [209 AI Interaction History](Screen_Prompts/209_AI_Interaction_History.md); [210 AI Interaction Detail (redacted)](Screen_Prompts/210_AI_Interaction_Detail_redacted.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-7
+
+**FR-7** Each AI Interaction History entry carries `model_version` and `policy_result` (e.g., allowed/blocked/redirected) alongside the redacted input/output summaries and an `expires_at` retention boundary — giving parents genuine context (what kind of interaction, what the system decided) without ever exposing a raw, re-identifiable transcript.
+
+Candidate owning surfaces: [209 AI Interaction History](Screen_Prompts/209_AI_Interaction_History.md); [210 AI Interaction Detail (redacted)](Screen_Prompts/210_AI_Interaction_Detail_redacted.md); [217 Pending Account Deletion and Cancellation](Screen_Prompts/217_Pending_Account_Deletion_and_Cancellation.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-8
+
+**FR-8** Consent Log entries are individually reviewable and, for optional consents (personalization, voice/AI, marketing — cross-ref A.1 FR-5's required-vs-optional distinction), individually withdrawable; **required consents (Terms, Privacy Policy, child-data-processing) cannot be withdrawn without triggering the broader account-deletion path**, since withdrawing a required consent is functionally equivalent to revoking the basis for the account's existence (cross-ref A.1's consent model, restated here as this screen's withdrawal-eligibility rule).
+
+Candidate owning surfaces: [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [206 Consent Log](Screen_Prompts/206_Consent_Log.md); [208 Withdraw Optional Consent — Confirmation](Screen_Prompts/208_Withdraw_Optional_Consent_Confirmation.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-9
+
+**FR-9** Withdrawing the AI/voice consent specifically here has the identical effect as toggling AI off via C.23's AI Permissions screen — this screen and C.23 read/write the **same** underlying settings field, never two independently-tracked values that could drift out of sync.
+
+Candidate owning surfaces: [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [206 Consent Log](Screen_Prompts/206_Consent_Log.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-10
+
+**FR-10** The language picker sets the app's display language; this is the same setting B.16's child-Profile language toggle exposes per-child — at the parent level, this screen sets the **default/family-level** language preference, distinct from (but consistent in mechanism with) a child's own individual override, if any.
+
+Candidate owning surfaces: [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [206 Consent Log](Screen_Prompts/206_Consent_Log.md); [211 Language Picker](Screen_Prompts/211_Language_Picker.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-11
+
+**FR-11** PIN reset and device revocation on this screen reuse C.19's exact `ParentGateLauncher`/session-list mechanisms — this screen introduces no parallel PIN-storage or session-management implementation of its own.
+
+Candidate owning surfaces: [204 Security — Device List](Screen_Prompts/204_Security_Device_List.md); [205 Device Revocation Confirmation](Screen_Prompts/205_Device_Revocation_Confirmation.md); [215 Security (PIN and Device Management landing)](Screen_Prompts/215_Security_PIN_and_Device_Management_landing.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.
+
+### C26-FR-12
+
+**FR-12** Data export produces a structured, parent-readable export of the family's own data (consent history, child profiles' progress summaries, AI interaction history, billing history) — **never** including another family's data, and excluding raw biometric data (which never existed in exportable form to begin with, per A.1/C.19's zero-biometric-storage guarantee).
+
+Candidate owning surfaces: [201 Settings (landing)](Screen_Prompts/201_Settings_landing.md); [202 Privacy & Support (landing, may be a sub-section of Settings)](Screen_Prompts/202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md); [209 AI Interaction History](Screen_Prompts/209_AI_Interaction_History.md).
+
+Coverage class: Requirement retained; screen/overlay/state or production constraint. Source-specific realization and exact copy remain subject to screen acceptance and open decisions.

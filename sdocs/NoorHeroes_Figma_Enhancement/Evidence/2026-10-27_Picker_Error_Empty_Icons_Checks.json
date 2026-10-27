@@ -1,0 +1,245 @@
+{
+  "changes": {
+    "createdNodeIds": [
+      "2319:12426",
+      "2319:12427",
+      "2319:12428",
+      "2319:12429"
+    ],
+    "mutatedNodeIds": [
+      "2188:7403",
+      "I2188:7495;589:6",
+      "I2188:7495;589:7",
+      "2188:7495",
+      "I2188:7520;589:39",
+      "I2188:7520;589:40",
+      "2188:7520",
+      "2188:7591",
+      "I2188:7676;589:6",
+      "I2188:7676;589:7",
+      "2188:7676",
+      "I2188:7693;589:39",
+      "I2188:7693;589:40",
+      "2188:7693",
+      "2188:7835",
+      "I2188:7920;589:6",
+      "I2188:7920;589:7",
+      "2188:7920",
+      "I2188:7937;589:39",
+      "I2188:7937;589:40",
+      "2188:7937",
+      "2188:8075",
+      "I2188:8160;589:6",
+      "I2188:8160;589:7",
+      "2188:8160",
+      "I2188:8177;589:39",
+      "I2188:8177;589:40",
+      "2188:8177",
+      "2188:8315",
+      "I2188:8400;589:6",
+      "I2188:8400;589:7",
+      "2188:8400",
+      "I2188:8417;589:39",
+      "I2188:8417;589:40",
+      "2188:8417",
+      "2189:7213",
+      "I2189:7298;589:6",
+      "I2189:7298;589:7",
+      "2189:7298",
+      "I2189:7315;589:39",
+      "I2189:7315;589:40",
+      "2189:7315",
+      "2245:11335",
+      "I2245:11351;589:6",
+      "I2245:11351;589:7",
+      "2245:11351",
+      "I2245:11356;589:39",
+      "I2245:11356;589:40",
+      "2245:11356",
+      "2245:11630",
+      "I2245:11646;589:6",
+      "I2245:11646;589:7",
+      "2245:11646",
+      "I2245:11651;589:39",
+      "I2245:11651;589:40",
+      "2245:11651",
+      "2245:11925",
+      "I2245:11941;589:6",
+      "I2245:11941;589:7",
+      "2245:11941",
+      "I2245:11946;589:39",
+      "I2245:11946;589:40",
+      "2245:11946",
+      "2245:12220",
+      "I2245:12236;589:6",
+      "I2245:12236;589:7",
+      "2245:12236",
+      "I2245:12241;589:39",
+      "I2245:12241;589:40",
+      "2245:12241",
+      "2245:12515",
+      "I2245:12531;589:6",
+      "I2245:12531;589:7",
+      "2245:12531",
+      "I2245:12536;589:39",
+      "I2245:12536;589:40",
+      "2245:12536",
+      "2245:12810",
+      "I2245:12826;589:6",
+      "I2245:12826;589:7",
+      "2245:12826",
+      "I2245:12831;589:39",
+      "I2245:12831;589:40",
+      "2245:12831",
+      "2269:12163",
+      "I2269:12180;589:6",
+      "I2269:12180;589:7",
+      "2269:12180",
+      "I2269:12185;589:39",
+      "I2269:12185;589:40",
+      "2269:12185"
+    ],
+    "errorIcon": "2319:12426",
+    "emptyIcon": "2319:12428",
+    "frames": [
+      {
+        "id": "2188:7275",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2188:7543",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 198,
+        "retryReactions": 1
+      },
+      {
+        "id": "2188:7787",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 1
+      },
+      {
+        "id": "2188:8027",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 1
+      },
+      {
+        "id": "2188:8267",
+        "errorShown": true,
+        "centered": "CENTER",
+        "errorHeight": 168,
+        "emptyHeight": 150,
+        "retryReactions": 1
+      },
+      {
+        "id": "2189:7165",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2245:11287",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2245:11582",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2245:11877",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2245:12172",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2245:12467",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2245:12762",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      },
+      {
+        "id": "2269:12112",
+        "errorShown": false,
+        "centered": "MIN",
+        "errorHeight": 140,
+        "emptyHeight": 150,
+        "retryReactions": 0
+      }
+    ]
+  },
+  "verification": {
+    "checks": {
+      "errorIconAboveText": true,
+      "errorGroupCentered": true,
+      "errorCardHorizontallyCentered": true,
+      "retryHorizontallyCentered": true,
+      "retryNavigatesToPicker": true,
+      "emptyIconAboveMessage": true,
+      "outerHeightUnchanged": true,
+      "onlyInnerScroll": true
+    },
+    "bounds": {
+      "icon": [
+        149,
+        24,
+        40,
+        48
+      ],
+      "error": [
+        10,
+        200,
+        338,
+        168
+      ],
+      "button": [
+        10,
+        384,
+        338,
+        48
+      ],
+      "viewportHeight": 632
+    }
+  },
+  "scope": "Figma only. Existing state card artwork properties reused; Material error_outline in NH error color for generic load error, child_care in NH primary for no children. All 13 picker state instances updated. Error card and Retry form centered group. No existing copy or navigation changed. Live Present not tested."
+}

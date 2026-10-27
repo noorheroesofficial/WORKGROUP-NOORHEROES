@@ -1,0 +1,5 @@
+Changed/new source only; no .env or credentials read.
+Hardcoded credential-pattern findings: 0
+No dependencies, network calls, auth/API fields or permissions added.
+Poppins license retained at core/core-ui/LICENSE-Poppins.txt.
+Existing backend/API/navigation behavior preserved. Clipboard API is common Compose (deprecated compatibility API; no new dependency).

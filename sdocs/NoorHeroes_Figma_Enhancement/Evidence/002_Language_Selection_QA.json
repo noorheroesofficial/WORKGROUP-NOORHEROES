@@ -1,0 +1,368 @@
+{
+  "mutatedIds": [
+    "1168:240",
+    "1168:246",
+    "1168:252",
+    "1168:258",
+    "1166:196",
+    "1166:202",
+    "1166:208",
+    "1166:214",
+    "1166:237",
+    "1166:243",
+    "1166:249",
+    "1166:265",
+    "1166:278",
+    "1166:284",
+    "1166:300",
+    "1166:306",
+    "1166:319",
+    "1166:335",
+    "1166:341",
+    "1166:347",
+    "1168:143",
+    "1168:149",
+    "1168:155",
+    "1168:161",
+    "1168:177",
+    "1168:183",
+    "1168:189",
+    "1168:195",
+    "1168:211",
+    "1168:217",
+    "1168:223",
+    "1168:229",
+    "1168:245",
+    "1168:251",
+    "1168:257",
+    "1168:263",
+    "1168:279",
+    "1168:285",
+    "1168:291",
+    "1168:297",
+    "1131:2"
+  ],
+  "checks": [
+    {
+      "id": "1166:181",
+      "name": "NH/Enhanced/002/Language_Selection/Default",
+      "width": 390,
+      "rows": [
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 520,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1166:215",
+      "name": "NH/Enhanced/002/Language_Selection/Selected-en",
+      "width": 390,
+      "rows": [
+        {
+          "width": 350,
+          "height": 81,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 522,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1166:250",
+      "name": "NH/Enhanced/002/Language_Selection/Selected-hi",
+      "width": 390,
+      "rows": [
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 81,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 522,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1166:285",
+      "name": "NH/Enhanced/002/Language_Selection/Selected-ar",
+      "width": 390,
+      "rows": [
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 81,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 522,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1166:320",
+      "name": "NH/Enhanced/002/Language_Selection/Selected-ur",
+      "width": 390,
+      "rows": [
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 81,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 522,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1168:128",
+      "name": "NH/Enhanced/002/Language_Selection/QA/320",
+      "width": 320,
+      "rows": [
+        {
+          "width": 280,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 280,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 280,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 280,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 556,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1168:162",
+      "name": "NH/Enhanced/002/Language_Selection/QA/360",
+      "width": 360,
+      "rows": [
+        {
+          "width": 320,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 320,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 320,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 320,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 520,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1168:196",
+      "name": "NH/Enhanced/002/Language_Selection/QA/420",
+      "width": 420,
+      "rows": [
+        {
+          "width": 380,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 380,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 380,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 380,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 520,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1168:230",
+      "name": "NH/Enhanced/002/Language_Selection/QA/320-Text200",
+      "width": 320,
+      "rows": [
+        {
+          "width": 280,
+          "height": 206,
+          "actions": 1
+        },
+        {
+          "width": 280,
+          "height": 206,
+          "actions": 1
+        },
+        {
+          "width": 280,
+          "height": 206,
+          "actions": 1
+        },
+        {
+          "width": 280,
+          "height": 206,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 1314,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    },
+    {
+      "id": "1168:264",
+      "name": "NH/Enhanced/002/Language_Selection/Reduced Motion",
+      "width": 390,
+      "rows": [
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        },
+        {
+          "width": 350,
+          "height": 79,
+          "actions": 1
+        }
+      ],
+      "contentHeight": 520,
+      "textHorizontalOverflow": [],
+      "scroll": "VERTICAL"
+    }
+  ],
+  "originals": [
+    {
+      "id": "1095:2",
+      "x": 35456,
+      "y": 29879,
+      "w": 16704,
+      "h": 10825,
+      "children": 70
+    },
+    {
+      "id": "1085:13003",
+      "x": 52995,
+      "y": 29879,
+      "w": 15314,
+      "h": 10825,
+      "children": 35
+    }
+  ],
+  "prototypeQualification": "Splash route is first-launch demonstration only; session/bootstrap routing remains application logic",
+  "status": "Historical superseded layout; deleted QA frames are not current verification",
+  "current_review": "002_Reference_Revision.md"
+}

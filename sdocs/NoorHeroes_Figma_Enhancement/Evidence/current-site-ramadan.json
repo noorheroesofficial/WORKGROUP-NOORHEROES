@@ -1,0 +1,770 @@
+[
+  {
+    "name": "① Prep / Countdown",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Complete Family Prep →",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 1: Ramadan Prep / Countdown\n🌙\nRamadan is Coming\n\nSample countdown — region confirmation required\n\n14\ndays\n08\nhours\n22\nmin\nFAMILY PREP\nSet children's fasting approach\nEnable nightly reminders\nInvite extended family\nComplete Family Prep →"
+  },
+  {
+    "name": "② Ramadan Home",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🌙 TONIGHT'S JOURNEY\nNight 12: The Story of Patience\nStory • Dua of the Night • Mission",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🕌\nJourney Map\n11/30 sample nights explored",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📖\nDua Tonight\nDua Al-Istikharah",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🌟\nMy Rewards\nSample reward preview",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "⭐\nFamily\nView progress",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 2: Ramadan Home (Themed)\nNight 12 of Ramadan\nAssalamu Alaikum, Aisha ✨\n🌙\n🌙 TONIGHT'S JOURNEY\nNight 12: The Story of Patience\nStory • Dua of the Night • Mission\n🕌\nJourney Map\n11/30 sample nights explored\n📖\nDua Tonight\nDua Al-Istikharah\n🌟\nMy Rewards\nSample reward preview\n⭐\nFamily\nView progress\n🏠\nHome\n🗺️\nJourney\n📖\nStories\n👤\nProfile"
+  },
+  {
+    "name": "③ Journey Map (Lanterns)",
+    "elements": [
+      {
+        "disabled": false,
+        "label": "Night 1 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "1",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 2 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "2",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 3 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "3",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 4 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "4",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 5 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "5",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 10 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "10",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 9 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "9",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 8 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "8",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 7 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "7",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 6 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "6",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 11 lantern, lit",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "11",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Night 12 lantern, tonight",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "12",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 13 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "13",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 14 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "14",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 15 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "15",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 20 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "20",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 19 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "19",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 18 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "18",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 17 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "17",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 16 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "16",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 21 lantern, dim, special reflection night",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "21",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 22 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "22",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 23 lantern, dim, special reflection night",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "23",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 24 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "24",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 25 lantern, dim, special reflection night",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "25",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 30 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "30",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 29 lantern, dim, special reflection night",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "29",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 28 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "28",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 27 lantern, dim, special reflection night",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "27",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": "Night 26 lantern, dim",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "26",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "✨ Start Tonight's Mission →",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Ramadan home",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🏠",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Journey map",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🗺️",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Story preview",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📖",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Parent dashboard",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "👤",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 3: Journey Map (Lantern Progress Path)\n30-Night Journey\nNight 12 of 30\n🟡\nCompleted\n🔆\nTonight\n🔵\nLaylatul Qadr\n⚫\nAhead\n1\n2\n3\n4\n5\n10\n9\n8\n7\n6\n11\n12\n13\n14\n15\n20\n19\n18\n17\n16\n21\n22\n23\n24\n25\n30\n29\n28\n27\n26\n✨ Start Tonight's Mission →\nNights 21, 23, 25, 27 & 29 are Laylatul Qadr — a calmer, reflective experience (FR-12)\n🏠\n🗺️\n📖\n👤"
+  },
+  {
+    "name": "④ Night Recap",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Back to Journey Map",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 4: Night Recap\n🎉\nNight 12 Complete!\n\nYour lantern is lit ✨\n\n📖\nStory read\nThe Story of Patience\n🤲\nDua learned\nDua Al-Istikharah\n⭐\nXP earned\n+ 50 Noor XP\nBack to Journey Map"
+  },
+  {
+    "name": "⑤ Mission Detail",
+    "elements": [
+      {
+        "disabled": false,
+        "label": "Back to journey map",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📖\nStory\nListen to tonight's Ramadan story",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🤲\nDua of the Night\nLearn Dua Al-Istikharah",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🌙\nFasting Log parent-enabled\nRecord today's fasting (if enabled)",
+        "type": null
+      },
+      {
+        "disabled": true,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Finish sample night",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 5: Mission Detail (Ramadan)\nNight 12 Mission\nThe Story of Patience\n\nExplore the story and dua at your own pace. Fasting is optional.\n\n📖\nStory\nListen to tonight's Ramadan story\n🤲\nDua of the Night\nLearn Dua Al-Istikharah\n🌙\nFasting Log parent-enabled\nRecord today's fasting (if enabled)\nFinish sample night"
+  },
+  {
+    "name": "⑥ Story Player",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Mark sample story explored ✓",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 6: Ramadan Story Player\n📖\nThe Story of Patience\n\nIn a land blessed by gentle breezes and the call to prayer, there lived a young boy named Zayd who loved Ramadan…\n\nEach night he would light a small lantern by his window, a reminder that patience is a gift from Allah…\n\nAudio playback is not connected. This excerpt and its completion action are samples, not a record of listening.\n\n2:18\nMark sample story explored ✓"
+  },
+  {
+    "name": "⑦ Fasting Tracker",
+    "elements": [
+      {
+        "disabled": false,
+        "label": "Ask a parent to change fasting approach: Full Fast",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Full Fast\nChild will log full day fasting",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Ask a parent to change fasting approach: Practice",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Practice\nChild logs partial/suhoor practice",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Ask a parent to change fasting approach: Education Only",
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Education Only\nNo fasting log — educational content only",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "INPUT",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "INPUT",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "INPUT",
+        "text": "",
+        "type": "checkbox"
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 7: Fasting Tracker Toggle & Log\nFasting is optional. A parent chooses the approach; you can learn, rest, or skip without losing progress or rewards.\nFASTING APPROACH (PARENT-CONFIGURED)\nFull Fast\nChild will log full day fasting\nPractice\nChild logs partial/suhoor practice\nEducation Only\nNo fasting log — educational content only\nNight 12 Log\nSuhoor eaten\nFasting intention made\nIftar completed"
+  },
+  {
+    "name": "⑧ Laylatul Qadr Reflection",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Begin Tonight's Reflection",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 8: Laylatul Qadr Reflection\nLaylatul Qadr\n\nReflecting during the last ten nights\n\n🌙 This night is about reflection, not competition. XP notifications and badge call-outs are quietly set aside tonight. (FR-12)\n\nSOURCE-REVIEW PREVIEW\n\n\"Laylatul Qadr is better than a thousand months. The angels and the Spirit descend therein…\" — Al-Qadr, 3-4\n\nBegin Tonight's Reflection\n\nNo scores or comparisons. These are reflection prompts for the last ten nights; the exact night is not asserted."
+  },
+  {
+    "name": "⑨ Eid Countdown",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Preview Eid Celebration →",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 9: Eid Countdown\n🌙✨\nEid is Almost Here!\n\nCelebrating your own Ramadan journey\n\n02\ndays\n14\nhours\n\nSample region: United Kingdom. Dates and countdowns are illustrative, not live or confirmed by moon sighting.\n\nPreview Eid Celebration →"
+  },
+  {
+    "name": "⑩ Eid Home",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Open Your Eid Reward!\nTap to reveal your special badge",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🎴\nGenerate Eid Card",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📜\nRamadan Certificate",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "👨‍👩‍👧\nFamily Report",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📤\nShare Journey",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 10: Eid Home (Themed)\nEid Mubarak! 🎉\n\nCelebrating the steps you chose to take.\n\nOpen Your Eid Reward!\nTap to reveal your special badge\n🎴\nGenerate Eid Card\n📜\nRamadan Certificate\n👨‍👩‍👧\nFamily Report\n📤\nShare Journey"
+  },
+  {
+    "name": "⑪ Eid Reward Reveal",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Tap to Reveal",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 11: Eid Reward Reveal\nYour Eid Reward\nTap to Reveal"
+  },
+  {
+    "name": "⑫ Eid Card Generator",
+    "elements": [
+      {
+        "disabled": false,
+        "label": "Eid card design",
+        "placeholder": null,
+        "tag": "SELECT",
+        "text": "Gold crescent\nLantern accents",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": "Eid card greeting",
+        "placeholder": null,
+        "tag": "SELECT",
+        "text": "Wishing you joy and blessings\nMay your Eid be full of kindness\nSending warm Eid wishes",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Generate & Share (Parent Gate)",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 12: Eid Card Generator\nCreate Eid Card\nEid Mubarak!\nWishing you joy and blessings 🌙\n🌙✨🌸\nPII-excluded — no child name, DOB, or location (FR cert spec)\nChoose design\nGold crescent\nLantern accents\nGreeting\nWishing you joy and blessings\nMay your Eid be full of kindness\nSending warm Eid wishes\n1\nChoose design\n2\nAdd message\n3\nParent Gate → Share\nGenerate & Share (Parent Gate)"
+  },
+  {
+    "name": "⑬ Ramadan Certificate",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Download",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Share (Parent Gate)",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 13: Ramadan Complete Certificate\nNOORHEROES — RAMADAN 2026\nCertificate of Participation\n📜🌙✨\nCelebrating participation in the\nRamadan Learning Journey\nSample content • source review required\nPII-excluded per security spec §6 (FR certificate spec)\nDownload\nShare (Parent Gate)"
+  },
+  {
+    "name": "⑭ Post-Eid Keep the Habit",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Build My Habit Plan →",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 14: Post-Eid Keep the Habit\nKeep the Momentum Going!\n\nContinue whenever you feel ready. Rest days are welcome.\n\nContinue daily Dua habit\nWeekly Quran reading goal\nGratitude journaling (new)\nBuild My Habit Plan →\n\nRoutes to A.7's Habit Builder"
+  },
+  {
+    "name": "⑮ Ramadan Settings",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "INPUT",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "disabled": false,
+        "label": "Parent fasting approach",
+        "placeholder": null,
+        "tag": "SELECT",
+        "text": "Education only\nPractice\nFull fast",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "INPUT",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Generate Invite Link",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 15: Ramadan Settings Card (Parent)\nRamadan Settings\n\nConfigure each child's experience\n\nEnable optional fasting log for this profile\nFasting approach\nEducation only\nPractice\nFull fast\nNightly reminder preference (preview only)\n\nNotifications and device permission requests are not connected; no reminder will be sent.\n\nSession-only preferences. No fasting log for age 6 or younger. No health advice, pressure, or reward for fasting duration.\n\nAisha, age 8\npractice\nFasting approach: Practice fasting\nFamily Invite Link\n\nShare a read-only Ramadan Report link with extended family (FR-14)\n\nGenerate Invite Link"
+  },
+  {
+    "name": "⑯ Ramadan Dashboard",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "👨‍👩‍👧\nFamily Progress\n28 nights combined",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📊\nFull Family Report\nPrintable & shareable",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 16: Ramadan Dashboard Tab (Parent)\nRamadan Dashboard\nNight 12 of 30\n👨‍👩‍👧\nFamily Progress\n28 nights combined\n📊\nFull Family Report\nPrintable & shareable\n👤\nAisha · private profile"
+  },
+  {
+    "name": "⑰ Family Aggregate",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Back to parent dashboard",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 17: Family Ramadan Aggregate\nFamily Ramadan Journey\nNo sibling comparison: Family view shows an aggregate only — children are never ranked against each other. (FR: family-aggregate no per-child array field)\nFamily Total\n21\nmissions completed this Ramadan\n21 / 30 nights (combined)\n\nOne combined sample family summary. Individual profiles are reviewed privately in the parent dashboard, never side by side.\n\nBack to parent dashboard"
+  },
+  {
+    "name": "⑱ Family Report",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "🖨 Print",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "📤 Share Link",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 18: Family Ramadan Report (Printable)\nFamily Report\nAL-RAHMAN FAMILY — RAMADAN 2026\nTotal missions completed\n21 / 30\nStories read\n24\nDuas learned\n18\nFasting logs\n12 (Family only)\nLaylatul Qadr reflections\n5\n🖨 Print\n📤 Share Link"
+  },
+  {
+    "name": "⑲ Conversion Card (Day 28-30)",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Continue with Annual Plan →",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Not now",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 19: Conversion Moment Card (Day 28–30)\nSOFT REMINDER — DAY 28\nContinue Your Family's Journey\n\nReview optional plans whenever you are ready. No trial or payment is active in this preview. Learning choices are not tied to fasting or completion.\n\nReview current plans and billing terms\nPricing and purchase terms are shown in the existing subscription flow\nContinue with Annual Plan →\nNot now\n\n🔒 FR-13: Never blocking — this card is dismissable, never a paywall. Routes to C.24's existing purchase flow."
+  },
+  {
+    "name": "⑳ Family Member Invite",
+    "elements": [
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Copy Link",
+        "type": null
+      },
+      {
+        "disabled": false,
+        "label": null,
+        "placeholder": null,
+        "tag": "BUTTON",
+        "text": "Share",
+        "type": null
+      }
+    ],
+    "text": "🌙 F.36 RAMADAN MODE\nScreen 20: Family Member Invite (Read-Only Report)\nInvite Family Members\n\nShare a read-only link to your family's Ramadan report (FR-14)\n\nRead-Only Report Link\nNo share link generated\nNo live link exists. Creation, expiry, revocation and consent require a connected parent-authorised service.\nCopy Link\nShare"
+  }
+]

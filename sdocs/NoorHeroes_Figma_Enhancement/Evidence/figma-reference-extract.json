@@ -1,0 +1,757 @@
+{
+  "page": "928:2",
+  "frames": [
+    {
+      "id": "1085:13003",
+      "name": "Frame 2",
+      "width": 15314,
+      "height": 10825,
+      "children": [
+        {
+          "id": "1085:14286",
+          "name": "Html → Body",
+          "type": "FRAME",
+          "width": 1280,
+          "height": 9479.75
+        },
+        {
+          "id": "1085:15568",
+          "name": "Html → Body",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2354
+        },
+        {
+          "id": "1085:15876",
+          "name": "Rewards & Avatar Hub",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1976
+        },
+        {
+          "id": "1085:16216",
+          "name": "Stories & Bedtime Hub",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1923.546630859375
+        },
+        {
+          "id": "1085:16521",
+          "name": "Quran & Arabic Learning",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2146
+        },
+        {
+          "id": "1085:16820",
+          "name": "Child Home Dashboard",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1774.5
+        },
+        {
+          "id": "1085:17126",
+          "name": "Dua Learning Studio",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2077.75
+        },
+        {
+          "id": "1085:17435",
+          "name": "Child Profile Hub",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2194
+        },
+        {
+          "id": "1085:17757",
+          "name": "Skill-Reinforcement Games Hub",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2001.916748046875
+        },
+        {
+          "id": "1085:18093",
+          "name": "Interactive Onboarding Journey",
+          "type": "FRAME",
+          "width": 816,
+          "height": 1113.75
+        },
+        {
+          "id": "1085:18295",
+          "name": "Splash & Language Selection",
+          "type": "FRAME",
+          "width": 816,
+          "height": 834
+        },
+        {
+          "id": "1085:18421",
+          "name": "Intro Slide 2 — Quran & Tajweed Mastery",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1085:18513",
+          "name": "Intro Slide 4 — Parental Peace of Mind",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1085:18594",
+          "name": "Intro Slide 3 — Daily Sunnah & Noor Garden",
+          "type": "FRAME",
+          "width": 390,
+          "height": 906
+        },
+        {
+          "id": "1085:18679",
+          "name": "Interactive Onboarding Journey (Modern)",
+          "type": "FRAME",
+          "width": 816,
+          "height": 978.375
+        },
+        {
+          "id": "1085:18818",
+          "name": "Splash & Language Selection (Modern)",
+          "type": "FRAME",
+          "width": 816,
+          "height": 884.5
+        },
+        {
+          "id": "1085:18950",
+          "name": "Parent Registration & Consent (Modern)",
+          "type": "FRAME",
+          "width": 816,
+          "height": 1743.800048828125
+        },
+        {
+          "id": "1085:19139",
+          "name": "Intro Slide 1 — Stories of the Anbiya",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1085:19241",
+          "name": "Parent Registration & Consent",
+          "type": "FRAME",
+          "width": 816,
+          "height": 1708.25
+        },
+        {
+          "id": "1085:19418",
+          "name": "Onboarding Intro Sequence (4 Pillars)",
+          "type": "FRAME",
+          "width": 816,
+          "height": 822
+        },
+        {
+          "id": "1085:19545",
+          "name": "Avatar Studio & Character Evolution",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1575
+        },
+        {
+          "id": "1085:19800",
+          "name": "Parent PIN & Security Gate",
+          "type": "FRAME",
+          "width": 816,
+          "height": 986.25
+        },
+        {
+          "id": "1085:19961",
+          "name": "Habit Builder & Sunnah Tracker",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1468
+        },
+        {
+          "id": "1085:20220",
+          "name": "Quiz Completion & Mastery Result",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1480
+        },
+        {
+          "id": "1085:20390",
+          "name": "Parent Dashboard Overview",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1984
+        },
+        {
+          "id": "1085:20695",
+          "name": "Parental Controls & Limits",
+          "type": "FRAME",
+          "width": 816,
+          "height": 1717
+        },
+        {
+          "id": "1085:20951",
+          "name": "Per-Child Progress & Safety Report",
+          "type": "FRAME",
+          "width": 816,
+          "height": 2715.5
+        },
+        {
+          "id": "1085:21358",
+          "name": "Add Child Profile (Creation)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2176.25
+        },
+        {
+          "id": "1085:21695",
+          "name": "Child Profile View & Management",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2749.666748046875
+        },
+        {
+          "id": "1085:22018",
+          "name": "Ramadan Journey Map (Lantern Path)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 3165.10009765625
+        },
+        {
+          "id": "1085:22412",
+          "name": "Family Ramadan Dashboard & Certificate",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2461.75
+        },
+        {
+          "id": "1085:22697",
+          "name": "OTP Verification & Fallback Channel",
+          "type": "FRAME",
+          "width": 816,
+          "height": 1161
+        },
+        {
+          "id": "1085:22850",
+          "name": "Family Ramadan Dashboard & Certificate (Refined)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2380.5
+        },
+        {
+          "id": "1085:23160",
+          "name": "Nightly Ramadan Mission & Fasting Tracker",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2019
+        },
+        {
+          "id": "1085:23413",
+          "name": "NoorHeroes Plans & Family Pass",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1914.5
+        }
+      ]
+    },
+    {
+      "id": "1095:2",
+      "name": "Frame 1",
+      "width": 16704,
+      "height": 10825,
+      "children": [
+        {
+          "id": "1095:3",
+          "name": "NoorHeroes Logo Redesign",
+          "type": "FRAME",
+          "width": 340,
+          "height": 96
+        },
+        {
+          "id": "1095:24",
+          "name": "Registration & Parent Consent",
+          "type": "FRAME",
+          "width": 390,
+          "height": 950.77001953125
+        },
+        {
+          "id": "1095:204",
+          "name": "OTP Verification",
+          "type": "FRAME",
+          "width": 390,
+          "height": 592
+        },
+        {
+          "id": "1095:282",
+          "name": "Family Profile Picker",
+          "type": "FRAME",
+          "width": 390,
+          "height": 778.625
+        },
+        {
+          "id": "1095:390",
+          "name": "Add Child Profile",
+          "type": "FRAME",
+          "width": 390,
+          "height": 926.0999755859375
+        },
+        {
+          "id": "1095:562",
+          "name": "Parent PIN Setup",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1095:643",
+          "name": "Splash Screen with Animated Noor Sky",
+          "type": "FRAME",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "id": "1095:704",
+          "name": "Intro Slide 2 - Quran & Stories",
+          "type": "FRAME",
+          "width": 390,
+          "height": 838
+        },
+        {
+          "id": "1095:788",
+          "name": "Intro Slide 4 - Family & Parent Shield",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1095:862",
+          "name": "Intro Slide 3 - Daily Habits & Duas",
+          "type": "FRAME",
+          "width": 390,
+          "height": 864
+        },
+        {
+          "id": "1095:936",
+          "name": "Intro Slide 1 - Welcome",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1096:1090",
+          "name": "Html → Body",
+          "type": "FRAME",
+          "width": 390,
+          "height": 3618.699951171875
+        },
+        {
+          "id": "1098:1675",
+          "name": "Story Detail — Desert Night",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1678.25
+        },
+        {
+          "id": "1098:1855",
+          "name": "Story Player — Bedtime Mode",
+          "type": "FRAME",
+          "width": 390,
+          "height": 725.002197265625
+        },
+        {
+          "id": "1098:1954",
+          "name": "Stories Library",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2011.75
+        },
+        {
+          "id": "1098:2326",
+          "name": "Moral Summary & Bedtime Reflection",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1099.75
+        },
+        {
+          "id": "1100:2",
+          "name": "Quran Learning Home - Skill Tree Map",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1557
+        },
+        {
+          "id": "1100:212",
+          "name": "Surah Learning - Ayah Practice",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1031.6700439453125
+        },
+        {
+          "id": "1100:405",
+          "name": "AI Pronunciation Feedback",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1025.5
+        },
+        {
+          "id": "1100:555",
+          "name": "Noorani Path Emblem",
+          "type": "FRAME",
+          "width": 100,
+          "height": 100
+        },
+        {
+          "id": "1104:932",
+          "name": "Recall Quiz Question",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1318.5
+        },
+        {
+          "id": "1104:1101",
+          "name": "Dua Card Detail",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1212.125
+        },
+        {
+          "id": "1104:1248",
+          "name": "Dua Categories",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1639
+        },
+        {
+          "id": "1105:2133",
+          "name": "Noor Garden (Personal & Family)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1519.25
+        },
+        {
+          "id": "1105:2393",
+          "name": "Habit Builder — Today's Checklist",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1619
+        },
+        {
+          "id": "1105:2614",
+          "name": "Streak State Detail — Warm Recovery",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1140
+        },
+        {
+          "id": "1105:2755",
+          "name": "Audio Bedtime Player",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1105:2898",
+          "name": "Dua Bedtime Reflection Card",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1036.5
+        },
+        {
+          "id": "1105:2973",
+          "name": "Sleep Timer Selector",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1106:3124",
+          "name": "Per-Answer Explanation Overlay",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1350
+        },
+        {
+          "id": "1106:3276",
+          "name": "Quiz Question Screen",
+          "type": "FRAME",
+          "width": 390,
+          "height": 932.5
+        },
+        {
+          "id": "1106:3444",
+          "name": "Html → Body",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1250.625
+        },
+        {
+          "id": "1106:3570",
+          "name": "Games Hub",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1584.75
+        },
+        {
+          "id": "1106:3888",
+          "name": "Game Session Completion",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1243.5
+        },
+        {
+          "id": "1108:4025",
+          "name": "Rewards Wallet",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1480
+        },
+        {
+          "id": "1108:4357",
+          "name": "Achievement Store",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1372.25
+        },
+        {
+          "id": "1108:4573",
+          "name": "Family Board",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1469.875
+        },
+        {
+          "id": "1109:4775",
+          "name": "Avatar Customization",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1442
+        },
+        {
+          "id": "1109:5024",
+          "name": "Locked Item Detail - Desert Caravan Cloak",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1111:5145",
+          "name": "Search Screen - Landing",
+          "type": "FRAME",
+          "width": 390,
+          "height": 937
+        },
+        {
+          "id": "1111:5321",
+          "name": "Voice Search - Listening State",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1008
+        },
+        {
+          "id": "1111:5423",
+          "name": "Search Results - Filterable Grid",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1518.1409912109375
+        },
+        {
+          "id": "1111:5774",
+          "name": "Search Empty State - Friendly Garden Discovery",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1346
+        },
+        {
+          "id": "1111:5965",
+          "name": "Html → Body",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1221.8800048828125
+        },
+        {
+          "id": "1111:6545",
+          "name": "Html → Body → Main - MobileDeviceFrame",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1042
+        },
+        {
+          "id": "1111:6751",
+          "name": "Html → Body",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1124.8499755859375
+        },
+        {
+          "id": "1111:6947",
+          "name": "Home with In-App Notification Banner",
+          "type": "FRAME",
+          "width": 406,
+          "height": 1150
+        },
+        {
+          "id": "1111:7197",
+          "name": "Deep Link Resolution & Fallback States - Polished",
+          "type": "FRAME",
+          "width": 390,
+          "height": 791
+        },
+        {
+          "id": "1111:7290",
+          "name": "Who Is Learning - Profile Picker (Polished)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1075.25
+        },
+        {
+          "id": "1111:7445",
+          "name": "Profile Lock Verification (Polished)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 972
+        },
+        {
+          "id": "1111:7561",
+          "name": "Html → Body → Mobile Viewport Wrapper (390px iOS format)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1607.5
+        },
+        {
+          "id": "1113:7776",
+          "name": "Html → Body → Main - Mobile Screen Container",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1421.47998046875
+        },
+        {
+          "id": "1113:7899",
+          "name": "Child Deletion - Irreversible Warning",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1113:7953",
+          "name": "Child Management - List Screen",
+          "type": "FRAME",
+          "width": 390,
+          "height": 884
+        },
+        {
+          "id": "1113:8090",
+          "name": "Per-Child Report - Polished",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2725.5048828125
+        },
+        {
+          "id": "1113:8533",
+          "name": "AI Interaction History - Polished",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1626.7449951171875
+        },
+        {
+          "id": "1113:8726",
+          "name": "Calm Rest Screen (Child Mode)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 947.8099975585938
+        },
+        {
+          "id": "1113:8861",
+          "name": "Parent Controls & Device Hub",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1554
+        },
+        {
+          "id": "1113:9117",
+          "name": "Screen Time Settings",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1746.75
+        },
+        {
+          "id": "1113:9764",
+          "name": "Confirm Trial (Redesigned)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 892.25
+        },
+        {
+          "id": "1113:9855",
+          "name": "Plan Comparison (Redesigned)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 2562.856689453125
+        },
+        {
+          "id": "1113:10153",
+          "name": "Notification Preferences",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1414.8800048828125
+        },
+        {
+          "id": "1113:10319",
+          "name": "Support Center",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1180.2650146484375
+        },
+        {
+          "id": "1117:10492",
+          "name": "Privacy & Data Settings",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1089.75
+        },
+        {
+          "id": "1117:10626",
+          "name": "Consent Log Settings",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1774
+        },
+        {
+          "id": "1117:10779",
+          "name": "AI Interaction History",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1249.260009765625
+        },
+        {
+          "id": "1117:10959",
+          "name": "Family Ramadan Aggregate - Polished",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1370
+        },
+        {
+          "id": "1117:11180",
+          "name": "Ramadan Journey Map",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1209
+        },
+        {
+          "id": "1117:11516",
+          "name": "Laylatul Qadr Calm-Mode - Polished",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1216
+        },
+        {
+          "id": "1117:11669",
+          "name": "Eid Home (Celebration)",
+          "type": "FRAME",
+          "width": 390,
+          "height": 1023
+        }
+      ]
+    }
+  ],
+  "screens": []
+}

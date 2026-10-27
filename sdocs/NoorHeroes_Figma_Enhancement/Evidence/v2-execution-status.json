@@ -1,0 +1,66 @@
+{
+  "file_key": "MR9935oQZACMjndzGIUgq5",
+  "page_id": "928:2",
+  "v2_section_id": "1128:2",
+  "prompt_files_read": 237,
+  "current_screen": "002 Language Selection",
+  "status": "Repeatable button processing, inline completion, return and retry revision awaiting review",
+  "original_mobile_containers_unchanged": [
+    "1095:2",
+    "1085:13003"
+  ],
+  "design_system": {
+    "existing_source_instances": 0,
+    "added_libraries": 0,
+    "matching_logo_components": 0
+  },
+  "source_conflict": "PRD §2.6 wordmark only versus Frame1 Arabic/tagline/Quran quotation/compliance claims/version and hosted alternative subtitle",
+  "approval_gate": "001_Splash_Screen.md §9 step1 stop when references disagree; §11 approval before next screen",
+  "approved_copy": "Latest user reference overrides previous wordmark-only decision: NoorHeroes; ISLAMIC LEARNING · نور كيدز",
+  "default_frame_id": "1131:2",
+  "reduced_motion_frame_id": "1146:2",
+  "qa_widths": [
+    320,
+    360,
+    390,
+    420
+  ],
+  "prototype": "Native 2.5s entrance, star and indeterminate loading animation; downstream destinations pending screen approval; production bootstrap logic not implemented by timeline",
+  "qa_frame_ids": [
+    "1146:125",
+    "1146:248",
+    "1146:371"
+  ],
+  "motion": "18 stars at Make source positions; 12px four-point sparkles and 5/6px gold dots; staggered opacity hide/show and scale 0.75 to 1.1; 2.5s timeline; static reduced-motion variants",
+  "logo": "Exact CrescentMoon SVG structure from Make illustrations.tsx, size 118; native source glow preserved",
+  "verification": "Rendered Figma video inspected at 0.4, 1.1, 1.8 and 2.4 seconds; star visibility and loading movement confirmed; Evidence/Splash_Make_Icon_Motion.mp4",
+  "screen_002": {
+    "default_frame_id": "1166:181",
+    "approved_languages": [
+      "English",
+      "Hindi",
+      "Arabic",
+      "Urdu"
+    ],
+    "approved_behavior": "Select locale; Continue compacts, simulates processing, shows inline completion and returns full-width; no separate Success frames",
+    "intro_reference_handoff": null,
+    "review_document": "002_Button_Return_Review.md",
+    "qa_document": "002_Language_Selection_QA.json",
+    "pending": [
+      "Screen 003 remains unimplemented",
+      "Full localization and RTL verification",
+      "Interactive Present playback",
+      "Proposed error/status copy review"
+    ],
+    "deleted_frame_ids": [
+      "1168:128",
+      "1168:162",
+      "1168:196",
+      "1168:230",
+      "1168:2"
+    ],
+    "motion_evidence": [
+      "Language_Button_Return.mp4"
+    ]
+  }
+}

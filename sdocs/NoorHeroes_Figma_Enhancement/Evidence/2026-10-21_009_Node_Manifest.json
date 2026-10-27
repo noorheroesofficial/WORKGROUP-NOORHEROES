@@ -1,0 +1,89 @@
+{
+  "section": "1588:337",
+  "vars": {
+    "caller": "VariableID:1588:340",
+    "docKey": "VariableID:1588:339",
+    "online": "VariableID:1588:341",
+    "cached": "VariableID:1588:342",
+    "title": "VariableID:1588:343",
+    "version": "VariableID:1588:344",
+    "animate": "VariableID:1588:345"
+  },
+  "loading": "1588:486",
+  "error": "1588:533",
+  "retry": "1588:565",
+  "surfaces": [
+    {
+      "key": "terms",
+      "root": "1588:346",
+      "panel": "1588:348",
+      "close": "1588:359",
+      "viewport": "1588:352",
+      "footer": "1588:354",
+      "caller": "terms",
+      "dest": "1513:350",
+      "source": "1513:363"
+    },
+    {
+      "key": "privacy",
+      "root": "1588:381",
+      "panel": "1588:383",
+      "close": "1588:394",
+      "viewport": "1588:387",
+      "footer": "1588:389",
+      "caller": "privacy",
+      "dest": "1513:386",
+      "source": "1513:401"
+    },
+    {
+      "key": "child",
+      "root": "1588:418",
+      "panel": "1588:420",
+      "close": "1588:431",
+      "viewport": "1588:424",
+      "footer": "1588:426",
+      "caller": "privacy",
+      "dest": "1513:386",
+      "source": "1513:401"
+    },
+    {
+      "key": "personalization",
+      "root": "1514:354",
+      "panel": "1514:356",
+      "close": "1588:457",
+      "viewport": "1514:380",
+      "footer": "1514:376",
+      "caller": "preferences",
+      "dest": "1511:380"
+    },
+    {
+      "key": "voice",
+      "root": "1514:384",
+      "panel": "1514:386",
+      "close": "1588:467",
+      "viewport": "1514:410",
+      "footer": "1514:406",
+      "caller": "preferences",
+      "dest": "1511:380"
+    },
+    {
+      "key": "marketing",
+      "root": "1514:414",
+      "panel": "1514:416",
+      "close": "1588:477",
+      "viewport": "1514:440",
+      "footer": "1514:436",
+      "caller": "preferences",
+      "dest": "1511:380"
+    }
+  ],
+  "links": [
+    "1459:1103",
+    "1588:614",
+    "1588:617",
+    "1588:620",
+    "1459:1152",
+    "1459:1175",
+    "1459:1198"
+  ]
+}

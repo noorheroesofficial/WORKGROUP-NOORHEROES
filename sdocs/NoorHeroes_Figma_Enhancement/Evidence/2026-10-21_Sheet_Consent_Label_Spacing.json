@@ -1,0 +1,169 @@
+{
+  "changedNodeIds": [
+    "1459:1106",
+    "1459:1116",
+    "1459:1083",
+    "1459:1093",
+    "1459:1132",
+    "1459:1142",
+    "1459:1155",
+    "1459:1165",
+    "1459:1178",
+    "1459:1188"
+  ],
+  "checks": [
+    {
+      "id": "1459:1106",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1116",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1083",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1093",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1132",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1142",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1155",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1165",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1178",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "id": "1459:1188",
+      "kind": "Gap and interactions",
+      "pass": true
+    },
+    {
+      "row": "1459:1105",
+      "state": "1459:1106",
+      "text": "Child-data-processing consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1105",
+      "state": "1459:1116",
+      "text": "Child-data-processing consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1082",
+      "state": "1459:1083",
+      "text": "I confirm I am 18 years or older",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1082",
+      "state": "1459:1093",
+      "text": "I confirm I am 18 years or older",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1131",
+      "state": "1459:1132",
+      "text": "Personalization/AI consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1131",
+      "state": "1459:1142",
+      "text": "Personalization/AI consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1154",
+      "state": "1459:1155",
+      "text": "Voice-feature consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1154",
+      "state": "1459:1165",
+      "text": "Voice-feature consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1177",
+      "state": "1459:1178",
+      "text": "Marketing consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    },
+    {
+      "row": "1459:1177",
+      "state": "1459:1188",
+      "text": "Marketing consent",
+      "w": 226,
+      "h": 24,
+      "gap": 8,
+      "fontSize": 14,
+      "pass": true
+    }
+  ],
+  "allPass": true,
+  "originalSelectionsRestored": true,
+  "fontAndCopyPreserved": true
+}

@@ -1,0 +1,1326 @@
+[
+  {
+    "feature": "B13",
+    "name": "Search",
+    "type": "screen",
+    "order": 1,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Search/Search-01.png",
+      "Screens/Mobile App/Search/Search-02.png"
+    ],
+    "exact_copy": [
+      "Search",
+      "Recent Searches",
+      "Clear all",
+      "Try searching for",
+      "Prophet Ibrahim",
+      "Surah Al-Asr",
+      "Morning duas",
+      "Letter Trace",
+      "Start typing or tap the mic to search",
+      "Your recent searches will appear here"
+    ],
+    "content_fields": "Search|Recent Searches|Clear all|Try searching for|Prophet Ibrahim|Surah Al-Asr|Morning duas|Letter Trace|Start typing or tap the mic to search|Your recent searches will appear here",
+    "behavior": "Any tab search icon → landing; recent/suggested query → Results; x removes one query, Clear all clears active child history; back restores invoking tab; mic explicit tap plus parent consent and OS permission → Listening. Suggestions must be moderated and age-eligible.",
+    "actions": "Any tab search icon → landing; recent/suggested query → Results; x removes one query, Clear all clears active child history; back restores invoking tab; mic explicit tap plus parent consent and OS permission → Listening. Suggestions must be moderated and age-eligible.",
+    "destinations": "Any tab search icon → landing; recent/suggested query → Results; x removes one query, Clear all clears active child history; back restores invoking tab; mic explicit tap plus parent consent and OS permission → Listening. Suggestions must be moderated and age-eligible.",
+    "states": [
+      "recent populated",
+      "first-time",
+      "offline local history",
+      "fetch failure omitted"
+    ],
+    "conflicts": "Search input appears clipped after du; do not infer exact full placeholder. Letter Trace/Tajweed suggestions exceed explicit story/surah/dua destination contract: confirm routing.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog \"Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state\").\n**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog \"User Actions: Type or speak a query, apply type/age filter, open a result\").\n**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).\n**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).\n**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw \"no results\" error**.\n**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).\n**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).\n**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).\n**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching \"the whale prophet\" should surface Prophet Yunus content) (source: Feature Reference \"Search System\" features: \"Semantic search... Multilingual understanding\").\n**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.\n**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case \"Search child progress | Parent | Parent searches reports, stories, habits\") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.\n**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.\n\n"
+  },
+  {
+    "feature": "B13",
+    "name": "Voice Search — Listening",
+    "type": "state",
+    "order": 2,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Search/Voice Search-01.png"
+    ],
+    "exact_copy": [
+      "Listening...",
+      "Say what you’re looking for",
+      "Tap to simulate speech →",
+      "Cancel"
+    ],
+    "content_fields": "Listening...|Say what you’re looking for|Tap to simulate speech →|Cancel",
+    "behavior": "Explicit mic tap only; cancel/interruption discards partial audio → Search; completion → Processing; denied permission → text-only Search. Simulation control is prototype annotation pending approval.",
+    "actions": "Explicit mic tap only; cancel/interruption discards partial audio → Search; completion → Processing; denied permission → text-only Search. Simulation control is prototype annotation pending approval.",
+    "destinations": "Explicit mic tap only; cancel/interruption discards partial audio → Search; completion → Processing; denied permission → text-only Search. Simulation control is prototype annotation pending approval.",
+    "states": [
+      "listening",
+      "permission denied",
+      "parent permission absent",
+      "interrupted",
+      "cancel"
+    ],
+    "conflicts": "",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog \"Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state\").\n**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog \"User Actions: Type or speak a query, apply type/age filter, open a result\").\n**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).\n**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).\n**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw \"no results\" error**.\n**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).\n**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).\n**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).\n**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching \"the whale prophet\" should surface Prophet Yunus content) (source: Feature Reference \"Search System\" features: \"Semantic search... Multilingual understanding\").\n**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.\n**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case \"Search child progress | Parent | Parent searches reports, stories, habits\") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.\n**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.\n\n"
+  },
+  {
+    "feature": "B13",
+    "name": "Voice Search — Processing",
+    "type": "state",
+    "order": 3,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Search/Voice Search-02.png"
+    ],
+    "exact_copy": [
+      "Processing...",
+      "Finding results for you",
+      "Cancel"
+    ],
+    "content_fields": "Processing...|Finding results for you|Cancel",
+    "behavior": "Processing complete → Results; low-confidence → clarification; cancel → Search; no partial/garbled search. Raw audio not training data.",
+    "actions": "Processing complete → Results; low-confidence → clarification; cancel → Search; no partial/garbled search. Raw audio not training data.",
+    "destinations": "Processing complete → Results; low-confidence → clarification; cancel → Search; no partial/garbled search. Raw audio not training data.",
+    "states": [
+      "processing",
+      "low confidence",
+      "error",
+      "cancel"
+    ],
+    "conflicts": "",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog \"Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state\").\n**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog \"User Actions: Type or speak a query, apply type/age filter, open a result\").\n**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).\n**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).\n**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw \"no results\" error**.\n**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).\n**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).\n**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).\n**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching \"the whale prophet\" should surface Prophet Yunus content) (source: Feature Reference \"Search System\" features: \"Semantic search... Multilingual understanding\").\n**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.\n**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case \"Search child progress | Parent | Parent searches reports, stories, habits\") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.\n**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.\n\n"
+  },
+  {
+    "feature": "B13",
+    "name": "Voice Search — Clarification",
+    "type": "overlay",
+    "order": 4,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [],
+    "exact_copy": [],
+    "content_fields": "",
+    "behavior": "Low confidence asks retry or approved simplified clarification; retry → Listening, cancel → Search. No raw transcription leakage.",
+    "actions": "Low confidence asks retry or approved simplified clarification; retry → Listening, cancel → Search. No raw transcription leakage.",
+    "destinations": "Low confidence asks retry or approved simplified clarification; retry → Listening, cancel → Search. No raw transcription leakage.",
+    "states": [
+      "low-confidence"
+    ],
+    "conflicts": "Required copy and reference absent; do not author approved copy.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog \"Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state\").\n**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog \"User Actions: Type or speak a query, apply type/age filter, open a result\").\n**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).\n**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).\n**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw \"no results\" error**.\n**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).\n**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).\n**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).\n**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching \"the whale prophet\" should surface Prophet Yunus content) (source: Feature Reference \"Search System\" features: \"Semantic search... Multilingual understanding\").\n**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.\n**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case \"Search child progress | Parent | Parent searches reports, stories, habits\") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.\n**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.\n\n"
+  },
+  {
+    "feature": "B13",
+    "name": "Search Results",
+    "type": "screen",
+    "order": 5,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Search/Results.png"
+    ],
+    "exact_copy": [
+      "Prophet Ibrahim",
+      "1 result for \"Prophet Ibrahim\"",
+      "All 16",
+      "Stories 5",
+      "Surahs 4",
+      "Story",
+      "Prophet Ibrahim (AS)",
+      "Islamic Stories · 4 episodes"
+    ],
+    "content_fields": "Prophet Ibrahim|1 result for \"Prophet Ibrahim\"|All 16|Stories 5|Surahs 4|Story|Prophet Ibrahim (AS)|Islamic Stories · 4 episodes",
+    "behavior": "Type chips All/Stories/Surahs/Duas requery; story → A3 Story Detail, surah → A5 Surah Learning, dua → A6 Dua Learning; close query clears input; mic → voice. Eligibility is authoritative server filtering, never adjustable beyond safe eligibility.",
+    "actions": "Type chips All/Stories/Surahs/Duas requery; story → A3 Story Detail, surah → A5 Surah Learning, dua → A6 Dua Learning; close query clears input; mic → voice. Eligibility is authoritative server filtering, never adjustable beyond safe eligibility.",
+    "destinations": "Type chips All/Stories/Surahs/Duas requery; story → A3 Story Detail, surah → A5 Surah Learning, dua → A6 Dua Learning; close query clears input; mic → voice. Eligibility is authoritative server filtering, never adjustable beyond safe eligibility.",
+    "states": [
+      "results",
+      "loading skeleton",
+      "filter selected",
+      "friendly zero results",
+      "API error retry",
+      "offline downloaded-only"
+    ],
+    "conflicts": "1 result contradicts filter counts All16/Stories5/Surahs4; screenshot is list vs PRD grid; age filter FR2 vs KMP no age parameter needs clarification.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog \"Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state\").\n**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog \"User Actions: Type or speak a query, apply type/age filter, open a result\").\n**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).\n**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).\n**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw \"no results\" error**.\n**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).\n**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).\n**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).\n**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching \"the whale prophet\" should surface Prophet Yunus content) (source: Feature Reference \"Search System\" features: \"Semantic search... Multilingual understanding\").\n**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.\n**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case \"Search child progress | Parent | Parent searches reports, stories, habits\") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.\n**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.\n\n"
+  },
+  {
+    "feature": "B13",
+    "name": "Parent Area Search",
+    "type": "screen",
+    "order": 6,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [],
+    "exact_copy": [],
+    "content_fields": "",
+    "behavior": "Gated Parent Dashboard → parent family reports/story activity/habits search; report → C22, story activity → A3 activity view, habit → A7 detail. Parent-session only; no child/admin search leakage.",
+    "actions": "Gated Parent Dashboard → parent family reports/story activity/habits search; report → C22, story activity → A3 activity view, habit → A7 detail. Parent-session only; no child/admin search leakage.",
+    "destinations": "Gated Parent Dashboard → parent family reports/story activity/habits search; report → C22, story activity → A3 activity view, habit → A7 detail. Parent-session only; no child/admin search leakage.",
+    "states": [
+      "initial",
+      "loading",
+      "results",
+      "empty",
+      "error retry",
+      "offline connectivity required"
+    ],
+    "conflicts": "No supplied screen reference or verified exact copy; KMP07 specifies no offline cache.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Search UI sections: search bar with a voice option, recent searches, filtered results grid (story/lesson/dua), and an empty state (source: screen catalog \"Search — UI Sections: Search bar with voice option, recent searches, filtered results grid (story/lesson/dua), empty state\").\n**FR-2** User actions: type or speak a query, apply a type/age filter, open a result (source: screen catalog \"User Actions: Type or speak a query, apply type/age filter, open a result\").\n**FR-3** Search results are pre-filtered through the child-safe taxonomy; **no raw/unmoderated text ever renders** anywhere in the search UI — not in result titles, not in auto-suggestions, not in the empty state (source §6.11 — a hard, zero-exception rule).\n**FR-4** The search index **excludes anything below the child's age band** — age-ineligible content is not merely de-prioritized in ranking, it is structurally absent from the index results returned for that child's session (source: navigation table — restated as a hard rule, not a ranking preference).\n**FR-5** Child Search Detailed Workflow (source §6.11, items 1–5): (1) child types or speaks a query, (2) the query is normalized for language and passed through an age-safe query policy, (3) only published, age-eligible content is retrieved, (4) results are ranked by relevance, child level, parent settings, locale, and offline availability, (5) a safe, friendly empty state is shown for no-results queries — **never a raw \"no results\" error**.\n**FR-6** Voice Search validation rules: an explicit microphone affordance is required (no ambient/always-listening search), parent permission is required, short retention or on-device processing is preferred, and **raw audio is not stored for model training by default** (source §6.11 Validation Rules — directly consistent with A.5's voice-data zero-retention principle, applied here to search specifically).\n**FR-7** Admin search is a **separate, more powerful, non-age-restricted surface** supporting advanced filtering by tag, status, language, and review state — it is operator-only and must never be confused with or share a code path that could leak its unrestricted results into the child-facing search surface (source §6.11 Business Rules).\n**FR-8** Search results route to the correct destination screen by content type: a story result opens Story Detail (A.3), a surah result opens Surah Learning (A.5), a dua result opens Dua Learning (A.6) (source: Search Flow diagram).\n**FR-9** Search supports semantic/multilingual understanding — a query in the child's locale should surface relevant results even when the query phrasing doesn't exactly match indexed text (e.g., searching \"the whale prophet\" should surface Prophet Yunus content) (source: Feature Reference \"Search System\" features: \"Semantic search... Multilingual understanding\").\n**FR-10** Recent searches are stored per-child (consistent with the platform's per-child, not-shared-across-siblings data-isolation principle established for Favorites/A.3) and are clearable by the child.\n**FR-11** A parent-facing search surface exists separately within the Parent Area, allowing parents to search their own child's reports, stories, and habits (source: Feature Reference use case \"Search child progress | Parent | Parent searches reports, stories, habits\") — this is a distinct surface from child search, scoped to parent-session-authenticated data only.\n**FR-12** Age eligibility for search results is recomputed automatically whenever a child's age changes (daily DOB-based recomputation, consistent with the platform's age-based content filtering system) — search never relies on a stale cached age band.\n\n"
+  },
+  {
+    "feature": "B14",
+    "name": "Favorites",
+    "type": "screen",
+    "order": 7,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B14_Favorites.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Favorites/Favorites-01.png",
+      "Screens/Mobile App/Favorites/Favorites-02.png",
+      "Screens/Mobile App/Favorites/Favorites-03.png",
+      "Screens/Mobile App/Favorites/Favorites-04.png"
+    ],
+    "exact_copy": [
+      "Saved",
+      "Favorites",
+      "Downloads",
+      "All 10",
+      "Stories 4",
+      "Surahs 3",
+      "No longer available",
+      "Prophet Ibrahim (AS)",
+      "Moonlit Lantern",
+      "Prophet Yusuf (AS)",
+      "Kindness Like Rain",
+      "Surah Al-Asr",
+      "Surah Al-Fatiha",
+      "Surah Al-Ikhlas",
+      "Upon Waking",
+      "Morning Dua",
+      "Travel Dua",
+      "You’re offline — showing your cached favorites"
+    ],
+    "content_fields": "Saved|Favorites|Downloads|All 10|Stories 4|Surahs 3|No longer available|Prophet Ibrahim (AS)|Moonlit Lantern|Prophet Yusuf (AS)|Kindness Like Rain|Surah Al-Asr|Surah Al-Fatiha|Surah Al-Ikhlas|Upon Waking|Morning Dua|Travel Dua|You’re offline — showing your cached favorites",
+    "behavior": "Profile Favorites & Downloads → shared Saved shell Favorites; Downloads tab → B15; filter by content type; item → A3/A5/A6 detail; heart removes optimistically idempotently; withdrawn item cannot open; back → Profile. Save only eligible/unlocked/entitled content. All data active-child scoped.",
+    "actions": "Profile Favorites & Downloads → shared Saved shell Favorites; Downloads tab → B15; filter by content type; item → A3/A5/A6 detail; heart removes optimistically idempotently; withdrawn item cannot open; back → Profile. Save only eligible/unlocked/entitled content. All data active-child scoped.",
+    "destinations": "Profile Favorites & Downloads → shared Saved shell Favorites; Downloads tab → B15; filter by content type; item → A3/A5/A6 detail; heart removes optimistically idempotently; withdrawn item cannot open; back → Profile. Save only eligible/unlocked/entitled content. All data active-child scoped.",
+    "states": [
+      "populated",
+      "loading",
+      "empty",
+      "filtered",
+      "cached offline",
+      "withdrawn item",
+      "optimistic retry"
+    ],
+    "conflicts": "Default/Loading/Offline pills are testing controls visible in references; approval required before omission. Offline favorite is not guaranteed downloaded playback.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Favorites screen UI sections: a saved-item grid and a type filter (source: screen catalog \"Favorites — UI Sections: Saved item grid, type filter\").\n**FR-2** User actions: open a favorited item, remove it from favorites (source: screen catalog \"User Actions: Open item, Remove from favorites\").\n**FR-3** Favoriting entry points are the \"save\" action available on Story Detail, Surah Learning, and Dua Learning detail screens (source: screen catalog \"Entry Points: Profile, Story/Quran detail 'save' action\").\n**FR-4** **Favorites are strictly per-child, never shared across siblings** — each child has their own independent favorites list, with no UI surface anywhere (including Parent Area reports) that merges or displays favorites across multiple children as a combined view (source: navigation table — restated as a hard platform-wide data-isolation rule applied here).\n**FR-5** A favorite toggle (add/remove) is idempotent and optimistic — toggling the same item rapidly never produces a duplicate favorite record or an inconsistent final state (consistent with the platform's general idempotent-toggle pattern established for habit favorites/check-ins elsewhere).\n**FR-6** Favoriting an item is only possible for content the child already has access to — favoriting never bypasses age-band eligibility, entitlement, or unlock-state restrictions; the save action itself is simply unavailable (not erroring, just not offered) on content the child cannot already open.\n**FR-7** If favorited content is later withdrawn or archived by Admin, the Favorites grid shows a clear \"no longer available\" state for that item rather than a broken link or silent disappearance, consistent with the platform-wide withdrawn-content handling pattern (A.3/A.6).\n**FR-8** The Favorites grid supports filtering by content type (Stories/Surahs/Duas) consistent with FR-1, using the same type-iconography established in Search (B.13).\n**FR-9** Favorites and Downloads (B.15) share a single screen shell with two tabs, reachable from the Profile tab; the two tabs are independently functional and do not share data models, only a UI container.\n\n"
+  },
+  {
+    "feature": "B15",
+    "name": "Downloads",
+    "type": "screen",
+    "order": 8,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B15_Offline_Downloads_Sync.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Favorites/Favorites-05.png",
+      "Screens/Mobile App/Favorites/Favorites-06.png",
+      "Screens/Mobile App/Favorites/Favorites-07.png",
+      "Screens/Mobile App/Favorites/Favorites-08.png",
+      "Screens/Mobile App/Favorites/Favorites-09.png"
+    ],
+    "exact_copy": [
+      "Saved",
+      "Favorites",
+      "Downloads",
+      "Device storage used",
+      "0.1 GB / 3 GB",
+      "7 items downloaded · Plays without internet",
+      "Downloading... 62%",
+      "Queued",
+      "Download paused — tap Retry",
+      "Retry",
+      "Access renewed — re-download to play",
+      "Re-download",
+      "Clear All Downloads",
+      "No downloads yet",
+      "Download stories, surahs, and du’as to enjoy them offline — no internet needed!",
+      "Look for the download button on any content"
+    ],
+    "content_fields": "Saved|Favorites|Downloads|Device storage used|0.1 GB / 3 GB|7 items downloaded · Plays without internet|Downloading... 62%|Queued|Download paused — tap Retry|Retry|Access renewed — re-download to play|Re-download|Clear All Downloads|No downloads yet|Download stories, surahs, and du’as to enjoy them offline — no internet needed!|Look for the download button on any content",
+    "behavior": "Profile → Saved Downloads; completed item → owning offline player if license valid; retry resumable chunks and revalidate entitlement/cap; remove deletes only active child media; Clear All → confirmation; favorite tab independently scoped; content progress/history/favorites persist. Offline outbox causal sync/dedupe, reward exactly once.",
+    "actions": "Profile → Saved Downloads; completed item → owning offline player if license valid; retry resumable chunks and revalidate entitlement/cap; remove deletes only active child media; Clear All → confirmation; favorite tab independently scoped; content progress/history/favorites persist. Offline outbox causal sync/dedupe, reward exactly once.",
+    "destinations": "Profile → Saved Downloads; completed item → owning offline player if license valid; retry resumable chunks and revalidate entitlement/cap; remove deletes only active child media; Clear All → confirmation; favorite tab independently scoped; content progress/history/favorites persist. Offline outbox causal sync/dedupe, reward exactly once.",
+    "states": [
+      "populated",
+      "loading",
+      "queued",
+      "downloading",
+      "failed retry",
+      "expired license",
+      "empty",
+      "cap reached",
+      "insufficient storage",
+      "withdrawn after policy refresh"
+    ],
+    "conflicts": "0.0GB with 4 items/download progress fixture contradictory; exact values are fixtures, not live data; cap/expiry toast copy missing.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Downloads tab UI sections: download list, storage used vs. device/parent-set limit, remove action, retry-failed action (source: screen catalog \"Favorites & Downloads — UI Sections: Two tabs — Favorites (liked content) and Downloads (offline manifest with storage used / device limit)\"; \"User Actions: Unlike, remove a download, retry a failed/incomplete download, clear all downloads\").\n**FR-2** Download Flow (canonical, source §7.10/§21.17, items 1–6): (1) verify entitlement and parent download policy, (2) request a signed manifest, (3) download resumable chunks with checksums, (4) encrypt or sandbox local media where the platform supports it, (5) store version, locale, expiry, and license terms locally, (6) refresh entitlement periodically — offline access is time-bounded, not indefinite.\n**FR-3** Downloads are subject to a per-child download cap set by the parent (source: navigation table, \"Downloads... Subject to per-child download cap set by parent\") — attempting to download beyond the cap shows a clear \"cap reached\" message.\n**FR-4** Offline Progress Flow (canonical, source §7.10/§21.17): write to local database first (offline-first) → queue immutable events with client-generated IDs → sync in causal order once connectivity returns → server deduplicates using idempotency keys → content progress uses the furthest-valid position; quiz attempts remain separately tracked.\n**FR-5** Withdrawn content becomes unavailable after the next policy/entitlement refresh, while the child's safe progress history is preserved (source §7.10/§21.17 — the canonical rule this feature's entitlement-refresh mechanism enforces).\n**FR-6** Interrupted/failed downloads resume with exponential backoff rather than restarting from zero (source: Offline Content Flow diagram).\n**FR-7** License-expired downloads show a clear re-download prompt instead of silently failing (source: screen catalog navigation flow note).\n**FR-8** Downloaded media is encrypted or sandboxed locally where the platform supports it (source §7.10/§21.17, item 4) — raw, freely-extractable media files are never left in an unprotected, generally-accessible device location.\n**FR-9** Offline progress sync posts rewards exactly once per qualifying completion event via the same idempotency-key mechanism used platform-wide (A.11) — sync never produces duplicate XP/Noor Heroes Points regardless of how many times a client retries the sync call.\n**FR-10** A \"Clear all downloads\" action removes all downloaded media for that child, freeing device storage, without affecting favorites (B.14) or server-side progress history — downloading and favoriting are independent, decoupled actions on the same content item.\n**FR-11** Multiple downloads queue and process with resumable chunked transfer (not necessarily strictly serial — the platform may parallelize within reasonable concurrency limits), each tracked independently for retry/failure purposes.\n**FR-12** Per-child download isolation: one child's downloaded content is never exposed to or accessible from a sibling's session on a shared device, consistent with the platform-wide multi-child isolation principle.\n\n"
+  },
+  {
+    "feature": "B15",
+    "name": "Clear All Downloads Confirmation",
+    "type": "overlay",
+    "order": 9,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B15_Offline_Downloads_Sync.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [],
+    "exact_copy": [],
+    "content_fields": "",
+    "behavior": "Clear all → confirm/cancel; confirm removes active-child downloaded media only; cancel retains list and storage; no removal of favorites or progress.",
+    "actions": "Clear all → confirm/cancel; confirm removes active-child downloaded media only; cancel retains list and storage; no removal of favorites or progress.",
+    "destinations": "Clear all → confirm/cancel; confirm removes active-child downloaded media only; cancel retains list and storage; no removal of favorites or progress.",
+    "states": [
+      "confirm",
+      "cancel"
+    ],
+    "conflicts": "Required modal reference/copy missing.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Downloads tab UI sections: download list, storage used vs. device/parent-set limit, remove action, retry-failed action (source: screen catalog \"Favorites & Downloads — UI Sections: Two tabs — Favorites (liked content) and Downloads (offline manifest with storage used / device limit)\"; \"User Actions: Unlike, remove a download, retry a failed/incomplete download, clear all downloads\").\n**FR-2** Download Flow (canonical, source §7.10/§21.17, items 1–6): (1) verify entitlement and parent download policy, (2) request a signed manifest, (3) download resumable chunks with checksums, (4) encrypt or sandbox local media where the platform supports it, (5) store version, locale, expiry, and license terms locally, (6) refresh entitlement periodically — offline access is time-bounded, not indefinite.\n**FR-3** Downloads are subject to a per-child download cap set by the parent (source: navigation table, \"Downloads... Subject to per-child download cap set by parent\") — attempting to download beyond the cap shows a clear \"cap reached\" message.\n**FR-4** Offline Progress Flow (canonical, source §7.10/§21.17): write to local database first (offline-first) → queue immutable events with client-generated IDs → sync in causal order once connectivity returns → server deduplicates using idempotency keys → content progress uses the furthest-valid position; quiz attempts remain separately tracked.\n**FR-5** Withdrawn content becomes unavailable after the next policy/entitlement refresh, while the child's safe progress history is preserved (source §7.10/§21.17 — the canonical rule this feature's entitlement-refresh mechanism enforces).\n**FR-6** Interrupted/failed downloads resume with exponential backoff rather than restarting from zero (source: Offline Content Flow diagram).\n**FR-7** License-expired downloads show a clear re-download prompt instead of silently failing (source: screen catalog navigation flow note).\n**FR-8** Downloaded media is encrypted or sandboxed locally where the platform supports it (source §7.10/§21.17, item 4) — raw, freely-extractable media files are never left in an unprotected, generally-accessible device location.\n**FR-9** Offline progress sync posts rewards exactly once per qualifying completion event via the same idempotency-key mechanism used platform-wide (A.11) — sync never produces duplicate XP/Noor Heroes Points regardless of how many times a client retries the sync call.\n**FR-10** A \"Clear all downloads\" action removes all downloaded media for that child, freeing device storage, without affecting favorites (B.14) or server-side progress history — downloading and favoriting are independent, decoupled actions on the same content item.\n**FR-11** Multiple downloads queue and process with resumable chunked transfer (not necessarily strictly serial — the platform may parallelize within reasonable concurrency limits), each tracked independently for retry/failure purposes.\n**FR-12** Per-child download isolation: one child's downloaded content is never exposed to or accessible from a sibling's session on a shared device, consistent with the platform-wide multi-child isolation principle.\n\n"
+  },
+  {
+    "feature": "B15",
+    "name": "Parent Download Cap and Policy",
+    "type": "screen",
+    "order": 10,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B15_Offline_Downloads_Sync.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [],
+    "exact_copy": [],
+    "content_fields": "",
+    "behavior": "Parent Controls → own child cap configuration; save policy; subsequent attempts over cap show supportive cap-reached state. Standard parent session and own-family constraints.",
+    "actions": "Parent Controls → own child cap configuration; save policy; subsequent attempts over cap show supportive cap-reached state. Standard parent session and own-family constraints.",
+    "destinations": "Parent Controls → own child cap configuration; save policy; subsequent attempts over cap show supportive cap-reached state. Standard parent session and own-family constraints.",
+    "states": [
+      "loading",
+      "saved",
+      "validation",
+      "error retry",
+      "offline policy pending"
+    ],
+    "conflicts": "No screenshot or exact field bounds/copy verified; confirmation needed before executing.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Downloads tab UI sections: download list, storage used vs. device/parent-set limit, remove action, retry-failed action (source: screen catalog \"Favorites & Downloads — UI Sections: Two tabs — Favorites (liked content) and Downloads (offline manifest with storage used / device limit)\"; \"User Actions: Unlike, remove a download, retry a failed/incomplete download, clear all downloads\").\n**FR-2** Download Flow (canonical, source §7.10/§21.17, items 1–6): (1) verify entitlement and parent download policy, (2) request a signed manifest, (3) download resumable chunks with checksums, (4) encrypt or sandbox local media where the platform supports it, (5) store version, locale, expiry, and license terms locally, (6) refresh entitlement periodically — offline access is time-bounded, not indefinite.\n**FR-3** Downloads are subject to a per-child download cap set by the parent (source: navigation table, \"Downloads... Subject to per-child download cap set by parent\") — attempting to download beyond the cap shows a clear \"cap reached\" message.\n**FR-4** Offline Progress Flow (canonical, source §7.10/§21.17): write to local database first (offline-first) → queue immutable events with client-generated IDs → sync in causal order once connectivity returns → server deduplicates using idempotency keys → content progress uses the furthest-valid position; quiz attempts remain separately tracked.\n**FR-5** Withdrawn content becomes unavailable after the next policy/entitlement refresh, while the child's safe progress history is preserved (source §7.10/§21.17 — the canonical rule this feature's entitlement-refresh mechanism enforces).\n**FR-6** Interrupted/failed downloads resume with exponential backoff rather than restarting from zero (source: Offline Content Flow diagram).\n**FR-7** License-expired downloads show a clear re-download prompt instead of silently failing (source: screen catalog navigation flow note).\n**FR-8** Downloaded media is encrypted or sandboxed locally where the platform supports it (source §7.10/§21.17, item 4) — raw, freely-extractable media files are never left in an unprotected, generally-accessible device location.\n**FR-9** Offline progress sync posts rewards exactly once per qualifying completion event via the same idempotency-key mechanism used platform-wide (A.11) — sync never produces duplicate XP/Noor Heroes Points regardless of how many times a client retries the sync call.\n**FR-10** A \"Clear all downloads\" action removes all downloaded media for that child, freeing device storage, without affecting favorites (B.14) or server-side progress history — downloading and favoriting are independent, decoupled actions on the same content item.\n**FR-11** Multiple downloads queue and process with resumable chunked transfer (not necessarily strictly serial — the platform may parallelize within reasonable concurrency limits), each tracked independently for retry/failure purposes.\n**FR-12** Per-child download isolation: one child's downloaded content is never exposed to or accessible from a sibling's session on a shared device, consistent with the platform-wide multi-child isolation principle.\n\n"
+  },
+  {
+    "feature": "B16",
+    "name": "Child Profile",
+    "type": "screen",
+    "order": 11,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B16_Child_Profile.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Child Profile/Child Profile-01.png",
+      "Screens/Mobile App/Child Profile/Child Profile-02.png",
+      "Screens/Mobile App/Child Profile/Child Profile-05.png",
+      "Screens/Mobile App/Child Profile/Child Profile-06.png",
+      "Screens/Mobile App/Child Profile/Child Profile-07.png",
+      "Screens/Mobile App/Child Profile/Child Profile-08.png"
+    ],
+    "exact_copy": [
+      "Aisha",
+      "Islamic Explorer",
+      "Language",
+      "English",
+      "Favorites & Downloads",
+      "Saved content & offline items",
+      "Settings",
+      "Notifications, privacy & more",
+      "Switch Profile",
+      "Requires parent permission",
+      "Sign Out",
+      "Level",
+      "day streak",
+      "badges",
+      "Level 1 · Just starting out",
+      "Start your journey to earn XP and level up!",
+      "Earn your first XP — pick an activity",
+      "Listen to your first story",
+      "Complete a knowledge quiz",
+      "Learn your first du’a",
+      "Offline — showing cached profile",
+      "Retry",
+      "Available offline",
+      "Unavailable until reconnected",
+      "Try reconnecting"
+    ],
+    "content_fields": "Aisha|Islamic Explorer|Language|English|Favorites & Downloads|Saved content & offline items|Settings|Notifications, privacy & more|Switch Profile|Requires parent permission|Sign Out|Level|day streak|badges|Level 1 · Just starting out|Start your journey to earn XP and level up!|Earn your first XP — pick an activity|Listen to your first story|Complete a knowledge quiz|Learn your first du’a|Offline — showing cached profile|Retry|Available offline|Unavailable until reconnected|Try reconnecting",
+    "behavior": "Tab5 → active child profile; avatar → A12; Favorites & Downloads → shared Saved; language → Choose Language; Switch Profile ALWAYS parent gate then Who Is Learning then selected child lock or parent session; cancel/failure preserves child; successful switch clears child UI before rendering new identity. Stats display-only unless approved progress route. Disabled session → picker; cold start resolve session not saved screen identity.",
+    "actions": "Tab5 → active child profile; avatar → A12; Favorites & Downloads → shared Saved; language → Choose Language; Switch Profile ALWAYS parent gate then Who Is Learning then selected child lock or parent session; cancel/failure preserves child; successful switch clears child UI before rendering new identity. Stats display-only unless approved progress route. Disabled session → picker; cold start resolve session not saved screen identity.",
+    "destinations": "Tab5 → active child profile; avatar → A12; Favorites & Downloads → shared Saved; language → Choose Language; Switch Profile ALWAYS parent gate then Who Is Learning then selected child lock or parent session; cancel/failure preserves child; successful switch clears child UI before rendering new identity. Stats display-only unless approved progress route. Disabled session → picker; cold start resolve session not saved screen identity.",
+    "states": [
+      "default",
+      "skeleton",
+      "zero progress",
+      "stats unavailable partial",
+      "cached offline",
+      "return/resume",
+      "disabled session"
+    ],
+    "conflicts": "Screenshot Settings/Sign Out are beyond canonical B16 sections, need source-owned gated destination. Screenshot disables offline language/switch, contradicts PRD §1.14/§6.7 local language and usable offline actions. Fixture XP/streak/name are not live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Profile UI sections: avatar thumbnail, learning stats summary, language toggle, \"Switch Profile\" (PIN-gated to Parent Mode), Favorites/Downloads entry (source: screen catalog, restated verbatim as the canonical section list).\n**FR-2** User actions: view stats, change display language, open Favorites/Downloads, request Parent Mode switch (source: screen catalog).\n**FR-3** \"Switch Profile\" **always re-prompts the PIN/biometric gate** — there is no grace-window exception for this specific transition out of Child Mode, even though the Parent Area's own internal re-entry (once already in Parent Mode) may use a short configurable grace window per the platform's general re-gating rule; the **Child-Mode-to-Parent-Mode transition itself has zero grace-window exception** (source: screen catalog — restated as a hard rule for this specific transition; cross-ref C.19 for the grace-window mechanics that apply only *within* an already-unlocked Parent session).\n**FR-4** **A child cannot see sibling stats from this screen** — the learning stats summary is strictly scoped to the active child's own session, with no UI path, query parameter, or navigation route from Profile that could expose another child's data (source: screen catalog; cross-ref the platform-wide \"No Lateral Sibling Access\" rule).\n**FR-5** Learning stats summary is sourced from `GET /v1/children/{id}/progress` (source: screen catalog \"Connected APIs\") — this is the **same underlying progress data** the Mastery Engine (A.9) and Reward System (A.11) already compute, presented here in a condensed, child-friendly summary rather than recomputed independently.\n**FR-6** The language toggle changes the **display language** only — it does not affect content availability/locale-eligibility (a separate concept governed by the platform's age/locale content-filtering system) and takes effect immediately without requiring an app restart.\n**FR-7** Favorites and Downloads are reached from Profile as a single shared entry point into the tabbed \"Favorites & Downloads\" screen (B.14/B.15) — Profile itself does not duplicate that screen's content, only links to it.\n**FR-8** The \"Switch Profile\" action's destination depends on what's selected next: tapping a different child avatar routes into that child's session (after the appropriate per-child lock, if configured, per A.1's Child Lock Screen); tapping \"Parent Profile\" routes into Parent Mode (always PIN/biometric gated, per FR-3); both paths route **through the Who Is Learning profile picker**, not directly (source: Profile Flow diagram — \"Switch profile / go to Parent Area → Lock gate → Profile picker or Parent Dashboard\").\n**FR-9** Switching to another child's profile, or entering Parent Mode, **clears all previous child-sensitive UI state** before activating the new session (cross-ref A.1 §6.2 item 5) — Profile is one of the screens this clearing must visibly apply to, since it's a common transition point.\n**FR-10** The \"Edit avatar\" action (where surfaced from Profile, per the platform's general avatar-customization entry points) deep-links into the Avatar screen (A.12) — Profile does not reimplement avatar customization itself.\n\n"
+  },
+  {
+    "feature": "B16",
+    "name": "Choose Language",
+    "type": "overlay",
+    "order": 12,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B16_Child_Profile.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Child Profile/Child Profile-03.png"
+    ],
+    "exact_copy": [
+      "Choose Language",
+      "English",
+      "العربية",
+      "اردو",
+      "Français",
+      "Cancel"
+    ],
+    "content_fields": "Choose Language|English|العربية|اردو|Français|Cancel",
+    "behavior": "Single selected display locale applies instantly app-wide; cancel dismisses untouched; offline apply locally and sync on reconnect per PRD. Content eligibility locale unaffected.",
+    "actions": "Single selected display locale applies instantly app-wide; cancel dismisses untouched; offline apply locally and sync on reconnect per PRD. Content eligibility locale unaffected.",
+    "destinations": "Single selected display locale applies instantly app-wide; cancel dismisses untouched; offline apply locally and sync on reconnect per PRD. Content eligibility locale unaffected.",
+    "states": [
+      "selected",
+      "unselected",
+      "saving optimistic",
+      "retry sync",
+      "offline"
+    ],
+    "conflicts": "Screenshot Français differs from blueprint हिन्दी and PRD En/Hi/Ar/Ur localization; approval decision required.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Profile UI sections: avatar thumbnail, learning stats summary, language toggle, \"Switch Profile\" (PIN-gated to Parent Mode), Favorites/Downloads entry (source: screen catalog, restated verbatim as the canonical section list).\n**FR-2** User actions: view stats, change display language, open Favorites/Downloads, request Parent Mode switch (source: screen catalog).\n**FR-3** \"Switch Profile\" **always re-prompts the PIN/biometric gate** — there is no grace-window exception for this specific transition out of Child Mode, even though the Parent Area's own internal re-entry (once already in Parent Mode) may use a short configurable grace window per the platform's general re-gating rule; the **Child-Mode-to-Parent-Mode transition itself has zero grace-window exception** (source: screen catalog — restated as a hard rule for this specific transition; cross-ref C.19 for the grace-window mechanics that apply only *within* an already-unlocked Parent session).\n**FR-4** **A child cannot see sibling stats from this screen** — the learning stats summary is strictly scoped to the active child's own session, with no UI path, query parameter, or navigation route from Profile that could expose another child's data (source: screen catalog; cross-ref the platform-wide \"No Lateral Sibling Access\" rule).\n**FR-5** Learning stats summary is sourced from `GET /v1/children/{id}/progress` (source: screen catalog \"Connected APIs\") — this is the **same underlying progress data** the Mastery Engine (A.9) and Reward System (A.11) already compute, presented here in a condensed, child-friendly summary rather than recomputed independently.\n**FR-6** The language toggle changes the **display language** only — it does not affect content availability/locale-eligibility (a separate concept governed by the platform's age/locale content-filtering system) and takes effect immediately without requiring an app restart.\n**FR-7** Favorites and Downloads are reached from Profile as a single shared entry point into the tabbed \"Favorites & Downloads\" screen (B.14/B.15) — Profile itself does not duplicate that screen's content, only links to it.\n**FR-8** The \"Switch Profile\" action's destination depends on what's selected next: tapping a different child avatar routes into that child's session (after the appropriate per-child lock, if configured, per A.1's Child Lock Screen); tapping \"Parent Profile\" routes into Parent Mode (always PIN/biometric gated, per FR-3); both paths route **through the Who Is Learning profile picker**, not directly (source: Profile Flow diagram — \"Switch profile / go to Parent Area → Lock gate → Profile picker or Parent Dashboard\").\n**FR-9** Switching to another child's profile, or entering Parent Mode, **clears all previous child-sensitive UI state** before activating the new session (cross-ref A.1 §6.2 item 5) — Profile is one of the screens this clearing must visibly apply to, since it's a common transition point.\n**FR-10** The \"Edit avatar\" action (where surfaced from Profile, per the platform's general avatar-customization entry points) deep-links into the Avatar screen (A.12) — Profile does not reimplement avatar customization itself.\n\n"
+  },
+  {
+    "feature": "B16",
+    "name": "Switch Profile Parent Permission",
+    "type": "overlay",
+    "order": 13,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B16_Child_Profile.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Child Profile/Child Profile-04.png"
+    ],
+    "exact_copy": [
+      "Parent Permission Required",
+      "Enter your 4-digit parent PIN to switch profiles",
+      "Cancel"
+    ],
+    "content_fields": "Parent Permission Required|Enter your 4-digit parent PIN to switch profiles|Cancel",
+    "behavior": "Shared C19 gate: 4 PIN boxes numeric keypad/backspace; always new gate child→parent no grace bypass; success→picker; failure/cancel→same child; repeated failure inherits lockout. OS biometric alternative per C19.",
+    "actions": "Shared C19 gate: 4 PIN boxes numeric keypad/backspace; always new gate child→parent no grace bypass; success→picker; failure/cancel→same child; repeated failure inherits lockout. OS biometric alternative per C19.",
+    "destinations": "Shared C19 gate: 4 PIN boxes numeric keypad/backspace; always new gate child→parent no grace bypass; success→picker; failure/cancel→same child; repeated failure inherits lockout. OS biometric alternative per C19.",
+    "states": [
+      "input",
+      "invalid PIN",
+      "lockout",
+      "biometric fallback",
+      "cancel"
+    ],
+    "conflicts": "Reuse C19 prompt rather than duplicate independent gate screen.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child Profile UI sections: avatar thumbnail, learning stats summary, language toggle, \"Switch Profile\" (PIN-gated to Parent Mode), Favorites/Downloads entry (source: screen catalog, restated verbatim as the canonical section list).\n**FR-2** User actions: view stats, change display language, open Favorites/Downloads, request Parent Mode switch (source: screen catalog).\n**FR-3** \"Switch Profile\" **always re-prompts the PIN/biometric gate** — there is no grace-window exception for this specific transition out of Child Mode, even though the Parent Area's own internal re-entry (once already in Parent Mode) may use a short configurable grace window per the platform's general re-gating rule; the **Child-Mode-to-Parent-Mode transition itself has zero grace-window exception** (source: screen catalog — restated as a hard rule for this specific transition; cross-ref C.19 for the grace-window mechanics that apply only *within* an already-unlocked Parent session).\n**FR-4** **A child cannot see sibling stats from this screen** — the learning stats summary is strictly scoped to the active child's own session, with no UI path, query parameter, or navigation route from Profile that could expose another child's data (source: screen catalog; cross-ref the platform-wide \"No Lateral Sibling Access\" rule).\n**FR-5** Learning stats summary is sourced from `GET /v1/children/{id}/progress` (source: screen catalog \"Connected APIs\") — this is the **same underlying progress data** the Mastery Engine (A.9) and Reward System (A.11) already compute, presented here in a condensed, child-friendly summary rather than recomputed independently.\n**FR-6** The language toggle changes the **display language** only — it does not affect content availability/locale-eligibility (a separate concept governed by the platform's age/locale content-filtering system) and takes effect immediately without requiring an app restart.\n**FR-7** Favorites and Downloads are reached from Profile as a single shared entry point into the tabbed \"Favorites & Downloads\" screen (B.14/B.15) — Profile itself does not duplicate that screen's content, only links to it.\n**FR-8** The \"Switch Profile\" action's destination depends on what's selected next: tapping a different child avatar routes into that child's session (after the appropriate per-child lock, if configured, per A.1's Child Lock Screen); tapping \"Parent Profile\" routes into Parent Mode (always PIN/biometric gated, per FR-3); both paths route **through the Who Is Learning profile picker**, not directly (source: Profile Flow diagram — \"Switch profile / go to Parent Area → Lock gate → Profile picker or Parent Dashboard\").\n**FR-9** Switching to another child's profile, or entering Parent Mode, **clears all previous child-sensitive UI state** before activating the new session (cross-ref A.1 §6.2 item 5) — Profile is one of the screens this clearing must visibly apply to, since it's a common transition point.\n**FR-10** The \"Edit avatar\" action (where surfaced from Profile, per the platform's general avatar-customization entry points) deep-links into the Avatar screen (A.12) — Profile does not reimplement avatar customization itself.\n\n"
+  },
+  {
+    "feature": "B17",
+    "name": "Deep Link Resolver",
+    "type": "state",
+    "order": 14,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B17_Notifications_Child_Facing.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Notifications/Deep Link Resolver.png"
+    ],
+    "exact_copy": [
+      "Opening...",
+      "Just a moment"
+    ],
+    "content_fields": "Opening...|Just a moment",
+    "behavior": "OS push→resolve session/child/content/parent gate; offline→reconnect retry; required auth→shared gate/picker; unavailable→safe alternative/Home. Bedtime→A4; streak→A7; content→A3/A5/A6; reward→A11. No gate bypass or sibling disclosure.",
+    "actions": "OS push→resolve session/child/content/parent gate; offline→reconnect retry; required auth→shared gate/picker; unavailable→safe alternative/Home. Bedtime→A4; streak→A7; content→A3/A5/A6; reward→A11. No gate bypass or sibling disclosure.",
+    "destinations": "OS push→resolve session/child/content/parent gate; offline→reconnect retry; required auth→shared gate/picker; unavailable→safe alternative/Home. Bedtime→A4; streak→A7; content→A3/A5/A6; reward→A11. No gate bypass or sibling disclosure.",
+    "states": [
+      "loading",
+      "offline retry",
+      "unavailable",
+      "gate required",
+      "resolved"
+    ],
+    "conflicts": "Only loading image verified; offline/unavailable exact copy absent.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child-facing notification classes: approved learning reminder (daily reminder), bedtime story, streak-at-risk, new content, seasonal event, and the child-side copy of reward/milestone notifications (source §21.16, NoorHeroes Blueprint notification-use-case table — restated as the canonical child-facing class list).\n**FR-2** Notification Flow (canonical, source §7.9 \"Notification Flow\" diagram): (1) a domain event or schedule creates a notification intent, (2) the policy engine checks consent, quiet hours, frequency budget, locale, entitlement, and device, (3) on pass, a template renderer produces parent-or-child-safe copy; on fail, the notification is suppressed, (4) a delivery adapter sends via FCM push or email, (5) a receipt event updates delivery analytics, (6) on open, the deep link **revalidates auth and content state**.\n**FR-3** **Parent controls per-child reminders and quiet hours** — every reminder type is individually toggleable per child, and quiet-hours/bedtime windows are configured per child (source §21.16; cross-ref C.23).\n**FR-4** **Maximum frequency and fatigue budgets are server-enforced** — never solely a client-side mute or a campaign-level setting that could be bypassed by an automated trigger path (source §21.16 — restated as a hard rule applying uniformly to every trigger source, scheduled or event-driven).\n**FR-5** **Deep links validate session, child, content availability, and parent gate** — tapping any notification re-runs the exact same checks normal in-app navigation would, never granting a shortcut past any of them (source §21.16).\n**FR-6** **Child notification copy contains no billing or sensitive analytics** — this is a template-authoring-time constraint enforced by content governance, not merely a convention (source §21.16, restated as a hard rule with zero exceptions, including for milestone/reward notifications that might otherwise be tempted to reference subscription tier or similar).\n**FR-7** **Every campaign supports preview, test audience, schedule, cancel, and kill switch** (source §21.16) — applies to admin-authored campaigns layered on top of the automated trigger catalog (e.g., a seasonal-event push), not the purely automated triggers themselves, which are config-driven rather than campaign-authored.\n**FR-8** **Firebase issues one token per app installation, not per child** — NoorHeroes implements per-child notification targeting through an **exclusive active-profile binding**: the installation token is bound to either the Parent Profile or exactly one selected child at any given time, with the binding atomically deactivated and reactivated on every profile switch (source: NoorHeroes Blueprint \"Firebase Push Notification System\" / \"Firebase Notification Routing\" — restated as the canonical architecture this feature's delivery layer depends on).\n**FR-9** Two devices belonging to the same family may have **independent bindings** — e.g., one device actively bound to Child A while another device (or the same device at a different time) is bound to Child B or the Parent Profile; logout revokes all bindings for that session/device (source §7.9/NoorHeroes Blueprint, restated).\n**FR-10** Every child-targeted notification passes a **server-side policy check against that child's `screen_time_policies`** (quiet hours/bedtime) before send — **client-side mute alone is never trusted** (source: NoorHeroes Blueprint \"Quiet Hours & Bedtime\" card — a hard rule).\n**FR-11** Per-category daily/weekly frequency caps prevent notification fatigue; **engagement nudges back off automatically after repeated non-opens** (source: NoorHeroes Blueprint \"Frequency Capping\" card) — this auto-backoff is itself a server-side policy behavior, not a one-time static cap.\n**FR-12** Specific trigger conditions (representative, source-confirmed): Daily reminder fires when the daily goal is not met by a configurable threshold hour; Streak risk fires on late-day inactivity with an active streak (e.g., \"7PM with no activity and active streak\"); Bedtime story fires 30 minutes before the configured bedtime; New content fires when new story/lesson content is published within the child's age/locale eligibility; Reward notifications fire when the Reward Service posts a ledger entry crossing a notify-worthy threshold (badge/level/weekly-challenge-completion); Seasonal notifications fire via an Islamic-calendar-date scheduling job (Ramadan mode activation, Eid content unlock) targeting the family (parent + active children).\n**FR-13** In-app (non-push) notifications also exist for some triggers (e.g., \"Tomorrow's episode is ready\" on sequential-unlock-threshold-met) — these surface within the app's own UI (e.g., a Home banner) rather than as a device push, but still pass through the same policy engine for consent/eligibility purposes.\n\n"
+  },
+  {
+    "feature": "B17",
+    "name": "In-App Notification Banner",
+    "type": "component",
+    "order": 15,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B17_Notifications_Child_Facing.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [],
+    "exact_copy": [
+      "Tomorrow’s episode is ready"
+    ],
+    "content_fields": "Tomorrow’s episode is ready",
+    "behavior": "Lightweight dismissible Home/feature banner; tap to eligible destination; billing/sensitive analytics prohibited in child copy; follows same consent/policy checks. OS notifications use platform UI, not a new app inbox.",
+    "actions": "Lightweight dismissible Home/feature banner; tap to eligible destination; billing/sensitive analytics prohibited in child copy; follows same consent/policy checks. OS notifications use platform UI, not a new app inbox.",
+    "destinations": "Lightweight dismissible Home/feature banner; tap to eligible destination; billing/sensitive analytics prohibited in child copy; follows same consent/policy checks. OS notifications use platform UI, not a new app inbox.",
+    "states": [
+      "shown",
+      "dismissed",
+      "tapped"
+    ],
+    "conflicts": "PRD example copy not verified finalized copy; inbox/preferences governed C25 not B17.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Child-facing notification classes: approved learning reminder (daily reminder), bedtime story, streak-at-risk, new content, seasonal event, and the child-side copy of reward/milestone notifications (source §21.16, NoorHeroes Blueprint notification-use-case table — restated as the canonical child-facing class list).\n**FR-2** Notification Flow (canonical, source §7.9 \"Notification Flow\" diagram): (1) a domain event or schedule creates a notification intent, (2) the policy engine checks consent, quiet hours, frequency budget, locale, entitlement, and device, (3) on pass, a template renderer produces parent-or-child-safe copy; on fail, the notification is suppressed, (4) a delivery adapter sends via FCM push or email, (5) a receipt event updates delivery analytics, (6) on open, the deep link **revalidates auth and content state**.\n**FR-3** **Parent controls per-child reminders and quiet hours** — every reminder type is individually toggleable per child, and quiet-hours/bedtime windows are configured per child (source §21.16; cross-ref C.23).\n**FR-4** **Maximum frequency and fatigue budgets are server-enforced** — never solely a client-side mute or a campaign-level setting that could be bypassed by an automated trigger path (source §21.16 — restated as a hard rule applying uniformly to every trigger source, scheduled or event-driven).\n**FR-5** **Deep links validate session, child, content availability, and parent gate** — tapping any notification re-runs the exact same checks normal in-app navigation would, never granting a shortcut past any of them (source §21.16).\n**FR-6** **Child notification copy contains no billing or sensitive analytics** — this is a template-authoring-time constraint enforced by content governance, not merely a convention (source §21.16, restated as a hard rule with zero exceptions, including for milestone/reward notifications that might otherwise be tempted to reference subscription tier or similar).\n**FR-7** **Every campaign supports preview, test audience, schedule, cancel, and kill switch** (source §21.16) — applies to admin-authored campaigns layered on top of the automated trigger catalog (e.g., a seasonal-event push), not the purely automated triggers themselves, which are config-driven rather than campaign-authored.\n**FR-8** **Firebase issues one token per app installation, not per child** — NoorHeroes implements per-child notification targeting through an **exclusive active-profile binding**: the installation token is bound to either the Parent Profile or exactly one selected child at any given time, with the binding atomically deactivated and reactivated on every profile switch (source: NoorHeroes Blueprint \"Firebase Push Notification System\" / \"Firebase Notification Routing\" — restated as the canonical architecture this feature's delivery layer depends on).\n**FR-9** Two devices belonging to the same family may have **independent bindings** — e.g., one device actively bound to Child A while another device (or the same device at a different time) is bound to Child B or the Parent Profile; logout revokes all bindings for that session/device (source §7.9/NoorHeroes Blueprint, restated).\n**FR-10** Every child-targeted notification passes a **server-side policy check against that child's `screen_time_policies`** (quiet hours/bedtime) before send — **client-side mute alone is never trusted** (source: NoorHeroes Blueprint \"Quiet Hours & Bedtime\" card — a hard rule).\n**FR-11** Per-category daily/weekly frequency caps prevent notification fatigue; **engagement nudges back off automatically after repeated non-opens** (source: NoorHeroes Blueprint \"Frequency Capping\" card) — this auto-backoff is itself a server-side policy behavior, not a one-time static cap.\n**FR-12** Specific trigger conditions (representative, source-confirmed): Daily reminder fires when the daily goal is not met by a configurable threshold hour; Streak risk fires on late-day inactivity with an active streak (e.g., \"7PM with no activity and active streak\"); Bedtime story fires 30 minutes before the configured bedtime; New content fires when new story/lesson content is published within the child's age/locale eligibility; Reward notifications fire when the Reward Service posts a ledger entry crossing a notify-worthy threshold (badge/level/weekly-challenge-completion); Seasonal notifications fire via an Islamic-calendar-date scheduling job (Ramadan mode activation, Eid content unlock) targeting the family (parent + active children).\n**FR-13** In-app (non-push) notifications also exist for some triggers (e.g., \"Tomorrow's episode is ready\" on sequential-unlock-threshold-met) — these surface within the app's own UI (e.g., a Home banner) rather than as a device push, but still pass through the same policy engine for consent/eligibility purposes.\n\n"
+  },
+  {
+    "feature": "B18",
+    "name": "Islamic Fact Detail",
+    "type": "screen",
+    "order": 16,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B18_Islamic_Facts_Module.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Facts/Fact Detail-01.png",
+      "Screens/Mobile App/Facts/Fact Detail-02.png",
+      "Screens/Mobile App/Facts/Fact Detail-03.png",
+      "Screens/Mobile App/Facts/Fact Detail-04.png",
+      "Screens/Mobile App/Facts/Fact Detail-05.png",
+      "Screens/Mobile App/Facts/Fact Detail-06.png"
+    ],
+    "exact_copy": [
+      "Islamic Fact",
+      "Prayer",
+      "Muslims pray five times a day to stay connected with Allah",
+      "Primary Source",
+      "Sahih Bukhari, Book 10, Hadith 505",
+      "Additional Source",
+      "Sahih Muslim, Book 4, Hadith 1555",
+      "Scholar Approved",
+      "Reviewed Jun 2026 · v1.2",
+      "Please Note",
+      "Learn More",
+      "Related Story",
+      "The Prophet’s ﷺ Love for Prayer",
+      "Test Your Knowledge",
+      "5 questions · 2 min",
+      "Start",
+      "What does this mean?",
+      "You’re offline — showing cached content",
+      "Related content and quizzes need an internet connection",
+      "The five daily prayers (Salah) are Fajr (dawn), Dhuhr (midday), Asr (afternoon), Maghrib (sunset), and Isha (night). Each prayer is a time to pause, remember Allah, and ask for His guidance. The Prophet Muhammad ﷺ taught us that prayer is like a river we bathe in five times a day—it washes away our mistakes and keeps us spiritually clean. By praying regularly, we build a strong relationship with Allah and stay mindful of our actions throughout the day.",
+      "The exact timing of prayers may vary slightly between different schools of Islamic thought (madhabs).",
+      "This fact has been reviewed and approved by qualified Islamic scholars to ensure accuracy and appropriateness for children. The review date and version help us maintain up-to-date content."
+    ],
+    "content_fields": "Islamic Fact|Prayer|Muslims pray five times a day to stay connected with Allah|Primary Source|Sahih Bukhari, Book 10, Hadith 505|Additional Source|Sahih Muslim, Book 4, Hadith 1555|Scholar Approved|Reviewed Jun 2026 · v1.2|Please Note|Learn More|Related Story|The Prophet’s ﷺ Love for Prayer|Test Your Knowledge|5 questions · 2 min|Start|What does this mean?|You’re offline — showing cached content|Related content and quizzes need an internet connection",
+    "behavior": "Home fact/spaced repetition → Detail; approval information expands inline; eligible related story/surah/dua→owner detail; linked quiz → shared A8 parameterized fact quiz; stale linkage omitted; withdrawn fact friendly unavailable; offline cached content; unavailable undownloaded quiz needs internet; Home omits card if zero eligible facts. Only approved published versions.",
+    "actions": "Home fact/spaced repetition → Detail; approval information expands inline; eligible related story/surah/dua→owner detail; linked quiz → shared A8 parameterized fact quiz; stale linkage omitted; withdrawn fact friendly unavailable; offline cached content; unavailable undownloaded quiz needs internet; Home omits card if zero eligible facts. Only approved published versions.",
+    "destinations": "Home fact/spaced repetition → Detail; approval information expands inline; eligible related story/surah/dua→owner detail; linked quiz → shared A8 parameterized fact quiz; stale linkage omitted; withdrawn fact friendly unavailable; offline cached content; unavailable undownloaded quiz needs internet; Home omits card if zero eligible facts. Only approved published versions.",
+    "states": [
+      "default",
+      "loading",
+      "cached offline",
+      "approval expanded",
+      "related missing",
+      "quiz missing",
+      "withdrawn",
+      "fetch error"
+    ],
+    "conflicts": "Religious explanation/source references copied as visual evidence only: no independent scholar verification. Screenshot linked quiz 5 questions differs typically1 PRD. Missing visible age band FR2. Must preserve full explanation in source layers; do not recreate text from partial OCR. Approval displayed visually is not independent approval evidence; source references and paraphrased hadith require scholar verification before execution.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Each fact stores: fact text by locale and age band, topic and related-content linkage, primary and secondary source references, scholar approval and version, an explanation, a linked quiz item, and jurisprudential-scope/exclusion notes where relevant (source §21.9 — restated verbatim as the canonical, complete data-field list for this content type).\n**FR-2** Fact cards display: age band, topic, source, scholar approval, explanation, related story, and quiz (source: NoorHeroes Blueprint \"Islamic Facts\" card — restated as the canonical display contract).\n**FR-3** **Disputed/jurisprudentially-sensitive topics stay out of child-facing auto-generation** — no fact touching contested fiqh matters may be produced via AI generation for child-facing display; such topics, if covered at all, require full human scholar authorship with explicit jurisprudential-scope notes, never an AI-drafted starting point (source: NoorHeroes Blueprint — restated as a hard, zero-exception rule).\n**FR-4** **Spaced repetition resurfaces forgotten facts** — Islamic Facts is a participating domain in the shared Mastery Engine's (A.9) cross-domain spaced-repetition scheduler, subject to the same global daily-prompt cap as Quran/Arabic/Tajweed (source: NoorHeroes Blueprint; cross-ref A.9 FR-8/§5 item 5).\n**FR-5** The Home \"Islamic Fact of the Day\" card (A.2's existing widget) is this module's primary surface; this document owns the fact-content data model and detail/quiz flow that the Home card links into, not a duplicate of Home's own card-rendering logic.\n**FR-6** Each fact's `explanation` field must be distinct from its `fact text` — the card states the fact, and a deeper explanation (available via tap-through to Fact Detail) provides the \"why,\" consistent with the platform's general \"teach the reasoning, not just the answer\" pedagogy already established in A.8's Per-Answer Explanation pattern.\n**FR-7** A fact's linked quiz item routes through the shared Quiz Engine (A.8) using the same five-question-type contract, parameterized for this context (typically 1 question per fact, consistent with the brevity of a single fact) — this module does not implement a parallel quiz mechanism.\n**FR-8** Facts are deduped against a child's own recently-seen history (consistent with A.5 §1.7 FR-13's \"no repeat within a rolling 30-day window where catalog size allows\" rule, restated here as this module's own deduplication policy) before being selected as \"today's fact.\"\n**FR-9** A fact's `related_content` linkage (to a Story, Surah, or Dua) must reference real, currently-eligible content for the requesting child — a stale/withdrawn related-content reference is excluded from display rather than producing a broken link, consistent with the platform-wide withdrawn-content handling pattern.\n**FR-10** Facts surfaced during an active seasonal mode (Ramadan/Eid) are weighted toward seasonally-relevant topics where available, consistent with the platform's general calendar-aware recommendation principle (cross-ref A.2's Islamic-calendar-event reason codes), without hard-excluding non-seasonal facts from selection eligibility.\n**FR-11** Scholar approval records are versioned (consistent with the platform's content-versioning pattern established in A.3/A.5/A.6) — editing a fact's text/explanation/sources creates a new version requiring fresh scholar sign-off before it can replace the currently-published version; children always see the latest *published* (approved) version, never a draft.\n\n"
+  },
+  {
+    "feature": "B18",
+    "name": "Islamic Facts Browse",
+    "type": "screen",
+    "order": 17,
+    "prd": "PRD_Documents/Child App Supporting (13-18)/Feature_B18_Islamic_Facts_Module.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Facts/Facts Browse.png"
+    ],
+    "exact_copy": [
+      "Islamic Facts",
+      "All Topics",
+      "Prayer",
+      "Fasting",
+      "Quran",
+      "Verified",
+      "Tap to learn more"
+    ],
+    "content_fields": "Islamic Facts|All Topics|Prayer|Fasting|Quran|Verified|Tap to learn more",
+    "behavior": "Observed topic-filtered browse list→Fact Detail; back→entry. Existing mobile source addition beyond PRD primary Home card/detail flow; preserve only after source reconciliation.",
+    "actions": "Observed topic-filtered browse list→Fact Detail; back→entry. Existing mobile source addition beyond PRD primary Home card/detail flow; preserve only after source reconciliation.",
+    "destinations": "Observed topic-filtered browse list→Fact Detail; back→entry. Existing mobile source addition beyond PRD primary Home card/detail flow; preserve only after source reconciliation.",
+    "states": [
+      "all topics",
+      "selected topic",
+      "loading",
+      "empty",
+      "offline"
+    ],
+    "conflicts": "PRD §1.18 no Facts Browse destination; existing screen requires approval/source-flow mapping. Religious list copy must retain actual source, never regenerate.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Each fact stores: fact text by locale and age band, topic and related-content linkage, primary and secondary source references, scholar approval and version, an explanation, a linked quiz item, and jurisprudential-scope/exclusion notes where relevant (source §21.9 — restated verbatim as the canonical, complete data-field list for this content type).\n**FR-2** Fact cards display: age band, topic, source, scholar approval, explanation, related story, and quiz (source: NoorHeroes Blueprint \"Islamic Facts\" card — restated as the canonical display contract).\n**FR-3** **Disputed/jurisprudentially-sensitive topics stay out of child-facing auto-generation** — no fact touching contested fiqh matters may be produced via AI generation for child-facing display; such topics, if covered at all, require full human scholar authorship with explicit jurisprudential-scope notes, never an AI-drafted starting point (source: NoorHeroes Blueprint — restated as a hard, zero-exception rule).\n**FR-4** **Spaced repetition resurfaces forgotten facts** — Islamic Facts is a participating domain in the shared Mastery Engine's (A.9) cross-domain spaced-repetition scheduler, subject to the same global daily-prompt cap as Quran/Arabic/Tajweed (source: NoorHeroes Blueprint; cross-ref A.9 FR-8/§5 item 5).\n**FR-5** The Home \"Islamic Fact of the Day\" card (A.2's existing widget) is this module's primary surface; this document owns the fact-content data model and detail/quiz flow that the Home card links into, not a duplicate of Home's own card-rendering logic.\n**FR-6** Each fact's `explanation` field must be distinct from its `fact text` — the card states the fact, and a deeper explanation (available via tap-through to Fact Detail) provides the \"why,\" consistent with the platform's general \"teach the reasoning, not just the answer\" pedagogy already established in A.8's Per-Answer Explanation pattern.\n**FR-7** A fact's linked quiz item routes through the shared Quiz Engine (A.8) using the same five-question-type contract, parameterized for this context (typically 1 question per fact, consistent with the brevity of a single fact) — this module does not implement a parallel quiz mechanism.\n**FR-8** Facts are deduped against a child's own recently-seen history (consistent with A.5 §1.7 FR-13's \"no repeat within a rolling 30-day window where catalog size allows\" rule, restated here as this module's own deduplication policy) before being selected as \"today's fact.\"\n**FR-9** A fact's `related_content` linkage (to a Story, Surah, or Dua) must reference real, currently-eligible content for the requesting child — a stale/withdrawn related-content reference is excluded from display rather than producing a broken link, consistent with the platform-wide withdrawn-content handling pattern.\n**FR-10** Facts surfaced during an active seasonal mode (Ramadan/Eid) are weighted toward seasonally-relevant topics where available, consistent with the platform's general calendar-aware recommendation principle (cross-ref A.2's Islamic-calendar-event reason codes), without hard-excluding non-seasonal facts from selection eligibility.\n**FR-11** Scholar approval records are versioned (consistent with the platform's content-versioning pattern established in A.3/A.5/A.6) — editing a fact's text/explanation/sources creates a new version requiring fresh scholar sign-off before it can replace the currently-published version; children always see the latest *published* (approved) version, never a draft.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Ramadan Prep / Countdown",
+    "type": "screen",
+    "order": 18,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Prep-Countdown.png"
+    ],
+    "exact_copy": [
+      "Ramadan is Coming",
+      "Starts in your region in",
+      "FAMILY PREP",
+      "Set children’s fasting approach",
+      "Enable nightly reminders",
+      "Invite extended family",
+      "Complete Family Prep →"
+    ],
+    "content_fields": "Ramadan is Coming|Starts in your region in|FAMILY PREP|Set children’s fasting approach|Enable nightly reminders|Invite extended family|Complete Family Prep →",
+    "behavior": "14 days before server region-adjusted start; parent prep action→gated parent Ramadan Settings/checklist; countdown values dynamic; child must not configure family settings.",
+    "actions": "14 days before server region-adjusted start; parent prep action→gated parent Ramadan Settings/checklist; countdown values dynamic; child must not configure family settings.",
+    "destinations": "14 days before server region-adjusted start; parent prep action→gated parent Ramadan Settings/checklist; countdown values dynamic; child must not configure family settings.",
+    "states": [
+      "countdown",
+      "prep complete",
+      "region change",
+      "offline stale",
+      "activation"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Ramadan Home",
+    "type": "screen",
+    "order": 19,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Ramadan Home.png"
+    ],
+    "exact_copy": [
+      "Night 12 of Ramadan",
+      "Assalamu Alaikum, Sara",
+      "TONIGHT’S JOURNEY",
+      "Night 12: The Story of Patience",
+      "Story · Dua of the Night · Mission",
+      "Journey Map",
+      "Dua Tonight",
+      "My Rewards",
+      "Family",
+      "View progress"
+    ],
+    "content_fields": "Night 12 of Ramadan|Assalamu Alaikum, Sara|TONIGHT’S JOURNEY|Night 12: The Story of Patience|Story · Dua of the Night · Mission|Journey Map|Dua Tonight|My Rewards|Family|View progress",
+    "behavior": "A2 Home seasonal variant: journey→Map; tonight→Mission; dua→A6; rewards→A11; Family requires gate→parent Ramadan Dashboard.",
+    "actions": "A2 Home seasonal variant: journey→Map; tonight→Mission; dua→A6; rewards→A11; Family requires gate→parent Ramadan Dashboard.",
+    "destinations": "A2 Home seasonal variant: journey→Map; tonight→Mission; dua→A6; rewards→A11; Family requires gate→parent Ramadan Dashboard.",
+    "states": [
+      "active",
+      "loading",
+      "pre-downloaded offline",
+      "phase change",
+      "Qadr calmer"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Ramadan Journey Map",
+    "type": "screen",
+    "order": 20,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Journey Map (Lanterns).png"
+    ],
+    "exact_copy": [
+      "30-Night Journey",
+      "Night 12 of 30",
+      "Completed",
+      "Tonight",
+      "Laylatul Qadr",
+      "Ahead",
+      "Start Tonight’s Mission →"
+    ],
+    "content_fields": "30-Night Journey|Night 12 of 30|Completed|Tonight|Laylatul Qadr|Ahead|Start Tonight’s Mission →",
+    "behavior": "30 lantern nodes; tonight/missed→Mission; complete→Recap; Qadr nights21/23/25/27/29→Reflection; future unavailable; new join prior nights not applicable, missed still completable.",
+    "actions": "30 lantern nodes; tonight/missed→Mission; complete→Recap; Qadr nights21/23/25/27/29→Reflection; future unavailable; new join prior nights not applicable, missed still completable.",
+    "destinations": "30 lantern nodes; tonight/missed→Mission; complete→Recap; Qadr nights21/23/25/27/29→Reflection; future unavailable; new join prior nights not applicable, missed still completable.",
+    "states": [
+      "tonight",
+      "completed",
+      "ahead",
+      "missed",
+      "new join",
+      "Qadr",
+      "offline"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Ramadan Mission Detail",
+    "type": "screen",
+    "order": 21,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Mission Detail.png"
+    ],
+    "exact_copy": [
+      "Night 12 Mission",
+      "The Story of Patience",
+      "Complete your three tasks for tonight",
+      "Story",
+      "Listen to tonight’s Ramadan story",
+      "Dua of the Night",
+      "Learn Dua Al-Istikharah",
+      "Fasting Log",
+      "Record today’s fasting (if enabled)"
+    ],
+    "content_fields": "Night 12 Mission|The Story of Patience|Complete your three tasks for tonight|Story|Listen to tonight’s Ramadan story|Dua of the Night|Learn Dua Al-Istikharah|Fasting Log|Record today’s fasting (if enabled)",
+    "behavior": "Story→seasonal Player using A3/A4; dua→A6; fasting only parent-enabled allowed approach→Log; back→Map; task completion feeds existing reward engine, no parallel XP.",
+    "actions": "Story→seasonal Player using A3/A4; dua→A6; fasting only parent-enabled allowed approach→Log; back→Map; task completion feeds existing reward engine, no parallel XP.",
+    "destinations": "Story→seasonal Player using A3/A4; dua→A6; fasting only parent-enabled allowed approach→Log; back→Map; task completion feeds existing reward engine, no parallel XP.",
+    "states": [
+      "tasks incomplete",
+      "complete",
+      "fasting hidden",
+      "offline downloaded",
+      "withdrawn"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Ramadan Story Player",
+    "type": "screen",
+    "order": 22,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Story Player.png"
+    ],
+    "exact_copy": [
+      "The Story of Patience",
+      "Story Complete ✓",
+      "In a land blessed by gentle breezes and the call to prayer, there lived a young boy named Zayd who loved Ramadan... Each night he would light a small lantern by his window, a reminder that patience is a gift from Allah..."
+    ],
+    "content_fields": "The Story of Patience|Story Complete ✓",
+    "behavior": "Shared A3/A4 player with seasonal context; playback controls preserve owner behavior; completion returns Mission and persists progress; interruption restores furthest valid position.",
+    "actions": "Shared A3/A4 player with seasonal context; playback controls preserve owner behavior; completion returns Mission and persists progress; interruption restores furthest valid position.",
+    "destinations": "Shared A3/A4 player with seasonal context; playback controls preserve owner behavior; completion returns Mission and persists progress; interruption restores furthest valid position.",
+    "states": [
+      "playing",
+      "paused",
+      "buffering",
+      "offline downloaded",
+      "complete",
+      "interrupted"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Story is an observed excerpt, not a complete verified curriculum item. Obtain existing approved full content; do not expand it.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Fasting Tracker",
+    "type": "screen",
+    "order": 23,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Fasting Tracker-01.png",
+      "Screens/Mobile App/Ramadan Mode/Fasting Tracker-02.png"
+    ],
+    "exact_copy": [
+      "Night 12 Log",
+      "Suhoor eaten",
+      "Fasting intention made",
+      "Iftar completed"
+    ],
+    "content_fields": "Night 12 Log|Suhoor eaten|Fasting intention made|Iftar completed",
+    "behavior": "Child log only permitted parent approach; practice partial log, full fast allowed full log, education-only no log; changes preserve prior nights; parent radio controls belong Settings not child.",
+    "actions": "Child log only permitted parent approach; practice partial log, full fast allowed full log, education-only no log; changes preserve prior nights; parent radio controls belong Settings not child.",
+    "destinations": "Child log only permitted parent approach; practice partial log, full fast allowed full log, education-only no log; changes preserve prior nights; parent radio controls belong Settings not child.",
+    "states": [
+      "full fast",
+      "practice",
+      "education-only",
+      "hidden young child",
+      "offline outbox",
+      "save retry"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Parent-controlled approach radios cannot be editable in child log. Education-only must omit log; young unenabled child must hide entry completely; neutral supportive tone.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Laylatul Qadr Reflection",
+    "type": "screen",
+    "order": 24,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Laylatul Qadr Reflection.png"
+    ],
+    "exact_copy": [
+      "Laylatul Qadr",
+      "The Night of Power — Night 25",
+      "SCHOLAR-APPROVED CONTENT",
+      "Begin Tonight’s Reflection",
+      "No scores, no comparisons — just you and this blessed night",
+      "\"Laylatul Qadr is better than a thousand months. The angels and the Spirit descend therein...\" — Al-Qadr, 3-4"
+    ],
+    "content_fields": "Laylatul Qadr|The Night of Power — Night 25|SCHOLAR-APPROVED CONTENT|Begin Tonight’s Reflection|No scores, no comparisons — just you and this blessed night",
+    "behavior": "Qadr nights21/23/25/27/29 calm reflection→calm Recap; approved content only; suppress competitive badges/leaderboard/reward call-outs; normal rewards internal no distracting UI.",
+    "actions": "Qadr nights21/23/25/27/29 calm reflection→calm Recap; approved content only; suppress competitive badges/leaderboard/reward call-outs; normal rewards internal no distracting UI.",
+    "destinations": "Qadr nights21/23/25/27/29 calm reflection→calm Recap; approved content only; suppress competitive badges/leaderboard/reward call-outs; normal rewards internal no distracting UI.",
+    "states": [
+      "reflection",
+      "loading",
+      "offline downloaded",
+      "complete"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Screenshot quote is partial religious translation; preserve source layers exactly pending verified translation/source approval, do not complete it.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Night Recap",
+    "type": "screen",
+    "order": 25,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Night Recap.png"
+    ],
+    "exact_copy": [
+      "Night 12 Complete!",
+      "Your lantern is lit",
+      "Story read",
+      "Dua learned",
+      "XP earned",
+      "+ 50 Noor XP",
+      "Back to Journey Map"
+    ],
+    "content_fields": "Night 12 Complete!|Your lantern is lit|Story read|Dua learned|XP earned|+ 50 Noor XP|Back to Journey Map",
+    "behavior": "Completed mission→Recap→Map; actual reward value owner A11; Qadr recap suppress gamification.",
+    "actions": "Completed mission→Recap→Map; actual reward value owner A11; Qadr recap suppress gamification.",
+    "destinations": "Completed mission→Recap→Map; actual reward value owner A11; Qadr recap suppress gamification.",
+    "states": [
+      "standard",
+      "Qadr calm",
+      "pending sync",
+      "duplicate completion"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Eid Countdown",
+    "type": "screen",
+    "order": 26,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Eid Countdown.png"
+    ],
+    "exact_copy": [
+      "Eid is Almost Here!",
+      "You’ve completed 28 nights — Masha’Allah!",
+      "Preview Eid Celebration →"
+    ],
+    "content_fields": "Eid is Almost Here!|You’ve completed 28 nights — Masha’Allah!|Preview Eid Celebration →",
+    "behavior": "Last2days region-adjusted→Eid preview; server override next-open resync, one-time notification; no hardcoded device-locale calendar.",
+    "actions": "Last2days region-adjusted→Eid preview; server override next-open resync, one-time notification; no hardcoded device-locale calendar.",
+    "destinations": "Last2days region-adjusted→Eid preview; server override next-open resync, one-time notification; no hardcoded device-locale calendar.",
+    "states": [
+      "countdown",
+      "date override",
+      "offline stale",
+      "Eid transition"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Eid Home",
+    "type": "screen",
+    "order": 27,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Eid Home.png"
+    ],
+    "exact_copy": [
+      "Eid Mubarak!",
+      "You completed your 30-night journey!",
+      "Open Your Eid Reward!",
+      "Tap to reveal your special badge",
+      "Generate Eid Card",
+      "Ramadan Certificate",
+      "Family Report",
+      "Share Journey"
+    ],
+    "content_fields": "Eid Mubarak!|You completed your 30-night journey!|Open Your Eid Reward!|Tap to reveal your special badge|Generate Eid Card|Ramadan Certificate|Family Report|Share Journey",
+    "behavior": "Eid3days seasonal Home; reward→Reveal; card→Generator; certificate→Certificate; family report/share→Parent Gate then parent/report/share owner.",
+    "actions": "Eid3days seasonal Home; reward→Reveal; card→Generator; certificate→Certificate; family report/share→Parent Gate then parent/report/share owner.",
+    "destinations": "Eid3days seasonal Home; reward→Reveal; card→Generator; certificate→Certificate; family report/share→Parent Gate then parent/report/share owner.",
+    "states": [
+      "Eid active",
+      "incomplete journey copy conditional",
+      "reward revealed",
+      "offline"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Eid Reward Reveal",
+    "type": "screen",
+    "order": 28,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Eid Reward Reveal.png"
+    ],
+    "exact_copy": [
+      "Your Eid Reward",
+      "Tap to Reveal"
+    ],
+    "content_fields": "Your Eid Reward|Tap to Reveal",
+    "behavior": "Tap reveals existing season-scoped badge/reward once; proceed Card/Home; no generated rewards or duplicate ledger posts.",
+    "actions": "Tap reveals existing season-scoped badge/reward once; proceed Card/Home; no generated rewards or duplicate ledger posts.",
+    "destinations": "Tap reveals existing season-scoped badge/reward once; proceed Card/Home; no generated rewards or duplicate ledger posts.",
+    "states": [
+      "unrevealed",
+      "revealed",
+      "already claimed",
+      "offline pending"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Eid Card Generator",
+    "type": "screen",
+    "order": 29,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Eid Card Generator.png"
+    ],
+    "exact_copy": [
+      "Create Eid Card",
+      "Eid Mubarak!",
+      "Wishing you joy and blessings",
+      "Choose design",
+      "Add message",
+      "Parent Gate → Share",
+      "Generate & Share (Parent Gate)"
+    ],
+    "content_fields": "Create Eid Card|Eid Mubarak!|Wishing you joy and blessings|Choose design|Add message|Parent Gate → Share|Generate & Share (Parent Gate)",
+    "behavior": "Design→message→parent gate generation/sharing; no child name/DOB/location in artifact; cancel returns editor; share OS simulation only in Figma.",
+    "actions": "Design→message→parent gate generation/sharing; no child name/DOB/location in artifact; cancel returns editor; share OS simulation only in Figma.",
+    "destinations": "Design→message→parent gate generation/sharing; no child name/DOB/location in artifact; cancel returns editor; share OS simulation only in Figma.",
+    "states": [
+      "choose design",
+      "message",
+      "generating",
+      "error retry",
+      "gate cancel",
+      "share"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Ramadan Complete Certificate",
+    "type": "screen",
+    "order": 30,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Ramadan Certificate.png"
+    ],
+    "exact_copy": [
+      "NOORHEROES — RAMADAN 2026",
+      "Certificate of Completion",
+      "Completed all 30 nights of the Ramadan Learning Journey",
+      "Scholar-reviewed content · Ramadan 1447 AH",
+      "Download",
+      "Share (Parent Gate)"
+    ],
+    "content_fields": "NOORHEROES — RAMADAN 2026|Certificate of Completion|Completed all 30 nights of the Ramadan Learning Journey|Scholar-reviewed content · Ramadan 1447 AH|Download|Share (Parent Gate)",
+    "behavior": "Eid Home/Map→certificate; generation/share/print parent-gated per FR6; PII excluded; only true completion claims and campaign dates.",
+    "actions": "Eid Home/Map→certificate; generation/share/print parent-gated per FR6; PII excluded; only true completion claims and campaign dates.",
+    "destinations": "Eid Home/Map→certificate; generation/share/print parent-gated per FR6; PII excluded; only true completion claims and campaign dates.",
+    "states": [
+      "eligible",
+      "not complete",
+      "generation",
+      "retry",
+      "gate cancel",
+      "share/print"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Post-Eid Keep the Habit",
+    "type": "screen",
+    "order": 31,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Post-Eid Keep the Habit.png"
+    ],
+    "exact_copy": [
+      "Keep the Momentum Going!",
+      "Your Ramadan streak was amazing — don’t let it end",
+      "Continue daily Dua habit",
+      "Weekly Quran reading goal",
+      "Gratitude journaling (new)",
+      "Build My Habit Plan →"
+    ],
+    "content_fields": "Keep the Momentum Going!|Your Ramadan streak was amazing — don’t let it end|Continue daily Dua habit|Weekly Quran reading goal|Gratitude journaling (new)|Build My Habit Plan →",
+    "behavior": "14day tail→A7 Habit Builder; optional selections; no guilt pressure; gratitude journaling needs existing A7 requirement, not new product.",
+    "actions": "14day tail→A7 Habit Builder; optional selections; no guilt pressure; gratitude journaling needs existing A7 requirement, not new product.",
+    "destinations": "14day tail→A7 Habit Builder; optional selections; no guilt pressure; gratitude journaling needs existing A7 requirement, not new product.",
+    "states": [
+      "tail active",
+      "selected",
+      "dismissed",
+      "habit transition"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Parent Ramadan Settings",
+    "type": "screen",
+    "order": 32,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Parent-Ramadan Settings.png"
+    ],
+    "exact_copy": [
+      "Ramadan Settings",
+      "Configure each child’s experience",
+      "Fasting approach",
+      "Practice fasting",
+      "Education only",
+      "Family Invite Link",
+      "Generate Invite Link"
+    ],
+    "content_fields": "Ramadan Settings|Configure each child’s experience|Fasting approach|Practice fasting|Education only|Family Invite Link|Generate Invite Link",
+    "behavior": "Gated parent Family Overview→per-child approach full/practice/education and separate visibility toggle/reminders/invite; future nights only; hidden for young by default; failed save keeps saved state.",
+    "actions": "Gated parent Family Overview→per-child approach full/practice/education and separate visibility toggle/reminders/invite; future nights only; hidden for young by default; failed save keeps saved state.",
+    "destinations": "Gated parent Family Overview→per-child approach full/practice/education and separate visibility toggle/reminders/invite; future nights only; hidden for young by default; failed save keeps saved state.",
+    "states": [
+      "loading",
+      "saved",
+      "approach changed",
+      "tracker hidden",
+      "save error",
+      "offline queued"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Parent Ramadan Dashboard",
+    "type": "screen",
+    "order": 33,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Parent-Ramadan Dashboard.png"
+    ],
+    "exact_copy": [
+      "Ramadan Dashboard",
+      "Family Progress",
+      "Full Family Report",
+      "Printable & shareable"
+    ],
+    "content_fields": "Ramadan Dashboard|Family Progress|Full Family Report|Printable & shareable",
+    "behavior": "Conditional tab within C20 only active window; family→Aggregate; report→Report; own child detail individually via C22, no comparisons.",
+    "actions": "Conditional tab within C20 only active window; family→Aggregate; report→Report; own child detail individually via C22, no comparisons.",
+    "destinations": "Conditional tab within C20 only active window; family→Aggregate; report→Report; own child detail individually via C22, no comparisons.",
+    "states": [
+      "active window",
+      "absent outside",
+      "cached",
+      "loading",
+      "empty",
+      "error"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Family Ramadan Aggregate",
+    "type": "screen",
+    "order": 34,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Parent-Family Aggregate.png"
+    ],
+    "exact_copy": [
+      "Family Ramadan Journey",
+      "Family Total",
+      "missions completed this Ramadan"
+    ],
+    "content_fields": "Family Ramadan Journey|Family Total|missions completed this Ramadan",
+    "behavior": "Parent dashboard→aggregate-only totals; child detail separate authorized entry, never per-child array/comparative bars in aggregate.",
+    "actions": "Parent dashboard→aggregate-only totals; child detail separate authorized entry, never per-child array/comparative bars in aggregate.",
+    "destinations": "Parent dashboard→aggregate-only totals; child detail separate authorized entry, never per-child array/comparative bars in aggregate.",
+    "states": [
+      "aggregate",
+      "empty",
+      "cached",
+      "error"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Screenshot includes INDIVIDUAL PROGRESS Sara/Yusuf with separate bars despite KMP08 no-per-child-array/no-comparative-UI contract. Remove only through explicit conflict approval; preserve original reference.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Family Ramadan Report",
+    "type": "screen",
+    "order": 35,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Parent-Family Report.png"
+    ],
+    "exact_copy": [
+      "Family Report",
+      "Total missions completed",
+      "Stories read",
+      "Duas learned",
+      "Fasting logs",
+      "Laylatul Qadr reflections",
+      "Print",
+      "Share Link"
+    ],
+    "content_fields": "Family Report|Total missions completed|Stories read|Duas learned|Fasting logs|Laylatul Qadr reflections|Print|Share Link",
+    "behavior": "Dashboard/post-Eid→printable aggregate-only report; print/share parent gate; invite→read-only link; no sibling comparison or identifying child breakdown exported.",
+    "actions": "Dashboard/post-Eid→printable aggregate-only report; print/share parent gate; invite→read-only link; no sibling comparison or identifying child breakdown exported.",
+    "destinations": "Dashboard/post-Eid→printable aggregate-only report; print/share parent gate; invite→read-only link; no sibling comparison or identifying child breakdown exported.",
+    "states": [
+      "report",
+      "cached",
+      "print",
+      "share",
+      "generation retry"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Screenshot Fasting logs 12 (Sara only) exposes per-child attribution vs aggregate-only contract; confirm approved export fields and exclusion.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Conversion Moment Card",
+    "type": "component",
+    "order": 36,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Parent-Family Report⑲ Conversion Card (Day 28-30).png"
+    ],
+    "exact_copy": [
+      "SOFT REMINDER — DAY 28",
+      "Continue Your Family’s Journey",
+      "Annual Family Plan — £59.99/year",
+      "Continue with Annual Plan →",
+      "Not now"
+    ],
+    "content_fields": "SOFT REMINDER — DAY 28|Continue Your Family’s Journey|Annual Family Plan — £59.99/year|Continue with Annual Plan →|Not now",
+    "behavior": "Embedded dismissible component only day28–30 AND active trial; terms before seasonal persuasion; CTA→C24 existing gated purchase; absent lapsed/converted; never blocking modal.",
+    "actions": "Embedded dismissible component only day28–30 AND active trial; terms before seasonal persuasion; CTA→C24 existing gated purchase; absent lapsed/converted; never blocking modal.",
+    "destinations": "Embedded dismissible component only day28–30 AND active trial; terms before seasonal persuasion; CTA→C24 existing gated purchase; absent lapsed/converted; never blocking modal.",
+    "states": [
+      "eligible trial",
+      "dismissed",
+      "lapsed absent",
+      "converted absent",
+      "offline absent"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Screenshot persuasion precedes terms, contradicting FR13 terms-first. £59.99/year is fixture, not verified store price. Reference isolated screenshot is not permission for a blocking paywall/modal.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  },
+  {
+    "feature": "F36",
+    "name": "Family Member Invite",
+    "type": "screen",
+    "order": 37,
+    "prd": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "source_screens": [
+      "Screens/Mobile App/Ramadan Mode/Parent-Family Member Invite.png"
+    ],
+    "exact_copy": [
+      "Invite Family Members",
+      "Read-Only Report Link",
+      "Copy Link",
+      "Share"
+    ],
+    "content_fields": "Invite Family Members|Read-Only Report Link|Copy Link|Share",
+    "behavior": "Parent Settings/Report→generate own-family read-only link; copy/share with parent gate; recipient without app graceful install/account prompt; expiry/auth access contract unverified.",
+    "actions": "Parent Settings/Report→generate own-family read-only link; copy/share with parent gate; recipient without app graceful install/account prompt; expiry/auth access contract unverified.",
+    "destinations": "Parent Settings/Report→generate own-family read-only link; copy/share with parent gate; recipient without app graceful install/account prompt; expiry/auth access contract unverified.",
+    "states": [
+      "generation",
+      "link ready",
+      "copy feedback",
+      "share",
+      "failure retry",
+      "expired link"
+    ],
+    "conflicts": "All FR/header annotations are reference-only pending approval. Dynamic names/counts/prices/dates are fixtures, never fabricate live data. Screenshot promises Link expires in 30 days. No account required to view; KMP08 flags invite contract unknown, so expiry/access promise unverified. Token is visibly truncated example; never embed real share token.",
+    "frame1": "Parent audit pending",
+    "frame2": "Parent audit pending",
+    "platform": "Android and iOS",
+    "mandatory_FRs": "### 1.7 Functional Requirements\n\n**FR-1** Activation Window & Lifecycle (canonical): Pre-Ramadan Countdown (14 days before); Ramadan Mode Active (30 days, Hijri, regionalized); Laylatul Qadr Window (nights 21, 23, 25, 27, 29 — gamification deliberately suppressed); Eid Transition (last 2 days + Eid day); Eid Celebration (3 days); Post-Eid Tail (14 days after Eid).\n**FR-2** **The activation window is keyed to the Region setting on the Parent Profile, not device locale.**\n**FR-3** **A moon-sighting-disputed Eid date triggers an Admin override that updates the `ramadan_campaigns` record and pushes a one-time notification; in-progress UI re-syncs on next app open.**\n**FR-4** **Hijri start date: server-side Hijri calendar service with a regional moon-sighting override table.**\n**FR-5** Child UX Flow: Home re-themes; Lantern Progress Path (30-night journey map); each night unlocks a themed mission set (story, dua, optional fasting log); completion feeds the standard reward engine (A.11); Laylatul Qadr surfaces dedicated scholar-approved content; Eid transitions to Eid Mode with a certificate available.\n**FR-6** Parent UX Flow: Ramadan section on Parent Dashboard with family-level aggregate rollup; per-child Fasting Tracker toggle (hidden for young children by default); certificate generation/share via the standard Parent Gate.\n**FR-7** Each of the 30 nights follows the same `content_items`/`content_versions` schema as all other content, scoped with a `season_id` — no parallel content schema.\n**FR-8** Ramadan-specific achievements plug into the existing achievement/badge system; `badges.season_id` scopes seasonal badges — no parallel reward mechanism.\n**FR-9** **Fasting-tracking content for young children must avoid any framing that could pressure a child medically unready to fast; the parent toggle exists specifically to let a parent exclude a child from this feature entirely.**\n**FR-10** Fasting Tracker supports three parent-configurable approaches per child: full fast / practice / education-only, with the child only able to log within the allowed range.\n**FR-11** Database additions: `ramadan_campaigns`, `ramadan_missions`, `ramadan_journey_progress`, `fasting_logs`, `ramadan_certificates` — all additive, none replacing an existing table.\n**FR-12** **Laylatul Qadr nights deliberately suppress gamification** — no leaderboard-style framing, no competitive badge call-outs during these nights, a calmer reflection-oriented register.\n**FR-13** The Day 28-30 conversion moment shows a **soft, never-blocking** card with standard purchase-flow terms shown first — never an interrupting paywall.\n**FR-14** Family member invites support a read-only Family Ramadan Report link for extended family.\n\n"
+  }
+]

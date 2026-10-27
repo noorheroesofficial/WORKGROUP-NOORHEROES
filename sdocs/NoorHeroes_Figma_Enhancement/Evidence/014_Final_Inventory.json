@@ -1,0 +1,122 @@
+{
+  "section": "1804:2599",
+  "parent": "1270:140",
+  "frames": [
+    {
+      "id": "1804:2656",
+      "name": "NH/V2/Onboarding/014/Add_Child/Default",
+      "x": 40,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3045",
+      "name": "NH/V2/Onboarding/014/Nickname",
+      "x": 2280,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3064",
+      "name": "NH/V2/Onboarding/014/Date of birth",
+      "x": 960,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3227",
+      "name": "NH/V2/Onboarding/014/Preferred language",
+      "x": 1400,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3252",
+      "name": "NH/V2/Onboarding/014/Optional preferences",
+      "x": 1840,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3346",
+      "name": "NH/V2/Onboarding/014/Duplicate Nickname",
+      "x": 2720,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3379",
+      "name": "NH/V2/Onboarding/014/Add_Child/Saving",
+      "x": 3600,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1804:3478",
+      "name": "Review/014 — Controlled prototype fixtures, not app UI",
+      "x": 4040,
+      "y": 60,
+      "w": 430,
+      "h": 1000
+    },
+    {
+      "id": "1806:3489",
+      "name": "NH/V2/Onboarding/014/Add_Child/Timeout",
+      "x": 3600,
+      "y": 1040,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1806:3639",
+      "name": "NH/V2/Onboarding/014/Review Only/Valid draft",
+      "x": 500,
+      "y": 60,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "id": "1808:3361",
+      "name": "NH/V2/Onboarding/014/Year selector",
+      "x": 960,
+      "y": 1040,
+      "w": 390,
+      "h": 844
+    }
+  ],
+  "familyCounts": {
+    "1726:1206": 204,
+    "1253:35": 4,
+    "1304:206": 4,
+    "1300:57": 4,
+    "357:2": 4,
+    "486:14": 4,
+    "486:827": 8,
+    "381:42": 4,
+    "380:16": 4,
+    "1253:153": 12,
+    "1253:47": 4,
+    "322:99": 72,
+    "329:49": 4,
+    "328:2": 4,
+    "1769:53": 8,
+    "322:8": 10
+  },
+  "primaryCount": 12,
+  "primaryHeightIssues": [],
+  "smallTargets": [],
+  "editableTextCount": 212,
+  "standalonePortraitSources": [
+    "1085:21471",
+    "1085:21480",
+    "1085:21490"
+  ],
+  "livePresentVerified": false
+}

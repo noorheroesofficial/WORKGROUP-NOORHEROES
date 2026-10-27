@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-22",
+  "decision": "One PIN entry; direct biometric on save; no success dialog",
+  "changes": {
+    "createdNodeIds": [
+      "1702:866",
+      "1702:867",
+      "1702:875",
+      "1702:876",
+      "1702:884",
+      "1702:885",
+      "1702:893",
+      "1702:894",
+      "1702:902",
+      "1702:903"
+    ],
+    "createdVariableIds": [
+      "VariableID:1702:707",
+      "VariableID:1702:713",
+      "VariableID:1702:717",
+      "VariableID:1702:721",
+      "VariableID:1702:725",
+      "VariableID:1702:729",
+      "VariableID:1702:733",
+      "VariableID:1702:737",
+      "VariableID:1702:741",
+      "VariableID:1702:745",
+      "VariableID:1702:749",
+      "VariableID:1702:753",
+      "VariableID:1702:757",
+      "VariableID:1702:759",
+      "VariableID:1702:760",
+      "VariableID:1702:761",
+      "VariableID:1702:762",
+      "VariableID:1702:763",
+      "VariableID:1702:764",
+      "VariableID:1702:765",
+      "VariableID:1702:766",
+      "VariableID:1702:767",
+      "VariableID:1702:768",
+      "VariableID:1702:769",
+      "VariableID:1702:770",
+      "VariableID:1702:771",
+      "VariableID:1702:786",
+      "VariableID:1702:789",
+      "VariableID:1702:790",
+      "VariableID:1702:791",
+      "VariableID:1702:792",
+      "VariableID:1702:794"
+    ],
+    "mutatedNodeIds": [
+      "1650:756",
+      "1650:762",
+      "1650:768",
+      "1650:775",
+      "1650:781",
+      "1650:787",
+      "1650:794",
+      "1650:800",
+      "1650:806",
+      "1650:814",
+      "1650:820",
+      "1650:831",
+      "1650:528",
+      "1650:502",
+      "1650:915",
+      "I1650:847;1420:20",
+      "I1650:847;1420:22",
+      "1650:844",
+      "1650:845",
+      "1613:320"
+    ],
+    "removedNodeIds": [
+      "1654:544",
+      "1654:840",
+      "1650:901",
+      "1650:903"
+    ],
+    "oldOtpGate": {
+      "type": "SET_VARIABLE",
+      "variableId": "VariableID:1651:523",
+      "variableValue": {
+        "value": {
+          "expressionArguments": [
+            {
+              "value": {
+                "expressionArguments": [
+                  {
+                    "value": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:1650:475"
+                    },
+                    "type": "VARIABLE_ALIAS",
+                    "resolvedType": "BOOLEAN"
+                  },
+                  {
+                    "value": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:1612:1251"
+                    },
+                    "type": "VARIABLE_ALIAS",
+                    "resolvedType": "BOOLEAN"
+                  }
+                ],
+                "expressionFunction": "AND"
+              },
+              "type": "EXPRESSION",
+              "resolvedType": "BOOLEAN"
+            },
+            {
+              "value": {
+                "expressionArguments": [
+                  {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:1612:1261"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "success",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  },
+                  {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:1612:1262"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "verify",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                ],
+                "expressionFunction": "AND"
+              },
+              "type": "EXPRESSION",
+              "resolvedType": "BOOLEAN"
+            }
+          ],
+          "expressionFunction": "AND"
+        },
+        "type": "EXPRESSION",
+        "resolvedType": "BOOLEAN"
+      }
+    },
+    "successDialogPending": false,
+    "successDialogCreated": false,
+    "latestUserDecision": "No success dialog; save opens biometric directly"
+  },
+  "checks": {
+    "checks": [
+      {
+        "name": "Direct successful OTP opens Set Parent PIN",
+        "pass": true
+      },
+      {
+        "name": "Incorrect OTP stays in verification flow",
+        "pass": true
+      },
+      {
+        "name": "Resend completion never enters PIN",
+        "pass": true
+      },
+      {
+        "name": "0 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "1 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "2 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "3 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "4 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "5 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "6 digits: automatic Continue state",
+        "pass": true
+      },
+      {
+        "name": "Input capped at six",
+        "pass": true
+      },
+      {
+        "name": "Deleting below four disables Continue",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Continue starts save immediately, no confirmation",
+        "pass": true
+      },
+      {
+        "name": "4 digits: successful save opens biometric directly",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Continue starts save immediately, no confirmation",
+        "pass": true
+      },
+      {
+        "name": "5 digits: successful save opens biometric directly",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Continue starts save immediately, no confirmation",
+        "pass": true
+      },
+      {
+        "name": "6 digits: successful save opens biometric directly",
+        "pass": true
+      },
+      {
+        "name": "Save prevents duplicate submits and edits",
+        "pass": true
+      },
+      {
+        "name": "offline failure preserves entered PIN count and supports retry",
+        "pass": true
+      },
+      {
+        "name": "offline Retry reaches biometric",
+        "pass": true
+      },
+      {
+        "name": "api failure preserves entered PIN count and supports retry",
+        "pass": true
+      },
+      {
+        "name": "api Retry reaches biometric",
+        "pass": true
+      },
+      {
+        "name": "Timeout stays pending before deadline",
+        "pass": true
+      },
+      {
+        "name": "Timeout recovers without losing input",
+        "pass": true
+      },
+      {
+        "name": "Back returns to usable OTP",
+        "pass": true
+      },
+      {
+        "name": "Reverification returns fresh single-entry PIN",
+        "pass": true
+      },
+      {
+        "name": "Biometric enable completes",
+        "pass": true
+      },
+      {
+        "name": "Biometric Skip closes without losing saved PIN",
+        "pass": true
+      },
+      {
+        "name": "Biometric Cancel clears pending safely",
+        "pass": true
+      },
+      {
+        "name": "Unavailable hardware bypasses biometric offer",
+        "pass": true
+      },
+      {
+        "name": "Biometric failure supports retry",
+        "pass": true
+      },
+      {
+        "name": "Biometric Retry completes",
+        "pass": true
+      }
+    ],
+    "passed": 33,
+    "total": 33,
+    "failures": [],
+    "method": "Stored native-action evaluation, no Present/OS/backend verification. PIN simulation stores counts only."
+  },
+  "audit": {
+    "mutatedNodeIds": [
+      "928:2"
+    ],
+    "confirmationActions": [],
+    "confirmationCopy": [],
+    "unresolvedDestinations": [],
+    "destinationCount": 21,
+    "stars": [
+      {
+        "id": "1702:866",
+        "size": [
+          12,
+          12
+        ],
+        "x": 189,
+        "y": 534,
+        "visible": true,
+        "within": true
+      },
+      {
+        "id": "1702:875",
+        "size": [
+          12,
+          12
+        ],
+        "x": 189,
+        "y": 566,
+        "visible": true,
+        "within": true
+      },
+      {
+        "id": "1702:884",
+        "size": [
+          12,
+          12
+        ],
+        "x": 189,
+        "y": 534,
+        "visible": true,
+        "within": true
+      },
+      {
+        "id": "1702:893",
+        "size": [
+          12,
+          12
+        ],
+        "x": 189,
+        "y": 618,
+        "visible": true,
+        "within": true
+      },
+      {
+        "id": "1702:902",
+        "size": [
+          12,
+          12
+        ],
+        "x": 189,
+        "y": 534,
+        "visible": true,
+        "within": true
+      }
+    ]
+  },
+  "limitations": [
+    "Stored native actions verified; Present playback unverified",
+    "PIN prototype holds masked position counts only; secure hashing/storage/server request not implemented by Figma",
+    "Biometric hardware/authentication are simulations",
+    "Add Child014 remains uncreated/unmapped under the existing destination rule"
+  ]
+}

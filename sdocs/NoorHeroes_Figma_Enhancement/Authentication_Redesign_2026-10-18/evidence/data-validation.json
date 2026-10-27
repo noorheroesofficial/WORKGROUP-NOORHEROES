@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "countries": 245,
+  "uniqueISO": 245,
+  "dialCodesMatchPinnedMetadata": true,
+  "flagAssets": 245,
+  "flagResolution": "84x63",
+  "assets": [
+    {
+      "file": "logo.png",
+      "bytes": 330288
+    },
+    {
+      "file": "monogram.png",
+      "bytes": 557979
+    },
+    {
+      "file": "Poppins-Regular.ttf",
+      "bytes": 154628
+    },
+    {
+      "file": "Poppins-SemiBold.ttf",
+      "bytes": 151516
+    }
+  ]
+}

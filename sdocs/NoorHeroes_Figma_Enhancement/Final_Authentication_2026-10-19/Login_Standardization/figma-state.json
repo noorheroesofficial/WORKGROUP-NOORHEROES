@@ -1,0 +1,73 @@
+{
+  "root": "1355:2696",
+  "section": "1355:2564",
+  "archive": "1386:5901",
+  "guide": "1391:3057",
+  "components": {
+    "active": "1355:2582",
+    "disabled": "1355:2589",
+    "pressed": "1383:3233",
+    "loading": "1383:3236",
+    "snackbar": "1383:3295"
+  },
+  "overlays": {
+    "section": "1383:3275",
+    "loader": "1383:3276",
+    "hold": "1383:3282",
+    "google": "1383:3288",
+    "snack": "1383:3294",
+    "commit": "1383:3307"
+  },
+  "variables": {
+    "Phone mode": "VariableID:1383:3057",
+    "Email mode": "VariableID:1383:3058",
+    "Input invalid": "VariableID:1383:3059",
+    "Idle": "VariableID:1383:3060",
+    "Processing": "VariableID:1383:3061",
+    "Field label": "VariableID:1383:3062",
+    "Field value": "VariableID:1383:3063",
+    "Validation message": "VariableID:1383:3064",
+    "Snackbar message": "VariableID:1383:3065",
+    "Operation": "VariableID:1383:3066",
+    "Phone selected": "VariableID:1383:3067",
+    "Email selected": "VariableID:1383:3068"
+  },
+  "reducedMotion": {
+    "allowed": "VariableID:1389:3044",
+    "reduced": "VariableID:1389:3045"
+  },
+  "sourceReferences": [
+    "1355:2567",
+    "1259:140",
+    "1131:2"
+  ],
+  "audit": {
+    "result": "PASS",
+    "assertions": 1576,
+    "tests": [
+      "Enabled/disabled/duplicate submission",
+      "Inline correction and method persistence",
+      "All245 countries preserve input, set one exact flag, close and require validation",
+      "Completion boundary, failure,10s timeout and operation-specific retry"
+    ],
+    "countries": 245,
+    "routes": 552,
+    "missing": [],
+    "archivedRoutes": [],
+    "activeLoginScreens": 1,
+    "archivedScreens": 21,
+    "card": {
+      "width": 366,
+      "height": 466,
+      "x": 12,
+      "y": 146
+    },
+    "buttonY": 510,
+    "limits": [
+      "Saved-action model and static visual verification only",
+      "Input/search are fixtures",
+      "OTP and Registration destinations remain unapproved",
+      "Actual OS keyboard, screen readers and live Present remain unverified"
+    ]
+  }
+}

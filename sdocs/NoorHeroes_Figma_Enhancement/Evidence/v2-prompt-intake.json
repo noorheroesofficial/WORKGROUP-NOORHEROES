@@ -1,0 +1,1898 @@
+[
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\001_Splash_Screen.md",
+    "bytes": 18368,
+    "hash": "d67da3bd1b5cb7931572cfee11dfd671ec2a00667ceae5df65a888641af0fa8d",
+    "name": "# Screen 001 \u2014 Splash Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\002_Language_Selection.md",
+    "bytes": 18754,
+    "hash": "68ff112a9ca76803bc53fec379215a2e97b1ddad75f8de911c461d2d0222982d",
+    "name": "# Screen 002 \u2014 Language Selection",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\003_Intro_Slide_1_Stories.md",
+    "bytes": 18269,
+    "hash": "246f7be789f1895db7772db395d3fb57eb0617a4c20422bbb183d4615860c9a8",
+    "name": "# Screen 003 \u2014 Intro Slide 1 (Stories)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\004_Intro_Slide_2_Quran_Arabic_Tajweed.md",
+    "bytes": 18323,
+    "hash": "69d6a2b4f967a317711060356ffc5cb2f6f09e5091003e44803a7fd7d524f7b9",
+    "name": "# Screen 004 \u2014 Intro Slide 2 (Quran/Arabic/Tajweed)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\005_Intro_Slide_3_Habits_Rewards.md",
+    "bytes": 18326,
+    "hash": "8132b41ab65a4c1cf0896c8212129836a903035ebc305e2f9c3761483b6b6d82",
+    "name": "# Screen 005 \u2014 Intro Slide 3 (Habits & Rewards)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\006_Intro_Slide_4_Parent_Control.md",
+    "bytes": 18343,
+    "hash": "185277acd85a6ae08e54950511e579f403812f863bd180984c32475b112a7525",
+    "name": "# Screen 006 \u2014 Intro Slide 4 (Parent Control)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\007_Login_phone_email_Google.md",
+    "bytes": 17561,
+    "hash": "5fbafb50723fac2406f189251f7938eb407d87c44669db34586a197e14f65bed",
+    "name": "# Screen 007 \u2014 Login (phone/email + Google)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\008_Registration_Consent.md",
+    "bytes": 20634,
+    "hash": "5c9e44494a48da3724296623143d0cd030c98449dc43b3d97a342991d17d38e0",
+    "name": "# Screen 008 \u2014 Registration + Consent",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\009_Consent_Detail_Full_Text_Modal.md",
+    "bytes": 17376,
+    "hash": "0caee4e600843905213866eeb52955fddd20756efe9d723b7eadafef4fd2e5ad",
+    "name": "# Screen 009 \u2014 Consent Detail / Full Text Modal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\010_OTP_Verification.md",
+    "bytes": 19038,
+    "hash": "9478d8bc64bd31773fb130ffc234eb023b2344c41045614dd92cf1feaaec2347",
+    "name": "# Screen 010 \u2014 OTP Verification",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\011_OTP_Fallback_Channel_Offer.md",
+    "bytes": 17375,
+    "hash": "13004cde3b3ce861cc9d8a520ddc84cded19bd898897b017b772a9fd2276fb1f",
+    "name": "# Screen 011 \u2014 OTP Fallback Channel Offer",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\012_Parent_PIN_Setup.md",
+    "bytes": 18844,
+    "hash": "9e214a38329c1e90a2c16bae070dee76437f28729e17c206f47be4fd4ed10a38",
+    "name": "# Screen 012 \u2014 Parent PIN Setup",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\013_Biometric_Enrollment_Prompt.md",
+    "bytes": 17339,
+    "hash": "fd4cd0a9030872c6343349c74011c6a2f3ea736328ff21ec47daaff3cb0c4812",
+    "name": "# Screen 013 \u2014 Biometric Enrollment Prompt",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\014_Add_Child.md",
+    "bytes": 19494,
+    "hash": "306becb74cb5bdf95c36a0cb8e4988338a43e71afdff3a53acf6bedabcfd2948",
+    "name": "# Screen 014 \u2014 Add Child",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\015_Avatar_Selection.md",
+    "bytes": 17237,
+    "hash": "b174ff1f22c3ee64be2000b3898142dca8ced6e4454fa87e7884f8f24cabd3e8",
+    "name": "# Screen 015 \u2014 Avatar Selection",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\016_Interest_Selection.md",
+    "bytes": 17178,
+    "hash": "e99f41b71301342de3e7316b1266c6d60efd15629267df59b3e9ed0b54b6dba6",
+    "name": "# Screen 016 \u2014 Interest Selection",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\017_Learning_Level_Setup.md",
+    "bytes": 17284,
+    "hash": "d131c08053467f26417165b0e1d54fc9516086e6e38ccef1aaa1f8fb5ce1a3f6",
+    "name": "# Screen 017 \u2014 Learning Level Setup",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\018_Add_Another_Child_Prompt.md",
+    "bytes": 17320,
+    "hash": "ca8eb972ee373aa2a8c1bc3dfeaac6cd0efe1d5404b889b5dba98fe329fd0dc5",
+    "name": "# Screen 018 \u2014 \"Add Another Child?\" Prompt",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\019_Learning_Level_Interests_Confirmation_family_level_summary.md",
+    "bytes": 17362,
+    "hash": "4d525761a29cb88eb745fd2507ce94b38f259e5a39e7eb1b97b31ff4367159a6",
+    "name": "# Screen 019 \u2014 Learning Level + Interests Confirmation (family-level summary)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\020_Screen_Time_Notification_Primer.md",
+    "bytes": 17343,
+    "hash": "ec83120cae758d17eb5c10a1d84706005e0fcbe10c9f5d9a5f1e51b29d31c6a6",
+    "name": "# Screen 020 \u2014 Screen Time & Notification Primer",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\021_Personalized_Path_Reveal.md",
+    "bytes": 17663,
+    "hash": "ddc0507e964ad99946ab15b6ba60c24e4d6f7f8b414b42484d7cb0966b85fc36",
+    "name": "# Screen 021 \u2014 Personalized Path Reveal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\022_Profile_Picker_Who_Is_Learning.md",
+    "bytes": 18765,
+    "hash": "bb760cb5f9b20ac39d791b69586c8a80cc3dab0cff941a366b2e55cead00e807",
+    "name": "# Screen 022 \u2014 Profile Picker (\"Who Is Learning\")",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\023_Child_Lock_Screen_PIN_Pattern_Biometric.md",
+    "bytes": 19145,
+    "hash": "e07c4fab17d62268139d74fa206266e7b9330db925f287b429db439da66d437c",
+    "name": "# Screen 023 \u2014 Child Lock Screen (PIN/Pattern/Biometric)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\024_Lock_Recovery_via_verified_Parent_Profile.md",
+    "bytes": 17361,
+    "hash": "d6d517ad6c465082cbb405d9b710a5f6e293cb39a6648ac66274e1f2c95f3d27",
+    "name": "# Screen 024 \u2014 Lock Recovery (via verified Parent Profile)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\025_First_Mission_Screen.md",
+    "bytes": 17198,
+    "hash": "c3d9daddf33fb174610fafd1a99d5db27ecd4dbdc39eb2c95bbf929a1734ffea",
+    "name": "# Screen 025 \u2014 First Mission Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\026_Forced_Update_Blocking_Screen.md",
+    "bytes": 17192,
+    "hash": "ee20b6ff4909a4fdfb3ee69a7ae9123bd3f545395e25aa216de3c9a61314ef09",
+    "name": "# Screen 026 \u2014 Forced Update Blocking Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\027_Recommended_Update_Banner_Dismissible.md",
+    "bytes": 17240,
+    "hash": "df18e3c094b328e9c2d8a6cc4b863a1f4620adcfd6bfc8222f19ea01e20b2d66",
+    "name": "# Screen 027 \u2014 Recommended Update Banner/Dismissible",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\028_Maintenance_Mode_Screen.md",
+    "bytes": 17223,
+    "hash": "e49b08b3198f58ef419f38ba4ed9e7a0ecb05ea8051a6c03d407c2393ce5f29e",
+    "name": "# Screen 028 \u2014 Maintenance Mode Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\029_No_Connectivity_Screen_pre_auth.md",
+    "bytes": 17217,
+    "hash": "90fed189a086cd24099ee1eecc7395a8a186a23c47e55d03891bb0ef2de2bf75",
+    "name": "# Screen 029 \u2014 No Connectivity Screen (pre-auth)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\030_Forgot_Access_Account_Recovery_Entry.md",
+    "bytes": 17323,
+    "hash": "4cc22dacfb5d9d69bf31a9df3c448a470bac76e1cad68a0ec70bbfea74127209",
+    "name": "# Screen 030 \u2014 Forgot Access / Account Recovery Entry",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\031_Terms_of_Service_full_document.md",
+    "bytes": 17206,
+    "hash": "28e071222f158bbf5f65fe19b5d5885d16fd643357194e7a74351f19f99d02dc",
+    "name": "# Screen 031 \u2014 Terms of Service (full document)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\032_Privacy_Policy_full_document.md",
+    "bytes": 17138,
+    "hash": "ed2f71065e6078ec156521d2b5c957bf6023546debfd655e507d2ef3e867e6f9",
+    "name": "# Screen 032 \u2014 Privacy Policy (full document)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\033_Child_Data_Processing_Consent_full_document.md",
+    "bytes": 17239,
+    "hash": "45082de9beb2ea92bed13cf592a53538ea445effe433af0effe848bf6712523b",
+    "name": "# Screen 033 \u2014 Child-Data Processing Consent (full document)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\034_Child_Home_composite_screen.md",
+    "bytes": 39665,
+    "hash": "832c149edfd6c662902fed890f97e94e25a8fca75f6140e4a115fc3096baefa5",
+    "name": "# Screen 034 \u2014 Child Home (composite screen)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\035_Full_Screen_Retry_no_cache_no_network.md",
+    "bytes": 23801,
+    "hash": "656e3d8e79561a421906750796e451bbf022c18cc1043914289f9348520b761c",
+    "name": "# Screen 035 \u2014 Full-Screen Retry (no cache, no network)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\036_Stories_Library_Landing.md",
+    "bytes": 30949,
+    "hash": "c0f7ad80ac82024e53ad981c3ac63cf2e8d8de8cf72fb6b70ad5a16e4d29e9bc",
+    "name": "# Screen 036 \u2014 Stories Library (Landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\037_Category_Filter_Panel.md",
+    "bytes": 24579,
+    "hash": "b7c43f94eb084017a9973b85d8d85b188b0e14109b66148e688f7cca290fbc9f",
+    "name": "# Screen 037 \u2014 Category Filter Panel",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\038_Story_Detail.md",
+    "bytes": 32741,
+    "hash": "5de02628b95f91adf8bcc4df6fbc5dd571c28ea54d46a8516b5cc8c0a91d1f9b",
+    "name": "# Screen 038 \u2014 Story Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\039_Story_Player_Video.md",
+    "bytes": 31336,
+    "hash": "df4706fd9b2a6f58baaffafd7997cbd4afddfe0e086569163ac78be1dfd3feab",
+    "name": "# Screen 039 \u2014 Story Player \u2014 Video",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\040_Story_Player_Audio.md",
+    "bytes": 29793,
+    "hash": "b1142d1e5f721cd8b0c149abd9bc3ee8a2df8579424b8b7cf8dfe3ad45a44f4e",
+    "name": "# Screen 040 \u2014 Story Player \u2014 Audio",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\041_Story_Player_Text.md",
+    "bytes": 29645,
+    "hash": "51880dcc47cabec8785fb24400350bf8808f89283c2af432753833003e0bb507",
+    "name": "# Screen 041 \u2014 Story Player \u2014 Text",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\042_Interactive_Choice_Overlay.md",
+    "bytes": 25311,
+    "hash": "7c382db57eff8076f35428c7113d6fceb47a93ab9d6d37866e92657b6431a496",
+    "name": "# Screen 042 \u2014 Interactive Choice Overlay",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\043_Pause_and_Quiz_Moment_Overlay.md",
+    "bytes": 25743,
+    "hash": "83fb2508824008a476f3b0019f8aff9bc46905d8807cd30d27c02b221ea971d6",
+    "name": "# Screen 043 \u2014 Pause-and-Quiz Moment Overlay",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\044_Media_Unavailable_Safe_Stop_Screen.md",
+    "bytes": 24643,
+    "hash": "67263fb9bbeadc2f8eba83ea47727d06266eb47524913e0dc38fa3e7a819fde0",
+    "name": "# Screen 044 \u2014 Media Unavailable / Safe-Stop Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\045_Completion_Reward_Reveal_Screen.md",
+    "bytes": 25847,
+    "hash": "7677f05713dc96d0b5302d10f150725cef4871051a161dc3248896bcc40b6d59",
+    "name": "# Screen 045 \u2014 Completion / Reward Reveal Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\046_Moral_Summary_Card_Noor_says.md",
+    "bytes": 26471,
+    "hash": "edf035840b3fcbc7170b9bdeefca2861f6da0c127f60b20f5ef927a7bdad99c7",
+    "name": "# Screen 046 \u2014 Moral Summary Card (\"Noor says...\")",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\047_Post_Story_Quiz.md",
+    "bytes": 26725,
+    "hash": "046295723b8e27d99f680f7126c07cc212b2c331874e13086824b4a2fe9bd051",
+    "name": "# Screen 047 \u2014 Post-Story Quiz",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\048_Achievement_Badge_Unlock_Modal.md",
+    "bytes": 25719,
+    "hash": "54df52a5683b75eb9f2d31d462a470463a58b6dcd3dacac165101a1ab0cbab5a",
+    "name": "# Screen 048 \u2014 Achievement/Badge Unlock Modal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\049_Approved_Share_Card_Preview.md",
+    "bytes": 26270,
+    "hash": "eeb0bd7403be771b9ef31e6bfe123520d9d6d0110a1cd88ed83c702f53fb728b",
+    "name": "# Screen 049 \u2014 Approved Share Card Preview",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\050_Caption_Audio_Track_Quality_Settings_Sheet.md",
+    "bytes": 24808,
+    "hash": "b312d9b2acdba119dbb03d331e363fc6ab524d6069968c434e1473aaad8bb3ad",
+    "name": "# Screen 050 \u2014 Caption/Audio-Track/Quality Settings Sheet",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\051_Audio_Bedtime_Player_main_screen.md",
+    "bytes": 32282,
+    "hash": "c65ee8b7ca36db45b820b472329cac6489ed41ed9f4ce89f9ae64b9cb8c50e18",
+    "name": "# Screen 051 \u2014 Audio Bedtime Player (main screen)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\052_Episode_List_Sheet_for_multi_part_audio_series.md",
+    "bytes": 25482,
+    "hash": "d0755027c9d413de086239ba67991e547caee7ae1eb2772aee45273fc94e222a",
+    "name": "# Screen 052 \u2014 Episode List Sheet (for multi-part audio series)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\053_Sleep_Timer_Selector.md",
+    "bytes": 27210,
+    "hash": "3366c5ba4c29272814c5e381cc02bd6c81dd9b1fb737433b73dce0b7f847f891",
+    "name": "# Screen 053 \u2014 Sleep Timer Selector",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\054_Playback_Speed_Selector.md",
+    "bytes": 22793,
+    "hash": "f0f54e0a0bf76e158edecb6a3ce253b169751b3ea1d428407775f19505174eea",
+    "name": "# Screen 054 \u2014 Playback Speed Selector",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\055_Goodnight_Idle_State.md",
+    "bytes": 24683,
+    "hash": "8ae7dc64e73adf6b8d14526841d9de3a2977dafa2745b3070efc84f212f4f46c",
+    "name": "# Screen 055 \u2014 Goodnight Idle State",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\056_Dua_Calm_Reflection_Ending_Card.md",
+    "bytes": 25593,
+    "hash": "1e685a5ea7fe49d263bef6c98a27b53000a8e9d2ae86886f5e6e18aa4d6b7956",
+    "name": "# Screen 056 \u2014 Dua / Calm-Reflection Ending Card",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md",
+    "bytes": 26602,
+    "hash": "e63c3e75aebb6318020a602a9ebab09ab8d9fc4e16ffa61bebdc9d146c749db8",
+    "name": "# Screen 057 \u2014 Media Unavailable / Safe-Stop (Bedtime-styled variant)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md",
+    "bytes": 32760,
+    "hash": "92c3ca2b647d910fccd576dc35017b61e2d553fb487fdd06ec247b13c8ecd472",
+    "name": "# Screen 058 \u2014 Learn Tab Landing / Quran Learning Home (Skill Tree Map)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\059_Placement_Check_first_time.md",
+    "bytes": 27513,
+    "hash": "19da50b7ec59d8f07c8ff54ed3477c231a9630f0e97dd92aaf35026fadea1778",
+    "name": "# Screen 059 \u2014 Placement Check (first-time)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\060_Mode_Selector_Sheet.md",
+    "bytes": 25528,
+    "hash": "f6c6738f19ba644c7b5573e7d1fb67cb5768fb7f73b1da0ebb23ebb4a3213589",
+    "name": "# Screen 060 \u2014 Mode Selector Sheet",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\061_Surah_Learning.md",
+    "bytes": 30761,
+    "hash": "9cdd8661b860dff01797cd01b7bb9a0b3f4f51368ed02fb180da820d2d7c81e4",
+    "name": "# Screen 061 \u2014 Surah Learning",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\062_Recitation_Recorder_Overlay.md",
+    "bytes": 27761,
+    "hash": "16b9957e33b4f27d068035222412f6a8400567abdfda681f73be57ea71ecfaf6",
+    "name": "# Screen 062 \u2014 Recitation Recorder Overlay",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\063_AI_Pronunciation_Feedback_Screen.md",
+    "bytes": 29151,
+    "hash": "52121d2aac95bd80abca26dcad814c1f08f893281c4ff212447b49d55db9c73c",
+    "name": "# Screen 063 \u2014 AI Pronunciation Feedback Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\064_Listen_Only_Self_Assessment_Screen.md",
+    "bytes": 27282,
+    "hash": "c00fe0736353524eca02387638a6505be10ab5e5618263a5b6b5523a081ed4c3",
+    "name": "# Screen 064 \u2014 Listen-Only Self-Assessment Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\065_Arabic_Letters_Hear_Match.md",
+    "bytes": 29374,
+    "hash": "40eb9495295352bf98303eb9304ec011296bcbd5342b83fe841a7914e17ac1a5",
+    "name": "# Screen 065 \u2014 Arabic Letters \u2014 Hear & Match",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\066_Arabic_Letters_Tracing.md",
+    "bytes": 28671,
+    "hash": "df3bb496d5d6896954a6d857f1c77b1aff8586f0b4efaa228fa014de532d2d15",
+    "name": "# Screen 066 \u2014 Arabic Letters \u2014 Tracing",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\067_Arabic_Letters_Word_Context.md",
+    "bytes": 28986,
+    "hash": "4eeecc81120b19080523a16d3c1d061fe01f46c822412b72bbf332b8905e71ef",
+    "name": "# Screen 067 \u2014 Arabic Letters \u2014 Word Context",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\068_Arabic_Letters_Word_Building_sound_tiles.md",
+    "bytes": 29360,
+    "hash": "d2d8974603fa381b03bae22f662b61b4752802700cae4da79dc3566ae440d1e1",
+    "name": "# Screen 068 \u2014 Arabic Letters \u2014 Word-Building (sound tiles)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\069_Tajweed_Rule_Introduction.md",
+    "bytes": 26439,
+    "hash": "90adc6fb1778a1fdb858eb26d041679caf78f026fb86b8b3b0535d7559990f92",
+    "name": "# Screen 069 \u2014 Tajweed \u2014 Rule Introduction",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\070_Tajweed_Listen_normal_slow.md",
+    "bytes": 27928,
+    "hash": "035e0694e2648282a1fd32b81c6358e9fa6c5fce51a714f152c16637040e791b",
+    "name": "# Screen 070 \u2014 Tajweed \u2014 Listen (normal/slow)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\071_Tajweed_Rule_Identification_Exercise.md",
+    "bytes": 30070,
+    "hash": "db47e08d915a6ce0ad27085ab61b93902b3da95db4658065856f7245d40271ba",
+    "name": "# Screen 071 \u2014 Tajweed \u2014 Rule Identification Exercise",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\072_Tajweed_Assessment.md",
+    "bytes": 28415,
+    "hash": "f26d1c7c9c3a9fffc20d93bba9730634f886508de5b5fff991b0d08c3f2f7907",
+    "name": "# Screen 072 \u2014 Tajweed \u2014 Assessment",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\073_Quran_Game_Ayah_Ordering.md",
+    "bytes": 29726,
+    "hash": "0a912eee515257d630641677e73f76af7cb7d2a4ad593c1e440cedb3df731e03",
+    "name": "# Screen 073 \u2014 Quran Game \u2014 Ayah Ordering",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\074_Quran_Game_Listen_Select_Matching_Ayah.md",
+    "bytes": 30285,
+    "hash": "dd5b9dab82a241d358efd3613ffc7455848b7859109800cacaa6366c4647581d",
+    "name": "# Screen 074 \u2014 Quran Game \u2014 Listen & Select Matching Ayah",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\075_Quran_Game_Missing_Word.md",
+    "bytes": 29259,
+    "hash": "4365229693eac7806f153e5ddf70dd285438318dc9be5860b99e69699e9a193f",
+    "name": "# Screen 075 \u2014 Quran Game \u2014 Missing Word",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\076_Quran_Game_Surah_Theme_Matching.md",
+    "bytes": 29262,
+    "hash": "dc6809eb77a101f22835ed9bf42e8d60b7b552e99c1bd0b8592a9b6b8bdd9caa",
+    "name": "# Screen 076 \u2014 Quran Game \u2014 Surah Theme Matching",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\077_Quran_Game_Recitation_Echo.md",
+    "bytes": 31032,
+    "hash": "c983bdd0652c67f72548fc6345c6fc22374a0e29e76735ff88afb436860d41c9",
+    "name": "# Screen 077 \u2014 Quran Game \u2014 Recitation Echo",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\078_Quran_Game_Progressive_Memorization_Reveal.md",
+    "bytes": 29163,
+    "hash": "0b57dfb5378a51a85cc58e4dec1acca909fef18c8967aa59d86f112a70cb4a66",
+    "name": "# Screen 078 \u2014 Quran Game \u2014 Progressive Memorization Reveal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\079_Hint_Overlay_progressive_hint.md",
+    "bytes": 25559,
+    "hash": "c616cfc7f1f6415aa72423659decab631f004ed38acd1bc3f25612c5940ac99f",
+    "name": "# Screen 079 \u2014 Hint Overlay (progressive hint)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\080_Mastery_Badge_Node_Unlock_Celebration.md",
+    "bytes": 27535,
+    "hash": "6e1408932523c2eb077817663ef081bb262279b955c3745052863afc05654fb7",
+    "name": "# Screen 080 \u2014 Mastery Badge/Node-Unlock Celebration",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\081_Microphone_Permission_Rationale_One_Time_Explainer.md",
+    "bytes": 26754,
+    "hash": "4d9c277f80ec5bd85cbe54f0c721f56bb66319942e062703bbdf7406d6e8234e",
+    "name": "# Screen 081 \u2014 Microphone Permission Rationale / One-Time Explainer",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\082_Arabic_Letters_Contextual_Form_Matching_Isolated_Initial_Medial_Final.md",
+    "bytes": 17927,
+    "hash": "8f2b92d3413a82d6c13a2e7c362256b8520a9969d3715095be29676c98949da5",
+    "name": "# Screen 082 \u2014 Arabic Letters \u2014 Contextual Form Matching (Isolated / Initial / Medial / Final)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\083_Arabic_Letters_Harakah_Sound_Pairing.md",
+    "bytes": 18080,
+    "hash": "e95f1c410a0481f4a2def2c6acd5b20cf7391cbfea264feb00558c95cd2e95ad",
+    "name": "# Screen 083 \u2014 Arabic Letters \u2014 Harakah Sound Pairing",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\084_Dua_Learning_Landing_Category_List.md",
+    "bytes": 29527,
+    "hash": "ab7630a6257213886cd68fd649a5f9146da0b203888ea8b3fb28dc96fa5de0b5",
+    "name": "# Screen 084 \u2014 Dua Learning Landing (Category List)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\085_Category_Dua_List.md",
+    "bytes": 26961,
+    "hash": "91ad7c3d4e1cce48fab06cb14cd04f3a4b46b7ba226cc9fb6e76f157ed00463e",
+    "name": "# Screen 085 \u2014 Category Dua List",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md",
+    "bytes": 32770,
+    "hash": "86f88b42843fded6d8a55516a2f7fefcd62cb76dd95db7451f8764f5d45ff5f5",
+    "name": "# Screen 086 \u2014 Dua Card Detail (Arabic/Transliteration/Translation/Audio)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\087_Recall_Quiz_Question_Screen.md",
+    "bytes": 26077,
+    "hash": "77251ec5b0328855f400b05079687a291284e8f0e584ce756d1b7eae9254fcad",
+    "name": "# Screen 087 \u2014 Recall Quiz Question Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\088_Recall_Quiz_Result_Pass_Screen.md",
+    "bytes": 25660,
+    "hash": "5fd3ef5b70a3ebfc2e119eb37569d8c13d953dd57202491132d3cfcabfef49a3",
+    "name": "# Screen 088 \u2014 Recall Quiz Result / Pass Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\089_Dua_Master_Badge_Progress_Celebration_milestone.md",
+    "bytes": 27480,
+    "hash": "6867be3706fa497acffcd537564fb1e21fb9beaba3f14a8fd0943e108edb4eda",
+    "name": "# Screen 089 \u2014 Dua Master Badge Progress Celebration (milestone)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\090_Habit_Tracker_Reminder_Suggestion_Prompt.md",
+    "bytes": 23839,
+    "hash": "b08f8ce2e6c6d865066d3ae1aca18c1ee01f22741bf98d27ea9c6a00a5dbae20",
+    "name": "# Screen 090 \u2014 Habit Tracker Reminder Suggestion Prompt",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\091_Habit_Builder_Today_s_Checklist.md",
+    "bytes": 34481,
+    "hash": "6b7269fe93cdb8ef932fbdca85d5bfcd98e332a5797e3a0f7f1d18cb61406a90",
+    "name": "# Screen 091 \u2014 Habit Builder \u2014 Today's Checklist",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\092_Dhikr_Counter_Screen.md",
+    "bytes": 27884,
+    "hash": "034952b2808b5cdeade0d641f839cb13fe0133d74a0d691bfef31fe1cf5fb31d",
+    "name": "# Screen 092 \u2014 Dhikr Counter Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\093_Good_Deed_Logging_Category_Selector.md",
+    "bytes": 26661,
+    "hash": "6be46395f1d191a80224f0e72464d3b5d2c4ef6cc2f18716eb0b9b6190c76122",
+    "name": "# Screen 093 \u2014 Good Deed Logging \u2014 Category Selector",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\094_Good_Deed_Optional_Note_Entry.md",
+    "bytes": 26234,
+    "hash": "47344956245d3a2da84386e8ebd5ad7666fbb00246b38c1a86d7c5621280b333",
+    "name": "# Screen 094 \u2014 Good Deed Optional Note Entry",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\095_Streak_Calendar_History_View.md",
+    "bytes": 27026,
+    "hash": "b49a9dbcf893d4e29414b382dee0c5cc6a2fcdcbce1d1ba8bdb7abcfd2efd72d",
+    "name": "# Screen 095 \u2014 Streak Calendar / History View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\096_Recovery_Mission_Screen.md",
+    "bytes": 25282,
+    "hash": "93b2fe0b664b9395e127cafe427d82290160e183c606f00be8c0b96c6b48bdff",
+    "name": "# Screen 096 \u2014 Recovery Mission Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md",
+    "bytes": 28860,
+    "hash": "66125e82c1912b556a2d4f7de2059828ebd9795d60265608245aa99099e68ad2",
+    "name": "# Screen 097 \u2014 Streak State Detail \u2014 AtRisk / Protected / Broken / Recovery",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\098_Mercy_Toned_Smaller_Target_Suggestion_Prompt.md",
+    "bytes": 26208,
+    "hash": "ce9cd1fc9b01087b2acc7f327718854648be2fe3025e37a59b6413d99af35944",
+    "name": "# Screen 098 \u2014 Mercy-Toned Smaller-Target Suggestion Prompt",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\099_Noor_Garden_Personal_View.md",
+    "bytes": 28841,
+    "hash": "6b65f0fa4062153f796b93364ae560486891e09bfc46e8bf3f7e30ab58a520db",
+    "name": "# Screen 099 \u2014 Noor Garden \u2014 Personal View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\100_Noor_Garden_Family_View.md",
+    "bytes": 28682,
+    "hash": "fd5ed2d06808f9319dc57dd2886a8f14c467f16163926557a2213398505ae8c7",
+    "name": "# Screen 100 \u2014 Noor Garden \u2014 Family View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\101_Family_Streak_Milestone_Celebration.md",
+    "bytes": 28401,
+    "hash": "345485295239241953ab4b9a33dff5f4f4065c59a8ba827e87a2516fadfddd3c",
+    "name": "# Screen 101 \u2014 Family Streak Milestone Celebration",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\102_Quiz_Question_Screen_Multiple_Choice.md",
+    "bytes": 30667,
+    "hash": "5f7dd9382b42667893f7ccb1a1ff4bba3f95042fa7e811ff38492bcd153c5f16",
+    "name": "# Screen 102 \u2014 Quiz Question Screen \u2014 Multiple Choice",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\103_Quiz_Question_Screen_Sequence_Ordering.md",
+    "bytes": 30666,
+    "hash": "194b44e1827b75096422139f38eca2fe097d2cc9694101fe66fe4b60cdce24f7",
+    "name": "# Screen 103 \u2014 Quiz Question Screen \u2014 Sequence/Ordering",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\104_Quiz_Question_Screen_True_False.md",
+    "bytes": 29194,
+    "hash": "2d1a6d69ee6446447066a2b354b4869e592d4620c8b6671cbb870e27fa875e0f",
+    "name": "# Screen 104 \u2014 Quiz Question Screen \u2014 True/False",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\105_Quiz_Question_Screen_Image_Match.md",
+    "bytes": 30724,
+    "hash": "bb5893cd2c0c14a391d05ac4e96522a8208c307cf61095fa28b600623da6fcea",
+    "name": "# Screen 105 \u2014 Quiz Question Screen \u2014 Image Match",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\106_Quiz_Question_Screen_Audio_Match.md",
+    "bytes": 31435,
+    "hash": "e08d0cbe74ab401906c31d3598f8732cad48b57acbd711916d62669ed3ce653d",
+    "name": "# Screen 106 \u2014 Quiz Question Screen \u2014 Audio Match",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\107_Per_Answer_Explanation_Overlay.md",
+    "bytes": 26100,
+    "hash": "2b8d46475d8f4fa18ab39d998ee13013ab3dee517e9520c6a68c7deae57ed5a8",
+    "name": "# Screen 107 \u2014 Per-Answer Explanation Overlay",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\108_Retry_Set_Entry_Screen.md",
+    "bytes": 24051,
+    "hash": "e66b6c8d5e3e407d6ab45ed72c165903c65796a85571ce71265ee0c425b9eefe",
+    "name": "# Screen 108 \u2014 Retry Set Entry Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\109_Quiz_Completion_Effort_XP_Reveal.md",
+    "bytes": 28338,
+    "hash": "3a5dc7472f23a20d8bac71ab5bb91aefb8c9f44904f01f6f33f9a164bb045622",
+    "name": "# Screen 109 \u2014 Quiz Completion / Effort XP Reveal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\110_Quiz_Completion_Result_Screen_shared_generic.md",
+    "bytes": 27184,
+    "hash": "5f11f30af05c5edf107947fd806a59b113de46c649a1f5253e1f46a38c2b5c14",
+    "name": "# Screen 110 \u2014 Quiz Completion Result Screen (shared, generic)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\111_Review_Mistakes_Screen.md",
+    "bytes": 24736,
+    "hash": "c602b7581bbeaade7565bc63b8e003305222d4bdcdf9954c85b0ec588f5b6d3d",
+    "name": "# Screen 111 \u2014 Review Mistakes Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\112_Offline_Completion_Saved_Results_Deferred.md",
+    "bytes": 16093,
+    "hash": "52a21093d83c9a645edbb46cf169009b4069ad67950bd5e097a90204a83ea9ae",
+    "name": "# Screen 112 \u2014 Offline Completion \u2014 Saved / Results Deferred",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\113_Games_Hub_tile_grid_landing.md",
+    "bytes": 29855,
+    "hash": "38f995872d75d7c701615b543032fd7759f4dd6cc0e07858b6a10af7e0c6d3a3",
+    "name": "# Screen 113 \u2014 Games Hub (tile grid landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md",
+    "bytes": 26261,
+    "hash": "dfcc21efe7df3b403ee05a410f02f5d55b4d86e254c5fea29fb6363ef262e2eb",
+    "name": "# Screen 114 \u2014 Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md",
+    "bytes": 27485,
+    "hash": "17e7f7f581ac60c5faedac1a5e2f63d6478857f33eb743c8c6cd2235d7926274",
+    "name": "# Screen 115 \u2014 Session Completion Screen (generic wrapper, reuses A.9's \"strengths + next step\" framing where applicable)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\116_Rewards_Hub_Wallet_landing.md",
+    "bytes": 33889,
+    "hash": "99b2397d26be39f725ff822340619d211de0ad8fb0a4fc15ea6aa76c180e5c85",
+    "name": "# Screen 116 \u2014 Rewards Hub / Wallet (landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\117_Transaction_Detail_single_ledger_entry.md",
+    "bytes": 25705,
+    "hash": "4d4a1af506682ecb01424d16524270ef998280110e761bcd55215d41e37edcc2",
+    "name": "# Screen 117 \u2014 Transaction Detail (single ledger entry)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\118_Achievements_Screen_badge_grid_cumulative_level_progress.md",
+    "bytes": 29353,
+    "hash": "cb24c61b8f78f10918e3601dd88f4562ca47a2f8cd9aca20a830560d2176fff9",
+    "name": "# Screen 118 \u2014 Achievements Screen (badge grid + cumulative level progress)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\119_Badge_Detail_Criteria_View.md",
+    "bytes": 25966,
+    "hash": "5f4d6f0dbd071e3b359bad493f87f7b06f2b04eb15f454189b2510ea240083be",
+    "name": "# Screen 119 \u2014 Badge Detail / Criteria View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\120_Achievement_Level_Detail.md",
+    "bytes": 26085,
+    "hash": "9db315f534646964eefaad044136b81b84fc3a27d6d7811639a2ae5c6a8022a8",
+    "name": "# Screen 120 \u2014 Achievement Level Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\121_Shareable_Achievement_Card_Preview.md",
+    "bytes": 26906,
+    "hash": "a7a313876e130c47805592d60fca0d1b8ba50bbc2e6ba9afca32e9c1d6ab290b",
+    "name": "# Screen 121 \u2014 Shareable Achievement Card Preview",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\122_Weekly_Challenge_Detail.md",
+    "bytes": 26749,
+    "hash": "c125ed0f94589fda63910b849799af59d174e97d7b093c69df0227c7d9f0f50d",
+    "name": "# Screen 122 \u2014 Weekly Challenge Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\123_Seasonal_Event_Screen.md",
+    "bytes": 25424,
+    "hash": "747d50232d0d14a0da8eb5a3a39d06c727caabe587ec9a4fcb4aa6ca6216341a",
+    "name": "# Screen 123 \u2014 Seasonal Event Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\124_Archived_Challenge_View.md",
+    "bytes": 25669,
+    "hash": "4a66897b7b769df7100aa131c33b6265350c026293e0f7109ea1054a340889d8",
+    "name": "# Screen 124 \u2014 Archived Challenge View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\125_Achievement_Store_catalog_browse.md",
+    "bytes": 29489,
+    "hash": "46cbb60dfa289d4e17f8c03b501b170b51e4039f4b79a5648188f7b479bd9d78",
+    "name": "# Screen 125 \u2014 Achievement Store (catalog browse)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\126_Achievement_Store_Item_Detail.md",
+    "bytes": 29120,
+    "hash": "38201c9b4c26691b02c4aa110770daaf6b1fcec13caebe21c959b5941e9dd705",
+    "name": "# Screen 126 \u2014 Achievement Store \u2014 Item Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md",
+    "bytes": 29341,
+    "hash": "bb2c66633dad08259e098f151a20eae968b17ed1dc38a50cfeae95c0b0d38ae1",
+    "name": "# Screen 127 \u2014 Purchase Confirmation / Insufficient-Points Shortfall Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\128_Family_Board_private_multi_child_families.md",
+    "bytes": 28571,
+    "hash": "304ca6d2ccbab9bde783e115d4d6b3d7f5c78c00809e076a76c51d6ea19095fa",
+    "name": "# Screen 128 \u2014 Family Board (private, multi-child families)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\129_Family_Goal_Detail.md",
+    "bytes": 25628,
+    "hash": "54868b8896e721432d5acbf93f39bc57fc5f1527ce7711d29b598d45e73d545f",
+    "name": "# Screen 129 \u2014 Family Goal Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\130_Family_Achievement_Unlock_Celebration.md",
+    "bytes": 28253,
+    "hash": "1b340d8bcf31093bbcc0511eaed9c3620e1703c6f48653d6e08b7b78a0a3bd57",
+    "name": "# Screen 130 \u2014 Family Achievement Unlock Celebration",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\131_Badge_Unlock_Modal.md",
+    "bytes": 26017,
+    "hash": "727d7f3961af78f1304844ab470c1fec4db2b1b4295c45342773d99c4ac50aaa",
+    "name": "# Screen 131 \u2014 Badge Unlock Modal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md",
+    "bytes": 30186,
+    "hash": "6bc07b850403205f0000a3238b208d91500a4cfa675a82ac0d92a7199cb11b14",
+    "name": "# Screen 132 \u2014 Avatar Screen (3D preview + owned grid + locked teasers)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\133_Item_Detail_owned_Equip_Unequip.md",
+    "bytes": 25930,
+    "hash": "ea9a062825370479d97f7e481d7c89eb10edea2614abbf5026739730dfb6cd6c",
+    "name": "# Screen 133 \u2014 Item Detail (owned) \u2014 Equip/Unequip",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\134_Locked_Item_Detail_Unlock_Criteria_View.md",
+    "bytes": 28482,
+    "hash": "cc8ae350f83ed42dc2cb69a1a60daed01d3a60b94f111d75be3e44551049f27c",
+    "name": "# Screen 134 \u2014 Locked Item Detail \u2014 Unlock Criteria View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\135_Character_Evolution_Milestone_Reveal.md",
+    "bytes": 24364,
+    "hash": "495676b19abb589940dd026c9ceb38bf6a4b71d6c7be5aea5f95939b51dd5724",
+    "name": "# Screen 135 \u2014 Character Evolution Milestone Reveal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\136_Search.md",
+    "bytes": 19904,
+    "hash": "f71c98f75f8ec3ba0bb2a7c40a4894d3b9bfeca698ac856475646329f470aade",
+    "name": "# Screen 136 \u2014 Search",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\137_Voice_Search_Listening.md",
+    "bytes": 16350,
+    "hash": "78f98419e9f7304ab754108f852a45c4072c089a6b4693c1654e9095317430dd",
+    "name": "# Screen 137 \u2014 Voice Search \u2014 Listening",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\138_Voice_Search_Processing.md",
+    "bytes": 14929,
+    "hash": "140fcf868263ca5bd2eba27dd4d7d1c7a226d4a8652741605a7064ea666a77ab",
+    "name": "# Screen 138 \u2014 Voice Search \u2014 Processing",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\139_Voice_Search_Clarification.md",
+    "bytes": 14972,
+    "hash": "e5e57a44acef6010d8dbad282d41e0a9cc57bdc1f77124f12b2915b04c0b03f7",
+    "name": "# Screen 139 \u2014 Voice Search \u2014 Clarification",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\140_Search_Results.md",
+    "bytes": 20104,
+    "hash": "ca2140525ffb2916afa0d10f8d401de95b3415ebd4a978ad47fffb631e7d4078",
+    "name": "# Screen 140 \u2014 Search Results",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\141_Search_Empty_State.md",
+    "bytes": 19428,
+    "hash": "e1ed9182e4b8825ebdd68651f1359e2cc1902306e9a07c9d168528d8fb9acff9",
+    "name": "# Screen 141 \u2014 Search Empty State",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\142_Parent_Area_Search.md",
+    "bytes": 15179,
+    "hash": "fb67a2738b6db1a43bc5de108c0cf93bfee0934e4eaf2193d51f0200783cb958",
+    "name": "# Screen 142 \u2014 Parent Area Search",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\143_Favorites.md",
+    "bytes": 22076,
+    "hash": "3c3e5459941f42e1bacaea8269ab34959af807fa374f1f8c18959574024b76d8",
+    "name": "# Screen 143 \u2014 Favorites",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\144_Downloads.md",
+    "bytes": 23090,
+    "hash": "9e8790bf8640b1d5bd9f2e15507d2b7fe5fff7a5f313ff9fba318c7d46385636",
+    "name": "# Screen 144 \u2014 Downloads",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\145_Clear_All_Downloads_Confirmation.md",
+    "bytes": 15127,
+    "hash": "d7bbb4a778bcdff650e7b86aea55fc33274203a5895802c87aeb4802127fed48",
+    "name": "# Screen 145 \u2014 Clear All Downloads Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\146_Parent_Download_Cap_and_Policy.md",
+    "bytes": 15242,
+    "hash": "ebfef39585690501571f11cb910d5e04d76e81856b1fcd57216becc0bafb1a71",
+    "name": "# Screen 146 \u2014 Parent Download Cap and Policy",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\147_Child_Profile.md",
+    "bytes": 20658,
+    "hash": "03a4a4d673d3e2adc602ae2eafdebbb540077b0e2e226bd5031df190662c49e4",
+    "name": "# Screen 147 \u2014 Child Profile",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\148_Choose_Language.md",
+    "bytes": 15393,
+    "hash": "b775702695925ccd27636ed257870512c64ac3ccf564bd4b7a20571d30d585b0",
+    "name": "# Screen 148 \u2014 Choose Language",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\149_Switch_Profile_Parent_Permission.md",
+    "bytes": 15117,
+    "hash": "450e01a11951dae219fb4df614a02e0975b6dbfa5e705cd4cf219c5dff2f1c07",
+    "name": "# Screen 149 \u2014 Switch Profile Parent Permission",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\150_Deep_Link_Resolver.md",
+    "bytes": 16141,
+    "hash": "e31fb2cba35591e3748575a5c4b076b10daee079f020bc1becc44c25f4a0735f",
+    "name": "# Screen 150 \u2014 Deep Link Resolver",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\151_Islamic_Fact_Detail.md",
+    "bytes": 21152,
+    "hash": "bc6bfcfe94b92b11a129265c4b1d28c867c71c6d2619c6eaff4bc9fd9832f9bf",
+    "name": "# Screen 151 \u2014 Islamic Fact Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\152_Islamic_Facts_Browse.md",
+    "bytes": 17795,
+    "hash": "bca385ce7dbe70ccda51fa1cf4a999f2d3f2fd76ac95182145e6b6bd77d8a2c0",
+    "name": "# Screen 152 \u2014 Islamic Facts Browse",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\153_Parent_Profile_PIN_Biometric_Gate.md",
+    "bytes": 21551,
+    "hash": "2c05be351f6da290d87175bcff80cf9b8312e5bb0b6cf943d43a71a8d2bf8a94",
+    "name": "# Screen 153 \u2014 Parent Profile PIN/Biometric Gate",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\154_Restriction_Screen.md",
+    "bytes": 19757,
+    "hash": "3b887b1bbbdfea843efc0f0756f4049991e7d97f08ae7794f2de128c01859cdc",
+    "name": "# Screen 154 \u2014 Restriction Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\155_Calm_Locked_State_screen_time_limit_reached.md",
+    "bytes": 20051,
+    "hash": "dc2102a7ae7243e0a9acd5bd238d3bca2c1d5e62542ef592b8e3528e0fa9d3fc",
+    "name": "# Screen 155 \u2014 Calm Locked State (screen-time limit reached)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\156_Bedtime_Block_Screen.md",
+    "bytes": 19973,
+    "hash": "bc12ca8f4852f8f9fbb91d647c3aa8eec10d3e07953590bad1182b4901ec6b72",
+    "name": "# Screen 156 \u2014 Bedtime Block Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\157_Parent_Dashboard_landing.md",
+    "bytes": 28672,
+    "hash": "f530ab4ba4c5191743efe0e9779948d02e2586e88e825c35ecbf3c809705a46a",
+    "name": "# Screen 157 \u2014 Parent Dashboard (landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\158_Child_Management_List.md",
+    "bytes": 24829,
+    "hash": "9162b17729e545a3e7a61bd184cf7737c011adb26f4f6742910272cd275b5697",
+    "name": "# Screen 158 \u2014 Child Management (List)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\159_Add_Child_Parent_Management.md",
+    "bytes": 22911,
+    "hash": "318aa459a16feddfda38fbca5318ffcb51f66392a8fa860c5713f5aa48cb22f2",
+    "name": "# Screen 159 \u2014 Add Child (Parent Management)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\160_Edit_Child_Parent_Management.md",
+    "bytes": 21088,
+    "hash": "2318af9e5ac8229e5545e5dd32fb3df0c24aba08e73ca9251cbd1b5331fb378c",
+    "name": "# Screen 160 \u2014 Edit Child (Parent Management)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\161_Disable_Confirmation_step_up_gated.md",
+    "bytes": 20653,
+    "hash": "ffbcbcb8de935e807ce325d4ed5496b668d93e8e9ed09f9e0354a109607e883d",
+    "name": "# Screen 161 \u2014 Disable Confirmation (step-up gated)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\162_Re_Enable_Confirmation_step_up_gated.md",
+    "bytes": 20667,
+    "hash": "aef4d81cbc1053be69c8b5eacd414d20a8e4e2f469d28ba2a47e80dbb627b631",
+    "name": "# Screen 162 \u2014 Re-Enable Confirmation (step-up gated)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md",
+    "bytes": 22272,
+    "hash": "02fcf62bfd3551b3cefc66cf2f0bb53ae3702eb3f5421649199f46f48d753f25",
+    "name": "# Screen 163 \u2014 Permanent Deletion \u2014 Step 2: Irreversible-Data Warning",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\164_Trial_Cancellation_Forced_Selection_Screen.md",
+    "bytes": 20844,
+    "hash": "00fc9342cc573876d4c8397e88411b4fbcbc7bf8aa8e26e0f87927a8309e94be",
+    "name": "# Screen 164 \u2014 Trial-Cancellation Forced-Selection Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\165_Per_Child_Report_full_view.md",
+    "bytes": 30643,
+    "hash": "5d11e2aec1df98dd3b9781280eb4d02e3b9e57a6bee0e7bf0a764c947336c00f",
+    "name": "# Screen 165 \u2014 Per-Child Report (full view)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\166_Skill_Detail_Drill_down.md",
+    "bytes": 21815,
+    "hash": "be129dab881a69552e0d1576806fe31554a95b8510de19fbf156781763bae1c7",
+    "name": "# Screen 166 \u2014 Skill Detail Drill-down",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\167_AI_Interaction_History_full_screen.md",
+    "bytes": 25030,
+    "hash": "aab2c504063799550d5bcd553d06a8624754f6a48de9afd30b83c9e4635577e3",
+    "name": "# Screen 167 \u2014 AI Interaction History (full screen)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\168_Safety_Report_on_demand_full_screen.md",
+    "bytes": 22124,
+    "hash": "3dba6adf10e6f0d5e522e46d53e02cca14fa706c10cfaf4e0e0048837de0de32",
+    "name": "# Screen 168 \u2014 Safety Report (on-demand, full screen)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\169_Monthly_Family_Report_cross_child_aggregate_only.md",
+    "bytes": 22044,
+    "hash": "e7c3eee733f0170838668846811e0cd3fa258437aeb3b2f4330b561b1e4293e6",
+    "name": "# Screen 169 \u2014 Monthly Family Report (cross-child, aggregate-only)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\170_AI_Insight_Report_premium.md",
+    "bytes": 21861,
+    "hash": "8f46c507cd56c45a52a0c7fbc21ebc5e3cdbccdb68cdd13a3d9f23612ae88590",
+    "name": "# Screen 170 \u2014 AI Insight Report (premium)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\171_Achievement_Share_Card_Preview_PII_free.md",
+    "bytes": 21747,
+    "hash": "208f071542d3beae173d9a2c2e547f38a1ec9f57c53f86caab7374240b4db67f",
+    "name": "# Screen 171 \u2014 Achievement Share Card Preview (PII-free)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\172_Full_Activity_Timeline.md",
+    "bytes": 14988,
+    "hash": "0c39250d6aee336f89f4e3b8db27eda64fcf4deb18dfe11fdbb3ada4856de31f",
+    "name": "# Screen 172 \u2014 Full Activity Timeline",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md",
+    "bytes": 23020,
+    "hash": "2a75e81cb643d7959699226909d297a48dce579cfd5bcf526259e4f4f91cd28c",
+    "name": "# Screen 173 \u2014 Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\174_Screen_Time_Settings_per_child.md",
+    "bytes": 27237,
+    "hash": "c55f34de7dde3e12061bca3a37c2d32de8276a998f0c68c45e57b7c2d145828f",
+    "name": "# Screen 174 \u2014 Screen Time Settings (per child)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\175_Quiet_Hours_Bedtime_Settings_per_child.md",
+    "bytes": 23875,
+    "hash": "e5ff14e0aed6f5048bcd949cbda2a5a4def86113a211675912e74b197f5fd50f",
+    "name": "# Screen 175 \u2014 Quiet Hours / Bedtime Settings (per child)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\176_AI_Permissions_Settings_per_child.md",
+    "bytes": 23942,
+    "hash": "6088260713bfe0661a1e08531e89b1f49eebb508ad4c2e61f7e556dc51457d4e",
+    "name": "# Screen 176 \u2014 AI Permissions Settings (per child)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\177_Content_Age_Level_Settings_per_child.md",
+    "bytes": 22754,
+    "hash": "d8bde4d6ce0d4cc84ad2e4b75a6d18fc7911f266109487c73f2381453418d5b7",
+    "name": "# Screen 177 \u2014 Content Age Level Settings (per child)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\178_Child_Locks_Sessions_per_child.md",
+    "bytes": 25520,
+    "hash": "87e67a3eeddb143e0d87e1973ce3ce5dfaab90cee74c4ab80eba67e654deab0c",
+    "name": "# Screen 178 \u2014 Child Locks & Sessions (per child)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\179_Set_Lock_Type_Pattern_PIN_Biometric_None.md",
+    "bytes": 22425,
+    "hash": "01a33253b5b3d18ad1047decc5bc80ac9860f02c8cf754d5d57033c0f2cdc81b",
+    "name": "# Screen 179 \u2014 Set Lock Type (Pattern/PIN/Biometric/None)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\180_Device_Revocation_Confirmation.md",
+    "bytes": 22322,
+    "hash": "72f687b007bbb4bde6ab5e195d56ae0f675654e7499f71942936dea4daa6f80e",
+    "name": "# Screen 180 \u2014 Device Revocation Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\181_Content_Age_Level_Override_Confirmation.md",
+    "bytes": 22412,
+    "hash": "3950f093be41c76fc7a226058970cc07b8a37804da575e6532ea37b8e0cd919e",
+    "name": "# Screen 181 \u2014 Content Age Level \u2014 Override Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\182_Subscription_Billing_landing.md",
+    "bytes": 25355,
+    "hash": "916b0adf7e0831ade18900c8cf83eaa48280cb82874c34a033325e8c8890adad",
+    "name": "# Screen 182 \u2014 Subscription & Billing (landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\183_Plan_Comparison.md",
+    "bytes": 27986,
+    "hash": "ec60c126451acf491d4514fa55565000d7a742e197a07f8ed5a36f37eee72666",
+    "name": "# Screen 183 \u2014 Plan Comparison",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md",
+    "bytes": 25595,
+    "hash": "2403875e4a3c95381e7a3e0c3d1b92f917f7fb7b6f576bf0d2b40d499b0e9265",
+    "name": "# Screen 184 \u2014 Trial Disclosure Screen (length, price, renewal date, auto-renew)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\185_Direct_Upgrade_Disclosure_Screen.md",
+    "bytes": 23481,
+    "hash": "027293ced1fba444c5f58b135d6b0e35059da2a0efe5e5ceb8255f3f39b377be",
+    "name": "# Screen 185 \u2014 Direct Upgrade Disclosure Screen",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\186_Invoice_History.md",
+    "bytes": 23101,
+    "hash": "9a7d43139ee48c6d4b9b343b38a0eb44a6fe8e12f21b7e714ce3f4f149fdbf04",
+    "name": "# Screen 186 \u2014 Invoice History",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\187_Invoice_Detail.md",
+    "bytes": 23013,
+    "hash": "00546dbecadb8714f6c32dbc112cb8a5993a6049246e90b2b188d322fde4ec91",
+    "name": "# Screen 187 \u2014 Invoice Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\188_Cancel_Flow_Confirmation.md",
+    "bytes": 24057,
+    "hash": "d55eb4e9b301b2609eff54c5df0bc8168c12be9547ed53ba0c318a04d82881de",
+    "name": "# Screen 188 \u2014 Cancel Flow \u2014 Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\189_Retry_Failed_Payment.md",
+    "bytes": 23265,
+    "hash": "bb98fb90cdde30b1c5bf8409434cbd7b0f57773fcae34a132bc6fc6cebe7337a",
+    "name": "# Screen 189 \u2014 Retry Failed Payment",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md",
+    "bytes": 24356,
+    "hash": "caae148425950a01d4dc47a54acfd4e3bbcd3fce9237c02623bc7c286d61380e",
+    "name": "# Screen 190 \u2014 Free-Plan Second-Child Upgrade Prompt (parent-mode only)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\191_Notifications_Parent_Inbox.md",
+    "bytes": 25727,
+    "hash": "d7fcc8371e7328985c756ace687328dba75579879495836c1183efe25d5694e1",
+    "name": "# Screen 191 \u2014 Notifications (Parent) Inbox",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\192_Notification_Preferences_Category_Toggles.md",
+    "bytes": 25154,
+    "hash": "66d93f136ac6af3f15cd60df1d8e3f05e68dfaa682977f49edeb3d297c3eea17",
+    "name": "# Screen 192 \u2014 Notification Preferences \u2014 Category Toggles",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\193_Notification_Preferences_Quiet_Hours.md",
+    "bytes": 20512,
+    "hash": "bca9dcbf9899ee6ed0deff838c67ea7d75ca3decdc6cfff291907ba628a5237d",
+    "name": "# Screen 193 \u2014 Notification Preferences \u2014 Quiet Hours",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\194_Support_Center_landing.md",
+    "bytes": 24307,
+    "hash": "953fa98b5a1d774dd0068bc270ec72946f8c890ab6d39ef8ba40f20fc61c141d",
+    "name": "# Screen 194 \u2014 Support Center (landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\195_FAQ_Search.md",
+    "bytes": 20467,
+    "hash": "352e492a374d5032170c3370c2b5d41a6e271617ba12e75a7d21ab78bed2c615",
+    "name": "# Screen 195 \u2014 FAQ Search",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\196_FAQ_Article_Detail.md",
+    "bytes": 20577,
+    "hash": "d37623827d5695bc956f6c4b799ebbdff5f2c4dadb3a681f76e2cb764f30628c",
+    "name": "# Screen 196 \u2014 FAQ Article Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\197_Contact_Support_Form.md",
+    "bytes": 23387,
+    "hash": "4375961b05e5b4b8669282429786c45400a0d4fd4af09f26320b295b2e0036a4",
+    "name": "# Screen 197 \u2014 Contact Support Form",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\198_Ticket_Submitted_Confirmation.md",
+    "bytes": 20552,
+    "hash": "eb498fa6a260ff21ab31ec3f9f07cde86670b6e174e89d29609260617f3d3d34",
+    "name": "# Screen 198 \u2014 Ticket Submitted Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\199_Ticket_History_List.md",
+    "bytes": 21128,
+    "hash": "25315518d72f1f7324e99b695248a4adc7a903f530dbf2a7a8baa4c6a37f28a6",
+    "name": "# Screen 199 \u2014 Ticket History List",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\200_Ticket_Detail_Status_View.md",
+    "bytes": 21459,
+    "hash": "b7461eacc4d29c760c29df1f21ef92743399c445a0877d6fccd7f1c9c4ea1780",
+    "name": "# Screen 200 \u2014 Ticket Detail / Status View",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\201_Settings_landing.md",
+    "bytes": 22073,
+    "hash": "7386190deb163655ae4170e9f215e66e8bd954cfdfabd1f8830d943b46393343",
+    "name": "# Screen 201 \u2014 Settings (landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md",
+    "bytes": 24965,
+    "hash": "c789b45493ccac1dd19ab87eee53d9648bc359265e04f0fca6fdf858f1666050",
+    "name": "# Screen 202 \u2014 Privacy & Support (landing, may be a sub-section of Settings)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\203_Parent_PIN_Reset_Account_Security.md",
+    "bytes": 15850,
+    "hash": "251b4e2c23f83c0186baa6bad4dfb2d3a168c91be1188b90ce00190f193f15e7",
+    "name": "# Screen 203 \u2014 Parent PIN Reset (Account Security)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\204_Security_Device_List.md",
+    "bytes": 21487,
+    "hash": "88f0d0b45424b43df77976be3c48a639ef49e1978dc5d6516e28d4fd654b89e0",
+    "name": "# Screen 204 \u2014 Security \u2014 Device List",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\205_Device_Revocation_Confirmation.md",
+    "bytes": 21809,
+    "hash": "0de8d20974bf9a5243fdece56f3715b8526f84915677b0b1fe19045395f52b9a",
+    "name": "# Screen 205 \u2014 Device Revocation Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\206_Consent_Log.md",
+    "bytes": 27823,
+    "hash": "430a23c9c5778060f79fb9a75e47c20405a084e0ee47b4fc88c35a97efd4b8ec",
+    "name": "# Screen 206 \u2014 Consent Log",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\207_Consent_Detail_full_text_status.md",
+    "bytes": 21838,
+    "hash": "334c6d57de1bdf48a977ad3fa181972c318f16c5560869bac42cf65726d8688a",
+    "name": "# Screen 207 \u2014 Consent Detail (full text + status)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\208_Withdraw_Optional_Consent_Confirmation.md",
+    "bytes": 21732,
+    "hash": "fc7d42cad89ad946f96faf2c2304df641d22b9ec7bc8a1b1485e8b10b769a19d",
+    "name": "# Screen 208 \u2014 Withdraw Optional Consent \u2014 Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\209_AI_Interaction_History.md",
+    "bytes": 26647,
+    "hash": "b2b7c3e2fba8ececb00b588bec76376a90bedaf7a612c13e16600b1678c466c4",
+    "name": "# Screen 209 \u2014 AI Interaction History",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\210_AI_Interaction_Detail_redacted.md",
+    "bytes": 21821,
+    "hash": "f651c456b55a4def39720f1a824a3cd384cfa94b82fddbe4eb08218ed4f40e65",
+    "name": "# Screen 210 \u2014 AI Interaction Detail (redacted)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\211_Language_Picker.md",
+    "bytes": 21521,
+    "hash": "ec593d411f07909bea94fe08f709c0cf0e807714256dbfd5f62c960b579e19ac",
+    "name": "# Screen 211 \u2014 Language Picker",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\212_Data_Export_Request.md",
+    "bytes": 21685,
+    "hash": "d4590ae75b0e5b95738cf4bdfa9b14a07f291dfec452921b6ad4086ff0ca5854",
+    "name": "# Screen 212 \u2014 Data Export Request",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\213_Export_Status_Tracking_preparing_ready.md",
+    "bytes": 22055,
+    "hash": "bb9a254e5ffccfce337b59415e18fa5af3e478cf164742c869877481edac0f26",
+    "name": "# Screen 213 \u2014 Export Status Tracking (preparing/ready)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\214_Logout_Confirmation_unsynced_downloads_present.md",
+    "bytes": 21911,
+    "hash": "8d8e4d843c8228e755f6ca9a84e9b956a9948a89dd454e472b7b92e9259e4791",
+    "name": "# Screen 214 \u2014 Logout Confirmation (unsynced downloads present)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\215_Security_PIN_and_Device_Management_landing.md",
+    "bytes": 15648,
+    "hash": "adda31d0a3d40246cd41b756efbf813e02c877157aff220e93de15eb180bd167",
+    "name": "# Screen 215 \u2014 Security (PIN and Device Management landing)",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\216_Account_Deletion_Request_and_Confirmation.md",
+    "bytes": 14997,
+    "hash": "4842ff09177cfb2d92c3dd71f43bd679ded17fb9af03e7225ceb54de3cebbb20",
+    "name": "# Screen 216 \u2014 Account Deletion Request and Confirmation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\217_Pending_Account_Deletion_and_Cancellation.md",
+    "bytes": 15008,
+    "hash": "d721d5368d489cdade560ec30252a0f7565ef81fe3af273ecf22fc4aa57b72b1",
+    "name": "# Screen 217 \u2014 Pending Account Deletion and Cancellation",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\218_Ramadan_Prep_Countdown.md",
+    "bytes": 16440,
+    "hash": "74dc231a308c67a5767683c21550df3426575af63e5f06d71927ee26f6ae3312",
+    "name": "# Screen 218 \u2014 Ramadan Prep / Countdown",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\219_Ramadan_Home.md",
+    "bytes": 17065,
+    "hash": "5bb15d4be53107eb0500593413d01e6a592061a9ad615e17d48bd7f3c23c6438",
+    "name": "# Screen 219 \u2014 Ramadan Home",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\220_Ramadan_Journey_Map.md",
+    "bytes": 21370,
+    "hash": "72917236fbab011eaf4aae659b6a19646b8cdf7e43ab0fe6287be9b17c9f33ce",
+    "name": "# Screen 220 \u2014 Ramadan Journey Map",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\221_Night_Recap.md",
+    "bytes": 15976,
+    "hash": "b9783b298628b45c03f9bce92f2faf5f2df7fcab6c5a75549a0334f5690cf561",
+    "name": "# Screen 221 \u2014 Night Recap",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\222_Ramadan_Mission_Detail.md",
+    "bytes": 17190,
+    "hash": "4f8f3937ebbc9ef0dd83d3a226bd6d21ae92adcb8f32d03b4acded356d24064d",
+    "name": "# Screen 222 \u2014 Ramadan Mission Detail",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\223_Ramadan_Story_Player.md",
+    "bytes": 16740,
+    "hash": "a61be062ae5f5c2ed27637b7cdb3464948bdc6064a5d183059b7689d5d86865b",
+    "name": "# Screen 223 \u2014 Ramadan Story Player",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\224_Fasting_Tracker.md",
+    "bytes": 17583,
+    "hash": "409f9fd074469b4311e158828543d5154a7dcd273c7ac25f849f4299d7f4bb75",
+    "name": "# Screen 224 \u2014 Fasting Tracker",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\225_Laylatul_Qadr_Reflection.md",
+    "bytes": 17802,
+    "hash": "696834ca450ca5f800b6d88791462482727914a0281abb871a0b3c52d6424f02",
+    "name": "# Screen 225 \u2014 Laylatul Qadr Reflection",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\226_Eid_Countdown.md",
+    "bytes": 16117,
+    "hash": "f572c6474a7dfab4727fea0fad7cf92dfbbf7c292d2047e264d12cb5a0cb4d35",
+    "name": "# Screen 226 \u2014 Eid Countdown",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\227_Eid_Home.md",
+    "bytes": 17182,
+    "hash": "2cbf64754b50b24479e2dacede72b6a4b9b85e91a8b94bceaf96952c0e1ec75f",
+    "name": "# Screen 227 \u2014 Eid Home",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\228_Eid_Reward_Reveal.md",
+    "bytes": 16154,
+    "hash": "6b23e4129bfd4558f7f13f9c770d9f0a17a6f63e011717b6cbe559b734449dc6",
+    "name": "# Screen 228 \u2014 Eid Reward Reveal",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\229_Eid_Card_Generator.md",
+    "bytes": 16792,
+    "hash": "7d66bd9c574b8307607445f6562e13cdd8628f245d54654096566d5810a20431",
+    "name": "# Screen 229 \u2014 Eid Card Generator",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\230_Ramadan_Complete_Certificate.md",
+    "bytes": 16540,
+    "hash": "8b76f078f41be689421deddf97157a51020044c2728834cf5b4f398236643bd6",
+    "name": "# Screen 230 \u2014 Ramadan Complete Certificate",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\231_Post_Eid_Keep_the_Habit.md",
+    "bytes": 16372,
+    "hash": "f7202e07125d82b79e2aca7dba0ca7f6022ea15f1c2f405db005eddf08299365",
+    "name": "# Screen 231 \u2014 Post-Eid Keep the Habit",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\232_Parent_Ramadan_Settings.md",
+    "bytes": 17249,
+    "hash": "4ac89a714a224c1d77a92345c0f4eba4fc46b1e5c48b521bff1a0770f589f18b",
+    "name": "# Screen 232 \u2014 Parent Ramadan Settings",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\233_Parent_Ramadan_Dashboard.md",
+    "bytes": 16299,
+    "hash": "52f7a3217d01deb1a752df8a7eafd97ad5a63bf42fac419d2cb6075692020037",
+    "name": "# Screen 233 \u2014 Parent Ramadan Dashboard",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\234_Family_Ramadan_Aggregate.md",
+    "bytes": 17498,
+    "hash": "27c03a895f6c55f558485f72af157291e28c180a0208f651b9132963c8d0b771",
+    "name": "# Screen 234 \u2014 Family Ramadan Aggregate",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\235_Family_Ramadan_Report.md",
+    "bytes": 16557,
+    "hash": "99d80b78c96f8b05f48df22211fdc6ed4c0d1406d6d82a3ffe3ff7b62730004d",
+    "name": "# Screen 235 \u2014 Family Ramadan Report",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\236_Conversion_Moment_Card.md",
+    "bytes": 17085,
+    "hash": "d25223b52c7a50c4224148c076d7ee66d3fd39d2ebd148b977ff5fe91d06b76f",
+    "name": "# Screen 236 \u2014 Conversion Moment Card",
+    "approval_stop": true,
+    "blocked": true
+  },
+  {
+    "path": "sdocs\\NoorHeroes_Figma_Enhancement\\Screen_Prompts\\237_Family_Member_Invite.md",
+    "bytes": 16624,
+    "hash": "932ae13d67dbe95418106728bf74dc78df1231c4df57930d79ab9896e6d92c19",
+    "name": "# Screen 237 \u2014 Family Member Invite",
+    "approval_stop": true,
+    "blocked": true
+  }
+]

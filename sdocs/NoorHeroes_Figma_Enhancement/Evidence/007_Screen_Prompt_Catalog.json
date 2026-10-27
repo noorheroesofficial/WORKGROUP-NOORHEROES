@@ -1,0 +1,1424 @@
+[
+  {
+    "File": "001_Splash_Screen.md",
+    "Title": "# Screen 001 — Splash Screen\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "002_Language_Selection.md",
+    "Title": "# Screen 002 — Language Selection\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "003_Intro_Slide_1_Stories.md",
+    "Title": "# Screen 003 — Intro Slide 1 (Stories)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "004_Intro_Slide_2_Quran_Arabic_Tajweed.md",
+    "Title": "# Screen 004 — Intro Slide 2 (Quran/Arabic/Tajweed)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "005_Intro_Slide_3_Habits_Rewards.md",
+    "Title": "# Screen 005 — Intro Slide 3 (Habits & Rewards)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "006_Intro_Slide_4_Parent_Control.md",
+    "Title": "# Screen 006 — Intro Slide 4 (Parent Control)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "007_Login_phone_email_Google.md",
+    "Title": "# Screen 007 — Login (phone/email + Google)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "008_Registration_Consent.md",
+    "Title": "# Screen 008 — Registration + Consent\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "009_Consent_Detail_Full_Text_Modal.md",
+    "Title": "# Screen 009 — Consent Detail / Full Text Modal\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "010_OTP_Verification.md",
+    "Title": "# Screen 010 — OTP Verification\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "011_OTP_Fallback_Channel_Offer.md",
+    "Title": "# Screen 011 — OTP Fallback Channel Offer\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "012_Parent_PIN_Setup.md",
+    "Title": "# Screen 012 — Parent PIN Setup\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "013_Biometric_Enrollment_Prompt.md",
+    "Title": "# Screen 013 — Biometric Enrollment Prompt\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "014_Add_Child.md",
+    "Title": "# Screen 014 — Add Child\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "015_Avatar_Selection.md",
+    "Title": "# Screen 015 — Avatar Selection\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "016_Interest_Selection.md",
+    "Title": "# Screen 016 — Interest Selection\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "017_Learning_Level_Setup.md",
+    "Title": "# Screen 017 — Learning Level Setup\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "018_Add_Another_Child_Prompt.md",
+    "Title": "# Screen 018 — \"Add Another Child?\" Prompt\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "019_Learning_Level_Interests_Confirmation_family_level_summary.md",
+    "Title": "# Screen 019 — Learning Level + Interests Confirmation (family-level summary)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "020_Screen_Time_Notification_Primer.md",
+    "Title": "# Screen 020 — Screen Time & Notification Primer\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "021_Personalized_Path_Reveal.md",
+    "Title": "# Screen 021 — Personalized Path Reveal\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "022_Profile_Picker_Who_Is_Learning.md",
+    "Title": "# Screen 022 — Profile Picker (\"Who Is Learning\")\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "023_Child_Lock_Screen_PIN_Pattern_Biometric.md",
+    "Title": "# Screen 023 — Child Lock Screen (PIN/Pattern/Biometric)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "024_Lock_Recovery_via_verified_Parent_Profile.md",
+    "Title": "# Screen 024 — Lock Recovery (via verified Parent Profile)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "025_First_Mission_Screen.md",
+    "Title": "# Screen 025 — First Mission Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "026_Forced_Update_Blocking_Screen.md",
+    "Title": "# Screen 026 — Forced Update Blocking Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "027_Recommended_Update_Banner_Dismissible.md",
+    "Title": "# Screen 027 — Recommended Update Banner/Dismissible\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "028_Maintenance_Mode_Screen.md",
+    "Title": "# Screen 028 — Maintenance Mode Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "029_No_Connectivity_Screen_pre_auth.md",
+    "Title": "# Screen 029 — No Connectivity Screen (pre-auth)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "030_Forgot_Access_Account_Recovery_Entry.md",
+    "Title": "# Screen 030 — Forgot Access / Account Recovery Entry\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "031_Terms_of_Service_full_document.md",
+    "Title": "# Screen 031 — Terms of Service (full document)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "032_Privacy_Policy_full_document.md",
+    "Title": "# Screen 032 — Privacy Policy (full document)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "033_Child_Data_Processing_Consent_full_document.md",
+    "Title": "# Screen 033 — Child-Data Processing Consent (full document)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "034_Child_Home_composite_screen.md",
+    "Title": "# Screen 034 — Child Home (composite screen)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "035_Full_Screen_Retry_no_cache_no_network.md",
+    "Title": "# Screen 035 — Full-Screen Retry (no cache, no network)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "036_Stories_Library_Landing.md",
+    "Title": "# Screen 036 — Stories Library (Landing)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "037_Category_Filter_Panel.md",
+    "Title": "# Screen 037 — Category Filter Panel\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "038_Story_Detail.md",
+    "Title": "# Screen 038 — Story Detail\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "039_Story_Player_Video.md",
+    "Title": "# Screen 039 — Story Player — Video\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "040_Story_Player_Audio.md",
+    "Title": "# Screen 040 — Story Player — Audio\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "041_Story_Player_Text.md",
+    "Title": "# Screen 041 — Story Player — Text\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "042_Interactive_Choice_Overlay.md",
+    "Title": "# Screen 042 — Interactive Choice Overlay\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "043_Pause_and_Quiz_Moment_Overlay.md",
+    "Title": "# Screen 043 — Pause-and-Quiz Moment Overlay\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "044_Media_Unavailable_Safe_Stop_Screen.md",
+    "Title": "# Screen 044 — Media Unavailable / Safe-Stop Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "045_Completion_Reward_Reveal_Screen.md",
+    "Title": "# Screen 045 — Completion / Reward Reveal Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "046_Moral_Summary_Card_Noor_says.md",
+    "Title": "# Screen 046 — Moral Summary Card (\"Noor says...\")\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "047_Post_Story_Quiz.md",
+    "Title": "# Screen 047 — Post-Story Quiz\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "048_Achievement_Badge_Unlock_Modal.md",
+    "Title": "# Screen 048 — Achievement/Badge Unlock Modal\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "049_Approved_Share_Card_Preview.md",
+    "Title": "# Screen 049 — Approved Share Card Preview\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "050_Caption_Audio_Track_Quality_Settings_Sheet.md",
+    "Title": "# Screen 050 — Caption/Audio-Track/Quality Settings Sheet\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "051_Audio_Bedtime_Player_main_screen.md",
+    "Title": "# Screen 051 — Audio Bedtime Player (main screen)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "052_Episode_List_Sheet_for_multi_part_audio_series.md",
+    "Title": "# Screen 052 — Episode List Sheet (for multi-part audio series)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "053_Sleep_Timer_Selector.md",
+    "Title": "# Screen 053 — Sleep Timer Selector\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "054_Playback_Speed_Selector.md",
+    "Title": "# Screen 054 — Playback Speed Selector\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "055_Goodnight_Idle_State.md",
+    "Title": "# Screen 055 — Goodnight Idle State\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "056_Dua_Calm_Reflection_Ending_Card.md",
+    "Title": "# Screen 056 — Dua / Calm-Reflection Ending Card\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "057_Media_Unavailable_Safe_Stop_Bedtime_styled_variant.md",
+    "Title": "# Screen 057 — Media Unavailable / Safe-Stop (Bedtime-styled variant)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "058_Learn_Tab_Landing_Quran_Learning_Home_Skill_Tree_Map.md",
+    "Title": "# Screen 058 — Learn Tab Landing / Quran Learning Home (Skill Tree Map)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "059_Placement_Check_first_time.md",
+    "Title": "# Screen 059 — Placement Check (first-time)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "060_Mode_Selector_Sheet.md",
+    "Title": "# Screen 060 — Mode Selector Sheet\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "061_Surah_Learning.md",
+    "Title": "# Screen 061 — Surah Learning\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "062_Recitation_Recorder_Overlay.md",
+    "Title": "# Screen 062 — Recitation Recorder Overlay\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "063_AI_Pronunciation_Feedback_Screen.md",
+    "Title": "# Screen 063 — AI Pronunciation Feedback Screen\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "064_Listen_Only_Self_Assessment_Screen.md",
+    "Title": "# Screen 064 — Listen-Only Self-Assessment Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "065_Arabic_Letters_Hear_Match.md",
+    "Title": "# Screen 065 — Arabic Letters — Hear & Match\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "066_Arabic_Letters_Tracing.md",
+    "Title": "# Screen 066 — Arabic Letters — Tracing\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "067_Arabic_Letters_Word_Context.md",
+    "Title": "# Screen 067 — Arabic Letters — Word Context\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "068_Arabic_Letters_Word_Building_sound_tiles.md",
+    "Title": "# Screen 068 — Arabic Letters — Word-Building (sound tiles)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "069_Tajweed_Rule_Introduction.md",
+    "Title": "# Screen 069 — Tajweed — Rule Introduction\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "070_Tajweed_Listen_normal_slow.md",
+    "Title": "# Screen 070 — Tajweed — Listen (normal/slow)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "071_Tajweed_Rule_Identification_Exercise.md",
+    "Title": "# Screen 071 — Tajweed — Rule Identification Exercise\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "072_Tajweed_Assessment.md",
+    "Title": "# Screen 072 — Tajweed — Assessment\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "073_Quran_Game_Ayah_Ordering.md",
+    "Title": "# Screen 073 — Quran Game — Ayah Ordering\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "074_Quran_Game_Listen_Select_Matching_Ayah.md",
+    "Title": "# Screen 074 — Quran Game — Listen & Select Matching Ayah\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "075_Quran_Game_Missing_Word.md",
+    "Title": "# Screen 075 — Quran Game — Missing Word\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "076_Quran_Game_Surah_Theme_Matching.md",
+    "Title": "# Screen 076 — Quran Game — Surah Theme Matching\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "077_Quran_Game_Recitation_Echo.md",
+    "Title": "# Screen 077 — Quran Game — Recitation Echo\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "078_Quran_Game_Progressive_Memorization_Reveal.md",
+    "Title": "# Screen 078 — Quran Game — Progressive Memorization Reveal\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "079_Hint_Overlay_progressive_hint.md",
+    "Title": "# Screen 079 — Hint Overlay (progressive hint)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "080_Mastery_Badge_Node_Unlock_Celebration.md",
+    "Title": "# Screen 080 — Mastery Badge/Node-Unlock Celebration\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "081_Microphone_Permission_Rationale_One_Time_Explainer.md",
+    "Title": "# Screen 081 — Microphone Permission Rationale / One-Time Explainer\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "082_Arabic_Letters_Contextual_Form_Matching_Isolated_Initial_Medial_Final.md",
+    "Title": "# Screen 082 — Arabic Letters — Contextual Form Matching (Isolated / Initial / Medial / Final)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "083_Arabic_Letters_Harakah_Sound_Pairing.md",
+    "Title": "# Screen 083 — Arabic Letters — Harakah Sound Pairing\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "084_Dua_Learning_Landing_Category_List.md",
+    "Title": "# Screen 084 — Dua Learning Landing (Category List)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "085_Category_Dua_List.md",
+    "Title": "# Screen 085 — Category Dua List\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "086_Dua_Card_Detail_Arabic_Transliteration_Translation_Audio.md",
+    "Title": "# Screen 086 — Dua Card Detail (Arabic/Transliteration/Translation/Audio)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "087_Recall_Quiz_Question_Screen.md",
+    "Title": "# Screen 087 — Recall Quiz Question Screen\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "088_Recall_Quiz_Result_Pass_Screen.md",
+    "Title": "# Screen 088 — Recall Quiz Result / Pass Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "089_Dua_Master_Badge_Progress_Celebration_milestone.md",
+    "Title": "# Screen 089 — Dua Master Badge Progress Celebration (milestone)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "090_Habit_Tracker_Reminder_Suggestion_Prompt.md",
+    "Title": "# Screen 090 — Habit Tracker Reminder Suggestion Prompt\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "091_Habit_Builder_Today_s_Checklist.md",
+    "Title": "# Screen 091 — Habit Builder — Today's Checklist\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "092_Dhikr_Counter_Screen.md",
+    "Title": "# Screen 092 — Dhikr Counter Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "093_Good_Deed_Logging_Category_Selector.md",
+    "Title": "# Screen 093 — Good Deed Logging — Category Selector\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "094_Good_Deed_Optional_Note_Entry.md",
+    "Title": "# Screen 094 — Good Deed Optional Note Entry\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "095_Streak_Calendar_History_View.md",
+    "Title": "# Screen 095 — Streak Calendar / History View\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "096_Recovery_Mission_Screen.md",
+    "Title": "# Screen 096 — Recovery Mission Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "097_Streak_State_Detail_AtRisk_Protected_Broken_Recovery.md",
+    "Title": "# Screen 097 — Streak State Detail — AtRisk / Protected / Broken / Recovery\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "098_Mercy_Toned_Smaller_Target_Suggestion_Prompt.md",
+    "Title": "# Screen 098 — Mercy-Toned Smaller-Target Suggestion Prompt\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "099_Noor_Garden_Personal_View.md",
+    "Title": "# Screen 099 — Noor Garden — Personal View\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "100_Noor_Garden_Family_View.md",
+    "Title": "# Screen 100 — Noor Garden — Family View\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "101_Family_Streak_Milestone_Celebration.md",
+    "Title": "# Screen 101 — Family Streak Milestone Celebration\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "102_Quiz_Question_Screen_Multiple_Choice.md",
+    "Title": "# Screen 102 — Quiz Question Screen — Multiple Choice\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "103_Quiz_Question_Screen_Sequence_Ordering.md",
+    "Title": "# Screen 103 — Quiz Question Screen — Sequence/Ordering\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "104_Quiz_Question_Screen_True_False.md",
+    "Title": "# Screen 104 — Quiz Question Screen — True/False\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "105_Quiz_Question_Screen_Image_Match.md",
+    "Title": "# Screen 105 — Quiz Question Screen — Image Match\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "106_Quiz_Question_Screen_Audio_Match.md",
+    "Title": "# Screen 106 — Quiz Question Screen — Audio Match\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "107_Per_Answer_Explanation_Overlay.md",
+    "Title": "# Screen 107 — Per-Answer Explanation Overlay\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "108_Retry_Set_Entry_Screen.md",
+    "Title": "# Screen 108 — Retry Set Entry Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "109_Quiz_Completion_Effort_XP_Reveal.md",
+    "Title": "# Screen 109 — Quiz Completion / Effort XP Reveal\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "110_Quiz_Completion_Result_Screen_shared_generic.md",
+    "Title": "# Screen 110 — Quiz Completion Result Screen (shared, generic)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "111_Review_Mistakes_Screen.md",
+    "Title": "# Screen 111 — Review Mistakes Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "112_Offline_Completion_Saved_Results_Deferred.md",
+    "Title": "# Screen 112 — Offline Completion — Saved / Results Deferred\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "113_Games_Hub_tile_grid_landing.md",
+    "Title": "# Screen 113 — Games Hub (tile grid landing)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "114_Game_Specific_Play_Screen_per_game_mechanics_detailed_in_A_5_for_Quran_Arabic_games_new_mini_games_follow_the_same_wrapper.md",
+    "Title": "# Screen 114 — Game-Specific Play Screen (per game, mechanics detailed in A.5 for Quran/Arabic games; new mini-games follow the same wrapper)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "115_Session_Completion_Screen_generic_wrapper_reuses_A_9_s_strengths_next_step_framing_where_applicable.md",
+    "Title": "# Screen 115 — Session Completion Screen (generic wrapper, reuses A.9's \"strengths + next step\" framing where applicable)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "116_Rewards_Hub_Wallet_landing.md",
+    "Title": "# Screen 116 — Rewards Hub / Wallet (landing)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "117_Transaction_Detail_single_ledger_entry.md",
+    "Title": "# Screen 117 — Transaction Detail (single ledger entry)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "118_Achievements_Screen_badge_grid_cumulative_level_progress.md",
+    "Title": "# Screen 118 — Achievements Screen (badge grid + cumulative level progress)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "119_Badge_Detail_Criteria_View.md",
+    "Title": "# Screen 119 — Badge Detail / Criteria View\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "120_Achievement_Level_Detail.md",
+    "Title": "# Screen 120 — Achievement Level Detail\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "121_Shareable_Achievement_Card_Preview.md",
+    "Title": "# Screen 121 — Shareable Achievement Card Preview\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "122_Weekly_Challenge_Detail.md",
+    "Title": "# Screen 122 — Weekly Challenge Detail\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "123_Seasonal_Event_Screen.md",
+    "Title": "# Screen 123 — Seasonal Event Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "124_Archived_Challenge_View.md",
+    "Title": "# Screen 124 — Archived Challenge View\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "125_Achievement_Store_catalog_browse.md",
+    "Title": "# Screen 125 — Achievement Store (catalog browse)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "126_Achievement_Store_Item_Detail.md",
+    "Title": "# Screen 126 — Achievement Store — Item Detail\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "127_Purchase_Confirmation_Insufficient_Points_Shortfall_Screen.md",
+    "Title": "# Screen 127 — Purchase Confirmation / Insufficient-Points Shortfall Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "128_Family_Board_private_multi_child_families.md",
+    "Title": "# Screen 128 — Family Board (private, multi-child families)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "129_Family_Goal_Detail.md",
+    "Title": "# Screen 129 — Family Goal Detail\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "130_Family_Achievement_Unlock_Celebration.md",
+    "Title": "# Screen 130 — Family Achievement Unlock Celebration\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "131_Badge_Unlock_Modal.md",
+    "Title": "# Screen 131 — Badge Unlock Modal\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "132_Avatar_Screen_3D_preview_owned_grid_locked_teasers.md",
+    "Title": "# Screen 132 — Avatar Screen (3D preview + owned grid + locked teasers)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "133_Item_Detail_owned_Equip_Unequip.md",
+    "Title": "# Screen 133 — Item Detail (owned) — Equip/Unequip\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "134_Locked_Item_Detail_Unlock_Criteria_View.md",
+    "Title": "# Screen 134 — Locked Item Detail — Unlock Criteria View\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "135_Character_Evolution_Milestone_Reveal.md",
+    "Title": "# Screen 135 — Character Evolution Milestone Reveal\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "136_Search.md",
+    "Title": "# Screen 136 — Search\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "137_Voice_Search_Listening.md",
+    "Title": "# Screen 137 — Voice Search — Listening\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "138_Voice_Search_Processing.md",
+    "Title": "# Screen 138 — Voice Search — Processing\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "139_Voice_Search_Clarification.md",
+    "Title": "# Screen 139 — Voice Search — Clarification\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "140_Search_Results.md",
+    "Title": "# Screen 140 — Search Results\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "141_Search_Empty_State.md",
+    "Title": "# Screen 141 — Search Empty State\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "142_Parent_Area_Search.md",
+    "Title": "# Screen 142 — Parent Area Search\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "143_Favorites.md",
+    "Title": "# Screen 143 — Favorites\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "144_Downloads.md",
+    "Title": "# Screen 144 — Downloads\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "145_Clear_All_Downloads_Confirmation.md",
+    "Title": "# Screen 145 — Clear All Downloads Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "146_Parent_Download_Cap_and_Policy.md",
+    "Title": "# Screen 146 — Parent Download Cap and Policy\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "147_Child_Profile.md",
+    "Title": "# Screen 147 — Child Profile\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "148_Choose_Language.md",
+    "Title": "# Screen 148 — Choose Language\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "149_Switch_Profile_Parent_Permission.md",
+    "Title": "# Screen 149 — Switch Profile Parent Permission\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "150_Deep_Link_Resolver.md",
+    "Title": "# Screen 150 — Deep Link Resolver\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "151_Islamic_Fact_Detail.md",
+    "Title": "# Screen 151 — Islamic Fact Detail\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "152_Islamic_Facts_Browse.md",
+    "Title": "# Screen 152 — Islamic Facts Browse\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "153_Parent_Profile_PIN_Biometric_Gate.md",
+    "Title": "# Screen 153 — Parent Profile PIN/Biometric Gate\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "154_Restriction_Screen.md",
+    "Title": "# Screen 154 — Restriction Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "155_Calm_Locked_State_screen_time_limit_reached.md",
+    "Title": "# Screen 155 — Calm Locked State (screen-time limit reached)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "156_Bedtime_Block_Screen.md",
+    "Title": "# Screen 156 — Bedtime Block Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "157_Parent_Dashboard_landing.md",
+    "Title": "# Screen 157 — Parent Dashboard (landing)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "158_Child_Management_List.md",
+    "Title": "# Screen 158 — Child Management (List)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "159_Add_Child_Parent_Management.md",
+    "Title": "# Screen 159 — Add Child (Parent Management)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "160_Edit_Child_Parent_Management.md",
+    "Title": "# Screen 160 — Edit Child (Parent Management)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "161_Disable_Confirmation_step_up_gated.md",
+    "Title": "# Screen 161 — Disable Confirmation (step-up gated)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "162_Re_Enable_Confirmation_step_up_gated.md",
+    "Title": "# Screen 162 — Re-Enable Confirmation (step-up gated)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "163_Permanent_Deletion_Step_2_Irreversible_Data_Warning.md",
+    "Title": "# Screen 163 — Permanent Deletion — Step 2: Irreversible-Data Warning\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "164_Trial_Cancellation_Forced_Selection_Screen.md",
+    "Title": "# Screen 164 — Trial-Cancellation Forced-Selection Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "165_Per_Child_Report_full_view.md",
+    "Title": "# Screen 165 — Per-Child Report (full view)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "166_Skill_Detail_Drill_down.md",
+    "Title": "# Screen 166 — Skill Detail Drill-down\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "167_AI_Interaction_History_full_screen.md",
+    "Title": "# Screen 167 — AI Interaction History (full screen)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "168_Safety_Report_on_demand_full_screen.md",
+    "Title": "# Screen 168 — Safety Report (on-demand, full screen)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "169_Monthly_Family_Report_cross_child_aggregate_only.md",
+    "Title": "# Screen 169 — Monthly Family Report (cross-child, aggregate-only)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "170_AI_Insight_Report_premium.md",
+    "Title": "# Screen 170 — AI Insight Report (premium)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "171_Achievement_Share_Card_Preview_PII_free.md",
+    "Title": "# Screen 171 — Achievement Share Card Preview (PII-free)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "172_Full_Activity_Timeline.md",
+    "Title": "# Screen 172 — Full Activity Timeline\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "173_Controls_Landing_Screen_Time_Quiet_Hours_AI_Permissions_Content_Age_Level_entry_list.md",
+    "Title": "# Screen 173 — Controls Landing (Screen Time / Quiet Hours / AI Permissions / Content Age Level entry list)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "174_Screen_Time_Settings_per_child.md",
+    "Title": "# Screen 174 — Screen Time Settings (per child)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "175_Quiet_Hours_Bedtime_Settings_per_child.md",
+    "Title": "# Screen 175 — Quiet Hours / Bedtime Settings (per child)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "176_AI_Permissions_Settings_per_child.md",
+    "Title": "# Screen 176 — AI Permissions Settings (per child)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "177_Content_Age_Level_Settings_per_child.md",
+    "Title": "# Screen 177 — Content Age Level Settings (per child)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "178_Child_Locks_Sessions_per_child.md",
+    "Title": "# Screen 178 — Child Locks & Sessions (per child)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "179_Set_Lock_Type_Pattern_PIN_Biometric_None.md",
+    "Title": "# Screen 179 — Set Lock Type (Pattern/PIN/Biometric/None)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "180_Device_Revocation_Confirmation.md",
+    "Title": "# Screen 180 — Device Revocation Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "181_Content_Age_Level_Override_Confirmation.md",
+    "Title": "# Screen 181 — Content Age Level — Override Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "182_Subscription_Billing_landing.md",
+    "Title": "# Screen 182 — Subscription & Billing (landing)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "183_Plan_Comparison.md",
+    "Title": "# Screen 183 — Plan Comparison\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "184_Trial_Disclosure_Screen_length_price_renewal_date_auto_renew.md",
+    "Title": "# Screen 184 — Trial Disclosure Screen (length, price, renewal date, auto-renew)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "185_Direct_Upgrade_Disclosure_Screen.md",
+    "Title": "# Screen 185 — Direct Upgrade Disclosure Screen\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "186_Invoice_History.md",
+    "Title": "# Screen 186 — Invoice History\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "187_Invoice_Detail.md",
+    "Title": "# Screen 187 — Invoice Detail\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "188_Cancel_Flow_Confirmation.md",
+    "Title": "# Screen 188 — Cancel Flow — Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "189_Retry_Failed_Payment.md",
+    "Title": "# Screen 189 — Retry Failed Payment\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "190_Free_Plan_Second_Child_Upgrade_Prompt_parent_mode_only.md",
+    "Title": "# Screen 190 — Free-Plan Second-Child Upgrade Prompt (parent-mode only)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "191_Notifications_Parent_Inbox.md",
+    "Title": "# Screen 191 — Notifications (Parent) Inbox\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "192_Notification_Preferences_Category_Toggles.md",
+    "Title": "# Screen 192 — Notification Preferences — Category Toggles\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "193_Notification_Preferences_Quiet_Hours.md",
+    "Title": "# Screen 193 — Notification Preferences — Quiet Hours\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "194_Support_Center_landing.md",
+    "Title": "# Screen 194 — Support Center (landing)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "195_FAQ_Search.md",
+    "Title": "# Screen 195 — FAQ Search\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "196_FAQ_Article_Detail.md",
+    "Title": "# Screen 196 — FAQ Article Detail\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "197_Contact_Support_Form.md",
+    "Title": "# Screen 197 — Contact Support Form\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "198_Ticket_Submitted_Confirmation.md",
+    "Title": "# Screen 198 — Ticket Submitted Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "199_Ticket_History_List.md",
+    "Title": "# Screen 199 — Ticket History List\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "200_Ticket_Detail_Status_View.md",
+    "Title": "# Screen 200 — Ticket Detail / Status View\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "201_Settings_landing.md",
+    "Title": "# Screen 201 — Settings (landing)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "202_Privacy_Support_landing_may_be_a_sub_section_of_Settings.md",
+    "Title": "# Screen 202 — Privacy & Support (landing, may be a sub-section of Settings)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "203_Parent_PIN_Reset_Account_Security.md",
+    "Title": "# Screen 203 — Parent PIN Reset (Account Security)\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "204_Security_Device_List.md",
+    "Title": "# Screen 204 — Security — Device List\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "205_Device_Revocation_Confirmation.md",
+    "Title": "# Screen 205 — Device Revocation Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "206_Consent_Log.md",
+    "Title": "# Screen 206 — Consent Log\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "207_Consent_Detail_full_text_status.md",
+    "Title": "# Screen 207 — Consent Detail (full text + status)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "208_Withdraw_Optional_Consent_Confirmation.md",
+    "Title": "# Screen 208 — Withdraw Optional Consent — Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "209_AI_Interaction_History.md",
+    "Title": "# Screen 209 — AI Interaction History\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "210_AI_Interaction_Detail_redacted.md",
+    "Title": "# Screen 210 — AI Interaction Detail (redacted)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "211_Language_Picker.md",
+    "Title": "# Screen 211 — Language Picker\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "212_Data_Export_Request.md",
+    "Title": "# Screen 212 — Data Export Request\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "213_Export_Status_Tracking_preparing_ready.md",
+    "Title": "# Screen 213 — Export Status Tracking (preparing/ready)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "214_Logout_Confirmation_unsynced_downloads_present.md",
+    "Title": "# Screen 214 — Logout Confirmation (unsynced downloads present)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "215_Security_PIN_and_Device_Management_landing.md",
+    "Title": "# Screen 215 — Security (PIN and Device Management landing)\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "216_Account_Deletion_Request_and_Confirmation.md",
+    "Title": "# Screen 216 — Account Deletion Request and Confirmation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "217_Pending_Account_Deletion_and_Cancellation.md",
+    "Title": "# Screen 217 — Pending Account Deletion and Cancellation\r",
+    "HasBaseline": true,
+    "CopyGap": true
+  },
+  {
+    "File": "218_Ramadan_Prep_Countdown.md",
+    "Title": "# Screen 218 — Ramadan Prep / Countdown\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "219_Ramadan_Home.md",
+    "Title": "# Screen 219 — Ramadan Home\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "220_Ramadan_Journey_Map.md",
+    "Title": "# Screen 220 — Ramadan Journey Map\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "221_Night_Recap.md",
+    "Title": "# Screen 221 — Night Recap\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "222_Ramadan_Mission_Detail.md",
+    "Title": "# Screen 222 — Ramadan Mission Detail\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "223_Ramadan_Story_Player.md",
+    "Title": "# Screen 223 — Ramadan Story Player\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "224_Fasting_Tracker.md",
+    "Title": "# Screen 224 — Fasting Tracker\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "225_Laylatul_Qadr_Reflection.md",
+    "Title": "# Screen 225 — Laylatul Qadr Reflection\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "226_Eid_Countdown.md",
+    "Title": "# Screen 226 — Eid Countdown\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "227_Eid_Home.md",
+    "Title": "# Screen 227 — Eid Home\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "228_Eid_Reward_Reveal.md",
+    "Title": "# Screen 228 — Eid Reward Reveal\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "229_Eid_Card_Generator.md",
+    "Title": "# Screen 229 — Eid Card Generator\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "230_Ramadan_Complete_Certificate.md",
+    "Title": "# Screen 230 — Ramadan Complete Certificate\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "231_Post_Eid_Keep_the_Habit.md",
+    "Title": "# Screen 231 — Post-Eid Keep the Habit\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "232_Parent_Ramadan_Settings.md",
+    "Title": "# Screen 232 — Parent Ramadan Settings\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "233_Parent_Ramadan_Dashboard.md",
+    "Title": "# Screen 233 — Parent Ramadan Dashboard\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "234_Family_Ramadan_Aggregate.md",
+    "Title": "# Screen 234 — Family Ramadan Aggregate\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "235_Family_Ramadan_Report.md",
+    "Title": "# Screen 235 — Family Ramadan Report\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "236_Conversion_Moment_Card.md",
+    "Title": "# Screen 236 — Conversion Moment Card\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  },
+  {
+    "File": "237_Family_Member_Invite.md",
+    "Title": "# Screen 237 — Family Member Invite\r",
+    "HasBaseline": true,
+    "CopyGap": false
+  }
+]

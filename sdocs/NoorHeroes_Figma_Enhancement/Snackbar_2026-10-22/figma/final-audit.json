@@ -1,0 +1,482 @@
+{
+  "fileKey": "MR9935oQZACMjndzGIUgq5",
+  "referenceScreen": "1654:1428",
+  "libraryPage": "1420:2",
+  "family": "1769:53",
+  "nodes": [
+    {
+      "id": "1420:18",
+      "name": "Tone=Error",
+      "type": "COMPONENT",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 20,
+      "visible": true,
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1769:35",
+      "name": "Tone=Success",
+      "type": "COMPONENT",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 124,
+      "visible": true,
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1769:41",
+      "name": "Tone=Warning",
+      "type": "COMPONENT",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 228,
+      "visible": true,
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1769:47",
+      "name": "Tone=Info",
+      "type": "COMPONENT",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 332,
+      "visible": true,
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1428:220",
+      "name": "Feedback/Network & API Error",
+      "type": "INSTANCE",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 760,
+      "visible": true,
+      "properties": {
+        "Show action#1769:2": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Show dismiss#1769:3": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Message#1769:0": {
+          "type": "TEXT",
+          "value": "Unable to send the code. Please try again."
+        },
+        "Action label#1769:1": {
+          "type": "TEXT",
+          "value": "Retry"
+        },
+        "Tone": {
+          "value": "Error",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "master": "1420:18",
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1461:545",
+      "name": "Feedback/Registration",
+      "type": "INSTANCE",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 760,
+      "visible": true,
+      "properties": {
+        "Show action#1769:2": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Show dismiss#1769:3": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Message#1769:0": {
+          "type": "TEXT",
+          "value": "Something went wrong, please try again"
+        },
+        "Action label#1769:1": {
+          "type": "TEXT",
+          "value": "Retry"
+        },
+        "Tone": {
+          "value": "Error",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "master": "1420:18",
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1615:317",
+      "name": "NH/Snackbar",
+      "type": "INSTANCE",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 760,
+      "visible": true,
+      "properties": {
+        "Show dismiss#1769:3": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Show action#1769:2": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Action label#1769:1": {
+          "type": "TEXT",
+          "value": "Retry"
+        },
+        "Message#1769:0": {
+          "boundVariables": {
+            "value": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:1612:1257"
+            }
+          },
+          "type": "TEXT",
+          "value": ""
+        },
+        "Tone": {
+          "value": "Error",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "master": "1420:18",
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 18
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1650:847",
+      "name": "NH/Snackbar",
+      "type": "INSTANCE",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 760,
+      "visible": true,
+      "properties": {
+        "Show dismiss#1769:3": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Show action#1769:2": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Action label#1769:1": {
+          "type": "TEXT",
+          "value": "Retry"
+        },
+        "Message#1769:0": {
+          "boundVariables": {
+            "value": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:1650:482"
+            }
+          },
+          "type": "TEXT",
+          "value": ""
+        },
+        "Tone": {
+          "value": "Error",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "master": "1420:18",
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 18
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1654:1726",
+      "name": "NH/Snackbar",
+      "type": "INSTANCE",
+      "width": 350,
+      "height": 60,
+      "x": 20,
+      "y": 760,
+      "visible": true,
+      "properties": {
+        "Show dismiss#1769:3": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Show action#1769:2": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Action label#1769:1": {
+          "type": "TEXT",
+          "value": "Retry"
+        },
+        "Message#1769:0": {
+          "type": "TEXT",
+          "value": "No internet connection. Reconnect and try again."
+        },
+        "Tone": {
+          "value": "Error",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "master": "1420:18",
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 220,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "id": "1670:1273",
+      "name": "Snackbar / enrollment error",
+      "type": "INSTANCE",
+      "width": 338,
+      "height": 60,
+      "x": 26,
+      "y": 348,
+      "visible": true,
+      "properties": {
+        "Show dismiss#1769:3": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Show action#1769:2": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "Action label#1769:1": {
+          "type": "TEXT",
+          "value": "Retry"
+        },
+        "Message#1769:0": {
+          "type": "TEXT",
+          "value": "Biometric unlock wasn’t enabled. You can still use your PIN."
+        },
+        "Tone": {
+          "value": "Error",
+          "type": "VARIANT",
+          "boundVariables": {}
+        }
+      },
+      "master": "1420:18",
+      "children": [
+        {
+          "name": "Message",
+          "visible": true,
+          "width": 208,
+          "height": 36
+        },
+        {
+          "name": "Action",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Dismiss",
+          "visible": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "originalErrorMasterPreserved": true,
+    "retryAndDismissHandlersPreserved": true,
+    "messageVariableBindingsPreserved": true,
+    "activeV2ToastCount": 0,
+    "longMessagePreview": {
+      "width": 280,
+      "height": 142,
+      "minimumControlTarget": 44
+    },
+    "screenshots": [
+      "2026-10-22_Snackbar_Reference_Verified.png",
+      "2026-10-22_Snackbar_Final_1420-34.png",
+      "2026-10-22_Snackbar_Final_1428-174.png",
+      "2026-10-22_Snackbar_Final_1670-1206.png"
+    ],
+    "nativePresentPlaybackVerified": false
+  }
+}

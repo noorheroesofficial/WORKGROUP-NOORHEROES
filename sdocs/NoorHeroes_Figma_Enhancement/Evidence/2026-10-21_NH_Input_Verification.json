@@ -1,0 +1,739 @@
+{
+  "date": "2026-10-21",
+  "figmaFile": "MR9935oQZACMjndzGIUgq5",
+  "fieldBuild": {
+    "createdNodeIds": [
+      "1563:936",
+      "1563:945",
+      "1563:946",
+      "1563:947",
+      "1563:948",
+      "1563:949",
+      "1563:950",
+      "1563:951",
+      "1563:953",
+      "1563:954",
+      "1563:956",
+      "1563:957",
+      "1563:959",
+      "1563:960",
+      "1563:962",
+      "1563:963",
+      "1563:965",
+      "1563:966",
+      "1563:1399",
+      "1563:1408",
+      "1563:1409",
+      "1563:1410",
+      "1563:1411",
+      "1563:1412",
+      "1563:1413",
+      "1563:1414",
+      "1563:1416",
+      "1563:1417",
+      "1563:1419",
+      "1563:1420",
+      "1563:1422",
+      "1563:1423",
+      "1563:1425",
+      "1563:1426",
+      "1563:1428",
+      "1563:1429"
+    ],
+    "changedNodeIds": [
+      "1355:2718",
+      "1355:2720",
+      "1383:3079",
+      "1383:3080",
+      "1355:2724",
+      "1355:2725",
+      "1358:5646",
+      "1355:2696",
+      "1459:751",
+      "1459:753",
+      "1459:1006",
+      "1459:1005",
+      "1459:1002",
+      "1459:1004",
+      "1459:1003",
+      "1459:256",
+      "1459:1209"
+    ],
+    "configs": [
+      {
+        "name": "Login",
+        "root": "1355:2696",
+        "owner": "1355:2565",
+        "scope": "1355:2564",
+        "group": "1355:2718",
+        "outer": "1355:2720",
+        "helper": "1383:3079",
+        "fixture": "1358:5646",
+        "valueNode": "1355:2725",
+        "divider": "1355:2724",
+        "outline": "1383:3080",
+        "phoneMode": "VariableID:1383:3057",
+        "emailMode": "VariableID:1383:3058",
+        "error": "VariableID:1383:3059",
+        "processing": "VariableID:1383:3061",
+        "label": "VariableID:1383:3062",
+        "value": "VariableID:1383:3063",
+        "message": "VariableID:1383:3064",
+        "height": "VariableID:1552:429",
+        "state": "VariableID:1559:283",
+        "phoneRaw": "VariableID:1355:2572",
+        "emailRaw": "VariableID:1355:2573",
+        "phoneValid": "VariableID:1358:5641",
+        "emailValid": "VariableID:1358:5642",
+        "ready": "VariableID:1355:2577",
+        "disabled": "VariableID:1355:2578",
+        "instance": "1563:936",
+        "focused": "VariableID:1563:340",
+        "cursor": "VariableID:1563:341",
+        "tone": "VariableID:1563:342",
+        "panel": "1563:946",
+        "list": "1563:949",
+        "caseButtons": [
+          {
+            "name": "Empty",
+            "id": "1563:953"
+          },
+          {
+            "name": "Focused",
+            "id": "1563:956"
+          },
+          {
+            "name": "Filled — fictional example",
+            "id": "1563:959"
+          },
+          {
+            "name": "Blur / finish editing",
+            "id": "1563:962"
+          },
+          {
+            "name": "Required field error",
+            "id": "1563:965"
+          }
+        ],
+        "scopeReactionPatches": 540
+      },
+      {
+        "name": "Registration",
+        "root": "1459:256",
+        "owner": "1459:216",
+        "scope": "1459:216",
+        "group": "1459:751",
+        "outer": "1459:753",
+        "helper": "1459:1006",
+        "fixture": "1459:1003",
+        "valueNode": "1459:1004",
+        "divider": "1459:1002",
+        "outline": "1459:1005",
+        "phoneMode": "VariableID:1459:218",
+        "emailMode": "VariableID:1459:219",
+        "error": "VariableID:1459:231",
+        "processing": "VariableID:1459:226",
+        "label": "VariableID:1459:235",
+        "value": "VariableID:1459:234",
+        "message": "VariableID:1459:241",
+        "height": "VariableID:1464:254",
+        "phoneRaw": "VariableID:1459:232",
+        "emailRaw": "VariableID:1459:233",
+        "phoneValid": "VariableID:1459:220",
+        "emailValid": "VariableID:1459:221",
+        "ready": "VariableID:1459:222",
+        "disabled": "VariableID:1459:223",
+        "state": "VariableID:1563:988",
+        "instance": "1563:1399",
+        "focused": "VariableID:1563:985",
+        "cursor": "VariableID:1563:986",
+        "tone": "VariableID:1563:987",
+        "panel": "1563:1409",
+        "list": "1563:1412",
+        "caseButtons": [
+          {
+            "name": "Empty",
+            "id": "1563:1416"
+          },
+          {
+            "name": "Focused",
+            "id": "1563:1419"
+          },
+          {
+            "name": "Filled — fictional example",
+            "id": "1563:1422"
+          },
+          {
+            "name": "Blur / finish editing",
+            "id": "1563:1425"
+          },
+          {
+            "name": "Required field error",
+            "id": "1563:1428"
+          }
+        ],
+        "scopeReactionPatches": 310
+      }
+    ],
+    "sourceComponent": "357:2",
+    "boundaryReference": "356:127",
+    "standard": {
+      "boundaryHeight": 56,
+      "padding": [
+        8,
+        16,
+        8,
+        16
+      ],
+      "radius": 12,
+      "textSize": 16,
+      "defaultHeight": 88,
+      "errorHeight": 116
+    },
+    "note": "D opens native controlled review; G focuses, B blurs, V fills fictional sample, C clears, Q required error. Real typing requires runnable companion."
+  },
+  "scenarioBuild": {
+    "createdNodeIds": [
+      "1566:365",
+      "1566:367",
+      "1566:368",
+      "1566:370",
+      "1566:371",
+      "1566:373",
+      "1566:374",
+      "1566:376",
+      "1566:377",
+      "1566:379",
+      "1566:380",
+      "1566:382",
+      "1566:383",
+      "1566:385",
+      "1566:386",
+      "1566:388",
+      "1566:389",
+      "1566:391",
+      "1566:392",
+      "1566:394",
+      "1566:395",
+      "1566:521",
+      "1566:523",
+      "1566:524",
+      "1566:526",
+      "1566:527",
+      "1566:529",
+      "1566:530",
+      "1566:532",
+      "1566:533",
+      "1566:535",
+      "1566:536",
+      "1566:538",
+      "1566:539",
+      "1566:541",
+      "1566:542",
+      "1566:544",
+      "1566:545",
+      "1566:547",
+      "1566:548",
+      "1566:550",
+      "1566:551"
+    ],
+    "changedNodeIds": [
+      "1563:946",
+      "1563:949",
+      "I1428:220;1420:20",
+      "1428:171",
+      "1428:172",
+      "1428:174",
+      "I1428:220;1420:22",
+      "1563:1409",
+      "1563:1412",
+      "I1461:545;1420:20",
+      "1461:474",
+      "1461:475",
+      "1461:478",
+      "I1461:545;1420:22",
+      "1459:256"
+    ],
+    "evidence": [
+      {
+        "name": "Login",
+        "reviewPanel": "1563:946",
+        "scroll": "1566:365",
+        "cases": [
+          {
+            "name": "Invalid phone",
+            "id": "1566:367"
+          },
+          {
+            "name": "Invalid email",
+            "id": "1566:370"
+          },
+          {
+            "name": "Next response: HTTP 422 field error",
+            "id": "1566:373"
+          },
+          {
+            "name": "Next response: HTTP 500",
+            "id": "1566:376"
+          },
+          {
+            "name": "Next response: HTTP 503",
+            "id": "1566:379"
+          },
+          {
+            "name": "Next response: HTTP 429 (15s hold)",
+            "id": "1566:382"
+          },
+          {
+            "name": "Next response: HTTP 401 / 403",
+            "id": "1566:385"
+          },
+          {
+            "name": "Next response: network failure",
+            "id": "1566:388"
+          },
+          {
+            "name": "Next response: timeout",
+            "id": "1566:391"
+          },
+          {
+            "name": "Next response: success (OTP pending)",
+            "id": "1566:394"
+          }
+        ],
+        "retryVariable": "VariableID:1566:366",
+        "processingIds": [
+          "1428:171",
+          "1428:172"
+        ]
+      },
+      {
+        "name": "Registration",
+        "reviewPanel": "1563:1409",
+        "scroll": "1566:521",
+        "cases": [
+          {
+            "name": "Invalid phone",
+            "id": "1566:523"
+          },
+          {
+            "name": "Invalid email",
+            "id": "1566:526"
+          },
+          {
+            "name": "Next response: HTTP 422 field error",
+            "id": "1566:529"
+          },
+          {
+            "name": "Next response: HTTP 500",
+            "id": "1566:532"
+          },
+          {
+            "name": "Next response: HTTP 503",
+            "id": "1566:535"
+          },
+          {
+            "name": "Next response: HTTP 429 (15s hold)",
+            "id": "1566:538"
+          },
+          {
+            "name": "Next response: HTTP 401 / 403",
+            "id": "1566:541"
+          },
+          {
+            "name": "Next response: network failure",
+            "id": "1566:544"
+          },
+          {
+            "name": "Next response: timeout",
+            "id": "1566:547"
+          },
+          {
+            "name": "Next response: success (OTP pending)",
+            "id": "1566:550"
+          }
+        ],
+        "retryVariable": "VariableID:1566:522",
+        "processingIds": [
+          "1461:474",
+          "1461:475"
+        ]
+      }
+    ],
+    "note": "Native response presets only. Real input and actual controlled HTTP responses run in the local companion. Native 429 keeps the overlay open 15 seconds; local honors Retry-After."
+  },
+  "variantCheck": {
+    "changedVariableIds": [
+      "VariableID:1559:283",
+      "VariableID:1563:988"
+    ],
+    "variants": [
+      {
+        "screen": "Login",
+        "state": "Empty",
+        "main": "356:125",
+        "width": 338,
+        "height": 88
+      },
+      {
+        "screen": "Login",
+        "state": "Filled",
+        "main": "356:133",
+        "width": 338,
+        "height": 88
+      },
+      {
+        "screen": "Login",
+        "state": "Focused",
+        "main": "356:141",
+        "width": 338,
+        "height": 88
+      },
+      {
+        "screen": "Login",
+        "state": "Error",
+        "main": "356:149",
+        "width": 338,
+        "height": 116
+      },
+      {
+        "screen": "Registration",
+        "state": "Empty",
+        "main": "356:125",
+        "width": 338,
+        "height": 88
+      },
+      {
+        "screen": "Registration",
+        "state": "Filled",
+        "main": "356:133",
+        "width": 338,
+        "height": 88
+      },
+      {
+        "screen": "Registration",
+        "state": "Focused",
+        "main": "356:141",
+        "width": 338,
+        "height": 88
+      },
+      {
+        "screen": "Registration",
+        "state": "Error",
+        "main": "356:149",
+        "width": 338,
+        "height": 116
+      }
+    ]
+  },
+  "actionInterpreterCheck": {
+    "checks": [
+      {
+        "name": "Login empty",
+        "pass": true,
+        "detail": {
+          "state": "Empty",
+          "height": 88
+        }
+      },
+      {
+        "name": "Login focus",
+        "pass": true,
+        "detail": {
+          "state": "Focused",
+          "height": 88
+        }
+      },
+      {
+        "name": "Login filled",
+        "pass": true,
+        "detail": {
+          "state": "Filled",
+          "height": 88
+        }
+      },
+      {
+        "name": "Login invalid email",
+        "pass": true,
+        "detail": {
+          "state": "Error",
+          "height": 116
+        }
+      },
+      {
+        "name": "Login http500 restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login http500 retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login http500 Snackbar",
+        "pass": true,
+        "detail": {
+          "message": "Something went wrong. Please try again."
+        }
+      },
+      {
+        "name": "Login http422 restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login http422 retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login server field error",
+        "pass": true,
+        "detail": {
+          "message": "Check your email address and try again."
+        }
+      },
+      {
+        "name": "Login http429 restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login http429 retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login http429 Snackbar",
+        "pass": true,
+        "detail": {
+          "message": "Too many attempts. Please try again later."
+        }
+      },
+      {
+        "name": "Login offline restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login offline retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Login offline Snackbar",
+        "pass": true,
+        "detail": {
+          "message": "Unable to connect. Check your internet connection."
+        }
+      },
+      {
+        "name": "Registration empty",
+        "pass": true,
+        "detail": {
+          "state": "Empty",
+          "height": 88
+        }
+      },
+      {
+        "name": "Registration focus",
+        "pass": true,
+        "detail": {
+          "state": "Focused",
+          "height": 88
+        }
+      },
+      {
+        "name": "Registration filled",
+        "pass": true,
+        "detail": {
+          "state": "Filled",
+          "height": 88
+        }
+      },
+      {
+        "name": "Registration invalid email",
+        "pass": true,
+        "detail": {
+          "state": "Error",
+          "height": 116
+        }
+      },
+      {
+        "name": "Registration http500 restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration http500 retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration http500 Snackbar",
+        "pass": true,
+        "detail": {
+          "message": "Something went wrong. Please try again."
+        }
+      },
+      {
+        "name": "Registration http422 restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration http422 retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration server field error",
+        "pass": true,
+        "detail": {
+          "message": "Check your email address and try again."
+        }
+      },
+      {
+        "name": "Registration http429 restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration http429 retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration http429 Snackbar",
+        "pass": true,
+        "detail": {
+          "message": "Too many attempts. Please try again later."
+        }
+      },
+      {
+        "name": "Registration offline restores processing",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration offline retains value",
+        "pass": true,
+        "detail": {}
+      },
+      {
+        "name": "Registration offline Snackbar",
+        "pass": true,
+        "detail": {
+          "message": "Unable to connect. Check your internet connection."
+        }
+      }
+    ],
+    "changedVariableIds": [
+      "VariableID:1355:2572",
+      "VariableID:1383:3063",
+      "VariableID:1358:5641",
+      "VariableID:1355:2577",
+      "VariableID:1355:2578",
+      "VariableID:1383:3059",
+      "VariableID:1552:429",
+      "VariableID:1563:340",
+      "VariableID:1559:283",
+      "VariableID:1563:342",
+      "VariableID:1563:341",
+      "VariableID:1355:2581",
+      "VariableID:1383:3067",
+      "VariableID:1383:3068",
+      "VariableID:1396:3047",
+      "VariableID:1396:3048",
+      "VariableID:1383:3057",
+      "VariableID:1383:3058",
+      "VariableID:1383:3062",
+      "VariableID:1355:2573",
+      "VariableID:1358:5642",
+      "VariableID:1383:3064",
+      "VariableID:1383:3061",
+      "VariableID:1355:2580",
+      "VariableID:1444:172",
+      "VariableID:1444:173",
+      "VariableID:1383:3060",
+      "VariableID:1383:3065",
+      "VariableID:1566:366",
+      "VariableID:1459:232",
+      "VariableID:1459:234",
+      "VariableID:1459:220",
+      "VariableID:1459:222",
+      "VariableID:1459:223",
+      "VariableID:1459:231",
+      "VariableID:1464:254",
+      "VariableID:1563:985",
+      "VariableID:1563:988",
+      "VariableID:1563:987",
+      "VariableID:1563:986",
+      "VariableID:1459:230",
+      "VariableID:1462:253",
+      "VariableID:1461:467",
+      "VariableID:1461:468",
+      "VariableID:1461:469",
+      "VariableID:1461:470",
+      "VariableID:1459:218",
+      "VariableID:1459:219",
+      "VariableID:1459:235",
+      "VariableID:1459:233",
+      "VariableID:1459:221",
+      "VariableID:1459:241",
+      "VariableID:1459:226",
+      "VariableID:1459:237",
+      "VariableID:1459:227",
+      "VariableID:1459:240",
+      "VariableID:1533:328",
+      "VariableID:1459:239",
+      "VariableID:1566:522"
+    ],
+    "defaultsRestored": true,
+    "note": "Action interpreter and geometry verification, not Present playback."
+  },
+  "errorGeometry": {
+    "checks": [
+      {
+        "screen": "Login",
+        "fieldGroupHeight": 116,
+        "componentHeight": 116,
+        "boundaryHeight": 56,
+        "main": "356:149"
+      },
+      {
+        "screen": "Registration",
+        "fieldGroupHeight": 116,
+        "componentHeight": 116,
+        "boundaryHeight": 56,
+        "main": "356:149"
+      }
+    ],
+    "changedVariableIds": [
+      "VariableID:1383:3059",
+      "VariableID:1552:429",
+      "VariableID:1559:283",
+      "VariableID:1383:3064",
+      "VariableID:1383:3062",
+      "VariableID:1383:3063",
+      "VariableID:1383:3057",
+      "VariableID:1383:3058",
+      "VariableID:1459:231",
+      "VariableID:1464:254",
+      "VariableID:1563:988",
+      "VariableID:1459:241",
+      "VariableID:1459:235",
+      "VariableID:1459:234",
+      "VariableID:1459:218",
+      "VariableID:1459:219"
+    ],
+    "restored": true
+  },
+  "limits": [
+    "Code Layers disabled",
+    "Figma Present playback unverified",
+    "Local requests use controlled HTTP mock only",
+    "OTP exit intentionally pending"
+  ]
+}

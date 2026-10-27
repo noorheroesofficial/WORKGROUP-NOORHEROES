@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "assertions": 1576,
+  "tests": [
+    "Enabled/disabled/duplicate submission",
+    "Inline correction and method persistence",
+    "All245 countries preserve input, set one exact flag, close and require validation",
+    "Completion boundary, failure,10s timeout and operation-specific retry"
+  ],
+  "countries": 245,
+  "routes": 552,
+  "missing": [],
+  "archivedRoutes": [],
+  "activeLoginScreens": 1,
+  "archivedScreens": 21,
+  "card": {
+    "width": 366,
+    "height": 466,
+    "x": 12,
+    "y": 146
+  },
+  "buttonY": 510,
+  "limits": [
+    "Saved-action model and static visual verification only",
+    "Input/search are fixtures",
+    "OTP and Registration destinations remain unapproved",
+    "Actual OS keyboard, screen readers and live Present remain unverified"
+  ]
+}

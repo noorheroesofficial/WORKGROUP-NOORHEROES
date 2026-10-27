@@ -1,0 +1,207 @@
+{
+  "tests": {
+    "tests": {
+      "parent-length-0": true,
+      "parent-length-1": true,
+      "parent-length-2": true,
+      "parent-length-3": true,
+      "parent-length-4": true,
+      "parent-length-5": true,
+      "parent-length-6": true,
+      "parentMax6": true,
+      "parentDelete": true,
+      "parentVerified": true,
+      "noPlainCredentialVariables": true,
+      "wrongParentBlocked": true,
+      "networkAuthNoAttempts": true,
+      "confirmMismatch": true,
+      "saveDisabledNoNav": true,
+      "noEarlyCommit": true,
+      "pinCommit": true,
+      "savedPINWorks": true,
+      "networkSaveRollback": true,
+      "cancelUnchanged": true,
+      "noLockNotEarly": true,
+      "noLockCommit": true,
+      "directSaveBlocked": true,
+      "lockedParentBlocks": true,
+      "cancelChildCooldownPreserved": true,
+      "biometricSimulationVerified": true,
+      "parent4th30": true,
+      "parentCooldownNoBypass": true,
+      "parentReopenPreservesCooldown": true,
+      "parentExpiryPreservesAttempts": true,
+      "parent5th300": true,
+      "parent6th600": true,
+      "parent7th1200": true,
+      "directNewRedirect": true,
+      "directConfirmRedirect": true
+    },
+    "passed": 35,
+    "total": 35,
+    "failures": [],
+    "policyCoverage": "Approved progressive policy tested: 4th 30s, 5th 300s, 6th 600s, 7th 1200s; cancel/reopen blocked; expiry retains attempt history."
+  },
+  "audit": {
+    "changed": [
+      "2207:9036"
+    ],
+    "section": "2207:8061",
+    "frames": [
+      {
+        "id": "2207:8134",
+        "name": "NH/V2/Onboarding/024/Parent verification",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 700,
+        "within": true
+      },
+      {
+        "id": "2207:8314",
+        "name": "NH/V2/Onboarding/024/Verifying parent",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 204,
+        "within": true
+      },
+      {
+        "id": "2207:8374",
+        "name": "NH/V2/Onboarding/024/Reset Child Lock / New PIN",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 260,
+        "within": true
+      },
+      {
+        "id": "2207:8550",
+        "name": "NH/V2/Onboarding/024/Reset Child Lock / Confirm PIN",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 260,
+        "within": true
+      },
+      {
+        "id": "2207:8718",
+        "name": "NH/V2/Onboarding/024/Saving New Lock",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 204,
+        "within": true
+      },
+      {
+        "id": "2207:8778",
+        "name": "NH/V2/Onboarding/024/Parent cooldown / timer A",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 242,
+        "within": true
+      },
+      {
+        "id": "2207:8837",
+        "name": "NH/V2/Onboarding/024/Parent cooldown / timer B",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 242,
+        "within": true
+      },
+      {
+        "id": "2207:8886",
+        "name": "NH/V2/Onboarding/024/Parent biometric — system simulation",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": null,
+        "within": true
+      },
+      {
+        "id": "2209:16137",
+        "name": "Review only / Verified reset PIN",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 720,
+        "within": true
+      },
+      {
+        "id": "2209:16352",
+        "name": "Review only / Confirm new PIN",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 618,
+        "within": true
+      },
+      {
+        "id": "2209:16556",
+        "name": "Review only / No Lock reset",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 368,
+        "within": true
+      },
+      {
+        "id": "2215:9019",
+        "name": "Review only / Parent verification failure",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 772,
+        "within": true
+      },
+      {
+        "id": "2215:9234",
+        "name": "Review only / Parent cooldown",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 242,
+        "within": true
+      },
+      {
+        "id": "2215:9364",
+        "name": "Review only / Confirmation mismatch",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 686,
+        "within": true
+      },
+      {
+        "id": "2215:9571",
+        "name": "Review only / Save network error",
+        "viewport": [
+          390,
+          844
+        ],
+        "cardBottom": 686,
+        "within": true
+      }
+    ],
+    "allWithin": true,
+    "variableCount": 72,
+    "primaryHeight": 48,
+    "scope": "V2 only. No production auth or app code changes."
+  }
+}

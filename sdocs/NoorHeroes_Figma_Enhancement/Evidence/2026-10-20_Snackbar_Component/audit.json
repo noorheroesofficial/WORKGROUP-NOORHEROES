@@ -1,0 +1,62 @@
+{
+  "component": {
+    "result": "PASS",
+    "assertions": 55,
+    "issues": [],
+    "component": "1420:18",
+    "page": "1420:2",
+    "properties": {
+      "Message#1420:0": {
+        "type": "TEXT",
+        "defaultValue": "Unable to send the code. Please try again."
+      },
+      "Action label#1420:1": {
+        "type": "TEXT",
+        "defaultValue": "Retry"
+      },
+      "Show action#1420:2": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show dismiss#1420:3": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      }
+    },
+    "specimenCount": 6,
+    "clipping": [],
+    "routeCount": 1,
+    "demoVariableActions": 6,
+    "sourceMatched": {
+      "size": [
+        350,
+        60
+      ],
+      "corners": 0,
+      "overlay": [
+        390,
+        844,
+        0,
+        772,
+        390,
+        72
+      ]
+    },
+    "limits": [
+      "Saved actions and static layout checked; live Present playback not exercised",
+      "Action implementation belongs to consuming screen; demo sends no request"
+    ]
+  },
+  "sourcePreservation": {
+    "result": "PASS",
+    "checks": {
+      "sourceSize": true,
+      "sourceSurface": true,
+      "sourceBorder": true,
+      "sourceCorners": true,
+      "sourceAction": true,
+      "sourceOverlayActions": true,
+      "sourceOverlayBar": true
+    }
+  }
+}

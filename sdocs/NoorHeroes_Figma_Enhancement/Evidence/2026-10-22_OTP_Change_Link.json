@@ -1,0 +1,168 @@
+{
+  "update": {
+    "mutatedNodeIds": [
+      "1683:779",
+      "1612:2078",
+      "1612:2097",
+      "1612:2098",
+      "1683:781",
+      "1619:439",
+      "1619:450",
+      "1619:451",
+      "1683:783",
+      "1619:649",
+      "1619:660",
+      "1619:661",
+      "1683:785",
+      "1619:855",
+      "1619:866",
+      "1619:867",
+      "1683:787",
+      "1619:1061",
+      "1619:1072",
+      "1619:1073",
+      "1428:171",
+      "1461:474"
+    ],
+    "before": [
+      {
+        "row": "1683:779",
+        "recipient": "•••1204",
+        "button": "Edit",
+        "font": {
+          "family": "Poppins",
+          "style": "Regular"
+        },
+        "decoration": "NONE",
+        "buttonWidth": 44
+      },
+      {
+        "row": "1683:781",
+        "recipient": "•••1204",
+        "button": "Edit",
+        "font": {
+          "family": "Poppins",
+          "style": "Regular"
+        },
+        "decoration": "NONE",
+        "buttonWidth": 44
+      },
+      {
+        "row": "1683:783",
+        "recipient": "•••1204",
+        "button": "Edit",
+        "font": {
+          "family": "Poppins",
+          "style": "Regular"
+        },
+        "decoration": "NONE",
+        "buttonWidth": 44
+      },
+      {
+        "row": "1683:785",
+        "recipient": "•••1204",
+        "button": "Edit",
+        "font": {
+          "family": "Poppins",
+          "style": "Regular"
+        },
+        "decoration": "NONE",
+        "buttonWidth": 44
+      },
+      {
+        "row": "1683:787",
+        "recipient": "•••1204",
+        "button": "Edit",
+        "font": {
+          "family": "Poppins",
+          "style": "Regular"
+        },
+        "decoration": "NONE",
+        "buttonWidth": 44
+      }
+    ],
+    "processingDisplayUpdates": 2,
+    "boldFont": {
+      "family": "Poppins",
+      "style": "Bold"
+    }
+  },
+  "checks": [
+    {
+      "id": "1683:779",
+      "text": "We sent a 6-digit code to •••1204.",
+      "change": "Change",
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      },
+      "underline": "UNDERLINE",
+      "spacing": 10,
+      "contentWidth": 306,
+      "fits": true,
+      "singleLine": true,
+      "liveNavigationPreserved": 1
+    },
+    {
+      "id": "1683:781",
+      "text": "We sent a 6-digit code to •••1204.",
+      "change": "Change",
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      },
+      "underline": "UNDERLINE",
+      "spacing": 10,
+      "contentWidth": 306,
+      "fits": true,
+      "singleLine": true,
+      "liveNavigationPreserved": 0
+    },
+    {
+      "id": "1683:783",
+      "text": "We sent a 6-digit code to •••1204.",
+      "change": "Change",
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      },
+      "underline": "UNDERLINE",
+      "spacing": 10,
+      "contentWidth": 306,
+      "fits": true,
+      "singleLine": true,
+      "liveNavigationPreserved": 0
+    },
+    {
+      "id": "1683:785",
+      "text": "We sent a 6-digit code to •••1204.",
+      "change": "Change",
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      },
+      "underline": "UNDERLINE",
+      "spacing": 10,
+      "contentWidth": 306,
+      "fits": true,
+      "singleLine": true,
+      "liveNavigationPreserved": 0
+    },
+    {
+      "id": "1683:787",
+      "text": "We sent a 6-digit code to •••1204.",
+      "change": "Change",
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      },
+      "underline": "UNDERLINE",
+      "spacing": 10,
+      "contentWidth": 306,
+      "fits": true,
+      "singleLine": true,
+      "liveNavigationPreserved": 0
+    }
+  ],
+  "scope": "Display-only OTP punctuation and Change link. Existing correction reactions preserved; no screens removed."
+}

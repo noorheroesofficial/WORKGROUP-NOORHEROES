@@ -1,0 +1,469 @@
+{
+  "date": "2026-10-21",
+  "scope": "Existing Registration/OTP/Parent PIN/Biometric prototype navigation only",
+  "reproduction": {
+    "checks": [
+      {
+        "name": "Registration success enters OTP",
+        "pass": true
+      },
+      {
+        "name": "Actual required consent initializes new-parent route",
+        "pass": false
+      },
+      {
+        "name": "Registration OTP success enters Parent PIN without review switches",
+        "pass": false
+      },
+      {
+        "name": "PIN save opens eligible biometric offer",
+        "pass": true
+      },
+      {
+        "name": "Enable opens system simulation",
+        "pass": true
+      },
+      {
+        "name": "Biometric success ends loading and closes",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 0",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 1",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 2",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 3",
+        "pass": true
+      },
+      {
+        "name": "PIN Back returns OTP",
+        "pass": true
+      },
+      {
+        "name": "PIN Back allows OTP verification again",
+        "pass": false
+      },
+      {
+        "name": "Back then reverify returns PIN",
+        "pass": false
+      },
+      {
+        "name": "Edit returns Registration",
+        "pass": true
+      },
+      {
+        "name": "Edit preserves required consent",
+        "pass": true
+      },
+      {
+        "name": "Success fixture preserves actual registration eligibility",
+        "pass": false
+      },
+      {
+        "name": "Incorrect OTP does not advance to PIN",
+        "pass": true
+      },
+      {
+        "name": "Unavailable biometrics skipped entirely",
+        "pass": true
+      },
+      {
+        "name": "Skip retains saved PIN",
+        "pass": true
+      },
+      {
+        "name": "System Cancel retains PIN and clears pending",
+        "pass": true
+      },
+      {
+        "name": "Biometric failure opens retry sheet",
+        "pass": true
+      },
+      {
+        "name": "Biometric Retry completes",
+        "pass": true
+      }
+    ],
+    "passed": 17,
+    "total": 22,
+    "failures": [
+      {
+        "name": "Actual required consent initializes new-parent route",
+        "pass": false
+      },
+      {
+        "name": "Registration OTP success enters Parent PIN without review switches",
+        "pass": false
+      },
+      {
+        "name": "PIN Back allows OTP verification again",
+        "pass": false
+      },
+      {
+        "name": "Back then reverify returns PIN",
+        "pass": false
+      },
+      {
+        "name": "Success fixture preserves actual registration eligibility",
+        "pass": false
+      }
+    ],
+    "method": "Evaluated actual stored native actions end to end; no UI playback or OS APIs."
+  },
+  "connectedFlow": {
+    "checks": [
+      {
+        "name": "Registration success enters OTP",
+        "pass": true
+      },
+      {
+        "name": "Actual required consent initializes new-parent route",
+        "pass": true
+      },
+      {
+        "name": "Registration OTP success enters Parent PIN without review switches",
+        "pass": true
+      },
+      {
+        "name": "PIN save opens eligible biometric offer",
+        "pass": true
+      },
+      {
+        "name": "Enable opens system simulation",
+        "pass": true
+      },
+      {
+        "name": "Biometric success ends loading and closes",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 0",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 1",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 2",
+        "pass": true
+      },
+      {
+        "name": "Missing required consent prevents PIN eligibility 3",
+        "pass": true
+      },
+      {
+        "name": "PIN Back returns OTP",
+        "pass": true
+      },
+      {
+        "name": "PIN Back allows OTP verification again",
+        "pass": true
+      },
+      {
+        "name": "Back then reverify returns PIN",
+        "pass": true
+      },
+      {
+        "name": "Edit returns Registration",
+        "pass": true
+      },
+      {
+        "name": "Edit preserves required consent",
+        "pass": true
+      },
+      {
+        "name": "Success fixture preserves actual registration eligibility",
+        "pass": true
+      },
+      {
+        "name": "Incorrect OTP does not advance to PIN",
+        "pass": true
+      },
+      {
+        "name": "Unavailable biometrics skipped entirely",
+        "pass": true
+      },
+      {
+        "name": "Skip retains saved PIN",
+        "pass": true
+      },
+      {
+        "name": "System Cancel retains PIN and clears pending",
+        "pass": true
+      },
+      {
+        "name": "Biometric failure opens retry sheet",
+        "pass": true
+      },
+      {
+        "name": "Biometric Retry completes",
+        "pass": true
+      },
+      {
+        "name": "Keyboard Escape restores a usable OTP screen",
+        "pass": true
+      },
+      {
+        "name": "Escape then verify returns PIN",
+        "pass": true
+      }
+    ],
+    "passed": 24,
+    "total": 24,
+    "failures": [],
+    "method": "Evaluated actual stored native actions end to end; no UI playback or OS APIs."
+  },
+  "pinRegression": {
+    "checks": [
+      {
+        "name": "empty setup disabled",
+        "pass": true
+      },
+      {
+        "name": "0 digits automatically disable Continue",
+        "pass": true
+      },
+      {
+        "name": "1 digits automatically disable Continue",
+        "pass": true
+      },
+      {
+        "name": "2 digits automatically disable Continue",
+        "pass": true
+      },
+      {
+        "name": "3 digits automatically disable Continue",
+        "pass": true
+      },
+      {
+        "name": "4 digits automatically enable Continue",
+        "pass": true
+      },
+      {
+        "name": "5 digits automatically enable Continue",
+        "pass": true
+      },
+      {
+        "name": "6 digits automatically enable Continue",
+        "pass": true
+      },
+      {
+        "name": "input beyond six digits is prevented",
+        "pass": true
+      },
+      {
+        "name": "deleting to five keeps Continue enabled",
+        "pass": true
+      },
+      {
+        "name": "deleting to four keeps Continue enabled",
+        "pass": true
+      },
+      {
+        "name": "deleting below four disables Continue",
+        "pass": true
+      },
+      {
+        "name": "4 entered digits determine confirmation length",
+        "pass": true
+      },
+      {
+        "name": "4 confirmation capped at captured first-pass length",
+        "pass": true
+      },
+      {
+        "name": "5 entered digits determine confirmation length",
+        "pass": true
+      },
+      {
+        "name": "5 confirmation capped at captured first-pass length",
+        "pass": true
+      },
+      {
+        "name": "6 entered digits determine confirmation length",
+        "pass": true
+      },
+      {
+        "name": "6 confirmation capped at captured first-pass length",
+        "pass": true
+      },
+      {
+        "name": "Enter advances set pass without spurious validation error",
+        "pass": true
+      },
+      {
+        "name": "partial confirmation shows neutral format error and does not save",
+        "pass": true
+      },
+      {
+        "name": "mismatch clears confirmation only",
+        "pass": true
+      },
+      {
+        "name": "editing confirmation clears mismatch feedback",
+        "pass": true
+      },
+      {
+        "name": "Delete removes one masked position",
+        "pass": true
+      },
+      {
+        "name": "Back from confirmation preserves set-pass count",
+        "pass": true
+      },
+      {
+        "name": "Back from setup returns to confirmed prior OTP screen",
+        "pass": true
+      },
+      {
+        "name": "confirmation uses captured first-pass length",
+        "pass": true
+      },
+      {
+        "name": "matching fixture starts primary loading",
+        "pass": true
+      },
+      {
+        "name": "saving guards duplicate submit and entry",
+        "pass": true
+      },
+      {
+        "name": "save success clears entry counts and leaves future route unmapped",
+        "pass": true
+      },
+      {
+        "name": "offline preserves both passes and shows Snackbar",
+        "pass": true
+      },
+      {
+        "name": "offline Retry completes and clears counts",
+        "pass": true
+      },
+      {
+        "name": "api preserves both passes and shows Snackbar",
+        "pass": true
+      },
+      {
+        "name": "api Retry completes and clears counts",
+        "pass": true
+      },
+      {
+        "name": "timeout remains busy after2 seconds",
+        "pass": true
+      },
+      {
+        "name": "10 second timeout restores retry and preserves confirmation",
+        "pass": true
+      },
+      {
+        "name": "generic OTP success does not assume new-parent route",
+        "pass": true
+      },
+      {
+        "name": "confirmed new parent consent-complete OTP success opens PIN setup",
+        "pass": true
+      },
+      {
+        "name": "returning-parent OTP success remains unmapped",
+        "pass": true
+      },
+      {
+        "name": "PIN prototype stores counts and outcomes rather than raw PIN or digit variables",
+        "pass": true
+      }
+    ],
+    "passed": 39,
+    "total": 39,
+    "failures": [],
+    "method": "Evaluation of stored native prototype actions; count-only PIN matching is a controlled fixture, not real PIN verification."
+  },
+  "integrity": {
+    "visual": [
+      {
+        "id": "1612:1277",
+        "unchanged": true
+      },
+      {
+        "id": "1650:502",
+        "unchanged": true
+      },
+      {
+        "id": "1670:1069",
+        "unchanged": true
+      },
+      {
+        "id": "1670:1136",
+        "unchanged": true
+      },
+      {
+        "id": "1670:1206",
+        "unchanged": true
+      },
+      {
+        "id": "1355:2696",
+        "unchanged": true
+      },
+      {
+        "id": "1459:256",
+        "unchanged": true
+      }
+    ],
+    "destinationCount": 21,
+    "unresolved": [],
+    "flowStartingPoints": [
+      {
+        "nodeId": "1131:2",
+        "name": "NoorHeroes V2 — Final app entry"
+      },
+      {
+        "nodeId": "1612:1277",
+        "name": "OTP verification — enter through Registration for new parent"
+      },
+      {
+        "nodeId": "1650:502",
+        "name": "Parent PIN Setup → Optional Biometrics"
+      },
+      {
+        "nodeId": "1355:2696",
+        "name": "Final Authentication — Approved Login"
+      },
+      {
+        "nodeId": "1215:34",
+        "name": "Flow 1"
+      },
+      {
+        "nodeId": "1513:386",
+        "name": "Flow 2"
+      },
+      {
+        "nodeId": "1459:256",
+        "name": "New parent — Registration → OTP → PIN → Biometrics"
+      }
+    ]
+  },
+  "changes": [
+    "1461:474",
+    "1612:2119",
+    "1650:528",
+    "1650:502",
+    "928:2"
+  ],
+  "limits": [
+    "Stored native-action evaluation; Present playback not verified",
+    "No real authentication, server requests or OS biometrics",
+    "Returning-account/future Add Child destination remains unmapped"
+  ],
+  "flowStart": {
+    "nodeId": "1459:256",
+    "name": "New parent — Registration → OTP → PIN → Biometrics"
+  }
+}

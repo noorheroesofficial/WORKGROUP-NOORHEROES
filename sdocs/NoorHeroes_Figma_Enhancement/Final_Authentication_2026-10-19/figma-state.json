@@ -1,0 +1,328 @@
+{
+  "section": "1355:2564",
+  "sections": [
+    {
+      "id": "1355:2565",
+      "name": "01 — Approved Login"
+    },
+    {
+      "id": "1355:2566",
+      "name": "02 — Country Selector"
+    },
+    {
+      "id": "1355:2567",
+      "name": "03 — Button States"
+    },
+    {
+      "id": "1355:2568",
+      "name": "04 — Loading States"
+    },
+    {
+      "id": "1355:2569",
+      "name": "05 — Error & Retry States"
+    },
+    {
+      "id": "1355:2570",
+      "name": "06 — Connected Prototype Flow"
+    }
+  ],
+  "states": [
+    {
+      "id": "1355:2696",
+      "name": "Phone-Empty",
+      "method": "phone",
+      "enabled": "1355:2801",
+      "disabled": "1355:2808",
+      "slot": "1355:2800"
+    },
+    {
+      "id": "1355:2815",
+      "name": "Phone-Ready",
+      "method": "phone",
+      "enabled": "1355:2920",
+      "disabled": "1355:2927",
+      "slot": "1355:2919"
+    },
+    {
+      "id": "1355:2934",
+      "name": "Email-Empty",
+      "method": "email",
+      "enabled": "1355:3039",
+      "disabled": "1355:3046",
+      "slot": "1355:3038"
+    },
+    {
+      "id": "1355:3053",
+      "name": "Email-Ready",
+      "method": "email",
+      "enabled": "1355:3158",
+      "disabled": "1355:3165",
+      "slot": "1355:3157"
+    },
+    {
+      "id": "1355:3172",
+      "name": "Phone-Invalid",
+      "method": "phone",
+      "enabled": "1355:3277",
+      "disabled": "1355:3284",
+      "slot": "1355:3276"
+    },
+    {
+      "id": "1355:3291",
+      "name": "Email-Invalid",
+      "method": "email",
+      "enabled": "1355:3396",
+      "disabled": "1355:3403",
+      "slot": "1355:3395"
+    },
+    {
+      "id": "1355:3410",
+      "name": "Country-Missing",
+      "method": "phone",
+      "enabled": "1355:3515",
+      "disabled": "1355:3522",
+      "slot": "1355:3514"
+    },
+    {
+      "id": "1355:3529",
+      "name": "Phone-Request-Failure",
+      "method": "phone",
+      "enabled": "1355:3634",
+      "disabled": "1355:3641",
+      "slot": "1355:3633"
+    },
+    {
+      "id": "1355:3648",
+      "name": "Email-Request-Failure",
+      "method": "email",
+      "enabled": "1355:3753",
+      "disabled": "1355:3760",
+      "slot": "1355:3752"
+    },
+    {
+      "id": "1355:3767",
+      "name": "Phone-Timeout",
+      "method": "phone",
+      "enabled": "1355:3872",
+      "disabled": "1355:3879",
+      "slot": "1355:3871"
+    },
+    {
+      "id": "1355:3886",
+      "name": "Email-Timeout",
+      "method": "email",
+      "enabled": "1355:3991",
+      "disabled": "1355:3998",
+      "slot": "1355:3990"
+    },
+    {
+      "id": "1355:4005",
+      "name": "Phone-Offline",
+      "method": "phone",
+      "enabled": "1355:4110",
+      "disabled": "1355:4117",
+      "slot": "1355:4109"
+    },
+    {
+      "id": "1355:4124",
+      "name": "Email-Offline",
+      "method": "email",
+      "enabled": "1355:4229",
+      "disabled": "1355:4236",
+      "slot": "1355:4228"
+    },
+    {
+      "id": "1355:4243",
+      "name": "Session-Expired",
+      "method": "phone",
+      "enabled": "1355:4348",
+      "disabled": "1355:4355",
+      "slot": "1355:4347"
+    },
+    {
+      "id": "1355:4362",
+      "name": "Google-Failure",
+      "method": "phone",
+      "enabled": "1355:4467",
+      "disabled": "1355:4474",
+      "slot": "1355:4466"
+    },
+    {
+      "id": "1355:4481",
+      "name": "Phone-Processing",
+      "method": "phone",
+      "enabled": "1355:4586",
+      "disabled": "1355:4593",
+      "slot": "1355:4585"
+    },
+    {
+      "id": "1355:4784",
+      "name": "Email-Processing",
+      "method": "email",
+      "enabled": "1355:4889",
+      "disabled": "1355:4896",
+      "slot": "1355:4888"
+    },
+    {
+      "id": "1355:5087",
+      "name": "Google-Processing",
+      "method": "phone",
+      "enabled": "1355:5192",
+      "disabled": "1355:5199",
+      "slot": "1355:5191"
+    },
+    {
+      "id": "1355:5390",
+      "name": "Request-Timeout-Wait",
+      "method": "phone",
+      "enabled": "1355:5495",
+      "disabled": "1355:5502",
+      "slot": "1355:5494"
+    }
+  ],
+  "loading": [
+    {
+      "id": "1355:4481",
+      "name": "Phone-Processing",
+      "isEmail": false,
+      "isGoogle": false,
+      "hold": false
+    },
+    {
+      "id": "1355:4784",
+      "name": "Email-Processing",
+      "isEmail": true,
+      "isGoogle": false,
+      "hold": false
+    },
+    {
+      "id": "1355:5087",
+      "name": "Google-Processing",
+      "isEmail": false,
+      "isGoogle": true,
+      "hold": false
+    },
+    {
+      "id": "1355:5390",
+      "name": "Request-Timeout-Wait",
+      "isEmail": false,
+      "isGoogle": false,
+      "hold": true
+    }
+  ],
+  "variables": {
+    "phone": "VariableID:1355:2572",
+    "email": "VariableID:1355:2573",
+    "countryISO": "VariableID:1355:2574",
+    "countryCode": "VariableID:1355:2575",
+    "countryName": "VariableID:1355:2576",
+    "ready": "VariableID:1355:2577",
+    "disabled": "VariableID:1355:2578",
+    "origin": "VariableID:1355:2579",
+    "scenario": "VariableID:1355:2580",
+    "method": "VariableID:1355:2581"
+  },
+  "collection": "VariableCollectionId:1355:2571",
+  "buttonSet": "1355:2610",
+  "components": {
+    "Default": "1355:2582",
+    "Disabled": "1355:2589",
+    "Pressed": "1355:2596",
+    "Focused": "1355:2603"
+  },
+  "loaderComponent": "1355:2611",
+  "mutatedNodeIds": [
+    "1128:2"
+  ],
+  "archive": "1358:5860",
+  "country": "1356:7843",
+  "countryCommit": "1356:7841",
+  "flagComponent": "1356:7350",
+  "search": [
+    {
+      "id": "1357:3690",
+      "name": "Search-ind",
+      "rows": 3
+    },
+    {
+      "id": "1357:4685",
+      "name": "Search-971",
+      "rows": 1
+    },
+    {
+      "id": "1357:5680",
+      "name": "Search-No-Results",
+      "rows": 0
+    },
+    {
+      "id": "1357:6676",
+      "name": "Country-Data-Unavailable",
+      "rows": 0
+    }
+  ],
+  "clearedCountry": "1373:4252",
+  "extraProcessing": {
+    "emailHold": "1360:5596",
+    "emailGoogle": "1360:6086",
+    "mutatedNodeIds": [
+      "1355:4481",
+      "1355:4483",
+      "1355:4784",
+      "1355:4786",
+      "1355:5087",
+      "1355:5089",
+      "1355:5390",
+      "1355:5392",
+      "1360:5596",
+      "1360:5598",
+      "1360:6086",
+      "1360:6088",
+      "1355:2972",
+      "1355:3091",
+      "1355:3329",
+      "1355:3686",
+      "1355:3924"
+    ]
+  },
+  "extraFailure": {
+    "emailGoogleFailure": "1361:6133",
+    "countryOrigin": "VariableID:1361:3710",
+    "mutatedNodeIds": [
+      "1355:2721",
+      "1355:2840",
+      "1355:3197",
+      "1355:3435",
+      "1355:3554",
+      "1355:3792",
+      "1355:4030",
+      "1355:4268",
+      "1355:4387",
+      "1356:7841",
+      "1356:11545",
+      "1360:6086",
+      "1355:2582",
+      "1355:2603",
+      "1355:2596"
+    ]
+  },
+  "qa": [
+    {
+      "id": "1363:6512",
+      "name": "Small mobile",
+      "w": 320,
+      "h": 568
+    },
+    {
+      "id": "1363:6870",
+      "name": "Large mobile",
+      "w": 430,
+      "h": 932
+    },
+    {
+      "id": "1363:7228",
+      "name": "Keyboard reduced viewport",
+      "w": 390,
+      "h": 544
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "createdNodeIds": [
+    "1420:2",
+    "1420:18",
+    "1420:19",
+    "1420:20",
+    "1420:21",
+    "1420:22",
+    "1420:23",
+    "1420:25",
+    "1420:26",
+    "1420:27",
+    "1420:28",
+    "1420:29",
+    "1420:30",
+    "1420:31",
+    "1420:32",
+    "1420:33",
+    "1420:34",
+    "1420:35",
+    "1420:36",
+    "1420:37",
+    "1420:38",
+    "1420:39",
+    "1420:45",
+    "1420:46",
+    "1420:47",
+    "1420:53",
+    "1420:54",
+    "1420:55",
+    "1420:56",
+    "1420:62",
+    "1420:63",
+    "1420:64",
+    "1420:70",
+    "1420:71",
+    "1420:72",
+    "1420:73",
+    "1420:79",
+    "1420:80",
+    "1420:81",
+    "1420:89",
+    "1420:90",
+    "1420:91",
+    "1420:92",
+    "1420:97",
+    "1420:98",
+    "1420:99"
+  ],
+  "createdVariableIds": [
+    "VariableID:1420:4",
+    "VariableID:1420:5",
+    "VariableID:1420:6",
+    "VariableID:1420:7",
+    "VariableID:1420:8",
+    "VariableID:1420:9",
+    "VariableID:1420:10",
+    "VariableID:1420:11",
+    "VariableID:1420:12",
+    "VariableID:1420:13",
+    "VariableID:1420:14",
+    "VariableID:1420:15",
+    "VariableID:1420:88"
+  ],
+  "createdTextStyleIds": [
+    "S:6a530619e6958f3868302ea98bf2fcb11b0c4487,",
+    "S:4d7e7610f43de3e284f099ccb1a1c96c31170542,"
+  ],
+  "page": "1420:2",
+  "master": "1420:18",
+  "properties": {
+    "message": "Message#1420:0",
+    "actionLabel": "Action label#1420:1",
+    "showAction": "Show action#1420:2",
+    "showDismiss": "Show dismiss#1420:3"
+  },
+  "review": "1420:34",
+  "specimens": [
+    {
+      "id": "1420:39",
+      "name": "Action + dismiss — Default",
+      "width": 350,
+      "height": 60
+    },
+    {
+      "id": "1420:47",
+      "name": "Dismiss only",
+      "width": 350,
+      "height": 60
+    },
+    {
+      "id": "1420:56",
+      "name": "Action only",
+      "width": 350,
+      "height": 60
+    },
+    {
+      "id": "1420:64",
+      "name": "Message only",
+      "width": 350,
+      "height": 60
+    },
+    {
+      "id": "1420:73",
+      "name": "Narrow / wrapping — 280px",
+      "width": 280,
+      "height": 70
+    },
+    {
+      "id": "1420:81",
+      "name": "Action label grows",
+      "width": 350,
+      "height": 60
+    }
+  ],
+  "overlay": "1420:98",
+  "overlayBar": "1420:99",
+  "prototypeStart": "1420:89",
+  "showButton": "1420:92",
+  "demoStatus": "VariableID:1420:88",
+  "sourceReferences": [
+    "1383:3295",
+    "1383:3294"
+  ],
+  "textStyles": {
+    "message": "S:bf705101d79fbc709c2e273f6f9a98bb873ee3f7,",
+    "action": "S:6a530619e6958f3868302ea98bf2fcb11b0c4487,",
+    "dismiss": "S:4d7e7610f43de3e284f099ccb1a1c96c31170542,"
+  },
+  "tokens": {
+    "color/surface": "VariableID:1420:4",
+    "color/on-surface": "VariableID:1420:5",
+    "raw/action": "VariableID:1420:6",
+    "color/action": "VariableID:1420:7",
+    "radius": "VariableID:1420:8",
+    "gap": "VariableID:1420:9",
+    "padding/start": "VariableID:1420:10",
+    "padding/end": "VariableID:1420:11",
+    "padding/block": "VariableID:1420:12",
+    "action/padding": "VariableID:1420:13",
+    "stroke": "VariableID:1420:14",
+    "target": "VariableID:1420:15"
+  },
+  "geometry": {
+    "w": 350,
+    "h": 60,
+    "radius": 0
+  },
+  "note": "Source references and existing Toast family unchanged. Generic component has no Login routes or business variables.",
+  "borderTokens": [
+    "VariableID:1421:41",
+    "VariableID:1421:42"
+  ]
+}

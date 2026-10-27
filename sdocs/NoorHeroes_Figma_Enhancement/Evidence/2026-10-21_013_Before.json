@@ -1,0 +1,94 @@
+{
+  "preservation": [
+    {
+      "id": "1355:2696",
+      "hash": "a2ba4e5a"
+    },
+    {
+      "id": "1459:256",
+      "hash": "d2db990d"
+    },
+    {
+      "id": "1131:2",
+      "hash": "f49c6be9"
+    },
+    {
+      "id": "1215:34",
+      "hash": "25c2713a"
+    },
+    {
+      "id": "1215:138",
+      "hash": "88da810a"
+    },
+    {
+      "id": "1215:246",
+      "hash": "bf0f882e"
+    },
+    {
+      "id": "1215:356",
+      "hash": "a11a3655"
+    },
+    {
+      "id": "1612:1277",
+      "hash": "ed6d7eb4"
+    },
+    {
+      "id": "1650:502",
+      "hash": "5964165e"
+    },
+    {
+      "id": "1513:350",
+      "hash": "542954ed"
+    },
+    {
+      "id": "1513:386",
+      "hash": "c29e0aab"
+    }
+  ],
+  "pinProcessing": "1650:844",
+  "successFlags": [
+    "VariableID:1650:960"
+  ],
+  "closeActions": [
+    {
+      "ri": 0,
+      "ai": 34,
+      "action": {
+        "type": "CONDITIONAL",
+        "conditionalBlocks": [
+          {
+            "actions": [
+              {
+                "type": "CLOSE"
+              }
+            ],
+            "condition": {
+              "value": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:1650:960"
+              },
+              "type": "VARIABLE_ALIAS",
+              "resolvedType": "BOOLEAN"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "pinReview": {
+    "id": "1650:899",
+    "height": 556
+  },
+  "sections": [
+    {
+      "id": "1128:2",
+      "w": 4800,
+      "h": 11834
+    },
+    {
+      "id": "1270:140",
+      "w": 4700,
+      "h": 11734
+    }
+  ]
+}

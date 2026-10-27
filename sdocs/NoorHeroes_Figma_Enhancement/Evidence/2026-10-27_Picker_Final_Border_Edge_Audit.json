@@ -1,0 +1,234 @@
+{
+  "scope": "Existing V2 Profile Picker section only. Figma-only changes.",
+  "source": "2232:10365",
+  "changes": {
+    "mutatedNodeIds": [
+      "2188:7495",
+      "2188:7520",
+      "2188:7676",
+      "2188:7693",
+      "2188:7920",
+      "2188:7937",
+      "2188:8160",
+      "2188:8177",
+      "2188:8400",
+      "2188:8417",
+      "2189:7298",
+      "2189:7315",
+      "2245:11351",
+      "2245:11356",
+      "2245:11646",
+      "2245:11651",
+      "2245:11941",
+      "2245:11946",
+      "2245:12236",
+      "2245:12241",
+      "2245:12531",
+      "2245:12536",
+      "2245:12826",
+      "2245:12831",
+      "2269:12180",
+      "2269:12185",
+      "2313:12465"
+    ],
+    "neutralBorder": {
+      "weight": 1,
+      "radius": 16,
+      "align": "INSIDE",
+      "paints": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.8999999761581421,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.886274516582489,
+            "g": 0.9098039269447327,
+            "b": 0.9411764740943909
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    "shimmerAddMatchesActual": [
+      6,
+      4
+    ]
+  },
+  "edgeAudit": {
+    "frames": [
+      {
+        "id": "2188:7275",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2188:7543",
+        "visibleCards": 2,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2188:7787",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2188:8027",
+        "visibleCards": 0,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2188:8267",
+        "visibleCards": 0,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2189:7165",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2245:11287",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2245:11582",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2245:11877",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2245:12172",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2245:12467",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2245:12762",
+        "visibleCards": 3,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      },
+      {
+        "id": "2269:12112",
+        "visibleCards": 5,
+        "surfaceFits": true,
+        "uniformHeight": true,
+        "onlyInnerScroll": true,
+        "outlineSafe": true
+      }
+    ],
+    "variants": [
+      {
+        "id": "2232:9613",
+        "avatarNameGap": 8,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:9707",
+        "avatarNameGap": 6,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:9801",
+        "avatarNameGap": 8,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:9895",
+        "avatarNameGap": 6,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:9989",
+        "avatarNameGap": 8,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:10083",
+        "avatarNameGap": 6,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:10177",
+        "avatarNameGap": 8,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      },
+      {
+        "id": "2232:10271",
+        "avatarNameGap": 6,
+        "textBlocksNoOverlap": true,
+        "contentWithinCard": true,
+        "avatarRingUnclipped": true,
+        "progressCentered": true
+      }
+    ],
+    "issues": []
+  },
+  "verificationLimit": "Structural bounds and screenshots, not live Present playback. Long names intentionally ellipsized. Scrolled content intentionally clipped at viewport; decorative outlines protected with 4px inset."
+}

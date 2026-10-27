@@ -1,0 +1,611 @@
+{
+  "createdNodeIds": [
+    "1287:302",
+    "1287:303",
+    "1287:305",
+    "1287:306"
+  ],
+  "mutatedNodeIds": [
+    "1278:520",
+    "1278:1145"
+  ],
+  "brokenDestinations": [],
+  "routeCount": 94,
+  "originals": [
+    {
+      "id": "1095:2",
+      "children": 70,
+      "x": 58509,
+      "y": 12727,
+      "w": 16704,
+      "h": 10825
+    },
+    {
+      "id": "1085:13003",
+      "children": 35,
+      "x": 77201,
+      "y": 12727,
+      "w": 15314,
+      "h": 10825
+    }
+  ],
+  "blankTextNodes": [],
+  "frames": [
+    {
+      "id": "1278:155",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Default",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 692
+    },
+    {
+      "id": "1278:213",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Invalid",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 720
+    },
+    {
+      "id": "1278:271",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Sending",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 692
+    },
+    {
+      "id": "1278:439",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Timeout",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 772
+    },
+    {
+      "id": "1278:497",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Offline",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 804
+    },
+    {
+      "id": "1278:555",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Error",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 752
+    },
+    {
+      "id": "1278:613",
+      "name": "NH/V2/Onboarding/007/Login/Phone-Google-Processing",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 692
+    },
+    {
+      "id": "1278:780",
+      "name": "NH/V2/Onboarding/007/Login/Email-Default",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 692
+    },
+    {
+      "id": "1278:838",
+      "name": "NH/V2/Onboarding/007/Login/Email-Invalid",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 720
+    },
+    {
+      "id": "1278:896",
+      "name": "NH/V2/Onboarding/007/Login/Email-Sending",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 692
+    },
+    {
+      "id": "1278:1064",
+      "name": "NH/V2/Onboarding/007/Login/Email-Timeout",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 772
+    },
+    {
+      "id": "1278:1122",
+      "name": "NH/V2/Onboarding/007/Login/Email-Offline",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 804
+    },
+    {
+      "id": "1278:1180",
+      "name": "NH/V2/Onboarding/007/Login/Email-Error",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 752
+    },
+    {
+      "id": "1278:1238",
+      "name": "NH/V2/Onboarding/007/Login/Email-Google-Processing",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 692
+    },
+    {
+      "id": "1278:1405",
+      "name": "NH/V2/Onboarding/007/Login/Session-Expired",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": 752
+    },
+    {
+      "id": "1282:466",
+      "name": "NH/V2/Onboarding/007/Login/Country-Code-Overlay",
+      "w": 390,
+      "h": 844,
+      "parent": "1270:140",
+      "contentBottom": null
+    }
+  ],
+  "controlsBelow44": [],
+  "introDestinations": [
+    {
+      "id": "1219:44",
+      "actions": [
+        {
+          "type": "SET_VARIABLE",
+          "variableId": "VariableID:1278:154",
+          "variableValue": {
+            "value": 0,
+            "type": "FLOAT",
+            "resolvedType": "FLOAT"
+          }
+        },
+        {
+          "type": "NODE",
+          "destinationId": "1278:155",
+          "navigation": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN_AND_OUT"
+            },
+            "duration": 0.25
+          },
+          "resetVideoPosition": false
+        }
+      ]
+    },
+    {
+      "id": "1219:106",
+      "actions": [
+        {
+          "type": "SET_VARIABLE",
+          "variableId": "VariableID:1278:154",
+          "variableValue": {
+            "value": 1,
+            "type": "FLOAT",
+            "resolvedType": "FLOAT"
+          }
+        },
+        {
+          "type": "NODE",
+          "destinationId": "1278:155",
+          "navigation": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN_AND_OUT"
+            },
+            "duration": 0.25
+          },
+          "resetVideoPosition": false
+        }
+      ]
+    },
+    {
+      "id": "1219:163",
+      "actions": [
+        {
+          "type": "SET_VARIABLE",
+          "variableId": "VariableID:1278:154",
+          "variableValue": {
+            "value": 2,
+            "type": "FLOAT",
+            "resolvedType": "FLOAT"
+          }
+        },
+        {
+          "type": "NODE",
+          "destinationId": "1278:155",
+          "navigation": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN_AND_OUT"
+            },
+            "duration": 0.25
+          },
+          "resetVideoPosition": false
+        }
+      ]
+    },
+    {
+      "id": "1219:220",
+      "actions": [
+        {
+          "type": "SET_VARIABLE",
+          "variableId": "VariableID:1278:154",
+          "variableValue": {
+            "value": 3,
+            "type": "FLOAT",
+            "resolvedType": "FLOAT"
+          }
+        },
+        {
+          "type": "NODE",
+          "destinationId": "1278:155",
+          "navigation": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN_AND_OUT"
+            },
+            "duration": 0.25
+          },
+          "resetVideoPosition": false
+        }
+      ]
+    },
+    {
+      "id": "1219:246",
+      "actions": [
+        {
+          "type": "SET_VARIABLE",
+          "variableId": "VariableID:1278:154",
+          "variableValue": {
+            "value": 3,
+            "type": "FLOAT",
+            "resolvedType": "FLOAT"
+          }
+        },
+        {
+          "type": "NODE",
+          "destinationId": "1278:155",
+          "navigation": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN_AND_OUT"
+            },
+            "duration": 0.25
+          },
+          "resetVideoPosition": false
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "id": "1278:271",
+      "reactions": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:439",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:439",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 10
+          }
+        },
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:155",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:155",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "ON_KEY_DOWN",
+            "device": "KEYBOARD",
+            "keyCodes": [
+              27
+            ]
+          }
+        }
+      ],
+      "tracks": 3
+    },
+    {
+      "id": "1278:896",
+      "reactions": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:1064",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:1064",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 10
+          }
+        },
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:780",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:780",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "ON_KEY_DOWN",
+            "device": "KEYBOARD",
+            "keyCodes": [
+              27
+            ]
+          }
+        }
+      ],
+      "tracks": 3
+    },
+    {
+      "id": "1278:613",
+      "reactions": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:555",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:555",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 2
+          }
+        },
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:155",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:155",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "ON_KEY_DOWN",
+            "device": "KEYBOARD",
+            "keyCodes": [
+              27
+            ]
+          }
+        }
+      ],
+      "tracks": 3
+    },
+    {
+      "id": "1278:1238",
+      "reactions": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:1180",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:1180",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 2
+          }
+        },
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "1278:780",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "1278:780",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false
+            }
+          ],
+          "trigger": {
+            "type": "ON_KEY_DOWN",
+            "device": "KEYBOARD",
+            "keyCodes": [
+              27
+            ]
+          }
+        }
+      ],
+      "tracks": 3
+    }
+  ]
+}

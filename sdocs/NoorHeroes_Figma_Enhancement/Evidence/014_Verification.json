@@ -1,0 +1,266 @@
+{
+  "method": "Stored native-action evaluation, not live Present playback",
+  "passed": 64,
+  "total": 64,
+  "failures": [],
+  "checks": [
+    {
+      "name": "Default has empty nickname and DOB; save disabled",
+      "pass": true
+    },
+    {
+      "name": "Disabled Save does not submit",
+      "pass": true
+    },
+    {
+      "name": "Nickname sample fills without enabling incomplete form",
+      "pass": true
+    },
+    {
+      "name": "DOB enables avatar choices and clears previous avatar",
+      "pass": true
+    },
+    {
+      "name": "Avatar selection is required but not sufficient",
+      "pass": true
+    },
+    {
+      "name": "All five required values enable Save",
+      "pass": true
+    },
+    {
+      "name": "Save starts same-height loading and counts one attempt",
+      "pass": true
+    },
+    {
+      "name": "Duplicate submission while busy is prevented",
+      "pass": true
+    },
+    {
+      "name": "Successful save confirms once and leaves future destination unmapped",
+      "pass": true
+    },
+    {
+      "name": "Saved result cannot submit duplicate profile",
+      "pass": true
+    },
+    {
+      "name": "DOB 2000 follows approved 3–17 fixture range",
+      "pass": true
+    },
+    {
+      "name": "Changing DOB invalidates previous avatar 2000",
+      "pass": true
+    },
+    {
+      "name": "DOB 2009 follows approved 3–17 fixture range",
+      "pass": true
+    },
+    {
+      "name": "Changing DOB invalidates previous avatar 2009",
+      "pass": true
+    },
+    {
+      "name": "DOB 2015 follows approved 3–17 fixture range",
+      "pass": true
+    },
+    {
+      "name": "Changing DOB invalidates previous avatar 2015",
+      "pass": true
+    },
+    {
+      "name": "DOB 2019 follows approved 3–17 fixture range",
+      "pass": true
+    },
+    {
+      "name": "Changing DOB invalidates previous avatar 2019",
+      "pass": true
+    },
+    {
+      "name": "DOB 2025 follows approved 3–17 fixture range",
+      "pass": true
+    },
+    {
+      "name": "Changing DOB invalidates previous avatar 2025",
+      "pass": true
+    },
+    {
+      "name": "Offline blocks only final submit",
+      "pass": true
+    },
+    {
+      "name": "Fields remain editable offline",
+      "pass": true
+    },
+    {
+      "name": "Reconnect restores readiness without losing draft",
+      "pass": true
+    },
+    {
+      "name": "Capacity gate preserves draft and blocks creation",
+      "pass": true
+    },
+    {
+      "name": "Capacity recovery enables unchanged draft",
+      "pass": true
+    },
+    {
+      "name": "API error retains values and offers retry",
+      "pass": true
+    },
+    {
+      "name": "Retry reuses attempt key and confirms only one profile",
+      "pass": true
+    },
+    {
+      "name": "Timeout keeps loading until deadline",
+      "pass": true
+    },
+    {
+      "name": "Timeout returns preserved draft with recovery",
+      "pass": true
+    },
+    {
+      "name": "Duplicate opens confirmation sheet",
+      "pass": true
+    },
+    {
+      "name": "Duplicate cannot be confirmed without differentiation",
+      "pass": true
+    },
+    {
+      "name": "Changed avatar and explicit confirmation restart save",
+      "pass": true
+    },
+    {
+      "name": "Confirmed duplicate produces one saved profile",
+      "pass": true
+    },
+    {
+      "name": "AI voice defaults off",
+      "pass": true
+    },
+    {
+      "name": "No parent opt-in cannot grant AI voice",
+      "pass": true
+    },
+    {
+      "name": "Parent opt-in permits explicit per-child selection",
+      "pass": true
+    },
+    {
+      "name": "Withdrawal resets per-child AI voice",
+      "pass": true
+    },
+    {
+      "name": "Interest 0 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 0 reversible",
+      "pass": true
+    },
+    {
+      "name": "Interest 1 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 1 reversible",
+      "pass": true
+    },
+    {
+      "name": "Interest 2 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 2 reversible",
+      "pass": true
+    },
+    {
+      "name": "Interest 3 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 3 reversible",
+      "pass": true
+    },
+    {
+      "name": "Interest 4 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 4 reversible",
+      "pass": true
+    },
+    {
+      "name": "Interest 5 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 5 reversible",
+      "pass": true
+    },
+    {
+      "name": "Interest 6 selectable",
+      "pass": true
+    },
+    {
+      "name": "Interest 6 reversible",
+      "pass": true
+    },
+    {
+      "name": "Daily goal selection persists",
+      "pass": true
+    },
+    {
+      "name": "Accessibility preferences independently selectable",
+      "pass": true
+    },
+    {
+      "name": "Preferred language English persists",
+      "pass": true
+    },
+    {
+      "name": "Preferred language Hindi persists",
+      "pass": true
+    },
+    {
+      "name": "Preferred language Arabic persists",
+      "pass": true
+    },
+    {
+      "name": "Preferred language Urdu persists",
+      "pass": true
+    },
+    {
+      "name": "Biometric Skip 1718:819 opens Add Child",
+      "pass": true
+    },
+    {
+      "name": "Biometric Skip 1718:828 opens Add Child",
+      "pass": true
+    },
+    {
+      "name": "Cancelled OS simulation returns to offer without enabling",
+      "pass": true
+    },
+    {
+      "name": "Back while saving restores an editable draft",
+      "pass": true
+    },
+    {
+      "name": "Interrupted save can be retried without duplicate confirmation",
+      "pass": true
+    },
+    {
+      "name": "All stored destinations exist",
+      "pass": true
+    },
+    {
+      "name": "All mobile state roots use390×844",
+      "pass": true
+    }
+  ],
+  "destinations": 23,
+  "missing": []
+}

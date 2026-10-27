@@ -1,0 +1,117 @@
+{
+  "change": {
+    "changedNodeIds": [
+      "1513:429",
+      "1459:256",
+      "1459:1201",
+      "1459:1012",
+      "1461:474",
+      "1461:491",
+      "1461:475",
+      "1461:524",
+      "1461:476",
+      "1461:506",
+      "1461:477",
+      "1461:542",
+      "I1461:545;1420:20",
+      "1459:421",
+      "1459:734",
+      "1459:735",
+      "1459:1200",
+      "1459:1209",
+      "1461:479",
+      "1461:485",
+      "1461:494",
+      "1461:500",
+      "1461:509",
+      "1461:515",
+      "1461:527",
+      "1461:533"
+    ],
+    "createdLayoutNodeIds": [
+      "1533:427",
+      "1533:428",
+      "1533:429",
+      "1533:430",
+      "1533:431",
+      "1533:432",
+      "1533:433",
+      "1533:434"
+    ],
+    "statusVisibilityVariable": "VariableID:1533:328",
+    "statusActionsPatched": 13,
+    "measurements": {
+      "checkboxToText": 6,
+      "optionalToCreate": 14,
+      "checkboxTextCenterAligned": true,
+      "copyFitsOneLine": true,
+      "card": {
+        "w": 366,
+        "h": 526
+      },
+      "button": {
+        "w": 338,
+        "h": 56
+      }
+    },
+    "controls": [
+      {
+        "id": "1459:1201",
+        "sameDimensions": true,
+        "sameInteractionActions": false
+      },
+      {
+        "id": "1459:1205",
+        "sameDimensions": true,
+        "sameInteractionActions": true
+      },
+      {
+        "id": "1459:1012",
+        "sameDimensions": true,
+        "sameInteractionActions": false
+      }
+    ]
+  },
+  "validation": {
+    "changedNodeIds": [
+      "1459:256"
+    ],
+    "checks": [
+      {
+        "name": "Default",
+        "gap": 14,
+        "cardHeight": 526,
+        "loadersAlign": true,
+        "noFooterOverlap": true,
+        "pass": true
+      },
+      {
+        "name": "Validation",
+        "gap": 14,
+        "cardHeight": 558,
+        "loadersAlign": true,
+        "noFooterOverlap": true,
+        "pass": true
+      },
+      {
+        "name": "Offline feedback",
+        "gap": 14,
+        "cardHeight": 558,
+        "loadersAlign": true,
+        "noFooterOverlap": true,
+        "pass": true
+      },
+      {
+        "name": "Validation and feedback",
+        "gap": 14,
+        "cardHeight": 590,
+        "loadersAlign": true,
+        "noFooterOverlap": true,
+        "pass": true
+      }
+    ],
+    "allPass": true,
+    "restoredInitialState": true,
+    "mainScrolling": "NONE"
+  }
+}

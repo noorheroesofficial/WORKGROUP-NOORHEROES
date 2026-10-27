@@ -1,0 +1,255 @@
+{
+  "registrationSets": [
+    {
+      "path": [
+        1,
+        22,
+        "b",
+        0,
+        0
+      ],
+      "action": {
+        "type": "SET_VARIABLE",
+        "variableId": "VariableID:1650:475",
+        "variableValue": {
+          "value": false,
+          "type": "BOOLEAN",
+          "resolvedType": "BOOLEAN"
+        }
+      }
+    },
+    {
+      "path": [
+        1,
+        23,
+        "b",
+        0,
+        0
+      ],
+      "action": {
+        "type": "SET_VARIABLE",
+        "variableId": "VariableID:1650:475",
+        "variableValue": {
+          "value": false,
+          "type": "BOOLEAN",
+          "resolvedType": "BOOLEAN"
+        }
+      }
+    }
+  ],
+  "pinBackNavs": [
+    {
+      "node": "1650:528",
+      "path": [
+        0,
+        0,
+        "b",
+        0,
+        0
+      ],
+      "action": {
+        "type": "NODE",
+        "destinationId": "1612:1277",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.23999999463558197
+        },
+        "resetVideoPosition": false,
+        "resetScrollPosition": false,
+        "resetInteractiveComponents": false
+      }
+    },
+    {
+      "node": "1650:528",
+      "path": [
+        0,
+        32,
+        "b",
+        0,
+        0
+      ],
+      "action": {
+        "type": "NODE",
+        "destinationId": "1612:1277",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.23999999463558197
+        },
+        "resetVideoPosition": false,
+        "resetScrollPosition": false,
+        "resetInteractiveComponents": false
+      }
+    },
+    {
+      "node": "1650:502",
+      "path": [
+        12,
+        0,
+        "b",
+        0,
+        0
+      ],
+      "action": {
+        "type": "NODE",
+        "destinationId": "1612:1277",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.23999999463558197
+        },
+        "resetVideoPosition": false,
+        "resetScrollPosition": false,
+        "resetInteractiveComponents": false
+      }
+    },
+    {
+      "node": "1650:502",
+      "path": [
+        12,
+        32,
+        "b",
+        0,
+        0
+      ],
+      "action": {
+        "type": "NODE",
+        "destinationId": "1612:1277",
+        "navigation": "NAVIGATE",
+        "transition": {
+          "type": "DISSOLVE",
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.23999999463558197
+        },
+        "resetVideoPosition": false,
+        "resetScrollPosition": false,
+        "resetInteractiveComponents": false
+      }
+    }
+  ],
+  "successSets": [
+    {
+      "path": [
+        0,
+        0
+      ],
+      "action": {
+        "type": "SET_VARIABLE",
+        "variableId": "VariableID:1650:475",
+        "variableValue": {
+          "value": false,
+          "type": "BOOLEAN",
+          "resolvedType": "BOOLEAN"
+        }
+      }
+    }
+  ],
+  "flowStartingPoints": [
+    {
+      "nodeId": "1131:2",
+      "name": "NoorHeroes V2 — Final app entry"
+    },
+    {
+      "nodeId": "1612:1277",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1619:404",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1619:614",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1619:820",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1619:1026",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1650:502",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1654:544",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1654:840",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1654:1134",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1654:1428",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1355:2696",
+      "name": "Final Authentication — Approved Login"
+    },
+    {
+      "nodeId": "1215:34",
+      "name": "Flow 1"
+    },
+    {
+      "nodeId": "1513:386",
+      "name": "Flow 2"
+    },
+    {
+      "nodeId": "1613:368",
+      "name": "Flow 3"
+    },
+    {
+      "nodeId": "1650:845",
+      "name": "Flow 4"
+    }
+  ],
+  "visual": [
+    {
+      "id": "1612:1277",
+      "hash": "37af968d"
+    },
+    {
+      "id": "1650:502",
+      "hash": "70f65a3c"
+    },
+    {
+      "id": "1670:1069",
+      "hash": "584b0500"
+    },
+    {
+      "id": "1670:1136",
+      "hash": "2b7a0831"
+    },
+    {
+      "id": "1670:1206",
+      "hash": "703d3882"
+    },
+    {
+      "id": "1355:2696",
+      "hash": "1746fa81"
+    },
+    {
+      "id": "1459:256",
+      "hash": "9d7c0a19"
+    }
+  ]
+}

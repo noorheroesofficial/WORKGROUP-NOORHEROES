@@ -1,0 +1,269 @@
+{
+  "checks": [
+    {
+      "name": "Login empty",
+      "pass": true,
+      "detail": {
+        "state": "Empty",
+        "height": 88
+      }
+    },
+    {
+      "name": "Login focus",
+      "pass": true,
+      "detail": {
+        "state": "Focused",
+        "height": 88
+      }
+    },
+    {
+      "name": "Login filled",
+      "pass": true,
+      "detail": {
+        "state": "Filled",
+        "height": 88
+      }
+    },
+    {
+      "name": "Login invalid email",
+      "pass": true,
+      "detail": {
+        "state": "Error",
+        "height": 116
+      }
+    },
+    {
+      "name": "Login http500 restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login http500 retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login http500 Snackbar",
+      "pass": true,
+      "detail": {
+        "message": "Something went wrong. Please try again."
+      }
+    },
+    {
+      "name": "Login http422 restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login http422 retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login server field error",
+      "pass": true,
+      "detail": {
+        "message": "Check your email address and try again."
+      }
+    },
+    {
+      "name": "Login http429 restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login http429 retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login http429 Snackbar",
+      "pass": true,
+      "detail": {
+        "message": "Too many attempts. Please try again later."
+      }
+    },
+    {
+      "name": "Login offline restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login offline retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Login offline Snackbar",
+      "pass": true,
+      "detail": {
+        "message": "Unable to connect. Check your internet connection."
+      }
+    },
+    {
+      "name": "Registration empty",
+      "pass": true,
+      "detail": {
+        "state": "Empty",
+        "height": 88
+      }
+    },
+    {
+      "name": "Registration focus",
+      "pass": true,
+      "detail": {
+        "state": "Focused",
+        "height": 88
+      }
+    },
+    {
+      "name": "Registration filled",
+      "pass": true,
+      "detail": {
+        "state": "Filled",
+        "height": 88
+      }
+    },
+    {
+      "name": "Registration invalid email",
+      "pass": true,
+      "detail": {
+        "state": "Error",
+        "height": 116
+      }
+    },
+    {
+      "name": "Registration http500 restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration http500 retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration http500 Snackbar",
+      "pass": true,
+      "detail": {
+        "message": "Something went wrong. Please try again."
+      }
+    },
+    {
+      "name": "Registration http422 restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration http422 retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration server field error",
+      "pass": true,
+      "detail": {
+        "message": "Check your email address and try again."
+      }
+    },
+    {
+      "name": "Registration http429 restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration http429 retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration http429 Snackbar",
+      "pass": true,
+      "detail": {
+        "message": "Too many attempts. Please try again later."
+      }
+    },
+    {
+      "name": "Registration offline restores processing",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration offline retains value",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "Registration offline Snackbar",
+      "pass": true,
+      "detail": {
+        "message": "Unable to connect. Check your internet connection."
+      }
+    }
+  ],
+  "changedVariableIds": [
+    "VariableID:1355:2572",
+    "VariableID:1383:3063",
+    "VariableID:1358:5641",
+    "VariableID:1355:2577",
+    "VariableID:1355:2578",
+    "VariableID:1383:3059",
+    "VariableID:1552:429",
+    "VariableID:1563:340",
+    "VariableID:1559:283",
+    "VariableID:1563:342",
+    "VariableID:1563:341",
+    "VariableID:1355:2581",
+    "VariableID:1383:3067",
+    "VariableID:1383:3068",
+    "VariableID:1396:3047",
+    "VariableID:1396:3048",
+    "VariableID:1383:3057",
+    "VariableID:1383:3058",
+    "VariableID:1383:3062",
+    "VariableID:1355:2573",
+    "VariableID:1358:5642",
+    "VariableID:1383:3064",
+    "VariableID:1383:3066",
+    "VariableID:1383:3061",
+    "VariableID:1355:2580",
+    "VariableID:1444:172",
+    "VariableID:1444:173",
+    "VariableID:1383:3060",
+    "VariableID:1383:3065",
+    "VariableID:1566:366",
+    "VariableID:1459:232",
+    "VariableID:1459:234",
+    "VariableID:1459:220",
+    "VariableID:1459:222",
+    "VariableID:1459:223",
+    "VariableID:1459:231",
+    "VariableID:1464:254",
+    "VariableID:1563:985",
+    "VariableID:1563:988",
+    "VariableID:1563:987",
+    "VariableID:1563:986",
+    "VariableID:1459:230",
+    "VariableID:1462:253",
+    "VariableID:1461:467",
+    "VariableID:1461:468",
+    "VariableID:1461:469",
+    "VariableID:1461:470",
+    "VariableID:1459:218",
+    "VariableID:1459:219",
+    "VariableID:1459:235",
+    "VariableID:1459:233",
+    "VariableID:1459:221",
+    "VariableID:1459:241",
+    "VariableID:1459:238",
+    "VariableID:1459:226",
+    "VariableID:1459:237",
+    "VariableID:1459:227",
+    "VariableID:1459:240",
+    "VariableID:1533:328",
+    "VariableID:1459:239",
+    "VariableID:1566:522"
+  ],
+  "defaultsRestored": true,
+  "note": "Action interpreter and geometry verification, not Present playback."
+}

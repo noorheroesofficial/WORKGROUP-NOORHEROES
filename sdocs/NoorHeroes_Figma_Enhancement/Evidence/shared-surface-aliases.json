@@ -1,0 +1,172 @@
+[
+  {
+    "feature": "A3",
+    "name": "Favorites List",
+    "owner_feature": "B14",
+    "owner_prefix": "Favorites",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A3_Stories_Module.md",
+    "section": "§1.18 row 22; §1.7; §2; §6; §13",
+    "owner_number": 143,
+    "owner_file": "Screen_Prompts/143_Favorites.md"
+  },
+  {
+    "feature": "A3",
+    "name": "Downloads Manager (Stories scope)",
+    "owner_feature": "B15",
+    "owner_prefix": "Downloads",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A3_Stories_Module.md",
+    "section": "§1.18 row 23; §1.7; §2; §6; §13",
+    "owner_number": 144,
+    "owner_file": "Screen_Prompts/144_Downloads.md"
+  },
+  {
+    "feature": "A5",
+    "name": "Daily Quiz (Learn-tab instance)",
+    "owner_feature": "A8",
+    "owner_prefix": "Quiz Question Screen — Multiple Choice",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md",
+    "section": "§1.18 row 22; §1.7; §2; §6; §13",
+    "owner_number": 102,
+    "owner_file": "Screen_Prompts/102_Quiz_Question_Screen_Multiple_Choice.md"
+  },
+  {
+    "feature": "A5",
+    "name": "Quiz Per-Answer Explanation Overlay",
+    "owner_feature": "A8",
+    "owner_prefix": "Per-Answer Explanation Overlay",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md",
+    "section": "§1.18 row 23; §1.7; §2; §6; §13",
+    "owner_number": 107,
+    "owner_file": "Screen_Prompts/107_Per_Answer_Explanation_Overlay.md"
+  },
+  {
+    "feature": "A5",
+    "name": "Quiz Retry Set (mistakes)",
+    "owner_feature": "A8",
+    "owner_prefix": "Retry Set Entry Screen",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md",
+    "section": "§1.18 row 24; §1.7; §2; §6; §13",
+    "owner_number": 108,
+    "owner_file": "Screen_Prompts/108_Retry_Set_Entry_Screen.md"
+  },
+  {
+    "feature": "A5",
+    "name": "Quiz Results / Effort XP Reveal",
+    "owner_feature": "A9",
+    "owner_prefix": "Quiz Completion Result Screen",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md",
+    "section": "§1.18 row 25; §1.7; §2; §6; §13",
+    "owner_number": 110,
+    "owner_file": "Screen_Prompts/110_Quiz_Completion_Result_Screen_shared_generic.md"
+  },
+  {
+    "feature": "A5",
+    "name": "Islamic Fact Detail (Learn-tab linked)",
+    "owner_feature": "B18",
+    "owner_prefix": "Islamic Fact Detail",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md",
+    "section": "§1.18 row 28; §1.7; §2; §6; §13",
+    "owner_number": 151,
+    "owner_file": "Screen_Prompts/151_Islamic_Fact_Detail.md"
+  },
+  {
+    "feature": "A6",
+    "name": "Favorites List (Dua-filtered view, shared component with A.3)",
+    "owner_feature": "B14",
+    "owner_prefix": "Favorites",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A6_Dua_Learning.md",
+    "section": "§1.18 row 13; §1.7; §2; §6; §13",
+    "owner_number": 143,
+    "owner_file": "Screen_Prompts/143_Favorites.md"
+  },
+  {
+    "feature": "A6",
+    "name": "Search Results (Dua-scoped)",
+    "owner_feature": "B13",
+    "owner_prefix": "Search Results",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A6_Dua_Learning.md",
+    "section": "§1.18 row 14; §1.7; §2; §6; §13",
+    "owner_number": 140,
+    "owner_file": "Screen_Prompts/140_Search_Results.md"
+  },
+  {
+    "feature": "A6",
+    "name": "Downloads Manager (Dua scope, shared with A.16)",
+    "owner_feature": "B15",
+    "owner_prefix": "Downloads",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A6_Dua_Learning.md",
+    "section": "§1.18 row 19; §1.7; §2; §6; §13",
+    "owner_number": 144,
+    "owner_file": "Screen_Prompts/144_Downloads.md"
+  },
+  {
+    "feature": "A7",
+    "name": "Fasting Tracker (Ramadan/practice)",
+    "owner_feature": "F36",
+    "owner_prefix": "Fasting Tracker",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A7_Habit_Tracker.md",
+    "section": "§1.18 row 4; §1.7; §2; §6; §13",
+    "owner_number": 224,
+    "owner_file": "Screen_Prompts/224_Fasting_Tracker.md"
+  },
+  {
+    "feature": "A8",
+    "name": "Hint Overlay (cross-cutting, shared with A.5)",
+    "owner_feature": "A5",
+    "owner_prefix": "Hint Overlay",
+    "source": "PRD_Documents/Child App (1-12)/Feature_A8_Daily_Quiz_Engine.md",
+    "section": "§1.18 row 7; §1.7; §2; §6; §13",
+    "owner_number": 79,
+    "owner_file": "Screen_Prompts/079_Hint_Overlay_progressive_hint.md"
+  },
+  {
+    "feature": "B17",
+    "name": "In-App Notification Banner",
+    "owner_feature": "A2",
+    "owner_prefix": "Child Home",
+    "source": "PRD_Documents/Child App Supporting (13-18)/Feature_B17_Notifications_Child_Facing.md",
+    "section": "§1.7; §1.18; §2.2–2.3; §1.10–1.15",
+    "owner_number": 34,
+    "owner_file": "Screen_Prompts/034_Child_Home_composite_screen.md"
+  },
+  {
+    "feature": "C19",
+    "name": "Who Is Learning (Profile Picker)",
+    "owner_feature": "A1",
+    "owner_prefix": "Profile Picker",
+    "source": "PRD_Documents/Parent Area In-App (19-26)/Feature_C19_Parent_PIN_Biometric_Gate.md",
+    "section": "§1.18 row 1; §1.7; §2; §6; §13",
+    "owner_number": 22,
+    "owner_file": "Screen_Prompts/022_Profile_Picker_Who_Is_Learning.md"
+  },
+  {
+    "feature": "C19",
+    "name": "Profile Lock Verification (Pattern/PIN/Fingerprint)",
+    "owner_feature": "A1",
+    "owner_prefix": "Child Lock Screen",
+    "source": "PRD_Documents/Parent Area In-App (19-26)/Feature_C19_Parent_PIN_Biometric_Gate.md",
+    "section": "§1.18 row 2; §1.7; §2; §6; §13",
+    "owner_number": 23,
+    "owner_file": "Screen_Prompts/023_Child_Lock_Screen_PIN_Pattern_Biometric.md"
+  },
+  {
+    "feature": "C23",
+    "name": "Calm Rest Screen (limit reached)",
+    "owner_feature": "C19",
+    "owner_prefix": "Calm Locked State",
+    "source": "PRD_Documents/Parent Area In-App (19-26)/Feature_C23_Parental_Controls.md",
+    "section": "§1.18 row 11; §1.7; §2; §6; §13",
+    "owner_number": 155,
+    "owner_file": "Screen_Prompts/155_Calm_Locked_State_screen_time_limit_reached.md"
+  },
+  {
+    "feature": "C23",
+    "name": "Bedtime Block Screen (new session attempt during bedtime)",
+    "owner_feature": "C19",
+    "owner_prefix": "Bedtime Block Screen",
+    "source": "PRD_Documents/Parent Area In-App (19-26)/Feature_C23_Parental_Controls.md",
+    "section": "§1.18 row 12; §1.7; §2; §6; §13",
+    "owner_number": 156,
+    "owner_file": "Screen_Prompts/156_Bedtime_Block_Screen.md"
+  }
+]

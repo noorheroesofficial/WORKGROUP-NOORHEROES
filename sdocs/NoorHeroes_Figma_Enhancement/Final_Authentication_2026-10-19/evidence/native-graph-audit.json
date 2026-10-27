@@ -1,0 +1,171 @@
+{
+  "result": "PASS",
+  "assertions": 1256,
+  "tests": [
+    {
+      "test": "245 country selections update exact flag and preserve phone",
+      "passed": 245
+    },
+    {
+      "test": "Input gating and duplicate-submit lockout",
+      "passed": true
+    },
+    {
+      "test": "Incomplete, invalid-format and empty paths",
+      "passed": true
+    },
+    {
+      "test": "Method switch preserves input and recalculates readiness",
+      "passed": true
+    },
+    {
+      "test": "Offline recovery",
+      "passed": true
+    },
+    {
+      "test": "All four Intro Back origins",
+      "passed": true
+    },
+    {
+      "test": "Completion remains pending OTP; failure and10s timeout branch correctly",
+      "passed": true
+    }
+  ],
+  "routeCount": 847,
+  "nullRoutes": [],
+  "missingDestinations": [],
+  "rejectedFlowDestinations": [],
+  "approvedGeometry": [
+    {
+      "name": "Header/Back & Brand",
+      "width": 350,
+      "height": 44
+    },
+    {
+      "name": "Left original symbol",
+      "width": 79.15762329101562,
+      "height": 84.46697235107422
+    },
+    {
+      "name": "Surface/Curved Form",
+      "width": 390,
+      "height": 504
+    },
+    {
+      "name": "Heading",
+      "width": 342,
+      "height": 32
+    },
+    {
+      "name": "Description",
+      "width": 342,
+      "height": 40
+    }
+  ],
+  "loginFrames": [
+    {
+      "id": "1355:2696",
+      "name": "NH/Final/Auth/Login/Phone-Empty"
+    },
+    {
+      "id": "1355:2815",
+      "name": "NH/Final/Auth/Login/Phone-Ready"
+    },
+    {
+      "id": "1355:4481",
+      "name": "NH/Final/Auth/Login/Phone-Processing"
+    },
+    {
+      "id": "1355:4784",
+      "name": "NH/Final/Auth/Login/Email-Processing"
+    },
+    {
+      "id": "1355:5087",
+      "name": "NH/Final/Auth/Login/Google-Processing"
+    },
+    {
+      "id": "1355:5390",
+      "name": "NH/Final/Auth/Login/Request-Timeout-Wait"
+    },
+    {
+      "id": "1360:5596",
+      "name": "NH/Final/Auth/Login/Email-Timeout-Wait"
+    },
+    {
+      "id": "1360:6086",
+      "name": "NH/Final/Auth/Login/Email-Google-Processing"
+    },
+    {
+      "id": "1355:2934",
+      "name": "NH/Final/Auth/Login/Email-Empty"
+    },
+    {
+      "id": "1355:3053",
+      "name": "NH/Final/Auth/Login/Email-Ready"
+    },
+    {
+      "id": "1355:3172",
+      "name": "NH/Final/Auth/Login/Phone-Invalid"
+    },
+    {
+      "id": "1355:3291",
+      "name": "NH/Final/Auth/Login/Email-Invalid"
+    },
+    {
+      "id": "1355:3410",
+      "name": "NH/Final/Auth/Login/Country-Missing"
+    },
+    {
+      "id": "1355:3529",
+      "name": "NH/Final/Auth/Login/Phone-Request-Failure"
+    },
+    {
+      "id": "1355:3648",
+      "name": "NH/Final/Auth/Login/Email-Request-Failure"
+    },
+    {
+      "id": "1355:3767",
+      "name": "NH/Final/Auth/Login/Phone-Timeout"
+    },
+    {
+      "id": "1355:3886",
+      "name": "NH/Final/Auth/Login/Email-Timeout"
+    },
+    {
+      "id": "1355:4005",
+      "name": "NH/Final/Auth/Login/Phone-Offline"
+    },
+    {
+      "id": "1355:4124",
+      "name": "NH/Final/Auth/Login/Email-Offline"
+    },
+    {
+      "id": "1355:4243",
+      "name": "NH/Final/Auth/Login/Session-Expired"
+    },
+    {
+      "id": "1355:4362",
+      "name": "NH/Final/Auth/Login/Google-Failure"
+    },
+    {
+      "id": "1361:6133",
+      "name": "NH/Final/Auth/Login/Email-Google-Failure"
+    }
+  ],
+  "sourcesPreserved": [
+    "1330:5697",
+    "1334:678",
+    "1334:725",
+    "1330:5691"
+  ],
+  "limits": [
+    "Native graph model verification, not live Present playback",
+    "Input/search are documented fixtures",
+    "OTP success destination explicitly pending approval",
+    "Register destination pending"
+  ],
+  "verifiedOn": "2026-10-19",
+  "verificationKind": "Evaluation of saved Figma actions; not live Present playback",
+  "successDecision": "User requested leaving OTP destination pending",
+  "codeLayersEnabled": false
+}

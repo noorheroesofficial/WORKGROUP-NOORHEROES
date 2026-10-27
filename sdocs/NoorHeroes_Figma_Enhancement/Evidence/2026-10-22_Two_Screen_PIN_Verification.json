@@ -1,0 +1,447 @@
+{
+  "date": "2026-10-22",
+  "latestUserDecision": "Enter PIN → Continue → separate Confirm your Parent PIN → Save PIN → 013 Biometric Enrollment",
+  "state": {
+    "createdNodeIds": [
+      "1711:905",
+      "1711:906",
+      "1711:908",
+      "1711:909"
+    ],
+    "createdVariableIds": [
+      "VariableID:1711:765",
+      "VariableID:1711:766",
+      "VariableID:1711:767",
+      "VariableID:1711:768",
+      "VariableID:1711:769",
+      "VariableID:1711:770",
+      "VariableID:1711:771",
+      "VariableID:1711:772",
+      "VariableID:1711:773",
+      "VariableID:1711:774",
+      "VariableID:1711:775",
+      "VariableID:1711:776",
+      "VariableID:1711:777",
+      "VariableID:1711:778",
+      "VariableID:1711:779",
+      "VariableID:1711:780",
+      "VariableID:1711:781",
+      "VariableID:1711:782",
+      "VariableID:1711:783",
+      "VariableID:1711:784",
+      "VariableID:1711:785",
+      "VariableID:1711:787",
+      "VariableID:1711:789",
+      "VariableID:1711:791",
+      "VariableID:1711:793",
+      "VariableID:1711:795",
+      "VariableID:1711:797",
+      "VariableID:1711:799",
+      "VariableID:1711:801",
+      "VariableID:1711:803",
+      "VariableID:1711:805",
+      "VariableID:1711:807",
+      "VariableID:1711:809",
+      "VariableID:1711:811",
+      "VariableID:1711:813",
+      "VariableID:1711:815",
+      "VariableID:1711:817",
+      "VariableID:1711:819",
+      "VariableID:1711:821",
+      "VariableID:1711:823",
+      "VariableID:1711:825",
+      "VariableID:1711:827",
+      "VariableID:1711:829",
+      "VariableID:1711:831",
+      "VariableID:1711:832",
+      "VariableID:1711:834",
+      "VariableID:1711:836",
+      "VariableID:1711:838",
+      "VariableID:1711:839",
+      "VariableID:1711:840",
+      "VariableID:1711:841",
+      "VariableID:1711:842",
+      "VariableID:1711:843",
+      "VariableID:1711:844",
+      "VariableID:1711:845",
+      "VariableID:1711:846",
+      "VariableID:1711:847",
+      "VariableID:1711:848",
+      "VariableID:1711:849",
+      "VariableID:1711:850",
+      "VariableID:1711:865",
+      "VariableID:1711:866",
+      "VariableID:1711:867",
+      "VariableID:1711:868",
+      "VariableID:1711:869",
+      "VariableID:1711:870",
+      "VariableID:1711:871",
+      "VariableID:1711:872",
+      "VariableID:1711:873",
+      "VariableID:1711:874",
+      "VariableID:1711:875",
+      "VariableID:1711:876",
+      "VariableID:1711:877",
+      "VariableID:1711:878",
+      "VariableID:1711:894",
+      "VariableID:1711:895",
+      "VariableID:1711:896",
+      "VariableID:1711:897",
+      "VariableID:1711:899",
+      "VariableID:1711:901",
+      "VariableID:1711:902"
+    ],
+    "mutatedNodeIds": [
+      "1650:756",
+      "1650:762",
+      "1650:768",
+      "1650:775",
+      "1650:781",
+      "1650:787",
+      "1650:794",
+      "1650:800",
+      "1650:806",
+      "1650:814",
+      "1650:820",
+      "1709:733",
+      "1709:734",
+      "1709:735",
+      "1709:737",
+      "1709:738",
+      "1709:739",
+      "1709:741",
+      "1709:742",
+      "1709:743",
+      "1709:746",
+      "1709:747",
+      "1650:831",
+      "1709:749",
+      "1650:528",
+      "1709:701",
+      "1650:502",
+      "1709:675",
+      "1650:735",
+      "1709:712",
+      "1650:738",
+      "1709:715",
+      "1650:741",
+      "1709:718",
+      "1650:744",
+      "1709:721",
+      "1650:747",
+      "1709:724",
+      "1650:750",
+      "1709:727",
+      "1709:750",
+      "I1709:750;329:7",
+      "1709:730",
+      "1650:844",
+      "1650:845",
+      "I1650:847;1420:20",
+      "1650:915",
+      "1650:900",
+      "1650:899"
+    ],
+    "removedNodeIds": [],
+    "extra": {
+      "ConfirmState": "VariableID:1711:765",
+      "Idle": "VariableID:1711:766",
+      "SetFilled0": "VariableID:1711:767",
+      "ConfirmFilled0": "VariableID:1711:768",
+      "ConfirmVisible0": "VariableID:1711:769",
+      "SetFilled1": "VariableID:1711:770",
+      "ConfirmFilled1": "VariableID:1711:771",
+      "ConfirmVisible1": "VariableID:1711:772",
+      "SetFilled2": "VariableID:1711:773",
+      "ConfirmFilled2": "VariableID:1711:774",
+      "ConfirmVisible2": "VariableID:1711:775",
+      "SetFilled3": "VariableID:1711:776",
+      "ConfirmFilled3": "VariableID:1711:777",
+      "ConfirmVisible3": "VariableID:1711:778",
+      "SetFilled4": "VariableID:1711:779",
+      "ConfirmFilled4": "VariableID:1711:780",
+      "ConfirmVisible4": "VariableID:1711:781",
+      "SetFilled5": "VariableID:1711:782",
+      "ConfirmFilled5": "VariableID:1711:783",
+      "ConfirmVisible5": "VariableID:1711:784"
+    },
+    "confirmation": {
+      "main": "1709:675",
+      "button": "1709:749",
+      "loader": "1709:750",
+      "back": "1709:701",
+      "message": "1709:730",
+      "keys": [
+        [
+          "1709:733",
+          1
+        ],
+        [
+          "1709:734",
+          2
+        ],
+        [
+          "1709:735",
+          3
+        ],
+        [
+          "1709:737",
+          4
+        ],
+        [
+          "1709:738",
+          5
+        ],
+        [
+          "1709:739",
+          6
+        ],
+        [
+          "1709:741",
+          7
+        ],
+        [
+          "1709:742",
+          8
+        ],
+        [
+          "1709:743",
+          9
+        ],
+        [
+          "1709:746",
+          0
+        ],
+        [
+          "1709:747",
+          "delete"
+        ]
+      ]
+    },
+    "fixtureRows": [
+      {
+        "label": "Match",
+        "id": "1711:905"
+      },
+      {
+        "label": "Mismatch",
+        "id": "1711:908"
+      }
+    ]
+  },
+  "tests": {
+    "checks": [
+      {
+        "name": "OTP success opens first PIN entry",
+        "pass": true
+      },
+      {
+        "name": "0 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "1 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "2 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "3 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "First entry capped at six",
+        "pass": true
+      },
+      {
+        "name": "Deleting below four disables Continue",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Continue opens confirmation without saving",
+        "pass": true
+      },
+      {
+        "name": "4 digits: incomplete confirmation cannot save",
+        "pass": true
+      },
+      {
+        "name": "4 digits: confirmation capped at captured length",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Save PIN starts loading",
+        "pass": true
+      },
+      {
+        "name": "4 digits: saved PIN opens biometrics",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Continue opens confirmation without saving",
+        "pass": true
+      },
+      {
+        "name": "5 digits: incomplete confirmation cannot save",
+        "pass": true
+      },
+      {
+        "name": "5 digits: confirmation capped at captured length",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Save PIN starts loading",
+        "pass": true
+      },
+      {
+        "name": "5 digits: saved PIN opens biometrics",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Continue opens confirmation without saving",
+        "pass": true
+      },
+      {
+        "name": "6 digits: incomplete confirmation cannot save",
+        "pass": true
+      },
+      {
+        "name": "6 digits: confirmation capped at captured length",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Save PIN starts loading",
+        "pass": true
+      },
+      {
+        "name": "6 digits: saved PIN opens biometrics",
+        "pass": true
+      },
+      {
+        "name": "Confirmation Back returns first screen with entry retained",
+        "pass": true
+      },
+      {
+        "name": "Continue reopens clean confirmation",
+        "pass": true
+      },
+      {
+        "name": "Mismatch fixture stays on confirmation and clears confirmation only",
+        "pass": true
+      },
+      {
+        "name": "Corrected confirmation saves",
+        "pass": true
+      },
+      {
+        "name": "Save guards duplicate submits and confirmation edits",
+        "pass": true
+      },
+      {
+        "name": "offline failure preserves both entries and confirmation stage",
+        "pass": true
+      },
+      {
+        "name": "offline Retry reaches biometric",
+        "pass": true
+      },
+      {
+        "name": "api failure preserves both entries and confirmation stage",
+        "pass": true
+      },
+      {
+        "name": "api Retry reaches biometric",
+        "pass": true
+      },
+      {
+        "name": "Timeout awaits remaining deadline",
+        "pass": true
+      },
+      {
+        "name": "Timeout retains confirmed input for Retry",
+        "pass": true
+      },
+      {
+        "name": "Full OTP → PIN → Confirm → Save → Biometric enable completes",
+        "pass": true
+      },
+      {
+        "name": "Biometric Skip retains saved PIN",
+        "pass": true
+      },
+      {
+        "name": "Biometric Cancel retains PIN",
+        "pass": true
+      }
+    ],
+    "passed": 39,
+    "total": 39,
+    "failures": [],
+    "method": "Stored native-action evaluation; PIN match/mismatch is a controlled fixture, no real PIN/OS/backend processing."
+  },
+  "audit": {
+    "retainedScreens": [
+      {
+        "id": "1650:502",
+        "name": "NH/V2/Onboarding/012/Parent_PIN_Setup/Default"
+      },
+      {
+        "id": "1650:844",
+        "name": "NH/V2/012/Saving — Transparent Input Guard"
+      },
+      {
+        "id": "1650:845",
+        "name": "NH/V2/012/Saving Timeout"
+      },
+      {
+        "id": "1650:846",
+        "name": "NH/V2/012/Network Error Snackbar"
+      },
+      {
+        "id": "1654:1134",
+        "name": "NH/V2/012/Review Only/Saving"
+      },
+      {
+        "id": "1654:1428",
+        "name": "NH/V2/012/Review Only/Offline"
+      },
+      {
+        "id": "1709:675",
+        "name": "NH/V2/Onboarding/012/Parent_PIN_Confirmation/Default"
+      },
+      {
+        "id": "1709:947",
+        "name": "NH/V2/012/Review Only/Mismatch"
+      }
+    ],
+    "confirmation": {
+      "id": "1709:675",
+      "width": 390,
+      "height": 844,
+      "cardBottom": 680,
+      "fits": true
+    },
+    "destinationCount": 22,
+    "unresolved": [],
+    "removedNodeIds": []
+  },
+  "limits": [
+    "Stored native-action evaluation; Present not verified",
+    "Match/mismatch is a controlled fixture; no raw PIN stored or actual secure authentication performed",
+    "Future Add Child remains unmapped"
+  ]
+}

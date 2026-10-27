@@ -1,0 +1,903 @@
+{
+  "date": "2026-10-22",
+  "evidence": {
+    "primaryComponent": "322:24 / Hover322:27 / Pressed322:30",
+    "buttonEvents": [
+      "MOUSE_ENTER → CHANGE_TO Hover",
+      "MOUSE_DOWN → CHANGE_TO Pressed",
+      "MOUSE_UP → CHANGE_TO Hover"
+    ],
+    "keypadEvent": "494:18 ON_PRESS → CHANGE_TO494:24",
+    "finding": "Application click reactions were attached to variant-changing component instances; stable Frame hit targets avoid the inherited component event conflict. Present cause not directly reproduced."
+  },
+  "pinTargets": {
+    "createdNodeIds": [
+      "1718:715",
+      "1718:717",
+      "1718:719",
+      "1718:727",
+      "1718:729",
+      "1718:731",
+      "1718:739",
+      "1718:741",
+      "1718:743",
+      "1718:749",
+      "1718:751",
+      "1718:759",
+      "1718:761",
+      "1718:763",
+      "1718:771",
+      "1718:773",
+      "1718:775",
+      "1718:783",
+      "1718:785",
+      "1718:787",
+      "1718:792",
+      "1718:794",
+      "1718:803",
+      "1718:811"
+    ],
+    "mutatedNodeIds": [
+      "1650:756",
+      "1650:755",
+      "1650:762",
+      "1650:768",
+      "1650:775",
+      "1650:774",
+      "1650:781",
+      "1650:787",
+      "1650:794",
+      "1650:793",
+      "1650:800",
+      "1650:806",
+      "1650:814",
+      "1650:812",
+      "1650:820",
+      "1709:733",
+      "1709:732",
+      "1709:734",
+      "1709:735",
+      "1709:737",
+      "1709:736",
+      "1709:738",
+      "1709:739",
+      "1709:741",
+      "1709:740",
+      "1709:742",
+      "1709:743",
+      "1709:746",
+      "1709:744",
+      "1709:747",
+      "1650:831",
+      "1650:826",
+      "1709:749",
+      "1709:748"
+    ],
+    "targets": [
+      {
+        "source": "1650:756",
+        "role": "1",
+        "kind": "set",
+        "hit": "1718:715",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:762",
+        "role": "2",
+        "kind": "set",
+        "hit": "1718:717",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:768",
+        "role": "3",
+        "kind": "set",
+        "hit": "1718:719",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:775",
+        "role": "4",
+        "kind": "set",
+        "hit": "1718:727",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:781",
+        "role": "5",
+        "kind": "set",
+        "hit": "1718:729",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:787",
+        "role": "6",
+        "kind": "set",
+        "hit": "1718:731",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:794",
+        "role": "7",
+        "kind": "set",
+        "hit": "1718:739",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:800",
+        "role": "8",
+        "kind": "set",
+        "hit": "1718:741",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:806",
+        "role": "9",
+        "kind": "set",
+        "hit": "1718:743",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:814",
+        "role": "0",
+        "kind": "set",
+        "hit": "1718:749",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:820",
+        "role": "Delete",
+        "kind": "set",
+        "hit": "1718:751",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:733",
+        "role": "1",
+        "kind": "confirm",
+        "hit": "1718:759",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:734",
+        "role": "2",
+        "kind": "confirm",
+        "hit": "1718:761",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:735",
+        "role": "3",
+        "kind": "confirm",
+        "hit": "1718:763",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:737",
+        "role": "4",
+        "kind": "confirm",
+        "hit": "1718:771",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:738",
+        "role": "5",
+        "kind": "confirm",
+        "hit": "1718:773",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:739",
+        "role": "6",
+        "kind": "confirm",
+        "hit": "1718:775",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:741",
+        "role": "7",
+        "kind": "confirm",
+        "hit": "1718:783",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:742",
+        "role": "8",
+        "kind": "confirm",
+        "hit": "1718:785",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:743",
+        "role": "9",
+        "kind": "confirm",
+        "hit": "1718:787",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:746",
+        "role": "0",
+        "kind": "confirm",
+        "hit": "1718:792",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:747",
+        "role": "Delete",
+        "kind": "confirm",
+        "hit": "1718:794",
+        "width": 107.33300018310547,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1650:831",
+        "role": "Continue",
+        "kind": "set",
+        "hit": "1718:803",
+        "width": 338,
+        "height": 56,
+        "topmost": true
+      },
+      {
+        "source": "1709:749",
+        "role": "Save PIN",
+        "kind": "confirm",
+        "hit": "1718:811",
+        "width": 338,
+        "height": 56,
+        "topmost": true
+      }
+    ],
+    "removedNodeIds": []
+  },
+  "biometricTargets": {
+    "createdNodeIds": [
+      "1718:815",
+      "1718:819",
+      "1718:822",
+      "1718:825",
+      "1718:828"
+    ],
+    "mutatedNodeIds": [
+      "1670:1128",
+      "1670:1071",
+      "1670:1132",
+      "1670:1202",
+      "1670:1138",
+      "1670:1265",
+      "1670:1208",
+      "1670:1269"
+    ],
+    "targets": [
+      {
+        "source": "1670:1128",
+        "hit": "1718:815"
+      },
+      {
+        "source": "1670:1132",
+        "hit": "1718:819"
+      },
+      {
+        "source": "1670:1202",
+        "hit": "1718:822"
+      },
+      {
+        "source": "1670:1265",
+        "hit": "1718:825"
+      },
+      {
+        "source": "1670:1269",
+        "hit": "1718:828"
+      }
+    ],
+    "removedNodeIds": []
+  },
+  "tests": {
+    "checks": [
+      {
+        "name": "OTP success opens first PIN entry",
+        "pass": true
+      },
+      {
+        "name": "0 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "1 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "2 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "3 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Continue readiness",
+        "pass": true
+      },
+      {
+        "name": "First entry capped at six",
+        "pass": true
+      },
+      {
+        "name": "Deleting below four disables Continue",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Continue opens confirmation without saving",
+        "pass": true
+      },
+      {
+        "name": "4 digits: incomplete confirmation cannot save",
+        "pass": true
+      },
+      {
+        "name": "4 digits: confirmation capped at captured length",
+        "pass": true
+      },
+      {
+        "name": "4 digits: Save PIN starts loading",
+        "pass": true
+      },
+      {
+        "name": "4 digits: saved PIN opens biometrics",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Continue opens confirmation without saving",
+        "pass": true
+      },
+      {
+        "name": "5 digits: incomplete confirmation cannot save",
+        "pass": true
+      },
+      {
+        "name": "5 digits: confirmation capped at captured length",
+        "pass": true
+      },
+      {
+        "name": "5 digits: Save PIN starts loading",
+        "pass": true
+      },
+      {
+        "name": "5 digits: saved PIN opens biometrics",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Continue opens confirmation without saving",
+        "pass": true
+      },
+      {
+        "name": "6 digits: incomplete confirmation cannot save",
+        "pass": true
+      },
+      {
+        "name": "6 digits: confirmation capped at captured length",
+        "pass": true
+      },
+      {
+        "name": "6 digits: Save PIN starts loading",
+        "pass": true
+      },
+      {
+        "name": "6 digits: saved PIN opens biometrics",
+        "pass": true
+      },
+      {
+        "name": "Confirmation Back returns first screen with entry retained",
+        "pass": true
+      },
+      {
+        "name": "Continue reopens clean confirmation",
+        "pass": true
+      },
+      {
+        "name": "Mismatch fixture stays on confirmation and clears confirmation only",
+        "pass": true
+      },
+      {
+        "name": "Corrected confirmation saves",
+        "pass": true
+      },
+      {
+        "name": "Save guards duplicate submits and confirmation edits",
+        "pass": true
+      },
+      {
+        "name": "offline failure preserves both entries and confirmation stage",
+        "pass": true
+      },
+      {
+        "name": "offline Retry reaches biometric",
+        "pass": true
+      },
+      {
+        "name": "api failure preserves both entries and confirmation stage",
+        "pass": true
+      },
+      {
+        "name": "api Retry reaches biometric",
+        "pass": true
+      },
+      {
+        "name": "Timeout awaits remaining deadline",
+        "pass": true
+      },
+      {
+        "name": "Timeout retains confirmed input for Retry",
+        "pass": true
+      },
+      {
+        "name": "Full OTP → PIN → Confirm → Save → Biometric enable completes",
+        "pass": true
+      },
+      {
+        "name": "Biometric Skip retains saved PIN",
+        "pass": true
+      },
+      {
+        "name": "Biometric Cancel retains PIN",
+        "pass": true
+      }
+    ],
+    "passed": 39,
+    "total": 39,
+    "failures": [],
+    "method": "Stored native-action evaluation; PIN match/mismatch is a controlled fixture, no real PIN/OS/backend processing."
+  },
+  "structure": {
+    "checks": [
+      {
+        "source": "1650:756",
+        "hit": "1718:715",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:762",
+        "hit": "1718:717",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:768",
+        "hit": "1718:719",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:775",
+        "hit": "1718:727",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:781",
+        "hit": "1718:729",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:787",
+        "hit": "1718:731",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:794",
+        "hit": "1718:739",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:800",
+        "hit": "1718:741",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:806",
+        "hit": "1718:743",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:814",
+        "hit": "1718:749",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:820",
+        "hit": "1718:751",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:733",
+        "hit": "1718:759",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:734",
+        "hit": "1718:761",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:735",
+        "hit": "1718:763",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:737",
+        "hit": "1718:771",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:738",
+        "hit": "1718:773",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:739",
+        "hit": "1718:775",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:741",
+        "hit": "1718:783",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:742",
+        "hit": "1718:785",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:743",
+        "hit": "1718:787",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:746",
+        "hit": "1718:792",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1709:747",
+        "hit": "1718:794",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          107.33300018310547,
+          56
+        ]
+      },
+      {
+        "source": "1650:831",
+        "hit": "1718:803",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      },
+      {
+        "source": "1709:749",
+        "hit": "1718:811",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      },
+      {
+        "source": "1670:1128",
+        "hit": "1718:815",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      },
+      {
+        "source": "1670:1132",
+        "hit": "1718:819",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      },
+      {
+        "source": "1670:1202",
+        "hit": "1718:822",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      },
+      {
+        "source": "1670:1265",
+        "hit": "1718:825",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      },
+      {
+        "source": "1670:1269",
+        "hit": "1718:828",
+        "isStableFrame": true,
+        "sameBounds": true,
+        "aboveSource": true,
+        "clickOnStableTarget": true,
+        "sourceHasNoLocalClick": true,
+        "size": [
+          338,
+          56
+        ]
+      }
+    ],
+    "pass": true,
+    "preservedScreens": [
+      "1650:502",
+      "1650:844",
+      "1650:845",
+      "1650:846",
+      "1654:1134",
+      "1654:1428",
+      "1709:675",
+      "1709:947"
+    ],
+    "removedNodeIds": []
+  },
+  "confirmationScreenshotByteIdentical": true,
+  "removedScreens": [],
+  "limits": [
+    "No native Present playback verification",
+    "PIN matching remains controlled fixture; no real PIN values/secure storage",
+    "No OS biometric API",
+    "Future Add Child remains unmapped"
+  ]
+}

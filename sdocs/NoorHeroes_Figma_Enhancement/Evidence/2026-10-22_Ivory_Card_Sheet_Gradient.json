@@ -1,0 +1,1971 @@
+{
+  "createdStyleIds": [
+    "S:8e5bfca7e0f151c0a4e7e393ac08ddb943d7d323,"
+  ],
+  "mutatedNodeIds": [
+    "1174:106",
+    "1174:112",
+    "1174:118",
+    "1174:144",
+    "1174:158",
+    "1174:164",
+    "1174:190",
+    "1174:196",
+    "1174:210",
+    "1174:236",
+    "1174:242",
+    "1174:248",
+    "1219:53",
+    "1219:57",
+    "1219:61",
+    "1219:115",
+    "1219:119",
+    "1219:123",
+    "1219:172",
+    "1219:176",
+    "1219:180",
+    "1219:229",
+    "1219:233",
+    "1219:237",
+    "1355:2705",
+    "1356:7845",
+    "1357:3692",
+    "1357:4687",
+    "1357:5682",
+    "1357:6678",
+    "1373:4254",
+    "1459:421",
+    "1462:437",
+    "1511:382",
+    "1513:353",
+    "1513:389",
+    "1514:356",
+    "1514:386",
+    "1514:416",
+    "1612:1778",
+    "1619:435",
+    "1619:645",
+    "1619:851",
+    "1619:1057",
+    "1650:533",
+    "1654:1165",
+    "1654:1459",
+    "1709:706",
+    "1709:978",
+    "1670:1071",
+    "1670:1138",
+    "1670:1208",
+    "1804:2927",
+    "1804:2986",
+    "1804:2995",
+    "1804:3004",
+    "1804:3229",
+    "1871:3503",
+    "1871:3523",
+    "1871:3640",
+    "1871:3659",
+    "1804:3254",
+    "1804:3348",
+    "1804:3423",
+    "1804:3453",
+    "1804:3458",
+    "1804:3463",
+    "1806:3533",
+    "1806:3569",
+    "1806:3574",
+    "1806:3579",
+    "1806:3683",
+    "1806:3719",
+    "1806:3724",
+    "1806:3729"
+  ],
+  "count": 75,
+  "styles": [
+    {
+      "id": "S:8e5bfca7e0f151c0a4e7e393ac08ddb943d7d323,",
+      "name": "NH/V2/Surface/Ivory Vertical"
+    }
+  ],
+  "verified": {
+    "geometryAndReactionsUnchanged": true,
+    "tealBackgroundsUnchanged": true,
+    "remainingEligibleWhiteCards": 0
+  },
+  "before": [
+    {
+      "id": "1174:106",
+      "name": "Control/Hindi",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        93,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:112",
+      "name": "Control/Arabic",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        186,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:118",
+      "name": "Control/Urdu",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        279,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:144",
+      "name": "Control/English",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:158",
+      "name": "Control/Arabic",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        186,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:164",
+      "name": "Control/Urdu",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        279,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:190",
+      "name": "Control/English",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:196",
+      "name": "Control/Hindi",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        93,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:210",
+      "name": "Control/Urdu",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        279,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:236",
+      "name": "Control/English",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:242",
+      "name": "Control/Hindi",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        93,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1174:248",
+      "name": "Control/Arabic",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        186,
+        350,
+        81
+      ]
+    },
+    {
+      "id": "1219:53",
+      "name": "Feature/Card 1",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:57",
+      "name": "Feature/Card 2",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        92,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:61",
+      "name": "Feature/Card 3",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        184,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:115",
+      "name": "Feature/Card 1",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:119",
+      "name": "Feature/Card 2",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        92,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:123",
+      "name": "Feature/Card 3",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        184,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:172",
+      "name": "Feature/Card 1",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:176",
+      "name": "Feature/Card 2",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        92,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:180",
+      "name": "Feature/Card 3",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        184,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:229",
+      "name": "Feature/Card 1",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:233",
+      "name": "Feature/Card 2",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        92,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1219:237",
+      "name": "Feature/Card 3",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        184,
+        350,
+        84
+      ]
+    },
+    {
+      "id": "1355:2705",
+      "name": "Surface/Curved Form",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        118,
+        366,
+        488
+      ]
+    },
+    {
+      "id": "1356:7845",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1357:3692",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1357:4687",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1357:5682",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1357:6678",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1373:4254",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1459:421",
+      "name": "Surface/Curved Registration Form",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        534
+      ]
+    },
+    {
+      "id": "1462:437",
+      "name": "Sheet / Country code",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        168,
+        390,
+        676
+      ]
+    },
+    {
+      "id": "1511:382",
+      "name": "Sheet/Optional preferences",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        464,
+        390,
+        380
+      ]
+    },
+    {
+      "id": "1513:353",
+      "name": "Sheet/Terms & Conditions",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        124,
+        390,
+        720
+      ]
+    },
+    {
+      "id": "1513:389",
+      "name": "Sheet/Privacy Policy",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        124,
+        390,
+        720
+      ]
+    },
+    {
+      "id": "1514:356",
+      "name": "Sheet/Personalization/AI consent",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        464,
+        390,
+        380
+      ]
+    },
+    {
+      "id": "1514:386",
+      "name": "Sheet/Voice-feature consent",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        464,
+        390,
+        380
+      ]
+    },
+    {
+      "id": "1514:416",
+      "name": "Sheet/Marketing consent",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        464,
+        390,
+        380
+      ]
+    },
+    {
+      "id": "1612:1778",
+      "name": "Surface/OTP — Auth Curved Card",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        302
+      ]
+    },
+    {
+      "id": "1619:435",
+      "name": "Surface/OTP — Auth Curved Card",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        334
+      ]
+    },
+    {
+      "id": "1619:645",
+      "name": "Surface/OTP — Auth Curved Card",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        302
+      ]
+    },
+    {
+      "id": "1619:851",
+      "name": "Surface/OTP — Auth Curved Card",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        386
+      ]
+    },
+    {
+      "id": "1619:1057",
+      "name": "Surface/OTP — Auth Curved Card",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        302
+      ]
+    },
+    {
+      "id": "1650:533",
+      "name": "Surface/Parent PIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        472
+      ]
+    },
+    {
+      "id": "1654:1165",
+      "name": "Surface/Parent PIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        472
+      ]
+    },
+    {
+      "id": "1654:1459",
+      "name": "Surface/Parent PIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        472
+      ]
+    },
+    {
+      "id": "1709:706",
+      "name": "Surface/Parent PIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        472
+      ]
+    },
+    {
+      "id": "1709:978",
+      "name": "Surface/Parent PIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        200,
+        366,
+        504
+      ]
+    },
+    {
+      "id": "1670:1071",
+      "name": "Sheet/Biometric Enrollment — Offer",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        494,
+        390,
+        350
+      ]
+    },
+    {
+      "id": "1670:1138",
+      "name": "Sheet/System Prompt — Simulation",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        500,
+        390,
+        344
+      ]
+    },
+    {
+      "id": "1670:1208",
+      "name": "Sheet/Biometric Enrollment — Error",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        420,
+        390,
+        424
+      ]
+    },
+    {
+      "id": "1804:2927",
+      "name": "Surface/Add Child",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        82,
+        366,
+        738
+      ]
+    },
+    {
+      "id": "1804:2986",
+      "name": "Control/Level/Beginner",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1804:2995",
+      "name": "Control/Level/Intermediate",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        115.33300018310547,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1804:3004",
+      "name": "Control/Level/Advanced",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        230.66600036621094,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1804:3229",
+      "name": "Sheet/Preferred language",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        326,
+        390,
+        518
+      ]
+    },
+    {
+      "id": "1871:3503",
+      "name": "Control/Preferred language/English",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        338,
+        81
+      ]
+    },
+    {
+      "id": "1871:3523",
+      "name": "Control/Preferred language/Hindi",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        93,
+        338,
+        81
+      ]
+    },
+    {
+      "id": "1871:3640",
+      "name": "Control/Preferred language/Arabic",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        186,
+        338,
+        81
+      ]
+    },
+    {
+      "id": "1871:3659",
+      "name": "Control/Preferred language/Urdu",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        279,
+        338,
+        81
+      ]
+    },
+    {
+      "id": "1804:3254",
+      "name": "Sheet/Optional preferences",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        194,
+        390,
+        650
+      ]
+    },
+    {
+      "id": "1804:3348",
+      "name": "Sheet/Duplicate Nickname",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        308,
+        390,
+        536
+      ]
+    },
+    {
+      "id": "1804:3423",
+      "name": "Surface/Add Child",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        82,
+        366,
+        738
+      ]
+    },
+    {
+      "id": "1804:3453",
+      "name": "Control/Level/Beginner",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1804:3458",
+      "name": "Control/Level/Intermediate",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        115.33300018310547,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1804:3463",
+      "name": "Control/Level/Advanced",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        230.66600036621094,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1806:3533",
+      "name": "Surface/Add Child",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        82,
+        366,
+        738
+      ]
+    },
+    {
+      "id": "1806:3569",
+      "name": "Control/Level/Beginner",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1806:3574",
+      "name": "Control/Level/Intermediate",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        115.33300018310547,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1806:3579",
+      "name": "Control/Level/Advanced",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        230.66600036621094,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1806:3683",
+      "name": "Surface/Add Child",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9803921580314636
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        12,
+        82,
+        366,
+        738
+      ]
+    },
+    {
+      "id": "1806:3719",
+      "name": "Control/Level/Beginner",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        0,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1806:3724",
+      "name": "Control/Level/Intermediate",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        115.33300018310547,
+        0,
+        107.33300018310547,
+        136
+      ]
+    },
+    {
+      "id": "1806:3729",
+      "name": "Control/Level/Advanced",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "geometry": [
+        230.66600036621094,
+        0,
+        107.33300018310547,
+        136
+      ]
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E28_Admin_Auth_RBAC_Operations_Dashboard.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 61608,
+    "sha256": "0b1e6473a505795f37ec5ad5dcb2930d2f0e3f4dc242ac9d13f65e969a41fbdf",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E29_Content_CMS_Scholar_Review_Workflow.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 65198,
+    "sha256": "44f6b42b592e4684714b4dc3088aebccc86199f605b657463dcc20117026239d",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E30_AI_Moderation_Console.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 57926,
+    "sha256": "2de13c806f3f09dcf9aacd81cfa74590bf1d5c47d1b4ec76c53c5051a0085e3f",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E31_Engagement_Tools_Admin_Suite.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 56777,
+    "sha256": "d300a3d8d32a8a27168545156baad7a283a8e70d8ffef64ca411bf6ae9ea1861",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E32_User_Management_Child_Safety_View.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 43404,
+    "sha256": "4cb6341ba9c1804acd1f5f767712d40071ab4900eef518c5794e1bedfe24c9be",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E33_Subscription_Management_Billing_Ops.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 48385,
+    "sha256": "e0c42cb209c07b329984e6a20e3d0f3e0e77f5208e0e0e493caddf36ecc31a1a",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Feature_E34_Localization_Management.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 47121,
+    "sha256": "984b5e0c09b9787afec0b1167c9fc2c685588752b2bddeb69755730d9b0b07d9",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Admin & Scholar Portal (28-34)/Total Feature List  (28-34).md",
+    "scope": "Supporting brand/list source",
+    "bytes": 699,
+    "sha256": "34aa1718a62ec05fc857d4a4a0d7249147efde6d81e1f472d2e384d193bd1a54",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/App Icon-Banner/all_image_icon_design_prompts.md",
+    "scope": "Supporting brand/list source",
+    "bytes": 70931,
+    "sha256": "cca4dcd65b9a04032c2a70ebb2ef53dc5737c87e7ed5e722ec3215063e245b00",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/App Icon-Banner/NoorHeroes_App_Icon_Banner_Prompts_and_Specs.md",
+    "scope": "Supporting brand/list source",
+    "bytes": 13899,
+    "sha256": "4f20af00d653fa5fa3540756f0a38e648d2ca6555fe2dc42e718ecb1668c4dbf",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/App Icon-Banner/NurKids_App_Icon_Banner_Prompts_and_Specs.md",
+    "scope": "Supporting brand/list source",
+    "bytes": 14311,
+    "sha256": "06c23cea7f4646adaf0b95514ce4601033ea40de2a10783025f367b56c39470b",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A10_Games_Module.md",
+    "scope": "Mobile requirement source",
+    "bytes": 60159,
+    "sha256": "f65e0d7203028588e6e2767b13657c58320ed3377f94d0e3f528515df790ee79",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A11_Rewards_System.md",
+    "scope": "Mobile requirement source",
+    "bytes": 74354,
+    "sha256": "cf46d08c39c0b4ea8bdf92336dd89cb07280c8b1745837e15306c6c5df3d48d6",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A12_Avatar_System.md",
+    "scope": "Mobile requirement source",
+    "bytes": 60854,
+    "sha256": "fd9d6ef517685880b5913d4067f74f37afd901705491bf3701b600dbf02a676d",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A1_Splash_Auth_Onboarding.md",
+    "scope": "Mobile requirement source",
+    "bytes": 93421,
+    "sha256": "ab78313817f5d557f9677b0d06c4b0a2ec047bdfae7f24a09ebb14ad5457659c",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A2_Home_Dashboard_AI_Personalization.md",
+    "scope": "Mobile requirement source",
+    "bytes": 74414,
+    "sha256": "bb189800e1c8bace568e427e48b5fbb636cbb2da432b304d1dc46f22b2755f81",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A3_Stories_Module.md",
+    "scope": "Mobile requirement source",
+    "bytes": 78193,
+    "sha256": "015f11b809b9bf81401ad464886cdbd4f433b8d8b38e91ac279bc13340b402d2",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A4_Audio_Bedtime_Player_Bedtime_Mode.md",
+    "scope": "Mobile requirement source",
+    "bytes": 65089,
+    "sha256": "4296e06eabe8b167f04292335f3b8fa3b8760ceef6c064a11b82899117312154",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A5_Quran_Arabic_Learning.md",
+    "scope": "Mobile requirement source",
+    "bytes": 80094,
+    "sha256": "bbea191d6cdfa8cfce0801d0059f53f226e7028982e2d019e89be0585a4eab1d",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A6_Dua_Learning.md",
+    "scope": "Mobile requirement source",
+    "bytes": 62530,
+    "sha256": "b8443b7150ddc3f8d6b4d3b9eaba4b1012181bff24151f160b9d3316db76a926",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A7_Habit_Tracker.md",
+    "scope": "Mobile requirement source",
+    "bytes": 74796,
+    "sha256": "20238525711774ac9d1a5f426ae195e9c3a8803089690715fe822980f01a3d96",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A8_Daily_Quiz_Engine.md",
+    "scope": "Mobile requirement source",
+    "bytes": 68951,
+    "sha256": "4c04b08fe87c8a0bcd5eaecdb3f58d64e1833495d6416ccc9a18d451d0b7fd69",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Feature_A9_Skill_Tree_Mastery_Engine.md",
+    "scope": "Mobile requirement source",
+    "bytes": 63616,
+    "sha256": "683a55c3a8a624e2a5a8989af3e243669a8a747c23df28486cbbf8383ef80d58",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Total Feature List  (1-12).md",
+    "scope": "Supporting brand/list source",
+    "bytes": 993,
+    "sha256": "ead3b1f0393c7f32ed4a7eb7431402be5ba4fdd4de91c42ff5dd359d7a51b8cd",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Child App (1-12)/Total Feature List (1-12).md",
+    "scope": "Supporting brand/list source",
+    "bytes": 805,
+    "sha256": "8f7be3fa8f5b637aa788089c347fdb3ee694e26e6e5e8487a4fb7d560d205eb4",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Feature_B13_Search_Discovery.md",
+    "scope": "Mobile requirement source",
+    "bytes": 58727,
+    "sha256": "4e5a0111d538e2bc3a9b46666de21a66d781c5c68c055782480a0ae5f8fff16c",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Feature_B14_Favorites.md",
+    "scope": "Mobile requirement source",
+    "bytes": 42017,
+    "sha256": "782b54d0d34f4460e3c6e066565cd2ea16e73f079ed747a8e99b8b6a66bac4df",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Feature_B15_Offline_Downloads_Sync.md",
+    "scope": "Mobile requirement source",
+    "bytes": 43671,
+    "sha256": "9dbfccf30c3a0025a4da8236462a5bb5d4fb1529ef8b19954574dc0c1a252827",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Feature_B16_Child_Profile.md",
+    "scope": "Mobile requirement source",
+    "bytes": 43355,
+    "sha256": "b50324b718abfb9e26819f197ab3064d12a4d7a00f7b50b1801c7469efd0f9f6",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Feature_B17_Notifications_Child_Facing.md",
+    "scope": "Mobile requirement source",
+    "bytes": 63379,
+    "sha256": "b7c587517e295fdf6770d952e4f4c34d4d5f262b980d793d48526a714f8f49ec",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Feature_B18_Islamic_Facts_Module.md",
+    "scope": "Mobile requirement source",
+    "bytes": 49593,
+    "sha256": "535d7c7c747dde9b28e1a5bbd4066d24ccbbf66566f0617254b44f34063889b8",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Child App Supporting (13-18)/Total Feature List (13-18).md",
+    "scope": "Supporting brand/list source",
+    "bytes": 236,
+    "sha256": "d81bd5462cf57608b2c8e57c7304bcbd8a0764ef5e023530f654de8a8e422003",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F35_AI_Layer_Microservices_Architecture.md",
+    "scope": "Mobile requirement source",
+    "bytes": 49124,
+    "sha256": "febce45d17c9092bb99f4623ac4f2b48ca1712ec428270610ccf863f711a9349",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F36_Ramadan_Mode.md",
+    "scope": "Mobile requirement source",
+    "bytes": 43593,
+    "sha256": "2f060ba7511bf026f65fd61a3b1f05bd275e89f2486745c92fa1e6175d45ede8",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Cross-Cutting System Features (35-37)/Feature_F37_Security_Architecture.md",
+    "scope": "Mobile requirement source",
+    "bytes": 52815,
+    "sha256": "4660ffa69ba18c7cdd37c9be8f4b681c0c1276d4e028949769e45c8117c9adeb",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Cross-Cutting System Features (35-37)/Total Feature List.md",
+    "scope": "Supporting brand/list source",
+    "bytes": 164,
+    "sha256": "bd8d60b8812f2bb6e30eb1e3178e11a427dff7d9cf1152ac1d8ec98c2db67bad",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C19_Parent_PIN_Biometric_Gate.md",
+    "scope": "Mobile requirement source",
+    "bytes": 45483,
+    "sha256": "9f2ec282b615b18a6c9b310ff1ba5fb252e671f51a266941363ca43355238cfe",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C20_Parent_Dashboard.md",
+    "scope": "Mobile requirement source",
+    "bytes": 54503,
+    "sha256": "22c6c9eb6b49f19a0865bfef9d1dbe22e740d3fb0a80e2fcc32bb967f3bf9695",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C21_Multi_Child_Management.md",
+    "scope": "Mobile requirement source",
+    "bytes": 39034,
+    "sha256": "de147e3dc8ca7ea9c4b6efa9e0d35cbe5d9fa4ffa2eacf1234ec2b039a07eb52",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C22_Per_Child_Reports.md",
+    "scope": "Mobile requirement source",
+    "bytes": 56872,
+    "sha256": "9fb046c059c7877b169cc2076ba03c1a2b2c29e1bdd55743819d2d7a5fcd44f1",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C23_Parental_Controls.md",
+    "scope": "Mobile requirement source",
+    "bytes": 62176,
+    "sha256": "f143df1b7411e6c8d9db16f0ae1b478c50d67e2a108a549c0e1bb09c2523de9f",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C24_Subscription_Billing.md",
+    "scope": "Mobile requirement source",
+    "bytes": 60124,
+    "sha256": "7168f87e2e484d32c00c4bf6293a07650801011f1198d1162cf82a00baa67e59",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C25_Notifications_Parent_Support.md",
+    "scope": "Mobile requirement source",
+    "bytes": 57586,
+    "sha256": "e51f076a2ac186e16f7e98ec031d2f9a21958a184316fc15ee9921b4ee986873",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Feature_C26_Privacy_Consent_Account_Security_Data_Rights.md",
+    "scope": "Mobile requirement source",
+    "bytes": 55285,
+    "sha256": "d25a876427bda316f815c002b74b8dfa04b08672c78341419fc4c42145117244",
+    "review": "Mobile source audited in research; remaining source read for scope classification only"
+  },
+  {
+    "path": "PRD_Documents/Parent Area In-App (19-26)/Total Feature List (19-26).md",
+    "scope": "Supporting brand/list source",
+    "bytes": 517,
+    "sha256": "991585ebbc7bd228d54e02a8c3bf3936338b8e7dd11d76fef3e61488cfcdc17e",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Parent Web Portal (27)/Feature_D27_Parent_Web_Account_Portal.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 47586,
+    "sha256": "173cec14d55e6601e53c5397bc9f94a1bbc94015c50fab3e8e44e3d1affb550a",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Parent Web Portal (27)/Total Feature List (27).md",
+    "scope": "Supporting brand/list source",
+    "bytes": 269,
+    "sha256": "8382a521ea2c615a07e3237a022c814d1d1d795555347ecc2f199ba81a544d18",
+    "review": "Catalogued; not used to create web/admin screens"
+  },
+  {
+    "path": "PRD_Documents/Website Home/NoorHeroes_website_content_spec.md",
+    "scope": "Excluded web/admin scope",
+    "bytes": 43637,
+    "sha256": "c24539e1fd02ba24999d302621bd3b5580e41d77de30c2dcccdbf1b6208f2ea3",
+    "review": "Catalogued; not used to create web/admin screens"
+  }
+]

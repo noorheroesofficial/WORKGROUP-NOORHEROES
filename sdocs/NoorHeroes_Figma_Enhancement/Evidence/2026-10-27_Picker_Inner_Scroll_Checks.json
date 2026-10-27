@@ -1,0 +1,98 @@
+{
+  "scope": "Figma only",
+  "change": "Outer page scrolling disabled. Fixed toolbar and card title; only profile choices scroll inside the card. All 13 picker states updated. Inner 4 px gutter protects selected borders. No reactions changed.",
+  "verification": [
+    {
+      "id": "2188:7275",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2188:7543",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2188:7787",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2188:8027",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2188:8267",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2189:7165",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2245:11287",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2245:11582",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2245:11877",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2245:12172",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2245:12467",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2245:12762",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    },
+    {
+      "id": "2269:12112",
+      "onlyInnerScroll": true,
+      "cardFits": true,
+      "outlineClearance": true,
+      "cardsPreserved": true
+    }
+  ],
+  "livePresent": "Not tested"
+}

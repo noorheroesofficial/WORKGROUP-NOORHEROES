@@ -1,0 +1,919 @@
+{
+  "backup": [
+    {
+      "id": "1428:171",
+      "hash": "a3df171e",
+      "matches": [
+        {
+          "ri": 1,
+          "ai": 10,
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1444:172",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1444:173",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1383:3060",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1383:3061",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1355:2577",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1383:3057"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1358:5641"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          },
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1383:3058"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1358:5642"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "OR"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1355:2578",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1383:3057"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1358:5641"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "AND"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1383:3058"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1358:5642"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "AND"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "OR"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "NOT"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "CLOSE"
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:1355:2580"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "STRING"
+                      },
+                      {
+                        "value": "complete",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "1461:474",
+      "hash": "6ff121da",
+      "matches": [
+        {
+          "ri": 1,
+          "ai": 11,
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1459:226",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1459:227",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1459:240",
+                    "variableValue": {
+                      "value": "",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1533:328",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1459:240"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "STRING"
+                                },
+                                {
+                                  "value": "",
+                                  "type": "STRING",
+                                  "resolvedType": "STRING"
+                                }
+                              ],
+                              "expressionFunction": "EQUALS"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "NOT"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1459:222",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "expressionArguments": [
+                                            {
+                                              "value": {
+                                                "expressionArguments": [
+                                                  {
+                                                    "value": {
+                                                      "expressionArguments": [
+                                                        {
+                                                          "value": {
+                                                            "expressionArguments": [
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:242"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              },
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:244"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              }
+                                                            ],
+                                                            "expressionFunction": "AND"
+                                                          },
+                                                          "type": "EXPRESSION",
+                                                          "resolvedType": "BOOLEAN"
+                                                        },
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:246"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        }
+                                                      ],
+                                                      "expressionFunction": "AND"
+                                                    },
+                                                    "type": "EXPRESSION",
+                                                    "resolvedType": "BOOLEAN"
+                                                  },
+                                                  {
+                                                    "value": {
+                                                      "type": "VARIABLE_ALIAS",
+                                                      "id": "VariableID:1459:248"
+                                                    },
+                                                    "type": "VARIABLE_ALIAS",
+                                                    "resolvedType": "BOOLEAN"
+                                                  }
+                                                ],
+                                                "expressionFunction": "AND"
+                                              },
+                                              "type": "EXPRESSION",
+                                              "resolvedType": "BOOLEAN"
+                                            },
+                                            {
+                                              "value": {
+                                                "expressionArguments": [
+                                                  {
+                                                    "value": {
+                                                      "expressionArguments": [
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:218"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        },
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:220"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        }
+                                                      ],
+                                                      "expressionFunction": "AND"
+                                                    },
+                                                    "type": "EXPRESSION",
+                                                    "resolvedType": "BOOLEAN"
+                                                  },
+                                                  {
+                                                    "value": {
+                                                      "expressionArguments": [
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:219"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        },
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:221"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        }
+                                                      ],
+                                                      "expressionFunction": "AND"
+                                                    },
+                                                    "type": "EXPRESSION",
+                                                    "resolvedType": "BOOLEAN"
+                                                  }
+                                                ],
+                                                "expressionFunction": "OR"
+                                              },
+                                              "type": "EXPRESSION",
+                                              "resolvedType": "BOOLEAN"
+                                            }
+                                          ],
+                                          "expressionFunction": "AND"
+                                        },
+                                        "type": "EXPRESSION",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1459:224"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "AND"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1459:225"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          },
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1459:226"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "NOT"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "AND"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1459:223",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "expressionArguments": [
+                                            {
+                                              "value": {
+                                                "expressionArguments": [
+                                                  {
+                                                    "value": {
+                                                      "expressionArguments": [
+                                                        {
+                                                          "value": {
+                                                            "expressionArguments": [
+                                                              {
+                                                                "value": {
+                                                                  "expressionArguments": [
+                                                                    {
+                                                                      "value": {
+                                                                        "type": "VARIABLE_ALIAS",
+                                                                        "id": "VariableID:1459:242"
+                                                                      },
+                                                                      "type": "VARIABLE_ALIAS",
+                                                                      "resolvedType": "BOOLEAN"
+                                                                    },
+                                                                    {
+                                                                      "value": {
+                                                                        "type": "VARIABLE_ALIAS",
+                                                                        "id": "VariableID:1459:244"
+                                                                      },
+                                                                      "type": "VARIABLE_ALIAS",
+                                                                      "resolvedType": "BOOLEAN"
+                                                                    }
+                                                                  ],
+                                                                  "expressionFunction": "AND"
+                                                                },
+                                                                "type": "EXPRESSION",
+                                                                "resolvedType": "BOOLEAN"
+                                                              },
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:246"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              }
+                                                            ],
+                                                            "expressionFunction": "AND"
+                                                          },
+                                                          "type": "EXPRESSION",
+                                                          "resolvedType": "BOOLEAN"
+                                                        },
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:248"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        }
+                                                      ],
+                                                      "expressionFunction": "AND"
+                                                    },
+                                                    "type": "EXPRESSION",
+                                                    "resolvedType": "BOOLEAN"
+                                                  },
+                                                  {
+                                                    "value": {
+                                                      "expressionArguments": [
+                                                        {
+                                                          "value": {
+                                                            "expressionArguments": [
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:218"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              },
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:220"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              }
+                                                            ],
+                                                            "expressionFunction": "AND"
+                                                          },
+                                                          "type": "EXPRESSION",
+                                                          "resolvedType": "BOOLEAN"
+                                                        },
+                                                        {
+                                                          "value": {
+                                                            "expressionArguments": [
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:219"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              },
+                                                              {
+                                                                "value": {
+                                                                  "type": "VARIABLE_ALIAS",
+                                                                  "id": "VariableID:1459:221"
+                                                                },
+                                                                "type": "VARIABLE_ALIAS",
+                                                                "resolvedType": "BOOLEAN"
+                                                              }
+                                                            ],
+                                                            "expressionFunction": "AND"
+                                                          },
+                                                          "type": "EXPRESSION",
+                                                          "resolvedType": "BOOLEAN"
+                                                        }
+                                                      ],
+                                                      "expressionFunction": "OR"
+                                                    },
+                                                    "type": "EXPRESSION",
+                                                    "resolvedType": "BOOLEAN"
+                                                  }
+                                                ],
+                                                "expressionFunction": "AND"
+                                              },
+                                              "type": "EXPRESSION",
+                                              "resolvedType": "BOOLEAN"
+                                            },
+                                            {
+                                              "value": {
+                                                "type": "VARIABLE_ALIAS",
+                                                "id": "VariableID:1459:224"
+                                              },
+                                              "type": "VARIABLE_ALIAS",
+                                              "resolvedType": "BOOLEAN"
+                                            }
+                                          ],
+                                          "expressionFunction": "AND"
+                                        },
+                                        "type": "EXPRESSION",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1459:225"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "AND"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1459:226"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "NOT"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "NOT"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1459:230",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "expressionArguments": [
+                                            {
+                                              "value": {
+                                                "expressionArguments": [
+                                                  {
+                                                    "value": {
+                                                      "expressionArguments": [
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:242"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        },
+                                                        {
+                                                          "value": {
+                                                            "type": "VARIABLE_ALIAS",
+                                                            "id": "VariableID:1459:244"
+                                                          },
+                                                          "type": "VARIABLE_ALIAS",
+                                                          "resolvedType": "BOOLEAN"
+                                                        }
+                                                      ],
+                                                      "expressionFunction": "AND"
+                                                    },
+                                                    "type": "EXPRESSION",
+                                                    "resolvedType": "BOOLEAN"
+                                                  },
+                                                  {
+                                                    "value": {
+                                                      "type": "VARIABLE_ALIAS",
+                                                      "id": "VariableID:1459:246"
+                                                    },
+                                                    "type": "VARIABLE_ALIAS",
+                                                    "resolvedType": "BOOLEAN"
+                                                  }
+                                                ],
+                                                "expressionFunction": "AND"
+                                              },
+                                              "type": "EXPRESSION",
+                                              "resolvedType": "BOOLEAN"
+                                            },
+                                            {
+                                              "value": {
+                                                "type": "VARIABLE_ALIAS",
+                                                "id": "VariableID:1459:248"
+                                              },
+                                              "type": "VARIABLE_ALIAS",
+                                              "resolvedType": "BOOLEAN"
+                                            }
+                                          ],
+                                          "expressionFunction": "AND"
+                                        },
+                                        "type": "EXPRESSION",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:1459:224"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "AND"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1459:225"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          },
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:1459:226"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "NOT"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "AND"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:1462:253",
+                    "variableValue": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "type": "VARIABLE_ALIAS",
+                              "id": "VariableID:1459:230"
+                            },
+                            "type": "VARIABLE_ALIAS",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "NOT"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "CLOSE"
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:1459:237"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "STRING"
+                      },
+                      {
+                        "value": "complete",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "fingerprints": [
+    {
+      "id": "1355:2696",
+      "count": 373,
+      "hash": "ff655bec"
+    },
+    {
+      "id": "1459:256",
+      "count": 148,
+      "hash": "6d54cb3e"
+    },
+    {
+      "id": "1131:2",
+      "count": 41,
+      "hash": "1e4d9f29"
+    },
+    {
+      "id": "1215:34",
+      "count": 84,
+      "hash": "378dbb25"
+    },
+    {
+      "id": "1215:138",
+      "count": 79,
+      "hash": "552f69e7"
+    },
+    {
+      "id": "1215:246",
+      "count": 86,
+      "hash": "b44875ed"
+    },
+    {
+      "id": "1215:356",
+      "count": 87,
+      "hash": "68f5ff7e"
+    },
+    {
+      "id": "1095:204",
+      "count": 78,
+      "hash": "937e8b98"
+    },
+    {
+      "id": "1085:22697",
+      "count": 153,
+      "hash": "fbac10d4"
+    }
+  ],
+  "sections": [
+    {
+      "id": "1128:2",
+      "w": 4800,
+      "h": 7574
+    },
+    {
+      "id": "1270:140",
+      "w": 4700,
+      "h": 7474
+    }
+  ]
+}

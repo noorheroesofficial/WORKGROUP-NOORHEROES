@@ -1,0 +1,40 @@
+{
+  "section": "1330:5686",
+  "authStates": 15,
+  "languageStates": 4,
+  "copyDiffs": [],
+  "routes": 183,
+  "missingDestinations": [],
+  "countryRows": 245,
+  "flags": 245,
+  "mutatedNodeIds": [
+    "1330:7288",
+    "1330:7470",
+    "1330:7652",
+    "1330:7834"
+  ],
+  "flowStartingPoints": [
+    {
+      "nodeId": "1330:8061",
+      "name": "Auth redesign — Splash to Login"
+    },
+    {
+      "nodeId": "1330:5697",
+      "name": "Auth redesign — Login"
+    },
+    {
+      "nodeId": "1330:6126",
+      "name": "Auth redesign — Offline recovery"
+    },
+    {
+      "nodeId": "1330:7288",
+      "name": "Auth redesign — Language"
+    }
+  ],
+  "verifiedOn": "2026-10-18",
+  "code_layers_enabled": false,
+  "nativePresentPlayback": "blocked by saved browser permission denying figma.com",
+  "backendAuthentication": "simulated",
+  "nativeCountrySearch": "simulation",
+  "nativeSelectedFlag": "ISO label fallback; full dynamic image in local companion"
+}

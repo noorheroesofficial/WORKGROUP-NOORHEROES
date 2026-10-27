@@ -1,0 +1,72 @@
+{
+  "button": {
+    "result": "PASS",
+    "assertions": 321,
+    "issues": [],
+    "publicVariants": 30,
+    "reviewInstances": 30,
+    "stateRoutes": 42,
+    "clipping": [],
+    "originalSetID": "322:99",
+    "propertyIDsPreserved": true,
+    "regularHeight": 48,
+    "largeSize": [
+      342,
+      56
+    ]
+  },
+  "loader": {
+    "result": "PASS",
+    "assertions": 95,
+    "issues": [],
+    "publicVariants": 6,
+    "privatePhaseVariants": 10,
+    "reviewInstances": 6,
+    "publicSetID": "329:49",
+    "propertyIDsPreserved": true,
+    "sourceMatch": "Final V2gradient,18radius,10pxdots",
+    "loopPeriodSeconds": 0.75,
+    "limits": [
+      "Saved native interactions and static renders checked; live Present playback not exercised"
+    ]
+  },
+  "source": {
+    "result": "PASS",
+    "sourceChecks": [
+      {
+        "id": "1355:2582",
+        "geometryUnchanged": true,
+        "radiusUnchanged": true,
+        "opacityUnchanged": true,
+        "fillsUnchanged": true,
+        "strokesUnchanged": true
+      },
+      {
+        "id": "1355:2589",
+        "geometryUnchanged": true,
+        "radiusUnchanged": true,
+        "opacityUnchanged": true,
+        "fillsUnchanged": true,
+        "strokesUnchanged": true
+      },
+      {
+        "id": "1383:3233",
+        "geometryUnchanged": true,
+        "radiusUnchanged": true,
+        "opacityUnchanged": true,
+        "fillsUnchanged": true,
+        "strokesUnchanged": true
+      },
+      {
+        "id": "1383:3236",
+        "geometryUnchanged": true,
+        "radiusUnchanged": true,
+        "opacityUnchanged": true,
+        "fillsUnchanged": true,
+        "strokesUnchanged": true
+      }
+    ],
+    "sourceSection": "1355:2567",
+    "sourceOverlaySection": "1383:3275"
+  }
+}

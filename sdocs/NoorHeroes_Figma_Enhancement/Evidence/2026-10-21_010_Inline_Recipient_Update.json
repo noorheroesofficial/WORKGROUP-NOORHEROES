@@ -1,0 +1,425 @@
+{
+  "before": {
+    "createdNodeIds": [
+      "1683:779",
+      "1683:780",
+      "1683:781",
+      "1683:782",
+      "1683:783",
+      "1683:784",
+      "1683:785",
+      "1683:786",
+      "1683:787",
+      "1683:788"
+    ],
+    "mutatedNodeIds": [
+      "1612:2075",
+      "1612:2077",
+      "1612:2078",
+      "1612:2097",
+      "1612:2098",
+      "1612:1778",
+      "1619:436",
+      "1619:438",
+      "1619:439",
+      "1619:450",
+      "1619:451",
+      "1619:435",
+      "1619:646",
+      "1619:648",
+      "1619:649",
+      "1619:660",
+      "1619:661",
+      "1619:645",
+      "1619:852",
+      "1619:854",
+      "1619:855",
+      "1619:866",
+      "1619:867",
+      "1619:851",
+      "1619:1058",
+      "1619:1060",
+      "1619:1061",
+      "1619:1072",
+      "1619:1073",
+      "1619:1057"
+    ],
+    "before": [
+      {
+        "header": "1612:2075",
+        "root": "1612:1277",
+        "headerChildren": [
+          "1612:2076",
+          "1612:2077",
+          "1612:2078"
+        ],
+        "card": "1612:1778",
+        "editIndex": 5,
+        "edit": "1612:2097",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:1612:1250",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "CONDITIONAL",
+                "conditionalBlocks": [
+                  {
+                    "actions": [
+                      {
+                        "type": "NODE",
+                        "destinationId": "1355:2696",
+                        "navigation": "NAVIGATE",
+                        "transition": {
+                          "type": "DISSOLVE",
+                          "easing": {
+                            "type": "EASE_OUT"
+                          },
+                          "duration": 0.23999999463558197
+                        },
+                        "resetVideoPosition": false,
+                        "resetScrollPosition": false,
+                        "resetInteractiveComponents": false
+                      }
+                    ],
+                    "condition": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "type": "VARIABLE_ALIAS",
+                              "id": "VariableID:1612:1260"
+                            },
+                            "type": "VARIABLE_ALIAS",
+                            "resolvedType": "STRING"
+                          },
+                          {
+                            "value": "login",
+                            "type": "STRING",
+                            "resolvedType": "STRING"
+                          }
+                        ],
+                        "expressionFunction": "EQUALS"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "CONDITIONAL",
+                "conditionalBlocks": [
+                  {
+                    "actions": [
+                      {
+                        "type": "NODE",
+                        "destinationId": "1459:256",
+                        "navigation": "NAVIGATE",
+                        "transition": {
+                          "type": "DISSOLVE",
+                          "easing": {
+                            "type": "EASE_OUT"
+                          },
+                          "duration": 0.23999999463558197
+                        },
+                        "resetVideoPosition": false,
+                        "resetScrollPosition": false,
+                        "resetInteractiveComponents": false
+                      }
+                    ],
+                    "condition": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "type": "VARIABLE_ALIAS",
+                              "id": "VariableID:1612:1260"
+                            },
+                            "type": "VARIABLE_ALIAS",
+                            "resolvedType": "STRING"
+                          },
+                          {
+                            "value": "registration",
+                            "type": "STRING",
+                            "resolvedType": "STRING"
+                          }
+                        ],
+                        "expressionFunction": "EQUALS"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "description": {
+          "id": "1612:2077",
+          "text": "We sent a 6-digit code to",
+          "width": 338,
+          "height": 20
+        },
+        "recipient": {
+          "id": "1612:2078",
+          "text": "•••",
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "bound": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:1612:1259"
+            }
+          }
+        },
+        "editLabel": "Wrong number / email?"
+      },
+      {
+        "header": "1619:436",
+        "root": "1619:404",
+        "headerChildren": [
+          "1619:437",
+          "1619:438",
+          "1619:439"
+        ],
+        "card": "1619:435",
+        "editIndex": 4,
+        "edit": "1619:450",
+        "reactions": [],
+        "description": {
+          "id": "1619:438",
+          "text": "We sent a 6-digit code to",
+          "width": 338,
+          "height": 20
+        },
+        "recipient": {
+          "id": "1619:439",
+          "text": "•••",
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "bound": {}
+        },
+        "editLabel": "Wrong number / email?"
+      },
+      {
+        "header": "1619:646",
+        "root": "1619:614",
+        "headerChildren": [
+          "1619:647",
+          "1619:648",
+          "1619:649"
+        ],
+        "card": "1619:645",
+        "editIndex": 4,
+        "edit": "1619:660",
+        "reactions": [],
+        "description": {
+          "id": "1619:648",
+          "text": "We sent a 6-digit code to",
+          "width": 338,
+          "height": 20
+        },
+        "recipient": {
+          "id": "1619:649",
+          "text": "•••",
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "bound": {}
+        },
+        "editLabel": "Wrong number / email?"
+      },
+      {
+        "header": "1619:852",
+        "root": "1619:820",
+        "headerChildren": [
+          "1619:853",
+          "1619:854",
+          "1619:855"
+        ],
+        "card": "1619:851",
+        "editIndex": 5,
+        "edit": "1619:866",
+        "reactions": [],
+        "description": {
+          "id": "1619:854",
+          "text": "We sent a 6-digit code to",
+          "width": 338,
+          "height": 20
+        },
+        "recipient": {
+          "id": "1619:855",
+          "text": "•••",
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "bound": {}
+        },
+        "editLabel": "Wrong number / email?"
+      },
+      {
+        "header": "1619:1058",
+        "root": "1619:1026",
+        "headerChildren": [
+          "1619:1059",
+          "1619:1060",
+          "1619:1061"
+        ],
+        "card": "1619:1057",
+        "editIndex": 4,
+        "edit": "1619:1072",
+        "reactions": [],
+        "description": {
+          "id": "1619:1060",
+          "text": "We sent a 6-digit code to",
+          "width": 338,
+          "height": 20
+        },
+        "recipient": {
+          "id": "1619:1061",
+          "text": "•••",
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "bound": {}
+        },
+        "editLabel": "Wrong number / email?"
+      }
+    ],
+    "recipientVariable": {
+      "id": "VariableID:1612:1259",
+      "previousValues": {
+        "1612:2": "•••"
+      },
+      "values": {
+        "1612:2": "•••1204"
+      }
+    }
+  },
+  "final": [
+    {
+      "id": "1683:779",
+      "text": "We sent a 6-digit code to •••1204",
+      "singleLine": true,
+      "fits": true,
+      "editGap": 10,
+      "editLabelGap": 10,
+      "buttonSize": [
+        44,
+        44
+      ],
+      "correctionReactions": 1
+    },
+    {
+      "id": "1683:781",
+      "text": "We sent a 6-digit code to •••1204",
+      "singleLine": true,
+      "fits": true,
+      "editGap": 10,
+      "editLabelGap": 10,
+      "buttonSize": [
+        44,
+        44
+      ],
+      "correctionReactions": 0
+    },
+    {
+      "id": "1683:783",
+      "text": "We sent a 6-digit code to •••1204",
+      "singleLine": true,
+      "fits": true,
+      "editGap": 10,
+      "editLabelGap": 10,
+      "buttonSize": [
+        44,
+        44
+      ],
+      "correctionReactions": 0
+    },
+    {
+      "id": "1683:785",
+      "text": "We sent a 6-digit code to •••1204",
+      "singleLine": true,
+      "fits": true,
+      "editGap": 10,
+      "editLabelGap": 10,
+      "buttonSize": [
+        44,
+        44
+      ],
+      "correctionReactions": 0
+    },
+    {
+      "id": "1683:787",
+      "text": "We sent a 6-digit code to •••1204",
+      "singleLine": true,
+      "fits": true,
+      "editGap": 10,
+      "editLabelGap": 10,
+      "buttonSize": [
+        44,
+        44
+      ],
+      "correctionReactions": 0
+    }
+  ],
+  "processingDisplayOnlyUpdates": [
+    {
+      "id": "1428:171",
+      "variable": "VariableID:1612:1259",
+      "from": "•••",
+      "to": "•••1204"
+    },
+    {
+      "id": "1461:474",
+      "variable": "VariableID:1612:1259",
+      "from": "•••",
+      "to": "•••1204"
+    }
+  ],
+  "notes": "Five OTP default/review layouts updated. Existing live Edit correction reactions preserved. No real authentication or Present test."
+}
