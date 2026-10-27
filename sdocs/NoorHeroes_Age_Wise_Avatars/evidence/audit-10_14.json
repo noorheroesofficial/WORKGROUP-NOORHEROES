@@ -1,0 +1,207 @@
+{
+  "count": 20,
+  "uniqueHashes": 20,
+  "sourceBytesPreserved": true,
+  "files": [
+    {
+      "id": "nh_avatar_10_14_01",
+      "filename": "avatar_10_14_01.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2457046,
+      "sha256": "3e7a3d1370fa698d3ce0e2c51e370b25d15e7fb461de420f8f34710b35637d65"
+    },
+    {
+      "id": "nh_avatar_10_14_02",
+      "filename": "avatar_10_14_02.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2099595,
+      "sha256": "09f9cfcaadea70137217598faf32b6e772201e2c43b388e442e683e00ddfa70c"
+    },
+    {
+      "id": "nh_avatar_10_14_03",
+      "filename": "avatar_10_14_03.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2290012,
+      "sha256": "26c5d85881ae7fc6aff71017947502961f7184a4869876f2214cb26a2800917b"
+    },
+    {
+      "id": "nh_avatar_10_14_04",
+      "filename": "avatar_10_14_04.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2211781,
+      "sha256": "c5b18b1dff4581c4064818f999c3b293becd9afb6c23a1c0ea669e66ffe6af18"
+    },
+    {
+      "id": "nh_avatar_10_14_05",
+      "filename": "avatar_10_14_05.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2539798,
+      "sha256": "6a286f9f8dfa310016750f741eb366be54b7507fa0851cdd1702dda84f2a6892"
+    },
+    {
+      "id": "nh_avatar_10_14_06",
+      "filename": "avatar_10_14_06.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2178683,
+      "sha256": "f7ff1735a06ca87ede12b3b3edbd2901424ec6c502eb6a63f868b7d60c383e1c"
+    },
+    {
+      "id": "nh_avatar_10_14_07",
+      "filename": "avatar_10_14_07.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2405675,
+      "sha256": "2f2cf59358ac6850a75775f64a11b70f892b62c43aa92ced444a3b64d294f940"
+    },
+    {
+      "id": "nh_avatar_10_14_08",
+      "filename": "avatar_10_14_08.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2244310,
+      "sha256": "a6c0fac3da88d321b4f0513b2f36de5a6d5594126658d809a4e5c29d25998f19"
+    },
+    {
+      "id": "nh_avatar_10_14_09",
+      "filename": "avatar_10_14_09.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2262061,
+      "sha256": "9f820fca1dd0d270f9c61405c0d9221bec93683d4c4de117d139718236f77519"
+    },
+    {
+      "id": "nh_avatar_10_14_10",
+      "filename": "avatar_10_14_10.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2125752,
+      "sha256": "ddffe3d3704493d5cd460ac5e29979a6eaf2e4dc4f1302958d746c06f5f8a236"
+    },
+    {
+      "id": "nh_avatar_10_14_11",
+      "filename": "avatar_10_14_11.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2410114,
+      "sha256": "7003ddef1d012e175a1ffa2e9c5f9e5cf3e2eb8ee91b2b28368397f0bb47cd79"
+    },
+    {
+      "id": "nh_avatar_10_14_12",
+      "filename": "avatar_10_14_12.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2384597,
+      "sha256": "67b5125fe8cca46d7ed1d7e51729ae085f6618d48c5f4f761b521a4f9e8e40e5"
+    },
+    {
+      "id": "nh_avatar_10_14_13",
+      "filename": "avatar_10_14_13.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2434401,
+      "sha256": "384e1f75d6bbcf3dce9b839433f12a5149b02edcea3cd46a713204b9b48e6eee"
+    },
+    {
+      "id": "nh_avatar_10_14_14",
+      "filename": "avatar_10_14_14.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2408698,
+      "sha256": "d1c9e4d662d69a00f6eddfd611a1aa40a76d4183610454e855edb676c676ce2e"
+    },
+    {
+      "id": "nh_avatar_10_14_15",
+      "filename": "avatar_10_14_15.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2478564,
+      "sha256": "a62282314f80b8ddf3cac34a38d41f374fc7851230f4b657fe7de66eaf0689f3"
+    },
+    {
+      "id": "nh_avatar_10_14_16",
+      "filename": "avatar_10_14_16.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2375449,
+      "sha256": "dfd247e669d911f0f91fa553ae6857537e3529836ad6547f114a9d8b1bfd7dbb"
+    },
+    {
+      "id": "nh_avatar_10_14_17",
+      "filename": "avatar_10_14_17.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2457373,
+      "sha256": "6492977ad56ffac381fe3b9df9d172cd5324488b86342177f92c6635bf6a182c"
+    },
+    {
+      "id": "nh_avatar_10_14_18",
+      "filename": "avatar_10_14_18.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2388383,
+      "sha256": "bf1a1634b6c9a650e6307b3987c19f41df20b4ed60e8203d672a300b1987d8fe"
+    },
+    {
+      "id": "nh_avatar_10_14_19",
+      "filename": "avatar_10_14_19.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2348582,
+      "sha256": "688e65855f86f67f434308a6525811f5786c5d410a696f74f6a990983f27b303"
+    },
+    {
+      "id": "nh_avatar_10_14_20",
+      "filename": "avatar_10_14_20.png",
+      "groupKey": "10_14",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2243628,
+      "sha256": "80b33fc614b6917ff4deae36a11014e8e962dd96b708b0a3de4b5e2e5cd0f9c9"
+    }
+  ]
+}

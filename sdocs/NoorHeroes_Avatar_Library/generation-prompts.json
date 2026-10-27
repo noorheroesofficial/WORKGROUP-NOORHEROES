@@ -1,0 +1,103 @@
+{
+  "common": "Create ONE original NoorHeroes child profile avatar, one character only, not a collage. Match supplied reference collection: polished soft 3D storybook toy-like illustration, oversized rounded head, large expressive glossy eyes, warm smile, rosy cheeks, gentle studio lighting and softly modeled modest fabric. Head-and-shoulders facing camera, head upright, full top of headwear and both shoulders visible with generous margin, centered face in central 60 percent for circular profile crop. Clean uniform warm ivory background. Original facial identity and costume inspired by references, not copying a character. No text, lettering, Arabic calligraphy, logos, watermark, props, raised hands, extra limbs, cropped head, photorealism or flat 2D outlines. ",
+  "referenceMediaIds": [
+    {
+      "type": "MEDIA",
+      "id": "MAHYtSeskd4"
+    },
+    {
+      "type": "MEDIA",
+      "id": "MAHYtVFru9k"
+    },
+    {
+      "type": "MEDIA",
+      "id": "MAHYtd8VFRw"
+    },
+    {
+      "type": "MEDIA",
+      "id": "MAHYtV7eDBo"
+    }
+  ],
+  "characters": [
+    {
+      "number": 1,
+      "description": "girl age 7, warm medium brown skin, dark brown eyes, sage green hijab, ivory tunic with teal embroidered trim"
+    },
+    {
+      "number": 2,
+      "description": "boy age 7, warm light olive skin, teal eyes, soft wavy chestnut fringe, ivory embroidered kufi, teal collarless tunic, friendly open smile"
+    },
+    {
+      "number": 3,
+      "description": "girl age 8, rich deep brown skin, hazel eyes, lavender hijab, pale lilac modest dress, tiny silver star-shaped fabric pin, bright smile"
+    },
+    {
+      "number": 4,
+      "description": "boy age 6, medium brown skin, dark brown eyes, short curly black hair, pale blue kufi, cream tunic with pale blue collar, shy smile"
+    },
+    {
+      "number": 5,
+      "description": "girl age 7, fair warm skin, dark blue eyes, dusty rose hijab, ivory blouse, delicate floral embroidery, warm smile"
+    },
+    {
+      "number": 6,
+      "description": "boy age 8, dark brown skin, brown eyes, short black curls, sand-colored woven kufi, sage green tunic, broad friendly smile"
+    },
+    {
+      "number": 7,
+      "description": "girl age 8, medium olive skin, brown eyes, peach hijab, round thin bronze spectacles, cream modest tunic, delighted smile"
+    },
+    {
+      "number": 8,
+      "description": "boy age 7, fair skin with subtle freckles, green eyes, tousled auburn fringe, white kufi, navy waistcoat over cream tunic, gentle grin"
+    },
+    {
+      "number": 9,
+      "description": "girl age 6, warm tan skin, amber eyes, pale aqua hijab, teal modest top with gold piping, shy cheerful smile"
+    },
+    {
+      "number": 10,
+      "description": "boy age 9, medium olive skin, dark eyes, smooth black side-swept fringe, teal embroidered kufi, mustard gold waistcoat over white tunic, confident smile"
+    },
+    {
+      "number": 11,
+      "description": "girl age 9, deep warm brown skin, dark brown eyes, ivory hijab edged with tiny lavender floral embroidery, sage dress, calm smile"
+    },
+    {
+      "number": 12,
+      "description": "boy age 6, warm medium brown skin, hazel eyes, short curly dark hair, light grey kufi, soft blue modest hoodie, cheerful smile"
+    },
+    {
+      "number": 13,
+      "description": "girl age 8, fair olive skin, green eyes, sage hijab with a small cream bow fabric pin, dusty pink tunic, joyful smile"
+    },
+    {
+      "number": 14,
+      "description": "boy age 8, warm tan skin, amber eyes, dark wavy hair, cream kufi with narrow geometric teal band, pale olive tunic, gentle grin"
+    },
+    {
+      "number": 15,
+      "description": "girl age 7, medium brown skin, dark eyes, periwinkle hijab, thin round teal spectacles, ivory dress, curious friendly smile"
+    },
+    {
+      "number": 16,
+      "description": "boy age 9, deep dark brown skin, dark eyes, neat black fringe, white embroidered kufi, muted burgundy vest over cream tunic, happy smile"
+    },
+    {
+      "number": 17,
+      "description": "girl age 6, warm light skin, hazel eyes, pale yellow hijab with subtle ivory trim, peach modest tunic, bright gentle smile"
+    },
+    {
+      "number": 18,
+      "description": "boy age 7, medium olive skin, green-brown eyes, curly chestnut fringe, sand kufi, ivory tunic with teal embroidered neckline, calm closed-mouth smile"
+    },
+    {
+      "number": 19,
+      "description": "girl age 9, warm tan skin, blue-grey eyes, muted teal hijab with small gold fabric brooch, cream tunic with dusty rose embroidery, friendly smile"
+    },
+    {
+      "number": 20,
+      "description": "boy age 8, fair rosy skin, dark brown eyes, slightly longer straight black side-swept hair, pale sage kufi, dusty blue collarless tunic, relaxed cheerful smile"
+    }
+  ]
+}

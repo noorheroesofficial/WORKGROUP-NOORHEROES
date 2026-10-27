@@ -1,0 +1,906 @@
+{
+  "count": 75,
+  "dimensions": [],
+  "files": [
+    {
+      "file": "noorheroes-appicon-android-foreground-mdpi.png",
+      "size": [
+        108,
+        108
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-ios-background-ivory.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-ios-background-teal.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-ios-ivory.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-ios-teal.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-ios-foreground.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-foreground-xhdpi.png",
+      "size": [
+        216,
+        216
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-foreground-hdpi.png",
+      "size": [
+        162,
+        162
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-foreground-xxhdpi.png",
+      "size": [
+        324,
+        324
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-monochrome-mdpi.png",
+      "size": [
+        108,
+        108
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-foreground-xxxhdpi.png",
+      "size": [
+        432,
+        432
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-monochrome-hdpi.png",
+      "size": [
+        162,
+        162
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-monochrome-xhdpi.png",
+      "size": [
+        216,
+        216
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-monochrome-xxhdpi.png",
+      "size": [
+        324,
+        324
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-teal-mdpi.png",
+      "size": [
+        108,
+        108
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-monochrome-xxxhdpi.png",
+      "size": [
+        432,
+        432
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-teal-hdpi.png",
+      "size": [
+        162,
+        162
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-teal-xhdpi.png",
+      "size": [
+        216,
+        216
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-teal-xxhdpi.png",
+      "size": [
+        324,
+        324
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-teal-xxxhdpi.png",
+      "size": [
+        432,
+        432
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-ivory-mdpi.png",
+      "size": [
+        108,
+        108
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-ivory-hdpi.png",
+      "size": [
+        162,
+        162
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-ivory-xhdpi.png",
+      "size": [
+        216,
+        216
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-ivory-xxhdpi.png",
+      "size": [
+        324,
+        324
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-background-ivory-xxxhdpi.png",
+      "size": [
+        432,
+        432
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-teal-mdpi.png",
+      "size": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-teal-hdpi.png",
+      "size": [
+        72,
+        72
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-teal-xhdpi.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-teal-xxhdpi.png",
+      "size": [
+        144,
+        144
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-teal-xxxhdpi.png",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-ivory-mdpi.png",
+      "size": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-ivory-hdpi.png",
+      "size": [
+        72,
+        72
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-ivory-xhdpi.png",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-ivory-xxhdpi.png",
+      "size": [
+        144,
+        144
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-android-legacy-ivory-xxxhdpi.png",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-googleplay-teal.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-appicon-googleplay-ivory.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-logo-full.png",
+      "size": [
+        1529,
+        525
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-logo-without-tagline.png",
+      "size": [
+        1529,
+        525
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-logo-monochrome-light.png",
+      "size": [
+        1529,
+        525
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-logo-monochrome-dark.png",
+      "size": [
+        1529,
+        525
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-logo-original-teal.png",
+      "size": [
+        1776,
+        896
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-wordmark-primary.png",
+      "size": [
+        1592,
+        310
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-logo-original-ivory.png",
+      "size": [
+        1776,
+        896
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-lockup-horizontal.png",
+      "size": [
+        1500,
+        400
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-wordmark-with-tagline.png",
+      "size": [
+        952,
+        325
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-lockup-compact.png",
+      "size": [
+        600,
+        720
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-wordmark-monochrome-light.png",
+      "size": [
+        1592,
+        310
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-wordmark-monochrome-dark.png",
+      "size": [
+        1592,
+        310
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-monochrome-light.png",
+      "size": [
+        819,
+        909
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-monochrome-dark.png",
+      "size": [
+        819,
+        909
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-primary.png",
+      "size": [
+        819,
+        909
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-background-teal.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-featured-background-teal.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-original-teal.png",
+      "size": [
+        1264,
+        1264
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-original-ivory.png",
+      "size": [
+        1264,
+        1264
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-brand-monogram-background-ivory.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-featured-background-ivory.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-stories-learning-background-teal.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-stories-learning-background-ivory.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-quran-duas-background-ivory.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-missions-habits-background-teal.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-missions-habits-background-ivory.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-quran-duas-background-teal.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-announcements-background-teal.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-announcements-background-ivory.png",
+      "size": [
+        350,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-section-header-background-ivory.png",
+      "size": [
+        350,
+        120
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-responsive-320.png",
+      "size": [
+        320,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-tabline-category-section-header-background-teal.png",
+      "size": [
+        350,
+        120
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-social-square.png",
+      "size": [
+        1080,
+        1080
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-banner-responsive-640.png",
+      "size": [
+        640,
+        228
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-social-portrait.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-social-profile-ivory.png",
+      "size": [
+        400,
+        400
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-social-story.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "noorheroes-cover-website-hero-content-editable-platform-website-hero.png",
+      "size": [
+        1920,
+        640
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ]
+    }
+  ]
+}

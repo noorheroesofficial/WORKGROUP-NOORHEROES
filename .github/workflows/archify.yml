@@ -1,0 +1,35 @@
+name: Archify Validation
+
+on:
+  push:
+    branches: [main, master, develop]
+    paths:
+      - 'Architecture_Visualizations/**'
+      - 'bin/**'
+      - 'tools/archify/**'
+      - 'scripts/**'
+  pull_request:
+    branches: [main, master, develop]
+    paths:
+      - 'Architecture_Visualizations/**'
+      - 'bin/**'
+      - 'tools/archify/**'
+      - 'scripts/**'
+
+jobs:
+  validate-architecture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Archify Doctor
+        run: node bin/archify.mjs doctor
+
+      - name: Validate all Archify JSON specifications
+        run: npm run archify:validate

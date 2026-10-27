@@ -1,0 +1,565 @@
+{
+  "frame": {
+    "id": "1842:3309",
+    "name": "NoorHeroes V2 — Avatar Library",
+    "width": 976,
+    "height": 1084,
+    "x": 103140,
+    "y": 12727,
+    "layoutMode": "VERTICAL"
+  },
+  "count": 20,
+  "uniqueImages": 20,
+  "assets": [
+    {
+      "id": "1842:3317",
+      "name": "Avatar 01",
+      "width": 120,
+      "height": 120,
+      "imageHash": "ae0cc6509162437adbb7605a2f23a55194f781ae",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3320",
+      "name": "Avatar 02",
+      "width": 120,
+      "height": 120,
+      "imageHash": "7b0c4aba9d9fe7693938271a70cd51577843f6ea",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3323",
+      "name": "Avatar 03",
+      "width": 120,
+      "height": 120,
+      "imageHash": "685677b84971d85b2e9216a893c06d7506c08fb6",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3326",
+      "name": "Avatar 04",
+      "width": 120,
+      "height": 120,
+      "imageHash": "a47a49cde3230dc831eb24c07c03fcb6ddd1301c",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3329",
+      "name": "Avatar 05",
+      "width": 120,
+      "height": 120,
+      "imageHash": "71d84a0e4a27c60d9009ba8f0283d355e9523d4a",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3333",
+      "name": "Avatar 06",
+      "width": 120,
+      "height": 120,
+      "imageHash": "ee6ce316c327f84b61b7a912b5012aa3beaf65f3",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3336",
+      "name": "Avatar 07",
+      "width": 120,
+      "height": 120,
+      "imageHash": "4676aae25ab76be3c2b754dc46dcce3b1b419d18",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3339",
+      "name": "Avatar 08",
+      "width": 120,
+      "height": 120,
+      "imageHash": "b907560261a0fd4e2eefbb4b22afa5213dde0942",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3342",
+      "name": "Avatar 09",
+      "width": 120,
+      "height": 120,
+      "imageHash": "d1eca99c6a3e258b69b56c9081bb1999b29af5e4",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3345",
+      "name": "Avatar 10",
+      "width": 120,
+      "height": 120,
+      "imageHash": "25f0e166f322593803ba0c1574783e7f1589783f",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3349",
+      "name": "Avatar 11",
+      "width": 120,
+      "height": 120,
+      "imageHash": "a0d240d4fc50aeea62f94c2b815e983cf761d074",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3352",
+      "name": "Avatar 12",
+      "width": 120,
+      "height": 120,
+      "imageHash": "c2d33f104d7dd8b370e4741ba462bbac2511b49a",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3355",
+      "name": "Avatar 13",
+      "width": 120,
+      "height": 120,
+      "imageHash": "531cdcd5b11cf1e2a825b00042a191f4f55d185d",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3358",
+      "name": "Avatar 14",
+      "width": 120,
+      "height": 120,
+      "imageHash": "9e3ee1a1e25714f63111560ce40441f61e43e958",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3361",
+      "name": "Avatar 15",
+      "width": 120,
+      "height": 120,
+      "imageHash": "ff2a9ad04ca9a5108b0280eabeee3fb2d3ada2a0",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3365",
+      "name": "Avatar 16",
+      "width": 120,
+      "height": 120,
+      "imageHash": "18a7a615c5b0de4bf45510366dc8a0b7beb7e9db",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3368",
+      "name": "Avatar 17",
+      "width": 120,
+      "height": 120,
+      "imageHash": "943cfe97ba7c491db37c11d283769688d27652c8",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3371",
+      "name": "Avatar 18",
+      "width": 120,
+      "height": 120,
+      "imageHash": "3427cc4411d3f6721a79f7a8f46973295d224608",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3374",
+      "name": "Avatar 19",
+      "width": 120,
+      "height": 120,
+      "imageHash": "3eb6816b66f060f7aeff6edb5d1bcd7aa196bc81",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    },
+    {
+      "id": "1842:3377",
+      "name": "Avatar 20",
+      "width": 120,
+      "height": 120,
+      "imageHash": "340e9376593fd6895b574e063bef51febaf46c93",
+      "scaleMode": "FIT",
+      "sourceSize": {
+        "width": 1264,
+        "height": 1264
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "WIDTH",
+            "value": 1264
+          }
+        }
+      ]
+    }
+  ],
+  "labels": [
+    "Avatar 01",
+    "Avatar 02",
+    "Avatar 03",
+    "Avatar 04",
+    "Avatar 05",
+    "Avatar 06",
+    "Avatar 07",
+    "Avatar 08",
+    "Avatar 09",
+    "Avatar 10",
+    "Avatar 11",
+    "Avatar 12",
+    "Avatar 13",
+    "Avatar 14",
+    "Avatar 15",
+    "Avatar 16",
+    "Avatar 17",
+    "Avatar 18",
+    "Avatar 19",
+    "Avatar 20"
+  ],
+  "overflow": [],
+  "existingFrames": [
+    {
+      "id": "1085:13003",
+      "name": "Frame 2",
+      "x": 77201,
+      "y": 12727,
+      "width": 15314,
+      "height": 10825
+    },
+    {
+      "id": "1095:2",
+      "name": "Frame 1",
+      "x": 58509,
+      "y": 12727,
+      "width": 16704,
+      "height": 10825
+    },
+    {
+      "id": "1128:2",
+      "name": "NoorHeroes V2 Design",
+      "x": 41541,
+      "y": 12727,
+      "width": 4800,
+      "height": 14014
+    },
+    {
+      "id": "1428:7654",
+      "name": "NH/V2/Auth/Google Timeout — Shared Loader",
+      "x": 1760,
+      "y": 80,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "1431:11603",
+      "name": "Frame 3",
+      "x": 96254,
+      "y": 12727,
+      "width": 6086,
+      "height": 10825
+    }
+  ],
+  "reference": {
+    "id": "1431:11603",
+    "children": 0
+  },
+  "existingFrameGeometryMatchesBaseline": true
+}

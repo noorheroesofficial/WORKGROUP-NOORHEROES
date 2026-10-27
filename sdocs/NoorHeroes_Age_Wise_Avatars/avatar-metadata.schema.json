@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NoorHeroes avatar library manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "collectionId",
+    "avatars"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "collectionId": {
+      "const": "noorheroes-v2-age-wise"
+    },
+    "avatars": {
+      "type": "array",
+      "minItems": 80,
+      "items": {
+        "$ref": "#/$defs/avatar"
+      }
+    }
+  },
+  "$defs": {
+    "avatar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "ageGroup",
+        "portrayedAge",
+        "presentation",
+        "displayLabel",
+        "altText",
+        "style",
+        "source",
+        "file",
+        "figma",
+        "review"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^nh_avatar_(5_8|8_10|10_14|14_18_plus)_[0-9]{2}$"
+        },
+        "ageGroup": {
+          "enum": [
+            "5_8",
+            "8_10",
+            "10_14",
+            "14_18_plus"
+          ]
+        },
+        "portrayedAge": {
+          "type": "integer",
+          "minimum": 5
+        },
+        "presentation": {
+          "enum": [
+            "female",
+            "male"
+          ]
+        },
+        "displayLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "altText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "style": {
+          "const": "soft-3d-storybook"
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "provider",
+            "mediaId",
+            "url"
+          ],
+          "properties": {
+            "provider": {
+              "const": "Canva"
+            },
+            "mediaId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "file": {
+          "type": "object",
+          "required": [
+            "path",
+            "storageKey",
+            "mimeType",
+            "width",
+            "height",
+            "bytes",
+            "sha256",
+            "background"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "pattern": "^assets/(5_8|8_10|10_14|14_18_plus)/avatar_.+\\.png$"
+            },
+            "storageKey": {
+              "type": "string",
+              "pattern": "^avatars/v2/age-wise/"
+            },
+            "mimeType": {
+              "const": "image/png"
+            },
+            "width": {
+              "const": 1264
+            },
+            "height": {
+              "const": 1264
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10485760
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "background": {
+              "const": "opaque warm ivory"
+            }
+          }
+        },
+        "figma": {
+          "type": "object",
+          "required": [
+            "fileKey",
+            "frameId",
+            "nodeId",
+            "url",
+            "previewWidth",
+            "previewHeight"
+          ],
+          "properties": {
+            "fileKey": {
+              "const": "MR9935oQZACMjndzGIUgq5"
+            },
+            "frameId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "nodeId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "previewWidth": {
+              "const": 120
+            },
+            "previewHeight": {
+              "const": 120
+            }
+          }
+        },
+        "review": {
+          "type": "object",
+          "required": [
+            "status",
+            "ageAppearanceChecked",
+            "cropChecked",
+            "anatomyChecked",
+            "duplicateChecked",
+            "userApproval"
+          ],
+          "properties": {
+            "status": {
+              "const": "agent-reviewed"
+            },
+            "ageAppearanceChecked": {
+              "const": true
+            },
+            "cropChecked": {
+              "const": true
+            },
+            "anatomyChecked": {
+              "const": true
+            },
+            "duplicateChecked": {
+              "const": true
+            },
+            "userApproval": {
+              "const": "pending"
+            }
+          }
+        }
+      }
+    }
+  }
+}

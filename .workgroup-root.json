@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "WORKGROUP-NOORHEROES",
+  "version": "1.0.0",
+  "description": "Unified Workgroup Root Marker & Cross-Platform Subsystem Manifest",
+  "architectural_invariants": {
+    "zero_hardcoded_machine_paths": true,
+    "cross_platform": ["windows", "linux", "darwin"],
+    "root_marker": ".workgroup-root"
+  },
+  "subsystems": {
+    "backend": "NoorHeroes-Backend",
+    "admin": "noorheroes-admin",
+    "mobile": "NoorHeroes",
+    "parent_web": "Screens/Parent Web",
+    "prds": "PRD_Documents",
+    "blueprints": "Development_Blueprints",
+    "screens": "Screens",
+    "changelog": "CHANGELOG",
+    "agent_admin": "Admin-Agent",
+    "agent_backend": "Backend-Agent"
+  }
+}

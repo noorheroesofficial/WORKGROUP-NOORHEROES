@@ -1,0 +1,3206 @@
+{
+  "schemaVersion": "1.0.0",
+  "collectionId": "noorheroes-v2-age-wise",
+  "avatars": [
+    {
+      "id": "nh_avatar_5_8_01",
+      "ageGroup": "5_8",
+      "portrayedAge": 5,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 01",
+      "altText": "Soft 3D illustrated female character, intended age 5, wearing sage hijab with tiny cream embroidered trim, ivory modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtpQk368",
+        "url": "https://www.canva.com/M/MAHYtpQk368?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_01.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_01.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2463118,
+        "sha256": "3357b06904fc68c170f34a2d86c225e115060bdacc7632ca16dbdb7e0ff7743e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3318",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3318",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_02",
+      "ageGroup": "5_8",
+      "portrayedAge": 5,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 02",
+      "altText": "Soft 3D illustrated male character, intended age 5, wearing ivory woven kufi, muted teal collared tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtpDpJIE",
+        "url": "https://www.canva.com/M/MAHYtpDpJIE?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_02.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_02.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2410480,
+        "sha256": "34cf1b0318af52fcc903217c2a542531f22c065ce0098768f54432878d3c17a1",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3321",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3321",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_03",
+      "ageGroup": "5_8",
+      "portrayedAge": 6,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 03",
+      "altText": "Soft 3D illustrated female character, intended age 6, wearing lavender hijab, pale grey modest tunic; small geometric silver fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvGSNVI",
+        "url": "https://www.canva.com/M/MAHYtvGSNVI?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_03.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_03.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2508991,
+        "sha256": "d034fc8378b85fd2094bc33ef9190679915558685b538ff4fa13f01e1ab31733",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3324",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3324",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_04",
+      "ageGroup": "5_8",
+      "portrayedAge": 6,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 04",
+      "altText": "Soft 3D illustrated male character, intended age 6, wearing sand embroidered kufi, soft blue collarless shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvUQN6U",
+        "url": "https://www.canva.com/M/MAHYtvUQN6U?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_04.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_04.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2426719,
+        "sha256": "3844496d5e8b29144cde22061e3863b2cf60b9c8c67379dbd797af5edb37440c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3327",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3327",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_05",
+      "ageGroup": "5_8",
+      "portrayedAge": 7,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 05",
+      "altText": "Soft 3D illustrated female character, intended age 7, wearing dusty rose hijab, ivory blouse with muted floral cuffs; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtlu__7w",
+        "url": "https://www.canva.com/M/MAHYtlu__7w?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_05.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_05.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2394167,
+        "sha256": "63e47b3deaf823ee6465d7bc6d3cdb412721c7772b933baeeee1e50679e3551d",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3330",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3330",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_06",
+      "ageGroup": "5_8",
+      "portrayedAge": 7,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 06",
+      "altText": "Soft 3D illustrated male character, intended age 7, wearing modest sage hoodie over a cream shirt, no hat; thin round brown spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtksqRSA",
+        "url": "https://www.canva.com/M/MAHYtksqRSA?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_06.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_06.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2279232,
+        "sha256": "a7a69ce528968d93e6bea344d52c6dfa5fe977bca1cc481246297f014483f486",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3334",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3334",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_07",
+      "ageGroup": "5_8",
+      "portrayedAge": 8,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 07",
+      "altText": "Soft 3D illustrated female character, intended age 8, wearing peach hijab, muted teal modest tunic; round bronze spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtkE3pbo",
+        "url": "https://www.canva.com/M/MAHYtkE3pbo?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_07.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_07.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2442496,
+        "sha256": "db6a5a1c73993b68337d89afc14d8f4e72619e2bdcb742265e1a73320865745f",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3337",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3337",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_08",
+      "ageGroup": "5_8",
+      "portrayedAge": 8,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 08",
+      "altText": "Soft 3D illustrated male character, intended age 8, wearing navy waistcoat over cream tunic, ivory kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYti2yuug",
+        "url": "https://www.canva.com/M/MAHYti2yuug?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_08.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_08.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2195066,
+        "sha256": "0456c4803eec96ddf0ea1cfbcf3954beaa18de527415d6f07f6f16f71f1478cc",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3340",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3340",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_09",
+      "ageGroup": "5_8",
+      "portrayedAge": 5,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 09",
+      "altText": "Soft 3D illustrated female character, intended age 5, wearing pale aqua hijab with narrow ivory edging, navy modest top; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtussjUg",
+        "url": "https://www.canva.com/M/MAHYtussjUg?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_09.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_09.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2220681,
+        "sha256": "abb5fb588682d66f83ac8ca6dc3ddabe1e22a753377a31005271ccc85386ac20",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3343",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3343",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_10",
+      "ageGroup": "5_8",
+      "portrayedAge": 5,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 10",
+      "altText": "Soft 3D illustrated male character, intended age 5, wearing mustard gold casual overshirt over white crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtn-RRME",
+        "url": "https://www.canva.com/M/MAHYtn-RRME?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_10.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_10.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2222007,
+        "sha256": "5643066ca1d12a7f87cc1f5907efac7d0e82584dbe18ff4cb3449205a7617be8",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3346",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3346",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_11",
+      "ageGroup": "5_8",
+      "portrayedAge": 6,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 11",
+      "altText": "Soft 3D illustrated female character, intended age 6, wearing ivory hijab with tiny lavender floral embroidery, muted plum blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvPOmYE",
+        "url": "https://www.canva.com/M/MAHYtvPOmYE?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_11.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_11.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2439402,
+        "sha256": "6f4722b262c2d7da3ab7d4cc72a296d48c11c96d945d08c6e078d53a82a656db",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3350",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3350",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_12",
+      "ageGroup": "5_8",
+      "portrayedAge": 6,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 12",
+      "altText": "Soft 3D illustrated male character, intended age 6, wearing muted burgundy modest sweatshirt, no hat; dark rectangular spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtlq84gQ",
+        "url": "https://www.canva.com/M/MAHYtlq84gQ?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_12.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_12.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2242033,
+        "sha256": "c4cdd24aa517ccd28baf413767e70f0897ede7197c8277e915d817e6ea4fe3ac",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3353",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3353",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_13",
+      "ageGroup": "5_8",
+      "portrayedAge": 7,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 13",
+      "altText": "Soft 3D illustrated female character, intended age 7, wearing muted sage hijab, dusty pink modest jacket; small cream bow-shaped fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtrYQu8c",
+        "url": "https://www.canva.com/M/MAHYtrYQu8c?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_13.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_13.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2436310,
+        "sha256": "b5e94412538dfb35309a4c84cb6a7bd3d06a286c9ee4439b365b8bee66d9b52c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3356",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3356",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_14",
+      "ageGroup": "5_8",
+      "portrayedAge": 7,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 14",
+      "altText": "Soft 3D illustrated male character, intended age 7, wearing cream kufi with narrow teal geometric band, ivory traditional tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtsEFWGs",
+        "url": "https://www.canva.com/M/MAHYtsEFWGs?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_14.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_14.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2286258,
+        "sha256": "efadad144225bd7db0a516fda6c543a8f6a60cbb0791cfe42a794f2951f6c87a",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3359",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3359",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_15",
+      "ageGroup": "5_8",
+      "portrayedAge": 8,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 15",
+      "altText": "Soft 3D illustrated female character, intended age 8, wearing periwinkle hijab, pale sand modest tunic; thin oval teal spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtjsapVg",
+        "url": "https://www.canva.com/M/MAHYtjsapVg?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_15.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_15.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2536670,
+        "sha256": "2677aadd3abcd605a4429fcf6a428d148703cdcc6022496c25b1c52efdfad48e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3362",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3362",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_16",
+      "ageGroup": "5_8",
+      "portrayedAge": 8,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 16",
+      "altText": "Soft 3D illustrated male character, intended age 8, wearing white embroidered kufi, muted burgundy waistcoat and ivory shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYthkwQCo",
+        "url": "https://www.canva.com/M/MAHYthkwQCo?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_16.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_16.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2314517,
+        "sha256": "444637663d26fa9197552daeacaa51dc49469ca43b5ae8c60d0f1de21ebb501e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3366",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3366",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_17",
+      "ageGroup": "5_8",
+      "portrayedAge": 5,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 17",
+      "altText": "Soft 3D illustrated female character, intended age 5, wearing pale yellow hijab, muted coral modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtnr-71U",
+        "url": "https://www.canva.com/M/MAHYtnr-71U?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_17.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_17.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2275728,
+        "sha256": "3769a58ae05aea4de99d49e4dc216b3f07a26a0eb94eaf24da2061be5c24d7d3",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3369",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3369",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_18",
+      "ageGroup": "5_8",
+      "portrayedAge": 5,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 18",
+      "altText": "Soft 3D illustrated male character, intended age 5, wearing light olive zip jacket over ivory crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtgMRcRM",
+        "url": "https://www.canva.com/M/MAHYtgMRcRM?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_18.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_18.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2200890,
+        "sha256": "9d1602ddee69e3b5206ca175339037885d9e36d0b79eed8c2fd3dfe47cf7cc7a",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3372",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3372",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_19",
+      "ageGroup": "5_8",
+      "portrayedAge": 6,
+      "presentation": "female",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 19",
+      "altText": "Soft 3D illustrated female character, intended age 6, wearing muted teal hijab, cream blouse with subtle dusty rose embroidery; small gold fabric brooch.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvU8BU4",
+        "url": "https://www.canva.com/M/MAHYtvU8BU4?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_19.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_19.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2311227,
+        "sha256": "bdf5ccea019a520c3e3da45ad09375ee6161d7c021319f41a0d99c9acdd1022e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3375",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3375",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_5_8_20",
+      "ageGroup": "5_8",
+      "portrayedAge": 6,
+      "presentation": "male",
+      "displayLabel": "Ages 5\u00e2\u20ac\u201c8 / Avatar 20",
+      "altText": "Soft 3D illustrated male character, intended age 6, wearing dusty blue collarless tunic, pale sage kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtnlmfwY",
+        "url": "https://www.canva.com/M/MAHYtnlmfwY?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/5_8/avatar_5_8_20.png",
+        "storageKey": "avatars/v2/age-wise/5_8/avatar_5_8_20.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2504073,
+        "sha256": "463ec6abaee21428dd4cd4308d4b9dcad426a9b0a6bc900a4e579a3464490414",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3310",
+        "nodeId": "1847:3378",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3378",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_01",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 01",
+      "altText": "Soft 3D illustrated female character, intended age 9, wearing dusty rose hijab, ivory blouse with muted floral cuffs; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtk8ZD1o",
+        "url": "https://www.canva.com/M/MAHYtk8ZD1o?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_01.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_01.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2430068,
+        "sha256": "feb5d58c5859a55bbae5ad139cc96321554d1ae76874c3010183479e699e7ef0",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3389",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3389",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_02",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 02",
+      "altText": "Soft 3D illustrated male character, intended age 9, wearing modest sage hoodie over a cream shirt, no hat; thin round brown spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtrzWiao",
+        "url": "https://www.canva.com/M/MAHYtrzWiao?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_02.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_02.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2331623,
+        "sha256": "676788160490d8397601c6c58d0f5f3bc27c7e14902d8264f6c2b03ec56da801",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3392",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3392",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_03",
+      "ageGroup": "8_10",
+      "portrayedAge": 10,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 03",
+      "altText": "Soft 3D illustrated female character, intended age 10, wearing peach hijab, muted teal modest tunic; round bronze spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtpuAcF0",
+        "url": "https://www.canva.com/M/MAHYtpuAcF0?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_03.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_03.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2475078,
+        "sha256": "0a84a25f111692a407ccfb56d11287601df3f1ad638615a0a0ff2a3f81382f08",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3395",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3395",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_04",
+      "ageGroup": "8_10",
+      "portrayedAge": 10,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 04",
+      "altText": "Soft 3D illustrated male character, intended age 10, wearing navy waistcoat over cream tunic, ivory kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtqQ1ZX0",
+        "url": "https://www.canva.com/M/MAHYtqQ1ZX0?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_04.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_04.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2345877,
+        "sha256": "13e9178b403797596fbf8bddb475801b8c2e6cb85140eca2451c526bdae1843d",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3398",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3398",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_05",
+      "ageGroup": "8_10",
+      "portrayedAge": 8,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 05",
+      "altText": "Soft 3D illustrated female character, intended age 8, wearing pale aqua hijab with narrow ivory edging, navy modest top; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtn3hMyY",
+        "url": "https://www.canva.com/M/MAHYtn3hMyY?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_05.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_05.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2432777,
+        "sha256": "a00d3613c2d4700610b1aa3a2225f96c68933f34a338dc57ae4eebcdd5f1331e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3401",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3401",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_06",
+      "ageGroup": "8_10",
+      "portrayedAge": 8,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 06",
+      "altText": "Soft 3D illustrated male character, intended age 8, wearing mustard gold casual overshirt over white crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtv9C6sM",
+        "url": "https://www.canva.com/M/MAHYtv9C6sM?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_06.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_06.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2268542,
+        "sha256": "ea52b4ee7378b4e00a8c83fa037efb6c213f3f6e643a7a658e3b2aedf1d97fa5",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3405",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3405",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_07",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 07",
+      "altText": "Soft 3D illustrated female character, intended age 9, wearing ivory hijab with tiny lavender floral embroidery, muted plum blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtpAD4-E",
+        "url": "https://www.canva.com/M/MAHYtpAD4-E?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_07.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_07.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2389019,
+        "sha256": "6e1bd909750d0f9b70173919c63c732380f5953eceff4edb864755231ca424b3",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3408",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3408",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_08",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 08",
+      "altText": "Soft 3D illustrated male character, intended age 9, wearing muted burgundy modest sweatshirt, no hat; dark rectangular spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtl2DTw8",
+        "url": "https://www.canva.com/M/MAHYtl2DTw8?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_08.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_08.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2186711,
+        "sha256": "a4290fa36dfdf85f312dcc140683edfde73ccc297caf04df8cafab02db5e8fd9",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3411",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3411",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_09",
+      "ageGroup": "8_10",
+      "portrayedAge": 10,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 09",
+      "altText": "Soft 3D illustrated female character, intended age 10, wearing muted sage hijab, dusty pink modest jacket; small cream bow-shaped fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtla0NaM",
+        "url": "https://www.canva.com/M/MAHYtla0NaM?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_09.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_09.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2489063,
+        "sha256": "5545e16e3c2d4e1ce3dd1c80c51fb532330ac111cad581297f373f8b4b1c131b",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3414",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3414",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_10",
+      "ageGroup": "8_10",
+      "portrayedAge": 10,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 10",
+      "altText": "Soft 3D illustrated male character, intended age 10, wearing cream kufi with narrow teal geometric band, ivory traditional tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtnNhy24",
+        "url": "https://www.canva.com/M/MAHYtnNhy24?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_10.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_10.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2187611,
+        "sha256": "300c0482f45105b3cb1719a7ce4e1c5b4ab269ded4852456f45a8c1845476818",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3417",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3417",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_11",
+      "ageGroup": "8_10",
+      "portrayedAge": 8,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 11",
+      "altText": "Soft 3D illustrated female character, intended age 8, wearing periwinkle hijab, pale sand modest tunic; thin oval teal spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtmkyvi4",
+        "url": "https://www.canva.com/M/MAHYtmkyvi4?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_11.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_11.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2385511,
+        "sha256": "f17254ecb7893a60ab4fa5147fe882b20c76cb88f5d6d068e5f2e71973764077",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3421",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3421",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_12",
+      "ageGroup": "8_10",
+      "portrayedAge": 8,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 12",
+      "altText": "Soft 3D illustrated male character, intended age 8, wearing white embroidered kufi, muted burgundy waistcoat and ivory shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtlY_vAs",
+        "url": "https://www.canva.com/M/MAHYtlY_vAs?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_12.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_12.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2389600,
+        "sha256": "11bbb86d9481a5074c0e92b6b3f2899d20bb5a6417b1ad5aeba453a53f475e31",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3424",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3424",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_13",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 13",
+      "altText": "Soft 3D illustrated female character, intended age 9, wearing pale yellow hijab, muted coral modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtkljyx4",
+        "url": "https://www.canva.com/M/MAHYtkljyx4?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_13.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_13.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2275786,
+        "sha256": "544683008eed2a3aa17c58529563f41f13b6fdc771d3cdc4360aa9abecc457bc",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3427",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3427",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_14",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 14",
+      "altText": "Soft 3D illustrated male character, intended age 9, wearing light olive zip jacket over ivory crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvWnqi8",
+        "url": "https://www.canva.com/M/MAHYtvWnqi8?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_14.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_14.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2291089,
+        "sha256": "51cc9c1f411a7622951d34af68ec79cad2813caaaeaf965c2410d8c010559bb6",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3430",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3430",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_15",
+      "ageGroup": "8_10",
+      "portrayedAge": 10,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 15",
+      "altText": "Soft 3D illustrated female character, intended age 10, wearing muted teal hijab, cream blouse with subtle dusty rose embroidery; small gold fabric brooch.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtngrY3c",
+        "url": "https://www.canva.com/M/MAHYtngrY3c?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_15.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_15.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2405372,
+        "sha256": "b3b961b9c893086fe3e76cadd888d01fa6d7fe46d927007e7ad3681ff56f5220",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3433",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3433",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_16",
+      "ageGroup": "8_10",
+      "portrayedAge": 10,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 16",
+      "altText": "Soft 3D illustrated male character, intended age 10, wearing dusty blue collarless tunic, pale sage kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtg3x34I",
+        "url": "https://www.canva.com/M/MAHYtg3x34I?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_16.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_16.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2347697,
+        "sha256": "3638d56d479f6e98c938966d6e1251ef3e21a7f6540a64de88596a9cd724a877",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3437",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3437",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_17",
+      "ageGroup": "8_10",
+      "portrayedAge": 8,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 17",
+      "altText": "Soft 3D illustrated female character, intended age 8, wearing sage hijab with tiny cream embroidered trim, ivory modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtlEula8",
+        "url": "https://www.canva.com/M/MAHYtlEula8?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_17.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_17.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2387440,
+        "sha256": "beba1cd5b7741238e796be06df561bd14010c7f7911e99eb2837b14971ca486d",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3440",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3440",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_18",
+      "ageGroup": "8_10",
+      "portrayedAge": 8,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 18",
+      "altText": "Soft 3D illustrated male character, intended age 8, wearing ivory woven kufi, muted teal collared tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtjqBJRA",
+        "url": "https://www.canva.com/M/MAHYtjqBJRA?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_18.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_18.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2440158,
+        "sha256": "b433fa7b0bf7205ebbf5df39eca75b4e8d139251f45c853c0fdd9dcc16305d8f",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3443",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3443",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_19",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "female",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 19",
+      "altText": "Soft 3D illustrated female character, intended age 9, wearing lavender hijab, pale grey modest tunic; small geometric silver fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtpTPneE",
+        "url": "https://www.canva.com/M/MAHYtpTPneE?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_19.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_19.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2504954,
+        "sha256": "47f86ea3bcf88ea3540e72c94f42c666be429eb69cfef66aa6220c5e72a25f54",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3446",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3446",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_8_10_20",
+      "ageGroup": "8_10",
+      "portrayedAge": 9,
+      "presentation": "male",
+      "displayLabel": "Ages 8\u00e2\u20ac\u201c10 / Avatar 20",
+      "altText": "Soft 3D illustrated male character, intended age 9, wearing sand embroidered kufi, soft blue collarless shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYttacYYE",
+        "url": "https://www.canva.com/M/MAHYttacYYE?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/8_10/avatar_8_10_20.png",
+        "storageKey": "avatars/v2/age-wise/8_10/avatar_8_10_20.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2376465,
+        "sha256": "86719ebbb02164d957275caccf3358051cfe39977e6d132d1924b98889816d1c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3381",
+        "nodeId": "1847:3449",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3449",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_01",
+      "ageGroup": "10_14",
+      "portrayedAge": 12,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 01",
+      "altText": "Soft 3D illustrated female character, intended age 12, wearing pale aqua hijab with narrow ivory edging, navy modest top; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtrjCqvQ",
+        "url": "https://www.canva.com/M/MAHYtrjCqvQ?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_01.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_01.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2457046,
+        "sha256": "3e7a3d1370fa698d3ce0e2c51e370b25d15e7fb461de420f8f34710b35637d65",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3460",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3460",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_02",
+      "ageGroup": "10_14",
+      "portrayedAge": 12,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 02",
+      "altText": "Soft 3D illustrated male character, intended age 12, wearing mustard gold casual overshirt over white crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtiOLKKs",
+        "url": "https://www.canva.com/M/MAHYtiOLKKs?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_02.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_02.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2099595,
+        "sha256": "09f9cfcaadea70137217598faf32b6e772201e2c43b388e442e683e00ddfa70c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3463",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3463",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_03",
+      "ageGroup": "10_14",
+      "portrayedAge": 13,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 03",
+      "altText": "Soft 3D illustrated female character, intended age 13, wearing ivory hijab with tiny lavender floral embroidery, muted plum blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtgu96gE",
+        "url": "https://www.canva.com/M/MAHYtgu96gE?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_03.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_03.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2290012,
+        "sha256": "26c5d85881ae7fc6aff71017947502961f7184a4869876f2214cb26a2800917b",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3466",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3466",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_04",
+      "ageGroup": "10_14",
+      "portrayedAge": 13,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 04",
+      "altText": "Soft 3D illustrated male character, intended age 13, wearing muted burgundy modest sweatshirt, no hat; dark rectangular spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtolMYZ0",
+        "url": "https://www.canva.com/M/MAHYtolMYZ0?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_04.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_04.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2211781,
+        "sha256": "c5b18b1dff4581c4064818f999c3b293becd9afb6c23a1c0ea669e66ffe6af18",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3469",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3469",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_05",
+      "ageGroup": "10_14",
+      "portrayedAge": 14,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 05",
+      "altText": "Soft 3D illustrated female character, intended age 14, wearing muted sage hijab, dusty pink modest jacket; small cream bow-shaped fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtnvxW54",
+        "url": "https://www.canva.com/M/MAHYtnvxW54?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_05.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_05.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2539798,
+        "sha256": "6a286f9f8dfa310016750f741eb366be54b7507fa0851cdd1702dda84f2a6892",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3472",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3472",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_06",
+      "ageGroup": "10_14",
+      "portrayedAge": 14,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 06",
+      "altText": "Soft 3D illustrated male character, intended age 14, wearing cream kufi with narrow teal geometric band, ivory traditional tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtk7zg8k",
+        "url": "https://www.canva.com/M/MAHYtk7zg8k?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_06.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_06.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2178683,
+        "sha256": "f7ff1735a06ca87ede12b3b3edbd2901424ec6c502eb6a63f868b7d60c383e1c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3476",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3476",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_07",
+      "ageGroup": "10_14",
+      "portrayedAge": 10,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 07",
+      "altText": "Soft 3D illustrated female character, intended age 10, wearing periwinkle hijab, pale sand modest tunic; thin oval teal spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtlhbxkA",
+        "url": "https://www.canva.com/M/MAHYtlhbxkA?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_07.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_07.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2405675,
+        "sha256": "2f2cf59358ac6850a75775f64a11b70f892b62c43aa92ced444a3b64d294f940",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3479",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3479",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_08",
+      "ageGroup": "10_14",
+      "portrayedAge": 10,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 08",
+      "altText": "Soft 3D illustrated male character, intended age 10, wearing white embroidered kufi, muted burgundy waistcoat and ivory shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtuQFu2Y",
+        "url": "https://www.canva.com/M/MAHYtuQFu2Y?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_08.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_08.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2244310,
+        "sha256": "a6c0fac3da88d321b4f0513b2f36de5a6d5594126658d809a4e5c29d25998f19",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3482",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3482",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_09",
+      "ageGroup": "10_14",
+      "portrayedAge": 11,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 09",
+      "altText": "Soft 3D illustrated female character, intended age 11, wearing pale yellow hijab, muted coral modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtkGtzQw",
+        "url": "https://www.canva.com/M/MAHYtkGtzQw?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_09.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_09.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2262061,
+        "sha256": "9f820fca1dd0d270f9c61405c0d9221bec93683d4c4de117d139718236f77519",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3485",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3485",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_10",
+      "ageGroup": "10_14",
+      "portrayedAge": 11,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 10",
+      "altText": "Soft 3D illustrated male character, intended age 11, wearing light olive zip jacket over ivory crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtksmG9o",
+        "url": "https://www.canva.com/M/MAHYtksmG9o?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_10.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_10.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2125752,
+        "sha256": "ddffe3d3704493d5cd460ac5e29979a6eaf2e4dc4f1302958d746c06f5f8a236",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3488",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3488",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_11",
+      "ageGroup": "10_14",
+      "portrayedAge": 12,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 11",
+      "altText": "Soft 3D illustrated female character, intended age 12, wearing muted teal hijab, cream blouse with subtle dusty rose embroidery; small gold fabric brooch.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvLq9-A",
+        "url": "https://www.canva.com/M/MAHYtvLq9-A?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_11.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_11.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2410114,
+        "sha256": "7003ddef1d012e175a1ffa2e9c5f9e5cf3e2eb8ee91b2b28368397f0bb47cd79",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3492",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3492",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_12",
+      "ageGroup": "10_14",
+      "portrayedAge": 12,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 12",
+      "altText": "Soft 3D illustrated male character, intended age 12, wearing dusty blue collarless tunic, pale sage kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYttA6YTM",
+        "url": "https://www.canva.com/M/MAHYttA6YTM?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_12.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_12.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2384597,
+        "sha256": "67b5125fe8cca46d7ed1d7e51729ae085f6618d48c5f4f761b521a4f9e8e40e5",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3495",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3495",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_13",
+      "ageGroup": "10_14",
+      "portrayedAge": 13,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 13",
+      "altText": "Soft 3D illustrated female character, intended age 13, wearing sage hijab with tiny cream embroidered trim, ivory modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtq94Tbc",
+        "url": "https://www.canva.com/M/MAHYtq94Tbc?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_13.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_13.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2434401,
+        "sha256": "384e1f75d6bbcf3dce9b839433f12a5149b02edcea3cd46a713204b9b48e6eee",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3498",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3498",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_14",
+      "ageGroup": "10_14",
+      "portrayedAge": 13,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 14",
+      "altText": "Soft 3D illustrated male character, intended age 13, wearing ivory woven kufi, muted teal collared tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtoJNtjo",
+        "url": "https://www.canva.com/M/MAHYtoJNtjo?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_14.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_14.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2408698,
+        "sha256": "d1c9e4d662d69a00f6eddfd611a1aa40a76d4183610454e855edb676c676ce2e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3501",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3501",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_15",
+      "ageGroup": "10_14",
+      "portrayedAge": 14,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 15",
+      "altText": "Soft 3D illustrated female character, intended age 14, wearing lavender hijab, pale grey modest tunic; small geometric silver fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYthrQ-DI",
+        "url": "https://www.canva.com/M/MAHYthrQ-DI?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_15.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_15.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2478564,
+        "sha256": "a62282314f80b8ddf3cac34a38d41f374fc7851230f4b657fe7de66eaf0689f3",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3504",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3504",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_16",
+      "ageGroup": "10_14",
+      "portrayedAge": 14,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 16",
+      "altText": "Soft 3D illustrated male character, intended age 14, wearing sand embroidered kufi, soft blue collarless shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYttV3kho",
+        "url": "https://www.canva.com/M/MAHYttV3kho?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_16.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_16.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2375449,
+        "sha256": "dfd247e669d911f0f91fa553ae6857537e3529836ad6547f114a9d8b1bfd7dbb",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3508",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3508",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_17",
+      "ageGroup": "10_14",
+      "portrayedAge": 10,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 17",
+      "altText": "Soft 3D illustrated female character, intended age 10, wearing dusty rose hijab, ivory blouse with muted floral cuffs; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYthiM-vk",
+        "url": "https://www.canva.com/M/MAHYthiM-vk?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_17.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_17.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2457373,
+        "sha256": "6492977ad56ffac381fe3b9df9d172cd5324488b86342177f92c6635bf6a182c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3511",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3511",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_18",
+      "ageGroup": "10_14",
+      "portrayedAge": 10,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 18",
+      "altText": "Soft 3D illustrated male character, intended age 10, wearing modest sage hoodie over a cream shirt, no hat; thin round brown spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtidxAQg",
+        "url": "https://www.canva.com/M/MAHYtidxAQg?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_18.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_18.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2388383,
+        "sha256": "bf1a1634b6c9a650e6307b3987c19f41df20b4ed60e8203d672a300b1987d8fe",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3514",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3514",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_19",
+      "ageGroup": "10_14",
+      "portrayedAge": 11,
+      "presentation": "female",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 19",
+      "altText": "Soft 3D illustrated female character, intended age 11, wearing peach hijab, muted teal modest tunic; round bronze spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtqxOSLY",
+        "url": "https://www.canva.com/M/MAHYtqxOSLY?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_19.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_19.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2348582,
+        "sha256": "688e65855f86f67f434308a6525811f5786c5d410a696f74f6a990983f27b303",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3517",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3517",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_10_14_20",
+      "ageGroup": "10_14",
+      "portrayedAge": 11,
+      "presentation": "male",
+      "displayLabel": "Ages 10\u00e2\u20ac\u201c14 / Avatar 20",
+      "altText": "Soft 3D illustrated male character, intended age 11, wearing navy waistcoat over cream tunic, ivory kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtm7iNm0",
+        "url": "https://www.canva.com/M/MAHYtm7iNm0?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/10_14/avatar_10_14_20.png",
+        "storageKey": "avatars/v2/age-wise/10_14/avatar_10_14_20.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2243628,
+        "sha256": "80b33fc614b6917ff4deae36a11014e8e962dd96b708b0a3de4b5e2e5cd0f9c9",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3452",
+        "nodeId": "1847:3520",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3520",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_01",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 17,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 01",
+      "altText": "Soft 3D illustrated female character, intended age 17, wearing muted sage hijab, dusty pink modest jacket; small cream bow-shaped fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYttpBQKM",
+        "url": "https://www.canva.com/M/MAHYttpBQKM?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_01.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_01.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2488064,
+        "sha256": "a7e4eca28b7536e1af9154be07ac5e8a0e8c72f48ef316218aff6685af9faed7",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3531",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3531",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_02",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 17,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 02",
+      "altText": "Soft 3D illustrated male character, intended age 17, wearing cream kufi with narrow teal geometric band, ivory traditional tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYtvb8KrA",
+        "url": "https://www.canva.com/M/MAHYtvb8KrA?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_02.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_02.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2161574,
+        "sha256": "8cd5595d34097ad07dfd4fc8c3357a5b5eae2eb4ecb3f59c07ad7de40b8a450d",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3534",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3534",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_03",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 18,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 03",
+      "altText": "Soft 3D illustrated female character, intended age 18, wearing periwinkle hijab, pale sand modest tunic; thin oval teal spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuGzZtrc",
+        "url": "https://www.canva.com/M/MAHYuGzZtrc?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_03.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_03.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2439856,
+        "sha256": "30ebc3c71f9511fb8634b74bc50dea9f7af3a8d0a53c6dc5250bfd62c8d23c2c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3537",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3537",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_04",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 18,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 04",
+      "altText": "Soft 3D illustrated male character, intended age 18, wearing white embroidered kufi, muted burgundy waistcoat and ivory shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuN6hnCY",
+        "url": "https://www.canva.com/M/MAHYuN6hnCY?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_04.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_04.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2360111,
+        "sha256": "9c3bbb47cec64142e72fb7fd1f227fb7463b8e38fb7cb3273c1db4731ac393d9",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3540",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3540",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_05",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 19,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 05",
+      "altText": "Soft 3D illustrated female character, intended age 19, wearing pale yellow hijab, muted coral modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuPW3e5A",
+        "url": "https://www.canva.com/M/MAHYuPW3e5A?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_05.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_05.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2311463,
+        "sha256": "9f0142359da9198f8d8650d6526ae92bcb49ca048e2987429a05bc7ef05e4707",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3543",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3543",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_06",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 19,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 06",
+      "altText": "Soft 3D illustrated male character, intended age 19, wearing light olive zip jacket over ivory crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuFUMwaA",
+        "url": "https://www.canva.com/M/MAHYuFUMwaA?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_06.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_06.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2351027,
+        "sha256": "268c9fc71b8b834aa2c7b63eb369269fb3ecd40c43b65ff10e23b135af5465c6",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3547",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3547",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_07",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 20,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 07",
+      "altText": "Soft 3D illustrated female character, intended age 20, wearing muted teal hijab, cream blouse with subtle dusty rose embroidery; small gold fabric brooch.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuBO2DMQ",
+        "url": "https://www.canva.com/M/MAHYuBO2DMQ?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_07.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_07.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2450028,
+        "sha256": "90f0457651d5dccecd3b87fd22be08b7b8db8b271d99140ec54687e0e2fbbe3e",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3550",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3550",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_08",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 20,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 08",
+      "altText": "Soft 3D illustrated male character, intended age 20, wearing dusty blue collarless tunic, pale sage kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuE4lW-Y",
+        "url": "https://www.canva.com/M/MAHYuE4lW-Y?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_08.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_08.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2426237,
+        "sha256": "adc5458cfaf806e8f55c677081a00ed78f3c4c945290af2dbe4d84827abfd010",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3553",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3553",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_09",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 21,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 09",
+      "altText": "Soft 3D illustrated female character, intended age 21, wearing sage hijab with tiny cream embroidered trim, ivory modest blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuKfvPto",
+        "url": "https://www.canva.com/M/MAHYuKfvPto?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_09.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_09.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2422807,
+        "sha256": "42b3c7702b2f8e39eba596d5491d7c2f981df501cada09df7ef5accb0d97f4e0",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3556",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3556",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_10",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 21,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 10",
+      "altText": "Soft 3D illustrated male character, intended age 21, wearing ivory woven kufi, muted teal collared tunic; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuBEr25c",
+        "url": "https://www.canva.com/M/MAHYuBEr25c?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_10.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_10.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2469464,
+        "sha256": "385a84706246d6727de95f049ec519274c9dac657c52b182ab710ab591176219",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3559",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3559",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_11",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 22,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 11",
+      "altText": "Soft 3D illustrated female character, intended age 22, wearing lavender hijab, pale grey modest tunic; small geometric silver fabric pin.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuPk0WdI",
+        "url": "https://www.canva.com/M/MAHYuPk0WdI?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_11.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_11.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2495820,
+        "sha256": "c91dc6acd54b71aaf88c67904b86dc39fde13221433eceb70441117bd201b30b",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3563",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3563",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_12",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 22,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 12",
+      "altText": "Soft 3D illustrated male character, intended age 22, wearing sand embroidered kufi, soft blue collarless shirt; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuMSDbxk",
+        "url": "https://www.canva.com/M/MAHYuMSDbxk?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_12.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_12.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2456280,
+        "sha256": "998853973f68a056c08900c703066c96112e3b5bf484298e90dea6e0a90029a7",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3566",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3566",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_13",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 23,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 13",
+      "altText": "Soft 3D illustrated female character, intended age 23, wearing dusty rose hijab, ivory blouse with muted floral cuffs; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuOqaygI",
+        "url": "https://www.canva.com/M/MAHYuOqaygI?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_13.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_13.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2320526,
+        "sha256": "d5801ea149e05a5670884e708f5cffc2cb46a7951a09d499c00be3302fe9436d",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3569",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3569",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_14",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 23,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 14",
+      "altText": "Soft 3D illustrated male character, intended age 23, wearing modest sage hoodie over a cream shirt, no hat; thin round brown spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuOh4ReM",
+        "url": "https://www.canva.com/M/MAHYuOh4ReM?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_14.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_14.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2537368,
+        "sha256": "c582a41a8c939a0077064d2c788cf030c2d7b139101a1ebf7ee771506912e280",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3572",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3572",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_15",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 14,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 15",
+      "altText": "Soft 3D illustrated female character, intended age 14, wearing peach hijab, muted teal modest tunic; round bronze spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuLzGxUI",
+        "url": "https://www.canva.com/M/MAHYuLzGxUI?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_15.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_15.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2449065,
+        "sha256": "92445c189b6e8fbb404682f04ee513c546669ade8f2753088ce1f9228d9bfd0a",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3575",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3575",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_16",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 14,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 16",
+      "altText": "Soft 3D illustrated male character, intended age 14, wearing navy waistcoat over cream tunic, ivory kufi; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuLgd75o",
+        "url": "https://www.canva.com/M/MAHYuLgd75o?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_16.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_16.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2170793,
+        "sha256": "4f6eee52873608afec30996d9d4e3590cdf4125f798123f908e9a9f682a6025c",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3579",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3579",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_17",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 15,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 17",
+      "altText": "Soft 3D illustrated female character, intended age 15, wearing pale aqua hijab with narrow ivory edging, navy modest top; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuFSXoxg",
+        "url": "https://www.canva.com/M/MAHYuFSXoxg?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_17.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_17.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2380714,
+        "sha256": "7248c0897f114c2e8cf3d0d4a39cc7f9e53906a0ecd615e2d5525d4d75201e62",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3582",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3582",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_18",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 15,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 18",
+      "altText": "Soft 3D illustrated male character, intended age 15, wearing mustard gold casual overshirt over white crew neck, no hat; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuMtY1hI",
+        "url": "https://www.canva.com/M/MAHYuMtY1hI?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_18.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_18.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2254717,
+        "sha256": "9d9ee8bff3fc50da8d94f8779c5f97e6b2c14a673745f0db6ed014425ad3c381",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3585",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3585",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_19",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 16,
+      "presentation": "female",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 19",
+      "altText": "Soft 3D illustrated female character, intended age 16, wearing ivory hijab with tiny lavender floral embroidery, muted plum blouse; no accessory.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuEWtbsE",
+        "url": "https://www.canva.com/M/MAHYuEWtbsE?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_19.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_19.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2265285,
+        "sha256": "fea83983285d43d26136812805d0497e764e2dbef547a8c8e924d735c629a835",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3588",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3588",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    },
+    {
+      "id": "nh_avatar_14_18_plus_20",
+      "ageGroup": "14_18_plus",
+      "portrayedAge": 16,
+      "presentation": "male",
+      "displayLabel": "Ages 14\u00e2\u20ac\u201c18+ / Avatar 20",
+      "altText": "Soft 3D illustrated male character, intended age 16, wearing muted burgundy modest sweatshirt, no hat; dark rectangular spectacles.",
+      "style": "soft-3d-storybook",
+      "source": {
+        "provider": "Canva",
+        "mediaId": "MAHYuHnvWyc",
+        "url": "https://www.canva.com/M/MAHYuHnvWyc?utm_source=OC-AaBlKrqBJJNF&utm_campaign=agent_connector_create_image_asset_opened"
+      },
+      "file": {
+        "path": "assets/14_18_plus/avatar_14_18_plus_20.png",
+        "storageKey": "avatars/v2/age-wise/14_18_plus/avatar_14_18_plus_20.png",
+        "mimeType": "image/png",
+        "width": 1264,
+        "height": 1264,
+        "bytes": 2119327,
+        "sha256": "8032e801b90798f2283c43817cda47a9b09808865ebce499a81d34495b5c7229",
+        "background": "opaque warm ivory"
+      },
+      "figma": {
+        "fileKey": "MR9935oQZACMjndzGIUgq5",
+        "frameId": "1847:3523",
+        "nodeId": "1847:3591",
+        "url": "https://www.figma.com/design/MR9935oQZACMjndzGIUgq5/NoorHeroes-APP?node-id=1847-3591",
+        "previewWidth": 120,
+        "previewHeight": 120
+      },
+      "review": {
+        "status": "agent-reviewed",
+        "ageAppearanceChecked": true,
+        "cropChecked": true,
+        "anatomyChecked": true,
+        "duplicateChecked": true,
+        "userApproval": "pending"
+      }
+    }
+  ]
+}

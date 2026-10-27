@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "NoorHeroes Audio & Tajweed Phonetics Data Flow",
+    "output": "tajweed-phonetics.dataflow.html",
+    "viewBox": [1080, 520],
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "audio-scoring-path",
+        "label": "Voice Input to Score Flow",
+        "focus": ["mic", "edge_ingress", "phonetics", "rewards_db", "child_dash"],
+        "note": "Follow child speech audio through real-time phonetics analysis to immediate star rewards."
+      },
+      {
+        "id": "privacy-boundary",
+        "label": "Zero-Retention Privacy Boundary",
+        "focus": ["edge_ingress", "buffer", "quarantine"],
+        "note": "Verify COPPA/GDPR-K compliance: raw audio exists only in volatile memory unless flagged."
+      },
+      {
+        "id": "scholar-governance",
+        "label": "Scholar Moderation Pipeline",
+        "focus": ["buffer", "quarantine", "scholar_cms"],
+        "note": "Examine the scholar audit queue for edge-case phonetics and sacred text immutability."
+      }
+    ]
+  },
+  "stages": [
+    { "label": "Client Sources" },
+    { "label": "Edge Ingest" },
+    { "label": "AI Processing" },
+    { "label": "Durable Store" },
+    { "label": "Consumers" }
+  ],
+  "nodes": [
+    { "id": "mic", "type": "frontend", "label": "Microphone", "sublabel": "16kHz PCM stream", "stage": 0, "row": 0, "tag": "audio" },
+    { "id": "kmp_app", "type": "frontend", "label": "NoorHeroes App", "sublabel": "KMP client context", "stage": 0, "row": 2, "tag": "client" },
+    { "id": "edge_ingress", "type": "cloud", "label": "TLS Ingress", "sublabel": "Reverse Proxy", "stage": 1, "row": 1, "tag": "TLS 1.3" },
+    { "id": "buffer", "type": "security", "label": "Ephemeral RAM", "sublabel": "zero voice retention", "stage": 2, "row": 0, "tag": "in-memory" },
+    { "id": "phonetics", "type": "backend", "label": "Tajweed Engine", "sublabel": "acoustic phonetics", "stage": 2, "row": 2, "tag": "scoring" },
+    { "id": "quarantine", "type": "security", "label": "Quarantine Vault", "sublabel": "flagged samples only", "stage": 3, "row": 0, "tag": "encrypted" },
+    { "id": "rewards_db", "type": "database", "label": "PostgreSQL 16", "sublabel": "rewards ledger", "stage": 3, "row": 1, "tag": "durable" },
+    { "id": "vector_cache", "type": "database", "label": "Redis 7", "sublabel": "session features", "stage": 3, "row": 2, "tag": "TTL 60s" },
+    { "id": "scholar_cms", "type": "backend", "label": "Scholar Portal", "sublabel": "Web Admin queue", "stage": 4, "row": 0, "tag": "Next.js 16" },
+    { "id": "child_dash", "type": "backend", "label": "Child Progress", "sublabel": "stars & streak update", "stage": 4, "row": 2, "tag": "real-time" }
+  ],
+  "flows": [
+    { "id": "mic-audio", "from": "mic", "to": "edge_ingress", "label": "voice stream", "classification": "PCM frames", "variant": "emphasis", "fromSide": "right", "toSide": "left", "via": [[205, 157], [205, 271]], "labelAt": [204, 190] },
+    { "id": "client-context", "from": "kmp_app", "to": "edge_ingress", "label": "lesson metadata", "classification": "child context", "variant": "default", "fromSide": "right", "toSide": "left", "via": [[222, 385], [222, 271]], "labelAt": [220, 342] },
+    { "id": "privacy-buffer", "from": "edge_ingress", "to": "buffer", "label": "ephemeral buffer", "classification": "RAM only", "variant": "security", "fromSide": "top", "toSide": "left", "via": [[315, 112], [450, 112], [450, 157]], "labelAt": [382, 100] },
+    { "id": "phonetics-feed", "from": "edge_ingress", "to": "phonetics", "label": "waveform analysis", "classification": "phonetic frames", "variant": "emphasis", "fromSide": "right", "toSide": "left", "via": [[420, 271], [420, 385]], "labelAt": [438, 324] },
+    { "id": "flagged-audio", "from": "buffer", "to": "quarantine", "label": "anomaly quarantine", "classification": "flagged audio", "variant": "security", "route": "straight", "labelAt": [638, 144] },
+    { "id": "score-commit", "from": "phonetics", "to": "rewards_db", "label": "phonetic score", "classification": "double-entry star", "variant": "emphasis", "fromSide": "right", "toSide": "left", "via": [[638, 385], [638, 271]], "labelAt": [638, 326] },
+    { "id": "features-cache", "from": "phonetics", "to": "vector_cache", "label": "cache phonemes", "classification": "ephemeral features", "variant": "dashed", "route": "straight", "labelAt": [638, 424] },
+    { "id": "scholar-review", "from": "quarantine", "to": "scholar_cms", "label": "audit queue", "classification": "moderation", "variant": "security", "route": "straight", "labelAt": [852, 144] },
+    { "id": "ui-update", "from": "rewards_db", "to": "child_dash", "label": "credit star balance", "classification": "UI notification", "variant": "emphasis", "fromSide": "right", "toSide": "left", "via": [[852, 271], [852, 385]], "labelAt": [852, 330] }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Voice Pipeline",
+      "items": [
+        "Audio PCM frames stream from client microphone to ingress proxy with sub-50ms latency",
+        "Tajweed phonetics engine computes letter articulation precision without cloud voice storage"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "COPPA / GDPR-K Protection",
+      "items": [
+        "Zero-retention voice policy: audio buffers are wiped from RAM immediately after scoring",
+        "Only scholar-flagged pronunciation discrepancies enter the encrypted quarantine vault"
+      ]
+    }
+  ]
+}

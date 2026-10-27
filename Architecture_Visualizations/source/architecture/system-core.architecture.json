@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "NoorHeroes Core System Architecture",
+    "output": "system-core.architecture.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "primary-request-path",
+        "label": "Primary Client Request Path",
+        "focus": ["mobile", "gateway", "api", "redis", "postgres"],
+        "note": "Follow mobile client requests through TLS gateway to FastAPI, cache check, and PostgreSQL persistence."
+      },
+      {
+        "id": "admin-scholar-path",
+        "label": "Admin & Scholar Operations",
+        "focus": ["admin_web", "gateway", "api", "postgres"],
+        "note": "Internal Next.js 16 admin operations enforcing Maker-Checker review with zero direct database access."
+      },
+      {
+        "id": "async-and-storage",
+        "label": "Async Worker & Media Pipeline",
+        "focus": ["api", "redis", "celery", "cloud_storage", "ext_push"],
+        "note": "Transactional outbox event relay via Celery workers, quarantined media storage, and push notifications."
+      }
+    ]
+  },
+  "components": [
+    { "id": "mobile", "type": "frontend", "label": "NoorHeroes App", "sublabel": "Kotlin KMP (Android/iOS)", "pos": [40, 320], "size": [140, 64], "tag": "Compose Multi" },
+    { "id": "admin_web", "type": "frontend", "label": "Admin Portal", "sublabel": "Next.js 16 / React 19", "pos": [40, 120], "size": [140, 64], "tag": "Scholar CMS" },
+    { "id": "gateway", "type": "cloud", "label": "TLS Ingress", "sublabel": "Reverse Proxy :443", "pos": [250, 220], "size": [140, 64], "tag": "Rate Limit" },
+    { "id": "api", "type": "backend", "label": "FastAPI Core", "sublabel": "18 Bounded Contexts", "pos": [460, 220], "size": [140, 64], "tag": "Python 3.12+" },
+    { "id": "redis", "type": "database", "label": "Redis 7 Cluster", "sublabel": "Cache & Task Broker", "pos": [740, 100], "size": [140, 64], "tag": ":6379" },
+    { "id": "postgres", "type": "database", "label": "PostgreSQL 16", "sublabel": "Primary Relational DB", "pos": [740, 220], "size": [140, 64], "tag": "Rewards Ledger" },
+    { "id": "cloud_storage", "type": "cloud", "label": "Cloudflare R2", "sublabel": "Vetted Media Store", "pos": [740, 340], "size": [140, 64], "tag": "Zero Retention" },
+    { "id": "celery", "type": "backend", "label": "Celery Workers", "sublabel": "Outbox Event Relay", "pos": [980, 100], "size": [140, 64], "tag": "Async Queue" },
+    { "id": "ext_push", "type": "external", "label": "APNs / FCM", "sublabel": "Push Notifications", "pos": [980, 240], "size": [140, 64], "tag": "Apple & Google" }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "NoorHeroes Production Cloud (Frankfurt EU)",
+      "wraps": ["gateway", "api", "redis", "postgres", "cloud_storage", "celery"]
+    },
+    {
+      "kind": "security-group",
+      "label": "Data & Worker Tier (VPC Isolated)",
+      "wraps": ["redis", "postgres", "cloud_storage", "celery"]
+    }
+  ],
+  "connections": [
+    { "id": "mobile-to-gateway", "from": "mobile", "to": "gateway", "label": "HTTPS Bearer", "variant": "emphasis" },
+    { "id": "admin-to-gateway", "from": "admin_web", "to": "gateway", "label": "HTTPS 2FA", "variant": "security" },
+    { "id": "gateway-to-api", "from": "gateway", "to": "api", "label": "mTLS Forward", "variant": "emphasis" },
+    { "id": "api-to-redis", "from": "api", "to": "redis", "label": "cache check", "fromSide": "top", "toSide": "left", "via": [[530, 132]] },
+    { "id": "api-to-db", "from": "api", "to": "postgres", "label": "SQLAlchemy 2.0", "variant": "emphasis" },
+    { "id": "api-to-storage", "from": "api", "to": "cloud_storage", "label": "quarantine check", "variant": "dashed", "fromSide": "bottom", "toSide": "left", "via": [[530, 372]] },
+    { "id": "redis-to-celery", "from": "redis", "to": "celery", "label": "task queue", "variant": "dashed" },
+    { "id": "celery-to-push", "from": "celery", "to": "ext_push", "label": "dispatch", "variant": "default", "labelAt": [1050, 185] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Client Tier",
+      "items": [
+        "Kotlin Multiplatform native client for Android & iOS with Compose UI and SQLDelight",
+        "Web Admin Portal in Next.js 16 provides scholar vetting queues with zero direct DB access"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Backend Services",
+      "items": [
+        "FastAPI modular monolith partitioned into 18 domain-isolated bounded contexts",
+        "PostgreSQL 16 houses the append-only double-entry rewards ledger",
+        "Redis 7 powers sliding-window rate limiters and session invalidation"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Data Governance",
+      "items": [
+        "COPPA / GDPR-K compliant ephemeral audio buffers with zero voice retention",
+        "Transactional Outbox Pattern guarantees at-least-once event delivery via Celery"
+      ]
+    }
+  ]
+}

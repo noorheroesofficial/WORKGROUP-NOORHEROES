@@ -1,0 +1,207 @@
+{
+  "count": 20,
+  "uniqueHashes": 20,
+  "sourceBytesPreserved": true,
+  "files": [
+    {
+      "id": "nh_avatar_5_8_01",
+      "filename": "avatar_5_8_01.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2463118,
+      "sha256": "3357b06904fc68c170f34a2d86c225e115060bdacc7632ca16dbdb7e0ff7743e"
+    },
+    {
+      "id": "nh_avatar_5_8_02",
+      "filename": "avatar_5_8_02.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2410480,
+      "sha256": "34cf1b0318af52fcc903217c2a542531f22c065ce0098768f54432878d3c17a1"
+    },
+    {
+      "id": "nh_avatar_5_8_03",
+      "filename": "avatar_5_8_03.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2508991,
+      "sha256": "d034fc8378b85fd2094bc33ef9190679915558685b538ff4fa13f01e1ab31733"
+    },
+    {
+      "id": "nh_avatar_5_8_04",
+      "filename": "avatar_5_8_04.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2426719,
+      "sha256": "3844496d5e8b29144cde22061e3863b2cf60b9c8c67379dbd797af5edb37440c"
+    },
+    {
+      "id": "nh_avatar_5_8_05",
+      "filename": "avatar_5_8_05.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2394167,
+      "sha256": "63e47b3deaf823ee6465d7bc6d3cdb412721c7772b933baeeee1e50679e3551d"
+    },
+    {
+      "id": "nh_avatar_5_8_06",
+      "filename": "avatar_5_8_06.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2279232,
+      "sha256": "a7a69ce528968d93e6bea344d52c6dfa5fe977bca1cc481246297f014483f486"
+    },
+    {
+      "id": "nh_avatar_5_8_07",
+      "filename": "avatar_5_8_07.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2442496,
+      "sha256": "db6a5a1c73993b68337d89afc14d8f4e72619e2bdcb742265e1a73320865745f"
+    },
+    {
+      "id": "nh_avatar_5_8_08",
+      "filename": "avatar_5_8_08.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2195066,
+      "sha256": "0456c4803eec96ddf0ea1cfbcf3954beaa18de527415d6f07f6f16f71f1478cc"
+    },
+    {
+      "id": "nh_avatar_5_8_09",
+      "filename": "avatar_5_8_09.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2220681,
+      "sha256": "abb5fb588682d66f83ac8ca6dc3ddabe1e22a753377a31005271ccc85386ac20"
+    },
+    {
+      "id": "nh_avatar_5_8_10",
+      "filename": "avatar_5_8_10.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2222007,
+      "sha256": "5643066ca1d12a7f87cc1f5907efac7d0e82584dbe18ff4cb3449205a7617be8"
+    },
+    {
+      "id": "nh_avatar_5_8_11",
+      "filename": "avatar_5_8_11.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2439402,
+      "sha256": "6f4722b262c2d7da3ab7d4cc72a296d48c11c96d945d08c6e078d53a82a656db"
+    },
+    {
+      "id": "nh_avatar_5_8_12",
+      "filename": "avatar_5_8_12.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2242033,
+      "sha256": "c4cdd24aa517ccd28baf413767e70f0897ede7197c8277e915d817e6ea4fe3ac"
+    },
+    {
+      "id": "nh_avatar_5_8_13",
+      "filename": "avatar_5_8_13.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2436310,
+      "sha256": "b5e94412538dfb35309a4c84cb6a7bd3d06a286c9ee4439b365b8bee66d9b52c"
+    },
+    {
+      "id": "nh_avatar_5_8_14",
+      "filename": "avatar_5_8_14.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2286258,
+      "sha256": "efadad144225bd7db0a516fda6c543a8f6a60cbb0791cfe42a794f2951f6c87a"
+    },
+    {
+      "id": "nh_avatar_5_8_15",
+      "filename": "avatar_5_8_15.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2536670,
+      "sha256": "2677aadd3abcd605a4429fcf6a428d148703cdcc6022496c25b1c52efdfad48e"
+    },
+    {
+      "id": "nh_avatar_5_8_16",
+      "filename": "avatar_5_8_16.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2314517,
+      "sha256": "444637663d26fa9197552daeacaa51dc49469ca43b5ae8c60d0f1de21ebb501e"
+    },
+    {
+      "id": "nh_avatar_5_8_17",
+      "filename": "avatar_5_8_17.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2275728,
+      "sha256": "3769a58ae05aea4de99d49e4dc216b3f07a26a0eb94eaf24da2061be5c24d7d3"
+    },
+    {
+      "id": "nh_avatar_5_8_18",
+      "filename": "avatar_5_8_18.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2200890,
+      "sha256": "9d1602ddee69e3b5206ca175339037885d9e36d0b79eed8c2fd3dfe47cf7cc7a"
+    },
+    {
+      "id": "nh_avatar_5_8_19",
+      "filename": "avatar_5_8_19.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2311227,
+      "sha256": "bdf5ccea019a520c3e3da45ad09375ee6161d7c021319f41a0d99c9acdd1022e"
+    },
+    {
+      "id": "nh_avatar_5_8_20",
+      "filename": "avatar_5_8_20.png",
+      "groupKey": "5_8",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2504073,
+      "sha256": "463ec6abaee21428dd4cd4308d4b9dcad426a9b0a6bc900a4e579a3464490414"
+    }
+  ]
+}

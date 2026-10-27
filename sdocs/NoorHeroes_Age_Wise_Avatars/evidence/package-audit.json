@@ -1,0 +1,24 @@
+{
+  "count": 80,
+  "countsByGroup": {
+    "5_8": 20,
+    "8_10": 20,
+    "10_14": 20,
+    "14_18_plus": 20
+  },
+  "uniqueIds": 80,
+  "uniqueMediaIds": 80,
+  "uniqueFileHashes": 80,
+  "exactDuplicatesOfPrevious20": 0,
+  "allDimensions": [
+    1264,
+    1264
+  ],
+  "allPng": true,
+  "allOpaque": true,
+  "metadataSchemaValidation": "passed",
+  "totalImageBytes": 188525534,
+  "archiveBytes": 186279162,
+  "archiveSha256": "5c58a95b075653d69aa0672bd69ea6fe9b7d277acfd34a73920628e05da49349",
+  "archiveIntegrity": "passed"
+}

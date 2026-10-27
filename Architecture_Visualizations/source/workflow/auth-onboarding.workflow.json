@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "NoorHeroes Authentication & Onboarding Workflow",
+    "output": "auth-onboarding.workflow.html",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "onboarding-happy-path",
+        "label": "Full Onboarding Sequence",
+        "focus": ["splash", "language", "registration", "consent", "otp_dispatch", "otp_verify", "pin_setup", "home"],
+        "note": "Follow the sequence from initial app launch through parental verification to the child home dashboard."
+      },
+      {
+        "id": "parent-consent-gate",
+        "label": "Parent Identity & Consent Gate",
+        "focus": ["registration", "consent", "otp_dispatch"],
+        "note": "Inspect the COPPA and GDPR-K Verified Parental Consent gate before any child profile is accessible."
+      },
+      {
+        "id": "pin-and-home",
+        "label": "Parent PIN & Child Dashboard",
+        "focus": ["otp_verify", "pin_setup", "home"],
+        "note": "Establish server-authoritative Parent PIN protection and enter the daytime or bedtime learning world."
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "child_surface", "label": "Child App Client" },
+    { "id": "parent_surface", "label": "Parent Privacy Surface" },
+    { "id": "backend_services", "label": "FastAPI Identity Services" }
+  ],
+  "phases": [
+    { "id": "init_phase", "label": "App Initialization", "fromCol": 0, "toCol": 1 },
+    { "id": "parent_phase", "label": "Parent Consent & Challenge", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "entry_phase", "label": "Verification & Home Entry", "fromCol": 4, "toCol": 5, "variant": "dashed" }
+  ],
+  "groups": [
+    { "id": "privacy_gate", "label": "Parent Consent Gate", "lane": "parent_surface", "fromCol": 2, "toCol": 3, "variant": "security" },
+    { "id": "security_gate", "label": "PIN Gate", "lane": "parent_surface", "fromCol": 4, "toCol": 5, "variant": "emphasis" }
+  ],
+  "mainPath": ["splash", "language", "registration", "consent", "otp_dispatch", "otp_verify", "pin_setup", "home"],
+  "nodes": [
+    { "id": "splash", "lane": "child_surface", "col": 0, "type": "frontend", "label": "Splash Screen", "sublabel": "token & asset check", "width": 132 },
+    { "id": "language", "lane": "child_surface", "col": 1, "type": "frontend", "label": "Language Select", "sublabel": "EN, AR, UR, FR, ID", "width": 132 },
+    { "id": "registration", "lane": "parent_surface", "col": 2, "type": "frontend", "label": "Parent Registration", "sublabel": "email / phone entry", "width": 132 },
+    { "id": "consent", "lane": "parent_surface", "col": 3, "type": "security", "label": "Parental Consent", "sublabel": "COPPA / GDPR-K VPC", "tag": "mandatory", "width": 132 },
+    { "id": "otp_dispatch", "lane": "backend_services", "col": 3, "type": "backend", "label": "OTP Dispatch", "sublabel": "6-digit challenge", "tag": "SMS/Email", "width": 132 },
+    { "id": "otp_verify", "lane": "backend_services", "col": 4, "type": "security", "label": "OTP Verification", "sublabel": "/v1/identity/otp/verify", "tag": "JWT issued", "width": 132 },
+    { "id": "pin_setup", "lane": "parent_surface", "col": 5, "type": "security", "label": "Parent PIN Setup", "sublabel": "4-digit server hashed", "tag": "authoritative", "width": 132 },
+    { "id": "home", "lane": "child_surface", "col": 5, "type": "frontend", "label": "Child Home", "sublabel": "day / calm bedtime mode", "tag": "active session", "width": 132 }
+  ],
+  "edges": [
+    { "id": "splash-to-lang", "from": "splash", "to": "language" },
+    { "id": "lang-to-reg", "from": "language", "to": "registration", "label": "parent gate", "variant": "emphasis" },
+    { "id": "reg-to-consent", "from": "registration", "to": "consent", "label": "accept VPC", "variant": "security" },
+    { "id": "consent-to-otp", "from": "consent", "to": "otp_dispatch", "label": "request OTP", "variant": "emphasis" },
+    { "id": "otp-to-verify", "from": "otp_dispatch", "to": "otp_verify", "label": "submit challenge", "variant": "emphasis" },
+    { "id": "verify-to-pin", "from": "otp_verify", "to": "pin_setup", "label": "auth success", "variant": "security" },
+    { "id": "pin-to-home", "from": "pin_setup", "to": "home", "label": "enter app", "variant": "emphasis" }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Onboarding Lifecycle",
+      "items": [
+        "Language selection sets app locale and phonetics layout prior to account creation",
+        "Parent onboarding is strictly isolated from the child learning dashboard"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Compliance & Safety",
+      "items": [
+        "Verified Parental Consent (VPC) is mandatory before storing any child credentials",
+        "Sliding-window Redis rate limit blocks brute-force OTP attempts after 3 failures"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Session Authorization",
+      "items": [
+        "OTP verification yields an authenticated session token for the parent",
+        "Server-authoritative 4-digit PIN secures parent settings and analytics gates"
+      ]
+    }
+  ]
+}

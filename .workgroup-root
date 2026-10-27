@@ -1,0 +1,6 @@
+# NoorHeroes Workgroup Root Marker
+# This file marks the architectural root of the WORKGROUP-NOORHEROES workspace.
+# Used by cross-platform path resolution utilities (Python, Node.js/TypeScript, Shell, PowerShell)
+# to dynamically discover the repository root without hardcoding machine-specific paths.
+workgroup=WORKGROUP-NOORHEROES
+version=1.0.0

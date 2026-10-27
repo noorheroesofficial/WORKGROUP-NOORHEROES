@@ -1,0 +1,172 @@
+{
+  "image_count": 20,
+  "unique_file_hashes": 20,
+  "all_dimensions": [
+    1264,
+    1264
+  ],
+  "all_formats": "PNG",
+  "source_bytes_preserved": true,
+  "files": [
+    {
+      "filename": "avatar_01.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "176d3fee775d5e2c3ca05bb33008ff4ff1379d6568789f9bd744b27800d02e3b",
+      "bytes": 2322259
+    },
+    {
+      "filename": "avatar_02.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "36b00006535a7092af3fed945dbe0802756f6dfe09f3f091966c5b59360c29d4",
+      "bytes": 2415767
+    },
+    {
+      "filename": "avatar_03.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "1a6eadd1de6929a019836a55a0a65306b00352755c293ad65e2a9909b1653a9e",
+      "bytes": 2112667
+    },
+    {
+      "filename": "avatar_04.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "733d25f710629971f22d766e088afb0980277e59b35e8fdc5d25648bfe26038a",
+      "bytes": 2276468
+    },
+    {
+      "filename": "avatar_05.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "54313536d44085cd7572ef7637825044e2dd35fb4318dfa5176cf5958f9904a9",
+      "bytes": 2427568
+    },
+    {
+      "filename": "avatar_06.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "ca772afc50f323fe09f663ddf6db1746469b44591eae89a52abef62107700e4a",
+      "bytes": 2301431
+    },
+    {
+      "filename": "avatar_07.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "35c40f067fabe15f84ec95a4cd3bfe2e694089fd16d877639c884b4b38f896a8",
+      "bytes": 2238618
+    },
+    {
+      "filename": "avatar_08.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "4a3729e92336d3712560ad2a5d3a888faf8cc3a0409c1c99e71e33dc6d8c4783",
+      "bytes": 1929584
+    },
+    {
+      "filename": "avatar_09.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "f1b76c704a6c0f1c79dee0ed87d1071a97480d243f5b84ddf0d773341a599957",
+      "bytes": 2327031
+    },
+    {
+      "filename": "avatar_10.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "b38c8fd25607c5ed4fe1ba211bd51ba3a63872781bdf3e1bd2f1ee9634018dab",
+      "bytes": 2106639
+    },
+    {
+      "filename": "avatar_11.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "a61e791356a7cb85f51bbeae8e60083dc4453d8a381a77e0bb2c5ebb7bf3a4a6",
+      "bytes": 2220718
+    },
+    {
+      "filename": "avatar_12.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "ccd55e0e8e250d6bb51d9edaf8959bd6549cbd827a37e5b5a27e3d778b883b10",
+      "bytes": 2353839
+    },
+    {
+      "filename": "avatar_13.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "73683b2f0cb1b464fd52222e0a74f17758ff7773ab1ffa33379edfd5552dba56",
+      "bytes": 2421157
+    },
+    {
+      "filename": "avatar_14.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "4b14d42c68344086f10acf52eaeab790d745e70bf0d1121387365923edfdfa90",
+      "bytes": 2130420
+    },
+    {
+      "filename": "avatar_15.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "791f03fc5dfa6b8c7f16eb9769fb3653e111f421a6875e81ffcf9a5f1661caad",
+      "bytes": 2214411
+    },
+    {
+      "filename": "avatar_16.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "a40c784d5d7e8b175ba449d52e83734d2c1d8f95aa3b88c149f8b507592e85c0",
+      "bytes": 2041088
+    },
+    {
+      "filename": "avatar_17.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "477a4ef0f3e3831c9c099ed82cb21919b00544b9b9d0fdbae8e54b80b029b918",
+      "bytes": 1870731
+    },
+    {
+      "filename": "avatar_18.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "70442b32f1451d927941cc7df45ec2db4062405e109e2477f7b31c086fd1bfcb",
+      "bytes": 2096456
+    },
+    {
+      "filename": "avatar_19.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "69fcdfaac502335f7ad1f68a33d27da3e7f4d45af4735d28ec7880770791f010",
+      "bytes": 2439508
+    },
+    {
+      "filename": "avatar_20.png",
+      "width": 1264,
+      "height": 1264,
+      "format": "PNG",
+      "sha256": "8e24d21909b559feb45fcddacc1ec95fca49d12f30e30b1bb56f7190b8e38bc1",
+      "bytes": 1915760
+    }
+  ]
+}

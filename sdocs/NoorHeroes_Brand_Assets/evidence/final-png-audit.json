@@ -1,0 +1,1088 @@
+{
+  "png_count": 88,
+  "dimension_mismatches": 0,
+  "source_crop_comparisons": [
+    {
+      "file": "noorheroes-brand-logo-full.png",
+      "alpha_max_error": 0,
+      "visible_rgb_max_error": 127,
+      "visible_rgb_mean_error": 1.039969267257938
+    },
+    {
+      "file": "noorheroes-brand-wordmark-primary.png",
+      "alpha_max_error": 0,
+      "visible_rgb_max_error": 127,
+      "visible_rgb_mean_error": 0.9953397008183358
+    },
+    {
+      "file": "noorheroes-brand-monogram-primary.png",
+      "alpha_max_error": 0,
+      "visible_rgb_max_error": 124,
+      "visible_rgb_mean_error": 0.18284237605647344
+    }
+  ],
+  "ios_rgb_encodings": [
+    "noorheroes-appicon-ios-background-ivory.png",
+    "noorheroes-appicon-ios-background-teal.png",
+    "noorheroes-appicon-ios-ivory.png",
+    "noorheroes-appicon-ios-teal.png"
+  ],
+  "files": [
+    {
+      "filename": "noorheroes-appicon-android-foreground-mdpi.png",
+      "width": 108,
+      "height": 108,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 4729,
+      "sha256": "2156233304ce26c788a0939a55745fa0d9ad394d95fd9a26eb4a392d3fa23024"
+    },
+    {
+      "filename": "noorheroes-appicon-ios-background-ivory.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 5338,
+      "sha256": "2b9d371441c5aaf5ce9d25641ad2604244d231d7a70958cf4ad7bd881696ae39"
+    },
+    {
+      "filename": "noorheroes-appicon-ios-background-teal.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 5336,
+      "sha256": "987da3fc5fb1cfb49185264617101d2d731385f5b238bca165dfa9004d0e4358"
+    },
+    {
+      "filename": "noorheroes-appicon-ios-ivory.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 349690,
+      "sha256": "aa17e71cf467da9c688abc94e9a39eb8c016996075e4c9e7ae2e558cb0ce2e3c"
+    },
+    {
+      "filename": "noorheroes-appicon-ios-teal.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGB",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 348226,
+      "sha256": "f18a1b25c368e43466ed012adcd1792f256d12c2deaf0a4ab65f5cd4a87d0482"
+    },
+    {
+      "filename": "noorheroes-appicon-ios-foreground.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 426075,
+      "sha256": "e3c8a0d366fc78901474d5a2aa11268a2d09797cc313659fcc902e70f6ee11ff"
+    },
+    {
+      "filename": "noorheroes-appicon-android-foreground-xhdpi.png",
+      "width": 216,
+      "height": 216,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 14141,
+      "sha256": "6654e4f4bbf37b27567541e386cbbc9112216f33a3b96dd8b56953f9cab6258a"
+    },
+    {
+      "filename": "noorheroes-appicon-android-foreground-hdpi.png",
+      "width": 162,
+      "height": 162,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 9005,
+      "sha256": "657e9a1f1cc68e43d1b6d1a62b4b7e7ea49ea5c893383b139afb8e3472ff9b8b"
+    },
+    {
+      "filename": "noorheroes-appicon-android-foreground-xxhdpi.png",
+      "width": 324,
+      "height": 324,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 27426,
+      "sha256": "65523e4be9065436a705312a1ce6bc956eeb93a097b5ee489a2c131ea38d081a"
+    },
+    {
+      "filename": "noorheroes-appicon-android-monochrome-mdpi.png",
+      "width": 108,
+      "height": 108,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 1596,
+      "sha256": "72a3c353a33ef5e3bc7ed549593d1a4ff4dc0ab434b7bfc37176b1dbfe44283e"
+    },
+    {
+      "filename": "noorheroes-appicon-android-foreground-xxxhdpi.png",
+      "width": 432,
+      "height": 432,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 44328,
+      "sha256": "6b725fab0b4043e6fa82a01d846e2428a503566d5248bff5fe063c598efae681"
+    },
+    {
+      "filename": "noorheroes-appicon-android-monochrome-hdpi.png",
+      "width": 162,
+      "height": 162,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 2558,
+      "sha256": "d3d5687ebb89db8c677b9a208596b185dea5b60e4874f70aa709ee2ab9f99bbb"
+    },
+    {
+      "filename": "noorheroes-appicon-android-monochrome-xhdpi.png",
+      "width": 216,
+      "height": 216,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 3550,
+      "sha256": "5b4dbc05a60ad117b34819a30b88b2c2485b95ae51f366e3157ff6a7867c986e"
+    },
+    {
+      "filename": "noorheroes-appicon-android-monochrome-xxhdpi.png",
+      "width": 324,
+      "height": 324,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 5732,
+      "sha256": "9990d1a2279709eed729d1338b4a287b3bd43502fc8aa813c24f3ff4ebfa2fd5"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-teal-mdpi.png",
+      "width": 108,
+      "height": 108,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 392,
+      "sha256": "b9d4e081b91c3cde9744d1dd534fac2f7308fe39c09dd0eeb2e8cae574f21e93"
+    },
+    {
+      "filename": "noorheroes-appicon-android-monochrome-xxxhdpi.png",
+      "width": 432,
+      "height": 432,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 8250,
+      "sha256": "09750c59540460a87c898310b40df0f6404a84a341ef480d6fa4d698bdc60119"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-teal-hdpi.png",
+      "width": 162,
+      "height": 162,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 567,
+      "sha256": "78c7e46e1530db4f05c5d0c509035f94323ab1f16f079499f854d189e7fade1c"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-teal-xhdpi.png",
+      "width": 216,
+      "height": 216,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 729,
+      "sha256": "035bf5a9d9213f85f22e14ce9bc5d38199654e81058dc86e754e6b0379b56491"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-teal-xxhdpi.png",
+      "width": 324,
+      "height": 324,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 1055,
+      "sha256": "343121076a4e0c9f206f80318a77d09e2520e5655f9d8b0d36b1996b3df80e79"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-teal-xxxhdpi.png",
+      "width": 432,
+      "height": 432,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 1728,
+      "sha256": "625244d575178f138f0b794981801b13c55f3cdcfad6fc08f3d87ee39b46a794"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-ivory-mdpi.png",
+      "width": 108,
+      "height": 108,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 392,
+      "sha256": "fd6f557eed433b55ce285c154a1bc549c2849f94e00668b33431d45a1e9ec9fa"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-ivory-hdpi.png",
+      "width": 162,
+      "height": 162,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 569,
+      "sha256": "b55685c3abe6a692a484b65ad74ae267d8b35bc621c7da577c6ac542b2635bf6"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-ivory-xhdpi.png",
+      "width": 216,
+      "height": 216,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 729,
+      "sha256": "f9a2b5e6d05c77442d7fce096dddc30e776ba56bdb6ce9b9c3950acc56203e26"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-ivory-xxhdpi.png",
+      "width": 324,
+      "height": 324,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 1055,
+      "sha256": "c3ed3f0d83169aea5dbab74155fb90a96a57abda34cc8a4377f1ce6d36065c7b"
+    },
+    {
+      "filename": "noorheroes-appicon-android-background-ivory-xxxhdpi.png",
+      "width": 432,
+      "height": 432,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 1728,
+      "sha256": "2cd62a695dd8d15b8618f4446abe08f70e712a0e3101ea33f89242df7098ade2"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-teal-mdpi.png",
+      "width": 48,
+      "height": 48,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 2104,
+      "sha256": "5f8a52711e8f5890356fdbf800815242f090450fca8333f0e5e19152b44eeac8"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-teal-hdpi.png",
+      "width": 72,
+      "height": 72,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 3942,
+      "sha256": "9134257d08c470f8d7d4e8433f13e59473ac7253aa82bf1b1996cb9167160cf9"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-teal-xhdpi.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 6092,
+      "sha256": "e0e6d36e93919cdae10b523bcfc9240664ade3a46b018157a237037a45d272fb"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-teal-xxhdpi.png",
+      "width": 144,
+      "height": 144,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 11696,
+      "sha256": "8e5b1d53103ff8f8f876d44ada6c9f40a15ef2456e6959ebcb0044db52429929"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-teal-xxxhdpi.png",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 18971,
+      "sha256": "191e87e0f6a5cb42c914996bdd6daa41e561499afc26e5c1fc02fe23d5528fcc"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-ivory-mdpi.png",
+      "width": 48,
+      "height": 48,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 2131,
+      "sha256": "81f100f4660523388d1b92ab051ab2343d6e1fa25a8dad6049f3cb4c9708ff73"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-ivory-hdpi.png",
+      "width": 72,
+      "height": 72,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 3957,
+      "sha256": "4e5201fce0104c799118640d3b4404ac232695bb874e7950a2ff767c6ca14629"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-ivory-xhdpi.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 6184,
+      "sha256": "7e7dc2c8915e7f365e854dffaeda65eeed49c38f3f9c0442ccad043506e4f057"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-ivory-xxhdpi.png",
+      "width": 144,
+      "height": 144,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 11781,
+      "sha256": "113e669426c2a0f7d53d5a9af129739d375c4a3b56d712efc2d5858f3f0ec86b"
+    },
+    {
+      "filename": "noorheroes-appicon-android-legacy-ivory-xxxhdpi.png",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 19062,
+      "sha256": "85e345a41d1b979412487dcca8938b06909408a56349d5125555c157e84d5db8"
+    },
+    {
+      "filename": "noorheroes-appicon-googleplay-teal.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 125323,
+      "sha256": "28a27333be290c06a154ed30d123a92a02935e6a4237bde3c04cc1db6edd929c"
+    },
+    {
+      "filename": "noorheroes-appicon-googleplay-ivory.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 125849,
+      "sha256": "56e870d8fec9224db24f562d8dc41469a402a44fd0ece8c8bcb1f45515c3a2df"
+    },
+    {
+      "filename": "noorheroes-brand-logo-full.png",
+      "width": 1529,
+      "height": 525,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 403131,
+      "sha256": "36979c816eee505c4d34e57f5fa1fa27a219eb4d5c273f5817e01edb1e0fd683"
+    },
+    {
+      "filename": "noorheroes-brand-logo-without-tagline.png",
+      "width": 1529,
+      "height": 525,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 330288,
+      "sha256": "41b78526397c827fe47be8986b83a36c8b9fd697e87cb0692202f7e1e20517a1"
+    },
+    {
+      "filename": "noorheroes-brand-logo-monochrome-light.png",
+      "width": 1529,
+      "height": 525,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 133173,
+      "sha256": "773befeff91d710c6ba5bb1d480d55036174a04e15e01c2c336d3b7fbc83875c"
+    },
+    {
+      "filename": "noorheroes-brand-logo-monochrome-dark.png",
+      "width": 1529,
+      "height": 525,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 143439,
+      "sha256": "02492185f4a0f8bbb4c22ed5da716fbda828f438c2c220fddd18ebf4c9cc5edd"
+    },
+    {
+      "filename": "noorheroes-brand-logo-original-teal.png",
+      "width": 1776,
+      "height": 896,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 626978,
+      "sha256": "98b8159acfd812b89e4b4f0281cecd2ecfe5c1c1ceb3e82026f753c6851e3f2e"
+    },
+    {
+      "filename": "noorheroes-brand-wordmark-primary.png",
+      "width": 1592,
+      "height": 310,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 213570,
+      "sha256": "ffc309eda5aed00ea54b84151895525ba7eb7436cb0610dc90489f4c2d07fce4"
+    },
+    {
+      "filename": "noorheroes-brand-logo-original-ivory.png",
+      "width": 1776,
+      "height": 896,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 528083,
+      "sha256": "52b60b8cd90c2fdb658b1367fc801c41c6368b78a220d3306a2faf09d0fc4849"
+    },
+    {
+      "filename": "noorheroes-brand-lockup-horizontal.png",
+      "width": 1500,
+      "height": 400,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 265462,
+      "sha256": "8cb803d25ee8a394e1f6547c1f9504a53a517fca7a688d8f46a4fd61455dc778"
+    },
+    {
+      "filename": "noorheroes-brand-wordmark-with-tagline.png",
+      "width": 952,
+      "height": 325,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 188421,
+      "sha256": "3275299f864fdde4896e6d7c4afa24665e8ff2a1d091ab225b33df400685d399"
+    },
+    {
+      "filename": "noorheroes-brand-lockup-compact.png",
+      "width": 600,
+      "height": 720,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 233514,
+      "sha256": "31088d92d9de14ed936bded2aed06e17c9a68231026d929e9903ff6de3066d94"
+    },
+    {
+      "filename": "noorheroes-brand-wordmark-monochrome-light.png",
+      "width": 1592,
+      "height": 310,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 79552,
+      "sha256": "d9559a60c3f324dff2139144a8b32b72dba3e2e19eaa0465d1a7710211f4a2c5"
+    },
+    {
+      "filename": "noorheroes-brand-wordmark-monochrome-dark.png",
+      "width": 1592,
+      "height": 310,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 87219,
+      "sha256": "161644a61721cf7b2a1382cfdaa4d52dadd99a261ad70227dda6de1298ffc489"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-monochrome-light.png",
+      "width": 819,
+      "height": 909,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 66662,
+      "sha256": "59b4e65ee07df31883f36a4342c872ed802196e03d95279167823ee5d2660abe"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-monochrome-dark.png",
+      "width": 819,
+      "height": 909,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 72971,
+      "sha256": "fe67602654ce8c9a7dea0fa700dfcae7c58e0cc50b1b44f4778c62a8ce20afc8"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-primary.png",
+      "width": 819,
+      "height": 909,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 557979,
+      "sha256": "927f4896c04bbbc1598345cab01954bbb7a3b644fcb08cb3cda7148ecbdcf99c"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-background-teal.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 408586,
+      "sha256": "b5cdc3012d14961a02859d84b1019d85771f227b1a17d53a2fe7e5843c4fbca6"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-featured-background-teal.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 12757,
+      "sha256": "fb39171ab92c88637d14ba4ecf906b0abfdd9675904d9fd26854e6c6dbe523dc"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-original-teal.png",
+      "width": 1264,
+      "height": 1264,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 820422,
+      "sha256": "07c77195ca65e31fc14eb3e307d818612f7a4f8db5805754788e08a9d4ae8069"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-original-ivory.png",
+      "width": 1264,
+      "height": 1264,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 659887,
+      "sha256": "b14d64d7d5ca486722708066320896165ba63235f8de38ef95ddcde97c877d9b"
+    },
+    {
+      "filename": "noorheroes-brand-monogram-background-ivory.png",
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 409945,
+      "sha256": "fe2acd29650e2321c058dfd5f35b3425ff0cfd3417049fe02939370f43339938"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-featured-background-ivory.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 12152,
+      "sha256": "47c4bc237cc6be15f452e1cd117b851fcd93e6103877f772a79d2af722735a2c"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-stories-learning-background-teal.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 13801,
+      "sha256": "0180588d8dacc78fc73c9d45c663db13f8fa2bd08562f9cc3bf2ba40edda9920"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-stories-learning-background-ivory.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 13227,
+      "sha256": "6acc0f7fdc3b89c023f0ca2c8491aeef9359b3e231395dbea8e9b0ab68a4ffb6"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-quran-duas-background-ivory.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 12787,
+      "sha256": "a3986c8b4baf0f78f8cbd0c05e426e6498dbac95cf9138831552aec3266bbd6d"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-missions-habits-background-teal.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 13801,
+      "sha256": "2f82b207584d6d99f4761b82e2a7db4d61be523e30eb0c557e1cde59c257e7f9"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-missions-habits-background-ivory.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 13205,
+      "sha256": "b2b97f10eca08fa22c95aba86ddbed0537f7e14af97ef9b480489068f6811ff5"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-quran-duas-background-teal.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 13387,
+      "sha256": "8cd59f7bdda056d9139cc1c206717de23f562ed208b73744dddfe9103db91cf5"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-announcements-background-teal.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 13482,
+      "sha256": "bb7e2aa97f8388dd130b21cf7062fde93b7a50d95cc859e0bfd2f3f7c516ccb5"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-announcements-background-ivory.png",
+      "width": 350,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 12920,
+      "sha256": "44997408479f189d3b6f249a9fab4ebdf3e22a75b1843d6510204f27bedd094e"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-section-header-background-ivory.png",
+      "width": 350,
+      "height": 120,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 5525,
+      "sha256": "8180bba2c50923fe029e584ebd332576a6924168c37db8aaee437c3d85a09129"
+    },
+    {
+      "filename": "noorheroes-banner-responsive-320.png",
+      "width": 320,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 12904,
+      "sha256": "6cc78f2c3d6aba14e426c99dbc7b886e47cf080ee1956446a8ffeff2476185bd"
+    },
+    {
+      "filename": "noorheroes-banner-tabline-category-section-header-background-teal.png",
+      "width": 350,
+      "height": 120,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 5567,
+      "sha256": "17ea39b9a8fc939794f80883506502ae28657a93f9ec27aaa419a3dc9085e5e2"
+    },
+    {
+      "filename": "noorheroes-social-announcement.png",
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 104094,
+      "sha256": "535ce0a3636d666c3162be032018a1de9daca2078cdbd14ccacbe3016096130f"
+    },
+    {
+      "filename": "noorheroes-social-square.png",
+      "width": 1080,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 108256,
+      "sha256": "78a562669f06652ae4690750cfd2c9ab6c486de237d7aa89e3d5ecc9b83117b3"
+    },
+    {
+      "filename": "noorheroes-banner-responsive-640.png",
+      "width": 640,
+      "height": 228,
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 12737,
+      "sha256": "e6da13458a3fad452653924db2872c0be401d8e0c740668e4ec19fe7cfbc5dbc"
+    },
+    {
+      "filename": "noorheroes-social-education.png",
+      "width": 1080,
+      "height": 1350,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 66239,
+      "sha256": "7f09069833fcc70ffef97277438cb12cf52bd820e407c3f3bc073db12da674b9"
+    },
+    {
+      "filename": "noorheroes-social-launch.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 114786,
+      "sha256": "d3a8c9c74fbe0e653bebe87339684a6d36afe9380bee71f4cff68c62f104f947"
+    },
+    {
+      "filename": "noorheroes-social-profile-teal.png",
+      "width": 400,
+      "height": 400,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 60361,
+      "sha256": "651068195f758f4291b9e594b5b938e97cfe98446b78c5bf7dea5b30683f047e"
+    },
+    {
+      "filename": "noorheroes-cover-youtube-content-editable-platform-youtube.png",
+      "width": 2560,
+      "height": 1440,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 129084,
+      "sha256": "fd6a147f9bfbf35685a6a7b57d66f6deffbee0f6ce85f8dd691212e59b32279e"
+    },
+    {
+      "filename": "noorheroes-cover-youtube-content-clean-platform-youtube.png",
+      "width": 2560,
+      "height": 1440,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 123755,
+      "sha256": "bc6f0de0212bafe6fa4a94fd42e844d55f1fab17b51961f96ee7e21d15bdeaac"
+    },
+    {
+      "filename": "noorheroes-cover-linkedin-company-content-editable-platform-linkedin-company.png",
+      "width": 1512,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 40108,
+      "sha256": "e5ae471a8480cee84d88ce745b9a528bb2790bee4aa2a52c92b03a203bcaf794"
+    },
+    {
+      "filename": "noorheroes-cover-facebook-content-clean-platform-facebook.png",
+      "width": 851,
+      "height": 315,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 34862,
+      "sha256": "f0395c6d6f06d96a8d040ed2e5c4a0d1e13c11c68c46f1d58c15ba8ee7f6c34f"
+    },
+    {
+      "filename": "noorheroes-cover-facebook-content-editable-platform-facebook.png",
+      "width": 851,
+      "height": 315,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 38342,
+      "sha256": "396e351b7704b0426c62800577a98c64c08778771bf8dfe9da2efdbe7e36e615"
+    },
+    {
+      "filename": "noorheroes-cover-linkedin-company-content-clean-platform-linkedin-company.png",
+      "width": 1512,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 36543,
+      "sha256": "5abb76974a8048f99903ca43cbc78433527c9dad76080bd168106bc67320a1dc"
+    },
+    {
+      "filename": "noorheroes-cover-x-content-editable-platform-x.png",
+      "width": 1500,
+      "height": 500,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 71546,
+      "sha256": "2e8dea775f2eb8421294755206efa0cdcf16de1dc1bd2533ee8ab5d9e3043f01"
+    },
+    {
+      "filename": "noorheroes-cover-x-content-clean-platform-x.png",
+      "width": 1500,
+      "height": 500,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 66501,
+      "sha256": "011e4d7946156a5c09c1c378763ce6db77500a7d55ebdb368a7415fdc3be61c8"
+    },
+    {
+      "filename": "noorheroes-cover-website-hero-content-clean-platform-website-hero.png",
+      "width": 1920,
+      "height": 640,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 126911,
+      "sha256": "e0399cd5293cac14ee6a96063ca08f98a04dc23454123516fff72fe26725ed4b"
+    },
+    {
+      "filename": "noorheroes-social-portrait.png",
+      "width": 1080,
+      "height": 1350,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 108894,
+      "sha256": "699b9c9786f6728a2f3fd970afa8b5e609664e40486ce0ea823b3009532934af"
+    },
+    {
+      "filename": "noorheroes-social-profile-ivory.png",
+      "width": 400,
+      "height": 400,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 62172,
+      "sha256": "3294eea5b92fd371a606200921e86e1ec25e2e4b901227e55ac842cb039021e0"
+    },
+    {
+      "filename": "noorheroes-social-story.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 116481,
+      "sha256": "561faaa34224ec56f74a07cb81007695f7a863d988c041015d3c214f15c3fb41"
+    },
+    {
+      "filename": "noorheroes-cover-website-hero-content-editable-platform-website-hero.png",
+      "width": 1920,
+      "height": 640,
+      "mode": "RGBA",
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 134904,
+      "sha256": "4aa590a3f262392ad420b9fa21633a01e85d60b67d5585c6892ae15bc856e5c3"
+    }
+  ]
+}

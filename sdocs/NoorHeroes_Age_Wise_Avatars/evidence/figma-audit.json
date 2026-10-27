@@ -1,0 +1,1108 @@
+{
+  "section": {
+    "id": "1847:3309",
+    "name": "NoorHeroes V2 — Age-Wise Avatar Libraries",
+    "x": 41541,
+    "y": 27541,
+    "width": 2200,
+    "height": 2480
+  },
+  "frames": [
+    {
+      "groupKey": "5_8",
+      "id": "1847:3310",
+      "name": "Avatar Library — Ages 5–8",
+      "width": 976,
+      "height": 1084,
+      "count": 20,
+      "uniqueImages": 20,
+      "labels": [
+        "Avatar 01",
+        "Avatar 02",
+        "Avatar 03",
+        "Avatar 04",
+        "Avatar 05",
+        "Avatar 06",
+        "Avatar 07",
+        "Avatar 08",
+        "Avatar 09",
+        "Avatar 10",
+        "Avatar 11",
+        "Avatar 12",
+        "Avatar 13",
+        "Avatar 14",
+        "Avatar 15",
+        "Avatar 16",
+        "Avatar 17",
+        "Avatar 18",
+        "Avatar 19",
+        "Avatar 20"
+      ],
+      "assets": [
+        {
+          "id": "1847:3318",
+          "name": "avatar_5_8_01",
+          "width": 120,
+          "height": 120,
+          "imageHash": "cf4ec74cf2de5bef4f96881c7babcf3cb6173e11",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3321",
+          "name": "avatar_5_8_02",
+          "width": 120,
+          "height": 120,
+          "imageHash": "0ff792fee161e2fc2caa448079a15831ad019c4d",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3324",
+          "name": "avatar_5_8_03",
+          "width": 120,
+          "height": 120,
+          "imageHash": "de289a4d6ffa4aa1a876ba509ba1be62bb5968a0",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3327",
+          "name": "avatar_5_8_04",
+          "width": 120,
+          "height": 120,
+          "imageHash": "1949d22e85b003c3e3462f67227cf2abdbde9830",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3330",
+          "name": "avatar_5_8_05",
+          "width": 120,
+          "height": 120,
+          "imageHash": "6efd4e3310a8877d47522d27d24d27ccf9560ac8",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3334",
+          "name": "avatar_5_8_06",
+          "width": 120,
+          "height": 120,
+          "imageHash": "51a051bcebec645718e5b4885153edadeeec07e7",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3337",
+          "name": "avatar_5_8_07",
+          "width": 120,
+          "height": 120,
+          "imageHash": "bad114efa00952b11fba2477961251dc3a19607a",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3340",
+          "name": "avatar_5_8_08",
+          "width": 120,
+          "height": 120,
+          "imageHash": "f14b478d86aacd84ba01a83c7d364fe689a2c07c",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3343",
+          "name": "avatar_5_8_09",
+          "width": 120,
+          "height": 120,
+          "imageHash": "ef79376bae2f01132181a160e68369074bdaec68",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3346",
+          "name": "avatar_5_8_10",
+          "width": 120,
+          "height": 120,
+          "imageHash": "7360d175719939b65bcf4be6d4de199c1bf80f94",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3350",
+          "name": "avatar_5_8_11",
+          "width": 120,
+          "height": 120,
+          "imageHash": "327b0ec632fdc5e950c86483ce9d0c2ab37c7697",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3353",
+          "name": "avatar_5_8_12",
+          "width": 120,
+          "height": 120,
+          "imageHash": "b07ead6896e9cef734b4bb02efb37ecfe3ef0b65",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3356",
+          "name": "avatar_5_8_13",
+          "width": 120,
+          "height": 120,
+          "imageHash": "0b794f6aade6bed66fff0c9e690d25ffbb9a9e5f",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3359",
+          "name": "avatar_5_8_14",
+          "width": 120,
+          "height": 120,
+          "imageHash": "d588e4398a320e2e8b5b5072368b31eea31fe9f3",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3362",
+          "name": "avatar_5_8_15",
+          "width": 120,
+          "height": 120,
+          "imageHash": "ad8c2c56af9678b105e326b26db759783e397b6d",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3366",
+          "name": "avatar_5_8_16",
+          "width": 120,
+          "height": 120,
+          "imageHash": "be5344d4a8bb30d3bc48928e3a4cb9435eb54346",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3369",
+          "name": "avatar_5_8_17",
+          "width": 120,
+          "height": 120,
+          "imageHash": "9bf451c672ac573abcc8aa9d0f9721fe5108ad9a",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3372",
+          "name": "avatar_5_8_18",
+          "width": 120,
+          "height": 120,
+          "imageHash": "f73599db2fce078eafbeac294036693a22e91edb",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3375",
+          "name": "avatar_5_8_19",
+          "width": 120,
+          "height": 120,
+          "imageHash": "c547cc27932c4d747ed291aaabb33b1516246853",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3378",
+          "name": "avatar_5_8_20",
+          "width": 120,
+          "height": 120,
+          "imageHash": "b4f55b0aefbee31bf494819902655057a649e47d",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "8_10",
+      "id": "1847:3381",
+      "name": "Avatar Library — Ages 8–10",
+      "width": 976,
+      "height": 1084,
+      "count": 20,
+      "uniqueImages": 20,
+      "labels": [
+        "Avatar 01",
+        "Avatar 02",
+        "Avatar 03",
+        "Avatar 04",
+        "Avatar 05",
+        "Avatar 06",
+        "Avatar 07",
+        "Avatar 08",
+        "Avatar 09",
+        "Avatar 10",
+        "Avatar 11",
+        "Avatar 12",
+        "Avatar 13",
+        "Avatar 14",
+        "Avatar 15",
+        "Avatar 16",
+        "Avatar 17",
+        "Avatar 18",
+        "Avatar 19",
+        "Avatar 20"
+      ],
+      "assets": [
+        {
+          "id": "1847:3389",
+          "name": "avatar_8_10_01",
+          "width": 120,
+          "height": 120,
+          "imageHash": "65873e05d93669d879897f14b0fb99c9e22607dc",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3392",
+          "name": "avatar_8_10_02",
+          "width": 120,
+          "height": 120,
+          "imageHash": "75cbd6ae21423fab862f233e653baba3027bbe0d",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3395",
+          "name": "avatar_8_10_03",
+          "width": 120,
+          "height": 120,
+          "imageHash": "c2ee9b6062e1d1aab03a3b501b51373ac027c4b8",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3398",
+          "name": "avatar_8_10_04",
+          "width": 120,
+          "height": 120,
+          "imageHash": "852b9c80eb13b2bfc8ef6cb3f89d1890d00795cf",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3401",
+          "name": "avatar_8_10_05",
+          "width": 120,
+          "height": 120,
+          "imageHash": "cf37853c4aff388941ae6b00cedde4137d542917",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3405",
+          "name": "avatar_8_10_06",
+          "width": 120,
+          "height": 120,
+          "imageHash": "1d833b6f85acf6c7113d59db18c8b7795790848a",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3408",
+          "name": "avatar_8_10_07",
+          "width": 120,
+          "height": 120,
+          "imageHash": "f2e74e21fc5baeeb53010c83bed002485d6e85b0",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3411",
+          "name": "avatar_8_10_08",
+          "width": 120,
+          "height": 120,
+          "imageHash": "28a5856467613d95175c282db75ad9d70a966eee",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3414",
+          "name": "avatar_8_10_09",
+          "width": 120,
+          "height": 120,
+          "imageHash": "e69c1404f24645c20e0e3ce5fc7b7e092e636bb1",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3417",
+          "name": "avatar_8_10_10",
+          "width": 120,
+          "height": 120,
+          "imageHash": "d7b420d602af98bf786f7346818843927f945d4c",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3421",
+          "name": "avatar_8_10_11",
+          "width": 120,
+          "height": 120,
+          "imageHash": "7df42b698fac1b0396ddaedd330cfbc112241b96",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3424",
+          "name": "avatar_8_10_12",
+          "width": 120,
+          "height": 120,
+          "imageHash": "0679900ec3eb782554e996f9cdc7cf5eb90d12ee",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3427",
+          "name": "avatar_8_10_13",
+          "width": 120,
+          "height": 120,
+          "imageHash": "3094266a7f41b6f1c399936802e6d07e6dbf8a64",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3430",
+          "name": "avatar_8_10_14",
+          "width": 120,
+          "height": 120,
+          "imageHash": "76b73acc9fe0a33a02b4c2dd8c91b45a56d44ad4",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3433",
+          "name": "avatar_8_10_15",
+          "width": 120,
+          "height": 120,
+          "imageHash": "b19984c15c626f0d0e0a3088e9bf5aee702ec576",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3437",
+          "name": "avatar_8_10_16",
+          "width": 120,
+          "height": 120,
+          "imageHash": "0047f75381978d0c0ade3cdc2ba03fb1f9e8e5ee",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3440",
+          "name": "avatar_8_10_17",
+          "width": 120,
+          "height": 120,
+          "imageHash": "4ad58f4c85040265327de21cdcb03442df975f05",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3443",
+          "name": "avatar_8_10_18",
+          "width": 120,
+          "height": 120,
+          "imageHash": "e07657ae03314d429bd1ba702a3e5e3c84b4859f",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3446",
+          "name": "avatar_8_10_19",
+          "width": 120,
+          "height": 120,
+          "imageHash": "d5f904af8d1291ebe96e282d48e22bc6424bc29c",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3449",
+          "name": "avatar_8_10_20",
+          "width": 120,
+          "height": 120,
+          "imageHash": "325182e773eb5d2a77780660853953d4d3c83561",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "10_14",
+      "id": "1847:3452",
+      "name": "Avatar Library — Ages 10–14",
+      "width": 976,
+      "height": 1084,
+      "count": 20,
+      "uniqueImages": 20,
+      "labels": [
+        "Avatar 01",
+        "Avatar 02",
+        "Avatar 03",
+        "Avatar 04",
+        "Avatar 05",
+        "Avatar 06",
+        "Avatar 07",
+        "Avatar 08",
+        "Avatar 09",
+        "Avatar 10",
+        "Avatar 11",
+        "Avatar 12",
+        "Avatar 13",
+        "Avatar 14",
+        "Avatar 15",
+        "Avatar 16",
+        "Avatar 17",
+        "Avatar 18",
+        "Avatar 19",
+        "Avatar 20"
+      ],
+      "assets": [
+        {
+          "id": "1847:3460",
+          "name": "avatar_10_14_01",
+          "width": 120,
+          "height": 120,
+          "imageHash": "a733ce03edb6cd31f15c4a73753ed75d09d97053",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3463",
+          "name": "avatar_10_14_02",
+          "width": 120,
+          "height": 120,
+          "imageHash": "41d14592782f07a4219042b34d9e404d9d8f9a4f",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3466",
+          "name": "avatar_10_14_03",
+          "width": 120,
+          "height": 120,
+          "imageHash": "dd1e12e7b3704f1f22d5fc1c1a5a7b43765f9869",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3469",
+          "name": "avatar_10_14_04",
+          "width": 120,
+          "height": 120,
+          "imageHash": "fb8fa42ebf9a43b1d638b3595a46ecc355309521",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3472",
+          "name": "avatar_10_14_05",
+          "width": 120,
+          "height": 120,
+          "imageHash": "96396594b75b10354a5f685a049481ac958448a1",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3476",
+          "name": "avatar_10_14_06",
+          "width": 120,
+          "height": 120,
+          "imageHash": "aa22440af0d28d3ee41817d439828520e2ca1077",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3479",
+          "name": "avatar_10_14_07",
+          "width": 120,
+          "height": 120,
+          "imageHash": "59b51d9b24e425cc04d515451586fb9007e5b517",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3482",
+          "name": "avatar_10_14_08",
+          "width": 120,
+          "height": 120,
+          "imageHash": "f3bff7244f84d741fff8777a2759950871f0fcd4",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3485",
+          "name": "avatar_10_14_09",
+          "width": 120,
+          "height": 120,
+          "imageHash": "8ecf927e58ed336e134c791ffe5aba33c64087cb",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3488",
+          "name": "avatar_10_14_10",
+          "width": 120,
+          "height": 120,
+          "imageHash": "c9df929c1c544d97235afe8df76604801e7193dd",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3492",
+          "name": "avatar_10_14_11",
+          "width": 120,
+          "height": 120,
+          "imageHash": "81c4a5f80ec737a77bc5def7f36093e0c62c24d2",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3495",
+          "name": "avatar_10_14_12",
+          "width": 120,
+          "height": 120,
+          "imageHash": "d603cd5d69346e321cafe147a9fcdcb333d1e1a6",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3498",
+          "name": "avatar_10_14_13",
+          "width": 120,
+          "height": 120,
+          "imageHash": "a0949cb3cc3ffc48250c55cf1e18cf65c861f687",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3501",
+          "name": "avatar_10_14_14",
+          "width": 120,
+          "height": 120,
+          "imageHash": "eb64b37bf73843f56921937cc7cc890cc9208387",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3504",
+          "name": "avatar_10_14_15",
+          "width": 120,
+          "height": 120,
+          "imageHash": "a4f12273dae17d22513c9330f3cc837f3c0e5da3",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3508",
+          "name": "avatar_10_14_16",
+          "width": 120,
+          "height": 120,
+          "imageHash": "c53a8976ee2514b7f8cc588425d5ab117b9d80f0",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3511",
+          "name": "avatar_10_14_17",
+          "width": 120,
+          "height": 120,
+          "imageHash": "248bddf42edbc507fc81bb9909b2f5af83df970a",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3514",
+          "name": "avatar_10_14_18",
+          "width": 120,
+          "height": 120,
+          "imageHash": "688a694a14f34ab1830a8c1dec365d50d54182ea",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3517",
+          "name": "avatar_10_14_19",
+          "width": 120,
+          "height": 120,
+          "imageHash": "70717c03d3845d5b04dedd02b2ca6cd341a37a8a",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3520",
+          "name": "avatar_10_14_20",
+          "width": 120,
+          "height": 120,
+          "imageHash": "9d5a863a14e6e79abc92d9d7c28510c4776d1df2",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        }
+      ]
+    },
+    {
+      "groupKey": "14_18_plus",
+      "id": "1847:3523",
+      "name": "Avatar Library — Ages 14–18+",
+      "width": 976,
+      "height": 1084,
+      "count": 20,
+      "uniqueImages": 20,
+      "labels": [
+        "Avatar 01",
+        "Avatar 02",
+        "Avatar 03",
+        "Avatar 04",
+        "Avatar 05",
+        "Avatar 06",
+        "Avatar 07",
+        "Avatar 08",
+        "Avatar 09",
+        "Avatar 10",
+        "Avatar 11",
+        "Avatar 12",
+        "Avatar 13",
+        "Avatar 14",
+        "Avatar 15",
+        "Avatar 16",
+        "Avatar 17",
+        "Avatar 18",
+        "Avatar 19",
+        "Avatar 20"
+      ],
+      "assets": [
+        {
+          "id": "1847:3531",
+          "name": "avatar_14_18_plus_01",
+          "width": 120,
+          "height": 120,
+          "imageHash": "1996ca3adab488bca33c16f9944341e444b296ea",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3534",
+          "name": "avatar_14_18_plus_02",
+          "width": 120,
+          "height": 120,
+          "imageHash": "73ae5ab2a24f339e0ac7814ef610b9df79fddf81",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3537",
+          "name": "avatar_14_18_plus_03",
+          "width": 120,
+          "height": 120,
+          "imageHash": "a131efaf356fcd6d4c55c1f1209ac27ef5e6d98b",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3540",
+          "name": "avatar_14_18_plus_04",
+          "width": 120,
+          "height": 120,
+          "imageHash": "9b145916e29432a35cf80ca055563325408b05e9",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3543",
+          "name": "avatar_14_18_plus_05",
+          "width": 120,
+          "height": 120,
+          "imageHash": "fd0db0705d376496b30d41928aeb267fd7114b91",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3547",
+          "name": "avatar_14_18_plus_06",
+          "width": 120,
+          "height": 120,
+          "imageHash": "9ae50c852bc28d4369900d6b626217e00b2c1156",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3550",
+          "name": "avatar_14_18_plus_07",
+          "width": 120,
+          "height": 120,
+          "imageHash": "f212ac663235b44c43c3e5b219d7ef94a19b2542",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3553",
+          "name": "avatar_14_18_plus_08",
+          "width": 120,
+          "height": 120,
+          "imageHash": "424720fa434bbc05f138f42835391289ad5dfde2",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3556",
+          "name": "avatar_14_18_plus_09",
+          "width": 120,
+          "height": 120,
+          "imageHash": "dc67c60fc79104c75bd76e3b748396c55dc59ef1",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3559",
+          "name": "avatar_14_18_plus_10",
+          "width": 120,
+          "height": 120,
+          "imageHash": "81b5d8b38b0b0ddce4c0bd3a403e17f3af337ccd",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3563",
+          "name": "avatar_14_18_plus_11",
+          "width": 120,
+          "height": 120,
+          "imageHash": "c6fa9c682257dac5258d0b2ea28f15d0cfa70f30",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3566",
+          "name": "avatar_14_18_plus_12",
+          "width": 120,
+          "height": 120,
+          "imageHash": "6f52227133a59b834f68a0f88113f76be1e71acd",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3569",
+          "name": "avatar_14_18_plus_13",
+          "width": 120,
+          "height": 120,
+          "imageHash": "1c284f68dcbcd9b9093671c7127428c2b02ce760",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3572",
+          "name": "avatar_14_18_plus_14",
+          "width": 120,
+          "height": 120,
+          "imageHash": "ea81ab84d96ccba3e9a0cc44e47d246792db749d",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3575",
+          "name": "avatar_14_18_plus_15",
+          "width": 120,
+          "height": 120,
+          "imageHash": "4def763debdefb3de4d898ea0a8430f2bb839bb0",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3579",
+          "name": "avatar_14_18_plus_16",
+          "width": 120,
+          "height": 120,
+          "imageHash": "bbd7f646c6f1abb71a2b305f5bf0139e705516d9",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3582",
+          "name": "avatar_14_18_plus_17",
+          "width": 120,
+          "height": 120,
+          "imageHash": "3b1bb68a5301ffabef1a8ff32110547f2aba966a",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3585",
+          "name": "avatar_14_18_plus_18",
+          "width": 120,
+          "height": 120,
+          "imageHash": "a4b612d3e9f73dc1431cb47fa45e902653564174",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3588",
+          "name": "avatar_14_18_plus_19",
+          "width": 120,
+          "height": 120,
+          "imageHash": "5e3fd9fe7c63aef4c1d7adf53a70a8358fbde5e1",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        },
+        {
+          "id": "1847:3591",
+          "name": "avatar_14_18_plus_20",
+          "width": 120,
+          "height": 120,
+          "imageHash": "24bc1e1e9d06fb09b63b70b7fd287431fd0fc407",
+          "sourceSize": {
+            "width": 1264,
+            "height": 1264
+          }
+        }
+      ]
+    }
+  ],
+  "totalImages": 80,
+  "uniqueImages": 80,
+  "missingImageFills": 0,
+  "exactImageDuplicatesOfPreviousLibrary": 0,
+  "overflow": [],
+  "previousLibrary": {
+    "id": "1842:3309",
+    "width": 976,
+    "height": 1084,
+    "imageCount": 20,
+    "hashes": [
+      "ae0cc6509162437adbb7605a2f23a55194f781ae",
+      "7b0c4aba9d9fe7693938271a70cd51577843f6ea",
+      "685677b84971d85b2e9216a893c06d7506c08fb6",
+      "a47a49cde3230dc831eb24c07c03fcb6ddd1301c",
+      "71d84a0e4a27c60d9009ba8f0283d355e9523d4a",
+      "ee6ce316c327f84b61b7a912b5012aa3beaf65f3",
+      "4676aae25ab76be3c2b754dc46dcce3b1b419d18",
+      "b907560261a0fd4e2eefbb4b22afa5213dde0942",
+      "d1eca99c6a3e258b69b56c9081bb1999b29af5e4",
+      "25f0e166f322593803ba0c1574783e7f1589783f",
+      "a0d240d4fc50aeea62f94c2b815e983cf761d074",
+      "c2d33f104d7dd8b370e4741ba462bbac2511b49a",
+      "531cdcd5b11cf1e2a825b00042a191f4f55d185d",
+      "9e3ee1a1e25714f63111560ce40441f61e43e958",
+      "ff2a9ad04ca9a5108b0280eabeee3fb2d3ada2a0",
+      "18a7a615c5b0de4bf45510366dc8a0b7beb7e9db",
+      "943cfe97ba7c491db37c11d283769688d27652c8",
+      "3427cc4411d3f6721a79f7a8f46973295d224608",
+      "3eb6816b66f060f7aeff6edb5d1bcd7aa196bc81",
+      "340e9376593fd6895b574e063bef51febaf46c93"
+    ]
+  },
+  "existingFrames": [
+    {
+      "id": "1085:13003",
+      "name": "Frame 2",
+      "x": 77201,
+      "y": 12727,
+      "width": 15314,
+      "height": 10825
+    },
+    {
+      "id": "1095:2",
+      "name": "Frame 1",
+      "x": 58509,
+      "y": 12727,
+      "width": 16704,
+      "height": 10825
+    },
+    {
+      "id": "1128:2",
+      "name": "NoorHeroes V2 Design",
+      "x": 41541,
+      "y": 12727,
+      "width": 4800,
+      "height": 14014
+    },
+    {
+      "id": "1428:7654",
+      "name": "NH/V2/Auth/Google Timeout — Shared Loader",
+      "x": 1760,
+      "y": 80,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "1431:11603",
+      "name": "Frame 3",
+      "x": 96254,
+      "y": 12727,
+      "width": 6086,
+      "height": 10825
+    },
+    {
+      "id": "1842:3309",
+      "name": "NoorHeroes V2 — Avatar Library",
+      "x": 103140,
+      "y": 12727,
+      "width": 976,
+      "height": 1084
+    }
+  ],
+  "existingFramesMatchBaseline": true
+}

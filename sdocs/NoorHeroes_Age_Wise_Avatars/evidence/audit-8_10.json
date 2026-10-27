@@ -1,0 +1,207 @@
+{
+  "count": 20,
+  "uniqueHashes": 20,
+  "sourceBytesPreserved": true,
+  "files": [
+    {
+      "id": "nh_avatar_8_10_01",
+      "filename": "avatar_8_10_01.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2430068,
+      "sha256": "feb5d58c5859a55bbae5ad139cc96321554d1ae76874c3010183479e699e7ef0"
+    },
+    {
+      "id": "nh_avatar_8_10_02",
+      "filename": "avatar_8_10_02.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2331623,
+      "sha256": "676788160490d8397601c6c58d0f5f3bc27c7e14902d8264f6c2b03ec56da801"
+    },
+    {
+      "id": "nh_avatar_8_10_03",
+      "filename": "avatar_8_10_03.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2475078,
+      "sha256": "0a84a25f111692a407ccfb56d11287601df3f1ad638615a0a0ff2a3f81382f08"
+    },
+    {
+      "id": "nh_avatar_8_10_04",
+      "filename": "avatar_8_10_04.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2345877,
+      "sha256": "13e9178b403797596fbf8bddb475801b8c2e6cb85140eca2451c526bdae1843d"
+    },
+    {
+      "id": "nh_avatar_8_10_05",
+      "filename": "avatar_8_10_05.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2432777,
+      "sha256": "a00d3613c2d4700610b1aa3a2225f96c68933f34a338dc57ae4eebcdd5f1331e"
+    },
+    {
+      "id": "nh_avatar_8_10_06",
+      "filename": "avatar_8_10_06.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2268542,
+      "sha256": "ea52b4ee7378b4e00a8c83fa037efb6c213f3f6e643a7a658e3b2aedf1d97fa5"
+    },
+    {
+      "id": "nh_avatar_8_10_07",
+      "filename": "avatar_8_10_07.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2389019,
+      "sha256": "6e1bd909750d0f9b70173919c63c732380f5953eceff4edb864755231ca424b3"
+    },
+    {
+      "id": "nh_avatar_8_10_08",
+      "filename": "avatar_8_10_08.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2186711,
+      "sha256": "a4290fa36dfdf85f312dcc140683edfde73ccc297caf04df8cafab02db5e8fd9"
+    },
+    {
+      "id": "nh_avatar_8_10_09",
+      "filename": "avatar_8_10_09.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2489063,
+      "sha256": "5545e16e3c2d4e1ce3dd1c80c51fb532330ac111cad581297f373f8b4b1c131b"
+    },
+    {
+      "id": "nh_avatar_8_10_10",
+      "filename": "avatar_8_10_10.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2187611,
+      "sha256": "300c0482f45105b3cb1719a7ce4e1c5b4ab269ded4852456f45a8c1845476818"
+    },
+    {
+      "id": "nh_avatar_8_10_11",
+      "filename": "avatar_8_10_11.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2385511,
+      "sha256": "f17254ecb7893a60ab4fa5147fe882b20c76cb88f5d6d068e5f2e71973764077"
+    },
+    {
+      "id": "nh_avatar_8_10_12",
+      "filename": "avatar_8_10_12.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2389600,
+      "sha256": "11bbb86d9481a5074c0e92b6b3f2899d20bb5a6417b1ad5aeba453a53f475e31"
+    },
+    {
+      "id": "nh_avatar_8_10_13",
+      "filename": "avatar_8_10_13.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2275786,
+      "sha256": "544683008eed2a3aa17c58529563f41f13b6fdc771d3cdc4360aa9abecc457bc"
+    },
+    {
+      "id": "nh_avatar_8_10_14",
+      "filename": "avatar_8_10_14.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2291089,
+      "sha256": "51cc9c1f411a7622951d34af68ec79cad2813caaaeaf965c2410d8c010559bb6"
+    },
+    {
+      "id": "nh_avatar_8_10_15",
+      "filename": "avatar_8_10_15.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2405372,
+      "sha256": "b3b961b9c893086fe3e76cadd888d01fa6d7fe46d927007e7ad3681ff56f5220"
+    },
+    {
+      "id": "nh_avatar_8_10_16",
+      "filename": "avatar_8_10_16.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2347697,
+      "sha256": "3638d56d479f6e98c938966d6e1251ef3e21a7f6540a64de88596a9cd724a877"
+    },
+    {
+      "id": "nh_avatar_8_10_17",
+      "filename": "avatar_8_10_17.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2387440,
+      "sha256": "beba1cd5b7741238e796be06df561bd14010c7f7911e99eb2837b14971ca486d"
+    },
+    {
+      "id": "nh_avatar_8_10_18",
+      "filename": "avatar_8_10_18.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2440158,
+      "sha256": "b433fa7b0bf7205ebbf5df39eca75b4e8d139251f45c853c0fdd9dcc16305d8f"
+    },
+    {
+      "id": "nh_avatar_8_10_19",
+      "filename": "avatar_8_10_19.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2504954,
+      "sha256": "47f86ea3bcf88ea3540e72c94f42c666be429eb69cfef66aa6220c5e72a25f54"
+    },
+    {
+      "id": "nh_avatar_8_10_20",
+      "filename": "avatar_8_10_20.png",
+      "groupKey": "8_10",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2376465,
+      "sha256": "86719ebbb02164d957275caccf3358051cfe39977e6d132d1924b98889816d1c"
+    }
+  ]
+}

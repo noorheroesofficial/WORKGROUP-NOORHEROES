@@ -1,0 +1,207 @@
+{
+  "count": 20,
+  "uniqueHashes": 20,
+  "sourceBytesPreserved": true,
+  "files": [
+    {
+      "id": "nh_avatar_14_18_plus_01",
+      "filename": "avatar_14_18_plus_01.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2488064,
+      "sha256": "a7e4eca28b7536e1af9154be07ac5e8a0e8c72f48ef316218aff6685af9faed7"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_02",
+      "filename": "avatar_14_18_plus_02.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2161574,
+      "sha256": "8cd5595d34097ad07dfd4fc8c3357a5b5eae2eb4ecb3f59c07ad7de40b8a450d"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_03",
+      "filename": "avatar_14_18_plus_03.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2439856,
+      "sha256": "30ebc3c71f9511fb8634b74bc50dea9f7af3a8d0a53c6dc5250bfd62c8d23c2c"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_04",
+      "filename": "avatar_14_18_plus_04.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2360111,
+      "sha256": "9c3bbb47cec64142e72fb7fd1f227fb7463b8e38fb7cb3273c1db4731ac393d9"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_05",
+      "filename": "avatar_14_18_plus_05.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2311463,
+      "sha256": "9f0142359da9198f8d8650d6526ae92bcb49ca048e2987429a05bc7ef05e4707"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_06",
+      "filename": "avatar_14_18_plus_06.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2351027,
+      "sha256": "268c9fc71b8b834aa2c7b63eb369269fb3ecd40c43b65ff10e23b135af5465c6"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_07",
+      "filename": "avatar_14_18_plus_07.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2450028,
+      "sha256": "90f0457651d5dccecd3b87fd22be08b7b8db8b271d99140ec54687e0e2fbbe3e"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_08",
+      "filename": "avatar_14_18_plus_08.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2426237,
+      "sha256": "adc5458cfaf806e8f55c677081a00ed78f3c4c945290af2dbe4d84827abfd010"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_09",
+      "filename": "avatar_14_18_plus_09.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2422807,
+      "sha256": "42b3c7702b2f8e39eba596d5491d7c2f981df501cada09df7ef5accb0d97f4e0"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_10",
+      "filename": "avatar_14_18_plus_10.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2469464,
+      "sha256": "385a84706246d6727de95f049ec519274c9dac657c52b182ab710ab591176219"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_11",
+      "filename": "avatar_14_18_plus_11.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2495820,
+      "sha256": "c91dc6acd54b71aaf88c67904b86dc39fde13221433eceb70441117bd201b30b"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_12",
+      "filename": "avatar_14_18_plus_12.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2456280,
+      "sha256": "998853973f68a056c08900c703066c96112e3b5bf484298e90dea6e0a90029a7"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_13",
+      "filename": "avatar_14_18_plus_13.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2320526,
+      "sha256": "d5801ea149e05a5670884e708f5cffc2cb46a7951a09d499c00be3302fe9436d"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_14",
+      "filename": "avatar_14_18_plus_14.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2537368,
+      "sha256": "c582a41a8c939a0077064d2c788cf030c2d7b139101a1ebf7ee771506912e280"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_15",
+      "filename": "avatar_14_18_plus_15.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2449065,
+      "sha256": "92445c189b6e8fbb404682f04ee513c546669ade8f2753088ce1f9228d9bfd0a"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_16",
+      "filename": "avatar_14_18_plus_16.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2170793,
+      "sha256": "4f6eee52873608afec30996d9d4e3590cdf4125f798123f908e9a9f682a6025c"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_17",
+      "filename": "avatar_14_18_plus_17.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2380714,
+      "sha256": "7248c0897f114c2e8cf3d0d4a39cc7f9e53906a0ecd615e2d5525d4d75201e62"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_18",
+      "filename": "avatar_14_18_plus_18.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2254717,
+      "sha256": "9d9ee8bff3fc50da8d94f8779c5f97e6b2c14a673745f0db6ed014425ad3c381"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_19",
+      "filename": "avatar_14_18_plus_19.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2265285,
+      "sha256": "fea83983285d43d26136812805d0497e764e2dbef547a8c8e924d735c629a835"
+    },
+    {
+      "id": "nh_avatar_14_18_plus_20",
+      "filename": "avatar_14_18_plus_20.png",
+      "groupKey": "14_18_plus",
+      "width": 1264,
+      "height": 1264,
+      "mimeType": "image/png",
+      "bytes": 2119327,
+      "sha256": "8032e801b90798f2283c43817cda47a9b09808865ebce499a81d34495b5c7229"
+    }
+  ]
+}

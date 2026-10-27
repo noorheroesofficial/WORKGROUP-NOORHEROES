@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "NoorHeroes Rewards Ledger Transaction Lifecycle",
+    "output": "rewards-ledger.lifecycle.html",
+    "viewBox": [1080, 630],
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "commit-rail",
+        "label": "Primary Commit Rail",
+        "focus": ["created", "pending", "processing", "verifying", "success"],
+        "note": "Follow the rewards transaction from mission event intake to final immutable ledger commit."
+      },
+      {
+        "id": "retry-and-recovery",
+        "label": "Transient Retry Loop",
+        "focus": ["processing", "retrying", "failed"],
+        "note": "Inspect database lock contention handling with exponential backoff before DLQ routing."
+      },
+      {
+        "id": "terminal-exits",
+        "label": "Terminal Exits",
+        "focus": ["verifying", "success", "failed"],
+        "note": "Compare durable success ledger state against the dead-letter queue failure outcome."
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "main", "label": "Lifecycle phases" },
+    { "id": "exceptions", "label": "Recovery loop" },
+    { "id": "terminal", "label": "Terminal exits" }
+  ],
+  "states": [
+    { "id": "created", "type": "start", "label": "Created", "sublabel": "mission finished", "lane": "main", "col": 0, "step": "01", "tag": "event" },
+    { "id": "pending", "type": "active", "label": "Pending", "sublabel": "outbox queued", "lane": "main", "col": 1, "step": "02", "tag": "queue" },
+    { "id": "processing", "type": "active", "label": "Processing", "sublabel": "worker claim", "lane": "main", "col": 2, "step": "03", "tag": "worker" },
+    { "id": "verifying", "type": "decision", "label": "Verifying", "sublabel": "double-entry check", "lane": "main", "col": 3, "step": "04", "tag": "audit" },
+    { "id": "success", "type": "success", "label": "Success", "sublabel": "ledger committed", "lane": "main", "col": 4, "step": "05", "tag": "durable" },
+    { "id": "retrying", "type": "failure", "label": "Retrying", "sublabel": "exponential backoff", "lane": "exceptions", "col": 0, "yOffset": 30, "tag": "retryable" },
+    { "id": "failed", "type": "failure", "label": "Failed", "sublabel": "dead-letter queue", "lane": "terminal", "col": 0, "tag": "terminal" }
+  ],
+  "transitions": [
+    { "id": "proc-retry", "from": "processing", "to": "retrying", "variant": "security", "fromSide": "left", "toSide": "left", "via": [[320, 157], [320, 337]] },
+    { "id": "retry-proc", "from": "retrying", "to": "processing", "variant": "emphasis", "fromSide": "left", "toSide": "top", "via": [[20, 337], [20, 80], [402, 80]] },
+    { "id": "retry-failed", "from": "retrying", "to": "failed", "variant": "security", "fromSide": "bottom", "toSide": "top", "route": "straight" }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Ordered Ledger Rail",
+      "items": [
+        "Mission completion events trigger double-entry outbox records",
+        "Worker claims records in order and commits verified stars"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Recovery & DLQ Exits",
+      "items": [
+        "Transient database lock triggers exponential backoff retry",
+        "Exhausted retries route to Dead-Letter Queue with audit alert"
+      ]
+    }
+  ]
+}

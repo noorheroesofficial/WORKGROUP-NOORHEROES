@@ -1,0 +1,19 @@
+{
+  "name": "workgroup-noorheroes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NoorHeroes Workgroup - Architecture Visualization & Unified Tooling",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "archify": "node bin/archify.mjs",
+    "archify:doctor": "node bin/archify.mjs doctor",
+    "archify:validate": "node scripts/archify-validate-all.mjs",
+    "archify:build": "node scripts/archify-build-all.mjs",
+    "archify:visual-check": "node scripts/archify-visual-check-all.mjs",
+    "test": "node bin/archify.mjs doctor && node scripts/archify-validate-all.mjs",
+    "build": "node scripts/archify-build-all.mjs"
+  }
+}
