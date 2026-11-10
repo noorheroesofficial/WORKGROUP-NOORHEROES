@@ -1,0 +1,1225 @@
+{
+  "checks": [
+    {
+      "name": "Default standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Default fixed card",
+      "pass": true
+    },
+    {
+      "name": "Default inner scroll",
+      "pass": true
+    },
+    {
+      "name": "Default footer clearance",
+      "pass": true
+    },
+    {
+      "name": "Default draft label exact",
+      "pass": true
+    },
+    {
+      "name": "Default Back target",
+      "pass": true
+    },
+    {
+      "name": "Default Back close only",
+      "pass": true
+    },
+    {
+      "name": "Default no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Default no external URL",
+      "pass": true
+    },
+    {
+      "name": "Default no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Default static decorations",
+      "pass": true
+    },
+    {
+      "name": "Default correct title",
+      "pass": true
+    },
+    {
+      "name": "Default seven headings and seven bodies",
+      "pass": true
+    },
+    {
+      "name": "Default exact assembled draft",
+      "pass": true
+    },
+    {
+      "name": "Default body size sixteen",
+      "pass": true
+    },
+    {
+      "name": "Default wraps at common edge",
+      "pass": true
+    },
+    {
+      "name": "Default last section within document",
+      "pass": true
+    },
+    {
+      "name": "Default overflow present",
+      "pass": true
+    },
+    {
+      "name": "Default status outside scroll",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture fixed card",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture inner scroll",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture footer clearance",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture draft label exact",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture Back target",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture Back close only",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no external URL",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture static decorations",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture correct title",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture seven headings and seven bodies",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture exact assembled draft",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture body size sixteen",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture wraps at common edge",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture last section within document",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture overflow present",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture status outside scroll",
+      "pass": true
+    },
+    {
+      "name": "Loading standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Loading fixed card",
+      "pass": true
+    },
+    {
+      "name": "Loading inner scroll",
+      "pass": true
+    },
+    {
+      "name": "Loading footer clearance",
+      "pass": true
+    },
+    {
+      "name": "Loading draft label exact",
+      "pass": true
+    },
+    {
+      "name": "Loading Back target",
+      "pass": true
+    },
+    {
+      "name": "Loading Back close only",
+      "pass": true
+    },
+    {
+      "name": "Loading no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Loading no external URL",
+      "pass": true
+    },
+    {
+      "name": "Loading no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Loading static decorations",
+      "pass": true
+    },
+    {
+      "name": "Loading correct title",
+      "pass": true
+    },
+    {
+      "name": "Loading status center",
+      "pass": true
+    },
+    {
+      "name": "Unavailable standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Unavailable fixed card",
+      "pass": true
+    },
+    {
+      "name": "Unavailable inner scroll",
+      "pass": true
+    },
+    {
+      "name": "Unavailable footer clearance",
+      "pass": true
+    },
+    {
+      "name": "Unavailable draft label exact",
+      "pass": true
+    },
+    {
+      "name": "Unavailable Back target",
+      "pass": true
+    },
+    {
+      "name": "Unavailable Back close only",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no external URL",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Unavailable static decorations",
+      "pass": true
+    },
+    {
+      "name": "Unavailable correct title",
+      "pass": true
+    },
+    {
+      "name": "Unavailable status center",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion standard viewport",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion fixed card",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion inner scroll",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion footer clearance",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion draft label exact",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Back target",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Back close only",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no consent writes",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no external URL",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no agreement control",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion static decorations",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion correct title",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion seven headings and seven bodies",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion exact assembled draft",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion body size sixteen",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion wraps at common edge",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion last section within document",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion overflow present",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion status outside scroll",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading standard viewport",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading fixed card",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading inner scroll",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading footer clearance",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading draft label exact",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading Back target",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading Back close only",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no consent writes",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no external URL",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no agreement control",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading static decorations",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading correct title",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading status center",
+      "pass": true
+    },
+    {
+      "name": "1513:369 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:368 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "1513:367 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:366 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "1513:405 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:404 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "1513:407 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:406 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "1513:409 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:408 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "1513:411 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:410 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "1513:413 exact source body",
+      "pass": true
+    },
+    {
+      "name": "1513:412 heading words unchanged",
+      "pass": true
+    },
+    {
+      "name": "Read Child-Data Processing Consent local reader entry",
+      "pass": true
+    },
+    {
+      "name": "Read Child-Data Processing Consent touch area",
+      "pass": true
+    },
+    {
+      "name": "Loading → draft fixture local reader entry",
+      "pass": true
+    },
+    {
+      "name": "Loading → draft fixture touch area",
+      "pass": true
+    },
+    {
+      "name": "Unavailable → Retry local reader entry",
+      "pass": true
+    },
+    {
+      "name": "Unavailable → Retry touch area",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture local reader entry",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture touch area",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion local reader entry",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion touch area",
+      "pass": true
+    },
+    {
+      "name": "Reduced loading → draft local reader entry",
+      "pass": true
+    },
+    {
+      "name": "Reduced loading → draft touch area",
+      "pass": true
+    },
+    {
+      "name": "Loading close before open",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading close before open",
+      "pass": true
+    },
+    {
+      "name": "Retry opens only local loading",
+      "pass": true
+    },
+    {
+      "name": "Reduced loader Still phase",
+      "pass": true
+    },
+    {
+      "name": "Within existing V2",
+      "pass": true
+    },
+    {
+      "name": "Sources unchanged during build",
+      "pass": true
+    },
+    {
+      "name": "Body contrast passes4.5",
+      "pass": true
+    },
+    {
+      "name": "Notice contrast passes4.5",
+      "pass": true
+    }
+  ],
+  "passed": 130,
+  "total": 130,
+  "ledger": {
+    "Default": {
+      "root": "2437:15868",
+      "back": "2437:15927",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2437:16863",
+          "text": "1. Child profile",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16864",
+          "text": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        },
+        {
+          "id": "2437:16865",
+          "text": "2. Child’s age",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16866",
+          "text": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        },
+        {
+          "id": "2437:16867",
+          "text": "3. Why it is collected and used",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16868",
+          "text": "Account information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent.",
+          "width": 338,
+          "height": 182,
+          "size": 16
+        },
+        {
+          "id": "2437:16869",
+          "text": "4. Optional processing remains separate",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16870",
+          "text": "Personalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options.",
+          "width": 338,
+          "height": 208,
+          "size": 16
+        },
+        {
+          "id": "2437:16871",
+          "text": "5. How information is protected",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16872",
+          "text": "Draft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented.",
+          "width": 338,
+          "height": 234,
+          "size": 16
+        },
+        {
+          "id": "2437:16873",
+          "text": "6. Access, correction and deletion",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16874",
+          "text": "Parents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request.",
+          "width": 338,
+          "height": 234,
+          "size": 16
+        },
+        {
+          "id": "2437:16875",
+          "text": "7. Fictional example",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16876",
+          "text": "Ayaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2437:15927",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Cached draft fixture": {
+      "root": "2437:15930",
+      "back": "2437:15989",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2437:16890",
+          "text": "1. Child profile",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16891",
+          "text": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        },
+        {
+          "id": "2437:16892",
+          "text": "2. Child’s age",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16893",
+          "text": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        },
+        {
+          "id": "2437:16894",
+          "text": "3. Why it is collected and used",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16895",
+          "text": "Account information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent.",
+          "width": 338,
+          "height": 182,
+          "size": 16
+        },
+        {
+          "id": "2437:16896",
+          "text": "4. Optional processing remains separate",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16897",
+          "text": "Personalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options.",
+          "width": 338,
+          "height": 208,
+          "size": 16
+        },
+        {
+          "id": "2437:16898",
+          "text": "5. How information is protected",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16899",
+          "text": "Draft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented.",
+          "width": 338,
+          "height": 234,
+          "size": 16
+        },
+        {
+          "id": "2437:16900",
+          "text": "6. Access, correction and deletion",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16901",
+          "text": "Parents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request.",
+          "width": 338,
+          "height": 234,
+          "size": 16
+        },
+        {
+          "id": "2437:16902",
+          "text": "7. Fictional example",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16903",
+          "text": "Ayaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2437:15989",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Loading": {
+      "root": "2437:15992",
+      "back": "2437:16039",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2437:16034",
+          "text": "Child-Data Processing Consent",
+          "width": 310,
+          "height": 24,
+          "size": 14
+        },
+        {
+          "id": "I2437:16035;329:5",
+          "text": "Child-Data Processing Consent",
+          "width": 225,
+          "height": 20,
+          "size": 14
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2437:15992",
+          "name": "NH/Enhanced/033/Child_Data_Processing_Consent_full_document/Loading",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                },
+                {
+                  "type": "NODE",
+                  "destinationId": "2437:15868",
+                  "navigation": "OVERLAY",
+                  "transition": null,
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "AFTER_TIMEOUT",
+                "timeout": 1.2000000476837158
+              }
+            }
+          ]
+        },
+        {
+          "id": "2437:16039",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Unavailable": {
+      "root": "2437:16042",
+      "back": "2437:16089",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2437:16084",
+          "text": "An unexpected error occurred. Please try again.",
+          "width": 310,
+          "height": 48,
+          "size": 14
+        },
+        {
+          "id": "I2437:16085;322:3",
+          "text": "Retry",
+          "width": 38,
+          "height": 20,
+          "size": 14
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2437:16085",
+          "name": "NH/Button",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                },
+                {
+                  "type": "NODE",
+                  "destinationId": "2437:15992",
+                  "navigation": "OVERLAY",
+                  "transition": null,
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2437:16089",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReducedMotion": {
+      "root": "2437:16092",
+      "back": "2437:16151",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2437:16917",
+          "text": "1. Child profile",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16918",
+          "text": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        },
+        {
+          "id": "2437:16919",
+          "text": "2. Child’s age",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16920",
+          "text": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        },
+        {
+          "id": "2437:16921",
+          "text": "3. Why it is collected and used",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16922",
+          "text": "Account information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent.",
+          "width": 338,
+          "height": 182,
+          "size": 16
+        },
+        {
+          "id": "2437:16923",
+          "text": "4. Optional processing remains separate",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16924",
+          "text": "Personalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options.",
+          "width": 338,
+          "height": 208,
+          "size": 16
+        },
+        {
+          "id": "2437:16925",
+          "text": "5. How information is protected",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16926",
+          "text": "Draft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented.",
+          "width": 338,
+          "height": 234,
+          "size": 16
+        },
+        {
+          "id": "2437:16927",
+          "text": "6. Access, correction and deletion",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16928",
+          "text": "Parents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request.",
+          "width": 338,
+          "height": 234,
+          "size": 16
+        },
+        {
+          "id": "2437:16929",
+          "text": "7. Fictional example",
+          "width": 338,
+          "height": 26,
+          "size": 16
+        },
+        {
+          "id": "2437:16930",
+          "text": "Ayaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record.",
+          "width": 338,
+          "height": 156,
+          "size": 16
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2437:16151",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReducedMotion Loading": {
+      "root": "2437:16154",
+      "back": "2437:16201",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2437:16196",
+          "text": "Child-Data Processing Consent",
+          "width": 310,
+          "height": 24,
+          "size": 14
+        },
+        {
+          "id": "I2437:16197;329:5",
+          "text": "Child-Data Processing Consent",
+          "width": 225,
+          "height": 20,
+          "size": 14
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2437:16154",
+          "name": "NH/Enhanced/033/Child_Data_Processing_Consent_full_document/ReducedMotion Loading",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                },
+                {
+                  "type": "NODE",
+                  "destinationId": "2437:16092",
+                  "navigation": "OVERLAY",
+                  "transition": null,
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "AFTER_TIMEOUT",
+                "timeout": 1.2000000476837158
+              }
+            }
+          ]
+        },
+        {
+          "id": "2437:16201",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "contrast": {
+    "body": 13.604324815703482,
+    "notice": 4.518488979052395
+  },
+  "limits": [
+    "Live Present blocked by saved permission",
+    "Legal version and approved production document missing",
+    "Registration reader integration pending",
+    "No real fetching or valid-cache check",
+    "390x844 only; runtime accessibility and RTL unverified"
+  ]
+}

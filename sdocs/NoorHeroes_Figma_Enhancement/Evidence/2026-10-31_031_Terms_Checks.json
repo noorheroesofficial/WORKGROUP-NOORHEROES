@@ -1,0 +1,1261 @@
+{
+  "checks": [
+    {
+      "name": "Default standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Default fixed main card",
+      "pass": true
+    },
+    {
+      "name": "Default inner scroll only",
+      "pass": true
+    },
+    {
+      "name": "Default footer clear of document",
+      "pass": true
+    },
+    {
+      "name": "Default exact visible draft label",
+      "pass": true
+    },
+    {
+      "name": "Default Back hit area",
+      "pass": true
+    },
+    {
+      "name": "Default Back closes only reader",
+      "pass": true
+    },
+    {
+      "name": "Default no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Default no production URL",
+      "pass": true
+    },
+    {
+      "name": "Default no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Default no star event loops",
+      "pass": true
+    },
+    {
+      "name": "Default six headings and six bodies",
+      "pass": true
+    },
+    {
+      "name": "Default source copy exact",
+      "pass": true
+    },
+    {
+      "name": "Default body sixteen",
+      "pass": true
+    },
+    {
+      "name": "Default body wraps at common edge",
+      "pass": true
+    },
+    {
+      "name": "Default final section fits document",
+      "pass": true
+    },
+    {
+      "name": "Default document actually scrolls",
+      "pass": true
+    },
+    {
+      "name": "Default label outside scroll",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture fixed main card",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture inner scroll only",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture footer clear of document",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture exact visible draft label",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture Back hit area",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture Back closes only reader",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no production URL",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture no star event loops",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture six headings and six bodies",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture source copy exact",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture body sixteen",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture body wraps at common edge",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture final section fits document",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture document actually scrolls",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture label outside scroll",
+      "pass": true
+    },
+    {
+      "name": "Loading standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Loading fixed main card",
+      "pass": true
+    },
+    {
+      "name": "Loading inner scroll only",
+      "pass": true
+    },
+    {
+      "name": "Loading footer clear of document",
+      "pass": true
+    },
+    {
+      "name": "Loading exact visible draft label",
+      "pass": true
+    },
+    {
+      "name": "Loading Back hit area",
+      "pass": true
+    },
+    {
+      "name": "Loading Back closes only reader",
+      "pass": true
+    },
+    {
+      "name": "Loading no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Loading no production URL",
+      "pass": true
+    },
+    {
+      "name": "Loading no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Loading no star event loops",
+      "pass": true
+    },
+    {
+      "name": "Loading status centered in full viewport",
+      "pass": true
+    },
+    {
+      "name": "Unavailable standard viewport",
+      "pass": true
+    },
+    {
+      "name": "Unavailable fixed main card",
+      "pass": true
+    },
+    {
+      "name": "Unavailable inner scroll only",
+      "pass": true
+    },
+    {
+      "name": "Unavailable footer clear of document",
+      "pass": true
+    },
+    {
+      "name": "Unavailable exact visible draft label",
+      "pass": true
+    },
+    {
+      "name": "Unavailable Back hit area",
+      "pass": true
+    },
+    {
+      "name": "Unavailable Back closes only reader",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no consent writes",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no production URL",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no agreement control",
+      "pass": true
+    },
+    {
+      "name": "Unavailable no star event loops",
+      "pass": true
+    },
+    {
+      "name": "Unavailable status centered in full viewport",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion standard viewport",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion fixed main card",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion inner scroll only",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion footer clear of document",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion exact visible draft label",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Back hit area",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Back closes only reader",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no consent writes",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no production URL",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no agreement control",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion no star event loops",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion six headings and six bodies",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion source copy exact",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion body sixteen",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion body wraps at common edge",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion final section fits document",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion document actually scrolls",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion label outside scroll",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading standard viewport",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading fixed main card",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading inner scroll only",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading footer clear of document",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading exact visible draft label",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading Back hit area",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading Back closes only reader",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no consent writes",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no production URL",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no agreement control",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading no star event loops",
+      "pass": true
+    },
+    {
+      "name": "ReducedMotion Loading status centered in full viewport",
+      "pass": true
+    },
+    {
+      "name": "Read Terms of Service review entry overlays reader",
+      "pass": true
+    },
+    {
+      "name": "Read Terms of Service touch area",
+      "pass": true
+    },
+    {
+      "name": "Loading → draft fixture review entry overlays reader",
+      "pass": true
+    },
+    {
+      "name": "Loading → draft fixture touch area",
+      "pass": true
+    },
+    {
+      "name": "Unavailable → Retry review entry overlays reader",
+      "pass": true
+    },
+    {
+      "name": "Unavailable → Retry touch area",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture review entry overlays reader",
+      "pass": true
+    },
+    {
+      "name": "Cached draft fixture touch area",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion review entry overlays reader",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion touch area",
+      "pass": true
+    },
+    {
+      "name": "Reduced loading → draft review entry overlays reader",
+      "pass": true
+    },
+    {
+      "name": "Reduced loading → draft touch area",
+      "pass": true
+    },
+    {
+      "name": "2428:15023 closes before replacing overlay",
+      "pass": true
+    },
+    {
+      "name": "2428:15494 closes before replacing overlay",
+      "pass": true
+    },
+    {
+      "name": "2428:15671 closes before replacing overlay",
+      "pass": true
+    },
+    {
+      "name": "Reduced loading uses Still phase",
+      "pass": true
+    },
+    {
+      "name": "Section remains inside V2",
+      "pass": true
+    },
+    {
+      "name": "Sources unchanged at build",
+      "pass": true
+    }
+  ],
+  "passed": 108,
+  "total": 108,
+  "ledger": {
+    "Default": {
+      "root": "2428:14708",
+      "back": "2428:14838",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2428:14852",
+          "text": "1. Parent or guardian account",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14853",
+          "text": "A parent or legal guardian manages the family account. Confirm that you are 18 years or older before continuing. Children use a child profile supervised by their parent or guardian.",
+          "width": 338,
+          "height": 130,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14854",
+          "text": "2. Child’s age",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14855",
+          "text": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+          "width": 338,
+          "height": 156,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14856",
+          "text": "3. Child profile",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14857",
+          "text": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+          "width": 338,
+          "height": 156,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14858",
+          "text": "4. Child data and parent controls",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14859",
+          "text": "Child profile information and learning progress support lessons, age-appropriate content and progress tracking. Child-data-processing consent is requested separately in the next step. Agreeing to these Terms does not turn on Personalization/AI, Voice-feature or Marketing consent.",
+          "width": 338,
+          "height": 208,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14860",
+          "text": "5. Fictional sample data",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14861",
+          "text": "Child name: Ayaan (sample)\nAge: 7 years (sample)\nPreferred language: English (sample)\nLearning progress: 3 lessons completed (sample)\n\nAll examples are fictional. No actual child information is displayed or saved by this prototype.",
+          "width": 338,
+          "height": 234,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14862",
+          "text": "6. Review and manage choices",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:14863",
+          "text": "The parent can review consent choices and use the approved privacy and support journeys to request help or changes. Optional preferences can be reviewed independently. Final legal terms, service conditions and available controls require legal and product review before release.",
+          "width": 338,
+          "height": 208,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2428:14838",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Cached draft fixture": {
+      "root": "2428:14866",
+      "back": "2428:14995",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2428:15009",
+          "text": "1. Parent or guardian account",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15010",
+          "text": "A parent or legal guardian manages the family account. Confirm that you are 18 years or older before continuing. Children use a child profile supervised by their parent or guardian.",
+          "width": 338,
+          "height": 130,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15011",
+          "text": "2. Child’s age",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15012",
+          "text": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+          "width": 338,
+          "height": 156,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15013",
+          "text": "3. Child profile",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15014",
+          "text": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+          "width": 338,
+          "height": 156,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15015",
+          "text": "4. Child data and parent controls",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15016",
+          "text": "Child profile information and learning progress support lessons, age-appropriate content and progress tracking. Child-data-processing consent is requested separately in the next step. Agreeing to these Terms does not turn on Personalization/AI, Voice-feature or Marketing consent.",
+          "width": 338,
+          "height": 208,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15017",
+          "text": "5. Fictional sample data",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15018",
+          "text": "Child name: Ayaan (sample)\nAge: 7 years (sample)\nPreferred language: English (sample)\nLearning progress: 3 lessons completed (sample)\n\nAll examples are fictional. No actual child information is displayed or saved by this prototype.",
+          "width": 338,
+          "height": 234,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15019",
+          "text": "6. Review and manage choices",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15020",
+          "text": "The parent can review consent choices and use the approved privacy and support journeys to request help or changes. Optional preferences can be reviewed independently. Final legal terms, service conditions and available controls require legal and product review before release.",
+          "width": 338,
+          "height": 208,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2428:14995",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Loading": {
+      "root": "2428:15023",
+      "back": "2428:15152",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2428:15652",
+          "text": "Terms of Service",
+          "width": 310,
+          "height": 24,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 14
+        },
+        {
+          "id": "I2428:15653;329:5",
+          "text": "Terms of Service",
+          "width": 118,
+          "height": 20,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 14
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2428:15023",
+          "name": "NH/Enhanced/031/Terms_of_Service_full_document/Loading",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                },
+                {
+                  "type": "NODE",
+                  "destinationId": "2428:14708",
+                  "navigation": "OVERLAY",
+                  "transition": null,
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "AFTER_TIMEOUT",
+                "timeout": 1.2000000476837158
+              }
+            }
+          ]
+        },
+        {
+          "id": "2428:15152",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Unavailable": {
+      "root": "2428:15180",
+      "back": "2428:15309",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2428:15670",
+          "text": "An unexpected error occurred. Please try again.",
+          "width": 310,
+          "height": 48,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 14
+        },
+        {
+          "id": "I2428:15671;322:3",
+          "text": "Retry",
+          "width": 38,
+          "height": 20,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 14
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2428:15671",
+          "name": "NH/Button",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                },
+                {
+                  "type": "NODE",
+                  "destinationId": "2428:15023",
+                  "navigation": "OVERLAY",
+                  "transition": null,
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2428:15309",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReducedMotion": {
+      "root": "2428:15337",
+      "back": "2428:15466",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2428:15480",
+          "text": "1. Parent or guardian account",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15481",
+          "text": "A parent or legal guardian manages the family account. Confirm that you are 18 years or older before continuing. Children use a child profile supervised by their parent or guardian.",
+          "width": 338,
+          "height": 130,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15482",
+          "text": "2. Child’s age",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15483",
+          "text": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+          "width": 338,
+          "height": 156,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15484",
+          "text": "3. Child profile",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15485",
+          "text": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+          "width": 338,
+          "height": 156,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15486",
+          "text": "4. Child data and parent controls",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15487",
+          "text": "Child profile information and learning progress support lessons, age-appropriate content and progress tracking. Child-data-processing consent is requested separately in the next step. Agreeing to these Terms does not turn on Personalization/AI, Voice-feature or Marketing consent.",
+          "width": 338,
+          "height": 208,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15488",
+          "text": "5. Fictional sample data",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15489",
+          "text": "Child name: Ayaan (sample)\nAge: 7 years (sample)\nPreferred language: English (sample)\nLearning progress: 3 lessons completed (sample)\n\nAll examples are fictional. No actual child information is displayed or saved by this prototype.",
+          "width": 338,
+          "height": 234,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15490",
+          "text": "6. Review and manage choices",
+          "width": 338,
+          "height": 26,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 16
+        },
+        {
+          "id": "2428:15491",
+          "text": "The parent can review consent choices and use the approved privacy and support journeys to request help or changes. Optional preferences can be reviewed independently. Final legal terms, service conditions and available controls require legal and product review before release.",
+          "width": 338,
+          "height": 208,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 16
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2428:15466",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReducedMotion Loading": {
+      "root": "2428:15494",
+      "back": "2428:15623",
+      "card": [
+        12,
+        82,
+        366,
+        738
+      ],
+      "viewport": [
+        14,
+        60,
+        338,
+        592
+      ],
+      "footer": [
+        14,
+        666,
+        338,
+        56
+      ],
+      "text": [
+        {
+          "id": "2428:15661",
+          "text": "Terms of Service",
+          "width": 310,
+          "height": 24,
+          "font": {
+            "family": "Poppins",
+            "style": "Regular"
+          },
+          "size": 14
+        },
+        {
+          "id": "I2428:15662;329:5",
+          "text": "Terms of Service",
+          "width": 118,
+          "height": 20,
+          "font": {
+            "family": "Poppins",
+            "style": "SemiBold"
+          },
+          "size": 14
+        }
+      ],
+      "reactions": [
+        {
+          "id": "2428:15494",
+          "name": "NH/Enhanced/031/Terms_of_Service_full_document/ReducedMotion Loading",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                },
+                {
+                  "type": "NODE",
+                  "destinationId": "2428:15337",
+                  "navigation": "OVERLAY",
+                  "transition": null,
+                  "resetVideoPosition": false
+                }
+              ],
+              "trigger": {
+                "type": "AFTER_TIMEOUT",
+                "timeout": 1.2000000476837158
+              }
+            }
+          ]
+        },
+        {
+          "id": "2428:15623",
+          "name": "Control/Back",
+          "reactions": [
+            {
+              "action": {
+                "type": "CLOSE"
+              },
+              "actions": [
+                {
+                  "type": "CLOSE"
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "section": "2428:14707",
+  "host": "2428:15676",
+  "limits": [
+    "Live Present denied by saved browser permission",
+    "Draft legal version unapproved",
+    "Registration and Settings integration pending to preserve existing sheets",
+    "Real fetch and cache validity unverified",
+    "390x844 standard only; no RTL or device accessibility runtime test"
+  ]
+}

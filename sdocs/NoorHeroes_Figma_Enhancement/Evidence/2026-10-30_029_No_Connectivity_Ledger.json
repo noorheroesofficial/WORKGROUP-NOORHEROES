@@ -1,0 +1,4187 @@
+{
+  "state": {
+    "createdNodeIds": [
+      "2401:13523",
+      "2401:13531",
+      "2401:13585",
+      "2401:13638",
+      "2401:13644",
+      "2401:13697",
+      "2401:13703",
+      "2401:13756",
+      "2401:13762",
+      "2401:14031",
+      "2401:14300",
+      "2401:14309",
+      "2401:14578",
+      "2401:14587",
+      "2401:14856",
+      "2401:14882",
+      "2401:15120",
+      "2401:15121",
+      "2401:15122",
+      "2401:15123",
+      "2401:15128",
+      "2401:15133",
+      "2401:15138",
+      "2401:15143",
+      "2401:15148",
+      "2401:15153",
+      "2401:15158",
+      "2401:15163",
+      "2401:15168",
+      "2401:15173",
+      "2403:13977"
+    ],
+    "mutatedNodeIds": [
+      "2401:13571",
+      "2401:13575",
+      "2401:13576",
+      "2401:13577",
+      "2401:13579",
+      "2401:13580",
+      "2401:13625",
+      "2401:13629",
+      "2401:13630",
+      "2401:13631",
+      "2401:13633",
+      "2401:13638",
+      "2401:13684",
+      "2401:13688",
+      "2401:13689",
+      "2401:13690",
+      "2401:13692",
+      "2401:13697",
+      "2401:13743",
+      "2401:13747",
+      "2401:13748",
+      "2401:13749",
+      "2401:13751",
+      "2401:13752",
+      "2401:14018",
+      "2401:14022",
+      "2401:14023",
+      "2401:14024",
+      "2401:14026",
+      "2401:14027",
+      "2401:14287",
+      "2401:14291",
+      "2401:14292",
+      "2401:14293",
+      "2401:14295",
+      "2401:14300",
+      "2401:14565",
+      "2401:14569",
+      "2401:14570",
+      "2401:14571",
+      "2401:14573",
+      "2401:14578",
+      "2401:14843",
+      "2401:14847",
+      "2401:14848",
+      "2401:14849",
+      "2401:14851",
+      "2401:14852",
+      "2401:13580",
+      "2401:13531",
+      "I2401:13756;1420:20",
+      "I2401:13756;1420:22",
+      "2401:13752",
+      "2401:13703",
+      "2401:14027",
+      "2401:13762",
+      "I2401:14856;1420:20",
+      "I2401:14856;1420:22",
+      "2401:14852",
+      "2401:14587",
+      "2401:13585",
+      "2401:14031",
+      "2401:13644",
+      "2401:14309"
+    ],
+    "section": "2401:13523",
+    "main": "2401:13531",
+    "checking": "2401:13585",
+    "bootstrapPending": "2401:13644",
+    "error": "2401:13703",
+    "reduced": "2401:13762",
+    "reducedChecking": "2401:14031",
+    "reducedBootstrap": "2401:14309",
+    "reducedError": "2401:14587",
+    "bootstrap": "2401:14882",
+    "board": "2401:15120",
+    "controls": {
+      "Offline launch · immediate gate": "2401:15123",
+      "Retry · still offline": "2401:15128",
+      "Reconnected · pre-auth": "2401:15133",
+      "Reconnected · no children": "2401:15138",
+      "Reconnected · with children": "2401:15143",
+      "Online · request timeout": "2401:15148",
+      "Online · maintenance response": "2401:15153",
+      "Online · forced update response": "2401:15158",
+      "Reduced motion · still offline": "2401:15163",
+      "Reduced motion · reconnected": "2401:15168",
+      "Disconnect during bootstrap": "2403:13977"
+    },
+    "retries": [
+      "2401:13580",
+      "2401:13752",
+      "2401:14027",
+      "2401:14852"
+    ],
+    "loadingButtons": [
+      "2401:13638",
+      "2401:13697",
+      "2401:14300",
+      "2401:14578"
+    ],
+    "snackbars": [
+      "2401:13756",
+      "2401:14856"
+    ],
+    "variables": {
+      "collection": "VariableCollectionId:2401:13524",
+      "online": "VariableID:2401:13525",
+      "outcome": "VariableID:2401:13526",
+      "authenticated": "VariableID:2401:13527",
+      "children": "VariableID:2401:13528",
+      "busy": "VariableID:2401:13529",
+      "showError": "VariableID:2401:13530"
+    }
+  },
+  "actions": [
+    {
+      "id": "2401:13531",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Offline",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13529",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13585",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Checking connectivity",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.15000000596046448
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13531",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13644",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": true,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13644",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Online · bootstrap pending",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 2
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13529",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13531",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13703",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13525"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13526"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "STRING"
+                              },
+                              {
+                                "value": "timeout",
+                                "type": "STRING",
+                                "resolvedType": "STRING"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15843",
+                      "variableValue": {
+                        "value": "active",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15846",
+                      "variableValue": {
+                        "value": "",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15849",
+                      "variableValue": {
+                        "value": "",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15852",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2395:15853",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13525"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13526"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "STRING"
+                              },
+                              {
+                                "value": "maintenance",
+                                "type": "STRING",
+                                "resolvedType": "STRING"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15430",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:15437",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13525"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13526"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "STRING"
+                              },
+                              {
+                                "value": "forced",
+                                "type": "STRING",
+                                "resolvedType": "STRING"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "1166:215",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13525"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": true,
+                                      "type": "BOOLEAN",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13526"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "STRING"
+                                    },
+                                    {
+                                      "value": "ready",
+                                      "type": "STRING",
+                                      "resolvedType": "STRING"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "AND"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13527"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": false,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "1804:2656",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13525"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "BOOLEAN"
+                                          },
+                                          {
+                                            "value": true,
+                                            "type": "BOOLEAN",
+                                            "resolvedType": "BOOLEAN"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13526"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "STRING"
+                                          },
+                                          {
+                                            "value": "ready",
+                                            "type": "STRING",
+                                            "resolvedType": "STRING"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "AND"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13527"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": true,
+                                      "type": "BOOLEAN",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "AND"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13528"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": false,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2188:7275",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13525"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "BOOLEAN"
+                                          },
+                                          {
+                                            "value": true,
+                                            "type": "BOOLEAN",
+                                            "resolvedType": "BOOLEAN"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13526"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "STRING"
+                                          },
+                                          {
+                                            "value": "ready",
+                                            "type": "STRING",
+                                            "resolvedType": "STRING"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "AND"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13527"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": true,
+                                      "type": "BOOLEAN",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "AND"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13528"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13703",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Online bootstrap timeout",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13529",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        },
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 6
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13530",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13762",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Offline · Reduced motion",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13529",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:14031",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Checking connectivity · Reduced motion",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.15000000596046448
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13762",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:14309",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": true,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:14309",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Online bootstrap pending · Reduced motion",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 2
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13529",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13762",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:14587",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13525"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13526"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "STRING"
+                              },
+                              {
+                                "value": "timeout",
+                                "type": "STRING",
+                                "resolvedType": "STRING"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15843",
+                      "variableValue": {
+                        "value": "active",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15846",
+                      "variableValue": {
+                        "value": "",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15849",
+                      "variableValue": {
+                        "value": "",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2395:15852",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2395:15853",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13525"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13526"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "STRING"
+                              },
+                              {
+                                "value": "maintenance",
+                                "type": "STRING",
+                                "resolvedType": "STRING"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15430",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:15437",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13525"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13526"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "STRING"
+                              },
+                              {
+                                "value": "forced",
+                                "type": "STRING",
+                                "resolvedType": "STRING"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "1166:215",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13525"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": true,
+                                      "type": "BOOLEAN",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13526"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "STRING"
+                                    },
+                                    {
+                                      "value": "ready",
+                                      "type": "STRING",
+                                      "resolvedType": "STRING"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "AND"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13527"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": false,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "1804:2656",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13525"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "BOOLEAN"
+                                          },
+                                          {
+                                            "value": true,
+                                            "type": "BOOLEAN",
+                                            "resolvedType": "BOOLEAN"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13526"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "STRING"
+                                          },
+                                          {
+                                            "value": "ready",
+                                            "type": "STRING",
+                                            "resolvedType": "STRING"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "AND"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13527"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": true,
+                                      "type": "BOOLEAN",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "AND"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13528"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": false,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2188:7275",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13525"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "BOOLEAN"
+                                          },
+                                          {
+                                            "value": true,
+                                            "type": "BOOLEAN",
+                                            "resolvedType": "BOOLEAN"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": {
+                                        "expressionArguments": [
+                                          {
+                                            "value": {
+                                              "type": "VARIABLE_ALIAS",
+                                              "id": "VariableID:2401:13526"
+                                            },
+                                            "type": "VARIABLE_ALIAS",
+                                            "resolvedType": "STRING"
+                                          },
+                                          {
+                                            "value": "ready",
+                                            "type": "STRING",
+                                            "resolvedType": "STRING"
+                                          }
+                                        ],
+                                        "expressionFunction": "EQUALS"
+                                      },
+                                      "type": "EXPRESSION",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "AND"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": {
+                                  "expressionArguments": [
+                                    {
+                                      "value": {
+                                        "type": "VARIABLE_ALIAS",
+                                        "id": "VariableID:2401:13527"
+                                      },
+                                      "type": "VARIABLE_ALIAS",
+                                      "resolvedType": "BOOLEAN"
+                                    },
+                                    {
+                                      "value": true,
+                                      "type": "BOOLEAN",
+                                      "resolvedType": "BOOLEAN"
+                                    }
+                                  ],
+                                  "expressionFunction": "EQUALS"
+                                },
+                                "type": "EXPRESSION",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "AND"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": {
+                            "expressionArguments": [
+                              {
+                                "value": {
+                                  "type": "VARIABLE_ALIAS",
+                                  "id": "VariableID:2401:13528"
+                                },
+                                "type": "VARIABLE_ALIAS",
+                                "resolvedType": "BOOLEAN"
+                              },
+                              {
+                                "value": true,
+                                "type": "BOOLEAN",
+                                "resolvedType": "BOOLEAN"
+                              }
+                            ],
+                            "expressionFunction": "EQUALS"
+                          },
+                          "type": "EXPRESSION",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "AND"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:14587",
+      "name": "NH/V2/Onboarding/029/No Connectivity / Online bootstrap timeout · Reduced motion",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13529",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        },
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 6
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13530",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:14882",
+      "name": "Review only / 029 Offline launch short-circuit",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13531",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13644",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13525"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": true,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13580",
+      "name": "Control/Retry Connection",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13585",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13529"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13752",
+      "name": "Control/Retry Connection",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13585",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13529"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:14027",
+      "name": "Control/Retry Connection",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:14031",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13529"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:14852",
+      "name": "Control/Retry Connection",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:14031",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13529"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2401:13638",
+      "name": "Status/Checking connection · request in flight",
+      "w": 338,
+      "h": 48,
+      "reactions": []
+    },
+    {
+      "id": "2401:13697",
+      "name": "Status/Checking connection · request in flight",
+      "w": 338,
+      "h": 48,
+      "reactions": []
+    },
+    {
+      "id": "2401:14300",
+      "name": "Status/Checking connection · request in flight",
+      "w": 338,
+      "h": 48,
+      "reactions": []
+    },
+    {
+      "id": "2401:14578",
+      "name": "Status/Checking connection · request in flight",
+      "w": 338,
+      "h": 48,
+      "reactions": []
+    },
+    {
+      "id": "I2401:13756;1420:20",
+      "name": "Action",
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:13585",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13529"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I2401:13756;1420:22",
+      "name": "Dismiss",
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13530",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I2401:14856;1420:20",
+      "name": "Action",
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13529",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2401:13530",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2401:14031",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2401:13529"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I2401:14856;1420:22",
+      "name": "Dismiss",
+      "reactions": [
+        {
+          "trigger": {
+            "type": "ON_CLICK"
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2401:13530",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "details": {
+    "frames": [
+      {
+        "id": "2401:13531",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/No Internet Connection",
+            "text": "No Internet Connection",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": []
+      },
+      {
+        "id": "2401:13585",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/No Internet Connection",
+            "text": "No Internet Connection",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": [
+          {
+            "Tone": {
+              "value": "OnPrimary",
+              "type": "VARIANT",
+              "boundVariables": {}
+            },
+            "Phase": {
+              "value": "Start",
+              "type": "VARIANT",
+              "boundVariables": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2401:13644",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/No Internet Connection",
+            "text": "No Internet Connection",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": [
+          {
+            "Tone": {
+              "value": "OnPrimary",
+              "type": "VARIANT",
+              "boundVariables": {}
+            },
+            "Phase": {
+              "value": "Start",
+              "type": "VARIANT",
+              "boundVariables": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2401:13703",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/Request timed out",
+            "text": "Request timed out",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": []
+      },
+      {
+        "id": "2401:13762",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/No Internet Connection",
+            "text": "No Internet Connection",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": []
+      },
+      {
+        "id": "2401:14031",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/No Internet Connection",
+            "text": "No Internet Connection",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": [
+          {
+            "Tone": {
+              "value": "OnPrimary",
+              "type": "VARIANT",
+              "boundVariables": {}
+            },
+            "Phase": {
+              "value": "Still",
+              "type": "VARIANT",
+              "boundVariables": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2401:14309",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/No Internet Connection",
+            "text": "No Internet Connection",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": [
+          {
+            "Tone": {
+              "value": "OnPrimary",
+              "type": "VARIANT",
+              "boundVariables": {}
+            },
+            "Phase": {
+              "value": "Still",
+              "type": "VARIANT",
+              "boundVariables": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2401:14587",
+        "w": 390,
+        "h": 844,
+        "overflow": "NONE",
+        "surface": {
+          "x": 12,
+          "y": 82,
+          "w": 366,
+          "h": 738,
+          "children": [
+            {
+              "name": "Content/Inner scroll viewport",
+              "w": 338,
+              "h": 638,
+              "x": 14,
+              "y": 16,
+              "overflow": "VERTICAL"
+            },
+            {
+              "name": "Footer/Retry Connection",
+              "w": 338,
+              "h": 48,
+              "x": 14,
+              "y": 674,
+              "overflow": "NONE"
+            }
+          ]
+        },
+        "header": [
+          {
+            "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+            "reactions": 0
+          }
+        ],
+        "text": [
+          {
+            "name": "Icon/Material Rounded/wifi_off",
+            "text": "wifi_off",
+            "w": 48,
+            "h": 48
+          },
+          {
+            "name": "Title/Request timed out",
+            "text": "Request timed out",
+            "w": 330,
+            "h": 34
+          },
+          {
+            "name": "Description/Check network settings",
+            "text": "Please check your network settings and try again.",
+            "w": 330,
+            "h": 48
+          },
+          {
+            "name": "Label",
+            "text": "Retry Connection",
+            "w": 124,
+            "h": 20
+          }
+        ],
+        "loading": []
+      }
+    ],
+    "snacks": [
+      {
+        "id": "2401:13756",
+        "x": 20,
+        "y": 680,
+        "w": 350,
+        "h": 60,
+        "main": "1420:18",
+        "text": [
+          "Request timed out",
+          "Retry",
+          "×"
+        ]
+      },
+      {
+        "id": "2401:14856",
+        "x": 20,
+        "y": 680,
+        "w": 350,
+        "h": 60,
+        "main": "1420:18",
+        "text": [
+          "Request timed out",
+          "Retry",
+          "×"
+        ]
+      }
+    ]
+  },
+  "controls": {
+    "controls": [
+      {
+        "id": "2401:15123",
+        "name": "Review only / Offline launch · immediate gate",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:14882",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15128",
+        "name": "Review only / Retry · still offline",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15133",
+        "name": "Review only / Reconnected · pre-auth",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "ready",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13527",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13528",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15138",
+        "name": "Review only / Reconnected · no children",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "ready",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13527",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13528",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15143",
+        "name": "Review only / Reconnected · with children",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "ready",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13527",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13528",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15148",
+        "name": "Review only / Online · request timeout",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "timeout",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15153",
+        "name": "Review only / Online · maintenance response",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "maintenance",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15158",
+        "name": "Review only / Online · forced update response",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "forced",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13531",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15163",
+        "name": "Review only / Reduced motion · still offline",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13762",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.10000000149011612
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2401:15168",
+        "name": "Review only / Reduced motion · reconnected",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13530",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15430",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13526",
+                "variableValue": {
+                  "value": "ready",
+                  "type": "STRING",
+                  "resolvedType": "STRING"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13527",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13762",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.10000000149011612
+                },
+                "resetVideoPosition": false,
+                "resetScrollPosition": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2403:13977",
+        "name": "Review only / Disconnect during bootstrap",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "ON_CLICK"
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13525",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2401:13529",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "NODE",
+                "destinationId": "2401:13644",
+                "navigation": "NAVIGATE",
+                "transition": {
+                  "type": "DISSOLVE",
+                  "easing": {
+                    "type": "EASE_IN_AND_OUT"
+                  },
+                  "duration": 0.25
+                },
+                "resetVideoPosition": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sections": [
+      "2401:13523"
+    ],
+    "splashReactions": [
+      {
+        "action": {
+          "type": "CONDITIONAL",
+          "conditionalBlocks": [
+            {
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "2382:15437",
+                  "navigation": "NAVIGATE",
+                  "transition": {
+                    "type": "DISSOLVE",
+                    "easing": {
+                      "type": "EASE_IN_AND_OUT"
+                    },
+                    "duration": 0.25
+                  },
+                  "resetVideoPosition": false,
+                  "resetScrollPosition": true
+                }
+              ],
+              "condition": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15430"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "BOOLEAN"
+                    },
+                    {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  ],
+                  "expressionFunction": "EQUALS"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "actions": [
+                {
+                  "type": "NODE",
+                  "destinationId": "1166:215",
+                  "navigation": "NAVIGATE",
+                  "transition": {
+                    "type": "DISSOLVE",
+                    "easing": {
+                      "type": "EASE_IN_AND_OUT"
+                    },
+                    "duration": 0.30000001192092896
+                  },
+                  "resetVideoPosition": false
+                }
+              ]
+            }
+          ]
+        },
+        "actions": [
+          {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:15437",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.25
+                    },
+                    "resetVideoPosition": false,
+                    "resetScrollPosition": true
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:2382:15430"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "BOOLEAN"
+                      },
+                      {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "actions": [
+                  {
+                    "type": "NODE",
+                    "destinationId": "1166:215",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.30000001192092896
+                    },
+                    "resetVideoPosition": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "trigger": {
+          "type": "AFTER_TIMEOUT",
+          "timeout": 4
+        }
+      }
+    ]
+  },
+  "timeoutTitleFix": {
+    "mutatedNodeIds": [
+      "2401:13748",
+      "2401:14848"
+    ],
+    "copySource": "error_request_timeout",
+    "reason": "Online connectivity observation does not establish why bootstrap timed out; no service-outage claim."
+  },
+  "evaluator": {
+    "value": "function value(v,state){if(v.type===\"VARIABLE_ALIAS\")return state[v.value.id];if(v.type!==\"EXPRESSION\")return v.value;const e=v.value,args=e.expressionArguments.map(x=>value(x,state));if(e.expressionFunction===\"EQUALS\")return args[0]===args[1];if(e.expressionFunction===\"AND\")return args.every(Boolean);throw Error(e.expressionFunction)}",
+    "run": "function run(id,state={},timeout){const st={...state},events=[];function act(xs){for(const a of xs){if(a.type===\"SET_VARIABLE\")st[a.variableId]=value(a.variableValue,st);else if(a.type===\"CONDITIONAL\"){for(const b of a.conditionalBlocks)if(!b.condition||value(b.condition,st)){act(b.actions);break}}else events.push(a)}}for(const r of by[id].reactions||[])if(timeout===undefined||Math.abs((r.trigger.timeout||0)-timeout)<.001)act(r.actions);return {state:st,events}}"
+  },
+  "limits": [
+    "No live Present playback",
+    "No real connectivity observer/bootstrap/API",
+    "No OS interception or device accessibility test",
+    "Offline intro entry pending; existing auth/intros not modified",
+    "Authenticated cached-offline Profile Picker is outside this pre-auth screen"
+  ]
+}

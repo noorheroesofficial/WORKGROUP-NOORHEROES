@@ -1,0 +1,455 @@
+{
+  "evidenceType": "Saved native Figma reaction evaluation and structural checks; not live Present",
+  "passed": 112,
+  "total": 112,
+  "checks": [
+    {
+      "name": "Normal response normal/active/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/active/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/active/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/active/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/restored/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/restored/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/restored/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/restored/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response normal/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/active/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/active/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/active/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/active/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/restored/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/restored/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/restored/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/restored/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response forced/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/active/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/active/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/active/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/active/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/restored/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/restored/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/restored/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/restored/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response normal/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/active/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/active/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/active/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/active/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/restored/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/restored/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/restored/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/restored/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response forced/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "2395:15902:Check Again enters loading and disables repeat",
+      "passed": true
+    },
+    {
+      "name": "2395:15902:primary remains 48px",
+      "passed": true
+    },
+    {
+      "name": "2395:15955:Check Again enters loading and disables repeat",
+      "passed": true
+    },
+    {
+      "name": "2395:15955:primary remains 48px",
+      "passed": true
+    },
+    {
+      "name": "2395:16067:Check Again enters loading and disables repeat",
+      "passed": true
+    },
+    {
+      "name": "2395:16067:primary remains 48px",
+      "passed": true
+    },
+    {
+      "name": "2395:16342:Check Again enters loading and disables repeat",
+      "passed": true
+    },
+    {
+      "name": "2395:16342:primary remains 48px",
+      "passed": true
+    },
+    {
+      "name": "2395:16889:Check Again enters loading and disables repeat",
+      "passed": true
+    },
+    {
+      "name": "2395:16889:primary remains 48px",
+      "passed": true
+    },
+    {
+      "name": "2395:16012:loading has no tap action",
+      "passed": true
+    },
+    {
+      "name": "2395:16615:loading has no tap action",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:estimate absent stays hidden",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:provided estimate formatted and visible",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:blank message falls back to exact app copy",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:server copy preserved verbatim",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:estimate absent stays hidden",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:provided estimate formatted and visible",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:blank message falls back to exact app copy",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:server copy preserved verbatim",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:15853:estimate binding retained",
+      "passed": true
+    },
+    {
+      "name": "2395:15906:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:15906:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:15906:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:15906:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:15959:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:15959:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:15959:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:15959:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:15959:estimate binding retained",
+      "passed": true
+    },
+    {
+      "name": "2395:16018:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:16018:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:16018:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:16018:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:16018:estimate binding retained",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:16077:estimate binding retained",
+      "passed": true
+    },
+    {
+      "name": "2395:16346:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:16346:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:16346:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:16346:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:16346:estimate binding retained",
+      "passed": true
+    },
+    {
+      "name": "2395:16624:390x844 and approved 366x738 card",
+      "passed": true
+    },
+    {
+      "name": "2395:16624:inner scroll only and fixed48px footer",
+      "passed": true
+    },
+    {
+      "name": "2395:16624:toolbar branding only",
+      "passed": true
+    },
+    {
+      "name": "2395:16624:maintenance distinguished by copy and settings icon",
+      "passed": true
+    },
+    {
+      "name": "2395:16624:estimate binding retained",
+      "passed": true
+    },
+    {
+      "name": "Reduced retry uses existing Still loader phase",
+      "passed": true
+    },
+    {
+      "name": "2395:16071:exact shared snackbar and timeout copy",
+      "passed": true
+    },
+    {
+      "name": "2395:16018:6sec clears feedback only",
+      "passed": true
+    },
+    {
+      "name": "2395:16893:exact shared snackbar and timeout copy",
+      "passed": true
+    },
+    {
+      "name": "2395:16624:6sec clears feedback only",
+      "passed": true
+    },
+    {
+      "name": "Historical fixture visible and contained",
+      "passed": true
+    },
+    {
+      "name": "Exactly one 028 review section",
+      "passed": true
+    },
+    {
+      "name": "Original Splash routing unchanged from approved 026",
+      "passed": true
+    },
+    {
+      "name": "I2395:16071;1420:22:feedback dismissal cannot navigate out",
+      "passed": true
+    },
+    {
+      "name": "I2395:16893;1420:22:feedback dismissal cannot navigate out",
+      "passed": true
+    }
+  ]
+}

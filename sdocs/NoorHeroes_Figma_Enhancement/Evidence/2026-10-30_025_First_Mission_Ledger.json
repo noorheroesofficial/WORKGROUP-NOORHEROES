@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-30",
+  "sessionId": "fe1ad878-952d-4809-826d-e75c938b79ee",
+  "fileKey": "MR9935oQZACMjndzGIUgq5",
+  "state": {
+    "createdNodeIds": [
+      "2368:12500",
+      "2368:12507",
+      "2368:12508",
+      "2368:12545",
+      "2368:12556",
+      "2368:12557",
+      "2368:12558",
+      "2368:12561",
+      "2368:12562",
+      "2368:12563",
+      "2368:12564",
+      "2368:12565",
+      "2368:12566",
+      "2368:12567",
+      "2368:12568",
+      "2368:12569",
+      "2368:12570",
+      "2368:12575",
+      "2368:12580",
+      "2368:12581",
+      "2368:12618",
+      "2368:12629",
+      "2368:12630",
+      "2368:12631",
+      "2368:12634",
+      "2368:12635",
+      "2368:12636",
+      "2368:12637",
+      "2368:12638",
+      "2368:12639",
+      "2368:12640",
+      "2368:12641",
+      "2368:12642",
+      "2368:12646",
+      "2368:12652",
+      "2368:12653",
+      "2368:12654",
+      "2368:12655",
+      "2368:12660",
+      "2368:12665",
+      "2368:12670",
+      "2368:12671"
+    ],
+    "mutatedNodeIds": [
+      "2368:12507",
+      "2368:12580"
+    ],
+    "sectionId": "2368:12500",
+    "main": "2368:12507",
+    "unavailable": "2368:12580",
+    "reviewBoard": "2368:12652",
+    "reviewControls": {
+      "first": "2368:12655",
+      "unavailable": "2368:12660",
+      "reset": "2368:12665",
+      "already": "2368:12670"
+    },
+    "variables": {
+      "collection": "VariableCollectionId:2368:12501",
+      "title": "VariableID:2368:12502",
+      "already": "VariableID:2368:12503",
+      "shown": [
+        "VariableID:2368:12504",
+        "VariableID:2368:12505",
+        "VariableID:2368:12506"
+      ]
+    },
+    "components": {
+      "badge": "502:20",
+      "start": "322:21",
+      "home": "322:81"
+    },
+    "pending": [
+      "Child Home",
+      "Assigned mission content"
+    ],
+    "preexistingScreensModified": false
+  },
+  "fix": {
+    "createdNodeIds": [
+      "2369:12602",
+      "2369:12606"
+    ],
+    "mutatedNodeIds": [
+      "2368:12566",
+      "2368:12639",
+      "2368:12637",
+      "2368:12507",
+      "2368:12655"
+    ],
+    "rootConditions": 3,
+    "controllerConditions": 6
+  },
+  "reducedMotion": {
+    "createdNodeIds": [
+      "2372:12598",
+      "2372:12725",
+      "2372:12978"
+    ],
+    "mutatedNodeIds": [
+      "2368:12652"
+    ],
+    "reducedMotion": "2372:12598",
+    "control": "2372:12978",
+    "staticStarSize": [
+      390,
+      844
+    ],
+    "originalStarSize": [
+      390,
+      844
+    ]
+  },
+  "pending": [
+    "Child Home",
+    "Verified assigned mission content destination"
+  ],
+  "userApproval": "Use existing app copy; keep destinations pending",
+  "nextGate": "Await025 review before026"
+}

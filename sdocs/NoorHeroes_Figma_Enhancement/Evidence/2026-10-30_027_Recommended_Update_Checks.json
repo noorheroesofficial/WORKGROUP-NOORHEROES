@@ -1,0 +1,243 @@
+{
+  "evidenceType": "Saved native Figma reaction evaluation and structural checks; not live Present",
+  "passed": 59,
+  "total": 59,
+  "checks": [
+    {
+      "name": "Entry required=false,recommended=false,dismissed=false:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=false,recommended=false,dismissed=true:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=false,recommended=true,dismissed=false:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=false,recommended=true,dismissed=true:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=true,recommended=false,dismissed=false:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=true,recommended=false,dismissed=true:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=true,recommended=true,dismissed=false:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Entry required=true,recommended=true,dismissed=true:exactly one correct route",
+      "passed": true
+    },
+    {
+      "name": "Variant 1:Update opens labelled store simulation",
+      "passed": true
+    },
+    {
+      "name": "Variant 1:store failure enters matching error",
+      "passed": true
+    },
+    {
+      "name": "Variant 1:Update does not record dismissal",
+      "passed": true
+    },
+    {
+      "name": "Variant 1:Dismiss records session flag and continues existing bootstrap route",
+      "passed": true
+    },
+    {
+      "name": "Variant 1:48px reusable actions",
+      "passed": true
+    },
+    {
+      "name": "Variant 2:Update opens labelled store simulation",
+      "passed": true
+    },
+    {
+      "name": "Variant 2:store failure enters matching error",
+      "passed": true
+    },
+    {
+      "name": "Variant 2:Update does not record dismissal",
+      "passed": true
+    },
+    {
+      "name": "Variant 2:Dismiss records session flag and continues existing bootstrap route",
+      "passed": true
+    },
+    {
+      "name": "Variant 2:48px reusable actions",
+      "passed": true
+    },
+    {
+      "name": "Variant 3:Update opens labelled store simulation",
+      "passed": true
+    },
+    {
+      "name": "Variant 3:store failure enters matching error",
+      "passed": true
+    },
+    {
+      "name": "Variant 3:Update does not record dismissal",
+      "passed": true
+    },
+    {
+      "name": "Variant 3:Dismiss records session flag and continues existing bootstrap route",
+      "passed": true
+    },
+    {
+      "name": "Variant 3:48px reusable actions",
+      "passed": true
+    },
+    {
+      "name": "Reduced variant 3:<=100ms transitions",
+      "passed": true
+    },
+    {
+      "name": "Variant 4:Update opens labelled store simulation",
+      "passed": true
+    },
+    {
+      "name": "Variant 4:store failure enters matching error",
+      "passed": true
+    },
+    {
+      "name": "Variant 4:Update does not record dismissal",
+      "passed": true
+    },
+    {
+      "name": "Variant 4:Dismiss records session flag and continues existing bootstrap route",
+      "passed": true
+    },
+    {
+      "name": "Variant 4:48px reusable actions",
+      "passed": true
+    },
+    {
+      "name": "Reduced variant 4:<=100ms transitions",
+      "passed": true
+    },
+    {
+      "name": "Dismissed same session stays suppressed",
+      "passed": true
+    },
+    {
+      "name": "New session · Android:reset dismissal and restart bootstrap",
+      "passed": true
+    },
+    {
+      "name": "New session · Android:correct platform label",
+      "passed": true
+    },
+    {
+      "name": "New session · iOS:reset dismissal and restart bootstrap",
+      "passed": true
+    },
+    {
+      "name": "New session · iOS:correct platform label",
+      "passed": true
+    },
+    {
+      "name": "Store Return closes overlay without dismissing recommendation",
+      "passed": true
+    },
+    {
+      "name": "2391:14951:6s feedback timeout retains recommendation",
+      "passed": true
+    },
+    {
+      "name": "2391:15658:6s feedback timeout retains recommendation",
+      "passed": true
+    },
+    {
+      "name": "2391:15175:snackbar Dismiss hides feedback only",
+      "passed": true
+    },
+    {
+      "name": "2391:15175:Retry opens store without dismissing banner",
+      "passed": true
+    },
+    {
+      "name": "2391:15175:feedback clears Continue and language choices",
+      "passed": true
+    },
+    {
+      "name": "2391:16135:snackbar Dismiss hides feedback only",
+      "passed": true
+    },
+    {
+      "name": "2391:16135:Retry opens store without dismissing banner",
+      "passed": true
+    },
+    {
+      "name": "2391:16135:feedback clears Continue and language choices",
+      "passed": true
+    },
+    {
+      "name": "2391:14935:compact banner fits above controls",
+      "passed": true
+    },
+    {
+      "name": "2391:14935:exact source title,description,actions",
+      "passed": true
+    },
+    {
+      "name": "2391:14935:children contained in card",
+      "passed": true
+    },
+    {
+      "name": "2391:15159:compact banner fits above controls",
+      "passed": true
+    },
+    {
+      "name": "2391:15159:exact source title,description,actions",
+      "passed": true
+    },
+    {
+      "name": "2391:15159:children contained in card",
+      "passed": true
+    },
+    {
+      "name": "2391:15642:compact banner fits above controls",
+      "passed": true
+    },
+    {
+      "name": "2391:15642:exact source title,description,actions",
+      "passed": true
+    },
+    {
+      "name": "2391:15642:children contained in card",
+      "passed": true
+    },
+    {
+      "name": "2391:16119:compact banner fits above controls",
+      "passed": true
+    },
+    {
+      "name": "2391:16119:exact source title,description,actions",
+      "passed": true
+    },
+    {
+      "name": "2391:16119:children contained in card",
+      "passed": true
+    },
+    {
+      "name": "Underlying Language Selection actions exactly match source",
+      "passed": true
+    },
+    {
+      "name": "Only one 027 review section exists",
+      "passed": true
+    },
+    {
+      "name": "Original Splash reactions unchanged from approved 026",
+      "passed": true
+    }
+  ]
+}

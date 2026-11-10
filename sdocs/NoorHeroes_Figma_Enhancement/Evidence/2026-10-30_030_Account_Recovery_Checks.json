@@ -1,0 +1,566 @@
+{
+  "evidenceType": "Evaluation of actual saved native Figma reactions and structural snapshots; not live Present or security testing",
+  "passed": 137,
+  "total": 137,
+  "checks": [
+    {
+      "name": "Normal Continue valid=false/offline=false/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=false/offline=false/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=false/offline=true/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=false/offline=true/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=true/offline=false/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=true/offline=false/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=true/offline=true/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Normal Continue valid=true/offline=true/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=false/offline=false/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=false/offline=false/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=false/offline=true/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=false/offline=true/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=true/offline=false/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=true/offline=false/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=true/offline=true/busy=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced Continue valid=true/offline=true/busy=true",
+      "passed": true
+    },
+    {
+      "name": "Normal phone fictional autofill validates fixture",
+      "passed": true
+    },
+    {
+      "name": "Normal email fictional autofill validates fixture",
+      "passed": true
+    },
+    {
+      "name": "Reduced phone fictional autofill validates fixture",
+      "passed": true
+    },
+    {
+      "name": "Reduced email fictional autofill validates fixture",
+      "passed": true
+    },
+    {
+      "name": "Normal send offline=false/success:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:only successful start issues local challenge",
+      "passed": true
+    },
+    {
+      "name": "Normal send offline=false/failure:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "Normal send offline=false/timeout:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "Normal send offline=true/success:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:offline preserves unissued challenge",
+      "passed": true
+    },
+    {
+      "name": "Normal send offline=true/failure:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:offline preserves unissued challenge",
+      "passed": true
+    },
+    {
+      "name": "Normal send offline=true/timeout:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:offline preserves unissued challenge",
+      "passed": true
+    },
+    {
+      "name": "Reduced send offline=false/success:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:only successful start issues local challenge",
+      "passed": true
+    },
+    {
+      "name": "Reduced send offline=false/failure:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "Reduced send offline=false/timeout:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "Reduced send offline=true/success:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:offline preserves unissued challenge",
+      "passed": true
+    },
+    {
+      "name": "Reduced send offline=true/failure:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:offline preserves unissued challenge",
+      "passed": true
+    },
+    {
+      "name": "Reduced send offline=true/timeout:correct route and generic failure",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:offline preserves unissued challenge",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 1:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 2:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 3:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 4:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 5:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 6:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Masked OTP tap 7:count capped at6",
+      "passed": true
+    },
+    {
+      "name": "Six masked taps enable Verify with no credential values",
+      "passed": true
+    },
+    {
+      "name": "OTP cannot be entered as an issued challenge without start fixture",
+      "passed": true
+    },
+    {
+      "name": "2412:16501:Verify enters only local recovery verification",
+      "passed": true
+    },
+    {
+      "name": "2412:16501:guard VariableID:2412:13988 prevents verification",
+      "passed": true
+    },
+    {
+      "name": "2412:16501:guard VariableID:2412:14004 prevents verification",
+      "passed": true
+    },
+    {
+      "name": "2412:16501:guard VariableID:2412:14005 prevents verification",
+      "passed": true
+    },
+    {
+      "name": "2412:16501:missing challenge prevents Verify",
+      "passed": true
+    },
+    {
+      "name": "2412:18512:Verify enters only local recovery verification",
+      "passed": true
+    },
+    {
+      "name": "2412:18512:guard VariableID:2412:13988 prevents verification",
+      "passed": true
+    },
+    {
+      "name": "2412:18512:guard VariableID:2412:14004 prevents verification",
+      "passed": true
+    },
+    {
+      "name": "2412:18512:guard VariableID:2412:14005 prevents verification",
+      "passed": true
+    },
+    {
+      "name": "2412:18512:missing challenge prevents Verify",
+      "passed": true
+    },
+    {
+      "name": "Normal OTP success:no PIN/session destination",
+      "passed": true
+    },
+    {
+      "name": "2412:16508:verified boundary flag only",
+      "passed": true
+    },
+    {
+      "name": "Normal OTP incorrect:no PIN/session destination",
+      "passed": true
+    },
+    {
+      "name": "Normal OTP expired:no PIN/session destination",
+      "passed": true
+    },
+    {
+      "name": "Reduced OTP success:no PIN/session destination",
+      "passed": true
+    },
+    {
+      "name": "2412:18519:verified boundary flag only",
+      "passed": true
+    },
+    {
+      "name": "Reduced OTP incorrect:no PIN/session destination",
+      "passed": true
+    },
+    {
+      "name": "Reduced OTP expired:no PIN/session destination",
+      "passed": true
+    },
+    {
+      "name": "All behavior writes stay in the isolated 030 variables",
+      "passed": true
+    },
+    {
+      "name": "No route to PIN setup, Parent Area, Picker or Home",
+      "passed": true
+    },
+    {
+      "name": "2412:14013:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:14013:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:14013:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:14405:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:14414:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:16038:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:16038:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:16038:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:16496:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:16501:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:16508:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:16508:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:16508:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:16960:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:16970:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:16970:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:16970:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:17428:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:17432:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:17443:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:17443:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:17443:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:17895:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:17899:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:14810:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:14810:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:14810:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:15416:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:15423:shared loading uses Still phase",
+      "passed": true
+    },
+    {
+      "name": "2412:17906:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:17906:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:17906:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:18508:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:18512:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:18519:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:18519:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:18519:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:19115:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:18519:shared loading uses Still phase",
+      "passed": true
+    },
+    {
+      "name": "2412:19128:390x844, approved auth-card edges",
+      "passed": true
+    },
+    {
+      "name": "2412:19128:source countdown runtime not inherited",
+      "passed": true
+    },
+    {
+      "name": "2412:19128:card children contained",
+      "passed": true
+    },
+    {
+      "name": "2412:19730:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "2412:19734:48px touch action",
+      "passed": true
+    },
+    {
+      "name": "No inherited Login/010 functional-state bindings in recovery cards",
+      "passed": true
+    },
+    {
+      "name": "Known/unknown account simulations have identical actions",
+      "passed": true
+    },
+    {
+      "name": "Login retains original children and no restored Forgot access link",
+      "passed": true
+    },
+    {
+      "name": "Review board remains clear of notes and section bounds",
+      "passed": true
+    },
+    {
+      "name": "2412:16038:Change invalidates challenge and returns to same recovery draft",
+      "passed": true
+    },
+    {
+      "name": "2412:17906:Change invalidates challenge and returns to same recovery draft",
+      "passed": true
+    },
+    {
+      "name": "Snackbar Retry reduced=false:close then correct send state",
+      "passed": true
+    },
+    {
+      "name": "Snackbar Retry reduced=true:close then correct send state",
+      "passed": true
+    },
+    {
+      "name": "Feedback dismissal closes overlay only",
+      "passed": true
+    },
+    {
+      "name": "2412:16970:verified root never auto-navigates",
+      "passed": true
+    },
+    {
+      "name": "2412:19128:verified root never auto-navigates",
+      "passed": true
+    },
+    {
+      "name": "2412:16508:unissued verification returns to recovery, not success",
+      "passed": true
+    },
+    {
+      "name": "2412:18519:unissued verification returns to recovery, not success",
+      "passed": true
+    },
+    {
+      "name": "Offline field remains editable while Continue disabled",
+      "passed": true
+    },
+    {
+      "name": "OTP · incorrect-code result:review fixture channel/value are coherent",
+      "passed": true
+    },
+    {
+      "name": "OTP · expired challenge:review fixture channel/value are coherent",
+      "passed": true
+    },
+    {
+      "name": "Known/unknown fixture actions remain identical after reset hardening",
+      "passed": true
+    },
+    {
+      "name": "Final entry initializes an unissued challenge on both motion variants",
+      "passed": true
+    },
+    {
+      "name": "Only one Screen030 section exists",
+      "passed": true
+    }
+  ],
+  "approvedPending": [
+    "Login entry remains review-only",
+    "Server recovery next step remains unmapped",
+    "029 offline-intro entry remains pending"
+  ],
+  "simulationLimits": [
+    "Fictional autofill only, not real typing/validation",
+    "Masked digit-count fixture, not a credential",
+    "Resend-available fixture, not a real cooldown/TTL clock",
+    "No actual recovery/OTP API call"
+  ]
+}

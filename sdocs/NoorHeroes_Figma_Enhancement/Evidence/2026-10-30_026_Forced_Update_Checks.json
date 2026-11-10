@@ -1,0 +1,175 @@
+{
+  "type": "Saved native Figma reaction evaluation and structural checks; not live Present",
+  "passed": 42,
+  "total": 42,
+  "checks": [
+    {
+      "name": "Update 1: available opens store overlay only",
+      "passed": true
+    },
+    {
+      "name": "Update 1: unavailable enters corresponding error",
+      "passed": true
+    },
+    {
+      "name": "Update 1: neither outcome clears required gate",
+      "passed": true
+    },
+    {
+      "name": "Update 2: available opens store overlay only",
+      "passed": true
+    },
+    {
+      "name": "Update 2: unavailable enters corresponding error",
+      "passed": true
+    },
+    {
+      "name": "Update 2: neither outcome clears required gate",
+      "passed": true
+    },
+    {
+      "name": "Update 3: available opens store overlay only",
+      "passed": true
+    },
+    {
+      "name": "Update 3: unavailable enters corresponding error",
+      "passed": true
+    },
+    {
+      "name": "Update 3: neither outcome clears required gate",
+      "passed": true
+    },
+    {
+      "name": "Reduced Update 3: transition <=100ms",
+      "passed": true
+    },
+    {
+      "name": "Update 4: available opens store overlay only",
+      "passed": true
+    },
+    {
+      "name": "Update 4: unavailable enters corresponding error",
+      "passed": true
+    },
+    {
+      "name": "Update 4: neither outcome clears required gate",
+      "passed": true
+    },
+    {
+      "name": "Reduced Update 4: transition <=100ms",
+      "passed": true
+    },
+    {
+      "name": "Store return closes overlay only; gate remains required",
+      "passed": true
+    },
+    {
+      "name": "Required bootstrap enters 026",
+      "passed": true
+    },
+    {
+      "name": "Normal bootstrap preserves exact original action",
+      "passed": true
+    },
+    {
+      "name": "Bootstrap retains original 4-second trigger",
+      "passed": true
+    },
+    {
+      "name": "2382:15437:390x844,366x738 card,inner scroll,fixed footer",
+      "passed": true
+    },
+    {
+      "name": "2382:15589:390x844,366x738 card,inner scroll,fixed footer",
+      "passed": true
+    },
+    {
+      "name": "2382:15589:6s hides feedback without navigation",
+      "passed": true
+    },
+    {
+      "name": "2382:15747:390x844,366x738 card,inner scroll,fixed footer",
+      "passed": true
+    },
+    {
+      "name": "2382:16043:390x844,366x738 card,inner scroll,fixed footer",
+      "passed": true
+    },
+    {
+      "name": "2382:16043:6s hides feedback without navigation",
+      "passed": true
+    },
+    {
+      "name": "Android review supplies Google Play",
+      "passed": true
+    },
+    {
+      "name": "iOS review supplies App Store",
+      "passed": true
+    },
+    {
+      "name": "2382:15741:dismiss feedback only",
+      "passed": true
+    },
+    {
+      "name": "2382:15741:Retry available stays in blocking flow",
+      "passed": true
+    },
+    {
+      "name": "2382:15741:Retry unavailable stays in blocking flow",
+      "passed": true
+    },
+    {
+      "name": "2382:16339:dismiss feedback only",
+      "passed": true
+    },
+    {
+      "name": "2382:16339:Retry available stays in blocking flow",
+      "passed": true
+    },
+    {
+      "name": "2382:16339:Retry unavailable stays in blocking flow",
+      "passed": true
+    },
+    {
+      "name": "2382:15437:exact source title/body/action and no whole-screen scroll",
+      "passed": true
+    },
+    {
+      "name": "2382:15437:optional minimum-version text is bound",
+      "passed": true
+    },
+    {
+      "name": "2382:15589:exact source title/body/action and no whole-screen scroll",
+      "passed": true
+    },
+    {
+      "name": "2382:15589:optional minimum-version text is bound",
+      "passed": true
+    },
+    {
+      "name": "2382:15747:exact source title/body/action and no whole-screen scroll",
+      "passed": true
+    },
+    {
+      "name": "2382:15747:optional minimum-version text is bound",
+      "passed": true
+    },
+    {
+      "name": "2382:16043:exact source title/body/action and no whole-screen scroll",
+      "passed": true
+    },
+    {
+      "name": "2382:16043:optional minimum-version text is bound",
+      "passed": true
+    },
+    {
+      "name": "New bootstrap flag defaults false",
+      "passed": true
+    },
+    {
+      "name": "Four blocking toolbars contain approved branding only",
+      "passed": true
+    }
+  ]
+}

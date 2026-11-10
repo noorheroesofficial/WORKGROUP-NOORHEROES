@@ -1,0 +1,1318 @@
+{
+  "scenarioReset": {
+    "mutatedNodeIds": [
+      "2412:14013",
+      "2412:14810",
+      "2412:19804",
+      "2412:19809",
+      "2412:19814",
+      "2412:19819",
+      "2412:19824",
+      "2412:19829",
+      "2412:19834",
+      "2412:19839",
+      "2412:19844",
+      "2412:19849",
+      "2412:19854"
+    ],
+    "fixtures": [
+      {
+        "id": "2412:19834",
+        "name": "Recognized-identifier simulation",
+        "actions": [
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2416:14625",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13989",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13988",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13993",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13994",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14005",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14004",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13991",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14003",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13982",
+            "variableValue": {
+              "value": "parent@example.com",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13996",
+            "variableValue": {
+              "value": "parent@example.com",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13998",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13985",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13981",
+            "variableValue": {
+              "value": "email",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13983",
+            "variableValue": {
+              "value": "Email address",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13986",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13987",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13984",
+            "variableValue": {
+              "value": "Filled",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13990",
+            "variableValue": {
+              "value": "Default",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "NODE",
+            "destinationId": "2412:14013",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": false
+          }
+        ]
+      },
+      {
+        "id": "2412:19839",
+        "name": "Unrecognized-identifier simulation",
+        "actions": [
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2416:14625",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13989",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13988",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13993",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13994",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14005",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14004",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13991",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14003",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13982",
+            "variableValue": {
+              "value": "parent@example.com",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13996",
+            "variableValue": {
+              "value": "parent@example.com",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13998",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13985",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13981",
+            "variableValue": {
+              "value": "email",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13983",
+            "variableValue": {
+              "value": "Email address",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13986",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13987",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13984",
+            "variableValue": {
+              "value": "Filled",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13990",
+            "variableValue": {
+              "value": "Default",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "NODE",
+            "destinationId": "2412:14013",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": false
+          }
+        ]
+      },
+      {
+        "id": "2412:19844",
+        "name": "OTP · incorrect-code result",
+        "actions": [
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13981",
+            "variableValue": {
+              "value": "phone",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13983",
+            "variableValue": {
+              "value": "Phone number",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13986",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13987",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13995",
+            "variableValue": {
+              "value": "+12025550123",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13997",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13984",
+            "variableValue": {
+              "value": "Filled",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13999",
+            "variableValue": {
+              "value": "We sent a 6-digit code to •••0123.",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2416:14625",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13982",
+            "variableValue": {
+              "value": "+12025550123",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13985",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13989",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13988",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13993",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13994",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14005",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14004",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13991",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14003",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13994",
+            "variableValue": {
+              "value": "incorrect",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14000",
+            "variableValue": {
+              "value": 0,
+              "type": "FLOAT",
+              "resolvedType": "FLOAT"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14007",
+            "variableValue": {
+              "value": "Empty",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14008",
+            "variableValue": {
+              "value": "Empty",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14009",
+            "variableValue": {
+              "value": "Empty",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14010",
+            "variableValue": {
+              "value": "Empty",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14011",
+            "variableValue": {
+              "value": "Empty",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14012",
+            "variableValue": {
+              "value": "Empty",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14001",
+            "variableValue": {
+              "value": "Disabled",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14004",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14005",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14003",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14002",
+            "variableValue": {
+              "value": "",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "NODE",
+            "destinationId": "2412:16038",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": false
+          }
+        ]
+      },
+      {
+        "id": "2412:19849",
+        "name": "OTP · expired challenge",
+        "actions": [
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13981",
+            "variableValue": {
+              "value": "phone",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13983",
+            "variableValue": {
+              "value": "Phone number",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13986",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13987",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13995",
+            "variableValue": {
+              "value": "+12025550123",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13997",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13984",
+            "variableValue": {
+              "value": "Filled",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13999",
+            "variableValue": {
+              "value": "We sent a 6-digit code to •••0123.",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2416:14625",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13982",
+            "variableValue": {
+              "value": "+12025550123",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13985",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13989",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13988",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13993",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13994",
+            "variableValue": {
+              "value": "success",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14005",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14004",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:13991",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14003",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14004",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14000",
+            "variableValue": {
+              "value": 6,
+              "type": "FLOAT",
+              "resolvedType": "FLOAT"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14007",
+            "variableValue": {
+              "value": "Error",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14008",
+            "variableValue": {
+              "value": "Error",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14009",
+            "variableValue": {
+              "value": "Error",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14010",
+            "variableValue": {
+              "value": "Error",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14011",
+            "variableValue": {
+              "value": "Error",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14012",
+            "variableValue": {
+              "value": "Error",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2412:14001",
+            "variableValue": {
+              "value": "Disabled",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          {
+            "type": "NODE",
+            "destinationId": "2412:17443",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.25
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": false
+          }
+        ]
+      }
+    ]
+  },
+  "finalEntryOverrides": {
+    "roots": [
+      {
+        "id": "2412:14013",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "AFTER_TIMEOUT",
+              "timeout": 0.009999999776482582
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2416:14625",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2412:14005",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2413:14625",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2412:13989",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "CONDITIONAL",
+                "conditionalBlocks": [
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2412:13990",
+                        "variableValue": {
+                          "value": "Default",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      }
+                    ],
+                    "condition": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:2412:13985"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": true,
+                                        "type": "BOOLEAN",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "EQUALS"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:2412:13988"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": false,
+                                        "type": "BOOLEAN",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "EQUALS"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          },
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:2412:13989"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": false,
+                                  "type": "BOOLEAN",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "EQUALS"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "AND"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2412:13990",
+                        "variableValue": {
+                          "value": "Disabled",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2412:14810",
+        "reactions": [
+          {
+            "trigger": {
+              "type": "AFTER_TIMEOUT",
+              "timeout": 0.009999999776482582
+            },
+            "actions": [
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2416:14625",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2412:14005",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2413:14625",
+                "variableValue": {
+                  "value": true,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2412:13989",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "type": "CONDITIONAL",
+                "conditionalBlocks": [
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2412:13990",
+                        "variableValue": {
+                          "value": "Default",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      }
+                    ],
+                    "condition": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:2412:13985"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": true,
+                                        "type": "BOOLEAN",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "EQUALS"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": {
+                                    "expressionArguments": [
+                                      {
+                                        "value": {
+                                          "type": "VARIABLE_ALIAS",
+                                          "id": "VariableID:2412:13988"
+                                        },
+                                        "type": "VARIABLE_ALIAS",
+                                        "resolvedType": "BOOLEAN"
+                                      },
+                                      {
+                                        "value": false,
+                                        "type": "BOOLEAN",
+                                        "resolvedType": "BOOLEAN"
+                                      }
+                                    ],
+                                    "expressionFunction": "EQUALS"
+                                  },
+                                  "type": "EXPRESSION",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "AND"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          },
+                          {
+                            "value": {
+                              "expressionArguments": [
+                                {
+                                  "value": {
+                                    "type": "VARIABLE_ALIAS",
+                                    "id": "VariableID:2412:13989"
+                                  },
+                                  "type": "VARIABLE_ALIAS",
+                                  "resolvedType": "BOOLEAN"
+                                },
+                                {
+                                  "value": false,
+                                  "type": "BOOLEAN",
+                                  "resolvedType": "BOOLEAN"
+                                }
+                              ],
+                              "expressionFunction": "EQUALS"
+                            },
+                            "type": "EXPRESSION",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        ],
+                        "expressionFunction": "AND"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2412:13990",
+                        "variableValue": {
+                          "value": "Disabled",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sections": [
+      "2412:13979"
+    ]
+  }
+}

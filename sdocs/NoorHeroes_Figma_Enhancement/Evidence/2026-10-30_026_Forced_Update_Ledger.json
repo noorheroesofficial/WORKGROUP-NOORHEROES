@@ -1,0 +1,3109 @@
+{
+  "state": {
+    "createdNodeIds": [
+      "2382:15428",
+      "2382:15437",
+      "2382:15576",
+      "2382:15577",
+      "2382:15578",
+      "2382:15579",
+      "2382:15580",
+      "2382:15581",
+      "2382:15582",
+      "2382:15583",
+      "2382:15584",
+      "2382:15585",
+      "2382:15589",
+      "2382:15728",
+      "2382:15729",
+      "2382:15730",
+      "2382:15731",
+      "2382:15732",
+      "2382:15733",
+      "2382:15734",
+      "2382:15735",
+      "2382:15736",
+      "2382:15737",
+      "2382:15741",
+      "2382:15747",
+      "2382:16030",
+      "2382:16031",
+      "2382:16032",
+      "2382:16033",
+      "2382:16034",
+      "2382:16035",
+      "2382:16036",
+      "2382:16037",
+      "2382:16038",
+      "2382:16039",
+      "2382:16043",
+      "2382:16326",
+      "2382:16327",
+      "2382:16328",
+      "2382:16329",
+      "2382:16330",
+      "2382:16331",
+      "2382:16332",
+      "2382:16333",
+      "2382:16334",
+      "2382:16335",
+      "2382:16339",
+      "2382:16345",
+      "2382:16361",
+      "2382:16362",
+      "2382:16363",
+      "2382:16364",
+      "2382:16382",
+      "2382:16383",
+      "2382:16384",
+      "2382:16385",
+      "2382:16390",
+      "2382:16395",
+      "2382:16400",
+      "2382:16405",
+      "2382:16410",
+      "2382:16415",
+      "2382:16420"
+    ],
+    "mutatedNodeIds": [
+      "2382:15585",
+      "2382:15437",
+      "I2382:15741;1420:20",
+      "I2382:15741;1420:22",
+      "2382:15737",
+      "2382:15589",
+      "2382:16039",
+      "2382:15747",
+      "I2382:16339;1420:20",
+      "I2382:16339;1420:22",
+      "2382:16335",
+      "2382:16043",
+      "1131:2"
+    ],
+    "section": "2382:15428",
+    "main": "2382:15437",
+    "error": "2382:15589",
+    "reduced": "2382:15747",
+    "reducedError": "2382:16043",
+    "storeSimulation": "2382:16345",
+    "storeReturn": "2382:16364",
+    "updates": [
+      "2382:15585",
+      "2382:15737",
+      "2382:16039",
+      "2382:16335"
+    ],
+    "snackbars": [
+      "2382:15741",
+      "2382:16339"
+    ],
+    "controls": {
+      "Bootstrap → required update": "2382:16385",
+      "Normal bootstrap — original route": "2382:16390",
+      "Preview Android update gate": "2382:16395",
+      "Preview iOS update gate": "2382:16400",
+      "Preview store unavailable": "2382:16405",
+      "Retry with store available": "2382:16410",
+      "Preview reduced motion": "2382:16415"
+    },
+    "board": "2382:16382",
+    "variables": {
+      "collection": "VariableCollectionId:2382:15429",
+      "required": "VariableID:2382:15430",
+      "outcome": "VariableID:2382:15431",
+      "platform": "VariableID:2382:15432",
+      "min": "VariableID:2382:15433",
+      "version": "VariableID:2382:15434",
+      "showVersion": "VariableID:2382:15435",
+      "showError": "VariableID:2382:15436"
+    },
+    "originalSplashReactions": [
+      {
+        "action": {
+          "type": "NODE",
+          "destinationId": "1166:215",
+          "navigation": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN_AND_OUT"
+            },
+            "duration": 0.30000001192092896
+          },
+          "resetVideoPosition": false
+        },
+        "actions": [
+          {
+            "type": "NODE",
+            "destinationId": "1166:215",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_IN_AND_OUT"
+              },
+              "duration": 0.30000001192092896
+            },
+            "resetVideoPosition": false
+          }
+        ],
+        "trigger": {
+          "type": "AFTER_TIMEOUT",
+          "timeout": 4
+        }
+      }
+    ],
+    "pending": "Verified store URLs and production store/OS handling"
+  },
+  "storedReactions": [
+    {
+      "id": "2382:15585",
+      "name": "Control/Update Now",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:15589",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.25
+                    },
+                    "resetVideoPosition": false,
+                    "resetScrollPosition": true
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:2382:15431"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "STRING"
+                      },
+                      {
+                        "value": "unavailable",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:16345",
+                    "navigation": "OVERLAY",
+                    "transition": {
+                      "type": "MOVE_IN",
+                      "direction": "BOTTOM",
+                      "matchLayers": false,
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.25
+                    },
+                    "resetVideoPosition": false
+                  }
+                ]
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:15589",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2382:15431"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "unavailable",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:16345",
+                      "navigation": "OVERLAY",
+                      "transition": {
+                        "type": "MOVE_IN",
+                        "direction": "BOTTOM",
+                        "matchLayers": false,
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:15737",
+      "name": "Control/Update Now",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:15589",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.25
+                    },
+                    "resetVideoPosition": false,
+                    "resetScrollPosition": true
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:2382:15431"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "STRING"
+                      },
+                      {
+                        "value": "unavailable",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:16345",
+                    "navigation": "OVERLAY",
+                    "transition": {
+                      "type": "MOVE_IN",
+                      "direction": "BOTTOM",
+                      "matchLayers": false,
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.25
+                    },
+                    "resetVideoPosition": false
+                  }
+                ]
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:15589",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2382:15431"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "unavailable",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:16345",
+                      "navigation": "OVERLAY",
+                      "transition": {
+                        "type": "MOVE_IN",
+                        "direction": "BOTTOM",
+                        "matchLayers": false,
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16039",
+      "name": "Control/Update Now",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:16043",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.10000000149011612
+                    },
+                    "resetVideoPosition": false,
+                    "resetScrollPosition": true
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:2382:15431"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "STRING"
+                      },
+                      {
+                        "value": "unavailable",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:16345",
+                    "navigation": "OVERLAY",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.10000000149011612
+                    },
+                    "resetVideoPosition": false
+                  }
+                ]
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:16043",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2382:15431"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "unavailable",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:16345",
+                      "navigation": "OVERLAY",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16335",
+      "name": "Control/Update Now",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": true,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:16043",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.10000000149011612
+                    },
+                    "resetVideoPosition": false,
+                    "resetScrollPosition": true
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:2382:15431"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "STRING"
+                      },
+                      {
+                        "value": "unavailable",
+                        "type": "STRING",
+                        "resolvedType": "STRING"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "actions": [
+                  {
+                    "type": "SET_VARIABLE",
+                    "variableId": "VariableID:2382:15436",
+                    "variableValue": {
+                      "value": false,
+                      "type": "BOOLEAN",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:16345",
+                    "navigation": "OVERLAY",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.10000000149011612
+                    },
+                    "resetVideoPosition": false
+                  }
+                ]
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:16043",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2382:15431"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "unavailable",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "SET_VARIABLE",
+                      "variableId": "VariableID:2382:15436",
+                      "variableValue": {
+                        "value": false,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:16345",
+                      "navigation": "OVERLAY",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.10000000149011612
+                      },
+                      "resetVideoPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16364",
+      "name": "Control/Return to NoorHeroes",
+      "w": 338,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "CLOSE"
+          },
+          "actions": [
+            {
+              "type": "CLOSE"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16385",
+      "name": "Review only / Bootstrap → required update",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15430",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15431",
+              "variableValue": {
+                "value": "available",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "1131:2",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16390",
+      "name": "Review only / Normal bootstrap — original route",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15430",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "1131:2",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16395",
+      "name": "Review only / Preview Android update gate",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15430",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15432",
+              "variableValue": {
+                "value": "Google Play",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15431",
+              "variableValue": {
+                "value": "available",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "2382:15437",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16400",
+      "name": "Review only / Preview iOS update gate",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15430",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15432",
+              "variableValue": {
+                "value": "App Store",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15431",
+              "variableValue": {
+                "value": "available",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "2382:15437",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16405",
+      "name": "Review only / Preview store unavailable",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15434",
+            "variableValue": {
+              "value": {
+                "expressionArguments": [
+                  {
+                    "value": "Minimum version required: ",
+                    "type": "STRING",
+                    "resolvedType": "STRING"
+                  },
+                  {
+                    "value": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:2382:15433"
+                    },
+                    "type": "VARIABLE_ALIAS",
+                    "resolvedType": "STRING"
+                  }
+                ],
+                "expressionFunction": "ADDITION"
+              },
+              "type": "EXPRESSION",
+              "resolvedType": "STRING"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15434",
+              "variableValue": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": "Minimum version required: ",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    },
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15433"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "STRING"
+                    }
+                  ],
+                  "expressionFunction": "ADDITION"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15435",
+              "variableValue": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15433"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "STRING"
+                    },
+                    {
+                      "value": "",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    }
+                  ],
+                  "expressionFunction": "NOT_EQUAL"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15431",
+              "variableValue": {
+                "value": "unavailable",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15436",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "2382:15589",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16410",
+      "name": "Review only / Retry with store available",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15431",
+            "variableValue": {
+              "value": "available",
+              "type": "STRING",
+              "resolvedType": "STRING"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15431",
+              "variableValue": {
+                "value": "available",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15436",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "2382:15589",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.25
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:16415",
+      "name": "Review only / Preview reduced motion",
+      "w": 528,
+      "h": 48,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15430",
+            "variableValue": {
+              "value": true,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15430",
+              "variableValue": {
+                "value": true,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15431",
+              "variableValue": {
+                "value": "available",
+                "type": "STRING",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "NODE",
+              "destinationId": "2382:15747",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_IN_AND_OUT"
+                },
+                "duration": 0.10000000149011612
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1131:2",
+      "name": "NH/V2/Onboarding/001/Splash_Screen/Premium Reference",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "action": {
+            "type": "CONDITIONAL",
+            "conditionalBlocks": [
+              {
+                "actions": [
+                  {
+                    "type": "NODE",
+                    "destinationId": "2382:15437",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.25
+                    },
+                    "resetVideoPosition": false,
+                    "resetScrollPosition": true
+                  }
+                ],
+                "condition": {
+                  "value": {
+                    "expressionArguments": [
+                      {
+                        "value": {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:2382:15430"
+                        },
+                        "type": "VARIABLE_ALIAS",
+                        "resolvedType": "BOOLEAN"
+                      },
+                      {
+                        "value": true,
+                        "type": "BOOLEAN",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    ],
+                    "expressionFunction": "EQUALS"
+                  },
+                  "type": "EXPRESSION",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              {
+                "actions": [
+                  {
+                    "type": "NODE",
+                    "destinationId": "1166:215",
+                    "navigation": "NAVIGATE",
+                    "transition": {
+                      "type": "DISSOLVE",
+                      "easing": {
+                        "type": "EASE_IN_AND_OUT"
+                      },
+                      "duration": 0.30000001192092896
+                    },
+                    "resetVideoPosition": false
+                  }
+                ]
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "2382:15437",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.25
+                      },
+                      "resetVideoPosition": false,
+                      "resetScrollPosition": true
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:2382:15430"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "BOOLEAN"
+                        },
+                        {
+                          "value": true,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "1166:215",
+                      "navigation": "NAVIGATE",
+                      "transition": {
+                        "type": "DISSOLVE",
+                        "easing": {
+                          "type": "EASE_IN_AND_OUT"
+                        },
+                        "duration": 0.30000001192092896
+                      },
+                      "resetVideoPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "2382:15437",
+      "name": "NH/V2/Onboarding/026/Forced Update / Blocking · sample minimum 2.0.0",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15434",
+            "variableValue": {
+              "value": {
+                "expressionArguments": [
+                  {
+                    "value": "Minimum version required: ",
+                    "type": "STRING",
+                    "resolvedType": "STRING"
+                  },
+                  {
+                    "value": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:2382:15433"
+                    },
+                    "type": "VARIABLE_ALIAS",
+                    "resolvedType": "STRING"
+                  }
+                ],
+                "expressionFunction": "ADDITION"
+              },
+              "type": "EXPRESSION",
+              "resolvedType": "STRING"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15434",
+              "variableValue": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": "Minimum version required: ",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    },
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15433"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "STRING"
+                    }
+                  ],
+                  "expressionFunction": "ADDITION"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15435",
+              "variableValue": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15433"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "STRING"
+                    },
+                    {
+                      "value": "",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    }
+                  ],
+                  "expressionFunction": "NOT_EQUAL"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15436",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          }
+        }
+      ],
+      "layout": [
+        {
+          "id": "2382:15576",
+          "w": 366,
+          "h": 738,
+          "x": 12,
+          "y": 82,
+          "children": [
+            {
+              "id": "2382:15577",
+              "name": "Content/Inner scroll viewport",
+              "x": 14,
+              "y": 16,
+              "w": 338,
+              "h": 638,
+              "overflow": "VERTICAL"
+            },
+            {
+              "id": "2382:15584",
+              "name": "Footer/Blocking action",
+              "x": 14,
+              "y": 674,
+              "w": 338,
+              "h": 48,
+              "overflow": "NONE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2382:15589",
+      "name": "NH/V2/Onboarding/026/Forced Update / Store unavailable",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15436",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15436",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 6
+          }
+        }
+      ],
+      "layout": [
+        {
+          "id": "2382:15728",
+          "w": 366,
+          "h": 738,
+          "x": 12,
+          "y": 82,
+          "children": [
+            {
+              "id": "2382:15729",
+              "name": "Content/Inner scroll viewport",
+              "x": 14,
+              "y": 16,
+              "w": 338,
+              "h": 638,
+              "overflow": "VERTICAL"
+            },
+            {
+              "id": "2382:15736",
+              "name": "Footer/Blocking action",
+              "x": 14,
+              "y": 674,
+              "w": 338,
+              "h": 48,
+              "overflow": "NONE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2382:15747",
+      "name": "NH/V2/Onboarding/026/Forced Update / Reduced motion",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15434",
+            "variableValue": {
+              "value": {
+                "expressionArguments": [
+                  {
+                    "value": "Minimum version required: ",
+                    "type": "STRING",
+                    "resolvedType": "STRING"
+                  },
+                  {
+                    "value": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:2382:15433"
+                    },
+                    "type": "VARIABLE_ALIAS",
+                    "resolvedType": "STRING"
+                  }
+                ],
+                "expressionFunction": "ADDITION"
+              },
+              "type": "EXPRESSION",
+              "resolvedType": "STRING"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15434",
+              "variableValue": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": "Minimum version required: ",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    },
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15433"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "STRING"
+                    }
+                  ],
+                  "expressionFunction": "ADDITION"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "STRING"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15435",
+              "variableValue": {
+                "value": {
+                  "expressionArguments": [
+                    {
+                      "value": {
+                        "type": "VARIABLE_ALIAS",
+                        "id": "VariableID:2382:15433"
+                      },
+                      "type": "VARIABLE_ALIAS",
+                      "resolvedType": "STRING"
+                    },
+                    {
+                      "value": "",
+                      "type": "STRING",
+                      "resolvedType": "STRING"
+                    }
+                  ],
+                  "expressionFunction": "NOT_EQUAL"
+                },
+                "type": "EXPRESSION",
+                "resolvedType": "BOOLEAN"
+              }
+            },
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15436",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.009999999776482582
+          }
+        }
+      ],
+      "layout": [
+        {
+          "id": "2382:16030",
+          "w": 366,
+          "h": 738,
+          "x": 12,
+          "y": 82,
+          "children": [
+            {
+              "id": "2382:16031",
+              "name": "Content/Inner scroll viewport",
+              "x": 14,
+              "y": 16,
+              "w": 338,
+              "h": 638,
+              "overflow": "VERTICAL"
+            },
+            {
+              "id": "2382:16038",
+              "name": "Footer/Blocking action",
+              "x": 14,
+              "y": 674,
+              "w": 338,
+              "h": 48,
+              "overflow": "NONE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2382:16043",
+      "name": "NH/V2/Onboarding/026/Forced Update / Store unavailable · Reduced motion",
+      "w": 390,
+      "h": 844,
+      "reactions": [
+        {
+          "action": {
+            "type": "SET_VARIABLE",
+            "variableId": "VariableID:2382:15436",
+            "variableValue": {
+              "value": false,
+              "type": "BOOLEAN",
+              "resolvedType": "BOOLEAN"
+            }
+          },
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "variableId": "VariableID:2382:15436",
+              "variableValue": {
+                "value": false,
+                "type": "BOOLEAN",
+                "resolvedType": "BOOLEAN"
+              }
+            }
+          ],
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 6
+          }
+        }
+      ],
+      "layout": [
+        {
+          "id": "2382:16326",
+          "w": 366,
+          "h": 738,
+          "x": 12,
+          "y": 82,
+          "children": [
+            {
+              "id": "2382:16327",
+              "name": "Content/Inner scroll viewport",
+              "x": 14,
+              "y": 16,
+              "w": 338,
+              "h": 638,
+              "overflow": "VERTICAL"
+            },
+            {
+              "id": "2382:16334",
+              "name": "Footer/Blocking action",
+              "x": 14,
+              "y": 674,
+              "w": 338,
+              "h": 48,
+              "overflow": "NONE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2382:15741",
+      "name": "NH/Snackbar / Store unavailable",
+      "reactions": [],
+      "children": [
+        {
+          "id": "I2382:15741;1420:20",
+          "name": "Action",
+          "reactions": [
+            {
+              "action": {
+                "type": "CONDITIONAL",
+                "conditionalBlocks": [
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2382:15436",
+                        "variableValue": {
+                          "value": true,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      },
+                      {
+                        "type": "NODE",
+                        "destinationId": "2382:15589",
+                        "navigation": "NAVIGATE",
+                        "transition": {
+                          "type": "DISSOLVE",
+                          "easing": {
+                            "type": "EASE_IN_AND_OUT"
+                          },
+                          "duration": 0.25
+                        },
+                        "resetVideoPosition": false,
+                        "resetScrollPosition": true
+                      }
+                    ],
+                    "condition": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "type": "VARIABLE_ALIAS",
+                              "id": "VariableID:2382:15431"
+                            },
+                            "type": "VARIABLE_ALIAS",
+                            "resolvedType": "STRING"
+                          },
+                          {
+                            "value": "unavailable",
+                            "type": "STRING",
+                            "resolvedType": "STRING"
+                          }
+                        ],
+                        "expressionFunction": "EQUALS"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2382:15436",
+                        "variableValue": {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      },
+                      {
+                        "type": "NODE",
+                        "destinationId": "2382:16345",
+                        "navigation": "OVERLAY",
+                        "transition": {
+                          "type": "MOVE_IN",
+                          "direction": "BOTTOM",
+                          "matchLayers": false,
+                          "easing": {
+                            "type": "EASE_IN_AND_OUT"
+                          },
+                          "duration": 0.25
+                        },
+                        "resetVideoPosition": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "type": "CONDITIONAL",
+                  "conditionalBlocks": [
+                    {
+                      "actions": [
+                        {
+                          "type": "SET_VARIABLE",
+                          "variableId": "VariableID:2382:15436",
+                          "variableValue": {
+                            "value": true,
+                            "type": "BOOLEAN",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        },
+                        {
+                          "type": "NODE",
+                          "destinationId": "2382:15589",
+                          "navigation": "NAVIGATE",
+                          "transition": {
+                            "type": "DISSOLVE",
+                            "easing": {
+                              "type": "EASE_IN_AND_OUT"
+                            },
+                            "duration": 0.25
+                          },
+                          "resetVideoPosition": false,
+                          "resetScrollPosition": true
+                        }
+                      ],
+                      "condition": {
+                        "value": {
+                          "expressionArguments": [
+                            {
+                              "value": {
+                                "type": "VARIABLE_ALIAS",
+                                "id": "VariableID:2382:15431"
+                              },
+                              "type": "VARIABLE_ALIAS",
+                              "resolvedType": "STRING"
+                            },
+                            {
+                              "value": "unavailable",
+                              "type": "STRING",
+                              "resolvedType": "STRING"
+                            }
+                          ],
+                          "expressionFunction": "EQUALS"
+                        },
+                        "type": "EXPRESSION",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "actions": [
+                        {
+                          "type": "SET_VARIABLE",
+                          "variableId": "VariableID:2382:15436",
+                          "variableValue": {
+                            "value": false,
+                            "type": "BOOLEAN",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        },
+                        {
+                          "type": "NODE",
+                          "destinationId": "2382:16345",
+                          "navigation": "OVERLAY",
+                          "transition": {
+                            "type": "MOVE_IN",
+                            "direction": "BOTTOM",
+                            "matchLayers": false,
+                            "easing": {
+                              "type": "EASE_IN_AND_OUT"
+                            },
+                            "duration": 0.25
+                          },
+                          "resetVideoPosition": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I2382:15741;1420:22",
+          "name": "Dismiss",
+          "reactions": [
+            {
+              "action": {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15436",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              "actions": [
+                {
+                  "type": "SET_VARIABLE",
+                  "variableId": "VariableID:2382:15436",
+                  "variableValue": {
+                    "value": false,
+                    "type": "BOOLEAN",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2382:16339",
+      "name": "NH/Snackbar / Store unavailable",
+      "reactions": [],
+      "children": [
+        {
+          "id": "I2382:16339;1420:20",
+          "name": "Action",
+          "reactions": [
+            {
+              "action": {
+                "type": "CONDITIONAL",
+                "conditionalBlocks": [
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2382:15436",
+                        "variableValue": {
+                          "value": true,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      },
+                      {
+                        "type": "NODE",
+                        "destinationId": "2382:16043",
+                        "navigation": "NAVIGATE",
+                        "transition": {
+                          "type": "DISSOLVE",
+                          "easing": {
+                            "type": "EASE_IN_AND_OUT"
+                          },
+                          "duration": 0.10000000149011612
+                        },
+                        "resetVideoPosition": false,
+                        "resetScrollPosition": true
+                      }
+                    ],
+                    "condition": {
+                      "value": {
+                        "expressionArguments": [
+                          {
+                            "value": {
+                              "type": "VARIABLE_ALIAS",
+                              "id": "VariableID:2382:15431"
+                            },
+                            "type": "VARIABLE_ALIAS",
+                            "resolvedType": "STRING"
+                          },
+                          {
+                            "value": "unavailable",
+                            "type": "STRING",
+                            "resolvedType": "STRING"
+                          }
+                        ],
+                        "expressionFunction": "EQUALS"
+                      },
+                      "type": "EXPRESSION",
+                      "resolvedType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "actions": [
+                      {
+                        "type": "SET_VARIABLE",
+                        "variableId": "VariableID:2382:15436",
+                        "variableValue": {
+                          "value": false,
+                          "type": "BOOLEAN",
+                          "resolvedType": "BOOLEAN"
+                        }
+                      },
+                      {
+                        "type": "NODE",
+                        "destinationId": "2382:16345",
+                        "navigation": "OVERLAY",
+                        "transition": {
+                          "type": "DISSOLVE",
+                          "easing": {
+                            "type": "EASE_IN_AND_OUT"
+                          },
+                          "duration": 0.10000000149011612
+                        },
+                        "resetVideoPosition": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "type": "CONDITIONAL",
+                  "conditionalBlocks": [
+                    {
+                      "actions": [
+                        {
+                          "type": "SET_VARIABLE",
+                          "variableId": "VariableID:2382:15436",
+                          "variableValue": {
+                            "value": true,
+                            "type": "BOOLEAN",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        },
+                        {
+                          "type": "NODE",
+                          "destinationId": "2382:16043",
+                          "navigation": "NAVIGATE",
+                          "transition": {
+                            "type": "DISSOLVE",
+                            "easing": {
+                              "type": "EASE_IN_AND_OUT"
+                            },
+                            "duration": 0.10000000149011612
+                          },
+                          "resetVideoPosition": false,
+                          "resetScrollPosition": true
+                        }
+                      ],
+                      "condition": {
+                        "value": {
+                          "expressionArguments": [
+                            {
+                              "value": {
+                                "type": "VARIABLE_ALIAS",
+                                "id": "VariableID:2382:15431"
+                              },
+                              "type": "VARIABLE_ALIAS",
+                              "resolvedType": "STRING"
+                            },
+                            {
+                              "value": "unavailable",
+                              "type": "STRING",
+                              "resolvedType": "STRING"
+                            }
+                          ],
+                          "expressionFunction": "EQUALS"
+                        },
+                        "type": "EXPRESSION",
+                        "resolvedType": "BOOLEAN"
+                      }
+                    },
+                    {
+                      "actions": [
+                        {
+                          "type": "SET_VARIABLE",
+                          "variableId": "VariableID:2382:15436",
+                          "variableValue": {
+                            "value": false,
+                            "type": "BOOLEAN",
+                            "resolvedType": "BOOLEAN"
+                          }
+                        },
+                        {
+                          "type": "NODE",
+                          "destinationId": "2382:16345",
+                          "navigation": "OVERLAY",
+                          "transition": {
+                            "type": "DISSOLVE",
+                            "easing": {
+                              "type": "EASE_IN_AND_OUT"
+                            },
+                            "duration": 0.10000000149011612
+                          },
+                          "resetVideoPosition": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I2382:16339;1420:22",
+          "name": "Dismiss",
+          "reactions": [
+            {
+              "action": {
+                "type": "SET_VARIABLE",
+                "variableId": "VariableID:2382:15436",
+                "variableValue": {
+                  "value": false,
+                  "type": "BOOLEAN",
+                  "resolvedType": "BOOLEAN"
+                }
+              },
+              "actions": [
+                {
+                  "type": "SET_VARIABLE",
+                  "variableId": "VariableID:2382:15436",
+                  "variableValue": {
+                    "value": false,
+                    "type": "BOOLEAN",
+                    "resolvedType": "BOOLEAN"
+                  }
+                }
+              ],
+              "trigger": {
+                "type": "ON_CLICK"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "details": {
+    "frames": [
+      {
+        "id": "2382:15437",
+        "overflow": "NONE",
+        "text": [
+          {
+            "id": "2382:15580",
+            "text": "system_update",
+            "w": 48,
+            "h": 48,
+            "font": {
+              "family": "Material Icons Round",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:45"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:15581",
+            "text": "Update Required",
+            "w": 330,
+            "h": 34,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:41"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:21"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:10"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:15582",
+            "text": "To keep learning and exploring NoorHeroes safely, please update to the latest version.",
+            "w": 330,
+            "h": 48,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:17"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:6"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:15583",
+            "text": "Minimum version required: 2.0.0",
+            "w": 330,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "visible": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15435"
+              },
+              "characters": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15434"
+              },
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:16"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:5"
+                }
+              ]
+            }
+          },
+          {
+            "id": "I2382:15585;322:3",
+            "text": "Update Now",
+            "w": 87,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:55"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:62"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:61"
+                }
+              ]
+            }
+          }
+        ],
+        "controls": [
+          {
+            "id": "2382:15585",
+            "name": "Control/Update Now",
+            "w": 338,
+            "h": 48
+          }
+        ],
+        "back": [
+          "2382:15475"
+        ],
+        "stars": [
+          {
+            "type": "FRAME",
+            "name": "Atmosphere/Star Field — Shared Stars Only"
+          }
+        ]
+      },
+      {
+        "id": "2382:15589",
+        "overflow": "NONE",
+        "text": [
+          {
+            "id": "2382:15732",
+            "text": "system_update",
+            "w": 48,
+            "h": 48,
+            "font": {
+              "family": "Material Icons Round",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:45"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:15733",
+            "text": "Update Required",
+            "w": 330,
+            "h": 34,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:41"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:21"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:10"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:15734",
+            "text": "To keep learning and exploring NoorHeroes safely, please update to the latest version.",
+            "w": 330,
+            "h": 48,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:17"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:6"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:15735",
+            "text": "Minimum version required: 2.0.0",
+            "w": 330,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "visible": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15435"
+              },
+              "characters": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15434"
+              },
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:16"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:5"
+                }
+              ]
+            }
+          },
+          {
+            "id": "I2382:15737;322:3",
+            "text": "Update Now",
+            "w": 87,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:55"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:62"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:61"
+                }
+              ]
+            }
+          }
+        ],
+        "controls": [
+          {
+            "id": "2382:15737",
+            "name": "Control/Update Now",
+            "w": 338,
+            "h": 48
+          }
+        ],
+        "back": [
+          "2382:15627",
+          "I2382:15741;1420:22",
+          "I2382:15741;1420:23"
+        ],
+        "stars": [
+          {
+            "type": "FRAME",
+            "name": "Atmosphere/Star Field — Shared Stars Only"
+          }
+        ]
+      },
+      {
+        "id": "2382:15747",
+        "overflow": "NONE",
+        "text": [
+          {
+            "id": "2382:16034",
+            "text": "system_update",
+            "w": 48,
+            "h": 48,
+            "font": {
+              "family": "Material Icons Round",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:45"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:16035",
+            "text": "Update Required",
+            "w": 330,
+            "h": 34,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:41"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:21"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:10"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:16036",
+            "text": "To keep learning and exploring NoorHeroes safely, please update to the latest version.",
+            "w": 330,
+            "h": 48,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:17"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:6"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:16037",
+            "text": "Minimum version required: 2.0.0",
+            "w": 330,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "visible": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15435"
+              },
+              "characters": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15434"
+              },
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:16"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:5"
+                }
+              ]
+            }
+          },
+          {
+            "id": "I2382:16039;322:3",
+            "text": "Update Now",
+            "w": 87,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:55"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:62"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:61"
+                }
+              ]
+            }
+          }
+        ],
+        "controls": [
+          {
+            "id": "2382:16039",
+            "name": "Control/Update Now",
+            "w": 338,
+            "h": 48
+          }
+        ],
+        "back": [
+          "2382:16001"
+        ],
+        "stars": []
+      },
+      {
+        "id": "2382:16043",
+        "overflow": "NONE",
+        "text": [
+          {
+            "id": "2382:16330",
+            "text": "system_update",
+            "w": 48,
+            "h": 48,
+            "font": {
+              "family": "Material Icons Round",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:45"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:16331",
+            "text": "Update Required",
+            "w": 330,
+            "h": 34,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:41"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:21"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:10"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:16332",
+            "text": "To keep learning and exploring NoorHeroes safely, please update to the latest version.",
+            "w": 330,
+            "h": 48,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:17"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:6"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2382:16333",
+            "text": "Minimum version required: 2.0.0",
+            "w": 330,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "Regular"
+            },
+            "bound": {
+              "visible": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15435"
+              },
+              "characters": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:2382:15434"
+              },
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:295:42"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:16"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:298:5"
+                }
+              ]
+            }
+          },
+          {
+            "id": "I2382:16335;322:3",
+            "text": "Update Now",
+            "w": 87,
+            "h": 20,
+            "font": {
+              "family": "Poppins",
+              "style": "SemiBold"
+            },
+            "bound": {
+              "fills": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:55"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:62"
+                }
+              ],
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:1412:61"
+                }
+              ]
+            }
+          }
+        ],
+        "controls": [
+          {
+            "id": "2382:16335",
+            "name": "Control/Update Now",
+            "w": 338,
+            "h": 48
+          }
+        ],
+        "back": [
+          "2382:16297",
+          "I2382:16339;1420:22",
+          "I2382:16339;1420:23"
+        ],
+        "stars": []
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:2382:15430",
+        "name": "Bootstrap / Forced update required",
+        "values": {
+          "2382:3": false
+        }
+      },
+      {
+        "id": "VariableID:2382:15431",
+        "name": "Store outcome",
+        "values": {
+          "2382:3": "available"
+        }
+      },
+      {
+        "id": "VariableID:2382:15432",
+        "name": "Platform store",
+        "values": {
+          "2382:3": "Google Play"
+        }
+      },
+      {
+        "id": "VariableID:2382:15433",
+        "name": "Minimum version / sourced preview sample",
+        "values": {
+          "2382:3": "2.0.0"
+        }
+      },
+      {
+        "id": "VariableID:2382:15434",
+        "name": "Formatted minimum version",
+        "values": {
+          "2382:3": "Minimum version required: 2.0.0"
+        }
+      },
+      {
+        "id": "VariableID:2382:15435",
+        "name": "Show minimum version",
+        "values": {
+          "2382:3": true
+        }
+      },
+      {
+        "id": "VariableID:2382:15436",
+        "name": "Show store error",
+        "values": {
+          "2382:3": true
+        }
+      }
+    ]
+  },
+  "headers": [
+    {
+      "id": "2382:15475",
+      "children": [
+        {
+          "id": "2382:15476",
+          "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+          "visible": true,
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "2382:15627",
+      "children": [
+        {
+          "id": "2382:15628",
+          "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+          "visible": true,
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "2382:16001",
+      "children": [
+        {
+          "id": "2382:16002",
+          "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+          "visible": true,
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "2382:16297",
+      "children": [
+        {
+          "id": "2382:16298",
+          "name": "Brand/Toolbar Wordmark — Approved 1345:1449",
+          "visible": true,
+          "reactions": []
+        }
+      ]
+    }
+  ],
+  "verificationLimits": [
+    "No live Present playback verification",
+    "No verified store listing",
+    "No real install/version check, OS back interception, or device testing"
+  ]
+}

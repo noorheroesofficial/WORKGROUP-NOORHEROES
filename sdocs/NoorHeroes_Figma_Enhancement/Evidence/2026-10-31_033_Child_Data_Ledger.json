@@ -1,0 +1,153 @@
+{
+  "section": "2437:15867",
+  "frames": {
+    "Default": "2437:15868",
+    "Cached draft fixture": "2437:15930",
+    "Loading": "2437:15992",
+    "Unavailable": "2437:16042",
+    "ReducedMotion": "2437:16092",
+    "ReducedMotion Loading": "2437:16154"
+  },
+  "info": {
+    "Default": {
+      "root": "2437:15868",
+      "back": "2437:15927",
+      "card": "2437:15906",
+      "title": "2437:15907",
+      "viewport": "2437:15908",
+      "content": "2437:16850",
+      "footer": "2437:15924",
+      "label": "2437:15925"
+    },
+    "Cached draft fixture": {
+      "root": "2437:15930",
+      "back": "2437:15989",
+      "card": "2437:15968",
+      "title": "2437:15969",
+      "viewport": "2437:15970",
+      "content": "2437:16877",
+      "footer": "2437:15986",
+      "label": "2437:15987"
+    },
+    "Loading": {
+      "root": "2437:15992",
+      "back": "2437:16039",
+      "card": "2437:16030",
+      "title": "2437:16031",
+      "viewport": "2437:16032",
+      "footer": "2437:16036",
+      "label": "2437:16037",
+      "loader": "2437:16035"
+    },
+    "Unavailable": {
+      "root": "2437:16042",
+      "back": "2437:16089",
+      "card": "2437:16080",
+      "title": "2437:16081",
+      "viewport": "2437:16082",
+      "footer": "2437:16086",
+      "label": "2437:16087",
+      "retry": "2437:16085"
+    },
+    "ReducedMotion": {
+      "root": "2437:16092",
+      "back": "2437:16151",
+      "card": "2437:16130",
+      "title": "2437:16131",
+      "viewport": "2437:16132",
+      "content": "2437:16904",
+      "footer": "2437:16148",
+      "label": "2437:16149"
+    },
+    "ReducedMotion Loading": {
+      "root": "2437:16154",
+      "back": "2437:16201",
+      "card": "2437:16192",
+      "title": "2437:16193",
+      "viewport": "2437:16194",
+      "footer": "2437:16198",
+      "label": "2437:16199",
+      "loader": "2437:16197"
+    }
+  },
+  "reviewEntry": "2437:16204",
+  "controls": {
+    "Read Child-Data Processing Consent": "2437:16247",
+    "Loading → draft fixture": "2437:16248",
+    "Unavailable → Retry": "2437:16249",
+    "Cached draft fixture": "2437:16250",
+    "Reduced motion": "2437:16251",
+    "Reduced loading → draft": "2437:16252"
+  },
+  "passages": [
+    {
+      "headingId": "1513:368",
+      "bodyId": "1513:369",
+      "heading": "1. Child profile",
+      "body": "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional."
+    },
+    {
+      "headingId": "1513:366",
+      "bodyId": "1513:367",
+      "heading": "2. Child’s age",
+      "body": "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype."
+    },
+    {
+      "headingId": "1513:404",
+      "bodyId": "1513:405",
+      "heading": "3. Why it is collected and used",
+      "body": "Account information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent."
+    },
+    {
+      "headingId": "1513:406",
+      "bodyId": "1513:407",
+      "heading": "4. Optional processing remains separate",
+      "body": "Personalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options."
+    },
+    {
+      "headingId": "1513:408",
+      "bodyId": "1513:409",
+      "heading": "5. How information is protected",
+      "body": "Draft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented."
+    },
+    {
+      "headingId": "1513:410",
+      "bodyId": "1513:411",
+      "heading": "6. Access, correction and deletion",
+      "body": "Parents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request."
+    },
+    {
+      "headingId": "1513:412",
+      "bodyId": "1513:413",
+      "heading": "7. Fictional example",
+      "body": "Ayaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record."
+    }
+  ],
+  "sourceCopy": [
+    "1. Child profile",
+    "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+    "2. Child’s age",
+    "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+    "3. Why it is collected and used",
+    "Account information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent.",
+    "4. Optional processing remains separate",
+    "Personalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options.",
+    "5. How information is protected",
+    "Draft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented.",
+    "6. Access, correction and deletion",
+    "Parents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request.",
+    "7. Fictional example",
+    "Ayaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record."
+  ],
+  "originalsUnchanged": {
+    "1513:350": true,
+    "1513:386": true,
+    "1459:256": true,
+    "2428:14707": true,
+    "2432:15286": true
+  },
+  "standardViewport": [
+    390,
+    844
+  ]
+}

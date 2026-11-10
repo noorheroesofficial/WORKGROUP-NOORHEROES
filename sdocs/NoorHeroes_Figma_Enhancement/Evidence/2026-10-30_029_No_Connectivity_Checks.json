@@ -1,0 +1,496 @@
+{
+  "evidenceType": "Saved native Figma reaction evaluation and structural checks; not live Present",
+  "passed": 122,
+  "total": 122,
+  "checks": [
+    {
+      "name": "Normal response online=false/ready/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/ready/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/ready/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/ready/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/maintenance/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/maintenance/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/maintenance/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/maintenance/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/forced/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/forced/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/forced/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/forced/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=false/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/ready/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/ready/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/ready/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/ready/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/maintenance/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Maintenance response clears stale estimate and restores maintenance gate",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/maintenance/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/maintenance/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/maintenance/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/forced/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/forced/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/forced/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/forced/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Normal response online=true/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/ready/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/ready/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/ready/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/ready/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/maintenance/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/maintenance/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/maintenance/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/maintenance/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/forced/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/forced/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/forced/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/forced/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=false/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/ready/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/ready/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/ready/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/ready/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/maintenance/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Maintenance response clears stale estimate and restores maintenance gate",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/maintenance/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/maintenance/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/maintenance/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/forced/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/forced/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/forced/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/forced/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/timeout/auth=false/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/timeout/auth=false/children=true",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/timeout/auth=true/children=false",
+      "passed": true
+    },
+    {
+      "name": "Reduced response online=true/timeout/auth=true/children=true",
+      "passed": true
+    },
+    {
+      "name": "2401:13585:connectivity=false checks before bootstrap timeout",
+      "passed": true
+    },
+    {
+      "name": "2401:13585:connectivity=true checks before bootstrap timeout",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:connectivity=false checks before bootstrap timeout",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:connectivity=true checks before bootstrap timeout",
+      "passed": true
+    },
+    {
+      "name": "Launch online=false:one immediate correct branch",
+      "passed": true
+    },
+    {
+      "name": "Launch online=true:one immediate correct branch",
+      "passed": true
+    },
+    {
+      "name": "2401:13580:guarded Retry Connection",
+      "passed": true
+    },
+    {
+      "name": "2401:13752:guarded Retry Connection",
+      "passed": true
+    },
+    {
+      "name": "2401:14027:guarded Retry Connection",
+      "passed": true
+    },
+    {
+      "name": "2401:14852:guarded Retry Connection",
+      "passed": true
+    },
+    {
+      "name": "2401:13638:pending action inert,48px",
+      "passed": true
+    },
+    {
+      "name": "2401:13697:pending action inert,48px",
+      "passed": true
+    },
+    {
+      "name": "2401:14300:pending action inert,48px",
+      "passed": true
+    },
+    {
+      "name": "2401:14578:pending action inert,48px",
+      "passed": true
+    },
+    {
+      "name": "2401:13531:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:13531:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:13531:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:13531:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:13585:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:13585:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:13585:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:13585:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:13644:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:13644:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:13644:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:13644:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:13703:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:13703:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:13703:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:13703:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:13762:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:13762:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:13762:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:13762:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:14031:existing reduced Still phase",
+      "passed": true
+    },
+    {
+      "name": "2401:14309:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:14309:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:14309:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:14309:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:14309:existing reduced Still phase",
+      "passed": true
+    },
+    {
+      "name": "2401:14587:fixed approved main geometry and inner scrolling",
+      "passed": true
+    },
+    {
+      "name": "2401:14587:source copy and semantic icon",
+      "passed": true
+    },
+    {
+      "name": "2401:14587:no inherited maintenance bindings/estimate",
+      "passed": true
+    },
+    {
+      "name": "2401:14587:no product back route",
+      "passed": true
+    },
+    {
+      "name": "2401:13756:existing NH snackbar and footer clearance",
+      "passed": true
+    },
+    {
+      "name": "2401:13703:timeout clears feedback only",
+      "passed": true
+    },
+    {
+      "name": "2401:14856:existing NH snackbar and footer clearance",
+      "passed": true
+    },
+    {
+      "name": "2401:14587:timeout clears feedback only",
+      "passed": true
+    },
+    {
+      "name": "I2401:13756;1420:22:Dismiss cannot leave gate",
+      "passed": true
+    },
+    {
+      "name": "I2401:14856;1420:22:Dismiss cannot leave gate",
+      "passed": true
+    },
+    {
+      "name": "Only one 029 review section exists",
+      "passed": true
+    },
+    {
+      "name": "Original Splash graph unchanged from approved 026",
+      "passed": true
+    }
+  ],
+  "unresolved": "PRD bundled offline-intro entry has no source control/copy and remains pending."
+}

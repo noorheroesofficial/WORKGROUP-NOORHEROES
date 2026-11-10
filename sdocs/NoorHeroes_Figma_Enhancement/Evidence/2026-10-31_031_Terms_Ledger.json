@@ -1,0 +1,112 @@
+{
+  "section": "2428:14707",
+  "frames": {
+    "Default": "2428:14708",
+    "Cached draft fixture": "2428:14866",
+    "Loading": "2428:15023",
+    "Unavailable": "2428:15180",
+    "ReducedMotion": "2428:15337",
+    "ReducedMotion Loading": "2428:15494"
+  },
+  "info": {
+    "Default": {
+      "root": "2428:14708",
+      "back": "2428:14838",
+      "card": "2428:14748",
+      "title": "2428:14849",
+      "viewport": "2428:14850",
+      "content": "2428:14851",
+      "footer": "2428:14864",
+      "label": "2428:14865"
+    },
+    "Cached draft fixture": {
+      "root": "2428:14866",
+      "back": "2428:14995",
+      "card": "2428:14906",
+      "title": "2428:15006",
+      "viewport": "2428:15007",
+      "content": "2428:15008",
+      "footer": "2428:15021",
+      "label": "2428:15022"
+    },
+    "Loading": {
+      "root": "2428:15023",
+      "back": "2428:15152",
+      "card": "2428:15063",
+      "title": "2428:15163",
+      "viewport": "2428:15164",
+      "content": "2428:15165",
+      "footer": "2428:15178",
+      "label": "2428:15179",
+      "loader": "2428:15653"
+    },
+    "Unavailable": {
+      "root": "2428:15180",
+      "back": "2428:15309",
+      "card": "2428:15220",
+      "title": "2428:15320",
+      "viewport": "2428:15321",
+      "content": "2428:15322",
+      "footer": "2428:15335",
+      "label": "2428:15336",
+      "retry": "2428:15671"
+    },
+    "ReducedMotion": {
+      "root": "2428:15337",
+      "back": "2428:15466",
+      "card": "2428:15377",
+      "title": "2428:15477",
+      "viewport": "2428:15478",
+      "content": "2428:15479",
+      "footer": "2428:15492",
+      "label": "2428:15493"
+    },
+    "ReducedMotion Loading": {
+      "root": "2428:15494",
+      "back": "2428:15623",
+      "card": "2428:15534",
+      "title": "2428:15634",
+      "viewport": "2428:15635",
+      "content": "2428:15636",
+      "footer": "2428:15649",
+      "label": "2428:15650",
+      "loader": "2428:15662"
+    }
+  },
+  "reviewEntry": "2428:15676",
+  "controls": {
+    "Read Terms of Service": "2428:15806",
+    "Loading → draft fixture": "2428:15812",
+    "Unavailable → Retry": "2428:15817",
+    "Cached draft fixture": "2428:15822",
+    "Reduced motion": "2428:15827",
+    "Reduced loading → draft": "2428:15832"
+  },
+  "sourceCopy": [
+    "1. Parent or guardian account",
+    "A parent or legal guardian manages the family account. Confirm that you are 18 years or older before continuing. Children use a child profile supervised by their parent or guardian.",
+    "2. Child’s age",
+    "A parent or guardian provides the child’s date of birth when adding a child profile. The app uses the resulting age band to present suitable learning content and avatar choices. Do not enter another child’s real information in this prototype.",
+    "3. Child profile",
+    "The parent creates a profile using a nickname, date of birth, avatar, preferred language and learning level. The profile separates each child’s learning experience within the family account. Optional details should remain optional.",
+    "4. Child data and parent controls",
+    "Child profile information and learning progress support lessons, age-appropriate content and progress tracking. Child-data-processing consent is requested separately in the next step. Agreeing to these Terms does not turn on Personalization/AI, Voice-feature or Marketing consent.",
+    "5. Fictional sample data",
+    "Child name: Ayaan (sample)\nAge: 7 years (sample)\nPreferred language: English (sample)\nLearning progress: 3 lessons completed (sample)\n\nAll examples are fictional. No actual child information is displayed or saved by this prototype.",
+    "6. Review and manage choices",
+    "The parent can review consent choices and use the approved privacy and support journeys to request help or changes. Optional preferences can be reviewed independently. Final legal terms, service conditions and available controls require legal and product review before release."
+  ],
+  "originalsUnchanged": {
+    "1513:350": true,
+    "1513:386": true,
+    "1459:256": true,
+    "2412:14013": true
+  },
+  "sourceContent": "1513:363",
+  "standardViewport": [
+    390,
+    844
+  ],
+  "bodyContrast": 13.6043,
+  "versionContrast": 4.5185
+}

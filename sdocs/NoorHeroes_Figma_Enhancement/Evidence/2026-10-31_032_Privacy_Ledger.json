@@ -1,0 +1,109 @@
+{
+  "section": "2432:15286",
+  "frames": {
+    "Default": "2432:15287",
+    "Cached draft fixture": "2432:15347",
+    "Loading": "2432:15407",
+    "Unavailable": "2432:15457",
+    "ReducedMotion": "2432:15507",
+    "ReducedMotion Loading": "2432:15567"
+  },
+  "info": {
+    "Default": {
+      "root": "2432:15287",
+      "back": "2432:15344",
+      "card": "2432:15325",
+      "title": "2432:15326",
+      "viewport": "2432:15327",
+      "content": "2432:16263",
+      "footer": "2432:15341",
+      "label": "2432:15342"
+    },
+    "Cached draft fixture": {
+      "root": "2432:15347",
+      "back": "2432:15404",
+      "card": "2432:15385",
+      "title": "2432:15386",
+      "viewport": "2432:15387",
+      "content": "2432:16278",
+      "footer": "2432:15401",
+      "label": "2432:15402"
+    },
+    "Loading": {
+      "root": "2432:15407",
+      "back": "2432:15454",
+      "card": "2432:15445",
+      "title": "2432:15446",
+      "viewport": "2432:15447",
+      "footer": "2432:15451",
+      "label": "2432:15452",
+      "loader": "2432:15450"
+    },
+    "Unavailable": {
+      "root": "2432:15457",
+      "back": "2432:15504",
+      "card": "2432:15495",
+      "title": "2432:15496",
+      "viewport": "2432:15497",
+      "footer": "2432:15501",
+      "label": "2432:15502",
+      "retry": "2432:15500"
+    },
+    "ReducedMotion": {
+      "root": "2432:15507",
+      "back": "2432:15564",
+      "card": "2432:15545",
+      "title": "2432:15546",
+      "viewport": "2432:15547",
+      "content": "2432:16293",
+      "footer": "2432:15561",
+      "label": "2432:15562"
+    },
+    "ReducedMotion Loading": {
+      "root": "2432:15567",
+      "back": "2432:15614",
+      "card": "2432:15605",
+      "title": "2432:15606",
+      "viewport": "2432:15607",
+      "footer": "2432:15611",
+      "label": "2432:15612",
+      "loader": "2432:15610"
+    }
+  },
+  "reviewEntry": "2432:15617",
+  "controls": {
+    "Read Privacy Policy": "2432:15660",
+    "Loading → draft fixture": "2432:15661",
+    "Unavailable → Retry": "2432:15662",
+    "Cached draft fixture": "2432:15663",
+    "Reduced motion": "2432:15664",
+    "Reduced loading → draft": "2432:15665"
+  },
+  "sourceCopy": [
+    "1. What information is collected",
+    "Draft scope includes the parent’s phone number or email for authentication, and child profile information such as nickname, date of birth, avatar, preferred language, learning level and learning progress. Additional optional information must be described before it is collected.",
+    "2. Why it is collected and used",
+    "Account information supports sign-in and the family account. Child profile information supports age-band content, language preferences and separate profiles. Learning progress supports resuming lessons and showing progress to the parent.",
+    "3. Optional processing remains separate",
+    "Personalization/AI, Voice-feature and Marketing consent are independent and start off. Neither Terms agreement nor Privacy acknowledgement enables them. Voice features also require any applicable device permission before use. Optional choices can be changed without checking the other options.",
+    "4. How information is protected",
+    "Draft requirement: limit access to authorized purposes and protect child and parent information with appropriate technical and organizational safeguards. The final policy must accurately describe verified production controls, providers, storage, transfers and retention. This prototype makes no claim that those controls are implemented.",
+    "5. Access, correction and deletion",
+    "Parents should be able to request access to their family information, ask for corrections and request deletion through the app’s approved privacy or support journey. The final policy must specify the confirmed request route, verification steps, retention rules and response process. This prototype does not submit a data request.",
+    "6. Fictional example",
+    "Ayaan (sample) is 7 years old (sample), prefers English (sample), and has completed 3 lessons (sample). This illustrates profile and progress information only. It is fictional sample data, not a real child’s record.",
+    "7. Your acknowledgement",
+    "Review this draft Privacy Policy and make the separate child-data-processing choice below. Continuing acknowledges the Privacy Policy only; it does not enable optional processing. Close or go back without granting any unconfirmed consent."
+  ],
+  "originalsUnchanged": {
+    "1513:350": true,
+    "1513:386": true,
+    "1459:256": true,
+    "2428:14707": true
+  },
+  "sourceContent": "1513:401",
+  "standardViewport": [
+    390,
+    844
+  ]
+}
