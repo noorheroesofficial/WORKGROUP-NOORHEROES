@@ -98,40 +98,41 @@ git clone https://github.com/noorheroesofficial/noorheroes-website.git
 
 ### 2.4 Step 3: Setup & Launch Backend API (`NoorHeroes-Backend`)
 
-The backend is a FastAPI modular monolith with 14 bounded contexts, PostgreSQL 16, and Redis 7.
+The backend is a FastAPI modular monolith with 24 domain modules, PostgreSQL 16, and Redis 7.
 
 ```bash
 cd NoorHeroes-Backend
 
-# 1. Create and activate a Python virtual environment
+# 1. Create and activate a Python virtual environment (Python 3.12+ recommended; requires >=3.11)
 # Windows (PowerShell):
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 # macOS / Linux:
-python3.12 -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 
 # 2. Upgrade pip and install all dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 
 # 3. Configure environment variables
 cp .env.example .env
 
 # 4. Start local PostgreSQL (port 5432) and Redis (port 6379)
-docker-compose up -d postgres redis
+docker compose up -d postgres redis
 
 # 5. Apply database schema migrations
-alembic upgrade head
+python -m alembic upgrade head
 
-# 6. Start the FastAPI development server
-uvicorn src.noorheroes.main:app --reload --host 0.0.0.0 --port 8000
+# 6. Start the FastAPI development server (or run: make run)
+python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 * **Interactive Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
 * **ReDoc API Reference**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
-* **Health Check**: `GET http://localhost:8000/health`
+* **Health & Readiness Probes**: `GET http://localhost:8000/healthz` (liveness) · `GET http://localhost:8000/readyz` or `GET http://localhost:8000/health` (DB + Redis readiness)
+* **Root Service Info**: `GET http://localhost:8000/`
 
 ---
 
@@ -256,9 +257,10 @@ WORKGROUP-NOORHEROES/
 │
 ├── NoorHeroes-Backend/                                # Live Backend Codebase (FastAPI Modular Monolith)
 │   ├── MASTER-README.md                               # Authoritative Live Backend Architecture Manual
-│   ├── FAST-API-INSTRUCTIONS.md                       # Comprehensive 14-Context Codebase Usage Manual
-│   ├── src/noorheroes/                                # Core, Common, Infra, and 14 Bounded Contexts
-│   └── tests/                                         # 4,900 Passing Tests (Unit, Service, API, Invariants)
+│   ├── FAST-API-INSTRUCTIONS.md                       # Comprehensive Backend Codebase Usage Manual
+│   ├── main.py                                        # FastAPI Application Entrypoint (uvicorn main:app)
+│   ├── src/noorheroes/                                # Core, Common, Infra, and 24 Domain Modules
+│   └── tests/                                         # Pytest Suite (490 test files: Unit, Service, API, Invariants)
 │
 ├── noorheroes-admin/                                  # Live Web Admin Codebase (Next.js 16 App Router)
 │   ├── MASTER-README.md                               # Authoritative Live Admin Portal Architecture Manual
@@ -349,18 +351,18 @@ When working across multiple documentation sources and code repositories, all en
 
 ## 5. Platform Overview
 
-### 4.1 Backend (`NoorHeroes-Backend`)
-* **Technology**: Python 3.12+, FastAPI, SQLAlchemy 2.0 (Async), Alembic, PostgreSQL 16, SQLite (CI test engine), Redis 7, Celery 5.3, Cloudflare R2 / S3.
-* **Architecture**: Clean Architecture Modular Monolith with 14 Bounded Contexts:
-  `identity`, `access_gate`, `bedtime`, `dua`, `content`, `learning`, `rewards`, `subscriptions`, `admin`, `ai_safety`, `feature_flags`, `localization`, `media`, `notifications`.
+### 5.1 Backend (`NoorHeroes-Backend`)
+* **Technology**: Python 3.11+ (3.12+ recommended), FastAPI, SQLAlchemy 2.0 (Async), Alembic (`0001`–`0104`), PostgreSQL 16, SQLite (CI test engine), Redis 7, Celery 5.3, Cloudflare R2 / S3.
+* **Architecture**: Clean Architecture Modular Monolith with 24 Domain Modules (`src/noorheroes/modules/`):
+  `access_gate`, `admin`, `ai_safety`, `avatars`, `bedtime`, `challenges`, `content`, `downloads`, `dua`, `facts`, `feature_flags`, `games`, `habits`, `home`, `identity`, `learning`, `localization`, `media`, `missions`, `notifications`, `progress`, `rewards`, `search`, `subscriptions`.
 * **Key Invariants**:
   - Gateway Zero-Business-Authorization: Routers perform zero business authorization; domain services independently re-verify session scope (`verify_child_scope`).
   - Sacred Content Protection: Database engine trigger `fn_prevent_ayah_text_mutation` write-protects Quranic text against direct SQL mutation.
   - Zero Voice Retention: In-memory `EphemeralAudioBuffer` explicitly wipes audio bytes post-inference; zero DB voice columns.
   - Double-Entry Gamification: All XP, Noor Coins, and points are recorded via `rewards_ledger`.
-* **Testing**: 4,900 automated tests passing across 339 test modules with 100% pass rate in CI.
+* **API & Testing**: 766 registered routes (`main:app`) and 7,517 collected automated tests across 490 test files.
 
-### 4.2 Web Admin Portal (`noorheroes-admin`)
+### 5.2 Web Admin Portal (`noorheroes-admin`)
 * **Technology**: Next.js 16.2.12 App Router, React 19.2.4, TypeScript, Tailwind CSS, TanStack Query v5, Zod, Vitest, Playwright.
 * **Architecture**: Zero-database frontend proxy architecture. Consumes backend REST API `/v1`.
 * **Key Invariants**:
@@ -369,7 +371,7 @@ When working across multiple documentation sources and code repositories, all en
   - Maker-Checker Dual Sign-off: Safety-critical feature flag changes and PII unmasking require 2 distinct admin approvals.
   - Backend-Driven Localization: UI strings, RTL layout direction, and date formats are resolved dynamically from backend localization payloads.
 
-### 4.3 Mobile Application (`NoorHeroes`)
+### 5.3 Mobile Application (`NoorHeroes`)
 * **Technology**: Kotlin Multiplatform (KMP), Compose Multiplatform (Android & iOS), SQLDelight, Ktor Client, Koin, Material Design 3.
 * **Architecture**: Clean Architecture (`App -> Shared -> Feature -> Core`) with MVI state machines.
 * **Key Invariants**:
@@ -377,7 +379,7 @@ When working across multiple documentation sources and code repositories, all en
   - Offline-First Sync Queue: Mutating actions queue locally in SQLDelight and synchronize with backend using idempotent replays.
   - Presentation Hint Decoupling: UI honors server-supplied hints (e.g. `celebratory_ui_hint: false` during Bedtime Mode).
 
-### 4.4 Public Marketing & Discovery Web Platform (`noorheroes-website`)
+### 5.4 Public Marketing & Discovery Web Platform (`noorheroes-website`)
 * **Technology**: Next.js 15.2.0 App Router, React 19.0.0, TypeScript 5.8, Tailwind CSS v4.1, Motion 12.23, Lucide React, Google Gen AI SDK (`@google/genai`).
 * **Architecture**: Hybrid React Server Components with dynamic code splitting (`next/dynamic`) for interactive sections, 2D HTML5 Canvas particle physics, and CSS-first `@theme` design tokens.
 * **Key Invariants**:
@@ -387,7 +389,7 @@ When working across multiple documentation sources and code repositories, all en
   - Calm Motion & Anti-Dark Patterns: Strictly no fake urgency timers, countdown tickers, or manipulative dark patterns; full `prefers-reduced-motion` compliance.
   - COPPA/GDPR-K Aligned Privacy: Zero commercial advertising tracking pixels, zero persistent tracking cookies.
 
-### 4.5 Parent Web Portal (Planned)
+### 5.5 Parent Web Portal (Planned)
 * **Technology**: Next.js App Router (TypeScript, Tailwind CSS, TanStack Query).
 * **Scope**: 46 visual screens (`Screens/Parent Web/`) covering Account & Security, Connected Devices, Subscriptions & Invoices, Consent & Privacy, Data Export, and Account Deletion.
 * **Status**: Fully specified in PRD D27 and Development Blueprints; repository initialization pending.
@@ -464,7 +466,7 @@ Before making any modifications in this Workgroup, consult the core governance f
 
 | Component | Repository / Path | Architecture / Framework | Implemented Status | Verification Evidence |
 |---|---|---|---|---|
-| **Backend Core** | `NoorHeroes-Backend/` | FastAPI / Async SQLAlchemy 2.0 / PostgreSQL | **Phases 0–6 Implemented** (A1, C19, B16, A11, A3, A4, A5, A6, A7, A8, A9 B01–B05, F37) | 4,900 tests passing across 339 test files; 0 schema drift; full Alembic migrations. |
+| **Backend Core** | `NoorHeroes-Backend/` | FastAPI / Async SQLAlchemy 2.0 / PostgreSQL | **24 Domain Modules Implemented** (Identity, Content, Learning, Stories, Bedtime, Duas, Habits, Games, Avatars, Home, Missions, Progress, Challenges, Facts, Search, Downloads, Rewards, Notifications, Safety, Admin) | 7,517 collected tests across 490 test files; 766 registered routes (`main:app`); 104 Alembic migrations (`0001`–`0104`). |
 | **Web Admin Portal** | `noorheroes-admin/` | Next.js 16 App Router / React 19 / TypeScript | **Foundation & 17 Features Implemented** (Auth, 2FA, Users, CMS, Flags, Risk, etc.) | Complete Vitest test suite; edge proxy middleware active; zero token browser storage. |
 | **Mobile Application** | `NoorHeroes/` | Kotlin Multiplatform / Compose Multiplatform | **Foundation & 8 Features Implemented** (Onboarding, Home, Learn, Stories, Habits, Rewards, Subscription, Parent Dashboard) | 13 Core instruction manuals active; SQLDelight persistence; MVI state machines. |
 | **Public Web Platform** | `noorheroes-website/` | Next.js 15 App Router / React 19 / Tailwind v4 | **Implemented (14 Sections, i18n, PWA)** | Full 4-language LTR/RTL engine active; dynamic SEO, sitemap & robots configured; 0 database dependencies. |
