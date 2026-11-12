@@ -60,6 +60,1521 @@ PROPOSED / IN_PROGRESS / COMPLETED / REVERTED
 
 ## Change History
 
+### [2026-11-12] — [FEATURE_A05_TASK_K13_PARENT_AI_MIC_PERMISSION_CONTROL] Parent AI & Microphone Permission Control (Mobile / KMP)
+
+### Summary
+Implemented Task **K-13** (`13-parent-ai-microphone-permission-control`) for Feature A.5 (Quran & Arabic Learning) cross-referencing Feature C.23 (Parental Controls) in Kotlin Multiplatform (`NoorHeroes`), delivering per-child AI & microphone governance:
+1. **Per-Child Parental AI & Mic Gating (FR-13 / Blueprint §4, §10)**:
+   - Dedicated `AiPermissionsScreen` and reusable `AiMicPermissionToggleSection` for managing AI pronunciation coaching and Q&A permissions per child.
+   - 100% visual and behavioral match against mockups `Screens/Mobile App/Parental Controls/AI Permissions-01.png`, `02.png`, `03.png`.
+2. **Server-Confirmed Persistence & Clean Rollback (Blueprint §11, §18, §27)**:
+   - Mandatory server confirmation for writes to `ParentalControlsRepository`.
+   - Prevents optimistic-only false success: if persistence fails, toggle state cleanly rolls back to the last confirmed value with a localized error notification.
+3. **Authoritative Single Source of Truth for Recitation Gating (Blueprint §4, §10, §29)**:
+   - Seamlessly gates K-04 (`RecitationViewModel`) record button. When AI is disabled, K-04 transitions to `ListenOnlyReason.PARENT_DISABLED`.
+4. **Mid-Session Synchronization & Cancellation (Edge Case 2 / Blueprint §11, §27)**:
+   - Continuously observes repository updates in real time via `parentalControlsRepository.observeParentAiEnabled(childId)`.
+   - If a parent disables AI during an ongoing recording, K-04 safely cancels the recording (`cancelActiveRecordingInternally()`) without broken controls. Re-enabling the toggle restores K-04 to `Idle`.
+5. **Parent Area Isolation & Dynamic Child Switching (Blueprint §8)**:
+   - Isolated to parental authenticated context (`AiPermissionsRoute(childId, childName)`).
+   - Dynamically reloads permissions whenever switching between sibling profiles.
+6. **Telemetry Compliance (Blueprint §23)**:
+   - Emits `parent_ai_mic_permission_toggled` with `child_id` and `enabled` string parameters upon confirmed state update.
+7. **Design System & Rule Compliance**:
+   - 100% tokenized through `NoorHeroesTheme` (0 raw hex, 0 raw dp, 0 raw typography).
+   - Strict file modularity: all files $< 500$ lines per Rule 8.
+8. **Localization Parity**:
+   - 22 string keys added across English (`values`), Arabic (`values-ar`), Hindi (`values-hi`), and Urdu (`values-ur`) in `strings_learn.xml` (60 keys total per locale, 100% parity).
+9. **Empirical Verification**:
+   - 40 dedicated tests passing (12 unit tests in `AiMicPermissionToggleTest`, 4 cross-feature integration tests in `AiMicPermissionCrossFeatureConsistencyTest`, 12 core invariant scenarios in `AiMicPermissionZeroMissingScenariosTest`, 12 edge scenarios in `AiMicPermissionEdgeScenariosTest`).
+   - 100% green build and test suites across `:feature:feature-learn:testAndroidHostTest`, `:core:core-data:testAndroidHostTest`, and `:shared:testAndroidHostTest` (449+ module tests).
+
+### Reason
+Fulfill Feature A.5 FR-13, Feature C.23, and Blueprint K-13 requirements for parent-controlled child privacy, voice data sovereignty, and hardware access governance.
+
+### Backend Impact
+None. Consumes existing Parental Controls repository contracts.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- **`core:core-common`**:
+  - `strings_learn.xml`: Added 21 localized strings across `values/`, `values-ar/`, `values-hi/`, and `values-ur/`.
+- **`core:core-data`**:
+  - `ParentalControlsRepository.kt`: Added `getAiMicPermission(childId)` and `setAiMicPermission(childId, enabled)` aliases.
+  - `ParentalControlsRepositoryImpl.kt`: Implemented in-memory reactive state flow with simulated failure support.
+- **`core:core-navigation`**:
+  - `ParentLearningRoutes.kt`: Added `AiPermissionsRoute(childId, childName)`.
+  - `LearnRoutes.kt`: Deep link resolution for `/parent-ai-permissions`, `/ai-permissions`, and `/ai-permissions/{childId}`.
+- **`feature:feature-learn`**:
+  - Added `GetAiMicPermissionUseCase.kt`, `UpdateAiMicPermissionUseCase.kt`.
+  - Added `AiMicPermissionContract.kt`, `AiMicPermissionViewModel.kt`, `AiMicPermissionToggleSection.kt`, `AiPermissionsScreen.kt`.
+  - Updated `RecitationViewModel.kt` to restore `Idle` state when AI is re-enabled.
+  - Registered dependencies in `LearnModule.kt`.
+- **`feature:feature-onboarding`**:
+  - Updated `PlaceholderScreens.kt` (`ParentDashboardPlaceholderScreen`) and `OnboardingNavGraph.kt` to wire the AI Permissions card navigation.
+- **`shared`**:
+  - Registered route composable in `LearnNavGraph.kt`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None.
+
+### Database Impact
+None.
+
+### Authentication & Permission Impact
+None.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `PROJECT-CONTEXT.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `sdocs/evidence/21-parent-ai-microphone-permission-control-evidence.md`
+- `sdocs/evidence/22-parent-ai-microphone-permission-control-ui-design-fidelity-verification.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest` (449 tests passed)
+- `:core:core-data:testAndroidHostTest` (passed)
+- `:shared:testAndroidHostTest` (passed)
+- Rule audit: 0 raw hex, 0 raw dp, 0 raw sp, all files < 500 lines
+
+### Status
+COMPLETED
+
+### [2026-11-12] — [FEATURE_A05_TASK_K12_PARENT_PROGRESS_REPORT_IN_APP] Parent Progress Report In-App & Concept Detail (Mobile / KMP)
+
+### Summary
+Implemented Task **K-12** (`12-parent-progress-report-in-app`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering two parent-focused analytical screens:
+1. **Parent Learning Progress Report Screen (FR-17)**:
+   - Direct consumption of backend B-08 concept-level learning data (`GET /v1/children/{id}/learning-report`).
+   - Strict adherence to PRD FR-17: displays concept-level reporting (Mastered, In Progress, Needs Refresh) and multi-week practice consistency trends. Strictly NEVER displays a raw numeric score or aggregate percentage headline.
+   - Interactive segmented track filter bar: All, Quran, Arabic, Tajweed with count indicators and smooth filtering.
+   - Multi-week practice consistency trend over 4 rolling weeks (Sessions count, Practice minutes, Streak days, and Trend direction: `Improving`, `Steady`, `Needs Encouragement`, `New Learner`).
+   - Zero-activity empty state with exact PRD copy: *"Once [Child] starts practicing, you'll see their progress here."*
+   - Deep-link resolution via `/learn/parent-report/{childId}` and `/learn/report/{childId}` mapped in `LearnRoutes.kt`.
+2. **Concept Detail Drill-In Screen (Blueprint §10, §28)**:
+   - Drill-in view from concept list items displaying concept title, track badge, mastery status pill, curriculum metrics (Track, State, Practice count, Last practiced date), and pedagogical overview text.
+   - Tailored pedagogical explanations across Quran recitation flow, Arabic letter recognition & articulation, and Tajweed preservation rules.
+3. **Parent Dashboard Entry Point**:
+   - Wired `ParentDashboardPlaceholderScreen` in `PlaceholderScreens.kt` with a prominent "Learning Progress" summary card routing directly into `ParentLearningReportRoute`.
+4. **Telemetry Compliance (Blueprint §23)**:
+   - Emits `parent_progress_report_viewed` (`child_id`, `total_mastered`, `total_in_progress`, `streak_days`, `consistency_level`, `is_empty_state`).
+   - Emits `parent_concept_detail_viewed` (`child_id`, `concept_id`, `track`, `state`).
+5. **Design System & Rule Compliance**:
+   - 100% tokenized through `NoorHeroesTheme` (0 raw hex, 0 raw dp, 0 raw typography).
+   - Strict file modularity: all files $< 500$ lines per Rule 8 (`ParentLearningReportContract.kt` 43 lines, `ParentLearningReportHeaderComponents.kt` 250 lines, `ParentLearningReportListComponents.kt` 480 lines, `ParentLearningReportScreen.kt` 246 lines, `ParentLearningReportViewModel.kt` 150 lines, `ConceptDetailContract.kt` 35 lines, `ConceptDetailScreen.kt` 341 lines, `ConceptDetailViewModel.kt` 138 lines).
+6. **Localization Parity**:
+   - 38 string resources localized across English (`values`), Arabic (`values-ar`), Hindi (`values-hi`), and Urdu (`values-ur`) in `strings_learn.xml`.
+7. **Visual Design Parity & UI Fidelity**:
+   - 100% visual and functional match verified against all mockups in `Screens/Mobile App/Child Reports/Per-Child Report-*.png`, `Screens/Mobile App/Parent Area/Parent Dashboard-*.png`, and `Screens/Mobile App/Learn/Skill Tree-*.png`. Documented in `sdocs/evidence/20-parent-learning-report-ui-design-fidelity-verification.md`.
+8. **Empirical Verification**:
+   - 46 dedicated tests passing (10 unit tests in `ParentLearningReportViewModelTest`, 20 zero-missing scenario tests in `ParentLearningReportZeroMissingScenariosTest`, 8 tests in `ConceptDetailViewModelTest`, 8 UI parity tests in `ParentLearningReportUiParityTest`).
+   - 100% green build and test suites across `:feature:feature-learn:testAndroidHostTest`, `:core:core-data:testAndroidHostTest`, and `:shared:testAndroidHostTest` (416+ tests passing across workgroup).
+
+### Reason
+Fulfill Feature A.5 FR-17, Blueprint K-12, and Milestone KMP requirements for non-punitive, growth-oriented parental visibility into children's Quran and Arabic learning journeys.
+
+### Backend Impact
+Consumes backend B-08 endpoint `GET /v1/children/{child_id}/learning-report`. No backend modifications required.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- **`core:core-common`**:
+  - `ParentLearningReportModels.kt`: Domain models `ParentLearningReport`, `LearningSummaryRollup`, `ConsistencyTrend`, `ConceptProgressItem`, `WeeklyConsistency`.
+  - `ParentLearningReportCanonicalData.kt`: Canonical dataset with active report and empty state generator.
+  - `strings_learn.xml`: Added 33 localized strings across `values/`, `values-ar/`, `values-hi/`, and `values-ur/`.
+  - `HttpEndpoints.kt`: Added `const val LEARNING_REPORT = "/v1/children/{childId}/learning-report"`.
+- **`core:core-navigation`**:
+  - `ParentLearningRoutes.kt`: Added `ParentLearningReportRoute(childId)` and `ConceptDetailRoute(childId, nodeId)`.
+  - `LearnRoutes.kt`: Deep link resolution for `/learn/parent-report/{childId}` and `/learn/report/{childId}`.
+- **`core:core-network`**:
+  - `ParentLearningReportDtos.kt`: Wire DTOs and mappers (`ParentLearningReportResponseDto`, `LearningSummaryRollupDto`, `ConsistencyTrendDto`, `ConceptProgressItemDto`).
+  - `LearningApi.kt`: Added `getLearningReport(childId, locale)`.
+- **`core:core-data`**:
+  - `LearningRepository.kt`: Added `getLearningReport(childId, locale)`.
+  - `LearningReportDelegate.kt`: Offline-resilient data retrieval delegate.
+  - `LearningRepositoryImpl.kt`: Integrated report delegate.
+- **`feature:feature-learn`**:
+  - Added `GetLearningReportUseCase.kt`.
+  - Added `ParentLearningReportContract.kt`, `ParentLearningReportHeaderComponents.kt`, `ParentLearningReportListComponents.kt`, `ParentLearningReportScreen.kt`, `ParentLearningReportViewModel.kt`.
+  - Added `ConceptDetailContract.kt`, `ConceptDetailScreen.kt`, `ConceptDetailViewModel.kt`.
+  - Updated `LearnModule.kt` registering UseCase and ViewModels.
+- **`shared`**:
+  - `LearnNavGraph.kt`: Mounted `ParentLearningReportRoute` and `ConceptDetailRoute`.
+  - `PlaceholderScreens.kt`: Wired Parent Dashboard with Learning Progress card.
+
+### API Contract Impact
+Consumes `GET /v1/children/{child_id}/learning-report`.
+
+### Database Impact
+None.
+
+### Authentication & Permission Impact
+Parent/Guardian authenticated session required. Unauthenticated sessions rejected per PRD.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/19-parent-learning-report-evidence.md`
+- `sdocs/evidence/20-parent-learning-report-ui-design-fidelity-verification.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `PROJECT-CONTEXT.md`
+
+### Validation
+- Unit tests: `.\gradlew.bat :feature:feature-learn:testAndroidHostTest :core:core-data:testAndroidHostTest :shared:testAndroidHostTest --console=plain`
+- Result: 100% green, 397+ tests passing across workgroup.
+
+### Status
+COMPLETED
+
+### [2026-11-12] — [FEATURE_A05_TASK_K11_ISLAMIC_FACT_DETAIL_MASTERY_CELEBRATION] Islamic Fact Detail & Mastery Celebration (Mobile / KMP)
+
+### Summary
+Implemented Task **K-11** (`11-islamic-fact-detail-mastery-celebration`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering two high-delight screens:
+1. **Islamic Fact Detail Screen (FR-19)**:
+   - Full-fidelity rendering of all mandatory FR-19 metadata fields: locale/age-banded text, topic linkage, scholar-approval badge with version (`v1.4`), reviewing scholar ID and approval timestamp, pedagogical explanation body, primary and secondary bibliographic source citations with digital link pills, jurisprudential scope notes, and linked quiz CTA.
+   - Dynamic related content availability check per PRD FR-9 (navigable when available, gentle feedback when coming soon).
+   - Linked quiz CTA button routing directly into the A.8 Quiz Engine.
+   - Deep-link support via `/facts/{factId}` and `/fact/{factId}` mapped in `LearnRoutes.kt`.
+2. **Mastery Badge / Node-Unlock Celebration Modal (Blueprint §4, §11, §29 Task 03)**:
+   - Client-side reaction in `SkillTreeViewModel` detecting node transitions to `SkillNodeState.MASTERED` from consecutive skill-tree fetch diffs (or manual trigger).
+   - Reuses existing celebratory modal design pattern (`NoorCard`, `shapes.extraLarge`, radiant gold star emblem `⭐✨`, `warning` border accent, congratulatory title "Skill Mastered! 🌟", mastered skill title pill, and "Continue Journey" primary button).
+   - Accessible semantics with content description and touch target compliance.
+   - Dismissible via outside scrim tap or CTA, returning cleanly to the Skill Tree.
+3. **Graceful Offline Degradation & Canonical Fallback (§18, §19)**:
+   - Offline resilience via `IslamicFactCanonicalData` covering Quran revelation, pillars, prophet stories, and nature wisdom.
+   - Offline notice pill rendered with clean, non-blocking UI states.
+4. **Child Pedagogical Safety (Rule 4 / FR-10)**:
+   - Strictly positive reinforcement; 100% verified zero negative evaluation words (`fail`, `wrong`, `error`, `bad`, `punish`, `hell`).
+5. **Design System & Rule Compliance**:
+   - 100% tokenized through `NoorHeroesTheme` (0 raw hex, 0 raw dp, 0 raw typography).
+   - 100% file modularity: all files strictly $< 500$ lines per Rule 8 (`IslamicFactDetailScreen.kt` 184 lines, `IslamicFactDetailComponents.kt` 383 lines, `IslamicFactActionComponents.kt` 344 lines, `MasteryCelebrationModal.kt` 143 lines, `IslamicFactDetailViewModel.kt` 142 lines, `SkillTreeViewModel.kt` 448 lines).
+6. **Telemetry Compliance (§23)**:
+   - Emits `islamic_fact_linked_viewed` (`fact_id`, `topic`, `has_scholar_approval`, `has_quiz`, `has_related_content`, `is_fallback`).
+   - Emits `mastery_celebration_shown` (`node_id`, `node_type`, `track`).
+7. **Exhaustive Empirical Verification**:
+   - 48 dedicated tests passing (10 unit tests in `IslamicFactDetailViewModelTest`, 26 zero-missing scenario tests in `IslamicFactZeroMissingScenariosTest`, 10 mastery transition tests in `MasteryCelebrationTest`, 2 navigation tests in `LearnNavigationHelperTest`).
+   - 370/370 feature-learn, core-data, and shared navigation tests passing overall (100% green in CI).
+
+### Reason
+Fulfill Feature A.5 FR-19, Blueprint K-11, and Milestone KMP requirements for scholar-verified Islamic Fact exploration linked from lessons/quizzes, and celebratory node-unlock motivation on the learning path.
+
+### Backend Impact
+Consumes existing `content` module facts API (`GET /v1/facts/{fact_id}`) defined in `facts_router.py`. No backend modifications required.
+
+### Web Admin Impact
+None (facts authored and reviewed via existing Admin Content CMS).
+
+### Mobile App Impact
+- **`core:core-common`**:
+  - `IslamicFactModels.kt`: Domain models `IslamicFact`, `SourceCitation`, `ScholarApprovalDetail`, `RelatedContent`.
+  - `IslamicFactCanonicalData.kt`: Canonical dataset with scholar approval and source citations for offline fallback.
+  - `strings_learn.xml`: Added localized strings across `values/`, `values-ar/`, `values-hi/`, and `values-ur/`.
+  - `HttpEndpoints.kt`: Added `const val FACTS = "/v1/facts/{factId}"`.
+- **`core:core-navigation`**:
+  - `LearnRoutes.kt`: Added `IslamicFactDetailRoute(val factId: String) : Route` with deep links `/facts/{factId}` and `/fact/{factId}`.
+- **`core:core-network`**:
+  - `IslamicFactDtos.kt`: Wire DTOs and domain mappers (`FactDetailResponseDto`, `SourceCitationDto`, `ScholarApprovalDetailDto`, `RelatedContentDto`).
+  - `LearningApi.kt`: Added `getIslamicFact(factId, locale)`.
+- **`core:core-data`**:
+  - `LearningRepository.kt` & `LearningRepositoryImpl.kt`: Implemented `getIslamicFact(factId, locale)`.
+  - `LearningFactDelegate.kt`: Modular repository delegate ($< 500$ lines) with canonical fallback.
+- **`feature:feature-learn`**:
+  - `GetIslamicFactUseCase.kt`: Domain use case with ID sanitization.
+  - `IslamicFactDetailUiState.kt`: Pure KMP contract (`IslamicFactDetailUiState`, `IslamicFactDetailUiEvent`, `IslamicFactDetailUiEffect`).
+  - `IslamicFactDetailViewModel.kt`: MVI state machine with telemetry and offline handling.
+  - `IslamicFactDetailScreen.kt`, `IslamicFactDetailComponents.kt`, and `IslamicFactActionComponents.kt`: Compose Multiplatform fact detail screen adhering 100% to Figma mockups `Fact Detail-01` to `06`.
+  - `MasteryCelebrationModal.kt`: Celebratory modal triggered on `mastered` state transitions.
+  - `SkillTreeUiState.kt`, `SkillTreeViewModel.kt`, `SkillTreeScreen.kt`: Integrated mastery transition detection and celebration modal.
+  - `LearnModule.kt`: Registered DI bindings for use case and ViewModel.
+  - Test suites: `IslamicFactTestFakes.kt`, `IslamicFactDetailViewModelTest.kt`, `IslamicFactZeroMissingScenariosTest.kt`, and `MasteryCelebrationTest.kt`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None (consumes existing B-03 `GET /v1/facts/{id}` content endpoint).
+
+### Database Impact
+None.
+
+### Authentication & Permission Impact
+None.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `sdocs/evidence/17-islamic-fact-detail-mastery-celebration-evidence.md`
+- `sdocs/evidence/18-islamic-fact-detail-mastery-celebration-ui-design-fidelity-verification.md`
+
+### Validation
+`:core:core-data:testAndroidHostTest`, `:feature:feature-learn:testAndroidHostTest`, and `:shared:testAndroidHostTest` passing (370 passed, 0 failed across all test suites).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-11] — [FEATURE_A05_TASK_K10_PROGRESSIVE_HINT_OVERLAY] Progressive Hint Overlay (Mobile / KMP)
+
+### Summary
+Implemented Task **K-10** (`10-progressive-hint-overlay`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering the cross-cutting progressive hint overlay across all learning exercises:
+1. **Zero Client-Side Hint Synthesis (§11, §28)**: Strictly renders server-authoritative hint copy verbatim via `GetHintUseCase` -> `LearningRepository` -> `LearningApi` (`GET /v1/learning/hints/{question_id}?level={level}`). Zero client-side hint computation or answer reveal.
+2. **Zero `hint_count` Mutation (§11)**: Overlay is purely read-only; calling exercise screens maintain and submit their own `hint_count` in their attempt payloads to eliminate side-effects or double-counting.
+3. **Progressive Clues (Levels 1..3, FR-18)**: Incremental step-by-step pedagogical scaffolding without giving away the full answer.
+4. **Graceful Fallback Handling (Edge Case 8)**: Seamless degradation for True/False questions lacking partial hints and offline network drops using `HintCanonicalData` micro-hints with zero broken-state UI.
+5. **Dual Presentation Modes & Visual Parity**:
+   - `HintPresentationMode.BottomSheet`: Matches `Screens/Mobile App/Quiz Engine/Quiz Question-02.png` with `radius24` rounded top corners, `💡 Hint` headline, and circular `✕` close button.
+   - `HintPresentationMode.Dialog`: Centered `NoorCustomDialog` with `NoorCard` container for tablets, desktop, or landscape orientations.
+   - `ExerciseHintButton`: Secondary, non-pulsing pill trigger button meeting PRD §2.1 UX requirements.
+6. **Exercise Integrations**: Unified across `DailyQuizQuestionScreen`, `SurahLearningScreen` (`SurahHintDialog`), `ArabicLettersLearningFlowScreen`, `TajweedLearningFlowScreen` (`TajweedComponents`), and `QuranGameFlowScreen` (`QuranGameComponents`).
+7. **Clean Exercise State Resumption**: Dismissing the hint preserves option selections, audio playback, ayah indices, and game timers with zero state loss.
+8. **Design System & Rule Compliance**: 100% tokenized through `NoorHeroesTheme` (0 raw hex, 0 raw dp, 0 raw typography). All touched files strictly $< 500$ lines per Rule 8.
+9. **Exhaustive Empirical Verification**: 42/42 dedicated tests passing (10 unit tests in `HintOverlayViewModelTest`, 25 zero-missing scenario tests in `HintOverlayZeroMissingScenariosTest`, 7 cross-exercise state-preservation parity tests in `HintOverlayExerciseParityTest`). 318/318 feature tests passing overall.
+
+### Reason
+Fulfill Feature A.5 FR-18 and Edge Case 8 requirements for progressive, non-judgmental hint scaffolding across all child exercises in NoorHeroes without compromising answer integrity or leaking scores.
+
+### Backend Impact
+Consumes `GET /v1/learning/hints/{question_id}?level={level}` implemented in B-05. No backend changes required.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- **`core:core-common`**:
+  - `ExerciseHintModels.kt`: Pure KMP domain model `ExerciseHint`.
+  - `HintCanonicalData.kt`: Canonical pedagogical hints for Quran, Surahs, Letters, and Tajweed with negative blocklist compliance.
+  - Added 8 localized string resources across `values/`, `values-ar/`, `values-hi/`, and `values-ur/` in `strings_learn.xml`.
+- **`core:core-network`**:
+  - `LearningHintDtos.kt`: `LearningHintResponseDto` and mappers.
+  - `LearningApi.kt`: Added `getHint(questionId, level)` endpoint call.
+- **`core:core-data`**:
+  - `LearningRepository.kt` & `LearningRepositoryImpl.kt`: Implemented `getHint(questionId, level)` with offline fallback.
+  - `LearningHintDelegate.kt`: Modular repository delegate ($< 500$ lines).
+- **`feature:feature-learn`**:
+  - `GetHintUseCase.kt`: Clamps levels to `[1, 3]` and sanitizes question IDs.
+  - `HintOverlayUiState.kt`: Pure KMP contract (`hintText`, `hintLevel`, `maxLevel`, `isLoading`, `canRequestNextLevel`, `isFallback`).
+  - `HintOverlayViewModel.kt`: MVI state machine with progressive levels and analytics emission (`hint_requested`).
+  - `HintOverlay.kt`: Compose Multiplatform overlay with dual presentation modes, circular `✕` dismiss button, and `ExerciseHintButton`.
+  - Integration in `DailyQuizComponents.kt`, `SurahHintDialog.kt`, `TajweedComponents.kt`, `ArabicLettersLearningFlowScreen.kt`, and `QuranGameComponents.kt`.
+  - Created test suites: `HintOverlayTestFakes.kt`, `HintOverlayViewModelTest.kt`, `HintOverlayZeroMissingScenariosTest.kt`, and `HintOverlayExerciseParityTest.kt`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None (consumes existing B-05 contract).
+
+### Database Impact
+None.
+
+### Authentication & Permission Impact
+None.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `sdocs/evidence/15-progressive-hint-overlay-evidence.md`
+- `sdocs/evidence/16-hint-overlay-ui-design-fidelity-verification.md`
+
+### Validation
+`:core:core-data:testAndroidHostTest` and `:feature:feature-learn:testAndroidHostTest` passing (318 passed, 0 failed across 23 test suites).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-11] — [FEATURE_A05_TASK_K09_SPACED_REVIEW_NEEDS_REFRESH] Spaced Review & Needs-Refresh Prompt (Mobile / KMP)
+
+### Summary
+Implemented Task **K-09** (`09-spaced-review-needs-refresh-prompt`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering the gentle review invitation component on the Skill Tree:
+1. **Zero Client-Side Decay/Recapping (Edge Case 6)**: The prompt component renders strictly for nodes marked as `SkillNodeState.NEEDS_REFRESH` by the server (B-01/B-06); strictly zero independent decay calculation or client-side re-capping.
+2. **Child Pedagogical Safety (FR-4 / FR-10 / Rule 4)**: Strictly zero regression, failure, penalty, or decay terminology. Verified via string allowlist and negative blocklist assertion tests.
+3. **Dual Visual Treatments**:
+   - `NeedsRefreshPromptBanner`: Embedded gentle card on the Skill Tree with amber icon, "Time for a gentle refresh! 🌟", target node mention, and primary "Review Now" + secondary "Later" actions.
+   - `NeedsRefreshNodeBadge`: Inline amber ring badge rendered along the curved learning path directly below due nodes.
+4. **Node-Type Screen Routing (§11)**: Reuses existing navigation routes (`SurahLearningRoute`, `ArabicLettersRoute`, `TajweedRoute`, `QuranGameRoute`) via `resolveRouteForSkillNode` and `resolveNavigationModeForSkillNode`.
+5. **Analytics Emission (§23)**: Logs `needs_refresh_prompt_shown` (with params: `node_id`, `node_type`, `track`, `context=learn`) and `needs_refresh_review_completed` upon initiating practice.
+6. **4-Locale Parity**: Localized strings added across `values`, `values-ar`, `values-hi`, and `values-ur` in `strings_learn.xml`.
+7. **Comprehensive Test Suite**: 10 unit and integration tests passing in `NeedsRefreshPromptTest.kt`.
+
+### Reason
+Fulfill Feature A.5 FR-4 and Edge Case 6 requirements for a gentle, supportive spaced-review reminder embedded in the Skill Tree that respects daily review caps from B-06, motivates consistent practice without shame or anxiety, and routes directly to the relevant curriculum exercise.
+
+### Backend Impact
+Consumes the `needs_refresh`-state nodes already populated by B-06 in `GET /v1/learning/paths` (B-01). No backend changes required.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- **`core:core-common`**:
+  - Added 6 localized string resources for gentle refresh prompts across `values/`, `values-ar/`, `values-hi/`, `values-ur/` in `strings_learn.xml`.
+- **`feature:feature-learn`**:
+  - Created `NeedsRefreshPromptComponent.kt` (271 lines, `< 500 lines`) providing `NeedsRefreshPromptBanner`, `NeedsRefreshNodeBadge`, `resolveRouteForSkillNode`, and `resolveNavigationModeForSkillNode`.
+  - Modified `SkillTreeScreen.kt` (348 lines, `< 500 lines`) to embed `NeedsRefreshPromptBanner` and `NeedsRefreshNodeBadge`.
+  - Modified `SkillTreeViewModel.kt` (402 lines, `< 500 lines`) to handle review and dismiss events, and emit analytics.
+  - Modified `SkillTreeUiState.kt` (100 lines, `< 500 lines`) to add `showNeedsRefreshPrompt`, `needsRefreshNodes`, and events.
+  - Created `NeedsRefreshPromptTest.kt` (377 lines, `< 500 lines`) with 10 passing unit and integration tests.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None (consumes existing B-01/B-06 contract).
+
+### Database Impact
+None (rendered from existing K-01 cached tree state).
+
+### Authentication & Permission Impact
+None.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `NoorHeroes/feature/feature-learn/README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `sdocs/evidence/13-spaced-review-needs-refresh-prompt-evidence.md`
+- `sdocs/evidence/14-spaced-review-needs-refresh-ui-design-fidelity-verification.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest` (**276+ passing** across 20 suites, 0 failures, 0 skipped).
+- `NeedsRefreshPromptTest`: **10/10 passing**.
+- `NeedsRefreshPromptZeroMissingScenariosTest`: **18/18 passing** (S-A05-K09-001 through S-A05-K09-018).
+- `:shared:testAndroidHostTest`: **Passing**.
+- Line counts: All files strictly `< 500 lines`.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-11] — [FEATURE_A05_TASK_K08_DAILY_QUIZ_LEARN_TAB] Daily Quiz Learn-Tab Experience (Mobile / KMP)
+
+### Summary
+Implemented Task **K-08** (`08-daily-quiz-learn-tab-experience`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering the 5-question daily challenge experience:
+1. **Curated 5-Question Content Mix (FR-15)**: Curates 3 recently-learned curriculum questions + 2 diagnostic weak-spot questions from `GET /v1/learning/daily-quiz`.
+2. **Per-Answer Pedagogical Explanations (`Quiz Question-03.png`)**: Interactive bottom sheet displaying explanation, correctness status, and source curriculum topic badge upon submission.
+3. **In-Session Retry Set (`Quiz Result-01.png`)**: Automatically captures missed questions into an immediate in-session retry set allowing children to review mistakes and retry without penalties.
+4. **Unconditional Effort XP Award (FR-16 / `Quiz Complete-01.png`)**: Completing all 5 questions unconditionally awards +20 effort XP regardless of accuracy; accuracy influences backend mastery scoring in the background without penalty.
+5. **Child Pedagogical Invariant (Rule 4 / FR-10)**: Strictly zero numeric scores, percentages, decimals, fractions, or negative marks in child-facing copy; uses celebratory badges, confetti, and positive encouragement cards.
+6. **Canonical Offline Fallback**: Immediate offline availability using `DailyQuizCanonicalData` covering Quran Knowledge, Arabic Letters, and Tajweed with offline completion and retry set generation.
+7. **Deep Link & Navigation Routing**: Added `DailyQuizRoute(context: String = "learn", childId: String? = null)` with deep links `noorheroes://learn/daily_quiz`, `noorheroes://learn/daily-quiz`, `noorheroes://learn/quiz`.
+
+### Reason
+Fulfill Feature A.5 FR-15 and FR-16 requirements for a child-friendly daily quiz that reinforces recent curriculum knowledge, addresses weak learning areas, provides immediate formative pedagogical feedback with retry sets, and builds intrinsic motivation through unconditional effort-based XP rewards.
+
+### Backend Impact
+Consumes endpoints:
+- `GET /v1/learning/daily-quiz`
+- `POST /v1/learning/attempts/daily-quiz/{attempt_id}/responses`
+- `POST /v1/learning/attempts/daily-quiz/{attempt_id}/complete`
+- `GET /v1/learning/attempts/daily-quiz/{attempt_id}/retry-set`
+No backend modifications required.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- **`core:core-common`**:
+  - `DailyQuizModels.kt`: Pure KMP domain models (`DailyQuizQuestionType`, `DailyQuizOption`, `DailyQuizQuestion`, `DailyQuizSourceMix`, `DailyQuizSession`, `DailyQuizAnswerResult`, `DailyQuizCompletionResult`, `DailyQuizCanonicalData`).
+  - Added 24 localized strings across `values`, `values-ar`, `values-ur`, and `values-hi` in `strings_learn.xml`.
+  - Added endpoints in `HttpEndpoints.Learning`.
+- **`core:core-network`**:
+  - Added `DailyQuizDtos.kt` with dual camelCase/snake_case serialization.
+  - Extended `LearningApi` and `LearningApiImpl` with `getDailyQuiz`, `submitQuizResponse`, `completeQuizAttempt`, `getQuizRetrySet`.
+- **`core:core-data`**:
+  - Extended `LearningRepository` and `LearningRepositoryImpl`.
+  - Created `LearningDailyQuizDelegate.kt` for network-to-domain mapping, offline fallback, and in-session retry set generation.
+  - Extracted `LearningRepositoryHelpers.kt` to ensure `LearningRepositoryImpl.kt` remains strictly < 500 lines (467 lines).
+- **`core:core-navigation`**:
+  - Added `DailyQuizRoute(context, childId)` and registered deep link aliases in `LearnDeepLinkParser`.
+- **`shared`**:
+  - Registered `composable<DailyQuizRoute>` in `LearnNavGraph.kt`.
+- **`feature:feature-learn`**:
+  - Use cases: `GetDailyQuizUseCase`, `SubmitQuizResponseUseCase`, `CompleteDailyQuizUseCase`.
+  - UI State: `LearnDailyQuizUiState.kt` (pure KMP, 0 Compose imports).
+  - UI Events: `LearnDailyQuizUiEvent.kt`.
+  - UI Effects: `LearnDailyQuizUiEffect.kt`.
+  - ViewModel: `LearnDailyQuizViewModel.kt` (orchestrates question progression, hint modal, per-answer explanation, in-session retry set, unconditional +20 effort XP award, analytics logging).
+  - Components: `DailyQuizComponents.kt` (`DailyQuizTopBar`, `DailyQuizOptionCard`, `DailyQuizHintDialog`, `DailyQuizExplanationSheet`).
+  - Screens: `DailyQuizQuestionScreen.kt`, `DailyQuizCompletionScreen.kt`, `LearnDailyQuizFlowScreen.kt`.
+  - Wireup: `ModeSelectorSheet.kt` (added Daily Quiz item), `LearnModule.kt` (Koin bindings).
+  - Tests: `LearnDailyQuizEntryTest.kt` (8 tests) and `LearnDailyQuizZeroMissingScenariosTest.kt` (6 tests).
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+Full parity with existing backend daily quiz contracts in `LearningApi`.
+
+### Database Impact
+None.
+
+### Authentication & Permission Impact
+None.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `NoorHeroes/feature/feature-learn/README.md`
+- `sdocs/evidence/11-daily-quiz-learn-tab-experience-evidence.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `:core:core-data:testAndroidHostTest`: BUILD SUCCESSFUL
+- `:feature:feature-learn:testAndroidHostTest`: BUILD SUCCESSFUL (248+ tests green, 18/18 Daily Quiz tests green)
+- `:shared:testAndroidHostTest` & `:shared:compileAndroidMain`: BUILD SUCCESSFUL (220 actionable tasks)
+- 100% of touched files strictly < 500 lines.
+
+### Status
+COMPLETED
+
+### [2026-11-11] — [FEATURE_A05_TASK_K07_QURAN_GAME_MODES] Quran Game Modes (Mobile / KMP)
+
+### Summary
+Implemented Task **K-07** (`07-quran-game-modes`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering all six playful Quran game modes and the Mode Selector Sheet:
+1. **Ayah Ordering** (`ayah_ordering`): Interactive tap/arrow verse reordering, submitting final order to B-03 (`attempt_type: "matching"`).
+2. **Listen & Select Matching Ayah** (`listen_match`): Multiplatform audio playback (1.0x normal / 0.7x slow speeds via `AudioPlayerController`), candidate verse cards, submitting to B-03 (`attempt_type: "matching"`).
+3. **Missing Word** (`missing_word`): Fill-in-the-blank verse representation (`____`) with word option chips, submitting to B-03 (`attempt_type: "quiz"`).
+4. **Surah Theme Matching** (`theme_matching`): Content-safety enforced pairing of Surahs to server-curated approved themes (strictly zero free-text/unapproved pairing), submitting to B-03 (`attempt_type: "matching"`).
+5. **Progressive-Reveal Memorization** (`progressive_reveal`): Tap-to-reveal word-by-word memorization aid with "Reveal Next" and "Reveal All" helpers, submitting completion attempt marker to B-03.
+6. **Recitation Echo** (`recitation_echo`): Direct composition of K-04 (`RecitationRecorderOverlay`/`RecitationViewModel`/B-04), skippable via "Skip / Practice Later", auto-falling back to Listen-Only self-assessment when mic is denied or parental controls disable AI coaching.
+7. **Mode Selector Sheet** (`ModeSelectorSheet.kt`): Modal bottom sheet listing all 6 game modes + 3 core curriculum lessons (Surah Practice, Arabic Letters, Tajweed Rules).
+8. **Canonical Offline Fallback**: Packaged `QuranGameCanonicalData` providing offline resilience for all 6 game modes.
+9. **Deep Link Routing**: `QuranGameRoute(mode, surahId, nodeId)` registering `/games/{mode}/{surah_id}`, `/game/{mode}/{surah_id}`, `/games`, `/game` with single-top navigation.
+
+### Reason
+Fulfill Feature A.5 FR-5 requirements for playful practice game modes across six distinct exercise types, routing non-recitation game attempts through B-03 (`POST /v1/learning/attempts`) and the Recitation Echo mode through K-04's shared recorder, with child-safe pedagogical feedback (0 numeric scores per Rule 4 / FR-10).
+
+### Backend Impact
+Consumes existing B-03 endpoint (`POST /v1/learning/attempts`) and B-04 endpoint (`POST /v1/learning/recitation` via K-04). No backend modifications required.
+
+### Mobile App Impact
+- **`core:core-common`**: Created `QuranGameModels.kt` containing `QuranGameMode`, `GameAyahItem`, `AyahOrderingGameData`, `ListenMatchOption`, `ListenMatchGameData`, `MissingWordOption`, `MissingWordGameData`, `SurahThemePair`, `SurahThemeMatchingGameData`, `ProgressiveWord`, `ProgressiveRevealGameData`, `RecitationEchoGameData`, `GameAttemptResult`, and `QuranGameCanonicalData`. Added 24 localized strings across `values`, `values-ar`, `values-ur`, and `values-hi` in `strings_learn.xml`.
+- **`core:core-data`**: Extended `LearningRepository` and `LearningRepositoryImpl` with `submitGameAttempt`, extracting shared request logic to keep file strictly under 500 lines (486 lines).
+- **`core:core-navigation`**: Added `QuranGameRoute(mode, surahId, nodeId)` and extended `LearnDeepLinkParser` to resolve `/games`, `/game`, `/games/{mode}`, and `/games/{mode}/{surah_id}`.
+- **`shared`**: Registered `composable<QuranGameRoute>` in `LearnNavGraph.kt` and wired mode navigation from `SkillTreeScreen`. Extended `LearnNavigationHelper` to resolve `game`, `games`, `quran_games` intent routes.
+- **`feature:feature-learn`**:
+  - `SubmitGameAttemptUseCase.kt` & `GetGameContentUseCase.kt`.
+  - `QuranGameUiState.kt` (pure KMP, 0 Compose imports).
+  - `QuranGameEvaluator.kt` (modular evaluator logic for ordering, matching, missing word, progressive reveal).
+  - `QuranGameViewModel.kt` (orchestrates 6 game modes, audio speed 1.0x/0.7x, unbatched attempt submissions, parental controls & mic gating observation).
+  - `QuranGameComponents.kt` (tokenized TopBar, AudioPill, FeedbackBanner, HintDialog, CelebrationDialog with effort stars).
+  - `AyahOrderingScreen.kt`, `ListenSelectMatchingScreen.kt`, `MissingWordScreen.kt`, `SurahThemeMatchingScreen.kt`, `ProgressiveRevealMemorizationScreen.kt`, `RecitationEchoScreen.kt`.
+  - `ModeSelectorSheet.kt` (modal bottom sheet for all 6 games + 3 curriculum lessons).
+  - `QuranGameFlowScreen.kt` (master coordinator with transitions and `BackPressHandler`).
+  - Extended `SkillTreeDialogs.kt` with all 6 game mode options.
+  - Registered use cases and ViewModel in `LearnModule.kt`.
+  - Authored `QuranGameModesTest.kt` (9 tests) and `QuranGameZeroMissingScenariosTest.kt` (11 tests).
+
+### API Contract Impact
+Strict conformance to `POST /v1/learning/attempts` (`child_id`, `node_id`, `question_id`, `attempt_type`, `answer_payload`, `hint_count`, `response_time_ms`).
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/09-quran-game-modes-evidence.md`
+- `sdocs/evidence/10-quran-game-modes-ui-design-fidelity-verification.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+Verified via Gradle unit & scenario tests (`:core:core-data:testAndroidHostTest`, `:feature:feature-learn:testAndroidHostTest`, `:shared:testAndroidHostTest`, `:shared:compileAndroidMain`): 230+ tests green (100% pass rate, 20/20 in game suites).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-11] — [FEATURE_A05_TASK_K06_TAJWEED_FLOW] Tajweed Learning Flow (Mobile / KMP)
+
+### Summary
+Implemented Task **K-06** (`06-tajweed-learning-flow`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering the full 5-step sequential Tajweed learning flow:
+1. **Rule Introduction**: Rule title in Arabic calligraphy (`قلقلة` / `غنة`), phonetic mechanism description, mnemonic memory phrase badge (`قُطْبُ جَدٍّ` / `نّ ومّ مُشَدَّدَتَيْنِ`), letter badges row, and example verse card with highlighted target letters.
+2. **Listen & Compare**: Audio comparison player allowing children to toggle between normal (1.0x) and slow (0.7x) speed playback to discern subtle phonetic characteristics, logging `ayah_audio_played` and `ayah_audio_slowed`.
+3. **Interactive Rule Identification**: Interactive identification exercise where the child identifies where the rule applies in context, submitting unbatched attempts to B-03 (`POST /v1/learning/attempts`, `attempt_type: "matching"`).
+4. **Optional Record Step (Direct K-04 Reuse)**: Embedded recitation practice step directly reusing K-04's `RecitationRecorderOverlay`, `RecitationViewModel`, `AiPronunciationFeedbackScreen`, and `ListenOnlySelfAssessmentScreen`. Strictly zero duplicate recording code. Skippable via explicit "Skip / Practice Later" CTA per FR-14; auto-falls back to listen-only mode when microphone permission is denied or parent disables AI coaching per FR-9 & FR-13.
+5. **Mini-Assessment**: Short closing assessment verifying rule comprehension and submitting attempts to B-03 (`attempt_type: "matching"`).
+6. **Celebration**: Effort stars celebration card with zero numeric scores, percentages, or decimals (Rule 4 / FR-10 child safety).
+7. **Canonical Offline Fallback**: Packaged `TajweedCanonicalData` providing offline resilience for `RULE_QALQALAH` and `RULE_GHUNNAH`.
+8. **Deep Link Routing**: `TajweedRoute(ruleId, nodeId)` registering `/tajweed/{rule_id}` and `/tajweed` with single-top navigation.
+
+### Reason
+Fulfill Feature A.5 FR-14 requirements for sequential Tajweed instruction with normal/slow speed audio comparison, interactive identification, optional recitation practice via K-04 reuse with zero duplicate audio code, and pedagogical coaching.
+
+### Backend Impact
+Consumes existing B-03 endpoint (`POST /v1/learning/attempts`) and B-04 endpoint (`POST /v1/learning/recitation` via K-04). No backend modifications required.
+
+### Mobile App Impact
+- **`core:core-common`**: Created `TajweedModels.kt` containing domain models (`TajweedRule`, `TajweedExample`, `TajweedIdentificationQuestion`, `TajweedRecitationTarget`, `TajweedAssessmentQuestion`, `TajweedAttemptResult`, `TajweedCanonicalData`). Added localized strings across `values`, `values-ar`, `values-ur`, `values-hi` in `strings_learn.xml`.
+- **`core:core-data`**: Extended `LearningRepository` & `LearningRepositoryImpl` with `getTajweedRule` and `submitTajweedAttempt` with offline fallback resilience.
+- **`core:core-navigation`**: Added `TajweedRoute(ruleId: String = "qalqalah", nodeId: String? = null)` and extended `LearnDeepLinkParser` to resolve `/tajweed/{rule_id}` and `/tajweed`.
+- **`shared`**: Registered `composable<TajweedRoute>` in `LearnNavGraph.kt`.
+- **`feature:feature-learn`**:
+  - `GetTajweedRuleUseCase.kt` & `SubmitTajweedAttemptUseCase.kt`.
+  - `TajweedUiState.kt` (pure KMP, 0 Compose imports).
+  - `TajweedViewModel.kt` (orchestrates 5-step sequential flow guarded by `canProceed`, unbatched attempt submissions, 1.0x/0.7x audio speeds, skippable record step, and real-time observation of `ParentalControlsRepository.observeParentAiEnabled()` and `PermissionManager.getPermissionStatus()`).
+  - `TajweedComponents.kt` (tokenized header, 5-step progress bar, letter badge row, verse card, feedback banner, action bar, hint dialog, celebration card).
+  - `RuleIntroductionScreen.kt`, `TajweedListenScreen.kt`, `RuleIdentificationScreen.kt`, `TajweedRecitationStep.kt` (using auto-mirrored volume icon), `TajweedAssessmentScreen.kt`, `TajweedLearningFlowScreen.kt` (with `BackPressHandler` and direct `RecitationRecorderOverlay` composition).
+  - Registered use cases and ViewModel in `LearnModule.kt`.
+  - Authored `TajweedFlowTest.kt` (9 tests) and `TajweedZeroMissingScenariosTest.kt` (9 tests).
+
+### API Contract Impact
+Strict conformance to `POST /v1/learning/attempts` (`child_id`, `node_id`, `question_id`, `attempt_type: "matching"`, `answer_payload`, `hint_count`, `response_time_ms`).
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/07-tajweed-learning-flow-evidence.md`
+- `sdocs/evidence/08-tajweed-ui-design-fidelity-verification.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest`: 18/18 Tajweed tests PASSED; 210/210 module tests PASSED (100% green).
+- `:core:core-data:testAndroidHostTest`: 100% PASSED.
+- `:shared:compileAndroidMain`: 100% Clean Compilation (0 errors).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-11] — [FEATURE_A05_TASK_K05_ARABIC_LETTERS] Arabic Letters Learning Flow (Mobile / KMP)
+
+### Summary
+Implemented Task **K-05** (`05-arabic-letters-learning-flow`) for Feature A.5 (Quran & Arabic Learning) in Kotlin Multiplatform (`NoorHeroes`), delivering the full 4-stage sequential pedagogic learning flow:
+1. **Hear & Match**: Audio phoneme playback triggering 1-of-4 letter glyph selection with instant encouraging feedback.
+2. **Tracing**: Interactive touch gesture canvas with a mandatory accessible non-gesture shape-matching alternative for motor/assistive-input users (FR-7).
+3. **Word Context**: Letter recognition within approved, familiar Arabic words (e.g., `بَابٌ`), requiring children to identify all target letter occurrences.
+4. **Word Building**: Sound-tile drag/tap sequencing game mode allowing children to assemble the word from constituent sound tiles.
+5. **Completion Celebration**: Celebration card with qualitative progress stars and zero numeric scores / zero percentages (Rule 4 / FR-10).
+6. **Unbatched Attempt Submissions (FR-7 / B-03)**: Each individual exercise submits its own attempt directly to `POST /v1/learning/attempts` (`attempt_type: "matching"` or `"tracing"`), ensuring B-03's server-side mastery engine and anti-cramming algorithms operate accurately across question forms.
+7. **Offline Standalone Fallback**: Packaged canonical curriculum data (`ArabicLettersCanonicalData.LESSON_BAA` & `LESSON_TAA`) ensuring full lesson functionality without internet connectivity.
+
+### Reason
+Fulfill Feature A.5 requirements for foundational Arabic literacy, providing multi-sensory letter acquisition with motor accessibility alternatives and strictly unbatched attempt submissions to maintain mastery calculation integrity.
+
+### Backend Impact
+Consumes existing B-03 endpoint (`POST /v1/learning/attempts`) and B-01 curriculum models. No backend code modifications required.
+
+### Mobile App Impact
+- **`core:core-common`**: Created `ArabicLettersModels.kt` containing domain models (`ArabicLetterLesson`, `LetterOption`, `LetterShapeOption`, `ArabicWordContext`, `WordLetterTarget`, `WordBuildingExercise`, `WordTile`, `LetterAttemptResult`, `ArabicLettersCanonicalData`). Added 4-language localized strings in `strings_learn.xml` (`values`, `values-ar`, `values-ur`, `values-hi`).
+- **`core:core-data`**: Updated `LearningRepository` & `LearningRepositoryImpl` with `getLetterLesson` and `submitLetterAttempt` featuring offline fallback.
+- **`core:core-navigation`**: Added `ArabicLettersRoute(letterId: String)` with deep link support (`/letter/{letterId}`).
+- **`feature:feature-learn`**:
+  - `GetLetterLessonUseCase.kt` & `SubmitLetterAttemptUseCase.kt`.
+  - `ArabicLettersUiState.kt` & `ArabicLettersViewModel.kt` (0 Compose imports, sealed state machine, unbatched attempts, zero numeric scores).
+  - `ArabicLettersComponents.kt` (circular header, 4-step progress, feedback banner, action bar, celebration card).
+  - `HearAndMatchScreen.kt`, `TracingScreen.kt`, `WordContextScreen.kt`, `WordBuildingScreen.kt`, `ArabicLettersLearningFlowScreen.kt`.
+  - Registered in `LearnModule.kt` and `LearnNavGraph.kt`.
+- **`feature:feature-learn:testAndroidHostTest`**: `ArabicLettersFlowTest.kt` with 9 exhaustive scenarios, all passing (100%).
+
+### API Contract Impact
+Strict adherence to `POST /v1/learning/attempts` schema (`child_id`, `node_id`, `question_id`, `attempt_type`, `answer_payload`, `hint_count`, `response_time_ms`).
+
+### Breaking Change
+NO. Fully backward compatible with existing learning navigation and repository contracts.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/06-arabic-letters-learning-flow-evidence.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest`: 9/9 Arabic Letters unit & integration tests PASSED.
+- `:core:core-data:testAndroidHostTest`: 100% PASSED.
+- `:core:core-navigation:testAndroidHostTest`: 100% PASSED.
+- `:shared:compileAndroidMain`: 100% Clean Compilation.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-11] — [FEATURE_A05_TASK_K04_RECITATION_RECORDER] Recitation Recorder & Zero-Retention Audio Capture (Mobile / KMP)
+
+### Summary
+Implemented Task **K-04** (`04-recitation-recorder-zero-retention-capture`) for Feature A.5 (Quran & Arabic Learning) across the Kotlin Multiplatform (`NoorHeroes`) codebase with full zero-retention privacy guarantees and 100% design fidelity against `Screens/Mobile App/Learn/Feedback.png`:
+1. **`core:core-audio-recording` Module**:
+   - Created pure KMP module with strict zero dependency on `:core:core-database` or Room (impossible to persist audio locally).
+   - Structurally file-path-free public API (`RecitationRecorder` with `start()`, `stop(): ByteArray`, `cancel()`, `isRecording()`, `getAudioLevel()`).
+   - Android implementation via `AudioRecord` streaming directly into an in-memory `ByteArrayOutputStream` with 44-byte RIFF/WAV header constructor (never `MediaRecorder`-to-file).
+   - iOS in-memory audio buffer sink.
+2. **Device Hardware Capability Detection (Edge Case 5)**:
+   - `AudioHardwareDetector` & `AndroidAudioHardwareDetector` inspecting `PackageManager.FEATURE_MICROPHONE`.
+   - On devices without a physical mic, hides recitation recording UI entirely at app startup and defaults to listen-only mode.
+3. **Parental Controls Real-Time Observer (FR-13 & Edge Case 2)**:
+   - `ParentalControlsRepository` with real-time Flow observer.
+   - Mid-session parental disable gracefully stops active recording, zeroes the in-memory buffer, and transitions immediately to `ListenOnly` state.
+4. **State Machine & Explicit-Null Discipline (FR-11, FR-12, FR-13)**:
+   - `RecitationViewModel` and `RecitationUiState`: strictly nulls `activeAudioBuffer` in code paths entering `FeedbackShown`, `FallbackToReference`, `ListenOnly`, or `Error`.
+   - Verified via `WeakReference` and `System.gc()` in unit tests.
+5. **Streaming In-Memory Multipart API (`core-network`)**:
+   - `RecitationApi` streams audio directly from memory to `POST /v1/learning/recitation` without disk staging.
+6. **UI Composables & Rule 4 Compliance**:
+   - `AiPronunciationFeedbackScreen`: 100% parity with `Feedback.png` (decorative animated waveform, supportive feedback card, trend badge, Continue / Try Again CTAs), with strictly zero numeric scores or percentages.
+   - `RecitationRecorderOverlay`: pulsing recording indicator, audio level wave, duration timer.
+   - `ListenOnlySelfAssessmentScreen`: single unified reusable screen for mic-denied, parent-disabled, no-hardware, low-confidence fallback, and offline states, containing zero record button nodes.
+   - `MicPermissionRationaleModal`: canonical non-intrusive `NoorDialog`.
+
+### Reason
+Fulfill client-side zero-retention guarantee mirroring server-side B-04 requirement: no child voice recording is ever saved to persistent device storage at any point, even temporarily.
+
+### Backend Impact
+Consumes existing `POST /v1/learning/recitation` endpoint.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- New module: `:core:core-audio-recording`.
+- Extended: `:core:core-common` (`PermissionType.RECORD_AUDIO`, `PermissionManager`).
+- Extended: `:core:core-network` (`RecitationApi`).
+- Extended: `:core:core-data` (`ParentalControlsRepository`).
+- Extended: `:feature:feature-learn` (`RecitationViewModel`, `AiPronunciationFeedbackScreen`, `ListenOnlySelfAssessmentScreen`, `RecitationRecorderOverlay`, `MicPermissionRationaleModal`).
+
+### API Contract Impact
+Streaming multipart `POST /v1/learning/recitation` accepting `audio` (`ByteArray`), `ayah_id`, and `child_id`.
+
+### Database Impact
+None. Explicitly zero database interaction by architectural design.
+
+### Authentication & Permission Impact
+Requires `RECORD_AUDIO` runtime permission AND server-confirmed parental AI toggle enabled.
+
+### Breaking Change
+NO.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/04-recitation-recorder-zero-retention-capture-evidence.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- Unit tests (`RecitationViewModelTest`: 7/7 passed including WeakReference GC and Regex zero numeric score check).
+- Contract tests (`RecitationApiBackendParityContractTest`: passed).
+- Reflection tests (`AndroidRecitationRecorderStructuralReflectionTest`: passed).
+- Full 10-module multiplatform test suite: 244 actionable Gradle tasks passed, 100% green.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_A05_TASK_K03_SURAH_PRACTICE] Surah Learning Verse Practice Flow & Multiplatform Audio Player (Mobile / KMP)
+
+### Summary
+Implemented Task **K-03** (`03-surah-learning-verse-practice`) for Feature A.5 (Quran & Arabic Learning) across the Kotlin Multiplatform (`NoorHeroes`) codebase with 100% design parity against `Surah Practice-01.png`, `Surah Practice-02.png`, and `Feedback.png`:
+1. **Design System & Localization Parity (`core-common`)**:
+   - Added 41 new string resources with 100% parity across all 4 locales (`values`, `values-ar`, `values-hi`, `values-ur`), expanding `strings_learn.xml` to 144 keys.
+   - Enforced 0 raw colors, 0 raw dp/sp, and strict `< 500` lines per file ceiling across all newly introduced and modified files.
+   - Implemented 21 automated zero-missing scenarios covering translation toggling, microphone permissions gating, exponential audio load retry fallbacks, player completion synchronization, AI processing dialogue overlays, fallback-to-reference self-assessment mode, offline banners, non-blocking sync, and process death restoration.
+2. **FastAPI Endpoints & Network DTOs (`core-common`, `core-network`)**:
+   - Added `HttpEndpoints.Learning` endpoints: `ATTEMPTS`, `RECITATION`, `HINTS`, `SURAH_CONTENT`.
+   - Created `SurahPracticeDtos.kt` with dual camelCase and snake_case wire parity for `SurahContentDto`, `AyahItemDto`, `TajweedNoteDto`, `LearningAttemptRequestDto`, `LearningAttemptResponseDto`, and `RecitationResponseDto`.
+   - Added `getSurahContent`, `submitAttempt`, and `submitRecitation` to `LearningApi` and verified contract with `SurahLearningBackendParityContractTest`.
+3. **Repository & Offline Canonical Quran Content (`core-data`)**:
+   - Created `QuranContentCanonicalData.kt` containing authoritative Uthmani text with diacritics for Surah Al-Asr (Surah 103) as canonical offline fallback.
+   - Extended `LearningRepository` and `LearningRepositoryImpl` to provide offline-first Surah practice and recitation attempt caching.
+4. **Domain Use Cases & KMP Player Dependency (`feature-learn`)**:
+   - Added `GetSurahContentUseCase`, `SubmitAyahPracticedUseCase`, and `SubmitRecitationAttemptUseCase`.
+   - Added `implementation(project(":library:kmpplayer"))` to `feature/feature-learn/build.gradle.kts`.
+5. **Presentation & MVI UI Composables (`feature-learn`)**:
+   - Implemented `SurahLearningViewModel` and `SurahLearningUiState` orchestrating audio playback, 0.7x slow speed control, transliteration toggle, ayah navigation, and feedback display.
+   - Created `SurahAyahCard.kt` with active verse green highlight border, play/record buttons, slow speed pill, diacritics, and transliteration toggle.
+   - Created `SurahTajweedAndStatusCards.kt` for top bar, transliteration toggle, Tajweed note cards, and listen-only banner.
+   - Created `SurahFeedbackScreen.kt` matching `Feedback.png` (decorative waveform, constructive coaching feedback, continue / try again CTAs).
+   - Created `SurahHintDialog.kt` for progressive articulation hints.
+   - Created `SurahLearningScreen.kt` binding navigation and error retry banners.
+6. **Navigation Routing (`core-navigation`, `shared`)**:
+   - Added `SurahLearningRoute(surahId: String)` and deep link `/surah/` parser to `LearnRoutes.kt`.
+   - Wired `composable<SurahLearningRoute>` in `LearnNavGraph.kt`.
+
+### Reason
+Completes the core verse-by-verse Quran learning loop for NoorHeroes, enabling children to listen, slow down audio to 0.7x, practice recitation, learn Tajweed rules in context, and receive child-safe, supportive AI coaching.
+
+### Backend Impact
+None (aligns mobile client to existing B-03 attempt submission and B-04 recitation feedback API contracts).
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- Added: `SurahModels.kt`, `SurahPracticeDtos.kt`, `QuranContentCanonicalData.kt`, `GetSurahContentUseCase.kt`, `SubmitAyahPracticedUseCase.kt`, `SubmitRecitationAttemptUseCase.kt`, `SurahLearningUiState.kt`, `SurahLearningViewModel.kt`, `SurahAyahCard.kt`, `SurahTajweedAndStatusCards.kt`, `SurahFeedbackScreen.kt`, `SurahHintDialog.kt`, `SurahLearningScreen.kt`, `SurahLearningTestFakes.kt`, `SurahLearningViewModelTest.kt`, `SurahLearningZeroMissingScenariosTest.kt`, `SurahLearningBackendParityContractTest.kt`.
+- Modified: `HttpEndpoints.kt`, `strings_learn.xml` (4 locales), `LearningApi.kt`, `LearningRepository.kt`, `LearningRepositoryImpl.kt`, `LearnModule.kt`, `LearnRoutes.kt`, `LearnNavGraph.kt`, `feature/feature-learn/build.gradle.kts`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+- `GET /v1/learning/surah/{surahId}`: returns `SurahContentDto`.
+- `POST /v1/learning/attempts`: submits `LearningAttemptRequestDto` with idempotency key.
+- `POST /v1/learning/recitation`: submits multipart audio payload and returns `RecitationResponseDto`.
+
+### Database Impact
+None (schema version remains `1`).
+
+### Authentication & Permission Impact
+`SurahLearningViewModel` binds attempts to active `childId` via `BaseAuthState.Authenticated` and gracefully falls back to listen-only mode if microphone is unavailable.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO
+
+### Documentation Updated
+- `feature/feature-learn/README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `sdocs/evidence/03-surah-learning-verse-practice-evidence.md`
+
+### Validation
+Full 10-module Gradle build and test suite passing (`344 actionable tasks`, 100% green, 21 zero-missing automated scenarios). Static audit (`recheck_zero_gaps.py`) passing with 0 violations across 108 files.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_A05_ZERO_GAP_SYNC] Skill Tree & Placement Check Wire Parity, Auth/Race Hardening & KMP Doc Sync (Mobile / KMP)
+
+### Summary
+Completed the full zero-missing-scenario audit, backend wire-contract remediation, UX/concurrency fixes, and stale architecture documentation updates for Feature A.5 (**K-01** `01-quran-skill-tree-map` and **K-02** `02-placement-check-flow`) across `NoorHeroes`:
+1. **FastAPI Wire Parity & Locale Forwarding (`core-common`, `core-network`, `core-data`)**:
+   - Added `HttpQueryConstants.Params.DOMAIN` and `SkillNode.subtitle`; updated `SkillTreeDtos.kt` with custom dual-field `KSerializer`s (`MasterySummaryDtoSerializer`, `SkillNodeDtoSerializer`, `SkillTreeResponseDtoSerializer`) so both FastAPI `BaseSchema` camelCase (`domain`, `masterySummary`, `masteredCount`, `totalCount`, `nodeId`, `nodeType`, `subtitle`, `masteryScore`, `unlockCondition`, `prerequisiteNodeIds`, `lastPracticedAt`, `orderIndex`) and legacy snake_case decode cleanly even under `NetworkJson { useAlternativeNames = false }`.
+   - Updated `LearningApi.getSkillTree`, `LearningRepository`, `LearningRepositoryImpl`, and `GetSkillTreeUseCase` to forward `locale` (`Accept-Language` + `X-Locale`) alongside both `domain` and `track` query params, plus `CancellationException` rethrow protection.
+   - Updated `LocalDevFallbackHttpClientEngine` (`resolveLearningPathsFallbackJson(domain)`) in `HttpClientFactory.kt` to serve domain-specific FastAPI camelCase JSON with unique node UUIDs across `arabic`, `tajweed`, and `quran`.
+2. **Auth/Race Isolation, Empty-Cache Offline Honesty, Search & Cross-Child `SavedStateHandle` Scoping (`feature-learn`, `core-common`)**:
+   - Hardened `SkillTreeViewModel` with `LocalizationProvider` injection (via `getOrNull()` in `LearnModule`), in-flight `loadJob` cancellation + post-await `childId`/`track` ownership checks, automatic sibling-switch reload / logout reset (`onAuthContextChanged`), localized `SkillTreeErrorReason` mapping, and inline search intents (`ToggleSearch`, `SearchQueryChanged`, `ClearSearch`, `visibleNodes`).
+   - Split cached-offline vs empty-cache error states in `SkillTreeScreen.kt` (preventing contradictory `"Offline — showing cached progress"` / `"Cached"` / `"Just getting started"` copy when cache is empty), extracted `SkillTreeSearchAndStatusCards.kt`, replaced `"▶"` in `SkillTreeDialogs.kt` with RTL-safe `Icons.AutoMirrored.Rounded.KeyboardArrowRight`, and added 8 new keys (`103` total) across all 4 locales (`values`, `values-ar`, `values-hi`, `values-ur`) in `strings_learn.xml`.
+   - Added `KEY_CHILD_ID` child-ownership scoping in `PlacementCheckViewModel` (`SavedStateHandle`) so interrupted placement state from one child is never restored into a sibling profile after process death.
+3. **KMP Architecture Documentation Sync (`NoorHeroes/`)**:
+   - Updated `NoorHeroes/README.md`, `CORE_COMMON_INSTRUCTIONS.md`, `CORE_DATABASE_INSTRUCTIONS.md`, `CORE_NETWORK_INSTRUCTIONS.md`, `CORE_DATA_INSTRUCTIONS.md`, `CORE_NAVIGATION_INSTRUCTIONS.md`, and rewrote `feature/feature-learn/README.md` (covering both K-01 and K-02, `< 500` lines each).
+
+### Reason
+Eliminates silent wire-contract failures against B-01 FastAPI camelCase payloads, prevents sibling cross-contamination and stale-load races, fixes empty-cache offline UI contradictions and dead Search UI triggers, and brings all KMP architecture manuals in sync with the implemented codebase.
+
+### Backend Impact
+None (aligns mobile client strictly to existing B-01 / B-02 FastAPI schemas and headers without altering backend code).
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- Modified: `HttpQueryConstants.kt`, `SkillTreeModels.kt`, `strings_learn.xml` (4 locales), `LearningApi.kt`, `SkillTreeDtos.kt`, `HttpClientFactory.kt`, `HttpClientFactoryTest.kt`, `LearningRepository.kt`, `LearningRepositoryImpl.kt`, `LearningRepositoryImplTest.kt`, `LearningRepositoryZeroMissingScenariosTest.kt`, `LearnModule.kt`, `GetSkillTreeUseCase.kt`, `SkillTreeUiState.kt`, `SkillTreeViewModel.kt`, `SkillTreeComponents.kt`, `SkillTreeDialogs.kt`, `SkillTreeScreen.kt`, `SkillTreeTestFakes.kt`, `SkillTreeZeroMissingScenariosTest.kt`, `PlacementCheckViewModel.kt`, `PlacementCheckTestFakes.kt`, `PlacementCheckZeroMissingScenariosTest.kt`, `PlacementCheckEdgeCasesTest.kt`, and 7 KMP markdown manuals.
+- Added: `SkillTreeBackendParityContractTest.kt`, `SkillTreeSearchAndStatusCards.kt`, `SkillTreeEdgeCasesAndParityTest.kt`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+Client `GET /v1/learning/paths` now sends `domain` + `track` + `child_id` and `Accept-Language`/`X-Locale`, and decodes both FastAPI camelCase and legacy snake_case responses cleanly.
+
+### Database Impact
+None (preserved existing `SkillNodeCacheEntity` Room schema version `1` and `1.json`).
+
+### Authentication & Permission Impact
+`SkillTreeViewModel` cancels in-flight fetches on auth changes and clears/blocks unauthenticated states; `PlacementCheckViewModel` isolates `SavedStateHandle` entries strictly by `KEY_CHILD_ID`.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO
+
+### Documentation Updated
+- `NoorHeroes/README.md`
+- `NoorHeroes/core/core-common/CORE_COMMON_INSTRUCTIONS.md`
+- `NoorHeroes/core/core-database/CORE_DATABASE_INSTRUCTIONS.md`
+- `NoorHeroes/core/core-network/CORE_NETWORK_INSTRUCTIONS.md`
+- `NoorHeroes/core/core-data/CORE_DATA_INSTRUCTIONS.md`
+- `NoorHeroes/core/core-navigation/CORE_NAVIGATION_INSTRUCTIONS.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `sdocs/evidence/01-quran-skill-tree-map-evidence.md`
+- `sdocs/evidence/02-placement-check-flow-evidence.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- 10-module Gradle suite (`:core:core-common` [88/88], `:core:core-designsystem` [31/31], `:core:core-database` [31/31], `:core:core-network` [79/79], `:core:core-data` [80/80], `:core:core-ui` [19/19], `:core:core-navigation` [7/7], `:feature:feature-learn` [107/107], `:shared` [11/11], `:androidApp:testDevDebugUnitTest` [1/1] + `:androidApp:compileDevDebugKotlin`): **454/454 passed** (`0` failures, `0` errors, `0` skipped; `BUILD SUCCESSFUL in 45s`).
+- `recheck_zero_gaps.py`: `0` violations across `90` changed/untracked files under `NoorHeroes/` (`103/103` 4-locale parity, max `.kt`/`.xml`/`.md` file `494` lines).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_C20_B04_B05_ZERO_GAP_SYNC] Parent Dashboard AI Report Generation & Safety Validator Zero-Missing Gap Sync (Backend)
+
+### Summary
+Completed exhaustive zero-missing gap hardening and test verification across Feature **C.20 (Parent Dashboard)** — **B-04 (`04-ai-report-generation-service`)** and **B-05 (`05-content-safety-validator`)** in `NoorHeroes-Backend/`:
+1. **Locale Normalization & Resilient Fallbacks (`service.py`, `prompt_builder.py`, `content_safety.py`)**:
+   - Hardened `_resolve_locale` and `resolve_report_locale` to safely normalize BCP-47 and POSIX regional locale strings (e.g., `en-US`, `ar_SA`, `ur_PK`) to canonical codes (`en`, `ar`, `ur`, `hi`).
+   - Implemented blank and whitespace string fallback (`isinstance(locale, str) and locale.strip()`) falling back to `child.preferred_language` and inferring household locale via `_infer_household_locale`.
+   - Extended `ContentSafetyValidator` with Arabic-Indic (`\u0660-\u0669`) and Extended Arabic-Indic (`\u06f0-\u06f9`) digit normalization.
+   - Expanded Urdu Rule 3 certainty regexes to cover `100%`, `100 فیصد`, and `سو فیصد`.
+2. **Defensive Domain Aggregation & Greenlet Safety (`service.py`)**:
+   - Hardened `period_completions` favorite checks to inspect both completed episode records and loaded parent `series.is_withdrawn` flags.
+   - Added defensive `isinstance(..., (int, float))` numeric guards on `QuizAttempt` to safely handle nullable `score` and `max_score` fields.
+   - Excluded disabled child profiles (`is_active=False`) from household monthly aggregations.
+   - Implemented multi-sibling Redis cache invalidation (`include_archived=True`) in `generate_monthly_family_report` to purge cached reports across active, archived, and disabled siblings.
+3. **Pydantic Validation & Celery Batch Hardening (`schemas.py`, `tasks.py`)**:
+   - Added Pydantic non-blank string validators (`v.strip()`) across `WeeklyReportSummaryJson`, `AggregateSummaryJson`, and `AiInsightJson` to prevent empty-string narrative persistence.
+   - Updated Celery batch dispatchers (`_dispatch_child_report_batches` and `_dispatch_monthly_family_batches`) to strictly exclude disabled profiles (`getattr(child, "is_active", True) is False`).
+4. **Exhaustive Zero-Missing Test Suite Expansion (`tests/modules/dashboard/`)**:
+   - Expanded `test_ai_report_generation_zero_missing_scenarios.py` to 59 tests (`S-C20-B04-001` through `S-C20-B04-038`).
+   - Expanded `test_content_safety_validator_zero_missing_scenarios.py` to 75 tests (`S-C20-B05-001` through `S-C20-B05-022`).
+   - Total dashboard test count elevated to 326/326 passing tests (100% green across all 12 test suites).
+
+### Reason
+Guarantees zero architectural drift, zero unhandled edge cases, 100% fail-closed content safety compliance (PRD FR-13), and structural non-comparison guarantees (PRD FR-15) for the Parent Dashboard subsystem.
+
+### Backend Impact
+- Hardened: `NoorHeroes-Backend/src/noorheroes/modules/dashboard/service.py`, `tasks.py`, `schemas.py`, `content_safety.py`.
+- Expanded test suites: `NoorHeroes-Backend/tests/modules/dashboard/test_ai_report_generation_zero_missing_scenarios.py` (59 tests), `test_content_safety_validator_zero_missing_scenarios.py` (75 tests).
+- Synchronized documentation: `NoorHeroes-Backend/src/noorheroes/modules/dashboard/README.md`, `NoorHeroes-Backend/MASTER-README.md`, `NoorHeroes-Backend/FAST-API-INSTRUCTIONS.md`, `Backend-Agent/TESTING.md`, `NoorHeroes-Backend/CHANGELOG.md`, `PROJECT-CONTEXT.md`.
+
+### Web Admin Impact
+None directly (maintains outbox alert and audit log schema compatibility for B-06).
+
+### Mobile App Impact
+None (zero breaking API contract changes; served by existing `GET /v1/parent/dashboard/reports/{type}` endpoints).
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None (backward-compatible preview card delivery).
+
+### Database Impact
+None (preserves single-head migration `0105_create_dashboard_report_tables`).
+
+### Authentication & Permission Impact
+Preserves strict router-level B-01 parent session gate and step-up PIN verification.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO (Alembic 0105 already provisioned).
+
+### Documentation Updated
+- `NoorHeroes-Backend/src/noorheroes/modules/dashboard/README.md`
+- `NoorHeroes-Backend/MASTER-README.md`
+- `NoorHeroes-Backend/FAST-API-INSTRUCTIONS.md`
+- `Backend-Agent/TESTING.md`
+- `NoorHeroes-Backend/CHANGELOG.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `PROJECT-CONTEXT.md`
+
+### Validation
+- `python -m pytest tests/modules/dashboard/ --show-capture=no -q`: **326/326 passed** (100% green across all 12 suites: 187 B-04/B-05 tests across 6 suites + 139 B-01/B-02/B-03 tests).
+- `python -m alembic heads`: single clean head (`0105_create_dashboard_report_tables`).
+- `python scripts/check_migration_backward_compat.py`: passed cleanly.
+- `python scripts/check_resource_naming.py`: passed cleanly.
+- `tests/architecture/test_schema_conventions.py`: 100% pass.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_A05_UI_PARITY] Skill Tree & Placement Check Design Parity & Shell Integration (Mobile / KMP)
+
+### Summary
+Completed visual design-image parity refinements (`Screens/Mobile App/Learn/Skill Tree-01..08.png`, `Quiz Question-01..04.png`, and `Quiz Complete-01..02.png`), shared bottom-navigation shell integration, and concurrent-401 test stabilization across `NoorHeroes`:
+1. **Design System & Typography (`core-designsystem`, `core-ui`, `shared`)**:
+   - Kept brand editorial display styles (`brandSmall`..`brandHero`, `arBrand`) on `FontFamily.Serif` in `Resolution.kt` while interface styles consume bundled Poppins (`poppins_regular` / `poppins_semibold` via `rememberNoorSansFontFamily()` in `TypographyResources.kt` and `BrandOverride` in `AppRoot.kt`), verified by `ResolutionTest` (`8/8`).
+   - Updated `NoorColorScheme.nodeNeedsRefreshContainer` (Light: `PrimitiveColors.Parchment`) with Dark/NightSky/Garden overrides in `DefaultPalettes.kt`, and enhanced `NoorBottomNavBar` / `NoorTabItem` in `Navigation.kt` with a `borderSubtle` top `HorizontalDivider`, edge-to-edge `heightIn(min = counter)`, and optional icon-above-label `Role.Tab` chrome.
+2. **Skill Tree Visual Parity & Shell (`feature-learn`, `shared`)**:
+   - Wired `ChildMainBottomNavBar(selectedTab = ChildBottomTab.LEARN)` cleanly below `SkillTreeScreen` in `LearnNavGraph.kt`, refined `calculateCurveOffsetFraction` (centered `0f` start + smooth organic left/right alternation) and row-local `CurvedSegmentConnector` + `SkillTreeLoadingSkeleton` / `SkillTreeLoadingHeaderSkeleton` (`SkillTreePathConnector.kt`), added `Canvas` `drawArc` node rings and Material vector icons (`Search`, `WifiOff`, `Refresh`, `Lock`, `Check`, `PlayArrow`), hid track selector dots when offline (`SkillTreeHeaders.kt`), and compacted `SkillTreeHeaders.kt` to `451` lines (`< 500`).
+   - Added 4 parity unit tests in `SkillTreeAndPlacementUiParityTest.kt`.
+3. **Placement Check Visual Parity & Network Test Stabilization (`feature-learn`, `core-network`)**:
+   - Hoisted `state.isCompleted` outside safe-area/`formMax` bounds in `PlacementCheckScreen.kt`, redesigned `PlacementCompletedContent` (`PlacementCheckCompletionCard.kt`) with a pinned full-bleed `colors.primary` confetti celebration hero (`brandSmall` serif headline + sticky `PlayArrow` CTA), removed the border from the `"Multiple Choice"` pill (`PlacementCheckComponents.kt`), and added RTL-aware `Icons.AutoMirrored.Rounded.ArrowForward` `trailingIcon` to `PlacementBottomBar`'s `PrimaryButton` (`PlacementCheckStatusCards.kt`).
+   - Stabilized `HttpClientFactoryTest` (`concurrent 401s trigger exactly one refresh call`) via deterministic suspending `delay(50)`, mutable `"old"` -> `"new"` token transition, and scoped `awaitAll(async { ... }, async { ... })` verification (`17/17`).
+
+### Reason
+Aligns K-01 and K-02 Compose screens pixel-for-pixel with approved UI design mockups (`Skill Tree-01..08.png`, `Quiz Question-01..04.png`, `Quiz Complete-01..02.png`), enforces `rule.md` line-count ceilings, and removes a parallel-test timing flake.
+
+### Backend Impact
+None.
+
+### Web Admin Impact
+None.
+
+### Mobile App Impact
+- Modified: `core-designsystem` (`NoorColorScheme.kt`, `Resolution.kt`, `DefaultPalettes.kt`, `ResolutionTest.kt`, `CORE_DESIGNSYSTEM_INSTRUCTIONS.md`), `core-ui` (`Navigation.kt`, `CORE_UI_INSTRUCTIONS.md`), `feature-learn` (`SkillTreeHeaders.kt`, `SkillTreeComponents.kt`, `SkillTreePathConnector.kt`, `SkillTreePlacementBanners.kt`, `SkillTreeScreen.kt`, `PlacementCheckScreen.kt`, `PlacementCheckCompletionCard.kt`, `PlacementCheckComponents.kt`, `PlacementCheckStatusCards.kt`), `shared` (`LearnNavGraph.kt`, `PlaceholderScreens.kt`, `AppRoot.kt`, `shared/build.gradle.kts`), `core-network` (`HttpClientFactoryTest.kt`).
+- Added: `core-ui/.../TypographyResources.kt`, `feature-learn/src/commonTest/.../SkillTreeAndPlacementUiParityTest.kt`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None.
+
+### Database Impact
+None.
+
+### Authentication & Permission Impact
+None (test-only concurrency stabilization in `HttpClientFactoryTest.kt`).
+
+### Breaking Change
+NO
+
+### Migration Required
+NO
+
+### Documentation Updated
+- `NoorHeroes/core/core-designsystem/CORE_DESIGNSYSTEM_INSTRUCTIONS.md`
+- `NoorHeroes/core/core-ui/CORE_UI_INSTRUCTIONS.md`
+- `sdocs/evidence/01-quran-skill-tree-map-evidence.md`
+- `sdocs/evidence/02-placement-check-flow-evidence.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- 10-module Gradle suite (`:core:core-common` [88/88], `:core:core-designsystem` [31/31], `:core:core-database` [31/31], `:core:core-network` [77/77], `:core:core-data` [79/79], `:core:core-ui` [19/19], `:core:core-navigation` [7/7], `:feature:feature-learn` [99/99], `:shared` [11/11], `:androidApp:testDevDebugUnitTest` [1/1] + `:androidApp:compileDevDebugKotlin`): **443/443 passed** (`0` failures, `0` errors, `0` skipped).
+- `recheck_zero_gaps.py`: `0` violations across `80` changed/untracked files (`95/95` 4-locale parity, max `.kt`/`.xml` file `494` lines).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_C20_B04] AI Report Generation Service & Content Safety Validator (Backend)
+
+### Summary
+Implemented Feature **C.20 (Parent Dashboard)** — **B-04 (`04-ai-report-generation-service`)** and coordinated safety dependency **B-05 (`05-content-safety-validator`)** in `NoorHeroes-Backend/`:
+1. **Database Schema & Alembic Migration (`0105_create_dashboard_report_tables`)**:
+   - Aligned ORM models in `src/noorheroes/modules/dashboard/models.py` (`WeeklyReportOrm` -> `weekly_report`, `MonthlyFamilyReportOrm` -> `monthly_family_report`, `AiInsightReportOrm` -> `ai_insight_report`, `SafetyReportOrm` -> `safety_report`), added `validation_failure_reasons` JSON/JSONB columns on `weekly_report` and `ai_insight_report`, imported dashboard models in `alembic/env.py`, and created idempotent single-head migration `alembic/versions/0105_create_dashboard_report_tables.py` chained from `0104_migrate_home_fact_history_to_fact_seen_log`.
+2. **Synchronous Write-Time Content Safety Validator (`content_safety.py`, B-05 / FR-13)**:
+   - Implemented `ContentSafetyValidator` and `ContentSafetyResult` enforcing Rules 1 (`possible_diagnosis_language` including mood/learning diagnoses & religious condemnation), 2 (`possible_sibling_comparison` including nested/structural dict key scanning and feminine conjugations), and 3 (`possible_false_certainty` including English pronoun/child-name/mid-clause patterns & feminine forms) across `en`, `ar`, `ur`, and `hi` with NFKC, zero-width, ZWNJ word-split, delimited/spaced single-letter obfuscation (`A.D.H.D.`, `a-u-t-i-s-m`, `a d h d`), and Arabic diacritic/tatweel normalization (`_ARABIC_MARKS_AND_TATWEEL_RE`).
+   - Fails closed (`passed=False`) under timeouts (`validator_timeout`), internal exceptions/circular structures (`validator_internal_error`), or `None` inputs (`invalid_content_input`) while safely ignoring legitimate `None` optional scalar fields inside dict payloads.
+   - Enforced non-bypassable write-time gating inside `WeeklyReportRepository.save_validated_report` / `.add` and `AiInsightReportRepository.save_validated_report` / `.add` (forwarding payload `locale` and deriving `content_safety_passed` and `validation_failure_reasons` exclusively from validator output), plus read-side multilingual enforcement in `DashboardAggregationService.sanitize_headline_insight` and `_fetch_weekly_report_preview`.
+3. **Structured Schemas, Versioned Zero-PII Prompt Builder & AI Report Generation Service (`schemas.py`, `prompt_builder.py`, `service.py`, `deps.py`)**:
+   - Added Pydantic v2 schemas `WeeklyReportSummaryJson`, `AggregateSummaryJson` (`extra="forbid"` enforcing FR-15 zero sibling breakdown/comparison fields), `AiInsightJson`, `BlockedRequestAuditItem`, and `SafetyUsageSummary`, enforced by `MonthlyFamilyReportRepository.save_validated_aggregate` and `.add`.
+   - Added `DashboardPromptBuilder` (`CURRENT_PROMPT_VERSION = "v1.0.0"`) with recursive PII scrubbing (`sanitize_metrics_for_llm`) producing zero-PII, locale-targeted prompts (`resolve_report_locale`) strictly following `child.preferred_language` across `en`, `ar`, `ur`, and `hi`, and `_infer_household_locale` for Beat-scheduled `monthly_family` runs (`locale=None`).
+   - Implemented `ReportGenerationService(BaseService)` (`generate_weekly_report`, `generate_monthly_family_report`, `generate_ai_insight_report`, `generate_safety_report`) enforcing `verify_child_scope` ownership verification (rejecting nonexistent/soft-deleted children even when `family_id=None`), calendar date normalization & period validation, real cross-domain DB aggregation (Stories excluding `is_preview=True` up to `limit=500`, Favorites filtering withdrawn episodes/series while resolving canonical replacements, Duas, Quran/Learning skills & quizzes, Habits/Streaks/FamilyStreak, `RecitationFeedbackLog`, `ModerationAuditLog` with SQL `LIKE` wildcard escaping & newest-first sorting, `BedtimeConfigRepository`, `ChildLockRepository`, `GateEventOrm` detecting `limit_reached` screen-time status, using `_get_loaded_relation` `NO_VALUE` guards to prevent `MissingGreenlet`), fail-closed `ServiceUnavailableError` abort on partial domain outages, `AIProviderFactory` retries via `retry_with_backoff` + `get_fallback_provider()` failover + raw/fenced/prose-wrapped JSON extraction (`_strip_json_code_fences`), localized fallback narratives, transactional `OutboxWriter` event emission (`events.py` & `common/outbox_relay.py::DISPATCH_TABLE`), and conditional Redis cache invalidation (using 300s degraded TTL on delayed previews) that preserves positive cached reports when newly generated reports fail safety validation.
+4. **Celery Background Tasks & Beat Schedule (`tasks.py`, `core/celery_app.py`)**:
+   - Implemented worker tasks (`dashboard.generate_weekly_report`, `dashboard.generate_monthly_family_report`, `dashboard.generate_ai_insight_report`, on-demand `dashboard.generate_safety_report`), staggered batch dispatchers (`STAGGER_WINDOW_SECONDS = 300`, `DISPATCH_BATCH_SIZE = 500`, family deduplication), and outbox relay consumers (`dashboard.on_*`). Permanent worker errors (`ChildScopeViolationError`, `ValueError`, `ValidationError`) fail immediately without Celery `self.retry`.
+   - Registered Beat entries exclusively for `dashboard.dispatch_weekly_reports` (Sunday 01:00 UTC), `dashboard.dispatch_ai_insight_reports` (Sunday 01:30 UTC), and `dashboard.dispatch_monthly_family_reports` (1st of month 02:00 UTC), keeping `dashboard.generate_safety_report` strictly on-demand.
+
+### Reason
+Fulfills PRD C.20 §1.7 FR-8, FR-11, FR-13, FR-15, §4.1/§4.2, §5 Items 4–5, Blueprint B-04 (`04-ai-report-generation-service.md`), and Blueprint B-05 (`05-content-safety-validator.md`) for automated multi-locale AI report generation, household non-comparison guarantees, and fail-closed write-time safety governance.
+
+### Backend Impact
+- Modified: `NoorHeroes-Backend/src/noorheroes/modules/dashboard/models.py`, `schemas.py`, `repository.py`, `service.py`, `deps.py`, `__init__.py`, `README.md`, `NoorHeroes-Backend/src/noorheroes/common/outbox_relay.py`, `NoorHeroes-Backend/src/noorheroes/core/celery_app.py`, `NoorHeroes-Backend/alembic/env.py`, `NoorHeroes-Backend/FAST-API-INSTRUCTIONS.md`, `NoorHeroes-Backend/MASTER-README.md`.
+- Added: `NoorHeroes-Backend/src/noorheroes/modules/dashboard/content_safety.py`, `prompt_builder.py`, `events.py`, `tasks.py`, `NoorHeroes-Backend/alembic/versions/0105_create_dashboard_report_tables.py`, and 6 B-04/B-05 test suites under `NoorHeroes-Backend/tests/modules/dashboard/`.
+
+### Web Admin Impact
+None directly modified in this task (emits `dashboard.content_safety_validation_failed` outbox alerts and persists `validation_failure_reasons` for downstream B-06 Admin Content Safety Audit visibility).
+
+### Mobile App Impact
+No breaking mobile contract changes; populates the persisted `weekly_report`, `monthly_family_report`, `ai_insight_report`, and `safety_report` tables served by existing `GET /v1/parent/dashboard/reports/{type}` B-03 endpoints.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+None (preserves existing B-02/B-03 HTTP endpoints and response schemas while enriching `safety_report` and report JSON structures via background/on-demand generation).
+
+### Database Impact
+Added Alembic migration `0105_create_dashboard_report_tables` (chained from `0104_migrate_home_fact_history_to_fact_seen_log`) provisioning `weekly_report`, `monthly_family_report` (no `child_id`), `ai_insight_report`, and `safety_report` with composite query indexes and `validation_failure_reasons` columns.
+
+### Authentication & Permission Impact
+`ReportGenerationService` enforces `verify_child_scope` ownership verification on child-scoped generation calls (`generate_weekly_report`, `generate_ai_insight_report`, `generate_safety_report`), raising `ChildScopeViolationError` on cross-family mismatches, while preserving zero-exception B-01/B-02/B-03 API gates.
+
+### Breaking Change
+NO
+
+### Migration Required
+YES — Run `alembic upgrade head` in `NoorHeroes-Backend/` to apply revision `0105_create_dashboard_report_tables`.
+
+### Documentation Updated
+- `NoorHeroes-Backend/src/noorheroes/modules/dashboard/README.md`
+- `NoorHeroes-Backend/FAST-API-INSTRUCTIONS.md`
+- `NoorHeroes-Backend/MASTER-README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `python -m pytest tests/modules/dashboard/ --show-capture=no -q`: **326/326 passed** (100% green across all 12 suites: 187 B-04/B-05 tests across `test_ai_report_generation_service.py` [12], `test_ai_report_generation_zero_missing_scenarios.py` [59], `test_content_safety_validator.py` [25], `test_content_safety_validator_zero_missing_scenarios.py` [75], `test_monthly_family_report_schema_structural.py` [14], `test_dashboard_b04_migration.py` [2] + all 139 existing B-01/B-02/B-03 tests).
+- `python -m alembic heads`: single clean head (`0105_create_dashboard_report_tables`).
+- `python scripts/check_migration_backward_compat.py` & `python scripts/check_resource_naming.py`: passed cleanly.
+- `tests/architecture/` suites (`test_schema_conventions.py` 100% pass; zero `dashboard` violations in `test_transactional_outbox.py`, `test_base_repository_service.py`, `test_logging_centralization.py`, and targeted AST `verify_child_scope` check on `dashboard/service.py`).
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_A05_K02] Placement Check Flow (Mobile / KMP)
+
+### Summary
+Completed end-to-end hardening, K-01 integration, bottom-tab & deep-link routing, localization, and test verification for Feature A.5 / Task K-02 (`02-placement-check-flow`) in `NoorHeroes`:
+1. **Network, Locale Headers & Debug Fallbacks (`core-network`)**:
+   - Extended `PlacementCheckDtos.kt` with camelCase + snake_case sibling fields (`PlacementCheckResponseDto`, `PlacementPriorResultDto`, `PlacementConflictDetailsDto`), conflict envelope parsing, and optional `_envelope` tracing fields (`requestId`, `traceId`, `timestamp`).
+   - Updated `ContentLearningApiService.getPlacementQuestions(locale)` and `submitPlacementCheck(request, locale)` to forward `X-Locale` and `Accept-Language`, and to normalize `200` and `409 Conflict` prior-result responses across flat and nested envelopes.
+   - Fixed `HttpClientFactory.kt` so default `Accept-Language` (`DEFAULT_LOCALE`) is only injected in `onRequest` when absent, added `LocalDevFallbackHttpClientEngine` routes for `/learning/placement-check/questions`, `/learning/placement-check`, and `/learning/paths` (3 distinct UUID nodes matching `provisionalStates`), and added `enableInspektify: Boolean = true` for clean JVM host test isolation.
+   - Added 10 Ktor `MockEngine` contract tests in `PlacementCheckApiServiceTest.kt`, 3 FastAPI `_envelope` 409/array-422/null-locale parity tests in `PlacementCheckBackendParityContractTest.kt`, and locale + debug-fallback tests in `HttpClientFactoryTest.kt` (`17/17`).
+2. **Database & Repository Cache Invalidation (`core-database`, `core-data`)**:
+   - Added `SkillNodeCacheDao.clearAllNodesForChild(childId)` to purge stale K-01 cached nodes across Quran, Arabic, and Tajweed tracks for the placed child only.
+   - Updated `LearningRepository.submitPlacementCheck` and `LearningRepositoryImpl` with `locale: String? = null`, `CancellationException` propagation, and non-fatal Room/legacy refresh handling.
+   - Added 7 unit tests in `LearningRepositoryPlacementTest.kt`.
+3. **Shared Core Back Handler, Domain, Presentation, UI & 4-Locale Parity (`core-ui`, `core-common`, `feature-learn`)**:
+   - Promoted cross-platform `@Composable expect fun BackPressHandler` (`commonMain` / `androidMain` / `iosMain`) into `core:core-ui` (`com.noorheroes.core.ui.foundation`) with `androidx.activity.compose` wired in `core-ui/build.gradle.kts` and documented in `CORE_UI_INSTRUCTIONS.md`.
+   - Added 4-locale parity (`en`, `ar`, `hi`, `ur`) across all 87 keys and `%1$d`/`%1$s` format specifiers in `strings_learn.xml`, including granular `PlacementErrorReason` copy (`ACCESS_RESTRICTED`, `RATE_LIMITED`, `MISSING_CHILD`), empty-options copy (`placement_no_options_message`), and Edge Case 9 Tajweed provisional notice copy.
+   - Hardened `SubmitPlacementCheckUseCase` with blank `childId` (`MISSING_CHILD_PROFILE`) and empty `responses` (`EMPTY_PLACEMENT_RESPONSES`) validation guards plus `409` fallback.
+   - Hardened `PlacementCheckViewModel` with `SavedStateHandle` process-death persistence/restoration, `LocalizationProvider` locale forwarding, sibling-switch/logout reset in `onAuthContextChanged`, concurrent `loadJob` + `submitJob` cancellation & post-await ownership checks, duplicate-tap idempotency (`hasBypassedToDefault`), automatic `VALIDATION` error clearing on selection, granular HTTP error mapping (`RestrictionFailed`/`Forbidden` including `CHILD_SCOPE_VIOLATION`, `RateLimited`, `NotFound`, `Server.Maintenance`, opaque `Unknown` filtering), empty-options `canAdvanceCurrentStep` progression, and removal of dummy UUID fallbacks.
+   - Upgraded `PlacementCheckScreen.kt`, `PlacementCheckComponents.kt`, `PlacementCheckStatusCards.kt`, and extracted `PlacementCheckCompletionCard.kt`: added `noorHeroesSafeArea()` + `widthIn(max = NoorHeroesTheme.sizes.formMax)`, handled `totalSteps > 10` progress bar fallback and empty question options, wired `BackPressHandler`, replaced raw Unicode glyphs with RTL-aware Material vector icons, grouped choices in `selectableGroup()`, added `heading()` / `LiveRegionMode.Polite` / `clearAndSetSemantics` accessibility semantics, and wired `placement_start_from_beginning_description`.
+   - Authored 22 scenario tests in `PlacementCheckZeroMissingScenariosTest.kt`, 11 concurrency/race/error-mapping/edge-case tests in `PlacementCheckEdgeCasesTest.kt`, and updated `PlacementCheckTestFakes.kt` & `SkillTreeTestFakes.kt`.
+4. **Navigation, Child Bottom Bar & Deep-Link Wiring (`core-navigation`, `feature-learn`, `shared`, `androidApp`)**:
+   - Fixed double-navigation dispatch on `TakePlacementCheck` in `LearnModule.kt` and `SkillTreeViewModel.kt`, while `navigateToFreshSkillTree` in `LearnNavGraph.kt` clears stale `QuranSkillTreeRoute`/`PlacementCheckRoute` entries and passes `focusNodeId`.
+   - Wired `ChildBottomTab.LEARN` -> `QuranSkillTreeRoute()` across `PlaceholderScreens.kt`, `OnboardingNavGraph.kt`, `RewardsNavGraph.kt`, and `AppRoot.kt`, and updated `EndToEndOnboardingProfileRewardsQaTest.kt` Scenario 3.
+   - Added `LearnDeepLinkParser` (`LearnRoutes.kt`) and `LearnNavigationHelper` (`commonTest`: `LearnNavigationHelperTest.kt`), registered Android deep links in `AndroidManifest.xml` / `MainActivity.kt`, and exposed `handleDeepLinkIOS` in `NoorHeroesApp.kt` (`iOSApp.swift`).
+
+### Reason
+Fulfills PRD A.5 §1.7 FR-1/FR-2, §1.9, §1.10 Edge Case 9 & Edge Case 11, and Blueprint B-02 / K-02 requirements for diagnostic onboarding placement, idempotent resubmission recovery, cross-track K-01 cache consistency, bottom-tab/deep-link navigation, and non-blocking "Start from the beginning" access.
+
+### Backend Impact
+Consumes B-02 endpoints (`GET /v1/learning/placement-check/questions` and `POST /v1/learning/placement-check`) with `X-Locale` / `Accept-Language` and handles documented `200`, `403`, `404`, `409` conflict, `422` validation, and `429` rate-limit schemas.
+
+### Web Admin Impact
+None (child mobile placement flow).
+
+### Mobile App Impact
+- Updated `strings_learn.xml` (`values`, `values-ar`, `values-hi`, `values-ur`), `core-ui/build.gradle.kts`, `CORE_UI_INSTRUCTIONS.md`, `SkillNodeCacheDao.kt`, `PlacementCheckDtos.kt`, `ContentLearningApiService.kt`, `HttpClientFactory.kt`, `LearningRepository.kt`, `LearningRepositoryImpl.kt`.
+- Added `core:core-ui` `BackPressHandler` (`commonMain`, `androidMain`, `iosMain`), `PlacementCheckCompletionCard.kt`, `LearnNavigationHelper.kt`, `LearnNavigationHelperTest.kt`, and `PlacementCheckEdgeCasesTest.kt`.
+- Updated `LearnModule.kt`, `SubmitPlacementCheckUseCase.kt`, `PlacementCheckUiState.kt`, `PlacementCheckViewModel.kt`, `PlacementCheckScreen.kt`, `PlacementCheckComponents.kt`, `PlacementCheckStatusCards.kt`, `SkillTreePlacementBanners.kt`, `SkillTreeViewModel.kt`, `LearnRoutes.kt`, `LearnNavGraph.kt`, `PlaceholderScreens.kt`, `OnboardingNavGraph.kt`, `RewardsNavGraph.kt`, `AppRoot.kt`, `NoorHeroesApp.kt`, `AndroidManifest.xml`, and `MainActivity.kt`.
+- Added/updated `PlacementCheckApiServiceTest.kt`, `PlacementCheckBackendParityContractTest.kt`, `HttpClientFactoryTest.kt`, `LearningRepositoryPlacementTest.kt`, `PlacementCheckTestFakes.kt`, `PlacementCheckZeroMissingScenariosTest.kt`, `PlacementCheckEdgeCasesTest.kt`, `SkillTreeTestFakes.kt`, `SkillTreeScreenUiTest.kt`, and `EndToEndOnboardingProfileRewardsQaTest.kt`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+Client consumption aligned with B-02 request/response DTOs, FastAPI `_envelope` `409 Conflict` / array-`details` `422` / `403` / `404` / `429` shapes, and single-value `Accept-Language` + `X-Locale` headers.
+
+### Database Impact
+Added `clearAllNodesForChild(childId)` delete query on existing `skill_node_cache` Room table (no schema migration required).
+
+### Authentication & Permission Impact
+Requires authenticated child session (`BaseAuthState.Authenticated.childId`); unauthenticated, missing `childId`, or `CHILD_SCOPE_VIOLATION` surfaces `MISSING_CHILD` error cleanly without synthetic UUID submission; `RestrictionFailed`/`FORBIDDEN` surfaces `ACCESS_RESTRICTED`; and in-flight submissions are cancelled on sibling switch or logout.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO
+
+### Documentation Updated
+- `NoorHeroes/core/core-ui/CORE_UI_INSTRUCTIONS.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `sdocs/evidence/02-placement-check-flow-evidence.md`
+
+### Validation
+- `:core:core-common:testAndroidHostTest`: 88/88 passed
+- `:core:core-database:testAndroidHostTest`: 31/31 passed
+- `:core:core-network:testAndroidHostTest`: 77/77 passed (`PlacementCheckApiServiceTest` 10/10, `PlacementCheckBackendParityContractTest` 3/3, `HttpClientFactoryTest` 17/17)
+- `:core:core-data:testAndroidHostTest`: 79/79 passed (`LearningRepositoryPlacementTest` 7/7)
+- `:core:core-ui:testAndroidHostTest`: 19/19 passed
+- `:core:core-navigation:testAndroidHostTest`: 7/7 passed (`NavigatorIntegrationTest` 7/7)
+- `:feature:feature-learn:testAndroidHostTest`: 95/95 passed (`PlacementCheckViewModelTest` 12/12, `PlacementCheckZeroMissingScenariosTest` 22/22, `PlacementCheckEdgeCasesTest` 11/11, `SkillTreeScreenUiTest` 16/16)
+- `:shared:testAndroidHostTest`: 11/11 passed (`LearnNavigationHelperTest` 2/2, `EndToEndOnboardingProfileRewardsQaTest` 5/5)
+- `:androidApp:testDevDebugUnitTest` (`KoinModuleCheckTest`): 1/1 passed + `:androidApp:compileDevDebugKotlin` clean
+- Total verified tests: 408/408 passing (0 failures, 0 errors, 0 skipped); `rule.md` static audit: 0 violations across all 47 K-02 files.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_A05_K01] Quran & Arabic Skill Tree Map (Mobile / KMP)
+
+### Summary
+Implemented the mobile client feature for Feature A.5 / Task K-01 (`01-quran-skill-tree-map`) in `NoorHeroes`:
+1. **Design System Extensions (`core-designsystem`)**:
+   - Added 6 semantic node state color tokens (`nodeLocked`, `nodeReady`, `nodeLearning`, `nodePracticing`, `nodeMastered`, `nodeNeedsRefresh`) and path line tokens to `NoorColorScheme` and palettes (`NoorDark`, `NightSky`, `Garden`).
+   - Added skill node sizing (`skillNodeSize`, `skillNodeRingStroke`, `skillNodeBadgeSize`, `skillNodeStepHeight`) and curved layout tokens (`skillTreeVerticalGap`, `skillTreeCurveAmplitude`).
+   - Modularized `Tokens.kt` by extracting adaptive helpers to `AdaptiveHelpers.kt` (maintaining `< 500 lines` per file rule).
+2. **Domain Models & Config (`core-common`)**:
+   - Created pure domain models (`SkillNodeState`, `SkillNode`, `MasterySummary`, `SkillTree`) with zero Compose UI imports.
+   - Added endpoint constants (`/v1/learning/paths`) and query constants (`track`).
+   - Added database table/entity constants (`skill_node_cache`).
+   - Added 100% localization parity across English (`values`), Arabic (`values-ar`), Hindi (`values-hi`), and Urdu (`values-ur`) for all learning strings.
+3. **Network & API (`core-network`)**:
+   - Implemented Ktor-based `LearningApi` and DTOs (`SkillTreeResponseDto`, `SkillNodeDto`, `MasterySummaryDto`) with `toDomain()` mapping.
+   - Registered `LearningApi` in `NetworkModule`.
+4. **Database & Offline Fallback (`core-database`)**:
+   - Created Room entity `SkillNodeCacheEntity` and DAO `SkillNodeCacheDao` for `skill_node_cache` table.
+   - Registered in `NoorHeroesDatabase` (schema version updated) and `DatabaseModule`.
+5. **Data Layer (`core-data`)**:
+   - Implemented `getSkillTree(childId, track)` and `observeCachedSkillTree(childId, track)` in `LearningRepositoryImpl`.
+   - Built fetch-then-cache offline-fallback policy gracefully returning cached state when offline.
+   - Unit tests authored and passing in `LearningRepositoryImplTest`.
+6. **Feature UI & Presentation (`feature-learn`)**:
+   - Created `GetSkillTreeUseCase` in `domain/` and registered in `LearnModule`.
+   - Created `SkillTreeViewModel` strictly adhering to the architectural contract: RENDER-ONLY, NEVER COMPUTE. Zero client-side mastery score or state calculation.
+   - Built organically curved Compose skill-tree list, node states, mastery header, mode selector bottom sheet, locked node unlock dialog, offline fallback indicator, and first-time learner placement-check reoffer banner.
+   - Authored unit test suite in `SkillTreeViewModelTest`.
+7. **Navigation & Integration (`core-navigation`, `shared`)**:
+   - Updated `QuranSkillTreeRoute(val focusNodeId: String? = null) : Route`.
+   - Wired `SkillTreeScreen` in `LearnNavGraph.kt`.
+   - Connected `ChildBottomTab.LEARN` tab in `AppRoot.kt` and `PlaceholderScreens.kt`.
+
+### Reason
+Fulfills PRD A.5 §1.1-1.3, §1.5, §1.8, §4.1-4.3 and Blueprint B-01 / K-01, establishing the primary Quran & Arabic Learning interface for children with offline resilience and non-linear path progression.
+
+### Backend Impact
+Consumes backend endpoints provided by B-01 (`GET /v1/learning/paths?track={track}`).
+
+### Web Admin Impact
+None (child mobile learning interface).
+
+### Mobile App Impact
+- Created `SkillTreeModels.kt`, `SkillTreeDtos.kt`, `LearningApi.kt`, `SkillNodeCacheEntity.kt`, `SkillNodeCacheDao.kt`.
+- Created `GetSkillTreeUseCase.kt`, `SkillTreeUiState.kt`, `SkillTreeViewModel.kt`, `SkillTreeComponents.kt`, `SkillTreeHeaders.kt`, `SkillTreePlacementBanners.kt`, `SkillTreeDialogs.kt`, `SkillTreeScreen.kt`.
+- Created `SkillTreeTestFakes.kt`, `SkillTreeViewModelTest.kt`, `SkillTreeZeroMissingScenariosTest.kt`, `SkillTreeScreenUiTest.kt`.
+- Created `LearningRepositoryImplTest.kt`, `LearningRepositoryZeroMissingScenariosTest.kt`.
+- Updated `NoorColorScheme.kt`, `Tokens.kt`, `AdaptiveHelpers.kt`, `DefaultPalettes.kt`.
+- Updated `LearnRoutes.kt`, `LearnNavGraph.kt`, `AppRoot.kt`, `PlaceholderScreens.kt`.
+- 100% visual fidelity alignment with `Screens/Mobile App/Learn/Skill Tree-01.png` through `Skill Tree-08.png`.
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+Consumes `GET /v1/learning/paths` conforming to `SkillTreeResponseDto`.
+
+### Database Impact
+Added SQLite Room table `skill_node_cache` with compound primary key `(child_id, track, node_id)`.
+
+### Authentication & Permission Impact
+Requires child-scoped authenticated session (`BaseAuthState.Authenticated.childId`).
+
+### Breaking Change
+NO
+
+### Migration Required
+NO (Room database schema updated cleanly with fallback destructive migration for cache).
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `sdocs/evidence/01-quran-skill-tree-map-evidence.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest` passed (100% green, 48/48 tests across `SkillTreeViewModelTest`, `SkillTreeZeroMissingScenariosTest` [S-A05-K01-001 through S-A05-K01-025], and `SkillTreeScreenUiTest` [S-DESIGN-01 through S-DESIGN-08]).
+- `:core:core-data:testAndroidHostTest` passed (100% green, 72/72 tests across `LearningRepositoryImplTest` and `LearningRepositoryZeroMissingScenariosTest` [S-A05-DATA-001 through S-A05-DATA-010]).
+- `:shared:compileAndroidMain` passed (100% green).
+- Full audit for zero hardcoded values (0 raw hex, 0 raw dp/sp, 0 raw shapes) and strict `< 500 lines` per file ceiling verified.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_C20_B03] Dashboard Report Retrieval API (Backend)
+
+### Summary
+Implemented the Dashboard Report Retrieval Service and API endpoint (`GET /v1/parent/dashboard/reports/{type}?child_id=`) for the Parent Dashboard module (Feature C.20 / Blueprint B-03 / Tasks 01–04):
+1. **Persistence & ORM Models (`src/noorheroes/modules/dashboard/models.py`)**:
+   - Defined SQLAlchemy 2.0 ORM entities inheriting `Base` and `TimestampMixin` with PRD §4.1/§4.2 index specifications:
+     - `WeeklyReportOrm` (`weekly_report` table): child-scoped weekly progress with `content_safety_passed` audit flag.
+     - `MonthlyFamilyReportOrm` (`monthly_family_report` table): family-scoped cross-child progress strictly without per-child comparison arrays.
+     - `AiInsightReportOrm` (`ai_insight_report` table): premium weekly AI strengths, weaknesses, and suggestions with `content_safety_passed` audit flag.
+     - `SafetyReportOrm` (`safety_report` table): on-demand AI usage metrics, frequency breakdown, and blocked request audit logs.
+2. **Clean Architecture Repositories (`src/noorheroes/modules/dashboard/repository.py`)**:
+   - Implemented 4 generic repositories subclassing `BaseRepository[ModelT]`:
+     - `WeeklyReportRepository`: `get_latest_passing`, `get_previous_passing`, `get_latest_any`.
+     - `MonthlyFamilyReportRepository`: `get_latest_passing`, `get_previous_passing`, `get_latest_any`.
+     - `AiInsightReportRepository`: `get_latest_passing`, `get_previous_passing`, `get_latest_any`.
+     - `SafetyReportRepository`: `get_latest_passing`, `get_previous_passing`, `get_latest_any`.
+   - Embedded defense-in-depth read-time query filtering enforcing `content_safety_passed == True` for weekly and AI insight reports.
+3. **Response Schemas (`src/noorheroes/modules/dashboard/schemas.py`)**:
+   - Created Pydantic v2 schemas inheriting `NoorHeroesBaseModel` with dual-wire camelCase formatting:
+     - `WeeklyReportResponse`: Full weekly learning and habit metrics.
+     - `MonthlyFamilyReportResponse`: Cross-child aggregate metrics.
+     - `AiInsightReportResponse`: AI insight narrative.
+     - `SafetyReportResponse`: On-demand AI safety audit.
+     - `DelayedReportResponse`: Graceful delay fallback containing `delayed: true`, `last_known_report`, and `last_known_as_of` (PRD FR-11).
+     - `LockedReportResponse`: Premium upsell response shape for non-premium `ai_insight` queries containing `locked: true` and `upsell_reason` (HTTP 200, not an error; PRD FR-10).
+     - `EmptyReportResponse`: Explicit empty-state response when zero reports have ever been generated for a child (PRD §1.12).
+4. **Service Orchestration (`src/noorheroes/modules/dashboard/service.py`)**:
+   - Implemented `get_report(session, parent_ctx, report_type, child_id, locale)`:
+     - Enforces family-ownership authorization on `child_id` (raising `ChildScopeViolationError` / HTTP 403 on foreign/missing child).
+     - Validates `report_type` (`weekly`, `monthly`, `ai_insight`, `safety`).
+     - Performs soft entitlement check against C.24 B-06 contract (`feature="ai_features"`); returns 200 OK `LockedReportResponse` if non-premium.
+     - Automatically falls back to previous passing report if the current period report is delayed or failed content safety validation.
+     - Returns `EmptyReportResponse` if no reports have ever been generated for this child/type.
+5. **Router Endpoint (`src/noorheroes/modules/dashboard/api.py`)**:
+   - Exposed `GET /v1/parent/dashboard/reports/{type}` protected by router-mount level `require_parent_session_only` and `require_parent_gate_verified` middleware.
+   - Enforces `type: ReportTypeLiteral` returning HTTP 422 on invalid type paths, and mandatory `child_id` query parameter.
+6. **Automated Verification**:
+   - Authored unit & integration test suite `tests/modules/dashboard/test_dashboard_report_retrieval_api.py` (13 tests passing).
+   - Authored zero-missing scenarios suite `tests/modules/dashboard/test_dashboard_report_retrieval_zero_missing_scenarios.py` (covering S-C20-B03-001 through S-C20-B03-030).
+   - All 107 dashboard module tests pass (100% green).
+
+### Reason
+Fulfills PRD C.20 §1.7 FR-8, FR-10, FR-11, §3.4, §4.1, §4.2, §1.10 Edge Cases #4, #5, delivering the report retrieval API for the Parent Dashboard condensed preview card.
+
+### Backend Impact
+- Created `src/noorheroes/modules/dashboard/models.py`.
+- Created `src/noorheroes/modules/dashboard/repository.py`.
+- Modified `src/noorheroes/modules/dashboard/schemas.py`.
+- Modified `src/noorheroes/modules/dashboard/service.py`.
+- Modified `src/noorheroes/modules/dashboard/deps.py`.
+- Modified `src/noorheroes/modules/dashboard/api.py`.
+- Modified `src/noorheroes/modules/dashboard/__init__.py`.
+- Created test suites `tests/modules/dashboard/test_dashboard_report_retrieval_api.py` and `test_dashboard_report_retrieval_zero_missing_scenarios.py`.
+
+### Web Admin Impact
+None (Parent Dashboard is strictly mobile in-app only per PRD FR-12; no admin portal surface).
+
+### Mobile App Impact
+Provides backend contract backing KMP `:feature:parent-dashboard` Weekly AI Report Card Preview (K-03).
+
+### Parent Web Impact
+None (PRD §1.1: Parent Dashboard exists only in the Mobile App; never on web portal).
+
+### API Contract Impact
+- Mounted `GET /v1/parent/dashboard/reports/{type}?child_id=` (`type`: weekly, monthly, ai_insight, safety).
+- Supports normal report payload, delayed state (`delayed: true`), locked upsell state (`locked: true`), and empty state (`empty: true`).
+- Inherits router-level Parent-Session-Only gate (`403 CHILD_MODE_TOKEN_REJECTED`) and Parent Gate verification.
+
+### Database Impact
+- Defined ORM entities for `weekly_report`, `monthly_family_report`, `ai_insight_report`, and `safety_report` with PRD §4.2 indexes.
+
+### Authentication & Permission Impact
+Enforces mode boundary rejecting `SessionMode.CHILD`, requiring `SessionMode.PARENT` + fresh Parent Gate verification, and validating family ownership on `child_id`.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO (persists via existing DB connection; ORM models ready for future migration sync).
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `python -m pytest tests/modules/dashboard/ -v`: 139 tests passing across:
+  - `test_dashboard_report_retrieval_api.py` (13 tests)
+  - `test_dashboard_report_retrieval_zero_missing_scenarios.py` (37 scenarios: S-C20-B03-001 through S-C20-B03-037)
+  - `test_dashboard_aggregation_api.py` (11 tests)
+  - `test_dashboard_aggregation_zero_missing_scenarios.py` (37 scenarios: S-C20-B02-001 through S-C20-B02-037)
+  - `test_parent_session_only_gate.py` (11 tests)
+  - `test_parent_session_only_gate_zero_missing_scenarios.py` (30 scenarios: S-C20-B01-001 through S-C20-B01-030)
+- 100% pass rate achieved with zero regressions.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_C20_B02] Dashboard Aggregation API (Backend)
+
+### Summary
+Implemented the Dashboard Aggregation Service and API endpoint (`GET /v1/parent/dashboard?child_id=`) for the Parent Dashboard module (Feature C.20 / Blueprint B-02 / Tasks 01–05):
+1. **Response Schemas (`src/noorheroes/modules/dashboard/schemas.py`)**:
+   - Created Pydantic v2 schemas inheriting `NoorHeroesBaseModel` with strict typing, extra forbidden, and dual-wire camelCase formatting:
+     - `DashboardResponse`: Primary read model containing `childId`, `weeklyReportPreview`, `activityTimelinePreview`, `screenTimeSummary`, `isReadOnly`, `reportAsOf`.
+     - `WeeklyReportPreview`: Weekly AI report card summary preview with `headlineInsight`, `asOf`, and `delayed` (PRD FR-11).
+     - `ActivityTimelineItem`: Chronological activity timeline preview item with `type` (story, habit, lesson, reward), `title`, and `occurredAt`.
+     - `ScreenTimeSummary`: Usage balance status with `statusLabel` and `usageRatio`.
+2. **Aggregation Service (`src/noorheroes/modules/dashboard/service.py`)**:
+   - Implemented `DashboardAggregationService(BaseService)`:
+     - Family-Ownership Authorization: Validates `child_id` belongs to `parent_ctx.family_id` via `ChildProfileRepository.get_child_by_id_and_family(include_archived=True)`. Raises `ChildScopeViolationError` (HTTP 403) on cross-family or non-existent profile.
+     - Concurrent Fan-Out: Executes component fetches concurrently via `asyncio.gather(..., return_exceptions=True)`.
+     - Independent Graceful Degradation: Failures in individual upstream components (e.g., Weekly Report delay, Habit service timeout) degrade gracefully to safe placeholders without failing the overall dashboard request.
+     - Explicit Empty-State Handling (PRD §1.10 Edge Case 1, §1.12): Zero-activity children return explicit empty-state text and empty timeline list (`[]`), never blank/broken cards.
+     - Read-Only Mode (PRD §1.10 Edge Case 2 & 3): Disabled/archived children return `isReadOnly: true` with live action triggers omitted.
+3. **Redis Caching Layer (`service.py` & Task 03)**:
+   - Differentiated TTL caching:
+     - Full dashboard aggregate: `dashboard:{family_id}:{child_id}` with 120s TTL (fulfills p95 < 600ms NFR).
+     - Weekly report sub-object: `dashboard:weekly:{family_id}:{child_id}` with 3600s TTL.
+     - Transparent live fan-out on cache miss and graceful fallback on Redis connection error.
+     - Cache invalidation helper `invalidate_dashboard_cache(family_id, child_id)`.
+4. **Router & Dependency Injection (`api.py` & `deps.py`)**:
+   - Exposed `GET /v1/parent/dashboard?child_id=` (and Master Screen Mapping alias `GET /v1/parent/dashboard/summary?child_id=`) with `DashboardResponse` response model.
+   - Wired `get_dashboard_aggregation_service` dependency factory.
+   - Inherits router-level Parent-Session-Only gate (B-01) and Parent Gate step-up verification.
+5. **Multi-Language Localization Catalogs & Content Safety Validator**:
+   - Centralized translation catalogs in `src/noorheroes/core/i18n.py` for empty-state insights, default headlines, and screen time status labels across `en`, `ar`, `ur`, and `hi`.
+   - Content Safety Validator gate (`sanitize_headline_insight`) enforcing PRD FR-5, FR-13, and Edge Case 9: suppresses developmental/behavioral clinical diagnoses, sibling comparison phrasing, and religious condemnations before surfacing AI-generated insights to parents.
+   - Locale-isolated Redis caching: `dashboard:{family_id}:{child_id}:{locale}` prevents cross-language cache collisions, with comprehensive multi-locale invalidation.
+6. **Automated Verification**:
+   - Added unit test suite `tests/modules/dashboard/test_dashboard_aggregation_api.py` (11 tests passing).
+   - Added exhaustive zero-missing scenarios suite `tests/modules/dashboard/test_dashboard_aggregation_zero_missing_scenarios.py` (37 scenarios passing: `S-C20-B02-001` through `S-C20-B02-037`).
+   - All 89 dashboard module tests pass (100% green).
+
+### Reason
+Fulfills PRD C.20 §1.7 FR-1, FR-2, FR-3, FR-7, §3.1, §3.4, §1.10 Edge Cases #1, #2, #3, #4, #7, delivering the primary read endpoint for the Parent Dashboard landing screen.
+
+### Backend Impact
+- Created `src/noorheroes/modules/dashboard/schemas.py`.
+- Created `src/noorheroes/modules/dashboard/service.py`.
+- Modified `src/noorheroes/modules/dashboard/api.py`, `deps.py`, `__init__.py`.
+- Added test suites `tests/modules/dashboard/test_dashboard_aggregation_api.py` and `test_dashboard_aggregation_zero_missing_scenarios.py`.
+
+### Web Admin Impact
+None (Parent Dashboard is strictly mobile in-app only per PRD FR-12).
+
+### Mobile App Impact
+Provides the primary data contract consumed by KMP `:feature:parent-dashboard` K-01 (`DashboardRepository.getDashboard(childId)`).
+
+### Parent Web Impact
+None (PRD §1.1 / §1.12: Parent Dashboard exists only in Mobile App; web portal route is blocked by design).
+
+### API Contract Impact
+- Added `GET /v1/parent/dashboard?child_id=` returning `DashboardResponse`.
+- Error codes: `403 CHILD_MODE_TOKEN_REJECTED`, `403 PARENT_GATE_NOT_VERIFIED`, `403 CHILD_SCOPE_VIOLATION`, `401 UNAUTHENTICATED`, `422 VALIDATION_ERROR`.
+
+### Database Impact
+None (read-only aggregation across existing tables and Redis cache).
+
+### Authentication & Permission Impact
+Requires parent-mode JWT session + active Parent Gate step-up marker in Redis + family-ownership validation on `child_id`.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- `NoorHeroes-Backend/MASTER-README.md` (Section 11.130)
+- `NoorHeroes-Backend/FAST-API-INSTRUCTIONS.md` (Section 5.23 & Section 6)
+- `NoorHeroes-Backend/src/noorheroes/modules/dashboard/README.md`
+
+### Validation
+- `pytest tests/modules/dashboard/ -v`: 78 passed across 4 suites (`test_dashboard_aggregation_api.py` [7], `test_dashboard_aggregation_zero_missing_scenarios.py` [30], `test_parent_session_only_gate.py` [11], `test_parent_session_only_gate_zero_missing_scenarios.py` [30]).
+- 100% pass rate achieved with zero regressions.
+
+### Status
+COMPLETED
+
+---
+
+### [2026-11-10] — [FEATURE_C20_B01] Parent-Session-Only Gate Middleware (Backend)
+
+### Summary
+Implemented the Parent-Session-Only Gate Middleware and router-level dependency for the Parent Dashboard module (Feature C.20 / Blueprint B-01 / Task 01–05):
+1. **Domain Exception (`ChildModeTokenRejectedError`)**:
+   - Defined `ChildModeTokenRejectedError(AuthorizationError)` in `src/noorheroes/core/exceptions.py` with HTTP 403 status code and machine-readable error code `CHILD_MODE_TOKEN_REJECTED`.
+   - Added multilingual localization entries (en, hi, ur, ar) in `src/noorheroes/core/i18n.py`.
+2. **Gate Dependency (`require_parent_session_only`)**:
+   - Implemented `require_parent_session_only()` in `src/noorheroes/modules/dashboard/deps.py`.
+   - Inspects JWT mode claim: immediately rejects child-mode tokens (`mode == "child"`) with HTTP 403 `CHILD_MODE_TOKEN_REJECTED`.
+   - Emits structured security log event `dashboard_child_mode_token_rejected` (`route`, `family_id`, `child_id`, `timestamp`) for P0 alerting and DevOps auditability (PRD §1.19, DevOps §10).
+   - Validates parent-mode tokens (`mode == "parent"`), checks token revocation in Redis denylist, and constructs `ParentSessionContext`.
+   - Propagates standard HTTP 401 `AuthenticationError` for missing, expired, or malformed tokens.
+3. **Router Mount & Grace Window Layering (`DashboardRouter`)**:
+   - Created `src/noorheroes/modules/dashboard/api.py` and `src/noorheroes/modules/dashboard/__init__.py`.
+   - Chained `require_parent_session_only` and `require_parent_gate_verified` at router-mount level: `DashboardRouter = APIRouter(prefix="/v1/parent/dashboard", dependencies=[Depends(require_parent_session_only), Depends(require_parent_gate_verified)])`.
+   - Created compatibility module `src/noorheroes/modules/identity/parent_gate.py` and aliased `require_parent_gate_verified = require_verified_parent_gate` in `core/deps.py`.
+   - Mounted `dashboard_router` in `NoorHeroes-Backend/main.py`.
+4. **Mandatory Structural & Unit Verification**:
+   - Authored `tests/modules/dashboard/test_parent_session_only_gate.py` with 11/11 tests passing.
+   - Proved structural non-bypassability via dummy route registered with zero handler auth logic.
+   - Verified rejection occurs strictly before handler execution (call-counter = 0).
+
+### Reason
+Fulfills PRD C.20 §1.7 FR-6, §5 item 1, §10, and §12.2, establishing the P0 platform guarantee that no child-mode session token may ever call any Parent Dashboard endpoint, structurally non-bypassable at the router-mount level.
+
+### Backend Impact
+- Created `src/noorheroes/modules/dashboard/__init__.py`, `api.py`, `deps.py`.
+- Created `src/noorheroes/modules/identity/parent_gate.py`.
+- Modified `src/noorheroes/core/exceptions.py`, `src/noorheroes/core/deps.py`, `src/noorheroes/core/i18n.py`, `main.py`.
+- Added test suite `tests/modules/dashboard/test_parent_session_only_gate.py`.
+
+### Web Admin Impact
+None (Parent Dashboard is strictly mobile in-app only per PRD FR-12; no admin portal surface).
+
+### Mobile App Impact
+Provides structural server-side gate backing KMP `:feature:parent-dashboard` Parent Gate entry enforcement (K-01).
+
+### Parent Web Impact
+None (PRD §1.1: Parent Dashboard exists only in the Mobile App; never on web portal).
+
+### API Contract Impact
+- Mounted `/v1/parent/dashboard` base router.
+- Added error response `403 CHILD_MODE_TOKEN_REJECTED` and `403 PARENT_GATE_NOT_VERIFIED`.
+
+### Database Impact
+None (stateless token inspection and Redis marker verification).
+
+### Authentication & Permission Impact
+Enforces mode boundary rejecting `SessionMode.CHILD` and requiring `SessionMode.PARENT` + fresh Parent Gate marker.
+
+### Breaking Change
+NO
+
+### Migration Required
+NO
+
+### Documentation Updated
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+- OpenAPI schema automatically reflects `403 CHILD_MODE_TOKEN_REJECTED` and `403 PARENT_GATE_NOT_VERIFIED` on all `/v1/parent/dashboard` routes.
+
+### Validation
+- `pytest tests/modules/dashboard/ -v`: 41 passed across `test_parent_session_only_gate.py` (11 tests) and `test_parent_session_only_gate_zero_missing_scenarios.py` (30 scenarios: S-C20-B01-001 through S-C20-B01-030).
+- 100% pass rate achieved with zero missing scenarios across HTTP verbs (GET, POST, PUT, DELETE), nested paths, short-circuit execution, expired/revoked session distinctions, Redis denylist, and multi-language error localization (en, ar, ur, hi).
+
+### Status
+COMPLETED
+
+---
+
 ### [2026-10-13] — [FEATURE_B18_B09] Content Integrity Monitoring & Disputed-Topic Bypass Canary (Backend)
 
 ### Summary
@@ -11520,3 +13035,131 @@ COMPLETED
 
 
 
+
+
+---
+
+## [2026-11-11] — [FEATURE_A05_KMP_K04] Recitation Recorder, Zero-Retention Audio Capture & UI Design Fidelity
+
+### Summary
+Implemented KMP client-side Recitation Recorder and Zero-Retention Audio Capture (`core:core-audio-recording`) and UI Design Fidelity across `feature:feature-learn` for Quran verse practice and pronunciation coaching matching `Screens/Mobile App/Learn/Feedback.png`, `Surah Practice-01.png`, and `Surah Practice-02.png`. The architecture guarantees in-memory PCM capture via `AudioRecord` (Android) and `AVAudioEngine` (iOS), direct streaming multipart upload to backend `POST /v1/learning/recitation` via Ktor with zero temporary files on device storage, and load-bearing explicit-null discipline on ViewModel audio buffers upon reaching any terminal state.
+
+### Reason
+Fulfills COPPA/GDPR-K child privacy invariants (FR-11, FR-12, FR-13) and pedagogical guardrails (FR-10, Rule 4) ensuring zero local audio persistence, zero numeric scores or religious judgment in coaching copy, real-time mid-session parental AI toggle observation, and 100% design fidelity with authoritative Figma mockups.
+
+### Backend Impact
+Direct consumer of `NoorHeroes-Backend` endpoint `POST /v1/learning/recitation` (Task B-04) returning child-safe coaching feedback with confidence band classification.
+
+### Web Admin Impact
+None. Administrative policy governance operates through parent and educator portals.
+
+### Mobile App Impact
+- Created `:core:core-audio-recording` library module with structurally file-path-free public API (`RecitationRecorder`). Zero dependency on `:core:core-database` or Room.
+- Implemented `AndroidRecitationRecorder` (183 lines) with in-memory `AudioRecord` capture and 44-byte RIFF/WAV header builder; `IosRecitationRecorder` (43 lines) with memory buffer sink.
+- Implemented `AudioHardwareDetector` (Edge Case 5) to hide recording controls on devices without physical microphones.
+- Implemented `RecitationApi` with Ktor streaming multipart upload directly from memory buffer.
+- Implemented `RecitationViewModel` (424 lines) sealed MVI state machine with explicit-null discipline verified via `WeakReference` and GC assertions.
+- Implemented UI composables:
+  - `AiPronunciationFeedbackScreen.kt` & `SurahFeedbackScreen.kt`: 100% parity with `Feedback.png` (speech bubble triangular notch, `✦` diamond sparkle icon, `↗` trend indicator, warm gold "Continue >" and white outlined "↺ Try Again" CTAs, zero numeric scores).
+  - `SurahPracticeTopBar`: white circular back button with subtle border matching `Surah Practice-01.png` and `Surah Practice-02.png`.
+  - `SurahTransliterationToggle`: centered pill toggle with conditional mint `primarySubtle` background and teal border.
+  - `SurahAyahCard`: active teal border, circular Ayah number badge, audio play/speed pills (`0.7×`), right-aligned Uthmani script, left-aligned transliteration, idle teal `● Record` and active pink/red `● Recording...` states.
+  - `SurahTajweedNoteCard`: warm gold container with `✦` diamond sparkle icon and phonetic letter highlighting (`ل`, `ع`).
+  - `RecitationRecorderOverlay`: live amplitude visualizer, duration timer, and cancel/stop controls.
+  - `ListenOnlySelfAssessmentScreen`: single unified screen handling 5 triggers with 0 record button nodes.
+- Appended `RECORD_AUDIO` to Android/iOS manifests and wired Koin DI modules.
+
+### Parent Web Impact
+Empowers Parental Controls (C.23) to toggle AI pronunciation coaching per child; `RecitationViewModel` observes toggle changes in real-time and gracefully exits active recordings to listen-only mode.
+
+### API Contract Impact
+Consumes `POST /v1/learning/recitation` multipart request streamed directly from memory.
+
+### Database Impact
+None. Intentionally zero local database schema or entities created for raw audio or cached attempts.
+
+### Authentication & Permission Impact
+Evaluates child profile session auth and runtime `RECORD_AUDIO` permission via `PermissionManager`.
+
+### Breaking Change
+NO. Additive feature module.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/04-recitation-recorder-zero-retention-capture-evidence.md`
+- `sdocs/evidence/05-surah-learning-ui-design-fidelity-verification.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest`: BUILD SUCCESSFUL in 42s (110 actionable tasks, 12 test suites passing including 24/24 in `RecitationZeroMissingScenariosTest` and 7/7 in `RecitationViewModelTest`).
+- Core module test suite (`:core:core-audio-recording`, `:core:core-designsystem`, `:core:core-ui`): BUILD SUCCESSFUL in 30s (73 actionable tasks, 100% green).
+- Full 10-module test suite: 235 actionable tasks, 100% green.
+- Static audit: 0 raw colors, 0 raw dimension literals, 0 Compose imports in ViewModel/domain layers, all files < 500 lines.
+
+### Status
+COMPLETED
+
+
+---
+
+## [2026-11-12] — [FEATURE_A05_KMP_K10] Progressive Hint Overlay & Exercise Screen Integration
+
+### Summary
+Implemented KMP client-side Progressive Hint Overlay modal (`HintOverlay`) and secondary `ExerciseHintButton` trigger integrated across all five Feature A.5 learning exercises (`SurahHintDialog`, `QuranGameHintDialog`, `DailyQuizHintDialog`, `TajweedHintDialog`, `ArabicLettersLearningFlowScreen`). The architecture consumes backend `GET /v1/learning/hints/{question_id}?level=1` (Task B-05) via `LearningApi.getHint`, strictly enforces progressive hint levels (1..3) with zero client-side content synthesis, strictly maintains zero `hint_count` mutation inside hint components (leaving attempt tracking to caller screens), guarantees zero state loss upon overlay dismiss, provides canonical encouragement micro-hints for questions without multi-level hints (Edge Case 8), and gracefully degrades on network loss.
+
+### Reason
+Fulfills FR-18, Edge Case 8, and Task K-10 specifications. Upholds child-safe pedagogy and design system governance (Rule 4, Rule 8, Rule 11): hints guide without revealing full answers, non-intrusive hint triggers prevent unwanted pressure, copy contains zero negative phrasing, and all files remain strictly under 500 lines.
+
+### Backend Impact
+Direct consumer of `NoorHeroes-Backend` endpoint `GET /v1/learning/hints/{question_id}?level={level}` (Task B-05) returning progressive hint clues.
+
+### Web Admin Impact
+None. Curriculum and hint authoring governed through educator content pipelines.
+
+### Mobile App Impact
+- Created `LearningHintDtos.kt` in `core:core-network` with dual camelCase / snake_case serialization.
+- Extended `LearningApi` and `LearningApiImpl` in `core:core-network` with `getHint(questionId, level, locale): NoorResult<LearningHintResponseDto>`.
+- Added domain model `ExerciseHint` in `core:core-common` and canonical offline fallback hints `HintCanonicalData`.
+- Added 8 localized string keys across 4 locales (`values`, `values-ar`, `values-hi`, `values-ur`) in `strings_learn.xml`.
+- Extended `LearningRepository` and `LearningRepositoryImpl` with `getHint`, extracting helper mappers to `LearningRepositoryHelpers.kt` to preserve Rule 8 (< 500 lines).
+- Created `GetHintUseCase` in `feature:feature-learn` domain layer.
+- Implemented `HintOverlayUiState`, `HintOverlayUiEvent`, and `HintOverlayUiEffect` contracts.
+- Implemented `HintOverlayViewModel` MVI state machine with level progression up to `maxLevel`, `hint_requested` analytics tracking, and zero `hint_count` state mutation.
+- Implemented `HintOverlay` modal wrapping `NoorCustomDialog` and `NoorCard` with pure design system tokens (`NoorHeroesTheme`), lightbulb header, level indicator badge, hint container, and action buttons.
+- Implemented non-intrusive `ExerciseHintButton` secondary trigger.
+- Wired `HintOverlay` into `SurahHintDialog`, `QuranGameComponents`, `DailyQuizComponents`, `TajweedComponents`, and `ArabicLettersLearningFlowScreen`.
+- Authored test doubles `HintOverlayTestFakes.kt` (57 lines), 10 unit tests in `HintOverlayViewModelTest.kt`, 25 exhaustive tests in `HintOverlayZeroMissingScenariosTest.kt`, and 7 parity integration tests in `HintOverlayExerciseParityTest.kt` (42 total hint tests).
+
+### Parent Web Impact
+None.
+
+### API Contract Impact
+Consumes `GET /v1/learning/hints/{question_id}?level={level}`.
+
+### Database Impact
+None. Transient UI state with canonical fallback data.
+
+### Authentication & Permission Impact
+Consumes child session context via `AuthStateProvider`.
+
+### Breaking Change
+NO. Purely additive and non-breaking refactor.
+
+### Migration Required
+NO.
+
+### Documentation Updated
+- `sdocs/evidence/15-progressive-hint-overlay-evidence.md`
+- `NoorHeroes/feature/feature-learn/README.md`
+- `CHANGELOG/CROSS_PLATFORM_CHANGES.md`
+
+### Validation
+- `:feature:feature-learn:testAndroidHostTest`: BUILD SUCCESSFUL in 41s (318 tests passed, 100% green including 42/42 hint tests across `HintOverlayViewModelTest`, `HintOverlayZeroMissingScenariosTest`, and `HintOverlayExerciseParityTest`).
+- `:core:core-data:testAndroidHostTest`: BUILD SUCCESSFUL (100% green).
+- Rule 8 (< 500 Lines) audit: All 18 files strictly < 500 lines (`HintOverlay.kt`: 269 lines, `HintOverlayViewModel.kt`: 167 lines, `LearningRepositoryImpl.kt`: 458 lines, `TajweedComponents.kt`: 458 lines).
+- Design system token audit: 100% compliance with `NoorHeroesTheme` (0 raw hex colors, 0 raw dp values).
+
+### Status
+COMPLETED

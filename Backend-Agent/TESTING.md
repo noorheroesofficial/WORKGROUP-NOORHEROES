@@ -212,6 +212,19 @@ tests/
 │   │   ├── test_withdrawal_api.py          # Emergency content withdrawal & restore API
 │   │   ├── test_withdrawal_service.py      # Soft-withdrawal, reason tracking & cache invalidation
 │   │   └── test_withdrawal_sqlite_integration.py # SQLite DB withdrawal integration
+│   ├── dashboard/                          # Parent Dashboard & AI Reports (12 files)
+│   │   ├── test_ai_report_generation_service.py # Core AI generation, Celery & retry orchestration
+│   │   ├── test_ai_report_generation_zero_missing_scenarios.py # 59 zero-missing B-04 scenarios
+│   │   ├── test_content_safety_validator.py # Multi-locale FR-13 content safety tests
+│   │   ├── test_content_safety_validator_zero_missing_scenarios.py # 75 zero-missing B-05 scenarios
+│   │   ├── test_dashboard_aggregation_api.py # Primary aggregated read endpoint tests
+│   │   ├── test_dashboard_aggregation_zero_missing_scenarios.py # 37 zero-missing B-02 scenarios
+│   │   ├── test_dashboard_b04_migration.py # Alembic 0105 migration DDL upgrade/downgrade
+│   │   ├── test_dashboard_report_retrieval_api.py # 4 preview card report types retrieval
+│   │   ├── test_dashboard_report_retrieval_zero_missing_scenarios.py # 37 zero-missing B-03 scenarios
+│   │   ├── test_monthly_family_report_schema_structural.py # Structural non-comparison tests
+│   │   ├── test_parent_session_only_gate.py # P0 child-token router rejection gate
+│   │   └── test_parent_session_only_gate_zero_missing_scenarios.py # 30 zero-missing B-01 scenarios
 │   ├── feature_flags/                      # Remote Config & Dynamic Feature Flags (8 files)
 │   │   ├── test_evaluation.py              # SHA-256 user bucketing & targeting evaluation
 │   │   ├── test_feature_flag_admin_api.py  # Flag proposal, dual sign-off, killswitch API
@@ -365,6 +378,7 @@ pytest tests/modules/localization/ -v
 pytest tests/modules/notifications/ -v
 pytest tests/modules/subscriptions/ -v
 pytest tests/modules/bedtime/ -v
+pytest tests/modules/dashboard/ -v
 
 # Run architectural invariant tests
 pytest tests/architecture/ -v
@@ -471,6 +485,13 @@ pytest tests/modules/rewards/test_purchase_atomicity.py::test_atomic_balance_ded
 - **Immutable Audit Logging**: Every approval and rejection writes an immutable `AdminAuditLog` record capturing both submitter and reviewer admin IDs.
 - **End-to-End Multi-Step Lifecycle**: Complete lifecycle coverage in `TestEndToEndReviewLifecycle` verifying creation (`pending_review`, invisible to children) -> rejection with notes -> re-edit (returns to `pending_review`) -> submitter self-approval blocked (403) -> independent approval (`published`, 200) -> child inventory reflection (`owned_items`), plus HTTP TestClient journey.
 - **Dual Router Parity & Parameter Bounds**: Validates 100% route parity across `/v1/admin/avatars/review-queue` and `/admin/v1/avatars/review-queue`, complete RBAC scope matrix, case-insensitive entity types (`ITEM`, `Base`), and 1-based pagination bounds across 299 passing test cases (16 test files, 0 failures, 0 warnings).
+
+### 4.16 Parent Dashboard & AI Report Governance (`tests/modules/dashboard/`, Feature C.20)
+- **Parent-Session-Only Invariant (Blueprint B-01)**: Enforces P0 router-mount level rejection of child session tokens (`403 CHILD_MODE_TOKEN_REJECTED`), 10-minute fresh Parent Gate step-up PIN verification in Redis (`403 PARENT_GATE_NOT_VERIFIED`), token expiration precedence, and structured telemetry logging across 41 tests (`test_parent_session_only_gate.py` [11], `test_parent_session_only_gate_zero_missing_scenarios.py` [30]).
+- **Dashboard Aggregation Read Model (Blueprint B-02)**: Validates single aggregated read model on `GET /v1/parent/dashboard?child_id=` and `/summary`, family ownership authorization (`403 CHILD_SCOPE_VIOLATION`), concurrent fan-out with component-level graceful degradation, empty-state synthesis, read-only projection for archived/disabled children, multi-language localization (`en`, `ar`, `ur`, `hi`), and differentiated Redis caching (120s aggregate, 3600s weekly preview) across 48 tests (`test_dashboard_aggregation_api.py` [11], `test_dashboard_aggregation_zero_missing_scenarios.py` [37]).
+- **Report Retrieval Service & Previews (Blueprint B-03)**: Validates condensed preview cards across 4 report domains (`weekly`, `monthly`, `ai_insight`, `safety`) on `GET /v1/parent/dashboard/reports/{type}?child_id=`, family scope enforcement, defense-in-depth safety filtering falling back to prior passing reports (`DelayedReportResponse`), soft premium gating for `ai_insight` (`LockedReportResponse`), empty-state synthesis, and 3600s Redis report caching across 50 tests (`test_dashboard_report_retrieval_api.py` [13], `test_dashboard_report_retrieval_zero_missing_scenarios.py` [37]).
+- **AI Report Generation & Content Safety Governance (Blueprints B-04 & B-05)**: Validates real cross-domain database aggregation (Stories, Duas, Quran, Habits, Streaks, Safety tables), fail-closed abort on partial domain outage (`ServiceUnavailableError`), versioned zero-PII prompt builder (`v1.0.0`) targeting `child.preferred_language`, automatic household locale inference, non-blank Pydantic string validation, AI provider retries and failover, synchronous deterministic `ContentSafetyValidator` (enforcing diagnosis, sibling comparison, and false certainty rules across 4 languages with Arabic-Indic digit and Urdu certainty normalization), non-bypassable repository write gates, positive-cache preservation, structural non-comparison monthly family reports, outbox event emission, staggered Celery Beat scheduling, and single-head Alembic migration 0105 across 187 tests (`test_ai_report_generation_service.py` [12], `test_ai_report_generation_zero_missing_scenarios.py` [59], `test_content_safety_validator.py` [25], `test_content_safety_validator_zero_missing_scenarios.py` [75], `test_monthly_family_report_schema_structural.py` [14], `test_dashboard_b04_migration.py` [2]).
+- **Total Dashboard Suite**: **326/326 tests passing** (100% green across all 12 test suites).
 
 ---
 

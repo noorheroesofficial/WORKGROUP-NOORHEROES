@@ -330,7 +330,7 @@ The Workgroup includes **562 screen visual specifications** located in [`Screens
 | **A.2** | Home Dashboard & AI Personalization | Child App Core | ⚠️ PARTIALLY IMPLEMENTED (B-01 Feed API & B-02 AI Recommendation & Safety Filter Implemented & Verified; 138 Tests) | ⚠️ PARTIALLY IMPLEMENTED (N-03 Explainability Viewer Backend Live) | ✅ IMPLEMENTED (`feature-home`) | N/A |
 | **A.3** | Stories Module | Child App Core | ✅ IMPLEMENTED (B-01–B-15) | ⚠️ PARTIALLY IMPLEMENTED (CMS Views) | ✅ IMPLEMENTED (`feature-stories`) | N/A |
 | **A.4** | Audio & Bedtime Player / Bedtime Mode | Child App Core | ✅ IMPLEMENTED (B-01–B-06) | ⚠️ PARTIALLY IMPLEMENTED (Analytics) | ⚠️ PARTIALLY IMPLEMENTED (Audio Core) | N/A |
-| **A.5** | Quran & Arabic Learning | Child App Core | ✅ IMPLEMENTED (B-01–B-11) | ⚠️ PARTIALLY IMPLEMENTED (Curriculum) | ✅ IMPLEMENTED (`feature-learn`) | N/A |
+| **A.5** | Quran & Arabic Learning | Child App Core | ✅ IMPLEMENTED (B-01–B-11) | ⚠️ PARTIALLY IMPLEMENTED (Curriculum) | ✅ IMPLEMENTED (`feature-learn`: Tasks K-01–K-13 Complete, 449+ Tests Passing) | N/A |
 | **A.6** | Dua Learning | Child App Core | ✅ IMPLEMENTED (B-01–B-11) | ⚠️ PARTIALLY IMPLEMENTED (CMS Views) | ⚠️ PARTIALLY IMPLEMENTED (Dua Views) | N/A |
 | **A.7** | Habit Tracker | Child App Core | ✅ IMPLEMENTED (B-01–B-13) | ⚠️ PARTIALLY IMPLEMENTED (Templates) | ✅ IMPLEMENTED (`feature-habits`) | N/A |
 | **A.8** | Daily Quiz Engine | Child App Core | ✅ IMPLEMENTED (B-01–B-08) | ⚠️ PARTIALLY IMPLEMENTED (Quiz Builder)| ⚠️ PARTIALLY IMPLEMENTED (Quiz UI) | N/A |
@@ -343,12 +343,12 @@ The Workgroup includes **562 screen visual specifications** located in [`Screens
 | **B.15** | Offline Downloads & Sync | Child App Support | ✅ IMPLEMENTED (Download Manifests) | ⚠️ PARTIALLY IMPLEMENTED (Health API) | ⚠️ PARTIALLY IMPLEMENTED (Sync Queue) | N/A |
 | **B.16** | Child Profile | Child App Support | ✅ IMPLEMENTED (B-01, B-02) | ✅ IMPLEMENTED (Family Management) | ✅ IMPLEMENTED (Profile Pickers) | N/A |
 | **B.17** | Notifications (Child-Facing) | Child App Support | ⚠️ PARTIALLY IMPLEMENTED (Dispatch) | ⚠️ PARTIALLY IMPLEMENTED (Templates) | ⚠️ PARTIALLY IMPLEMENTED (Handlers) | N/A |
-| **B.18** | Islamic Facts Module | Child App Support | ⚠️ PARTIALLY IMPLEMENTED (Models) | ⚠️ PARTIALLY IMPLEMENTED (CMS) | ⚠️ PARTIALLY IMPLEMENTED (Cards) | N/A |
+| **B.18** | Islamic Facts Module | Child App Support | ⚠️ PARTIALLY IMPLEMENTED (Models) | ⚠️ PARTIALLY IMPLEMENTED (CMS) | ✅ IMPLEMENTED (FR-19 Fact Detail in `feature-learn` Task K-11) | N/A |
 | **C.19** | Parent PIN & Biometric Gate | Parent Area In-App | ✅ IMPLEMENTED (B-01–B-06) | ✅ IMPLEMENTED (Gate Health Monitor) | ✅ IMPLEMENTED (Security Core Gate) | ⏳ PLANNED |
-| **C.20** | Parent Dashboard | Parent Area In-App | ✅ IMPLEMENTED (Aggregated APIs) | N/A | ✅ IMPLEMENTED (`feature-parent-dash`) | ⏳ PLANNED |
+| **C.20** | Parent Dashboard | Parent Area In-App | ✅ IMPLEMENTED (B-01–B-05: Gate, Aggregation, Report Retrieval, AI Report Generation & FR-13 Safety Validator; B-06 Pending) | N/A | ✅ IMPLEMENTED (`feature-parent-dash`) | ⏳ PLANNED |
 | **C.21** | Multi-Child Management | Parent Area In-App | ✅ IMPLEMENTED (Profile APIs) | ✅ IMPLEMENTED (Family Management) | ✅ IMPLEMENTED (Child Switcher) | ⏳ PLANNED |
-| **C.22** | Per-Child Reports | Parent Area In-App | ✅ IMPLEMENTED (Quran Learning Report)| N/A | ⚠️ PARTIALLY IMPLEMENTED (Reports UI) | ⏳ PLANNED |
-| **C.23** | Parental Controls | Parent Area In-App | ✅ IMPLEMENTED (Bedtime Config APIs) | ⚠️ PARTIALLY IMPLEMENTED (Controls) | ⚠️ PARTIALLY IMPLEMENTED (Settings) | ⏳ PLANNED |
+| **C.22** | Per-Child Reports | Parent Area In-App | ✅ IMPLEMENTED (Quran Learning Report)| N/A | ✅ IMPLEMENTED (Task K-12 Parent Learning Report & Concept Detail in `feature-learn`) | ⏳ PLANNED |
+| **C.23** | Parental Controls | Parent Area In-App | ✅ IMPLEMENTED (Bedtime Config APIs) | ⚠️ PARTIALLY IMPLEMENTED (Controls) | ✅ IMPLEMENTED (Task K-13 AI & Mic Control in `feature-learn` & Bedtime Settings) | ⏳ PLANNED |
 | **C.24** | Subscription & Billing | Parent Area In-App | ⚠️ PARTIALLY IMPLEMENTED (Entitlements)| ⚠️ PARTIALLY IMPLEMENTED (Billing Ops)| ✅ IMPLEMENTED (`feature-sub`) | ⏳ PLANNED |
 | **C.25** | Notifications & Parent Support | Parent Area In-App | ⚠️ PARTIALLY IMPLEMENTED (Support API)| ✅ IMPLEMENTED (Support Case Queue) | ⚠️ PARTIALLY IMPLEMENTED (Tickets) | ⏳ PLANNED |
 | **C.26** | Privacy, Consent & Data Rights | Parent Area In-App | ✅ IMPLEMENTED (Consent Ledger) | ✅ IMPLEMENTED (Consent Audit Viewer) | ⚠️ PARTIALLY IMPLEMENTED (Consent UI) | ⏳ PLANNED |
